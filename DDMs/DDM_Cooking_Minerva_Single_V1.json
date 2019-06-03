@@ -4372,7 +4372,8 @@
     "AttributesMapping": {
       "OvenUpperCavity": {
         "CycleName": [
-          "UpperCavity_CavityModeOven"
+          "UpperCavity_CavityModeOven",
+          "UpperCavity_CulinaryCenterID"
         ],
         "TimeElapsed": "UpperCavity_ElapseCookTime",
         "DoorOpen": "UpperCavity_CavityDoorStatus",
@@ -4393,7 +4394,9 @@
         "CavityEventNotification": "UpperCavity_CavityEventNotification",
         "CookTimeSetTime": "UpperCavity_CookTimeSetTime",
         "DelayTimeSetTime": "UpperCavity_DelayTimeSetTime",
-        "CookTimeRemaining": "UpperCavity_CookTimeRemaining"
+        "CookTimeRemaining": "UpperCavity_CookTimeRemaining",
+        "CulinaryCtrSetId": "UpperCavity_CulinaryCenterID",
+        "CavityOperations": "UpperCavity_CavityOperations"
       },
       "Common": {
         "DisplayOnOff": "SystemSettings_DisplayOnOff",

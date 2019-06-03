@@ -2408,7 +2408,8 @@
           "OvenUpperCavity_CycleSetCommonMode",
           "OvenUpperCavity_CycleSetConvectBakeFood",
           "OvenUpperCavity_CycleSetEasyConvectFood",
-          "OvenUpperCavity_CycleSetBreadProof"
+          "OvenUpperCavity_CycleSetBreadProof",
+          "OvenUpperCavity_CulinaryCtrSetId"
         ],
         "TimeElapsed": "OvenUpperCavity_TimeStatusCycleTimeElapsed",
         "DoorOpen": "OvenUpperCavity_OpStatusDoorOpen",
@@ -2431,7 +2432,8 @@
         "OpStatusCleanOven": "OvenUpperCavity_OpStatusCleanOven",
         "CulinaryVersion": "OvenUpperCavity_CulinaryCtrSetVersion",
         "CulinaryCtrSetId": "OvenUpperCavity_CulinaryCtrSetId",
-        "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId"
+        "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId",
+        "CavityOperations": "OvenUpperCavity_OpSetOperations"
       },
       "Common": {
         "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
