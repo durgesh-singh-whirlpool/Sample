@@ -837,7 +837,7 @@
   "Personality": {
     "Key": "DDM_COOKING_Loki_JA_V1",
     "Compatibility": {
-    	"CooktopLeftOnAlertId": 1263
+      "CooktopLeftOnAlertId": 1263
     },
     "CavityOrder": [
       "Cooktop"
@@ -928,7 +928,7 @@
       }
     },
     "AttributesMapping": {
-      "Cooktop" : {
+      "Cooktop": {
         "CooktopElementState": "Cooktop_CycleStatusCookElementState",
         "CooktopElementPower": "Cooktop_CycleSetCookElementPower",
         "CooktopElementSize": "Cooktop_CycleSetCookElementSize",
@@ -964,7 +964,7 @@
             "CA"
           ]
         },
-        "ApplianceDocuments" : {
+        "ApplianceDocuments": {
           "Visible": true,
           "AvailableIn": [
             "US",
@@ -973,7 +973,7 @@
         }
       },
       "Cooktop": {
-      	"Burners": {
+        "Burners": {
           "Visible": true,
           "AvailableIn": [
             "US",
@@ -982,20 +982,18 @@
         }
       }
     },
-    "Rulesets": [
-      {
-        "FaultCodeHistory": {
-          "isLegacy": "false",
-          "attributes": "Sys_AlertStatusCustomerFaultCode",
-          "groupBy": "Sys_AlertStatusCustomerFaultCode"
-        },
-        "EnergyHistory": {
-          "isLegacy": "false",
-          "attributes": "XCat_PowerStatusEnergyConsumption ",
-          "groupBy": "XCat_PowerStatusEnergyConsumption "
-        }
+    "Rulesets": {
+      "FaultCodeHistory": {
+        "isLegacy": "false",
+        "attributes": "Sys_AlertStatusCustomerFaultCode",
+        "groupBy": "Sys_AlertStatusCustomerFaultCode"
+      },
+      "EnergyHistory": {
+        "isLegacy": "false",
+        "attributes": "XCat_PowerStatusEnergyConsumption ",
+        "groupBy": "XCat_PowerStatusEnergyConsumption "
       }
-    ]
+    }
   },
   "Alerts": {
     "Key": "DDM_COOKING_Loki_JA_V1",
