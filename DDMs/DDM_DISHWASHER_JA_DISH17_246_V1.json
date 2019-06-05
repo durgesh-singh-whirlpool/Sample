@@ -2042,18 +2042,19 @@
             }
           },
           {
-            "ruleName": "Enable the StartCommand button",
-            "description": "Appliance can be started if the remote is enbled",
-            "actions": {
-              "ActionStartCommand": true
-            },
-            "condition": {
-              "type": "value",
-              "key": "XCat_RemoteSetRemoteControlEnable",
-              "valueOperator": "=",
-              "value": 1
-            }
-          },
+                        "ruleName": "Disable the StartCommand button",
+                        "description": "Appliance can not be started if the remote is disabled",
+                        "actions": {
+                            "ActionSetCycleStartCommand": false
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "XCat_RemoteSetRemoteControlEnable",
+                            "valueOperator": "=",
+                            "value": 0
+                        }
+                    },
+          
           {
             "ruleName": "If delay is selected, send to appliance should be disabled",
             "description": "If delay is selected, send to appliance should be disabled",
