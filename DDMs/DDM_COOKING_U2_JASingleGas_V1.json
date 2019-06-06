@@ -2640,6 +2640,16 @@
             "Operation": "OvenUpperCavity_OpSetOperations",
             "EnvelopeAction" : "Relational_EnvelopeAction"
           }
+        },
+        "LightOnOff": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "OvenUpperCavity_DisplaySetLightOn"
+          }
         }
       }
     },
