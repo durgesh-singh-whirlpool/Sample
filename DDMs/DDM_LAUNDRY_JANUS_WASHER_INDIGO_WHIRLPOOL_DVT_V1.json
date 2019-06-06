@@ -1650,7 +1650,6 @@
 								"Default": "SpinSpeedExtraHigh"
 							},
 							"WashCavity_CycleSetSoilLevel": {
-								"Default": "SoilLevelNormal",
 								"Enumeration": [
 									"SoilLevelLight",
 									"SoilLevelNormal",
@@ -1715,7 +1714,7 @@
 									"SoilLevelLight",
 									"SoilLevelNormal",
 									"SoilLevelHeavy"
-								]
+								],
 								"Default": "SoilLevelLight"
 							},
 							"WashCavity_CycleSetPresoakTimed": {
@@ -1724,7 +1723,7 @@
 									1800,
 									3600,
 									28800
-								]
+								],
 								"Default": 0
 							},
 							"Cavity_CycleSetSteamEnable": {
@@ -1732,7 +1731,7 @@
 									false,
 									true
 								],
-								"Default": false,
+								"Default": false
 							},
 							"WashCavity_CycleSetExtraRinseSelect": {
 								"Default": 0,
@@ -1778,7 +1777,7 @@
 									"SoilLevelNormal",
 									"SoilLevelHeavy"
 								],
-								"Default": "SoilLevelLight",
+								"Default": "SoilLevelLight"
 							},
 							"WashCavity_CycleSetPresoakTimed": {
 								"List": [
@@ -1881,7 +1880,7 @@
 									"WashTempHot",
 									"WashTempExtraHot"
 								],
-								"Default": "WashTempCold",
+								"Default": "WashTempCold"
 							},
 							"WashCavity_CycleSetSpinSpeed": {
 								"Enumeration": [
@@ -1890,7 +1889,7 @@
 									"SpinSpeedHigh",
 									"SpinSpeedExtraHigh"
 								],
-								"Default": "SpinSpeedExtraHigh",
+								"Default": "SpinSpeedExtraHigh"
 							},
 							"WashCavity_CycleSetSoilLevel": {
 								"Enumeration": [
@@ -1898,7 +1897,7 @@
 									"SoilLevelNormal",
 									"SoilLevelHeavy"
 								],
-								"Default": "SoilLevelHeavy",
+								"Default": "SoilLevelHeavy"
 							},
 							"WashCavity_CycleSetPresoakTimed": {
 								"List": [
@@ -1920,7 +1919,7 @@
 									"FresheningNone",
 									"FresheningFanFresh"
 								],
-								"Default": "FresheningNone",
+								"Default": "FresheningNone"
 							}
 						}
 					},
@@ -1991,7 +1990,7 @@
 									"SpinSpeedHigh",
 									"SpinSpeedExtraHigh"
 								],
-								"Default": "SpinSpeedHigh",
+								"Default": "SpinSpeedHigh"
 							},
 							"WashCavity_CycleSetSoilLevel": {
 								"Enumeration": [
@@ -2252,7 +2251,7 @@
 									3600,
 									28800
 								],
-								"Default": 0,
+								"Default": 0
 							},
 							"WashCavity_CycleSetExtraRinseSelect": {
 								"Default": 0,
@@ -3037,7 +3036,7 @@
 									"SoilLevelNormal",
 									"SoilLevelHeavy"
 								],
-								"Default": "SoilLevelNormal",
+								"Default": "SoilLevelNormal"
 							},
 							"WashCavity_CycleSetPresoakTimed": {
 								"List": [
@@ -3141,7 +3140,7 @@
 									"WashTempHot",
 									"WashTempExtraHot"
 								],
-								"Default": "WashTempCold",
+								"Default": "WashTempCold"
 							},
 							"WashCavity_CycleSetSpinSpeed": {
 								"Enumeration": [
