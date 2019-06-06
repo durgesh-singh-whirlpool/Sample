@@ -1632,14 +1632,14 @@
 					"WashCavity_CycleSetCycleSelectWashCycleNormal": {
 					"Required": {
 						"WashCavity_CycleSetTemperature": {
-							"Default": "WashTempWarm",
 							"Enumeration": [
 								"WashTempCold",
 								"WashTempCool",
 								"WashTempWarm",
 								"WashTempHot",
 								"WashTempExtraHot"
-							]
+							],
+							"Default": "WashTempWarm"
 						},
 						"WashCavity_CycleSetSpinSpeed": {
 							"Default": "SpinSpeedExtraHigh",
