@@ -1627,7 +1627,6 @@
 		"WashCavity": {
 			"CapabilityData": {
 					"WashCavity_CycleSetCycleSelectWashCycleNone": {
-					"Required": {}
 				},
 					"WashCavity_CycleSetCycleSelectWashCycleNormal": {
 					"Required": {
@@ -1687,9 +1686,7 @@
 								"FresheningFanFresh"
 							]
 						}
-					},
-				    "Optional": {},
-					"NonEditable": {}
+					}
 				},
 					"WashCavity_CycleSetCycleSelectWashCycleQuickWash": {
 						"Required": {
@@ -1749,8 +1746,8 @@
 									"FresheningFanFresh"
 								]
 							}
-						},
-						"NonEditable": {}
+						}
+						
 				},
 					"WashCycleWrinkleControl": {
 					"Required": {
