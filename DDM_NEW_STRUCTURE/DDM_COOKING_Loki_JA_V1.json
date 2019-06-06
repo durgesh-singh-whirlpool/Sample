@@ -987,7 +987,7 @@
         "QueryParams": {
           "Common": {
             "FaultCodeHistory": {
-              "isLegacy": "false",
+              "isLegacy": false,
               "attributes": "Sys_AlertStatusCustomerFaultCode",
               "groupBy": "Sys_AlertStatusCustomerFaultCode"
             }
