@@ -2524,12 +2524,12 @@
           "OvenUpperCavity_CycleSetCommonModeCommonModeKeepWarm": {
             "Required": {
               "OvenUpperCavity_CycleSetTargetTemp": {
-                "TempRange": {
-                  "Min": 655,
-                  "Max": 877,
-                  "StepF": 25,
-                  "Default": 766
-                }
+                  "TempRange": {
+                      "Min": 655,
+                      "Max": 933,
+                      "StepF": 25,
+                      "Default": 794
+                  }
               },
               "OvenUpperCavity_OpSetCookTimeCompleteAction": {
                 "Enumeration": [
