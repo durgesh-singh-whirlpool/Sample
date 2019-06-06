@@ -1627,10 +1627,13 @@
 		"WashCavity": {
 			"CapabilityData": [
 				{
-					"WashCavity_CycleSetCycleSelectWashCycleNone": {}
+					"WashCavity_CycleSetCycleSelectWashCycleNone": {
+					"Required": {}
+					}
 				},
 				{
 					"WashCavity_CycleSetCycleSelectWashCycleNormal": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -1687,7 +1690,10 @@
 								"FresheningFanFresh"
 							]
 						}
-					}
+					},
+				    "Optional": {},
+					"NonEditable": {}
+				}
 				},
 				{
 					"WashCavity_CycleSetCycleSelectWashCycleQuickWash": {
@@ -1754,6 +1760,7 @@
 				},
 				{
 					"WashCycleWrinkleControl": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -1812,9 +1819,11 @@
 							]
 						}
 					}
+				}
 				},
 				{
 					"WashCycleHeavyDuty": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempHot",
 							"Enumeration": [
@@ -1872,9 +1881,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleColdWash": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -1925,9 +1936,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleSanitize": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempExtraHot",
 							"Enumeration": [
@@ -1972,9 +1985,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCavity_CycleSetCycleSelectWashCycleColorsBrights": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -2031,11 +2046,13 @@
 								"FresheningNone",
 								"FresheningFanFresh"
 							]
+							}
 						}
 					}
 				},
 				{
 					"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToQuick": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -2093,10 +2110,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToColorsBrightsHowToWrinkleControl": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -2154,10 +2173,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToColorsBrightsHowToHeavyDuty": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempHot",
 							"Enumeration": [
@@ -2215,10 +2236,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToColorsBrightsHowToColdWash": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -2269,10 +2292,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToColorsBrightsHowToSanitize": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempExtraHot",
 							"Enumeration": [
@@ -2317,10 +2342,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhites": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -2378,10 +2405,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToWhitesHowToQuick": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -2439,10 +2468,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToWhitesHowToWrinkleControl": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -2500,10 +2531,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToWhitesHowToHeavyDuty": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempHot",
 							"Enumeration": [
@@ -2561,10 +2594,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToWhitesHowToColdWash": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -2615,10 +2650,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToWhitesHowToSanitize": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempExtraHot",
 							"Enumeration": [
@@ -2663,10 +2700,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleTowels": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -2724,10 +2763,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToTowelsHowToQuick": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -2785,10 +2826,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToTowelsHowToWrinkleControl": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -2846,10 +2889,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToTowelsHowToHeavyDuty": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempHot",
 							"Enumeration": [
@@ -2907,10 +2952,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleWhatToTowelsHowToColdWash": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -2962,9 +3009,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToTowelsHowToSanitize": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempExtraHot",
 							"Enumeration": [
@@ -3009,10 +3058,12 @@
 								"FresheningFanFresh"
 							]
 						}
+					}
 					}
 				},
 				{
 					"WashCycleDelicates": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -3071,9 +3122,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToDelicatesHowToQuick": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -3132,9 +3185,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToDelicatesHowToWrinkleControl": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -3193,9 +3248,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToDelicatesHowToHeavyDuty": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempHot",
 							"Enumeration": [
@@ -3254,9 +3311,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToDelicatesHowToColdWash": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -3308,9 +3367,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToDelicatesHowToSanitize": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempExtraHot",
 							"Enumeration": [
@@ -3356,9 +3417,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleBulky": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -3417,9 +3480,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToBulkyHowToQuick": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempWarm",
 							"Enumeration": [
@@ -3478,9 +3543,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToBulkyHowToWrinkleControl": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -3539,9 +3606,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToBulkyHowToHeavyDuty": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempHot",
 							"Enumeration": [
@@ -3600,9 +3669,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleWhatToBulkyHowToColdWash": {
+					"Required": {
 						"WashCavity_CycleSetTemperature": {
 							"Default": "WashTempCold",
 							"Enumeration": [
@@ -3654,9 +3725,11 @@
 							]
 						}
 					}
+					}
 				},
 				{
 					"WashCycleDrainSpin": {
+					"Required": {
 						"WashCavity_CycleSetSpinSpeed": {
 							"Default": "SpinSpeedExtraHigh",
 							"Enumeration": [
@@ -3681,11 +3754,14 @@
 							]
 						}
 					}
+					}
 				},
 				{
-					"WashCycleCleanWasher": {}
+					"WashCycleCleanWasher": {
+					"Required": {}
+					}
 				}
-			],
+				],
 			"SetCycle": {
 				"Regular": {
 					"WashCavity_CycleSetCycleSelectWashCycleNormal": {
@@ -3934,9 +4010,9 @@
 							"WashCavity_CycleSetCycleSelect": [
 								"WashCycleWhatToDelicatesHowToSanitize"
 							]
+							}
 						}
-					}
-				},
+					},
 				"Bulky": {
 					"WashCavity_CycleSetCycleSelectWashCycleBulky": {
 						"Name": "WashCycleBulky",
@@ -3979,12 +4055,12 @@
 						}
 					}
 				}
-			}
+		}
 		},
 		"SystemCavity": {
 			"CapabilityData": {},
 			"SetCycle": {}
-		}
+			}
 		},
 	"AttributesMapping": {
       "WashCavity": {
