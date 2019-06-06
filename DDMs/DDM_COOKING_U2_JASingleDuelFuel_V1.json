@@ -3109,7 +3109,7 @@
     "Features": {
       "Common": {
         "LocalKitchenTimer": {
-          "Visible": false,
+          "Visible": true,
           "AvailableIn": [
             "US"
           ]
