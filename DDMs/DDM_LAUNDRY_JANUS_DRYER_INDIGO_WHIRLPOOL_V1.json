@@ -1332,6 +1332,9 @@
 	},
 	"Personality": {
 		"Key": "DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
+		"CavityOrder": [
+      "DryCavity"
+    ],
 		"Capability": {
 			"DryCavity": {
 				"CapabilityData": {
