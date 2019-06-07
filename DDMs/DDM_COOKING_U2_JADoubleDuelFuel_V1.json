@@ -4240,7 +4240,7 @@
           "StateAttributes": {
             "State": "OvenUpperCavity_DisplaySetLightOn"
           }
-        },
+        }
       },
       "OvenLowerCavity": {
         "SetOven": {
@@ -4358,7 +4358,7 @@
           "StateAttributes": {
             "State": "OvenLowerCavity_DisplaySetLightOn"
           }
-        },
+        }
       }
     },
     "CycleOrder": {
