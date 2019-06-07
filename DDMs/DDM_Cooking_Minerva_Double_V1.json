@@ -3825,7 +3825,7 @@
                                     525,
                                     550
                                 ],
-                                "Default": 350
+                                "Default": 325
                             }
                         },
                         "Optional": {
@@ -5930,7 +5930,7 @@
                                     525,
                                     550
                                 ],
-                                "Default": 350
+                                "Default": 325
                             }
                         },
                         "Optional": {
@@ -7786,19 +7786,6 @@
                         }
                     },
                     {
-                        "ruleName": "Cancel the Running Cycle",
-                        "description": "If Appliance is not idle, we can enable the cancel action",
-                        "actions": {
-                            "ActionCancelCommand": true
-                        },
-                        "condition": {
-                            "type": "value",
-                            "key": "UpperCavity_CavityHeatState",
-                            "valueOperator": "!=",
-                            "value": "0"
-                        }
-                    },
-                    {
                         "ruleName": "Disable the StartCommand button",
                         "description": "Appliance can not be started if the remote is disabled",
                         "actions": {
@@ -7809,6 +7796,19 @@
                             "key": "Appliance_RemoteEnabledStatus",
                             "valueOperator": "=",
                             "value": 0
+                        }
+                    },
+                    {
+                        "ruleName": "Cancel the Running Cycle",
+                        "description": "If Appliance is not idle, we can enable the cancel action",
+                        "actions": {
+                            "ActionCancelCommand": true
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "UpperCavity_CavityHeatState",
+                            "valueOperator": "!=",
+                            "value": "0"
                         }
                     }
                 ]
@@ -7837,7 +7837,28 @@
                         "ruleName": "Cancel the Running Cycle",
                         "description": "If Appliance is not idle, we can enable the cancel action",
                         "actions": {
-                            "ActionCancelCommand": true
+                            "ActionSetCycleStartCommand" : false,
+                            "ActionSetCycleSendCommand" : false,
+                            "ActionSetCycleCancelCommand" : true,
+                            "ActionSetCycleModifyCommand" : true
+
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "LowerCavity_CavityHeatState",
+                            "valueOperator": "!=",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "ruleName": "Cancel the cook time, If it is running",
+                        "description": "Cancel the cook time, If it is running",
+                        "actions": {
+                            "ActionSetCycleStartCommand" : false,
+                            "ActionSetCycleSendCommand" : false,
+                            "ActionSetCycleCancelCommand" : true,
+                            "ActionSetCycleModifyCommand" : true
+
                         },
                         "condition": {
                             "type": "value",
@@ -7880,6 +7901,7 @@
                             "ChangeSoundKeyPress": false,
                             "ChangeDisplayOnOffStatus": false,
                             "ChangeBrightness": false
+
                         },
                         "condition": {
                             "type": "value",
