@@ -1628,6 +1628,10 @@
 					"WashCavity_CycleSetCycleSelectWashCycleNone": {
 						"Required": {}
 					},
+					"CavityOrder": [
+      "WashCavity",
+	  "SystemCavity"
+    ],
 					"WashCavity_CycleSetCycleSelectWashCycleNormal": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
