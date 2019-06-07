@@ -1629,8 +1629,7 @@
 						"Required": {}
 					},
 					"CavityOrder": [
-      "WashCavity",
-	  "SystemCavity"
+      "WashCavity"
     ],
 					"WashCavity_CycleSetCycleSelectWashCycleNormal": {
 						"Required": {
