@@ -4025,7 +4025,6 @@
 				},
         "RemoteStatus": {
           "Visible": true,
-          "ReadOnly": true,
           "AvailableIn": [
             "US",
             "CA"
@@ -4036,7 +4035,6 @@
         },
 		"Online": {
           "Visible": true,
-          "ReadOnly": true,
           "AvailableIn": [
             "US",
             "CA"
