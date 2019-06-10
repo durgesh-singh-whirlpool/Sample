@@ -7531,7 +7531,7 @@
                     }
                 },
                 "CyclesHistory": {
-                    "Visible": true,
+                    "Visible": false,
                     "AvailableIn": [
                         "US",
                         "CA"
