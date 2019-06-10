@@ -2040,7 +2040,7 @@
   },
   "Personality": {
     "Key": "DDM_COOKING_U2_JADoubleGas_V1",
-    "capability": [
+    "Capability": [
       {
         "CavityOrder": [
           "OvenLowerCavity",

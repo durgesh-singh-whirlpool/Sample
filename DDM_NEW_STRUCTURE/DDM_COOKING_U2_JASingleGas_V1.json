@@ -1573,7 +1573,7 @@
   },
   "Personality": {
     "Key": "DDM_COOKING_U2_JASingleGas_V1",
-    "capability": [
+    "Capability": [
       {
         "CavityOrder": [
           "OvenUpperCavity"

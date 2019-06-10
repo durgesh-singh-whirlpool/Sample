@@ -1226,7 +1226,7 @@
   },
   "Personality": {
     "Key": "DDM_REFRIGERATOR_OBERON_FREEZER_V1",
-    "capability": [
+    "Capability": [
       {
         "CavityOrder": [
           "UpperZone",

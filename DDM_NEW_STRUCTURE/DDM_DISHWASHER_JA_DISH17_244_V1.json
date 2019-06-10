@@ -1316,7 +1316,7 @@
   },
   "Personality": {
     "Key": "DDM_DISHWASHER_JA_DISH17_244_V1",
-    "capability": [
+    "Capability": [
       {
         "Compatibility": {
           "CustomCycles": [

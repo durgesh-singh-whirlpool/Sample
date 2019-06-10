@@ -2243,7 +2243,7 @@
   },
   "Personality": {
     "Key": "DDM_COOKING_U2_JADoubleDuelFuel_V1",
-    "capability" : [{
+    "Capability" : [{
       "CavityOrder": [
         "OvenLowerCavity",
         "OvenUpperCavity"

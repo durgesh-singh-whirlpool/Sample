@@ -836,7 +836,7 @@
   },
   "Personality": {
     "Key": "DDM_COOKING_Loki_JA_V1",
-    "capability": [
+    "Capability": [
       {
         "Compatibility": {
           "CooktopLeftOnAlertId": 1263

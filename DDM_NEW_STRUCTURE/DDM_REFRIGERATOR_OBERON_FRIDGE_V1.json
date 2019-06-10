@@ -1250,7 +1250,7 @@
   },
   "Personality": {
     "Key": "DDM_REFRIGERATOR_OBERON_FRIDGE_V1",
-    "capability": [
+    "Capability": [
       {
         "CavityOrder": [
           "RefrigeratorCavity",

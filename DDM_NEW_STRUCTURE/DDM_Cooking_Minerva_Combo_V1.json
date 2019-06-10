@@ -3168,7 +3168,7 @@
     },
     "Personality": {
         "Key": "DDM_Cooking_Minerva_Combo_V1",
-        "capability": [
+        "Capability": [
             {
                 "Compatibility": {
                     "TempExchangeUnits": "F",

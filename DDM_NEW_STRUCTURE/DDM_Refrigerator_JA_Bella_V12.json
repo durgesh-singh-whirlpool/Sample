@@ -1259,7 +1259,7 @@
   },
   "Personality": {
     "Key": "DDM_Refrigerator_JA_Bella_V12",
-    "capability": [{
+    "Capability": [{
       "CavityOrder": [
         "RefrigeratorCavity",
         "FreezerCavity",

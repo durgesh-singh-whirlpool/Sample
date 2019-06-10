@@ -1764,7 +1764,7 @@
   },
   "Personality": {
     "Key": "DDM_COOKING_U2_JASingleSteam_V1",
-    "capability" : [{
+    "Capability" : [{
       "CavityOrder": [
         "OvenUpperCavity"
       ],
