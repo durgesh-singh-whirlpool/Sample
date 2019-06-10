@@ -2528,9 +2528,9 @@
                   "OvenUpperCavity_CycleSetTargetTemp": {
                     "TempRange": {
                       "Min": 655,
-                      "Max": 877,
+                      "Max": 933,
                       "StepF": 25,
-                      "Default": 766
+                      "Default": 794
                     }
                   },
                   "OvenUpperCavity_OpSetCookTimeCompleteAction": {
@@ -3314,9 +3314,9 @@
                   "OvenLowerCavity_CycleSetTargetTemp": {
                     "TempRange": {
                       "Min": 655,
-                      "Max": 877,
+                      "Max": 933,
                       "StepF": 25,
-                      "Default": 766
+                      "Default": 794
                     }
                   },
                   "OvenLowerCavity_OpSetCookTimeCompleteAction": {
@@ -3800,7 +3800,7 @@
                 "MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
               },
               "StatusAttributes": [
-
+                
               ],
               "SendCommandAttributes": [
                 "OvenUpperCavity_CycleSetCommonMode",
@@ -3854,7 +3854,7 @@
                 "OvenUpperCavity_TimeSetCookTimeOperations"
               ],
               "StateAttributes": {
-
+                
               },
               "SetOperationsMapping": {
                 "Operation": "OvenUpperCavity_OpSetOperations",
@@ -3869,17 +3869,27 @@
                 "CA"
               ],
               "StatusAttributes": [
-
+                
               ],
               "StateAttributes": {
-
+                
               },
               "SendCommandAttributes": [
-
+                
               ],
               "SetOperationsMapping": {
                 "Operation": "OvenUpperCavity_OpSetOperations",
                 "EnvelopeAction": "Relational_EnvelopeAction"
+              }
+            },
+            "LightOnOff": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "OvenUpperCavity_DisplaySetLightOn"
               }
             }
           },
@@ -3964,7 +3974,7 @@
                 "OvenLowerCavity_TimeSetCookTimeOperations"
               ],
               "StateAttributes": {
-
+                
               },
               "SetOperationsMapping": {
                 "Operation": "OvenLowerCavity_OpSetOperations",
@@ -3979,17 +3989,27 @@
                 "CA"
               ],
               "StatusAttributes": [
-
+                
               ],
               "StateAttributes": {
-
+                
               },
               "SendCommandAttributes": [
-
+                
               ],
               "SetOperationsMapping": {
                 "Operation": "OvenLowerCavity_OpSetOperations",
                 "EnvelopeAction": "Relational_EnvelopeAction"
+              }
+            },
+            "LightOnOff": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "OvenLowerCavity_DisplaySetLightOn"
               }
             }
           }
@@ -4170,7 +4190,7 @@
       },
       {
         "MyCreationExcludedMode-UpperCavity": {
-
+          
         },
         "MyCreationExcludedMode-LowerCavity": {
           "CycleSetCommonMode": [
@@ -4332,21 +4352,21 @@
             "name": "ADRS",
             "enabled": false,
             "config": {
-
+              
             }
           },
           {
             "name": "Wallmart",
             "enabled": false,
             "config": {
-
+              
             }
           },
           {
             "name": "Whirlpool",
             "enabled": false,
             "config": {
-
+              
             }
           }
         ]
@@ -4377,14 +4397,14 @@
             "name": "National Grid",
             "enabled": false,
             "config": {
-
+              
             }
           },
           {
             "name": "Genability",
             "enabled": false,
             "config": {
-
+              
             }
           }
         ]
@@ -4397,14 +4417,14 @@
             "name": "Amazon Alexa",
             "enabled": false,
             "config": {
-
+              
             }
           },
           {
             "name": "Google Home",
             "enabled": false,
             "config": {
-
+              
             }
           }
         ]

@@ -1411,7 +1411,7 @@
               },
               "Cavity_CycleSetCycleIdCycleRinseOnly": {
                 "Required": {
-
+                  
                 },
                 "Optional": {
                   "Cavity_TimeSetDelayTime": {
@@ -1661,10 +1661,10 @@
               },
               "Cavity_CycleSetDownloadAndGoDownloadGoGentle": {
                 "Required": {
-
+                  
                 },
                 "Optional": {
-
+                  
                 },
                 "NonEditable": {
                   "Cavity_CycleSetCycleId": "CycleLightChina"
@@ -1672,7 +1672,7 @@
               },
               "Cavity_CycleSetDownloadAndGoDownloadGoHeavy": {
                 "Required": {
-
+                  
                 },
                 "NonEditable": {
                   "Cavity_CycleSetOptionSmartHeatedDry": "Enabled",
@@ -1682,10 +1682,10 @@
               },
               "Cavity_CycleSetDownloadAndGoDownloadGoSpecialtyItems": {
                 "Required": {
-
+                  
                 },
                 "Optional": {
-
+                  
                 },
                 "NonEditable": {
                   "Cavity_CycleSetOptionSmartHeatedDry": "Enabled",
@@ -1695,10 +1695,10 @@
               },
               "Cavity_CycleSetDownloadAndGoDownloadGoSanitize": {
                 "Required": {
-
+                  
                 },
                 "Optional": {
-
+                  
                 },
                 "NonEditable": {
                   "Cavity_CycleSetOptionSmartHeatedDry": "Enabled",
@@ -1708,10 +1708,10 @@
               },
               "Cavity_CycleSetDownloadAndGoDownloadGoQuick": {
                 "Required": {
-
+                  
                 },
                 "Optional": {
-
+                  
                 },
                 "NonEditable": {
                   "Cavity_CycleSetCycleId": "CycleOneHourWash"
@@ -2045,16 +2045,16 @@
                 }
               },
               {
-                "ruleName": "Enable the StartCommand button",
-                "description": "Appliance can be started if the remote is enbled",
+                "ruleName": "Disable the StartCommand button",
+                "description": "Appliance can not be started if the remote is disabled",
                 "actions": {
-                  "ActionStartCommand": true
+                  "ActionSetCycleStartCommand": false
                 },
                 "condition": {
                   "type": "value",
                   "key": "XCat_RemoteSetRemoteControlEnable",
                   "valueOperator": "=",
-                  "value": 1
+                  "value": 0
                 }
               },
               {
@@ -2075,7 +2075,7 @@
         },
         "QueryParams": {
           "DishCavity": {
-
+            
           },
           "Common": {
             "FaultCodeHistory": {
@@ -2177,21 +2177,21 @@
             "name": "ADRS",
             "enabled": true,
             "config": [
-
+              
             ]
           },
           {
             "name": "Wallmart",
             "enabled": false,
             "config": [
-
+              
             ]
           },
           {
             "name": "Whirlpool",
             "enabled": false,
             "config": [
-
+              
             ]
           }
         ]
@@ -2228,14 +2228,14 @@
             "name": "National Grid",
             "enabled": false,
             "config": [
-
+              
             ]
           },
           {
             "name": "Genability",
             "enabled": false,
             "config": [
-
+              
             ]
           }
         ]
@@ -2248,14 +2248,14 @@
             "name": "Amazon Alexa",
             "enabled": false,
             "config": [
-
+              
             ]
           },
           {
             "name": "Google Home",
             "enabled": false,
             "config": [
-
+              
             ]
           }
         ]

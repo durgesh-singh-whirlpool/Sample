@@ -1389,7 +1389,7 @@
             },
             "SetCycle": {
               "Refrigerator_OpSetTempPreset": {
-
+                
               }
             }
           },
@@ -1410,7 +1410,7 @@
             },
             "SetCycle": {
               "Freezer_OpSetTempPreset": {
-
+                
               }
             }
           },
@@ -1443,7 +1443,7 @@
             },
             "SetCycle": {
               "Pantry_OpSetTempPreset": {
-
+                
               }
             }
           }
@@ -1496,7 +1496,6 @@
             },
             "MaxCool": {
               "Visible": true,
-              "ReadOnly": true,
               "AvailableIn": [
                 "US",
                 "CA"
@@ -1645,12 +1644,12 @@
           }
         },
         "QueryParams": {
-
+          
         }
       }
     ],
     "Rulesets": [
-
+      
     ]
   },
   "Alerts": {

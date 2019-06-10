@@ -1275,7 +1275,7 @@
             },
             "SetCycle": {
               "Refrigerator_OpSetTempPreset": {
-
+                
               }
             }
           },
@@ -1298,7 +1298,7 @@
             },
             "SetCycle": {
               "DeliDrawer_OpSetTempPreset": {
-
+                
               }
             }
           },
@@ -1318,7 +1318,7 @@
             },
             "SetCycle": {
               "CrisperDrawer_OpSetTempPreset": {
-
+                
               }
             }
           }
@@ -1363,7 +1363,6 @@
             },
             "MaxCool": {
               "Visible": true,
-              "ReadOnly": true,
               "AvailableIn": [
                 "US",
                 "CA"
@@ -1510,12 +1509,12 @@
           }
         },
         "QueryParams": {
-
+          
         }
       }
     ],
     "Rulesets": [
-
+      
     ]
   },
   "Alerts": {

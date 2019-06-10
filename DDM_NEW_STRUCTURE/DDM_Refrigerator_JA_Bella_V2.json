@@ -1389,7 +1389,7 @@
             },
             "SetCycle": {
               "Refrigerator_OpSetTempPreset": {
-
+                
               }
             }
           },
@@ -1410,7 +1410,7 @@
             },
             "SetCycle": {
               "Freezer_OpSetTempPreset": {
-
+                
               }
             }
           },
@@ -1443,7 +1443,7 @@
             },
             "SetCycle": {
               "Pantry_OpSetTempPreset": {
-
+                
               }
             }
           }
@@ -1496,7 +1496,6 @@
             },
             "MaxCool": {
               "Visible": true,
-              "ReadOnly": true,
               "AvailableIn": [
                 "US",
                 "CA"
@@ -1645,12 +1644,12 @@
           }
         },
         "QueryParams": {
-
+          
         }
       }
     ],
     "Rulesets": [
-
+      
     ]
   },
   "Alerts": {
@@ -1732,17 +1731,23 @@
           {
             "name": "ADRS",
             "enabled": false,
-            "config": {}
+            "config": {
+              
+            }
           },
           {
             "name": "Wallmart",
             "enabled": false,
-            "config": {}
+            "config": {
+              
+            }
           },
           {
             "name": "Whirlpool",
             "enabled": false,
-            "config": {}
+            "config": {
+              
+            }
           }
         ]
       },
@@ -1773,12 +1778,16 @@
           {
             "name": "National Grid",
             "enabled": false,
-            "config": {}
+            "config": {
+              
+            }
           },
           {
             "name": "Genability",
             "enabled": false,
-            "config": {}
+            "config": {
+              
+            }
           }
         ]
       },
@@ -1789,12 +1798,16 @@
           {
             "name": "Amazon Alexa",
             "enabled": false,
-            "config": {}
+            "config": {
+              
+            }
           },
           {
             "name": "Google Home",
             "enabled": false,
-            "config": {}
+            "config": {
+              
+            }
           }
         ]
       }

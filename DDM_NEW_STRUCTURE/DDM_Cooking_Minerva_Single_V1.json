@@ -2839,7 +2839,7 @@
                       550
                     ],
                     "Default": 325,
-                    "Offset": -20
+                    "Offset": -25
                   }
                 },
                 "Optional": {
@@ -3132,7 +3132,7 @@
                       525,
                       550
                     ],
-                    "Default": 350
+                    "Default": 325
                   }
                 },
                 "Optional": {
@@ -4587,7 +4587,7 @@
                 "US"
               ],
               "StateAttributes": {
-
+                
               },
               "StatusAttributes": [
                 "UpperCavity_CavityModeOven",
@@ -4772,6 +4772,16 @@
                   "LightOnOff": false,
                   "MyCreations": false
                 },
+                "actions": {
+                  "ActionKitchenTimerStart": false,
+                  "ActionKitchenTimerCancel": false,
+                  "ActionKitchenTimerModify": false,
+                  "ActionSetCycleSendCommand": false,
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": false,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleCancelCookTimeCommand": false
+                },
                 "condition": {
                   "type": "value",
                   "key": "Online",
@@ -4796,13 +4806,13 @@
                 "ruleName": "Disable the StartCommand button",
                 "description": "Appliance can not be started if the remote is disabled",
                 "actions": {
-                  "ActionStartCommand": false
+                  "ActionSetCycleStartCommand": false
                 },
                 "condition": {
                   "type": "value",
                   "key": "Appliance_RemoteEnabledStatus",
-                  "valueOperator": "!=",
-                  "value": 1
+                  "valueOperator": "=",
+                  "value": 0
                 }
               }
             ]
