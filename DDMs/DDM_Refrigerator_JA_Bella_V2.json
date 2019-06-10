@@ -1,20 +1,20 @@
 {
-  "_id": "DDM_Refrigerator_JA_Bella_V1",
-  "_rev": "18-1c2616a774337a4622dc088fa7f82552",
+  "_id": "DDM_Refrigerator_JA_Bella_V2",
+  "_rev": "16-972cf3eb65bb1302a50545e6529c4b64",
   "DDM": {
-    "_id": "DDM_Refrigerator_JA_Bella_V1",
-    "ddmName": "DDM_Refrigerator_JA_Bella_V1",
-    "modelNumber": "JFFCC72EFP00,JFFCC72EFP01,JFFCC72EFS01, JFFCC72EFS00, JFFCC72EHL",
-    "createdAt": "Mar 20, 2018 6:30:00 PM",
-    "createdBy": "Arjun",
+    "_id": "DDM_Refrigerator_JA_Bella_V2",
+    "ddmName": "DDM_Refrigerator_JA_Bella_V2",
+    "modelNumber": "JFFCC72EFP02,JFFCC72EFS02",
+    "createdAt": "Jul 2, 2018 6:30:00 PM",
+    "createdBy": "Priyanka Bhosale",
     "brandName": "JennAir",
     "category": "Refrigerator",
-    "version": "1.0",
-    "ccuriVersion": "1.0",
-    "ccURI": "API144_FRIG_V7"
+    "version": "2",
+    "ccuriVersion": "12",
+    "ccURI": "API144_FRIG_V12"
   },
   "DataModel": {
-    "Key": "DDM_Refrigerator_JA_Bella_V1",
+    "Key": "DDM_Refrigerator_JA_Bella_V2",
     "attributes": [
       {
         "IsTemplate": false,
@@ -1259,7 +1259,7 @@
     ]
   },
   "Personality": {
-    "Key": "DDM_Refrigerator_JA_Bella_V1",
+    "Key": "DDM_Refrigerator_JA_Bella_V2",
     "CavityOrder": [
       "RefrigeratorCavity",
       "FreezerCavity",
@@ -1482,16 +1482,6 @@
             "CA"
           ]
         },
-        "FilterStatus": {
-          "Visible": true,
-          "AvailableIn": [
-            "US",
-            "CA"
-          ],
-          "StateAttributes": {
-            "State": "Sys_OpSetWaterFilter"
-          }
-        },
         "ControlLock": {
           "Visible": true,
           "AvailableIn": [
@@ -1504,7 +1494,6 @@
         },
         "MaxCool": {
           "Visible": true,
-          "ReadOnly": true,
           "AvailableIn": [
             "US",
             "CA"
@@ -1548,20 +1537,6 @@
             "US",
             "CA"
           ]
-        },
-        "FavoriteFill1": {
-          "Visible": true,
-          "AvailableIn": [
-            "US",
-            "CA"
-          ]
-        },
-        "FavoriteFill2": {
-          "Visible": true,
-          "AvailableIn": [
-            "US",
-            "CA"
-          ]
         }
       },
       "RefrigeratorCavity": {
@@ -1570,10 +1545,7 @@
           "AvailableIn": [
             "US",
             "CA"
-          ],
-          "StateAttributes": {
-            "State": "Refrigerator_OpSetTargetTemp"
-          }
+          ]
         }
       },
       "FreezerCavity": {
@@ -1582,10 +1554,7 @@
           "AvailableIn": [
             "US",
             "CA"
-          ],
-          "StateAttributes": {
-            "State": "Freezer_OpSetTargetTemp"
-          }
+          ]
         }
       },
       "PantryCavity": {
@@ -1594,10 +1563,7 @@
           "AvailableIn": [
             "US",
             "CA"
-          ],
-          "StateAttributes": {
-            "State": "Pantry_OpSetTargetTemp"
-          }
+          ]
         }
       }
     },
@@ -1609,7 +1575,6 @@
             "description": "Disable All Features when appliance is offline",
             "features": {
               "ModifyRefrigerator": false
-
             },
             "condition": {
               "type": "value",
@@ -1627,7 +1592,6 @@
             "description": "Disable All Features when appliance is offline",
             "features": {
               "ModifyFreezer": false
-
             },
             "condition": {
               "type": "value",
@@ -1645,7 +1609,6 @@
             "description": "Disable All Features when appliance is offline",
             "features": {
               "ModifyPantry": false
-
             },
             "condition": {
               "type": "value",
@@ -1656,18 +1619,17 @@
           }
         ]
       },
-      "Common" :  {
+      "Common": {
         "Runtime": [
           {
             "ruleName": "Disable All Features when appliance is offline",
             "description": "Disable All Features when appliance is offline",
             "features": {
-              "AutoNightLight" : false,
-              "SabbathMode" : false,
-              "ControlLock" : false,
-              "MaxCool" : false,
-              "MaxIce" : false
-
+              "AutoNightLight": false,
+              "SabbathMode": false,
+              "ControlLock": false,
+              "MaxCool": false,
+              "MaxIce": false
             },
             "condition": {
               "type": "value",
@@ -1681,12 +1643,12 @@
     }
   },
   "Alerts": {
-    "Key": "DDM_Refrigerator_JA_Bella_V1",
+    "Key": "DDM_Refrigerator_JA_Bella_V2",
     "Alerts": [
       {
         "ApplianceAlerts": [
           {
-            "alertId": 647,
+            "alertId": 1222,
             "name": "DoorOpenAlert",
             "attribute": "Sys_AlertStatusDoorOpenAlarm",
             "type": "push",
@@ -1695,10 +1657,10 @@
             "autodisarm": true,
             "autodisable": false,
             "visible": true,
-            "enable": true
+            "enable": false
           },
           {
-            "alertId": 648,
+            "alertId": 1223,
             "name": "WaterFilter",
             "attribute": "Sys_OpSetWaterFilter",
             "type": "push",
@@ -1707,10 +1669,10 @@
             "autodisarm": true,
             "autodisable": false,
             "visible": true,
-            "enable": true
+            "enable": false
           },
           {
-            "alertId": 650,
+            "alertId": 1224,
             "name": "MaxIce",
             "attribute": "Sys_OpSetMaxIce",
             "type": "push",
@@ -1722,9 +1684,9 @@
             "enable": false
           },
           {
-            "alertId": 652,
-            "name": "MaxCool",
-            "attribute": "Sys_OpSetMaxCool",
+            "alertId": 1228,
+            "name": "OverTemp",
+            "attribute": "Refrigerator_OpStatusOverTemp,Freezer_OpStatusOverTemp",
             "type": "push",
             "category": "Refrigerator",
             "autodelete": false,
@@ -1734,24 +1696,51 @@
             "enable": false
           },
           {
-            "alertId": 654,
-            "name": "OverTemp",
-            "attribute": "Refrigerator_OpStatusOverTemp,Freezer_OpStatusOverTemp",
+            "alertId": 1229,
+            "name": "MaxCool",
+            "attribute": "Sys_OpSetMaxCool",
             "type": "push",
             "category": "Refrigerator",
             "autodelete": false,
             "autodisarm": true,
             "autodisable": false,
             "visible": true,
-            "enable": true
+            "enable": false
           }
         ]
       }
     ]
   },
   "Services": {
-    "_id": "DDM_Refrigerator_JA_Bella_V1",
+    "_id": "DDM_Refrigerator_JA_Bella_V2",
     "thirdPartyServices": [
+      {
+        "name": "Replenishment",
+        "enabled": false,
+        "serviceProvider": [
+          {
+            "name": "ADRS",
+            "enabled": false,
+            "config": {
+              
+            }
+          },
+          {
+            "name": "Wallmart",
+            "enabled": false,
+            "config": {
+              
+            }
+          },
+          {
+            "name": "Whirlpool",
+            "enabled": false,
+            "config": {
+              
+            }
+          }
+        ]
+      },
       {
         "name": "Thermostat",
         "enabled": true,
@@ -1759,14 +1748,56 @@
           {
             "name": "Nest",
             "enabled": true,
-            "config": [
-              {
-                "Key": "SmartEnergy",
-                "Type": "rush_hour_rewards",
-                "commandName": "",
-                "commandValue": ""
-              }
-            ]
+            "config": {
+              "config": [
+                {
+                  "Key": "SmartEnergy",
+                  "Type": "rush_hour_rewards",
+                  "commandName": "",
+                  "commandValue": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Energy Management",
+        "enabled": false,
+        "serviceProvider": [
+          {
+            "name": "National Grid",
+            "enabled": false,
+            "config": {
+              
+            }
+          },
+          {
+            "name": "Genability",
+            "enabled": false,
+            "config": {
+              
+            }
+          }
+        ]
+      },
+      {
+        "name": "Voice Integration",
+        "enabled": false,
+        "serviceProvider": [
+          {
+            "name": "Amazon Alexa",
+            "enabled": false,
+            "config": {
+              
+            }
+          },
+          {
+            "name": "Google Home",
+            "enabled": false,
+            "config": {
+              
+            }
           }
         ]
       }

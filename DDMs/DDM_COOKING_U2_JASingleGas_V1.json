@@ -2056,12 +2056,12 @@
           "OvenUpperCavity_CycleSetCommonModeCommonModeKeepWarm": {
             "Required": {
               "OvenUpperCavity_CycleSetTargetTemp": {
-                "TempRange": {
-                  "Min": 655,
-                  "Max": 877,
-                  "StepF": 25,
-                  "Default": 766
-                }
+                  "TempRange": {
+                      "Min": 655,
+                      "Max": 933,
+                      "StepF": 25,
+                      "Default": 794
+                  }
               },
               "OvenUpperCavity_OpSetCookTimeCompleteAction": {
                 "Enumeration": [
@@ -2408,7 +2408,8 @@
           "OvenUpperCavity_CycleSetCommonMode",
           "OvenUpperCavity_CycleSetConvectBakeFood",
           "OvenUpperCavity_CycleSetEasyConvectFood",
-          "OvenUpperCavity_CycleSetBreadProof"
+          "OvenUpperCavity_CycleSetBreadProof",
+          "OvenUpperCavity_CulinaryCtrSetId"
         ],
         "TimeElapsed": "OvenUpperCavity_TimeStatusCycleTimeElapsed",
         "DoorOpen": "OvenUpperCavity_OpStatusDoorOpen",
@@ -2431,7 +2432,8 @@
         "OpStatusCleanOven": "OvenUpperCavity_OpStatusCleanOven",
         "CulinaryVersion": "OvenUpperCavity_CulinaryCtrSetVersion",
         "CulinaryCtrSetId": "OvenUpperCavity_CulinaryCtrSetId",
-        "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId"
+        "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId",
+        "CavityOperations": "OvenUpperCavity_OpSetOperations"
       },
       "Common": {
         "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
@@ -2637,6 +2639,16 @@
           "SetOperationsMapping": {
             "Operation": "OvenUpperCavity_OpSetOperations",
             "EnvelopeAction" : "Relational_EnvelopeAction"
+          }
+        },
+        "LightOnOff": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "OvenUpperCavity_DisplaySetLightOn"
           }
         }
       }

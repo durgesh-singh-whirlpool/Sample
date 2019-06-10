@@ -1951,6 +1951,118 @@
         "Cavity_CycleSetDownloadAndGoDownloadGoGentle"
       ]
     },
+    "ApplianceRulesets": {
+      "DishCavity": {
+        "Runtime": [{
+          "ruleName": "Disable All Features when appliance is offline",
+          "description": "Disable All Features when appliance is offline",
+          "features": {
+            "QuietMode": false,
+            "SabbathMode" : false,
+            "SetDishWasher" : false
+          },
+          "condition": {
+            "type": "value",
+            "key": "Online",
+            "valueOperator": "=",
+            "value": 0
+          }
+        },
+          {
+            "ruleName": "Cancel the Running Cycle",
+            "description": "If Appliance is not idle, we can enable the cancel action",
+            "actions": {
+              "ActionCancelCommand": true
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_CycleStatusCycleState",
+              "valueOperator": "!=",
+              "value": "0"
+            }
+          },
+          {
+            "ruleName": "Enable Cancel option if, An istruction already entered in Appliance",
+            "description": "Cavity_OperationStatusMachineState ==Standby, this is instruction sent to appliance",
+            "actions": {
+              "ActionCancelCommand": true
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_OperationStatusMachineState",
+              "valueOperator": "=",
+              "value": "1"
+            }
+          },
+          {
+            "ruleName": "Disable Cancel, Mofidy, Start options if appliance is draining",
+            "description": "Cavity_OperationStatusMachineState ==Drain, this is instruction sent to appliance",
+            "actions": {
+              "ActionCancelCommand": false,
+              "ActionStartCommand": false,
+              "ActionModifyCommand": false,
+              "ActionSendToApplianceCommand": false
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_OperationStatusMachineState",
+              "valueOperator": "=",
+              "value": "8"
+            }
+          },
+          {
+            "ruleName": "Enable Cancel option if, Cycle is delaying",
+            "description": "A command can be started if the device is online and remote is enbled",
+            "actions": {
+              "ActionCancelCommand": true
+            },
+            "condition": {
+              "type": "operation",
+              "binaryOperator": "or",
+              "left": {
+                "type": "value",
+                "key": "Cavity_OperationStatusMachineState",
+                "valueOperator": "=",
+                "value": "5"
+              },
+              "right": {
+                "type": "value",
+                "key": "Cavity_OperationStatusMachineState",
+                "valueOperator": "=",
+                "value": "6"
+              }
+            }
+          },
+          {
+                        "ruleName": "Disable the StartCommand button",
+                        "description": "Appliance can not be started if the remote is disabled",
+                        "actions": {
+                            "ActionSetCycleStartCommand": false
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "XCat_RemoteSetRemoteControlEnable",
+                            "valueOperator": "=",
+                            "value": 0
+                        }
+                    },
+          
+          {
+            "ruleName": "If delay is selected, send to appliance should be disabled",
+            "description": "If delay is selected, send to appliance should be disabled",
+            "actions": {
+              "ActionSendToApplianceCommand": false
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_TimeSetDelayTime",
+              "valueOperator": ">",
+              "value": 0
+            }
+          }
+        ]
+      }
+    },
     "Rulesets": {
       
     }

@@ -2837,7 +2837,7 @@
                   550
                 ],
                 "Default": 325,
-                "Offset": -20
+                "Offset": -25
               }
             },
             "Optional": {
@@ -3130,7 +3130,7 @@
                   525,
                   550
                 ],
-                "Default": 350
+                "Default": 325
               }
             },
             "Optional": {
@@ -4372,7 +4372,8 @@
     "AttributesMapping": {
       "OvenUpperCavity": {
         "CycleName": [
-          "UpperCavity_CavityModeOven"
+          "UpperCavity_CavityModeOven",
+          "UpperCavity_CulinaryCenterID"
         ],
         "TimeElapsed": "UpperCavity_ElapseCookTime",
         "DoorOpen": "UpperCavity_CavityDoorStatus",
@@ -4393,7 +4394,9 @@
         "CavityEventNotification": "UpperCavity_CavityEventNotification",
         "CookTimeSetTime": "UpperCavity_CookTimeSetTime",
         "DelayTimeSetTime": "UpperCavity_DelayTimeSetTime",
-        "CookTimeRemaining": "UpperCavity_CookTimeRemaining"
+        "CookTimeRemaining": "UpperCavity_CookTimeRemaining",
+        "CulinaryCtrSetId": "UpperCavity_CulinaryCenterID",
+        "CavityOperations": "UpperCavity_CavityOperations"
       },
       "Common": {
         "DisplayOnOff": "SystemSettings_DisplayOnOff",
@@ -4767,6 +4770,16 @@
               "LightOnOff": false,
               "MyCreations": false
             },
+            "actions": {
+              "ActionKitchenTimerStart": false,
+              "ActionKitchenTimerCancel": false,
+              "ActionKitchenTimerModify": false,
+              "ActionSetCycleSendCommand": false,
+              "ActionSetCycleStartCommand": false,
+              "ActionSetCycleCancelCommand": false,
+              "ActionSetCycleModifyCommand": false,
+              "ActionSetCycleCancelCookTimeCommand": false
+            },
             "condition": {
               "type": "value",
               "key": "Online",
@@ -4791,13 +4804,13 @@
             "ruleName": "Disable the StartCommand button",
             "description": "Appliance can not be started if the remote is disabled",
             "actions": {
-              "ActionStartCommand": false
+              "ActionSetCycleStartCommand": false
             },
             "condition": {
               "type": "value",
               "key": "Appliance_RemoteEnabledStatus",
-              "valueOperator": "!=",
-              "value": 1
+              "valueOperator": "=",
+              "value": 0
             }
           }
         ]

@@ -1487,7 +1487,6 @@
         },
         "MaxCool": {
           "Visible": true,
-          "ReadOnly": true,
           "AvailableIn": [
             "US",
             "CA"

@@ -3751,7 +3751,7 @@
                                     550
                                 ],
                                 "Default": 325,
-                                "Offset": -20
+                                "Offset": -25
                             }
                         },
                         "Optional": {
@@ -4044,7 +4044,7 @@
                                     525,
                                     550
                                 ],
-                                "Default": 350
+                                "Default": 325
                             }
                         },
                         "Optional": {
@@ -5305,7 +5305,8 @@
             },
             "OvenLowerCavity": {
                 "CycleName": [
-                    "LowerCavity_CavityModeOven"
+                    "LowerCavity_CavityModeOven",
+                    "LowerCavity_CulinaryCenterID"
                 ],
                 "TimeElapsed": "LowerCavity_ElapseCookTime",
                 "DoorOpen": "LowerCavity_CavityDoorStatus",
@@ -5326,7 +5327,9 @@
                 "CavityEventNotification": "LowerCavity_CavityEventNotification",
                 "CookTimeSetTime": "LowerCavity_CookTimeSetTime",
                 "DelayTimeSetTime": "LowerCavity_DelayTimeSetTime",
-                "CookTimeRemaining": "LowerCavity_CookTimeRemaining"
+                "CookTimeRemaining": "LowerCavity_CookTimeRemaining",
+                "CulinaryCtrSetId": "LowerCavity_CulinaryCenterID",
+                "CavityOperations": "LowerCavity_CavityOperations"
             },
             "Common": {
                 "DisplayOnOff": "SystemSettings_DisplayOnOff",
@@ -5764,13 +5767,13 @@
                         "ruleName": "Disable the StartCommand button",
                         "description": "Appliance can not be started if the remote is disabled",
                         "actions": {
-                            "ActionStartCommand": false
+                            "ActionSetCycleStartCommand": false
                         },
                         "condition": {
                             "type": "value",
                             "key": "Appliance_RemoteEnabledStatus",
-                            "valueOperator": "!=",
-                            "value": 1
+                            "valueOperator": "=",
+                            "value": 0
                         }
                     }
                 ]

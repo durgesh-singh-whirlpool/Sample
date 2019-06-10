@@ -2684,12 +2684,12 @@
           "OvenUpperCavity_CycleSetCommonModeCommonModeKeepWarm": {
             "Required": {
               "OvenUpperCavity_CycleSetTargetTemp": {
-                "TempRange": {
-                  "Min": 655,
-                  "Max": 877,
-                  "StepF": 25,
-                  "Default": 766
-                }
+                  "TempRange": {
+                      "Min": 655,
+                      "Max": 933,
+                      "StepF": 25,
+                      "Default": 794
+                  }
               },
               "OvenUpperCavity_OpSetCookTimeCompleteAction": {
                 "Enumeration": [
@@ -3044,7 +3044,8 @@
           "OvenUpperCavity_CycleSetCommonMode",
           "OvenUpperCavity_CycleSetConvectBakeFood",
           "OvenUpperCavity_CycleSetEasyConvectFood",
-          "OvenUpperCavity_CycleSetBreadProof"
+          "OvenUpperCavity_CycleSetBreadProof",
+          "OvenUpperCavity_CulinaryCtrSetId"
         ],
         "TimeElapsed": "OvenUpperCavity_TimeStatusCycleTimeElapsed",
         "DoorOpen": "OvenUpperCavity_OpStatusDoorOpen",
@@ -3066,7 +3067,8 @@
         "OpStatusCleanOven": "OvenUpperCavity_OpStatusCleanOven",
         "CulinaryVersion": "OvenUpperCavity_CulinaryCtrSetVersion",
         "CulinaryCtrSetId": "OvenUpperCavity_CulinaryCtrSetId",
-        "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId"
+        "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId",
+        "CavityOperations": "OvenUpperCavity_OpSetOperations"
       },
       "Common": {
         "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
@@ -3107,7 +3109,7 @@
     "Features": {
       "Common": {
         "LocalKitchenTimer": {
-          "Visible": false,
+          "Visible": true,
           "AvailableIn": [
             "US"
           ]
@@ -3273,7 +3275,75 @@
             "Operation": "OvenUpperCavity_OpSetOperations",
             "EnvelopeAction" : "Relational_EnvelopeAction"
           }
+        },
+        "LightOnOff": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "OvenUpperCavity_DisplaySetLightOn"
+          }
         }
+      }
+    },
+    "ApplianceRulesets": {
+      "OvenUpperCavity": {
+        "Runtime": [{
+          "ruleName": "Disable All Features when appliance is offline",
+          "description": "Disable All Features when appliance is offline",
+          "features": {
+            "AssistedCooking": false,
+            "SetOven": false,
+            "MeatProbe": false
+
+          },
+          "condition": {
+            "type": "value",
+            "key": "Online",
+            "valueOperator": "=",
+            "value": 0
+          }
+        },
+          {
+            "ruleName": "Cancel the Running Cycle",
+            "description": "If Appliance is not idle, we can enable the cancel action",
+            "attributes": {
+              "OvenUpperCavity_CycleSetCommonMode": false,
+              "OvenUpperCavity_CycleSetConvectBakeFood": false,
+              "OvenUpperCavity_CycleSetEasyConvectFood": false,
+              "OvenUpperCavity_CycleSetBreadProof": false
+            },
+            "features": {
+              "AssistedCooking": false
+            },
+            "actions": {
+              "ActionStartCommand": false,
+              "ActionCancelCommand": true,
+              "ActionModifyCommand": true
+            },
+            "condition": {
+              "type": "value",
+              "key": "OvenUpperCavity_OpStatusState",
+              "valueOperator": "!=",
+              "value": 0
+            }
+          },
+          {
+            "ruleName": "Disable the StartCommand button",
+            "description": "Appliance can not be started if the remote is disabled",
+            "actions": {
+              "ActionSetCycleStartCommand": false
+            },
+            "condition": {
+              "type": "value",
+              "key": "XCat_RemoteSetRemoteControlEnable",
+              "valueOperator": "=",
+              "value": 0
+            }
+          }
+        ]
       }
     },
     "Rulesets": {

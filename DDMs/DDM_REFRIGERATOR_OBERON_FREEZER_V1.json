@@ -1310,15 +1310,13 @@
             "State": "Sys_OpSetControlLock"
           }
         },
-        "MaxCool": {
+        "MaxIce": {
           "Visible": true,
-          "ReadOnly": true,
           "AvailableIn": [
-            "US",
-            "CA"
+            "US"
           ],
           "StateAttributes": {
-            "State": "Sys_OpSetMaxCool"
+            "State": "Sys_OpSetMaxIce"
           }
         },
         "IceMaker": {

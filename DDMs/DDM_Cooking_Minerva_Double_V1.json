@@ -3532,7 +3532,7 @@
                                     550
                                 ],
                                 "Default": 325,
-                                "Offset": -20
+                                "Offset": -25
                             }
                         },
                         "Optional": {
@@ -3825,7 +3825,7 @@
                                     525,
                                     550
                                 ],
-                                "Default": 350
+                                "Default": 325
                             }
                         },
                         "Optional": {
@@ -5637,7 +5637,7 @@
                                     550
                                 ],
                                 "Default": 325,
-                                "Offset": -20
+                                "Offset": -25
                             }
                         },
                         "Optional": {
@@ -5930,7 +5930,7 @@
                                     525,
                                     550
                                 ],
-                                "Default": 350
+                                "Default": 325
                             }
                         },
                         "Optional": {
@@ -7172,7 +7172,8 @@
         "AttributesMapping": {
             "OvenUpperCavity": {
                 "CycleName": [
-                    "UpperCavity_CavityModeOven"
+                    "UpperCavity_CavityModeOven",
+                    "UpperCavity_CulinaryCenterID"
                 ],
                 "TimeElapsed": "UpperCavity_ElapseCookTime",
                 "DoorOpen": "UpperCavity_CavityDoorStatus",
@@ -7193,11 +7194,14 @@
                 "CavityEventNotification": "UpperCavity_CavityEventNotification",
                 "CookTimeSetTime": "UpperCavity_CookTimeSetTime",
                 "DelayTimeSetTime": "UpperCavity_DelayTimeSetTime",
-                "CookTimeRemaining": "UpperCavity_CookTimeRemaining"
+                "CookTimeRemaining": "UpperCavity_CookTimeRemaining",
+                "CulinaryCtrSetId": "UpperCavity_CulinaryCenterID",
+                "CavityOperations": "UpperCavity_CavityOperations"
             },
             "OvenLowerCavity": {
                 "CycleName": [
-                    "LowerCavity_CavityModeOven"
+                    "LowerCavity_CavityModeOven",
+                    "LowerCavity_CulinaryCenterID"
                 ],
                 "TimeElapsed": "LowerCavity_ElapseCookTime",
                 "DoorOpen": "LowerCavity_CavityDoorStatus",
@@ -7218,7 +7222,9 @@
                 "CavityEventNotification": "LowerCavity_CavityEventNotification",
                 "CookTimeSetTime": "LowerCavity_CookTimeSetTime",
                 "DelayTimeSetTime": "LowerCavity_DelayTimeSetTime",
-                "CookTimeRemaining": "LowerCavity_CookTimeRemaining"
+                "CookTimeRemaining": "LowerCavity_CookTimeRemaining",
+                "CulinaryCtrSetId": "LowerCavity_CulinaryCenterID",
+                "CavityOperations": "LowerCavity_CavityOperations"
             },
             "Common": {
                 "DisplayOnOff": "SystemSettings_DisplayOnOff",
@@ -7525,7 +7531,7 @@
                     }
                 },
                 "CyclesHistory": {
-                    "Visible": true,
+                    "Visible": false,
                     "AvailableIn": [
                         "US",
                         "CA"
@@ -7762,9 +7768,32 @@
                             "LightOnOff": false,
                             "MyCreations": false
                         },
+                        "actions": {
+                            "ActionKitchenTimerStart": false,
+                            "ActionKitchenTimerCancel": false,
+                            "ActionKitchenTimerModify": false,
+                            "ActionSetCycleSendCommand": false,
+                            "ActionSetCycleStartCommand": false,
+                            "ActionSetCycleCancelCommand": false,
+                            "ActionSetCycleModifyCommand": false,
+                            "ActionSetCycleCancelCookTimeCommand": false
+                        },
                         "condition": {
                             "type": "value",
                             "key": "Online",
+                            "valueOperator": "=",
+                            "value": 0
+                        }
+                    },
+                    {
+                        "ruleName": "Disable the StartCommand button",
+                        "description": "Appliance can not be started if the remote is disabled",
+                        "actions": {
+                            "ActionSetCycleStartCommand": false
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "Appliance_RemoteEnabledStatus",
                             "valueOperator": "=",
                             "value": 0
                         }
@@ -7780,19 +7809,6 @@
                             "key": "UpperCavity_CavityHeatState",
                             "valueOperator": "!=",
                             "value": "0"
-                        }
-                    },
-                    {
-                        "ruleName": "Disable the StartCommand button",
-                        "description": "Appliance can not be started if the remote is disabled",
-                        "actions": {
-                            "ActionStartCommand": false
-                        },
-                        "condition": {
-                            "type": "value",
-                            "key": "Appliance_RemoteEnabledStatus",
-                            "valueOperator": "!=",
-                            "value": 1
                         }
                     }
                 ]
@@ -7821,7 +7837,28 @@
                         "ruleName": "Cancel the Running Cycle",
                         "description": "If Appliance is not idle, we can enable the cancel action",
                         "actions": {
-                            "ActionCancelCommand": true
+                            "ActionSetCycleStartCommand" : false,
+                            "ActionSetCycleSendCommand" : false,
+                            "ActionSetCycleCancelCommand" : true,
+                            "ActionSetCycleModifyCommand" : true
+
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "LowerCavity_CavityHeatState",
+                            "valueOperator": "!=",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "ruleName": "Cancel the cook time, If it is running",
+                        "description": "Cancel the cook time, If it is running",
+                        "actions": {
+                            "ActionSetCycleStartCommand" : false,
+                            "ActionSetCycleSendCommand" : false,
+                            "ActionSetCycleCancelCommand" : true,
+                            "ActionSetCycleModifyCommand" : true
+
                         },
                         "condition": {
                             "type": "value",
@@ -7864,6 +7901,7 @@
                             "ChangeSoundKeyPress": false,
                             "ChangeDisplayOnOffStatus": false,
                             "ChangeBrightness": false
+
                         },
                         "condition": {
                             "type": "value",

@@ -2767,9 +2767,9 @@
               "OvenUpperCavity_CycleSetTargetTemp": {
                 "TempRange": {
                   "Min": 655,
-                  "Max": 877,
+                  "Max": 933,
                   "StepF": 25,
-                  "Default": 766
+                  "Default": 794
                 }
               },
               "OvenUpperCavity_OpSetCookTimeCompleteAction": {
@@ -3635,12 +3635,12 @@
           "OvenLowerCavity_CycleSetCommonModeCommonModeKeepWarm": {
             "Required": {
               "OvenLowerCavity_CycleSetTargetTemp": {
-                "TempRange": {
-                  "Min": 655,
-                  "Max": 877,
-                  "StepF": 25,
-                  "Default": 766
-                }
+                  "TempRange": {
+                      "Min": 655,
+                      "Max": 933,
+                      "StepF": 25,
+                      "Default": 794
+                  }
               },
               "OvenLowerCavity_OpSetCookTimeCompleteAction": {
                 "Enumeration": [
@@ -3996,7 +3996,8 @@
           "OvenUpperCavity_CycleSetConvectBakeFood",
           "OvenUpperCavity_CycleSetEasySteamFood",
           "OvenUpperCavity_CycleSetEasyConvectFood",
-          "OvenUpperCavity_CycleSetBreadProof"
+          "OvenUpperCavity_CycleSetBreadProof",
+          "OvenUpperCavity_CulinaryCtrSetId"
         ],
         "TimeElapsed": "OvenUpperCavity_TimeStatusCycleTimeElapsed",
         "DoorOpen": "OvenUpperCavity_OpStatusDoorOpen",
@@ -4019,7 +4020,8 @@
         "OpStatusCleanOven": "OvenUpperCavity_OpStatusCleanOven",
         "CulinaryVersion": "OvenUpperCavity_CulinaryCtrSetVersion",
         "CulinaryCtrSetId": "OvenUpperCavity_CulinaryCtrSetId",
-        "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId"
+        "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId",
+        "CavityOperations": "OvenUpperCavity_OpSetOperations"
       },
       "OvenLowerCavity": {
         "CycleName": [
@@ -4046,7 +4048,8 @@
         "CookTimeRemaining": "OvenLowerCavity_TimeStatusCookTimeRemaining",
         "OpStatusState": "OvenLowerCavity_OpStatusState",
         "OpStatusCleanOven": "OvenLowerCavity_OpStatusCleanOven",
-        "CustomCycleSetId": "OvenLowerCavity_CustomCycleSetId"
+        "CustomCycleSetId": "OvenLowerCavity_CustomCycleSetId",
+        "CavityOperations": "OvenLowerCavity_OpSetOperations"
       },
       "Common": {
         "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
@@ -4227,6 +4230,16 @@
             "Operation": "OvenUpperCavity_OpSetOperations",
             "EnvelopeAction": "Relational_EnvelopeAction"
           }
+        },
+        "LightOnOff": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "OvenUpperCavity_DisplaySetLightOn"
+          }
         }
       },
       "OvenLowerCavity": {
@@ -4335,6 +4348,16 @@
             "EnvelopeAction": "Relational_EnvelopeAction"
 
           }
+        },
+        "LightOnOff": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "OvenLowerCavity_DisplaySetLightOn"
+          }
         }
       }
     },
@@ -4440,13 +4463,13 @@
             "ruleName": "Disable the StartCommand button",
             "description": "Appliance can not be started if the remote is disabled",
             "actions": {
-              "ActionStartCommand": false
+              "ActionSetCycleStartCommand": false
             },
             "condition": {
               "type": "value",
               "key": "XCat_RemoteSetRemoteControlEnable",
-              "valueOperator": "!=",
-              "value": 1
+              "valueOperator": "=",
+              "value": 0
             }
           }
         ]
@@ -4484,13 +4507,13 @@
             "ruleName": "Disable the StartCommand button",
             "description": "Appliance can not be started if the remote is disabled",
             "actions": {
-              "ActionStartCommand": false
+              "ActionSetCycleStartCommand": false
             },
             "condition": {
               "type": "value",
               "key": "XCat_RemoteSetRemoteControlEnable",
-              "valueOperator": "!=",
-              "value": 1
+              "valueOperator": "=",
+              "value": 0
             }
           }
         ]
