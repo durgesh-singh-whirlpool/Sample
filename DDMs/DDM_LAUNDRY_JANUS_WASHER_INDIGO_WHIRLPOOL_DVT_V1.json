@@ -3992,7 +3992,9 @@
 			},
 			"Common": {
 				"OpStatusState": "Cavity_CycleStatusMachineState",
-				"ControlLock": "Sys_OpSetControlLock"
+				"ControlLock": "Sys_OpSetControlLock",
+				"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
+				"Online": "online"
 			}
 		},
 		"Features": {
@@ -4020,7 +4022,29 @@
 						"US",
 						"CA"
 					]
-				}
+				},
+        "RemoteStatus": {
+          "Visible": true,
+          "ReadOnly": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "XCat_RemoteSetRemoteControlEnable"
+          }
+        },
+		"Online": {
+          "Visible": true,
+          "ReadOnly": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "online"
+          }
+        }
 			},
 			"WashCavity": {
 				"SetCycle": {
