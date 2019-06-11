@@ -757,7 +757,15 @@
     "LowerCavity_CavityModeOvenKeepWarm.Label": "Keep Warm",
     "LowerCavity_CavityModeOvenRapidProof.Label": "Rapid Proof",
     "LowerCavity_CavityModeOvenProof.Label": "Proof",
-    "LowerCavity_CavityModeOvenSabbath.Label": "Sabbath"
+    "LowerCavity_CavityModeOvenSabbath.Label": "Sabbath",
+    "ControlLock.Label" : "Control lock",
+    "ControlLock.Description": "Allows you to lock the controls to prevent unintended use of the appliance.",
+    "Notifications.Label" : "Notifications",
+    "Notifications.Description" : "Start or stop notifications for individual notifications at any time",
+    "KitchenTimer.Label" : "Kitchen timer",
+    "KitchenTimer.Description" : "Set a timer to measure specific time intervals during the cooking process",
+    "LightOnOff.Label" : "Cavity light",
+    "LightOnOff.Description" : "Turn your cavity light on/off any any time"
   },
   "AFCSelfHelpPack": {
     "F1,E0": {

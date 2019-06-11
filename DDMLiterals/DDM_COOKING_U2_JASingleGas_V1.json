@@ -202,7 +202,15 @@
     "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast3.Label": "Convect Slow Roast HI",
     "ProbeCook.Label": "Probe Cook",
     "Manual.Label": "Manual",
-    "Auto.Label": "Auto"
+    "Auto.Label": "Auto",
+    "ControlLock.Label" : "Control lock",
+    "ControlLock.Description": "Allows you to lock the controls to prevent unintended use of the appliance.",
+    "Notifications.Label" : "Notifications",
+    "Notifications.Description" : "Start or stop notifications for individual notifications at any time",
+    "LocalKitchenTimer.Label" : "Kitchen timer",
+    "LocalKitchenTimer.Description" : "Set a timer to measure specific time intervals during the cooking process",
+    "LightOnOff.Label" : "Cavity light",
+    "LightOnOff.Description" : "Turn your cavity light on/off any any time"
   },
   "AFCSelfHelpPack": {
     "F0,E0": {

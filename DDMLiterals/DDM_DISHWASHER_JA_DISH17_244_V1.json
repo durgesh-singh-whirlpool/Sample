@@ -177,7 +177,16 @@
     "Cavity_CycleSetOptionSmartHeatedDry.Description": "Active drying that evenly dries with heat and a fan.",
     "Cavity_CycleSetOptionBottleWashZone.Description": "Articulating nozzles deliver a high-powered spray into tall items, including vases and champagne flutes.",
     "Cavity_CycleSetOptionSteam.Description": "Helps your stemware glisten by generating a cloud of steam before the final rinse cycle.",
-    "Cavity_CycleSetOptionHighTemp.Description": "Provides increased water temperature during washing for hard-to-remove soils."
+    "Cavity_CycleSetOptionHighTemp.Description": "Provides increased water temperature during washing for hard-to-remove soils.",
+        "ControlLock.Label" : "Control lock",
+        "ControlLock.Description": "Lock the controls to prevent unintended use of the appliance",
+        "Notifications.Label" : "Notifications",
+        "Notifications.Description" : "Start or stop notifications for individual notifications at any time",
+        "SabbathMode.Label" : "Sabbath mode",
+        "SabbathMode.Description" : "Set your dishwasher to act in accordance with religious guidelines for use during the Sabbath and religious holidays",
+        "QuietMode.Label" : "Quiet mode",
+        "QuietMode.Description" : "Silences all tones and audio of your dishwasher"
+
   },
   "AFCSelfHelpPack": {
     "F1,E2": {
