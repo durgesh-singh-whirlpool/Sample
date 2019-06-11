@@ -91,8 +91,17 @@
         "XCat_WifiStatusRssiDisplay.Label": "WiFi Status RSSI Display",
         "RefrigeratorCavity.Label" : "Refrigerator",
         "DeliDrawerCavity.Label" : "Deli Drawer",
-        "CrisperDrawerCavity.Label" : "Crisper Drawer"
-
+        "CrisperDrawerCavity.Label" : "Crisper Drawer",
+        "ControlLock.Label" : "Control lock",
+        "SabbathMode.Label" : "Sabbath Mode",
+        "Notifications.Label" : "Notifications",
+        "ApplianceDocuments" : "Documents",
+        "ControlLock.Description": "Lock the controls to prevent unintended use of the appliance",
+        "Notifications.Description" : "Start or stop notifications for individual notifications at any time",
+        "SabbathMode.Description" : "Set your dishwasher to act in accordance with religious guidelines for use during the Sabbath and religious holidays",
+        "MaxCool.Label" : "Max cool",
+        "MaxCool.Description" : "Accelerates the cooling process for your refrigerator"
+        
     },
     "AFCSelfHelpPack": {},
     "MobileLiterals": {
