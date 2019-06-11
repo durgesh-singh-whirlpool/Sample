@@ -3130,7 +3130,7 @@
                   525,
                   550
                 ],
-                "Default": 350
+                "Default": 325
               }
             },
             "Optional": {
@@ -4769,6 +4769,16 @@
               "SetOven": false,
               "LightOnOff": false,
               "MyCreations": false
+            },
+            "actions": {
+              "ActionKitchenTimerStart": false,
+              "ActionKitchenTimerCancel": false,
+              "ActionKitchenTimerModify": false,
+              "ActionSetCycleSendCommand": false,
+              "ActionSetCycleStartCommand": false,
+              "ActionSetCycleCancelCommand": false,
+              "ActionSetCycleModifyCommand": false,
+              "ActionSetCycleCancelCookTimeCommand": false
             },
             "condition": {
               "type": "value",

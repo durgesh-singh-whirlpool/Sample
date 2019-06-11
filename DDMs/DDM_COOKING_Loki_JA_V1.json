@@ -984,12 +984,12 @@
     },
     "Rulesets": {
       "FaultCodeHistory": {
-        "isLegacy": "false",
+        "isLegacy": false,
         "attributes": "Sys_AlertStatusCustomerFaultCode",
         "groupBy": "Sys_AlertStatusCustomerFaultCode"
       },
       "EnergyHistory": {
-        "isLegacy": "false",
+        "isLegacy": false,
         "attributes": "XCat_PowerStatusEnergyConsumption ",
         "groupBy": "XCat_PowerStatusEnergyConsumption "
       }

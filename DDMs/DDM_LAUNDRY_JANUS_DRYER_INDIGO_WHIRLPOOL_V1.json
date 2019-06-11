@@ -1437,7 +1437,10 @@
 						}
 					},
 					"DryCycleHeavyDuty": {
+<<<<<<< HEAD
 					"Required": {
+=======
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -1478,10 +1481,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleSanitize": {
 					"Required": {
+=======
+					},
+					"DryCycleSanitize": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessMoreMid"
@@ -1501,10 +1509,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleTimedDry": {
 					"Required": {
+=======
+					},
+					"DryCycleTimedDry": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								1800,
@@ -1531,10 +1544,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleRapidDryExpress": {
 					"Required": {
+=======
+					},
+					"DryCycleRapidDryExpress": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								900,
@@ -1561,10 +1579,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleDelicate": {
 					"Required": {
+=======
+					},
+					"DryCycleDelicate": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -1604,10 +1627,15 @@
 							],
 							"Default": "DryTempCoolMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToDelicatesHowToWrinkleControl": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToDelicatesHowToWrinkleControl": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -1647,10 +1675,15 @@
 							],
 							"Default": "DryTempCoolLow"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToDelicatesHowToHeavyDuty": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToDelicatesHowToHeavyDuty": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -1690,10 +1723,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToDelicatesHowToTimed": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToDelicatesHowToTimed": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								1800,
@@ -1719,10 +1757,15 @@
 							],
 							"Default": "DryTempCoolLow"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToDelicatesHowToQuick": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToDelicatesHowToQuick": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								900,
@@ -1748,10 +1791,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleBeddingBulky": {
 					"Required": {
+=======
+					},
+					"DryCycleBeddingBulky": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -1792,10 +1840,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToBulkyHowToWrinkleControl": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToBulkyHowToWrinkleControl": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -1836,10 +1889,15 @@
 							],
 							"Default": "DryTempCoolMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToBulkyHowToHeavyDuty": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToBulkyHowToHeavyDuty": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -1880,10 +1938,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToBulkyHowToSanitize": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToBulkyHowToSanitize": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessMoreMid"
@@ -1903,10 +1966,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToBulkyHowToTimed": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToBulkyHowToTimed": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								1800,
@@ -1933,10 +2001,15 @@
 							],
 							"Default": "DryTempCoolMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToBulkyHowToQuick": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToBulkyHowToQuick": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								900,
@@ -1963,10 +2036,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhites": {
 					"Required": {
+=======
+					},
+					"DryCycleWhites": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2007,10 +2085,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToWhitesHowToWrinkleControl": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToWhitesHowToWrinkleControl": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2051,10 +2134,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToWhitesHowToHeavyDuty": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToWhitesHowToHeavyDuty": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2095,10 +2183,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToWhitesHowToSanitize": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToWhitesHowToSanitize": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessMoreMid"
@@ -2118,10 +2211,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToWhitesHowToTimed": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToWhitesHowToTimed": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								1800,
@@ -2148,10 +2246,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToWhitesHowToQuick": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToWhitesHowToQuick": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								900,
@@ -2178,10 +2281,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleColorsBrights": {
 					"Required": {
+=======
+					},
+					"DryCycleColorsBrights": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2222,10 +2330,15 @@
 							],
 							"Default": "DryTempCoolMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToColorsBrightsHowToWrinkleControl": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToColorsBrightsHowToWrinkleControl": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2266,10 +2379,15 @@
 							],
 							"Default": "DryTempCoolMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToColorsBrightsHowToHeavyDuty": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToColorsBrightsHowToHeavyDuty": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2310,10 +2428,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToColorsBrightsHowToSanitize": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToColorsBrightsHowToSanitize": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessMoreMid"
@@ -2333,10 +2456,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToColorsBrightsHowToTimed": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToColorsBrightsHowToTimed": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								1800,
@@ -2363,10 +2491,15 @@
 							],
 							"Default": "DryTempCoolMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToColorsBrightsHowToQuick": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToColorsBrightsHowToQuick": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								900,
@@ -2393,10 +2526,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleTowels": {
 					"Required": {
+=======
+					},
+					"DryCycleTowels": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2437,10 +2575,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToTowelsHowToWrinkleControl": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToTowelsHowToWrinkleControl": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2481,10 +2624,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToTowelsHowToHeavyDuty": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToTowelsHowToHeavyDuty": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessLessMid",
@@ -2525,10 +2673,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToTowelsHowToSanitize": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToTowelsHowToSanitize": {
+>>>>>>> master
 						"DryCavity_CycleSetDryness": {
 							"Enumeration": [
 								"DrynessMoreMid"
@@ -2548,10 +2701,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToTowelsHowToTimed": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToTowelsHowToTimed": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								1800,
@@ -2578,10 +2736,15 @@
 							],
 							"Default": "DryTempWarmMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleWhatToTowelsHowToQuick": {
 					"Required": {
+=======
+					},
+					"DryCycleWhatToTowelsHowToQuick": {
+>>>>>>> master
 						"DryCavity_CycleSetManualDryTime": {
 							"List": [
 								900,
@@ -2608,10 +2771,15 @@
 							],
 							"Default": "DryTempHotMid"
 						}
+<<<<<<< HEAD
 						}
 					},
 					"DryCycleSteamRefresh": {
 					"Required": {
+=======
+					},
+					"DryCycleSteamRefresh": {
+>>>>>>> master
 						"DryCavity_CycleSetWrinkleShield": {
 							"Enumeration": [
 								"WrinkleShieldOff",
@@ -2628,7 +2796,10 @@
 							"Default": "DryTempWarmMid"
 						}
 					}
+<<<<<<< HEAD
 					}
+=======
+>>>>>>> master
 				},
 				"SetCycle": {
 					"Regular": {
@@ -2962,7 +3133,11 @@
 					]
 				}
 			},
+<<<<<<< HEAD
 			"DryCavity": {
+=======
+			"WashCavity": {
+>>>>>>> master
 				"SetCycle": {
 					"Visible": true,
 					"AvailableIn": [

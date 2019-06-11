@@ -3825,7 +3825,7 @@
                                     525,
                                     550
                                 ],
-                                "Default": 350
+                                "Default": 325
                             }
                         },
                         "Optional": {
@@ -5930,7 +5930,7 @@
                                     525,
                                     550
                                 ],
-                                "Default": 350
+                                "Default": 325
                             }
                         },
                         "Optional": {
@@ -7531,7 +7531,7 @@
                     }
                 },
                 "CyclesHistory": {
-                    "Visible": true,
+                    "Visible": false,
                     "AvailableIn": [
                         "US",
                         "CA"
@@ -7768,9 +7768,32 @@
                             "LightOnOff": false,
                             "MyCreations": false
                         },
+                        "actions": {
+                            "ActionKitchenTimerStart": false,
+                            "ActionKitchenTimerCancel": false,
+                            "ActionKitchenTimerModify": false,
+                            "ActionSetCycleSendCommand": false,
+                            "ActionSetCycleStartCommand": false,
+                            "ActionSetCycleCancelCommand": false,
+                            "ActionSetCycleModifyCommand": false,
+                            "ActionSetCycleCancelCookTimeCommand": false
+                        },
                         "condition": {
                             "type": "value",
                             "key": "Online",
+                            "valueOperator": "=",
+                            "value": 0
+                        }
+                    },
+                    {
+                        "ruleName": "Disable the StartCommand button",
+                        "description": "Appliance can not be started if the remote is disabled",
+                        "actions": {
+                            "ActionSetCycleStartCommand": false
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "Appliance_RemoteEnabledStatus",
                             "valueOperator": "=",
                             "value": 0
                         }
@@ -7786,19 +7809,6 @@
                             "key": "UpperCavity_CavityHeatState",
                             "valueOperator": "!=",
                             "value": "0"
-                        }
-                    },
-                    {
-                        "ruleName": "Disable the StartCommand button",
-                        "description": "Appliance can not be started if the remote is disabled",
-                        "actions": {
-                            "ActionSetCycleStartCommand": false
-                        },
-                        "condition": {
-                            "type": "value",
-                            "key": "Appliance_RemoteEnabledStatus",
-                            "valueOperator": "=",
-                            "value": 0
                         }
                     }
                 ]
@@ -7827,7 +7837,28 @@
                         "ruleName": "Cancel the Running Cycle",
                         "description": "If Appliance is not idle, we can enable the cancel action",
                         "actions": {
-                            "ActionCancelCommand": true
+                            "ActionSetCycleStartCommand" : false,
+                            "ActionSetCycleSendCommand" : false,
+                            "ActionSetCycleCancelCommand" : true,
+                            "ActionSetCycleModifyCommand" : true
+
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "LowerCavity_CavityHeatState",
+                            "valueOperator": "!=",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "ruleName": "Cancel the cook time, If it is running",
+                        "description": "Cancel the cook time, If it is running",
+                        "actions": {
+                            "ActionSetCycleStartCommand" : false,
+                            "ActionSetCycleSendCommand" : false,
+                            "ActionSetCycleCancelCommand" : true,
+                            "ActionSetCycleModifyCommand" : true
+
                         },
                         "condition": {
                             "type": "value",
@@ -7870,6 +7901,7 @@
                             "ChangeSoundKeyPress": false,
                             "ChangeDisplayOnOffStatus": false,
                             "ChangeBrightness": false
+
                         },
                         "condition": {
                             "type": "value",
