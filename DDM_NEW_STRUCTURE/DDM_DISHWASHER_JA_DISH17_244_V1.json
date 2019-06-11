@@ -2071,7 +2071,7 @@
           },
           "Common": {
             "FaultCodeHistory": {
-              "isLegacy": "false",
+              "isLegacy": false,
               "groupBy": "Sys_AlertStatusCustomerFaultCode",
               "attributes": "Sys_AlertStatusCustomerFaultCode"
             }

@@ -3449,7 +3449,7 @@
         "QueryParams": {
           "OvenUpperCavity": {
             "CycleHistory": {
-              "isLegacy": "false",
+              "isLegacy": false,
               "groupBy": "OvenUpperCavity_OpSetOperations",
               "attributes": "OvenUpperCavity_CycleSetCommonMode,OvenUpperCavity_CycleSetEasyConvectFood,OvenUpperCavity_CycleSetTargetTemp,OvenUpperCavity_TimeSetCookTimeSet,OvenUpperCavity_CycleSetMeatProbeTargetTemp,OvenUpperCavity_OpSetCookTimeCompleteAction,OvenUpperCavity_TimeSetDelayTime"
             }
