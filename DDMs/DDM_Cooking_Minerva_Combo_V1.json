@@ -5737,29 +5737,62 @@
                             "MyCreations": true
                         },
                         "actions": {
-                            "ActionCancelCommand": true,
-                            "ActionStartCommand": true,
-                            "ActionModifyCommand": true
+                            "ActionKitchenTimerStart": false,
+                            "ActionKitchenTimerCancel": false,
+                            "ActionKitchenTimerModify": false,
+                            "ActionSetCycleSendCommand": false,
+                            "ActionSetCycleStartCommand": false,
+                            "ActionSetCycleCancelCommand": false,
+                            "ActionSetCycleModifyCommand": false,
+                            "ActionSetCycleCancelCookTimeCommand": false
                         },
                         "condition": {
                             "type": "value",
                             "key": "Online",
                             "valueOperator": "=",
-                            "value": 1
+                            "value": 0
                         }
                     },
                     {
                         "ruleName": "Cancel the Running Cycle",
                         "description": "If Appliance is not idle, we can enable the cancel action",
                         "actions": {
-                            "ActionCancelCommand": true,
-                            "ActionStartCommand": false,
-                            "ActionModifyCommand": true
+                            "ActionSetCycleCancelCommand": true
                         },
                         "condition": {
                             "type": "value",
                             "key": "LowerCavity_CavityHeatState",
                             "valueOperator": "!=",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "ruleName": "Enable the Kitchen timer update option when it is running",
+                        "description": "Enable the Kitchen timer update option when it is running",
+                        "actions": {
+                            "ActionKitchenTimerStart": false,
+                            "ActionKitchenTimerCancel": true,
+                            "ActionKitchenTimerModify": true,
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "KitchenTimer1_KitchenTimerState",
+                            "valueOperator": "=",
+                            "value": "1"
+                        }
+                    },
+                    {
+                        "ruleName": "Enable the Kitchen timer update option when it is running",
+                        "description": "Enable the Kitchen timer update option when it is running",
+                        "actions": {
+                            "ActionKitchenTimerStart": true,
+                            "ActionKitchenTimerCancel": false,
+                            "ActionKitchenTimerModify": false,
+                        },
+                        "condition": {
+                            "type": "value",
+                            "key": "KitchenTimer1_KitchenTimerState",
+                            "valueOperator": "=",
                             "value": "0"
                         }
                     },

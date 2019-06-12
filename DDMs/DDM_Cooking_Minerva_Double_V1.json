@@ -7802,7 +7802,7 @@
                         "ruleName": "Cancel the Running Cycle",
                         "description": "If Appliance is not idle, we can enable the cancel action",
                         "actions": {
-                            "ActionCancelCommand": true
+                            "ActionSetCycleCancelCommand": true
                         },
                         "condition": {
                             "type": "value",
@@ -7871,7 +7871,7 @@
                         "ruleName": "Disable the StartCommand button",
                         "description": "Appliance can not be started if the remote is disabled",
                         "actions": {
-                            "ActionStartCommand": false
+                            "ActionSetCycleStartCommand": false
                         },
                         "condition": {
                             "type": "value",

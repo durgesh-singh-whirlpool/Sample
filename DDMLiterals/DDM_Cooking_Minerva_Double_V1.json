@@ -785,10 +785,6 @@
                 "Name": "Cook Time Changed",
                 "Description": "Receive a notification when the cook time has changed."
             },
-            "UpperCavityCulinaryInstructions": {
-                "Name": "Culinary Center Interruptions",
-                "Description": "Receive a notification when the oven cycle requires manual interaction (i.e. removing foil etc)."
-            },
             "KitchenTimerEventNotification": {
                 "Name": "Kitchen Timer Changed",
                 "Description": "Receive a notification if the kitchen timer has ended or been changed."

@@ -4791,7 +4791,7 @@
             "ruleName": "Cancel the Running Cycle",
             "description": "If Appliance is not idle, we can enable the cancel action",
             "actions": {
-              "ActionCancelCommand": true
+              "ActionSetCycleCancelCommand": true
             },
             "condition": {
               "type": "value",
