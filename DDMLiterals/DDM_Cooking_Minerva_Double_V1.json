@@ -560,7 +560,7 @@
         "UpperCavity_CavityModeOvenKeepWarm.Label" : "Keep Warm",
         "UpperCavity_CavityModeOvenRapidProof.Label" : "Rapid Proof",
         "UpperCavity_CavityModeOvenProof.Label" : "Proof",
-        "UpperCavity_CavityModeOvenSabbath.Label" : "Sabbath"
+        "UpperCavity_CavityModeOvenSabbath.Label" : "Sabbath",
         "ControlLock.Label" : "Control lock",
         "ControlLock.Description": "Allows you to lock the controls to prevent unintended use of the appliance.",
         "Notifications.Label" : "Notifications",
