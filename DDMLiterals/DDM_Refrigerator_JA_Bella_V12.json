@@ -11,7 +11,7 @@
    "Notifications.Label" : "Notifications",
    "Notifications.Description" : "Start or stop notifications for individual notifications at any time",
    "SabbathMode.Label" : "Sabbath mode",
-   "SabbathMode.Description" : "Set your dishwasher to act in accordance with religious guidelines for use during the Sabbath and religious holidays",
+   "SabbathMode.Description" : "Sets the appliance to remain in a non-disturbing state during Sabbath. The interior lights will turn off and audio is silenced",
    "MaxCool.Label" : "Max cool",
    "MaxCool.Description" : "Accelerates the cooling process for your refrigerator",
    "MaxIce.Label" : "Max ice",
