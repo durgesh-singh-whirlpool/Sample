@@ -1623,6 +1623,11 @@
 	},
 	"Personality": {
 		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
+		"Compatibility": {
+      "CustomCycles": [
+        "Cavity_CycleSetDownloadAndGo"
+      ]
+    },
 		"CavityOrder": [
 			"WashCavity"
 		],
@@ -3988,13 +3993,30 @@
 		},
 		"AttributesMapping": {
 			"WashCavity": {
-				"DoorOpen": "Cavity_OpStatusDoorOpen"
+			"CycleName": [
+          "WashCavity_CycleSetCycleSelect",
+          "Cavity_CycleSetDownloadAndGo"
+        ],
+		 "TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
+        "MachineState": "Cavity_CycleStatusMachineState",
+		"DoorOpen": "Cavity_OpStatusDoorOpen",
+	"DelayTimeSetTime": "Cavity_TimeSetDelayTime",
+	"Temperature": "WashCavity_CycleSetTemperature",
+	"SoilLevel" : "WashCavity_CycleSetSoilLevel",
+	"SpinSpeed" : "WashCavity_CycleSetSpinSpeed",
+	"PresoakTimed" : "WashCavity_CycleSetPresoakTimed",
+	"ExtraRinse" : "WashCavity_CycleSetExtraRinseSelect",
+	"FresheningSelect" : "WashCavity_CycleSetFresheningSelect",
+	"SteamEnable" : "Cavity_CycleSetSteamEnable",
+	"DelayTime" : "Cavity_TimeSetDelayTime"
+	
 			},
 			"Common": {
 				"OpStatusState": "Cavity_CycleStatusMachineState",
 				"ControlLock": "Sys_OpSetControlLock",
 				"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
-				"Online": "online"
+				"Online": "online",
+				"QuietModeEnabled": "Sys_OpSetKeyPressToneVolume"
 			}
 		},
 		"Features": {
@@ -4042,7 +4064,17 @@
 					"StateAttributes": {
 						"State": "online"
 					}
-				}
+				},
+				 "QuietMode": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "Sys_OpSetKeyPressToneVolume"
+          }
+        }
 			},
 			"WashCavity": {
 				"SetCycle": {
