@@ -1685,10 +1685,10 @@
                 "Default": false
               },
               "WashCavity_CycleSetExtraRinseSelect": {
-                "Default": 0,
                 "Min": 0,
                 "Max": 1,
-                "Step": 1
+                "Step": 1,
+                "Default": 0
               },
               "WashCavity_CycleSetFresheningSelect": {
                 "Enumeration": [
