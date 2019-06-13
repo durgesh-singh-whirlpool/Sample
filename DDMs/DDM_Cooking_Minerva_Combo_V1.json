@@ -5772,7 +5772,7 @@
                         "actions": {
                             "ActionKitchenTimerStart": false,
                             "ActionKitchenTimerCancel": true,
-                            "ActionKitchenTimerModify": true,
+                            "ActionKitchenTimerModify": true
                         },
                         "condition": {
                             "type": "value",
@@ -5787,7 +5787,7 @@
                         "actions": {
                             "ActionKitchenTimerStart": true,
                             "ActionKitchenTimerCancel": false,
-                            "ActionKitchenTimerModify": false,
+                            "ActionKitchenTimerModify": false
                         },
                         "condition": {
                             "type": "value",
