@@ -1632,6 +1632,84 @@
       "WashCavity"
     ],
     "Capability": {
+      "SystemCavity": {
+        "CapabilityData": {
+          "BulkDispense1Concentration": {
+            "Required": {
+              "WashCavity_OpSetBulkDispense1Concentration": {
+                "Map": [
+                  {
+                    "Value": 50,
+                    "Display": "2X"
+                  },
+                  {
+                    "Value": 33,
+                    "Display": "3X"
+                  },
+                  {
+                    "Value": 25,
+                    "Display": "4X"
+                  },
+                  {
+                    "Value": 20,
+                    "Display": "5X"
+                  },
+                  {
+                    "Value": 17,
+                    "Display": "6X"
+                  },
+                  {
+                    "Value": 13,
+                    "Display": "8X"
+                  }
+                ]
+              }
+            }
+          },
+          "BulkDispense2Concentration": {
+            "Required": {
+              "WashCavity_OpSetBulkDispense2Concentration": {
+                "Map": [
+                  {
+                    "Value": 50,
+                    "Display": "2X"
+                  },
+                  {
+                    "Value": 33,
+                    "Display": "3X"
+                  },
+                  {
+                    "Value": 25,
+                    "Display": "4X"
+                  },
+                  {
+                    "Value": 20,
+                    "Display": "5X"
+                  },
+                  {
+                    "Value": 17,
+                    "Display": "6X"
+                  },
+                  {
+                    "Value": 13,
+                    "Display": "8X"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "SetCycle": {
+          "Preferences": {
+            "BulkDispense1Concentration": {
+              "Name": "BulkPlaceholder"
+            },
+            "BulkDispense2Concentration": {
+              "Name": "BulkPlaceholder"
+            }
+          }
+        }
+      },
       "WashCavity": {
         "CapabilityData": {
           "WashCavity_CycleSetCycleSelectWashCycleNone": {
@@ -1685,10 +1763,12 @@
                 "Default": false
               },
               "WashCavity_CycleSetExtraRinseSelect": {
+			  "Range" : {
                 "Default": 0,
                 "Min": 0,
                 "Max": 1,
                 "Step": 1
+				}
               },
               "WashCavity_CycleSetFresheningSelect": {
                 "Enumeration": [
@@ -3694,104 +3774,126 @@
               
             }
           },
-		  "Cavity_CycleSetDownloadAndGoActivewear": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleNormal",
-        "WashCavity_CycleSetTemperature": "WashTempWarm",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
-			}
+          "Cavity_CycleSetDownloadAndGoActivewear": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleNormal",
+              "WashCavity_CycleSetTemperature": "WashTempWarm",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoJeans": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleTowels",
-        "WashCavity_CycleSetTemperature": "WashTempWarm",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelNormal"
-			}
+          "Cavity_CycleSetDownloadAndGoJeans": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleTowels",
+              "WashCavity_CycleSetTemperature": "WashTempWarm",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelNormal"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoSwimwear": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToColdWash",
-        "WashCavity_CycleSetTemperature": "WashTempCold",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelLight"
-			}
+          "Cavity_CycleSetDownloadAndGoSwimwear": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToColdWash",
+              "WashCavity_CycleSetTemperature": "WashTempCold",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelLight"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoSleepingBags": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
-        "WashCavity_CycleSetTemperature": "WashTempWarm",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
-			}
+          "Cavity_CycleSetDownloadAndGoSleepingBags": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleBulky",
+              "WashCavity_CycleSetTemperature": "WashTempWarm",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoBusinessCasual": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleWrinkleControl",
-        "WashCavity_CycleSetTemperature": "WashTempCool",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelNormal"
-			}
+          "Cavity_CycleSetDownloadAndGoBusinessCasual": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleWrinkleControl",
+              "WashCavity_CycleSetTemperature": "WashTempCool",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelNormal"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoComforters": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
-        "WashCavity_CycleSetTemperature": "WashTempWarm",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelLight"
-			}
+          "Cavity_CycleSetDownloadAndGoComforters": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleBulky",
+              "WashCavity_CycleSetTemperature": "WashTempWarm",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelLight"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoBlankets": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToHeavyDuty",
-        "WashCavity_CycleSetTemperature": "WashTempHot",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelNormal"
-			}
+          "Cavity_CycleSetDownloadAndGoBlankets": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToHeavyDuty",
+              "WashCavity_CycleSetTemperature": "WashTempHot",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelNormal"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoCoatsJackets": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleWhatToBulkyHowToColdWash",
-        "WashCavity_CycleSetTemperature": "WashTempCold",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
-			}
+          "Cavity_CycleSetDownloadAndGoCoatsJackets": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleWhatToBulkyHowToColdWash",
+              "WashCavity_CycleSetTemperature": "WashTempCold",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoLingerie": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToWrinkleControl",
-        "WashCavity_CycleSetTemperature": "WashTempCool",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedLow",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelLight"
-			}
+          "Cavity_CycleSetDownloadAndGoLingerie": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToWrinkleControl",
+              "WashCavity_CycleSetTemperature": "WashTempCool",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedLow",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelLight"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoMachineWashCurtains": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleWhatToColorsBrightsHowToColdWash",
-        "WashCavity_CycleSetTemperature": "WashTempCold",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelLight"
-			}
+          "Cavity_CycleSetDownloadAndGoMachineWashCurtains": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleWhatToColorsBrightsHowToColdWash",
+              "WashCavity_CycleSetTemperature": "WashTempCold",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelLight"
+            }
           },
-		  "Cavity_CycleSetDownloadAndGoDiapers": {
-            "Required": {},
-			"NonEditable" : {
-			"WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToSanitize",
-        "WashCavity_CycleSetTemperature": "WashTempExtraHot",
-        "WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
-        "WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
-			}
+          "Cavity_CycleSetDownloadAndGoDiapers": {
+            "Required": {
+              
+            },
+            "NonEditable": {
+              "WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToSanitize",
+              "WashCavity_CycleSetTemperature": "WashTempExtraHot",
+              "WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
+              "WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
+            }
           }
         },
         "SetCycle": {
@@ -4087,41 +4189,41 @@
               }
             }
           },
-		  "DownloadAndGo": {
-		  "Cavity_CycleSetDownloadAndGoActivewear": {
+          "DownloadAndGo": {
+            "Cavity_CycleSetDownloadAndGoActivewear": {
               "Name": "Activewear"
             },
-			"Cavity_CycleSetDownloadAndGoJeans": {
+            "Cavity_CycleSetDownloadAndGoJeans": {
               "Name": "Jeans"
             },
-			"Cavity_CycleSetDownloadAndGoSwimwear": {
+            "Cavity_CycleSetDownloadAndGoSwimwear": {
               "Name": "Swimwear"
             },
-			"Cavity_CycleSetDownloadAndGoSleepingBags": {
+            "Cavity_CycleSetDownloadAndGoSleepingBags": {
               "Name": "SleepingBags"
             },
-			"Cavity_CycleSetDownloadAndGoBusinessCasual": {
+            "Cavity_CycleSetDownloadAndGoBusinessCasual": {
               "Name": "BusinessCasual"
             },
-			"Cavity_CycleSetDownloadAndGoComforters": {
+            "Cavity_CycleSetDownloadAndGoComforters": {
               "Name": "Comforters"
             },
-			"Cavity_CycleSetDownloadAndGoBlankets": {
+            "Cavity_CycleSetDownloadAndGoBlankets": {
               "Name": "Blankets"
             },
-			"Cavity_CycleSetDownloadAndGoCoatsJackets": {
+            "Cavity_CycleSetDownloadAndGoCoatsJackets": {
               "Name": "CoatsJackets"
             },
-			"Cavity_CycleSetDownloadAndGoLingerie": {
+            "Cavity_CycleSetDownloadAndGoLingerie": {
               "Name": "Lingerie"
             },
-			"Cavity_CycleSetDownloadAndGoMachineWashCurtains": {
+            "Cavity_CycleSetDownloadAndGoMachineWashCurtains": {
               "Name": "MachineWashCurtains"
             },
-			"Cavity_CycleSetDownloadAndGoDiapers": {
+            "Cavity_CycleSetDownloadAndGoDiapers": {
               "Name": "Diapers"
             }
-		  },
+          },
           "Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
         },
         "UtilityCycle": {
@@ -4142,84 +4244,6 @@
             }
           },
           "Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
-        }
-      },
-      "SystemCavity": {
-        "CapabilityData": {
-          "BulkDispense1Concentration": {
-            "Required": {
-              "WashCavity_OpSetBulkDispense1Concentration": {
-                "Map": [
-                  {
-                    "Value": 50,
-                    "Display": "2X"
-                  },
-                  {
-                    "Value": 33,
-                    "Display": "3X"
-                  },
-                  {
-                    "Value": 25,
-                    "Display": "4X"
-                  },
-                  {
-                    "Value": 20,
-                    "Display": "5X"
-                  },
-                  {
-                    "Value": 17,
-                    "Display": "6X"
-                  },
-                  {
-                    "Value": 13,
-                    "Display": "8X"
-                  }
-                ]
-              }
-            }
-          },
-		  "BulkDispense2Concentration": {
-            "Required": {
-              "WashCavity_OpSetBulkDispense2Concentration": {
-                "Map": [
-                  {
-                    "Value": 50,
-                    "Display": "2X"
-                  },
-                  {
-                    "Value": 33,
-                    "Display": "3X"
-                  },
-                  {
-                    "Value": 25,
-                    "Display": "4X"
-                  },
-                  {
-                    "Value": 20,
-                    "Display": "5X"
-                  },
-                  {
-                    "Value": 17,
-                    "Display": "6X"
-                  },
-                  {
-                    "Value": 13,
-                    "Display": "8X"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        "SetCycle": {
-          "Preferences": {
-            "BulkDispense1Concentration": {
-              "Name": "BulkPlaceholder"
-            },
-			"BulkDispense2Concentration": {
-              "Name": "BulkPlaceholder"
-            }
-          }
         }
       }
     },
