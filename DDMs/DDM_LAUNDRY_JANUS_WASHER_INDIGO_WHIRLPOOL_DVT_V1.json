@@ -4267,7 +4267,6 @@
         "DelayTime": "Cavity_TimeSetDelayTime"
       },
       "Common": {
-        "OpStatusState": "Cavity_CycleStatusMachineState",
         "ControlLock": "Sys_OpSetControlLock",
         "RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
         "Online": "online",
@@ -4294,6 +4293,13 @@
           }
         },
         "Notifications": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ]
+        },
+        "FaultCodes": {
           "Visible": true,
           "AvailableIn": [
             "US",
@@ -4342,7 +4348,15 @@
             "State": "Cavity_CycleStatusMachineState"
           },
           "StatusAttributes": [
-            
+            "WashCavity_CycleSetCycleSelect",
+            "WashCavity_CycleSetTemperature",
+            "WashCavity_CycleSetSoilLevel",
+            "WashCavity_CycleSetSpinSpeed",
+            "WashCavity_CycleSetPresoakTimed",
+            "WashCavity_CycleSetExtraRinseSelect",
+            "WashCavity_CycleSetFresheningSelect",
+            "Cavity_CycleSetSteamEnable",
+            "Cavity_TimeSetDelayTime"
           ],
           "SendCommandAttributes": [
             "WashCavity_CycleSetCycleSelect",
@@ -4381,6 +4395,109 @@
             "condition": {
               "type": "value",
               "key": "Online",
+              "valueOperator": "=",
+              "value": 0
+            }
+          },
+          {
+            "ruleName": "Cancel the Running Cycle",
+            "description": "If Appliance is not idle, we can enable the cancel action",
+            "actions": {
+              "ActionCancelCommand": true
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_CycleStatusCycleState",
+              "valueOperator": "!=",
+              "value": "0"
+            }
+          },
+          {
+            "ruleName": "Enable Cancel option if a cycle is already running in Appliance",
+            "description": "Cavity_OperationStatusMachineState ==Standby, this is instruction sent to appliance",
+            "actions": {
+              "ActionCancelCommand": true
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_CycleStatusMachineState",
+              "valueOperator": "=",
+              "value": "7"
+            }
+          },
+		  {
+            "ruleName": "Enable Start option if a cycle is set on Appliance",
+            "description": "Cavity_OperationStatusMachineState ==Setting , this is instruction sent to appliance",
+            "actions": {
+              "ActionStartCommand": true
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_CycleStatusMachineState",
+              "valueOperator": "=",
+              "value": "1"
+            }
+          },
+          {
+            "ruleName": "Disable Cancel, Modify, options if appliance is Complete",
+            "description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+            "actions": {
+              "ActionCancelCommand": false,
+              "ActionModifyCommand": false
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_OperationStatusMachineState",
+              "valueOperator": "=",
+              "value": "10"
+            }
+          },
+		  {
+            "ruleName": "Dont start cycle with door open",
+            "description": "Cavity_OpStatusDoorOpen ==true, no option to start cycle",
+            "actions": {
+              "ActionStartCommand": false,
+              "ActionModifyCommand": false
+            },
+            "condition": {
+              "type": "value",
+              "key": "Cavity_OpStatusDoorOpen",
+              "valueOperator": "=",
+              "value": true
+            }
+          },
+          {
+            "ruleName": "Enable Cancel option if, Cycle is delaying",
+            "description": "A command can be started if the device is online and remote is enbled",
+            "actions": {
+              "ActionCancelCommand": true
+            },
+            "condition": {
+              "type": "operation",
+              "binaryOperator": "or",
+              "left": {
+                "type": "value",
+                "key": "Cavity_CycleStatusMachineState",
+                "valueOperator": "=",
+                "value": "2"
+              },
+              "right": {
+                "type": "value",
+                "key": "Cavity_CycleStatusMachineState",
+                "valueOperator": "=",
+                "value": "4"
+              }
+            }
+          },
+          {
+            "ruleName": "Disable the StartCommand button",
+            "description": "Appliance can not be started if the remote is disabled",
+            "actions": {
+              "ActionSetCycleStartCommand": false
+            },
+            "condition": {
+              "type": "value",
+              "key": "XCat_RemoteSetRemoteControlEnable",
               "valueOperator": "=",
               "value": 0
             }
