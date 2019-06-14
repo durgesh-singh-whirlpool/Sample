@@ -1760,7 +1760,7 @@
                   "false",
                   "true"
                 ],
-                "Default": false
+                "Default": "false"
               },
               "WashCavity_CycleSetExtraRinseSelect": {
 			  "Range" : {
