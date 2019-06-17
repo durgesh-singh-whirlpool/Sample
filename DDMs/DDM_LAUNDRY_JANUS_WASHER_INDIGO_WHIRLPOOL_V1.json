@@ -1623,6 +1623,11 @@
 	},
 	"Personality": {
 		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
+		"Compatibility": {
+      "CustomCycles": [
+        "Cavity_CycleSetDownloadAndGo"
+      ]
+    },
 		"CavityOrder": [
 			"WashCavity"
 		],
@@ -1752,7 +1757,7 @@
 							}
 						}
 					},
-					"WashCycleWrinkleControl": {
+					"WashCavity_CycleSetCycleSelectWashCycleWrinkleControl": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -1813,7 +1818,7 @@
 							}
 						}
 					},
-					"WashCycleHeavyDuty": {
+					"WashCavity_CycleSetCycleSelectWashCycleHeavyDuty": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -1873,7 +1878,7 @@
 							}
 						}
 					},
-					"WashCycleColdWash": {
+					"WashCavity_CycleSetCycleSelectWashCycleColdWash": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -1926,7 +1931,7 @@
 							}
 						}
 					},
-					"WashCycleSanitize": {
+					"WashCavity_CycleSetCycleSelectWashCycleSanitize": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2095,7 +2100,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToColorsBrightsHowToWrinkleControl": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToWrinkleControl": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2156,7 +2161,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToColorsBrightsHowToHeavyDuty": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToHeavyDuty": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2217,7 +2222,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToColorsBrightsHowToColdWash": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToColdWash": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2271,7 +2276,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToColorsBrightsHowToSanitize": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToSanitize": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2319,7 +2324,7 @@
 							}
 						}
 					},
-					"WashCycleWhites": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhites": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2380,7 +2385,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToWhitesHowToQuick": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToQuick": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2441,7 +2446,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToWhitesHowToWrinkleControl": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToWrinkleControl": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2502,7 +2507,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToWhitesHowToHeavyDuty": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToHeavyDuty": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2563,7 +2568,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToWhitesHowToColdWash": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToColdWash": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2617,7 +2622,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToWhitesHowToSanitize": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToSanitize": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2665,7 +2670,7 @@
 							}
 						}
 					},
-					"WashCycleTowels": {
+					"WashCavity_CycleSetCycleSelectWashCycleTowels": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2726,7 +2731,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToTowelsHowToQuick": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToQuick": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2787,7 +2792,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToTowelsHowToWrinkleControl": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToWrinkleControl": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2848,7 +2853,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToTowelsHowToHeavyDuty": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToHeavyDuty": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2909,7 +2914,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToTowelsHowToColdWash": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToColdWash": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -2963,7 +2968,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToTowelsHowToSanitize": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToSanitize": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3011,7 +3016,7 @@
 							}
 						}
 					},
-					"WashCycleDelicates": {
+					"WashCavity_CycleSetCycleSelectWashCycleDelicates": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3072,7 +3077,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToDelicatesHowToQuick": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToQuick": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3133,7 +3138,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToDelicatesHowToWrinkleControl": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToWrinkleControl": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3194,7 +3199,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToDelicatesHowToHeavyDuty": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToHeavyDuty": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3255,7 +3260,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToDelicatesHowToColdWash": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToColdWash": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3309,7 +3314,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToDelicatesHowToSanitize": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToSanitize": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3357,7 +3362,7 @@
 							}
 						}
 					},
-					"WashCycleBulky": {
+					"WashCavity_CycleSetCycleSelectWashCycleBulky": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3418,7 +3423,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToBulkyHowToQuick": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToBulkyHowToQuick": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3479,7 +3484,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToBulkyHowToWrinkleControl": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToBulkyHowToWrinkleControl": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3540,7 +3545,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToBulkyHowToHeavyDuty": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToBulkyHowToHeavyDuty": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3601,7 +3606,7 @@
 							}
 						}
 					},
-					"WashCycleWhatToBulkyHowToColdWash": {
+					"WashCavity_CycleSetCycleSelectWashCycleWhatToBulkyHowToColdWash": {
 						"Required": {
 							"WashCavity_CycleSetTemperature": {
 								"Enumeration": [
@@ -3988,13 +3993,30 @@
 		},
 		"AttributesMapping": {
 			"WashCavity": {
-				"DoorOpen": "Cavity_OpStatusDoorOpen"
+			"CycleName": [
+          "WashCavity_CycleSetCycleSelect",
+          "Cavity_CycleSetDownloadAndGo"
+        ],
+		 "TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
+        "MachineState": "Cavity_CycleStatusMachineState",
+		"DoorOpen": "Cavity_OpStatusDoorOpen",
+	"DelayTimeSetTime": "Cavity_TimeSetDelayTime",
+	"Temperature": "WashCavity_CycleSetTemperature",
+	"SoilLevel" : "WashCavity_CycleSetSoilLevel",
+	"SpinSpeed" : "WashCavity_CycleSetSpinSpeed",
+	"PresoakTimed" : "WashCavity_CycleSetPresoakTimed",
+	"ExtraRinse" : "WashCavity_CycleSetExtraRinseSelect",
+	"FresheningSelect" : "WashCavity_CycleSetFresheningSelect",
+	"SteamEnable" : "Cavity_CycleSetSteamEnable",
+	"DelayTime" : "Cavity_TimeSetDelayTime"
+	
 			},
 			"Common": {
 				"OpStatusState": "Cavity_CycleStatusMachineState",
 				"ControlLock": "Sys_OpSetControlLock",
 				"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
-				"Online": "online"
+				"Online": "online",
+				"QuietModeEnabled": "Sys_OpSetKeyPressToneVolume"
 			}
 		},
 		"Features": {
@@ -4042,7 +4064,17 @@
 					"StateAttributes": {
 						"State": "online"
 					}
-				}
+				},
+				 "QuietMode": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "Sys_OpSetKeyPressToneVolume"
+          }
+        }
 			},
 			"WashCavity": {
 				"SetCycle": {
@@ -4051,36 +4083,34 @@
 						"US",
 						"CA"
 					],
-          "StateAttributes": {
-            "State": "Cavity_CycleStatusMachineState"
-          },
-          "StatusAttributes": [
-            
-          ],
-          "SendCommandAttributes": [
-            "WashCavity_CycleSetCycleSelect",
-            "WashCavity_CycleSetTemperature",
-            "WashCavity_CycleSetSoilLevel",
-            "WashCavity_CycleSetSpinSpeed",
-            "WashCavity_CycleSetPresoakTimed",
-			"WashCavity_CycleSetExtraRinseSelect",
-			"WashCavity_CycleSetFresheningSelect",
-			"Cavity_CycleSetSteamEnable",
-			"Cavity_TimeSetDelayTime"
-          ],
-          "SetOperationsMapping": {
-            "Operation": "Cavity_OpSetOperations",
-            "TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
-          }	
+					"StateAttributes": {
+						"State": "Cavity_CycleStatusMachineState"
+					},
+					"StatusAttributes": [],
+					"SendCommandAttributes": [
+						"WashCavity_CycleSetCycleSelect",
+						"WashCavity_CycleSetTemperature",
+						"WashCavity_CycleSetSoilLevel",
+						"WashCavity_CycleSetSpinSpeed",
+						"WashCavity_CycleSetPresoakTimed",
+						"WashCavity_CycleSetExtraRinseSelect",
+						"WashCavity_CycleSetFresheningSelect",
+						"Cavity_CycleSetSteamEnable",
+						"Cavity_TimeSetDelayTime"
+					],
+					"SetOperationsMapping": {
+						"Operation": "Cavity_OpSetOperations",
+						"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
+					}
 				},
 				"CyclesHistory": {
-          "Visible": true,
-          "AvailableIn": [
-            "US",
-            "CA"
-          ]
-        }
-			}     
+					"Visible": true,
+					"AvailableIn": [
+						"US",
+						"CA"
+					]
+				}
+			}
 		},
 		"ApplianceRulesets": {
 			"WashCavity": {
