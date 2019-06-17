@@ -7799,6 +7799,39 @@
                         }
                     },
                     {
+            "ruleName": "Disable the Cook time EDIT for slowroast 4,8,12",
+            "description": "Disable the Cook time EDIT for slowroast 4,8,12",
+            "attributes": {
+              "UpperCavity_CookTimeSetTime": false
+            },
+            "condition": {
+              "type": "operation",
+              "binaryOperator": "or",
+              "left": {
+                "type": "value",
+                "key": "UpperCavity_CavityModeOven",
+                "valueOperator": "=",
+                "value": "19"
+              },
+              "right": {
+                "type": "operation",
+                "binaryOperator": "or",
+                "left": {
+                  "type": "value",
+                  "key": "UpperCavity_CavityModeOven",
+                  "valueOperator": "=",
+                  "value": "20"
+                },
+                "right": {
+                  "type": "value",
+                  "key": "UpperCavity_CavityModeOven",
+                  "valueOperator": "=",
+                  "value": "21"
+                }
+              }
+            }
+          },
+                    {
                         "ruleName": "Cancel the Running Cycle",
                         "description": "If Appliance is not idle, we can enable the cancel action",
                         "actions": {
@@ -7867,6 +7900,39 @@
                             "value": "0"
                         }
                     },
+                    {
+            "ruleName": "Disable the Cook time EDIT for slowroast 4,8,12",
+            "description": "Disable the Cook time EDIT for slowroast 4,8,12",
+            "attributes": {
+              "LowerCavity_CookTimeSetTime": false
+            },
+            "condition": {
+              "type": "operation",
+              "binaryOperator": "or",
+              "left": {
+                "type": "value",
+                "key": "LowerCavity_CavityModeOven",
+                "valueOperator": "=",
+                "value": "19"
+              },
+              "right": {
+                "type": "operation",
+                "binaryOperator": "or",
+                "left": {
+                  "type": "value",
+                  "key": "LowerCavity_CavityModeOven",
+                  "valueOperator": "=",
+                  "value": "20"
+                },
+                "right": {
+                  "type": "value",
+                  "key": "LowerCavity_CavityModeOven",
+                  "valueOperator": "=",
+                  "value": "21"
+                }
+              }
+            }
+          },
                     {
                         "ruleName": "Disable the StartCommand button",
                         "description": "Appliance can not be started if the remote is disabled",
