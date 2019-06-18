@@ -4852,6 +4852,19 @@
       },
       "Common": {
         "Runtime": [
+            {
+                "ruleName": "Cancel the Running Cycle",
+                "description": "If Appliance is not idle, we can enable the cancel action",
+                "features": {
+                    "ControlLock": false
+                },
+                "condition": {
+                    "type": "value",
+                    "key": "UpperCavity_CavityHeatState",
+                    "valueOperator": "!=",
+                    "value": "0"
+                }
+            },
           {
             "ruleName": "Disable All Features when appliance is offline",
             "description": "Disable All Features when appliance is offline",

@@ -1871,7 +1871,6 @@
           "StatusAttributes": [
               "Cavity_CycleSetCycleId",
               "Cavity_CycleSetDownloadAndGo",
-              "Cavity_CycleSetOptionBottleWashZone",
               "Cavity_CycleSetOptionHighTemp",
               "Cavity_CycleSetOptionLowerRackOnly",
               "Cavity_CycleSetOptionSaniRinse",
