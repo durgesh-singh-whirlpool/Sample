@@ -4856,12 +4856,12 @@
                 "ruleName": "Cancel the Running Cycle",
                 "description": "If Appliance is not idle, we can enable the cancel action",
                 "features": {
-                    "ControlLock": false
+                    "ControlLock": true
                 },
                 "condition": {
                     "type": "value",
                     "key": "UpperCavity_CavityHeatState",
-                    "valueOperator": "!=",
+                    "valueOperator": "=",
                     "value": "0"
                 }
             },
