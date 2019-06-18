@@ -4063,7 +4063,8 @@
         "LocalKitchenTimer": {
           "Visible": true,
           "AvailableIn": [
-            "US"
+            "US",
+            "CA"
           ]
         },
         "Notifications": {
@@ -4092,7 +4093,8 @@
         "AssistedCooking": {
           "Visible": true,
           "AvailableIn": [
-            "US"
+            "US",
+            "CA"
           ],
           "StateAttributes": {
             "MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
@@ -4225,7 +4227,20 @@
           ],
           "StatusAttributes": [],
           "StateAttributes": {},
-          "SendCommandAttributes": [],
+          "SendCommandAttributes": [
+            "OvenUpperCavity_CycleSetCommonMode",
+            "OvenUpperCavity_CycleSetConvectBakeFood",
+            "OvenUpperCavity_CycleSetEasyConvectFood",
+            "OvenUpperCavity_CycleSetBreadProof",
+            "OvenUpperCavity_CycleSetTargetTemp",
+            "OvenUpperCavity_TimeSetCookTimeSet",
+            "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+            "OvenUpperCavity_TimeSetDelayTime",
+            "OvenUpperCavity_OpSetCookTimeCompleteAction",
+            "OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+            "OvenUpperCavity_OpSetOperations",
+            "OvenUpperCavity_TimeSetCookTimeOperations"
+          ],
           "SetOperationsMapping": {
             "Operation": "OvenUpperCavity_OpSetOperations",
             "EnvelopeAction": "Relational_EnvelopeAction"
@@ -4342,7 +4357,21 @@
           ],
           "StatusAttributes": [],
           "StateAttributes": {},
-          "SendCommandAttributes": [],
+          "SendCommandAttributes": [
+            "OvenLowerCavity_CycleSetCommonMode",
+            "OvenLowerCavity_CycleSetConvectBakeFood",
+            "OvenLowerCavity_CycleSetEasyConvectFood",
+            "OvenLowerCavity_CycleSetBreadProof",
+            "OvenLowerCavity_CycleSetTargetTemp",
+            "OvenLowerCavity_TimeSetCookTimeSet",
+            "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+            "OvenLowerCavity_TimeSetDelayTime",
+            "OvenLowerCavity_OpSetCookTimeCompleteAction",
+            "OvenLowerCavity_TimeSetCookTimeSet",
+            "OvenLowerCavity_AlertStatusMeatProbePluggedIn",
+            "OvenLowerCavity_OpSetOperations",
+            "OvenLowerCavity_TimeSetCookTimeOperations"
+          ],
           "SetOperationsMapping": {
             "Operation": "OvenLowerCavity_OpSetOperations",
             "EnvelopeAction": "Relational_EnvelopeAction"

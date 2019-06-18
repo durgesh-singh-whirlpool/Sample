@@ -3212,7 +3212,8 @@
         "LocalKitchenTimer": {
           "Visible": true,
           "AvailableIn": [
-            "US"
+            "US",
+            "CA"
           ]
         },
         "Notifications": {
@@ -3241,7 +3242,8 @@
         "AssistedCooking": {
           "Visible": true,
           "AvailableIn": [
-            "US"
+            "US",
+            "CA"
           ],
           "StateAttributes": {
             "MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
@@ -3377,6 +3379,18 @@
           "StatusAttributes": [],
           "StateAttributes": {},
           "SendCommandAttributes": [
+            "OvenUpperCavity_CycleSetCommonMode",
+            "OvenUpperCavity_CycleSetConvectBakeFood",
+            "OvenUpperCavity_CycleSetEasySteamFood",
+            "OvenUpperCavity_CycleSetEasyConvectFood",
+            "OvenUpperCavity_CycleSetBreadProof",
+            "OvenUpperCavity_CycleSetTargetTemp",
+            "OvenUpperCavity_TimeSetCookTimeSet",
+            "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+            "OvenUpperCavity_TimeSetDelayTime",
+            "OvenUpperCavity_OpSetCookTimeCompleteAction",
+            "OvenUpperCavity_OpSetOperations",
+            "OvenUpperCavity_TimeSetCookTimeOperations"
           ],
           "SetOperationsMapping": {
             "Operation": "OvenUpperCavity_OpSetOperations",

@@ -4457,7 +4457,8 @@
         "KitchenTimer": {
           "Visible": true,
           "AvailableIn": [
-            "US"
+            "US",
+            "CA"
           ],
           "StateAttributes": {
             "State": "KitchenTimer1_KitchenTimerState"
@@ -4582,7 +4583,8 @@
         "AssistedCooking": {
           "Visible": true,
           "AvailableIn": [
-            "US"
+            "US",
+            "CA"
           ],
           "StateAttributes": {
             
