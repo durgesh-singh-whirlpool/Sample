@@ -4427,14 +4427,15 @@
 					],
 					"SendCommandAttributes": [
 						"WashCavity_CycleSetCycleSelect",
+						"Cavity_TimeSetDelayTime",
 						"WashCavity_CycleSetTemperature",
 						"WashCavity_CycleSetSoilLevel",
 						"WashCavity_CycleSetSpinSpeed",
 						"WashCavity_CycleSetPresoakTimed",
+						"Cavity_CycleSetSteamEnable",
 						"WashCavity_CycleSetExtraRinseSelect",
 						"WashCavity_CycleSetFresheningSelect",
-						"Cavity_CycleSetSteamEnable",
-						"Cavity_TimeSetDelayTime"
+						"Cavity_OpSetOperations"
 					],
 					"SetOperationsMapping": {
 						"Operation": "Cavity_OpSetOperations",
