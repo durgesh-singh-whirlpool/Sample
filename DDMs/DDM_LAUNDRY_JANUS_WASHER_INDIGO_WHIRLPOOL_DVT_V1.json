@@ -4196,7 +4196,6 @@
             "WashCavity_CycleSetPresoakTimed",
             "WashCavity_CycleSetExtraRinseSelect",
             "WashCavity_CycleSetFresheningSelect",
-            "Cavity_CycleSetSteamEnable",
             "Cavity_TimeSetDelayTime"
           ],
           "SendCommandAttributes": [
@@ -4207,7 +4206,6 @@
             "WashCavity_CycleSetPresoakTimed",
             "WashCavity_CycleSetExtraRinseSelect",
             "WashCavity_CycleSetFresheningSelect",
-            "Cavity_CycleSetSteamEnable",
             "Cavity_TimeSetDelayTime"
           ],
           "SetOperationsMapping": {
