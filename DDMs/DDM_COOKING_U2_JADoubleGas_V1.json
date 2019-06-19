@@ -4046,12 +4046,7 @@
         "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast3",
         "ProbeCook",
         "Manual",
-        "OvenUpperCavity_CycleSetCommonModeCommonModeBake",
-        "OvenUpperCavity_CycleSetCommonModeCommonModeConvectBake",
-        "OvenUpperCavity_CycleSetCommonModeCommonModeConvectRoast",
-        "Auto",
-        "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods",
-        "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat"
+        "Auto"
       ],
       "OvenLowerCavity": [
         "OvenLowerCavity_CycleSetCommonModeCommonModeBake",
