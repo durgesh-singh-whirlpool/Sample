@@ -98,7 +98,8 @@
         "MaxIce.Label" : "Max ice",
         "MaxIce.Description" : "Accelerates the ice making production for your refrigerator. This setting will not operate until the Ice Maker is turned on",
         "IceMaker.Label" : "Ice maker",
-        "IceMaker.Description" : "Turn your Ice Maker on/off at any time"
+        "IceMaker.Description" : "Turn your Ice Maker on/off at any time",
+        "CavityBrightness.Label" : "Cavity Brightness"
     },
     "AFCSelfHelpPack": {},
     "MobileLiterals": {

@@ -117,7 +117,9 @@
         "MaxCool.Label" : "Max cool",
         "MaxCool.Description" : "Accelerates the cooling process for your refrigerator",
         "MaxIce.Label" : "Max ice",
-        "MaxIce.Description" : "Accelerates the ice making production for your refrigerator. This setting will not operate until the Ice Maker is turned on"
+        "MaxIce.Description" : "Accelerates the ice making production for your refrigerator. This setting will not operate until the Ice Maker is turned on",
+        "AutoNightLight.Label" : "Auto Night Light"
+        
     },
     "AFCSelfHelpPack": {},
     "MobileLiterals": {

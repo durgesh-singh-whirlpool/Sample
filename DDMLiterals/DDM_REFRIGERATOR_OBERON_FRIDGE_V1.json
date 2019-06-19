@@ -100,7 +100,9 @@
         "Notifications.Description" : "Start or stop notifications for individual notifications at any time",
         "SabbathMode.Description" : "Sets the appliance to remain in a non-disturbing state during Sabbath. The interior lights will turn off and audio is silenced",
         "MaxCool.Label" : "Max cool",
-        "MaxCool.Description" : "Accelerates the cooling process for your refrigerator"
+        "MaxCool.Description" : "Accelerates the cooling process for your refrigerator",
+        "CavityBrightness.Label" : "Cavity Brightness"
+
         
     },
     "AFCSelfHelpPack": {},
