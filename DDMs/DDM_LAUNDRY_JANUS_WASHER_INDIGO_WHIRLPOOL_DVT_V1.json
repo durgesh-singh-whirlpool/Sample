@@ -1753,7 +1753,7 @@
 								"Default": 0
 							},
 							"Cavity_CycleSetSteamEnable": {
-								"Enumeration": [
+								"Bool": [
 									false,
 									true
 								],
