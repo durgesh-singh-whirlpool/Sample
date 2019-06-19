@@ -4258,37 +4258,92 @@
 					},
 					"DownloadAndGo": {
 						"Cavity_CycleSetDownloadAndGoActivewear": {
-							"Name": "Activewear"
+							"Name": "Activewear",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoActivewear"
+								]
+								}
 						},
 						"Cavity_CycleSetDownloadAndGoJeans": {
-							"Name": "Jeans"
+							"Name": "Jeans",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoJeans"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoSwimwear": {
-							"Name": "Swimwear"
+							"Name": "Swimwear",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"WashCycleNormal"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoSleepingBags": {
-							"Name": "SleepingBags"
+							"Name": "SleepingBags",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoSleepingBags"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoBusinessCasual": {
-							"Name": "BusinessCasual"
+							"Name": "BusinessCasual",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoBusinessCasual"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoComforters": {
-							"Name": "Comforters"
+							"Name": "Comforters",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoComforters"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoBlankets": {
-							"Name": "Blankets"
+							"Name": "Blankets",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoBlankets"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoCoatsJackets": {
-							"Name": "CoatsJackets"
+							"Name": "CoatsJackets",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoCoatsJackets"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoLingerie": {
-							"Name": "Lingerie"
+							"Name": "Lingerie",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoLingerie"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoMachineWashCurtains": {
-							"Name": "MachineWashCurtains"
+							"Name": "MachineWashCurtains",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoMachineWashCurtains"
+								]
+							}
 						},
 						"Cavity_CycleSetDownloadAndGoDiapers": {
-							"Name": "Diapers"
+							"Name": "Diapers",
+							"Attributes": {
+							"WashCavity_CycleSetCycleSelect": [
+									"Cavity_CycleSetDownloadAndGoDiapers"
+								]
+							}
 						}
 					},
 					"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
@@ -4439,7 +4494,7 @@
 					],
 					"SetOperationsMapping": {
 						"Operation": "Cavity_OpSetOperations",
-						"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
+						"TimeRemaining": "Cavity_TimeSetDelayTime"
 					}
 				},
 				"CyclesHistory": {
