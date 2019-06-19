@@ -2035,6 +2035,9 @@
           {
                         "ruleName": "Disable the StartCommand button",
                         "description": "Appliance can not be started if the remote is disabled",
+                        "attributes": {
+                          "Cavity_TimeSetDelayTime" : false
+                          },
                         "actions": {
                             "ActionSetCycleStartCommand": false
                         },
