@@ -4587,7 +4587,7 @@
             "CA"
           ],
           "StateAttributes": {
-            
+              "MeatProbeStatus": "UpperCavity_MeatProbeStatus"
           },
           "StatusAttributes": [
             "UpperCavity_CavityModeOven",
