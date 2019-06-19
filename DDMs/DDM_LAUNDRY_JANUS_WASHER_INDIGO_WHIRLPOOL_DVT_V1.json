@@ -661,18 +661,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "Cavity_CycleSetSteamEnable",
-        "Instance": "Cavity_CycleSet",
-        "IsTimeSeries": false,
-        "DataType": "Boolean",
-        "AttributeName": "SteamEnable",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Cavity_CycleSetSteamEnable",
-        "Default": false,
-        "Key": "0x03080004"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "Cavity_CycleSetCycleName",
         "Instance": "Cavity_CycleSet",
         "IsTimeSeries": false,
@@ -4104,7 +4092,6 @@
         "PresoakTimed": "WashCavity_CycleSetPresoakTimed",
         "ExtraRinse": "WashCavity_CycleSetExtraRinseSelect",
         "FresheningSelect": "WashCavity_CycleSetFresheningSelect",
-        "SteamEnable": "Cavity_CycleSetSteamEnable",
         "DelayTime": "Cavity_TimeSetDelayTime"
       },
       "Common": {
