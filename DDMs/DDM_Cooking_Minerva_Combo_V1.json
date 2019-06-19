@@ -3170,7 +3170,7 @@
     "Key": "DDM_Cooking_Minerva_Combo_V1",
     "Compatibility": {
       "TempExchangeUnits": "F",
-      "MultiplesOfTen": 0
+      "MultipliedByTen": false
     },
     "CavityOrder": [
       "MwoCavity",

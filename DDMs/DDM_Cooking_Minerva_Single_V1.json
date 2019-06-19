@@ -2257,7 +2257,7 @@
     "Key": "DDM_Cooking_Minerva_Single_V1",
     "Compatibility": {
       "TempExchangeUnits": "F",
-      "MultiplesOfTen": 0
+      "MultipliedByTen": false
     },
     "CavityOrder": [
       "OvenUpperCavity"
