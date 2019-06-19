@@ -264,7 +264,7 @@
     "UpperCavity_CavityOperations.EnumValues.None.Label": "None",
     "UpperCavity_CavityOperations.EnumValues.Dismiss.Label": "Dismiss",
     "UpperCavity_CavityOperations.EnumValues.Start.Label": "Start",
-    "UpperCavity_CavityOperations.EnumValues.SendToOven.Label": "Send To Oven",
+    "UpperCavity_CavityOperations.EnumValues.SendToOven.Label": "Send To Appliance",
     "UpperCavity_CavityOperations.EnumValues.Modify.Label": "Modify",
     "UpperCavity_CavityTargetTemp.Label": "Cavity Target Temp",
     "UpperCavity_CookTimeCompleteAction.Label": "Cook Time Complete Action",

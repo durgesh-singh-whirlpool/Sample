@@ -137,7 +137,7 @@
         "OvenUpperCavity_OpSetOperations.EnumValues.OperationsNone.Label": "None",
         "OvenUpperCavity_OpSetOperations.EnumValues.OperationsCancel.Label": "Cancel",
         "OvenUpperCavity_OpSetOperations.EnumValues.OperationsStart.Label": "Start",
-        "OvenUpperCavity_OpSetOperations.EnumValues.OperationsSetOnDisplay.Label": "Set On Display",
+        "OvenUpperCavity_OpSetOperations.EnumValues.OperationsSetOnDisplay.Label": "Send To Appliance",
         "OvenUpperCavity_OpSetOperations.EnumValues.OperationsModify.Label": "Modify",
         "OvenUpperCavity_CycleSetBrowning.EnumValues.BrowningNone.Label": "Browning None",
         "OvenUpperCavity_CycleSetBrowning.EnumValues.BrowningLow.Label": "Browning Low",
