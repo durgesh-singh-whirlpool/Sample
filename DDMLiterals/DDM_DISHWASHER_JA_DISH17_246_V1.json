@@ -70,6 +70,7 @@
         "Cavity_CycleStatusHeavyDutyCycleOdometer.Label": "Cycle Status Heavy Duty Cycle Odometer",
         "Cavity_CycleStatusOdometer.Label": "Cycle Status Odometer",
         "Cavity_OperationSetStartCommand.EnumValues.Start.Label": "Start",
+        "Cavity_OperationSetStartCommand.EnumValues.SetOnDisplay.Label": "Send To Appliance",
         "Cavity_OperationSetStartCommand.EnumValues.StopCancel.Label": "Stop Cancel",
         "Cavity_OperationSetStartCommand.Label": "Operation Set Start Command",
         "Cavity_OperationStatusCleanFilter.Label": "Operation Status Clean Filter",
