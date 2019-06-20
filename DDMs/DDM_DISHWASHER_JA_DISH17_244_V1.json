@@ -1319,7 +1319,12 @@
     "Compatibility": {
       "CustomCycles": [
         "Cavity_CycleSetDownloadAndGo"
-      ]
+      ],
+      "AdditionalMobileActions": {
+        "Cavity_OperationSetStartCommand": {
+          "SetOnDisplayOperations": "SetOnDisplay"
+        }
+      }
     },
     "CavityOrder": [
       "DishCavity"
@@ -1869,16 +1874,16 @@
             "State": "Cavity_OperationStatusMachineState"
           },
           "StatusAttributes": [
-              "Cavity_CycleSetCycleId",
-              "Cavity_CycleSetDownloadAndGo",
-              "Cavity_CycleSetOptionHighTemp",
-              "Cavity_CycleSetOptionLowerRackOnly",
-              "Cavity_CycleSetOptionSaniRinse",
-              "Cavity_CycleSetOptionSmartHeatedDry",
-              "Cavity_CycleSetOptionSteam",
-              "Cavity_CycleSetOptionUpperRackOnly",
-              "Cavity_OperationStatusMachineState",
-          "Cavity_TimeStatusEstTimeRemaining"
+            "Cavity_CycleSetCycleId",
+            "Cavity_CycleSetDownloadAndGo",
+            "Cavity_CycleSetOptionHighTemp",
+            "Cavity_CycleSetOptionLowerRackOnly",
+            "Cavity_CycleSetOptionSaniRinse",
+            "Cavity_CycleSetOptionSmartHeatedDry",
+            "Cavity_CycleSetOptionSteam",
+            "Cavity_CycleSetOptionUpperRackOnly",
+            "Cavity_OperationStatusMachineState",
+            "Cavity_TimeStatusEstTimeRemaining"
           ],
           "SendCommandAttributes": [
             "Cavity_CycleSetDownloadAndGo",
@@ -1915,21 +1920,22 @@
     },
     "ApplianceRulesets": {
       "DishCavity": {
-        "Runtime": [{
-          "ruleName": "Disable All Features when appliance is offline",
-          "description": "Disable All Features when appliance is offline",
-          "features": {
-            "QuietMode": false,
-            "SabbathMode" : false,
-            "SetDishWasher" : false
+        "Runtime": [
+          {
+            "ruleName": "Disable All Features when appliance is offline",
+            "description": "Disable All Features when appliance is offline",
+            "features": {
+              "QuietMode": false,
+              "SabbathMode": false,
+              "SetDishWasher": false
+            },
+            "condition": {
+              "type": "value",
+              "key": "Online",
+              "valueOperator": "=",
+              "value": 0
+            }
           },
-          "condition": {
-            "type": "value",
-            "key": "Online",
-            "valueOperator": "=",
-            "value": 0
-          }
-        },
           {
             "ruleName": "Cancel the Running Cycle",
             "description": "If Appliance is not idle, we can enable the cancel action",
@@ -1996,22 +2002,21 @@
             }
           },
           {
-                        "ruleName": "Disable the StartCommand button",
-                        "description": "Appliance can not be started if the remote is disabled",
-                        "attributes": {
-                          "Cavity_TimeSetDelayTime" : false
-                          },
-                        "actions": {
-                            "ActionSetCycleStartCommand": false
-                        },
-                        "condition": {
-                            "type": "value",
-                            "key": "XCat_RemoteSetRemoteControlEnable",
-                            "valueOperator": "=",
-                            "value": 0
-                        }
-                    },
-          
+            "ruleName": "Disable the StartCommand button",
+            "description": "Appliance can not be started if the remote is disabled",
+            "attributes": {
+              "Cavity_TimeSetDelayTime": false
+            },
+            "actions": {
+              "ActionSetCycleStartCommand": false
+            },
+            "condition": {
+              "type": "value",
+              "key": "XCat_RemoteSetRemoteControlEnable",
+              "valueOperator": "=",
+              "value": 0
+            }
+          },
           {
             "ruleName": "If delay is selected, send to appliance should be disabled",
             "description": "If delay is selected, send to appliance should be disabled",

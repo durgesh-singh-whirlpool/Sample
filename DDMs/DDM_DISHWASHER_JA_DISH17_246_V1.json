@@ -3,7 +3,7 @@
     "_id": "DDM_DISHWASHER_JA_DISH17_246_V1",
     "ddmName": "DDM_DISHWASHER_JA_DISH17_246_V1",
     "modelNo": "JDTSS246GP0,JDTSS246GS0, JDTSS246GL0, JDTSS246GM0",
-    "createdAt": 1517231946000,
+    "createdAt": "Mar 20, 2018 6:30:00 PM",
     "createdBy": "Akash Karhale",
     "brandName": "JennAir",
     "category": "DishWasher",
@@ -1328,7 +1328,12 @@
     "Compatibility": {
       "CustomCycles": [
         "Cavity_CycleSetDownloadAndGo"
-      ]
+      ],
+      "AdditionalMobileActions": {
+        "Cavity_OperationSetStartCommand": {
+          "SetOnDisplayOperations": "SetOnDisplay"
+        }
+      }
     },
     "CavityOrder": [
       "DishCavity"
