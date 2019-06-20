@@ -812,7 +812,12 @@
             "SelfCleanComplete": {
                 "Name": "Self Clean Complete",
                 "Description": "Receive a notification when the self clean cycle is complete."
+            },
+            "CulinaryUserInstructions": {
+                "Name": "Culinary Center Interruptions",
+                "Description": "Receive a notification when the oven cycle requires manual interaction (i.e. removing foil etc)."
             }
+
         },
         "SupplyItem": {},
         "SmartTip": [],
