@@ -770,7 +770,12 @@
             "SelfCleanComplete": {
                 "Name": "Autonettoyage terminé",
                 "Description": "Recevez une notification lorsque le programme d’autonettoyage est terminé."
+            },
+             "CulinaryUserInstructions": {
+                "Name": "Interruptions du centre culinaire",
+                "Description": "Recevez une notification lorsque le programme du four demande une interaction manuelle (c.-à-d., retirer le papier d’aluminium, etc.)."
             }
+
         },
         "SupplyItem": {},
         "SmartTip": [],
