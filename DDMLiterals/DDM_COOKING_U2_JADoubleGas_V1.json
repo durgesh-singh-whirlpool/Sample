@@ -239,7 +239,7 @@
     "OvenLowerCavity_OpSetOperations.EnumValues.OperationsNone.Label": "None",
     "OvenLowerCavity_OpSetOperations.EnumValues.OperationsCancel.Label": "Cancel",
     "OvenLowerCavity_OpSetOperations.EnumValues.OperationsStart.Label": "Start",
-    "OvenLowerCavity_OpSetOperations.EnumValues.OperationsSetOnDisplay.Label": "Set On Display",
+    "OvenLowerCavity_OpSetOperations.EnumValues.OperationsSetOnDisplay.Label": "Send To Appliance",
     "OvenLowerCavity_OpSetOperations.EnumValues.OperationsModify.Label": "Modify",
     "OvenLowerCavity_CycleSetCommonMode.EnumValues.CommonModeIdle.Label": "Idle",
     "OvenLowerCavity_CycleSetCommonMode.EnumValues.CommonModeBake.Label": "Bake",
