@@ -184,7 +184,7 @@
         "Notifications.Label" : "Notifications",
         "Notifications.Description" : "Start or stop notifications for individual notifications at any time",
         "SabbathMode.Label" : "Sabbath mode",
-        "SabbathMode.Description" : "Set your dishwasher to act in accordance with religious guidelines for use during the Sabbath and religious holidays",
+        "SabbathMode.Description" : "Set your dishwasher to act in accordance with religious guidelines for use during the Sabbath",
         "QuietMode.Label" : "Quiet mode",
         "QuietMode.Description" : "Silences all tones and audio of your dishwasher"
 
