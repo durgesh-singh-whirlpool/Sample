@@ -1,8 +1,6 @@
 {
-   "_id":"DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
-   "_rev":"39-02424536a60d726c32ba25b8d1adb74c",
-   "DDM":{
-      "_id":"DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+   "ddm":{
+      "id":"DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
       "ddmName":"DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
       "modelNo":"WFW9620HW0,WFW9620HC0,WFW9620HBK0,test, WFW9620H,WFW9620HW1,WFW9620HC1,WFW9620HBK1",
       "createdAt":1549170000000,
@@ -13,7 +11,7 @@
       "ccuriVersion":"19",
       "ccURI":"API144_LAUNDRY_V19"
    },
-   "DataModel":{
+   "dataModel":{
       "Key":"DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
       "attributes":[
          {
@@ -1621,9 +1619,9 @@
          }
       ]
    },
-   "Personality":{
+   "personality":{
       "Key":"DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
-      "Capability":[
+      "capability":[
          {
             "CavityOrder":[
                "WashCavity"
@@ -4688,7 +4686,7 @@
          }
       ]
    },
-   "Alerts":{
+   "alerts":{
       "Key":"DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
       "alerts":[
          {
