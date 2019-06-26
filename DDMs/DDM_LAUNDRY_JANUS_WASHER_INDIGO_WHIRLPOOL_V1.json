@@ -1625,9 +1625,6 @@
       "Key":"DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
       "Capability":[
          {
-            "Compatibility":{
-
-            },
             "CavityOrder":[
                "WashCavity"
             ],
