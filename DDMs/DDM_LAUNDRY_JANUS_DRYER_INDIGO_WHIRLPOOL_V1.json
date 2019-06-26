@@ -2980,7 +2980,16 @@
             },
             "AttributesMapping":{
                "DryCavity":{
-                  "DoorOpen":"Cavity_OpStatusDoorOpen"
+				  "TimeRemaining":"Cavity_TimeStatusEstTimeRemaining",
+                  "MachineState":"Cavity_CycleStatusMachineState",
+                  "DoorOpen":"Cavity_OpStatusDoorOpen",
+                  "Temperature":"DryCavity_CycleSetTemperature",
+                  "Dryness":"DryCavity_CycleSetDryness",
+                  "WrinkleShield":"DryCavity_CycleSetWrinkleShield",
+                  "EcoBoostEnable":"DryCavity_CycleSetEcoBoostEnable",
+                  "StaticGuardEnable":"DryCavity_CycleSetStaticGuardEnable",
+                  "DampNotificationToneVolume":"DrySys_OpSetDampNotificationToneVolume",
+                  "ManualDryTime":"DryCavity_CycleSetManualDryTime"
                },
                "Common":{
                   "OpStatusState":"Cavity_CycleStatusMachineState",
@@ -3031,7 +3040,8 @@
                         "DryCavity_CycleSetWrinkleShield",
                         "DryCavity_CycleSetStaticGuardEnable",
                         "DrySys_OpSetDampNotificationToneVolume",
-                        "DryCavity_CycleSetEcoBoostEnable"
+                        "DryCavity_CycleSetEcoBoostEnable",
+						"DryCavity_CycleSetManualDryTime"
                      ],
                      "SendCommandAttributes":[
                         "DryCavity_CycleSetCycleSelect",
@@ -3040,10 +3050,13 @@
                         "DryCavity_CycleSetWrinkleShield",
                         "DryCavity_CycleSetStaticGuardEnable",
                         "DrySys_OpSetDampNotificationToneVolume",
-                        "DryCavity_CycleSetEcoBoostEnable"
+                        "DryCavity_CycleSetEcoBoostEnable",
+						"DryCavity_CycleSetManualDryTime",
+						"Cavity_OpSetOperations"
                      ],
                      "SetOperationsMapping":{
-                        "Operation":"Cavity_OpSetOperations"
+                        "Operation":"Cavity_OpSetOperations",
+						"TimeRemaining":"Cavity_TimeSetDelayTime"
                      }
                   }
                }
