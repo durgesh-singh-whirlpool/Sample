@@ -2977,6 +2977,10 @@
             },
             "AttributesMapping":{
                "DryCavity":{
+			   "CycleName":[
+                     "DryCavity_CycleSetCycleSelect",
+                     "Cavity_CycleSetCycleName"
+                  ],
 				  "TimeRemaining":"Cavity_TimeStatusEstTimeRemaining",
                   "MachineState":"Cavity_CycleStatusMachineState",
                   "DoorOpen":"Cavity_OpStatusDoorOpen",
