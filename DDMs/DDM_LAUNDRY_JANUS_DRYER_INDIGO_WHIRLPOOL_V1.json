@@ -3060,9 +3060,6 @@
                   }
                }
             },
-            "CycleOrder":{
-
-            },
             "ApplianceRulesets":{
                "DryCavity":{
                   "Runtime":[
