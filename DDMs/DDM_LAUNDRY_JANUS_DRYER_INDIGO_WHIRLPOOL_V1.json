@@ -1,7 +1,5 @@
 {
-   "_id":"DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
-   "_rev":"80-c09956ba78367dd481e20a72c1a3c74c",
-   "DDM":{
+   "ddm":{
       "_id":"DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
       "ddmName":"DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
       "modelNumber":"WED9620H,WGD9620H,YWED9620H,WED9620HW0,WED9620HC0,WED9620HBK0,WGD9620HW0,WGD9620HC0,WGD9620HBK0,YWED9620HW0,YWED9620HC0, WED9620HC0, WED9120HC, WED9620HW0",
@@ -13,7 +11,7 @@
       "ccuriVersion":"1.0",
       "ccURI":"API144_LAUNDRY_V17"
    },
-   "DataModel":{
+   "dataModel":{
       "Key":"DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
       "attributes":[
          {
@@ -1330,9 +1328,9 @@
          }
       ]
    },
-   "Personality":{
+   "personality":{
       "Key":"DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
-      "Capability":[
+      "capability":[
          {
             "CavityOrder":[
                "DryCavity"
@@ -3107,7 +3105,7 @@
          }
       ]
    },
-   "Alerts":{
+   "alerts":{
       "Key":"DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
       "Alerts":[
          {
