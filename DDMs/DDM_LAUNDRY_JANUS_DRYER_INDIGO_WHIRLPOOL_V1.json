@@ -1330,12 +1330,12 @@
             "Capability":{
                "DryCavity":{
                   "CapabilityData":{
-                     "DryCycleNone":{
+                     "DryCavity_CycleSetCycleSelectDryCycleNone":{
                         "Required":{
 
                         }
                      },
-                     "DryCycleNormal":{
+                     "DryCavity_CycleSetCycleSelectDryCycleNormal":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1386,7 +1386,7 @@
                            }
                         }
                      },
-                     "DryCycleWrinkleControlCasual":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWrinkleControlCasual":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1430,7 +1430,7 @@
                            }
                         }
                      },
-                     "DryCycleHeavyDuty":{
+                     "DryCavity_CycleSetCycleSelectDryCycleHeavyDuty":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1474,7 +1474,7 @@
                            }
                         }
                      },
-                     "DryCycleSanitize":{
+                     "DryCavity_CycleSetCycleSelectDryCycleSanitize":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1497,7 +1497,7 @@
                            }
                         }
                      },
-                     "DryCycleTimedDry":{
+                     "DryCavity_CycleSetCycleSelectDryCycleTimedDry":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -1527,7 +1527,7 @@
                            }
                         }
                      },
-                     "DryCycleRapidDryExpress":{
+                     "DryCavity_CycleSetCycleSelectDryCycleRapidDryExpress":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -1557,7 +1557,7 @@
                            }
                         }
                      },
-                     "DryCycleDelicate":{
+                     "DryCavity_CycleSetCycleSelectDryCycleDelicate":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1600,7 +1600,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToDelicatesHowToWrinkleControl":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToWrinkleControl":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1643,7 +1643,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToDelicatesHowToHeavyDuty":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToHeavyDuty":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1686,7 +1686,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToDelicatesHowToTimed":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToTimed":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -1715,7 +1715,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToDelicatesHowToQuick":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToQuick":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -1744,7 +1744,7 @@
                            }
                         }
                      },
-                     "DryCycleBeddingBulky":{
+                     "DryCavity_CycleSetCycleSelectDryCycleBeddingBulky":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1788,7 +1788,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToBulkyHowToWrinkleControl":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToWrinkleControl":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1832,7 +1832,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToBulkyHowToHeavyDuty":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToHeavyDuty":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1876,7 +1876,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToBulkyHowToSanitize":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToSanitize":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -1899,7 +1899,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToBulkyHowToTimed":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToTimed":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -1929,7 +1929,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToBulkyHowToQuick":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToQuick":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -1959,7 +1959,7 @@
                            }
                         }
                      },
-                     "DryCycleWhites":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhites":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2003,7 +2003,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToWhitesHowToWrinkleControl":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToWrinkleControl":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2047,7 +2047,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToWhitesHowToHeavyDuty":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToHeavyDuty":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2091,7 +2091,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToWhitesHowToSanitize":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToSanitize":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2114,7 +2114,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToWhitesHowToTimed":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToTimed":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -2144,7 +2144,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToWhitesHowToQuick":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToQuick":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -2174,7 +2174,7 @@
                            }
                         }
                      },
-                     "DryCycleColorsBrights":{
+                     "DryCavity_CycleSetCycleSelectDryCycleColorsBrights":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2218,7 +2218,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToColorsBrightsHowToWrinkleControl":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToWrinkleControl":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2262,7 +2262,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToColorsBrightsHowToHeavyDuty":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToHeavyDuty":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2306,7 +2306,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToColorsBrightsHowToSanitize":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToSanitize":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2329,7 +2329,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToColorsBrightsHowToTimed":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToTimed":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -2359,7 +2359,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToColorsBrightsHowToQuick":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToQuick":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -2389,7 +2389,7 @@
                            }
                         }
                      },
-                     "DryCycleTowels":{
+                     "DryCavity_CycleSetCycleSelectDryCycleTowels":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2433,7 +2433,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToTowelsHowToWrinkleControl":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToWrinkleControl":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2477,7 +2477,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToTowelsHowToHeavyDuty":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToHeavyDuty":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2521,7 +2521,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToTowelsHowToSanitize":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToSanitize":{
                         "Required":{
                            "DryCavity_CycleSetDryness":{
                               "Enumeration":[
@@ -2544,7 +2544,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToTowelsHowToTimed":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToTimed":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -2574,7 +2574,7 @@
                            }
                         }
                      },
-                     "DryCycleWhatToTowelsHowToQuick":{
+                     "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToQuick":{
                         "Required":{
                            "DryCavity_CycleSetManualDryTime":{
                               "List":[
@@ -2604,7 +2604,7 @@
                            }
                         }
                      },
-                     "DryCycleSteamRefresh":{
+                     "DryCavity_CycleSetCycleSelectDryCycleSteamRefresh":{
                         "Required":{
                            "DryCavity_CycleSetWrinkleShield":{
                               "Enumeration":[
