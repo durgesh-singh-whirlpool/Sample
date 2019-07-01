@@ -2,14 +2,14 @@
   "ddm": {
     "id": "DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
     "ddmName": "DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
+    "modelNumber": "WED9620H,WGD9620H,YWED9620H,WED9620HW0,WED9620HC0,WED9620HBK0,WGD9620HW0,WGD9620HC0,WGD9620HBK0,YWED9620HW0,YWED9620HC0, WED9620HC0, WED9120HC, WED9620HW0",
     "createdAt": "Dec 12, 2018 3:00:23 PM",
     "createdBy": "Preethy",
     "brandName": "Whirlpool",
     "category": "FabricCare",
     "version": "1.0",
     "ccuriVersion": "1.0",
-    "ccURI": "API144_LAUNDRY_V17",
-    "modelNumber": "WED9620H,WGD9620H,YWED9620H,WED9620HW0,WED9620HC0,WED9620HBK0,WGD9620HW0,WGD9620HC0,WGD9620HBK0,YWED9620HW0,YWED9620HC0, WED9620HC0, WED9120HC, WED9620HW0"
+    "ccURI": "API144_LAUNDRY_V17"
   },
   "dataModel": {
     "Key": "DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
@@ -250,12 +250,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "XCat_WifiSetIspAuthorized",
         "Default": "0",
-        "Key": "0x01090005",
         "EnumValues": {
           "0": "IspAuthorizedNotAuthorized",
           "1": "IspAuthorizedSchedule",
           "2": "IspAuthorizedImmediate"
-        }
+        },
+        "Key": "0x01090005"
       },
       {
         "IsTemplate": false,
@@ -287,15 +287,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "MaxMessageLength",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "XCat_ConfigSetMaxMessageLength",
-        "Default": 0,
-        "Key": "0x010C0001",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 0
-        }
+        },
+        "DeviceIO": "RO",
+        "MappedAttributeName": "XCat_ConfigSetMaxMessageLength",
+        "Default": 0,
+        "Key": "0x010C0001"
       },
       {
         "IsTemplate": false,
@@ -304,15 +304,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "MaxRelationalSteps",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "XCat_ConfigSetMaxRelationalSteps",
-        "Default": 0,
-        "Key": "0x010C0002",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 0
-        }
+        },
+        "DeviceIO": "RO",
+        "MappedAttributeName": "XCat_ConfigSetMaxRelationalSteps",
+        "Default": 0,
+        "Key": "0x010C0002"
       },
       {
         "IsTemplate": false,
@@ -321,15 +321,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "MaxRelationalMemory",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "XCat_ConfigSetMaxRelationalMemory",
-        "Key": "0x010C0003",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 0
         },
-        "Default": 0
+        "DeviceIO": "RO",
+        "MappedAttributeName": "XCat_ConfigSetMaxRelationalMemory",
+        "Default": 0,
+        "Key": "0x010C0003"
       },
       {
         "IsTemplate": false,
@@ -386,12 +386,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Sys_DisplaySetLanguage",
         "Default": "0",
-        "Key": "0x02020002",
         "EnumValues": {
           "0": "LanguageEnglish",
           "33": "LanguageFrench",
           "34": "LanguageSpanish"
-        }
+        },
+        "Key": "0x02020002"
       },
       {
         "IsTemplate": false,
@@ -412,15 +412,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "BrightnessPercent",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Sys_DisplaySetBrightnessPercent",
-        "Key": "0x02020009",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 100
         },
-        "Default": 90
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Sys_DisplaySetBrightnessPercent",
+        "Default": 90,
+        "Key": "0x02020009"
       },
       {
         "IsTemplate": false,
@@ -444,14 +444,14 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Sys_OpSetAlertToneVolume",
         "Default": "2",
-        "Key": "0x02030004",
         "EnumValues": {
           "0": "VolumeValueOff",
           "1": "VolumeValueLow",
           "2": "VolumeValueMedium",
           "3": "VolumeValueHigh",
           "4": "VolumeValueMax"
-        }
+        },
+        "Key": "0x02030004"
       },
       {
         "IsTemplate": false,
@@ -463,14 +463,14 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Sys_OpSetKeyPressToneVolume",
         "Default": "2",
-        "Key": "0x02030006",
         "EnumValues": {
           "0": "VolumeValueOff",
           "1": "VolumeValueLow",
           "2": "VolumeValueMedium",
           "3": "VolumeValueHigh",
           "4": "VolumeValueMax"
-        }
+        },
+        "Key": "0x02030006"
       },
       {
         "IsTemplate": false,
@@ -479,15 +479,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "EstTimeRemaining",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "Cavity_TimeStatusEstTimeRemaining",
-        "Default": 0,
-        "Key": "0x03010001",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 4294967295
-        }
+        },
+        "DeviceIO": "RO",
+        "MappedAttributeName": "Cavity_TimeStatusEstTimeRemaining",
+        "Default": 0,
+        "Key": "0x03010001"
       },
       {
         "IsTemplate": false,
@@ -537,7 +537,6 @@
         "DeviceIO": "WO",
         "MappedAttributeName": "Cavity_OpSetOperations",
         "Default": "0",
-        "Key": "0x03070001",
         "EnumValues": {
           "0": "OperationsNone",
           "1": "OperationsCancel",
@@ -545,7 +544,8 @@
           "3": "OperationsSetOnDisplay",
           "5": "OperationsPause",
           "6": "OperationsResume"
-        }
+        },
+        "Key": "0x03070001"
       },
       {
         "IsTemplate": false,
@@ -582,15 +582,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "SpecialtyCycleId",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Cavity_CycleSetSpecialtyCycleId",
-        "Default": 0,
-        "Key": "0x03080007",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 255
-        }
+        },
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Cavity_CycleSetSpecialtyCycleId",
+        "Default": 0,
+        "Key": "0x03080007"
       },
       {
         "IsTemplate": false,
@@ -602,12 +602,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "DrySys_OpSetDampNotificationToneVolume",
         "Default": "2",
-        "Key": "0x06020001",
         "EnumValues": {
           "0": "VolumeValueOff",
           "2": "VolumeValueMedium",
           "4": "VolumeValueMax"
-        }
+        },
+        "Key": "0x06020001"
       },
       {
         "IsTemplate": false,
@@ -678,8 +678,8 @@
         "AttributeName": "Temperature",
         "DeviceIO": "RO",
         "MappedAttributeName": "DryCavity_ChangeStatusTemperature",
-        "Key": "0x07020008",
-        "Default": true
+        "Default": true,
+        "Key": "0x07020008"
       },
       {
         "IsTemplate": false,
@@ -767,7 +767,6 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "DryCavity_CycleSetCycleSelect",
         "Default": "0",
-        "Key": "0x07040001",
         "EnumValues": {
           "0": "DryCycleNone",
           "1": "DryCycleNormal",
@@ -806,7 +805,8 @@
           "38": "DryCycleWhatToWhitesHowToSanitize",
           "39": "DryCycleWhatToWhitesHowToTimed",
           "40": "DryCycleWhatToWhitesHowToWrinkleControl"
-        }
+        },
+        "Key": "0x07040001"
       },
       {
         "IsTemplate": false,
@@ -818,13 +818,13 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "DryCavity_CycleSetDryness",
         "Default": "0",
-        "Key": "0x07040002",
         "EnumValues": {
           "1": "DrynessLessMid",
           "4": "DrynessNormMid",
           "7": "DrynessMoreMid",
           "10": "DrynessNone"
-        }
+        },
+        "Key": "0x07040002"
       },
       {
         "IsTemplate": false,
@@ -877,14 +877,14 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "DryCavity_CycleSetTemperature",
         "Default": "0",
-        "Key": "0x07040008",
         "EnumValues": {
           "0": "DryTempAir",
           "1": "DryTempCoolLow",
           "2": "DryTempCoolMid",
           "5": "DryTempWarmMid",
           "8": "DryTempHotMid"
-        }
+        },
+        "Key": "0x07040008"
       },
       {
         "IsTemplate": false,
@@ -896,12 +896,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "DryCavity_CycleSetWrinkleShield",
         "Default": "0",
-        "Key": "0x07040009",
         "EnumValues": {
           "0": "WrinkleShieldOff",
           "1": "WrinkleShieldOn",
           "2": "WrinkleShieldOnWithSteam"
-        }
+        },
+        "Key": "0x07040009"
       },
       {
         "IsTemplate": false,
@@ -910,15 +910,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerSigned32Bit",
         "AttributeName": "PushTrigger",
-        "DeviceIO": "WO",
-        "MappedAttributeName": "PushTrigger",
-        "Default": 0,
-        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": -2147483648,
           "Max": 2147483647
-        }
+        },
+        "DeviceIO": "WO",
+        "MappedAttributeName": "PushTrigger",
+        "Default": 0,
+        "Key": "0x00000000"
       },
       {
         "IsTemplate": false,
@@ -938,15 +938,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "GetSubscribeListVersion",
-        "DeviceIO": "WO",
-        "MappedAttributeName": "GetSubscribeListVersion",
-        "Default": 0,
-        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 4294967295
-        }
+        },
+        "DeviceIO": "WO",
+        "MappedAttributeName": "GetSubscribeListVersion",
+        "Default": 0,
+        "Key": "0x00000000"
       },
       {
         "IsTemplate": false,
@@ -1117,15 +1117,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "ApplianceVersionNumber",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "ApplianceVersionNumber",
-        "Default": 0,
-        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 65535
-        }
+        },
+        "DeviceIO": "RW",
+        "MappedAttributeName": "ApplianceVersionNumber",
+        "Default": 0,
+        "Key": "0x00000000"
       },
       {
         "IsTemplate": false,
@@ -1134,15 +1134,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "EnergyProfileSetting",
-        "DeviceIO": "WO",
-        "MappedAttributeName": "EnergyProfileSetting",
-        "Default": 0,
-        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 4294967295
-        }
+        },
+        "DeviceIO": "WO",
+        "MappedAttributeName": "EnergyProfileSetting",
+        "Default": 0,
+        "Key": "0x00000000"
       },
       {
         "IsTemplate": false,
@@ -1239,15 +1239,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "trid",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "trid",
-        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 65535
         },
-        "Default": 0
+        "DeviceIO": "RW",
+        "MappedAttributeName": "trid",
+        "Default": 0,
+        "Key": "0x00000000"
       },
       {
         "IsTemplate": false,
@@ -1258,8 +1258,8 @@
         "AttributeName": "online",
         "DeviceIO": "RO",
         "MappedAttributeName": "online",
-        "Key": "0x00000000",
-        "Default": false
+        "Default": false,
+        "Key": "0x00000000"
       },
       {
         "IsTemplate": false,
@@ -1268,15 +1268,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerSigned32Bit",
         "AttributeName": "UtcOffset",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "UtcOffset",
-        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": -2147483648,
           "Max": 2147483647
         },
-        "Default": 0
+        "DeviceIO": "RW",
+        "MappedAttributeName": "UtcOffset",
+        "Default": 0,
+        "Key": "0x00000000"
       },
       {
         "IsTemplate": false,
@@ -1285,15 +1285,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerSigned32Bit",
         "AttributeName": "DstOffset",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "DstOffset",
-        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": -2147483648,
           "Max": 2147483647
         },
-        "Default": 0
+        "DeviceIO": "RW",
+        "MappedAttributeName": "DstOffset",
+        "Default": 0,
+        "Key": "0x00000000"
       },
       {
         "IsTemplate": false,
@@ -1313,15 +1313,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "DateTimeMode",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "DateTimeMode",
-        "Default": 0,
-        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 65535
-        }
+        },
+        "DeviceIO": "RW",
+        "MappedAttributeName": "DateTimeMode",
+        "Default": 0,
+        "Key": "0x00000000"
       }
     ]
   },
@@ -1334,1299 +1334,6 @@
         ],
         "Capability": {
           "DryCavity": {
-            "CapabilityData": {
-              "DryCycleNone": {
-                "Required": {}
-              },
-              "DryCycleNormal": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  },
-                  "DryCavity_CycleSetEcoBoostEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": true
-                  }
-                }
-              },
-              "DryCycleWrinkleControlCasual": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOn"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolMid"
-                  }
-                }
-              },
-              "DryCycleHeavyDuty": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleSanitize": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessMoreMid"
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleTimedDry": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      1800,
-                      3600,
-                      5400
-                    ],
-                    "Default": 3600
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleRapidDryExpress": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      900,
-                      1800,
-                      2700
-                    ],
-                    "Default": 900
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleDelicate": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolMid"
-                  }
-                }
-              },
-              "DryCycleWhatToDelicatesHowToWrinkleControl": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOn"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolLow"
-                  }
-                }
-              },
-              "DryCycleWhatToDelicatesHowToHeavyDuty": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToDelicatesHowToTimed": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      1800,
-                      3600,
-                      5400
-                    ],
-                    "Default": 3600
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolLow"
-                  }
-                }
-              },
-              "DryCycleWhatToDelicatesHowToQuick": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      900,
-                      1800,
-                      2700
-                    ],
-                    "Default": 900
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleBeddingBulky": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueMax"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToBulkyHowToWrinkleControl": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueMax"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOn"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolMid"
-                  }
-                }
-              },
-              "DryCycleWhatToBulkyHowToHeavyDuty": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueMax"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToBulkyHowToSanitize": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessMoreMid"
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleWhatToBulkyHowToTimed": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      1800,
-                      3600,
-                      5400
-                    ],
-                    "Default": 3600
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolMid"
-                  }
-                }
-              },
-              "DryCycleWhatToBulkyHowToQuick": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      900,
-                      1800,
-                      2700
-                    ],
-                    "Default": 900
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleWhites": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleWhatToWhitesHowToWrinkleControl": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOn"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToWhitesHowToHeavyDuty": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleWhatToWhitesHowToSanitize": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessMoreMid"
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleWhatToWhitesHowToTimed": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      1800,
-                      3600,
-                      5400
-                    ],
-                    "Default": 3600
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToWhitesHowToQuick": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      900,
-                      1800,
-                      2700
-                    ],
-                    "Default": 900
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleColorsBrights": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolMid"
-                  }
-                }
-              },
-              "DryCycleWhatToColorsBrightsHowToWrinkleControl": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOn"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolMid"
-                  }
-                }
-              },
-              "DryCycleWhatToColorsBrightsHowToHeavyDuty": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToColorsBrightsHowToSanitize": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessMoreMid"
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleWhatToColorsBrightsHowToTimed": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      1800,
-                      3600,
-                      5400
-                    ],
-                    "Default": 3600
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempCoolMid"
-                  }
-                }
-              },
-              "DryCycleWhatToColorsBrightsHowToQuick": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      900,
-                      1800,
-                      2700
-                    ],
-                    "Default": 900
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleTowels": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToTowelsHowToWrinkleControl": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOn"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToTowelsHowToHeavyDuty": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessLessMid",
-                      "DrynessNormMid",
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessNormMid"
-                  },
-                  "DrySys_OpSetDampNotificationToneVolume": {
-                    "Enumeration": [
-                      "VolumeValueOff",
-                      "VolumeValueMedium",
-                      "VolumeValueMax"
-                    ],
-                    "Default": "VolumeValueOff"
-                  },
-                  "DryCavity_CycleSetStaticGuardEnable": {
-                    "Bool": [
-                      false,
-                      true
-                    ],
-                    "Default": false
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleWhatToTowelsHowToSanitize": {
-                "Required": {
-                  "DryCavity_CycleSetDryness": {
-                    "Enumeration": [
-                      "DrynessMoreMid"
-                    ],
-                    "Default": "DrynessMoreMid"
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleWhatToTowelsHowToTimed": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      1800,
-                      3600,
-                      5400
-                    ],
-                    "Default": 3600
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              },
-              "DryCycleWhatToTowelsHowToQuick": {
-                "Required": {
-                  "DryCavity_CycleSetManualDryTime": {
-                    "List": [
-                      900,
-                      1800,
-                      2700
-                    ],
-                    "Default": 900
-                  },
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempAir",
-                      "DryTempCoolLow",
-                      "DryTempCoolMid",
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempHotMid"
-                  }
-                }
-              },
-              "DryCycleSteamRefresh": {
-                "Required": {
-                  "DryCavity_CycleSetWrinkleShield": {
-                    "Enumeration": [
-                      "WrinkleShieldOff",
-                      "WrinkleShieldOn",
-                      "WrinkleShieldOnWithSteam"
-                    ],
-                    "Default": "WrinkleShieldOff"
-                  },
-                  "DryCavity_CycleSetTemperature": {
-                    "Enumeration": [
-                      "DryTempWarmMid",
-                      "DryTempHotMid"
-                    ],
-                    "Default": "DryTempWarmMid"
-                  }
-                }
-              }
-            },
             "SetCycle": {
               "Regular": {
                 "DryCavity_CycleSetCycleSelectDryCycleNormal": {
@@ -2965,14 +1672,1646 @@
                   ]
                 }
               }
+            },
+            "Capability": {
+              "DryCavity": {
+                "CapabilityData": {
+                  "DryCavity_CycleSetCycleSelectDryCycleNone": {
+                    "Required": {}
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleNormal": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      },
+                      "DryCavity_CycleSetEcoBoostEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": true
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWrinkleControlCasual": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOn"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleHeavyDuty": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleSanitize": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessMoreMid"
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleTimedDry": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          1800,
+                          3600,
+                          5400
+                        ],
+                        "Default": 3600
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleRapidDryExpress": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          900,
+                          1800,
+                          2700
+                        ],
+                        "Default": 900
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleDelicate": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToWrinkleControl": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOn"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolLow"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToHeavyDuty": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToTimed": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          1800,
+                          3600,
+                          5400
+                        ],
+                        "Default": 3600
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolLow"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToQuick": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          900,
+                          1800,
+                          2700
+                        ],
+                        "Default": 900
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleBeddingBulky": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueMax"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToWrinkleControl": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueMax"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOn"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToHeavyDuty": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueMax"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToSanitize": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessMoreMid"
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToTimed": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          1800,
+                          3600,
+                          5400
+                        ],
+                        "Default": 3600
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToQuick": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          900,
+                          1800,
+                          2700
+                        ],
+                        "Default": 900
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhites": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToWrinkleControl": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOn"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToHeavyDuty": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToSanitize": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessMoreMid"
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToTimed": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          1800,
+                          3600,
+                          5400
+                        ],
+                        "Default": 3600
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToQuick": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          900,
+                          1800,
+                          2700
+                        ],
+                        "Default": 900
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleColorsBrights": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToWrinkleControl": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOn"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToHeavyDuty": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToSanitize": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessMoreMid"
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToTimed": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          1800,
+                          3600,
+                          5400
+                        ],
+                        "Default": 3600
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempCoolMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToQuick": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          900,
+                          1800,
+                          2700
+                        ],
+                        "Default": 900
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleTowels": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToWrinkleControl": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOn"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToHeavyDuty": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessLessMid",
+                          "DrynessNormMid",
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessNormMid"
+                      },
+                      "DrySys_OpSetDampNotificationToneVolume": {
+                        "Enumeration": [
+                          "VolumeValueOff",
+                          "VolumeValueMedium",
+                          "VolumeValueMax"
+                        ],
+                        "Default": "VolumeValueOff"
+                      },
+                      "DryCavity_CycleSetStaticGuardEnable": {
+                        "Bool": [
+                          false,
+                          true
+                        ],
+                        "Default": false
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToSanitize": {
+                    "Required": {
+                      "DryCavity_CycleSetDryness": {
+                        "Enumeration": [
+                          "DrynessMoreMid"
+                        ],
+                        "Default": "DrynessMoreMid"
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToTimed": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          1800,
+                          3600,
+                          5400
+                        ],
+                        "Default": 3600
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToQuick": {
+                    "Required": {
+                      "DryCavity_CycleSetManualDryTime": {
+                        "List": [
+                          900,
+                          1800,
+                          2700
+                        ],
+                        "Default": 900
+                      },
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempAir",
+                          "DryTempCoolLow",
+                          "DryTempCoolMid",
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempHotMid"
+                      }
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleSteamRefresh": {
+                    "Required": {
+                      "DryCavity_CycleSetWrinkleShield": {
+                        "Enumeration": [
+                          "WrinkleShieldOff",
+                          "WrinkleShieldOn",
+                          "WrinkleShieldOnWithSteam"
+                        ],
+                        "Default": "WrinkleShieldOff"
+                      },
+                      "DryCavity_CycleSetTemperature": {
+                        "Enumeration": [
+                          "DryTempWarmMid",
+                          "DryTempHotMid"
+                        ],
+                        "Default": "DryTempWarmMid"
+                      }
+                    }
+                  }
+                },
+                "SetCycle": {
+                  "Regular": {
+                    "DryCavity_CycleSetCycleSelectDryCycleNormal": {
+                      "Name": "RegularNormal",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleNormal"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWrinkleControlCasual": {
+                      "Name": "DryCycleWrinkleControlCasual",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWrinkleControlCasual"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleHeavyDuty": {
+                      "Name": "DryCycleHeavyDuty",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleHeavyDuty"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleSanitize": {
+                      "Name": "DryCycleSanitize",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleSanitize"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleTimedDry": {
+                      "Name": "DryCycleTimedDry",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleTimedDry"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleRapidDryExpress": {
+                      "Name": "DryCycleRapidDryExpress",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleRapidDryExpress"
+                        ]
+                      }
+                    }
+                  },
+                  "Colors": {
+                    "DryCavity_CycleSetCycleSelectDryCycleColorsBrights": {
+                      "Name": "DryCycleColorsBrights",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleColorsBrights"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToWrinkleControl": {
+                      "Name": "DryCycleWhatToColorsBrightsHowToWrinkleControl",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToColorsBrightsHowToWrinkleControl"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToHeavyDuty": {
+                      "Name": "DryCycleWhatToColorsBrightsHowToHeavyDuty",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToColorsBrightsHowToHeavyDuty"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToSanitize": {
+                      "Name": "DryCycleWhatToColorsBrightsHowToSanitize",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToColorsBrightsHowToSanitize"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToTimed": {
+                      "Name": "DryCycleWhatToColorsBrightsHowToTimed",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToColorsBrightsHowToTimed"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToQuick": {
+                      "Name": "DryCycleWhatToColorsBrightsHowToQuick",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToColorsBrightsHowToQuick"
+                        ]
+                      }
+                    }
+                  },
+                  "Whites": {
+                    "DryCavity_CycleSetCycleSelectDryCycleWhites": {
+                      "Name": "DryCycleWhites",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhites"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToWrinkleControl": {
+                      "Name": "DryCycleWhatToWhitesHowToWrinkleControl",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToWhitesHowToWrinkleControl"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToHeavyDuty": {
+                      "Name": "DryCycleWhatToWhitesHowToHeavyDuty",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToWhitesHowToHeavyDuty"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToSanitize": {
+                      "Name": "DryCycleWhatToWhitesHowToSanitize",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToWhitesHowToSanitize"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToTimed": {
+                      "Name": "DryCycleWhatToWhitesHowToTimed",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToWhitesHowToTimed"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToQuick": {
+                      "Name": "DryCycleWhatToWhitesHowToQuick",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToWhitesHowToQuick"
+                        ]
+                      }
+                    }
+                  },
+                  "Towels": {
+                    "DryCavity_CycleSetCycleSelectDryCycleTowels": {
+                      "Name": "DryCycleTowels",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleTowels"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToWrinkleControl": {
+                      "Name": "DryCycleWhatToTowelsHowToWrinkleControl",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToTowelsHowToWrinkleControl"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToHeavyDuty": {
+                      "Name": "DryCycleWhatToTowelsHowToHeavyDuty",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToTowelsHowToHeavyDuty"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToSanitize": {
+                      "Name": "DryCycleWhatToTowelsHowToSanitize",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToTowelsHowToSanitize"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToTimed": {
+                      "Name": "DryCycleWhatToTowelsHowToTimed",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToTowelsHowToTimed"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToQuick": {
+                      "Name": "DryCycleWhatToTowelsHowToQuick",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToTowelsHowToQuick"
+                        ]
+                      }
+                    }
+                  },
+                  "Delicates": {
+                    "DryCavity_CycleSetCycleSelectDryCycleDelicate": {
+                      "Name": "DryCycleDelicate",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleDelicate"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToWrinkleControl": {
+                      "Name": "DryCycleWhatToDelicatesHowToWrinkleControl",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToDelicatesHowToWrinkleControl"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToHeavyDuty": {
+                      "Name": "DryCycleWhatToDelicatesHowToHeavyDuty",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToDelicatesHowToHeavyDuty"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToTimed": {
+                      "Name": "DryCycleWhatToDelicatesHowToTimed",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToDelicatesHowToTimed"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToQuick": {
+                      "Name": "DryCycleWhatToDelicatesHowToQuick",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToDelicatesHowToQuick"
+                        ]
+                      }
+                    }
+                  },
+                  "BulkyItems": {
+                    "DryCavity_CycleSetCycleSelectDryCycleBeddingBulky": {
+                      "Name": "DryCycleBeddingBulky",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleBeddingBulky"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToWrinkleControl": {
+                      "Name": "DryCycleWhatToBulkyHowToWrinkleControl",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToBulkyHowToWrinkleControl"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToHeavyDuty": {
+                      "Name": "DryCycleWhatToBulkyHowToHeavyDuty",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToBulkyHowToHeavyDuty"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToSanitize": {
+                      "Name": "DryCycleWhatToBulkyHowToSanitize",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToBulkyHowToSanitize"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToTimed": {
+                      "Name": "DryCycleWhatToBulkyHowToTimed",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToBulkyHowToTimed"
+                        ]
+                      }
+                    },
+                    "DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToQuick": {
+                      "Name": "DryCycleWhatToBulkyHowToQuick",
+                      "Attributes": {
+                        "DryCavity_CycleSetCycleSelect": [
+                          "DryCycleWhatToBulkyHowToQuick"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "UtilityCycle": {
+                  "DryCavity_CycleSetCycleSelectDryCycleSteamRefresh": {
+                    "Name": "DryCycleSteamRefresh",
+                    "Attributes": {
+                      "DryCavity_CycleSetCycleSelect": [
+                        "DryCycleSteamRefresh"
+                      ]
+                    }
+                  },
+                  "Default": "DryCavity_CycleSetCycleSelectDryCycleSteamRefresh"
+                },
+                "WatchCycles": {
+                  "DryCavity_CycleSetCycleSelectDryCycleNormal": {
+                    "Name": "DryCavity_CycleSetCycleSelectDryCycleNormal",
+                    "Attributes": {
+                      "DryCavity_CycleSetCycleSelect": [
+                        "DryCycleNormal"
+                      ]
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleWhites": {
+                    "Name": "DryCycleWhites",
+                    "Attributes": {
+                      "DryCavity_CycleSetCycleSelect": [
+                        "DryCycleWhites"
+                      ]
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleDelicate": {
+                    "Name": "DryCycleDelicate",
+                    "Attributes": {
+                      "DryCavity_CycleSetCycleSelect": [
+                        "DryCycleDelicate"
+                      ]
+                    }
+                  },
+                  "DryCavity_CycleSetCycleSelectDryCycleBeddingBulky": {
+                    "Name": "DryCycleBeddingBulky",
+                    "Attributes": {
+                      "DryCavity_CycleSetCycleSelect": [
+                        "DryCycleBeddingBulky"
+                      ]
+                    }
+                  }
+                }
+              }
             }
           }
         },
         "AttributesMapping": {
-          "Common": {
-            "ControlLock": "Sys_OpSetControlLock",
-            "OpStatusState": "Cavity_CycleStatusMachineState"
-          },
           "DryCavity": {
             "CycleName": [
               "DryCavity_CycleSetCycleSelect",
@@ -2988,6 +3327,10 @@
             "StaticGuardEnable": "DryCavity_CycleSetStaticGuardEnable",
             "DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume",
             "ManualDryTime": "DryCavity_CycleSetManualDryTime"
+          },
+          "Common": {
+            "OpStatusState": "Cavity_CycleStatusMachineState",
+            "ControlLock": "Sys_OpSetControlLock"
           }
         },
         "Features": {
@@ -3055,13 +3398,13 @@
           }
         },
         "ApplianceRulesets": {
-          "Common": {
+          "DryCavity": {
             "Runtime": [
               {
                 "ruleName": "Disable All Features when appliance is offline",
                 "description": "Disable All Features when appliance is offline",
                 "features": {
-                  "ControlLock": false
+                  "SetCycle": false
                 },
                 "condition": {
                   "type": "value",
@@ -3072,13 +3415,13 @@
               }
             ]
           },
-          "DryCavity": {
+          "Common": {
             "Runtime": [
               {
                 "ruleName": "Disable All Features when appliance is offline",
                 "description": "Disable All Features when appliance is offline",
                 "features": {
-                  "SetCycle": false
+                  "ControlLock": false
                 },
                 "condition": {
                   "type": "value",
