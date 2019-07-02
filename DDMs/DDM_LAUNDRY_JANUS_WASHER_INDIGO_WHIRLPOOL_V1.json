@@ -4529,7 +4529,7 @@
                 "TimeRemaining": "Cavity_TimeSetDelayTime"
               }
             },
-            "CyclesHistory": {
+            "CycleHistory": {
               "Visible": true,
               "AvailableIn": [
                 "US",
@@ -4558,7 +4558,7 @@
                 "ruleName": "Cancel the Running Cycle",
                 "description": "If Appliance is not idle, we can enable the cancel action",
                 "actions": {
-                  "ActionCancelCommand": true
+                  "ActionSetCycleCancelCommand": true
                 },
                 "condition": {
                   "type": "value",
@@ -4571,7 +4571,7 @@
                 "ruleName": "Enable Cancel option if a cycle is already running in Appliance",
                 "description": "Cavity_OperationStatusMachineState ==Standby, this is instruction sent to appliance",
                 "actions": {
-                  "ActionCancelCommand": true
+                  "ActionSetCycleCancelCommand": true
                 },
                 "condition": {
                   "type": "value",
@@ -4584,7 +4584,7 @@
                 "ruleName": "Enable Start option if a cycle is set on Appliance",
                 "description": "Cavity_OperationStatusMachineState ==Setting , this is instruction sent to appliance",
                 "actions": {
-                  "ActionStartCommand": true
+                  "ActionSetCycleStartCommand": true
                 },
                 "condition": {
                   "type": "value",
@@ -4597,8 +4597,8 @@
                 "ruleName": "Disable Cancel, Modify, options if appliance is Complete",
                 "description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
                 "actions": {
-                  "ActionCancelCommand": false,
-                  "ActionModifyCommand": false
+                  "ActionSetCycleCancelCommand": false,
+                  "ActionSetCycleModifyCommand": false
                 },
                 "condition": {
                   "type": "value",
@@ -4611,8 +4611,8 @@
                 "ruleName": "Dont start cycle with door open",
                 "description": "Cavity_OpStatusDoorOpen ==true, no option to start cycle",
                 "actions": {
-                  "ActionStartCommand": false,
-                  "ActionModifyCommand": false
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleModifyCommand": false
                 },
                 "condition": {
                   "type": "value",
@@ -4625,7 +4625,7 @@
                 "ruleName": "Enable Cancel option if, Cycle is delaying",
                 "description": "A command can be started if the device is online and remote is enbled",
                 "actions": {
-                  "ActionCancelCommand": true
+                  "ActionSetCycleCancelCommand": true
                 },
                 "condition": {
                   "type": "operation",
@@ -4678,6 +4678,12 @@
           }
         },
         "Rulesets": {
+		"WashCavity": {
+        "CycleHistory": {
+          "isLegacy": false,
+          "attributes": "WashCavity_CycleSetCycleSelect,WashCavity_CycleSetTemperature,WashCavity_CycleSetSoilLevel,WashCavity_CycleSetSpinSpeed,WashCavity_CycleSetPresoakNotTimedEnable,Cavity_TimeSetDelayTime,WashCavity_CycleSetExtraRinseSelect,WashCavity_CycleSetFresheningSelect,Cavity_CycleSetSteamEnable",
+                    "groupBy": "XCat_OdometerStatusCycleCount"}
+      },
           "FaultCodeHistory": {
             "isLegacy": false,
             "groupBy": "Sys_AlertStatusCustomerFaultCode",
