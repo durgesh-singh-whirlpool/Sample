@@ -211,7 +211,13 @@
         "XCat_UtcOffset.Label": "UTC Offset",
         "XCat_WifiSetPublishApplianceState.Label": "WiFi Set Publish Appliance State",
         "XCat_WifiStatusRssiAntennaDiversity.Label": "WiFi Status RSSI Antenna Diversity",
-        "XCat_WifiStatusRssiDisplay.Label": "WiFi Status RSSI Display"
+        "XCat_WifiStatusRssiDisplay.Label": "WiFi Status RSSI Display",
+		"ControlLock.Label" : "Control lock",
+    "ControlLock.Description": "Allows you to lock the controls to prevent unintended use of the appliance.",
+	"Notifications.Label" : "Notifications",
+    "Notifications.Description" : "Start or stop notifications for individual notifications at any time",
+	"Regular.Label" : "Regular"
+	
     },
     "AFCSelfHelpPack": {
         "F0,E1": {
