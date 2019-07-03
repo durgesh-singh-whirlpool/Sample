@@ -4683,9 +4683,6 @@
             "groupBy": "Sys_AlertStatusCustomerFaultCode",
             "attributes": "Sys_AlertStatusCustomerFaultCode"
           }
-        },
-        "QueryParams": {
-          
         }
       }
     ]
