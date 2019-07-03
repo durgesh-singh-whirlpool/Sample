@@ -4683,6 +4683,13 @@
             "groupBy": "Sys_AlertStatusCustomerFaultCode",
             "attributes": "Sys_AlertStatusCustomerFaultCode"
           }
+        },
+        "QueryParams": {
+          "FaultCodeHistory": {
+            "isLegacy": false,
+            "groupBy": "Sys_AlertStatusCustomerFaultCode",
+            "attributes": "Sys_AlertStatusCustomerFaultCode"
+          }
         }
       }
     ]
