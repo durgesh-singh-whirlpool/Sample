@@ -276,7 +276,7 @@
 		"WashCavity_CycleSetFresheningSelect.Description": "FanFresh®",
 		"online.Label": "online",
 		"QuietMode.Label": "Quiet Mode",
-        "QuietMode.Description": "Turns off button sounds and end of cycle notifications.",
+        "QuietMode.Description": "Turns off button sounds and end of cycle notifications."
     },
     "AFCSelfHelpPack": {
         "F0,E1": {
