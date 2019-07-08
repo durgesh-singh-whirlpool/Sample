@@ -3018,7 +3018,14 @@
                         "US",
                         "CA"
                      ]
-                  }
+                  },
+				  "FaultCodes": {
+						"Visible": true,
+						"AvailableIn": [
+							"US",
+							"CA"
+						]
+					}
                },
                "DryCavity":{
                   "SetCycle":{
@@ -3054,7 +3061,14 @@
                      "SetOperationsMapping":{
                         "Operation":"Cavity_OpSetOperations"
                      }
-                  }
+                  },
+				  "CyclesHistory": {
+						"Visible": true,
+						"AvailableIn": [
+							"US",
+							"CA"
+						]
+					}
                }
             },
             "ApplianceRulesets":{
