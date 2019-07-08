@@ -193,7 +193,6 @@
 		"XCat_InServiceDate.Label": "In Service Date",
 		"XCat_OdometerStatusRunningHours.Label": "Odometer Status Running Hours",
 		"XCat_OdometerStatusTotalHours.Label": "Odometer Status Total Hours",
-		"XCat_OdometerStatusCycleCount.Label": "CycleCount",
 		"XCat_online.Label": "Online",
 		"XCat_PersistentInfoMacAddress.Label": "Persistent Info Mac Address",
 		"XCat_PersistentInfoSaid.Label": "Persistent Info Said",
@@ -213,50 +212,116 @@
 		"XCat_WifiSetPublishApplianceState.Label": "WiFi Set Publish Appliance State",
 		"XCat_WifiStatusRssiAntennaDiversity.Label": "WiFi Status RSSI Antenna Diversity",
 		"XCat_WifiStatusRssiDisplay.Label": "WiFi Status RSSI Display",
-		"XCat_WifiSetRebootWifiCommModule.Label": "Reboot WiFi Comm Module",
-		"XCat_ConfigSetMaxRelationalSteps.Label": "Maximum Relational Steps",
-		"XCat_ConfigSetMaxRelationalMemory.Label": "Maximum Relational Memory",
-		"XCat_WifiSetDeprovisionWifiCommModule.Label": "Deprovision WiFi Comm Module",
-		"XCat_WifiSetDisableWifiCommModule.Label": "Disable WiFi Comm Module",
+		"ControlLock.Label": "Control lock",
+		"ControlLock.Description": "Allows you to lock the controls to prevent unintended use of the appliance.",
+		"Notifications.Label": "Notifications",
+		"Notifications.Description": "Start or stop notifications for individual notifications at any time",
+		"ApplianceDocuments.Label": "Appliance Documents",
+		"ApplianceDocuments.Description": "Appliance Documents",
+		"FaultCodes.Label": "Fault Codes",
+		"FaultCodes.Description": "Fault Code",
+		"RemoteStatus.Label": "Remote Status",
+		"RemoteStatus.Description": "Receive a notification when remote control has been enabled or disabled",
+		"Regular.Label": "Regular",
+		"Colors.Label": "Colors",
+		"Whites.Label": "Whites",
+		"Towels.Label": "Towels",
+		"Delicates.Label": "Delicates",
+		"Bulky.Label": "Bulky",
+		"WashCavity_CycleSetCycleSelectWashCycleNone.Label": "None",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToColdWash.Label": "Colors & Cold Wash",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToQuick.Label": "Colors & Quick",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToBulkyHowToHeavyDuty.Label": "Bulky Items & Heavy Duty",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToBulkyHowToQuick.Label": "Bulky Items & Quick",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToBulkyHowToWrinkleControl.Label": "Bulky Items & Wrinkle Control",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToColdWash.Label": "Delicates & Cold Wash",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToQuick.Label": "Delicates & Quick",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToHeavyDuty.Label": "Towels & Heavy Duty",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToQuick.Label": "Towels & Quick",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToSanitize.Label": "Towels & Sanitize",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToHeavyDuty.Label": "Whites & Heavy Duty",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToQuick.Label": "Whites & Quick",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToSanitize.Label": "Whites & Sanitize",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToSanitize.Label": "Colors & Sanitize",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToHeavyDuty.Label": "Colors & Heavy Duty",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToWrinkleControl.Label": "Colors & Wrinkle Control",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToHeavyDuty.Label": "Delicate & Heavy Duty",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToWrinkleControl.Label": "Delicate & Wrinkle Control",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToColdWash.Label": "Whites & Cold Wash",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToWrinkleControl.Label": "Whites & Wrinkle Control",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToWrinkleControl.Label": "Towels & Wrinkle Control",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToTowelsHowToColdWash.Label": "Towels & Cold Wash",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToDelicatesHowToSanitize.Label": "Delicates & Sanitize",
+		"WashCavity_CycleSetCycleSelectWashCycleWhatToBulkyHowToColdWash.Label": "Bulky Items & Cold Wash",
+		"WashCavity_CycleSetCycleSelectWashCycleCleanWasher.Label": "Clean Washer with affresh®",
+		"WashCavity_CycleSetCycleSelectWashCycleWrinkleControl.Label": "Wrinkle Control",
+		"WashCavity_CycleSetCycleSelectWashCycleDrainSpin.Label": "Drain & Spin",
+		"WashCavity_CycleSetCycleSelectWashCycleNormal.Label": "Normal",
+		"WashCavity_CycleSetCycleSelectWashCycleQuickWash.Label": "Quick",
+		"WashCavity_CycleSetCycleSelectWashCycleHeavyDuty.Label": "Heavy Duty",
+		"WashCavity_CycleSetCycleSelectWashCycleSanitize.Label": "Sanitize",
+		"WashCavity_CycleSetCycleSelectWashCycleColdWash.Label": "Cold Wash",
+		"WashCavity_CycleSetCycleSelectWashCycleColorsBrights.Label": "Colors",
+		"WashCavity_CycleSetCycleSelectWashCycleWhites.Label": "Whites",
+		"WashCavity_CycleSetCycleSelectWashCycleTowels.Label": "Towels",
+		"WashCavity_CycleSetCycleSelectWashCycleBulky.Label": "Bulky Items",
+		"WashCavity_CycleSetCycleSelectWashCycleDelicates.Label": "Delicates",
+		"WashCavity_CycleSetCycleSelect.Label": "Set Cycle",
+		"WashCavity_CycleSetTemperature.Description": "Temperature",
+		"WashCavity_CycleSetSpinSpeed.Description": "Spin Speed",
+		"WashCavity_CycleSetSoilLevel.Description": "Soil Level",
+		"WashCavity_CycleSetPresoakTimed.Label": "Presoak",
+		"WashCavity_CycleSetFresheningSelectFresheningNone.Label": "Off",
+		"WashCavity_CycleSetFresheningSelectFresheningFanFresh.Label": "On",
+		"WashCavity_CycleSetFresheningSelect.Description": "FanFresh®",
+		"online.Label": "online",
+		"QuietMode.Label": "Quiet Mode",
+		"QuietMode.Description": "Turns off button sounds and end of cycle notifications.",
+		"Cavity_ChangeStatusSteamChangeable": "Steam Changeable",
+		"Cavity_CycleSetCycleName": "Cycle Name",
+		"Cavity_CycleSetDownloadAndGo": "Cavity_CycleSet",
+		"Cavity_CycleSetSpecialtyCycleId": "Specialty Cycle Id",
+		"Cavity_CycleStatusMachineState": "Machine State",
+		"Cavity_OpSetOperations.Label": "Operations",
 		"Cavity_OpStatusDoorLocked.Label": "Door Locked",
 		"Cavity_OpStatusDoorOpen.Label": "Door Open",
-		"XCat_RemoteSetRemoteDiagnosticsEnable.Label": "Remote Diagnostics Enable",
-		"XCat_RemoteSetRebootAppliance.Label": "Reboot Appliance",
-		"Cavity_OpSetOperations.Label": "Operations",
+		"Cavity_TimeStatusDelayTimeRemaining": "Delay Time Remaining",
+		"Cavity_TimeStatusEstTimeRemaining": "Est Time Remaining",
+		"Relational_to_Appliance": "Relational to Appliance",
+		"Sys_AlertStatusCustomerFaultCode.Label": "Customer Fault Code",
+		"Sys_DisplaySetBrightnessPercent": "Brightness Percent",
+		"Sys_DisplaySetEnable24Hour": "Enable 24 Hour",
+		"Sys_DisplaySetLanguage": "Language",
 		"Sys_OpSetAlertToneVolume.Label": "Alert Tone Volume",
 		"Sys_OpSetKeyPressToneVolume.Label": "Key Press Tone Volume",
-		"Sys_AlertStatusCustomerFaultCode.Label": "Customer Fault Code",
-		"Cavity_ChangeStatusSteamChangeable": "Steam Changeable",
-		"Sys_DisplaySetEnable24Hour": "Enable 24 Hour",
-		"WashCavity_ChangeStatusBulkDispense1" : "Bulk Dispense 1",
-		"WashCavity_ChangeStatusBulkDispense2" : "Bulk Dispense 2",
-		"WashCavity_ChangeStatusBulkDispense1Concentration" : "Bulk Dispense 1 Concentration",
-		"WashCavity_ChangeStatusBulkDispense2Concentration" : "Bulk Dispense 2 Concentration",
-		"WashCavity_ChangeStatusExtraRinse" : "ExtraRinse",
-		"WashCavity_ChangeStatusFreshening" : "Freshening",
-		"WashCavity_ChangeStatusPresoakTimed" : "Presoak Timed",
-		"WashCavity_ChangeStatusSoilLevel" : "Soil Level",
-		"WashCavity_ChangeStatusSpinSpeed" : "Spin Speed",
-		"WashCavity_ChangeStatusTemperature" : "Temperature",
-		"WashCavity_ChangeStatusCycleSelect" : "Cycle Select",
-		"WashCavity_CycleStatusCleanDetection" : "Clean Detection",
-		"XCat_WifiSetIspAuthorized" : "Isp Authorized",
-		"Sys_DisplaySetLanguage" : "Language",
-		"Cavity_CycleStatusMachineState" : "Machine State",
-		"WashCavity_OpSetBulkDispense1Selection" : "Bulk Dispense 1 Selection",
-		"WashCavity_OpSetBulkDispense2Selection" : "Bulk Dispense 2 Selection",
-		"WashCavity_CycleSetCycleSelect" : "Cycle Select",
-		"XCat_ConfigSetMaxMessageLength" : "Max Message Length",
-		"XCat_ConfigSetMaxFavorites" : "Max Favorites",
-		"XCat_ConfigSetNumberEnvelopes" : "Number Envelopes",
-		"Sys_DisplaySetBrightnessPercent" : "Brightness Percent",
-		"Cavity_TimeStatusEstTimeRemaining" : "Est Time Remaining",
-		"Cavity_TimeStatusDelayTimeRemaining" : "Delay Time Remaining",
-		"Cavity_CycleSetDownloadAndGo" : "Cavity_CycleSet",
-		"Cavity_CycleSetSpecialtyCycleId" : "Specialty Cycle Id",
-		"XCat_DateTimeSetDateTimeSet" : "DateTime Set",
-		"Cavity_CycleSetCycleName" : "Cycle Name",
-		"Relational_to_Appliance" : "Relational to Appliance"
+		"WashCavity_ChangeStatusBulkDispense1": "Bulk Dispense 1",
+		"WashCavity_ChangeStatusBulkDispense1Concentration": "Bulk Dispense 1 Concentration",
+		"WashCavity_ChangeStatusBulkDispense2": "Bulk Dispense 2",
+		"WashCavity_ChangeStatusBulkDispense2Concentration": "Bulk Dispense 2 Concentration",
+		"WashCavity_ChangeStatusCycleSelect": "Cycle Select",
+		"WashCavity_ChangeStatusExtraRinse": "ExtraRinse",
+		"WashCavity_ChangeStatusFreshening": "Freshening",
+		"WashCavity_ChangeStatusPresoakTimed": "Presoak Timed",
+		"WashCavity_ChangeStatusSoilLevel": "Soil Level",
+		"WashCavity_ChangeStatusSpinSpeed": "Spin Speed",
+		"WashCavity_ChangeStatusTemperature": "Temperature",
+		"WashCavity_CycleSetCycleSelect": "Cycle Select",
+		"WashCavity_CycleStatusCleanDetection": "Clean Detection",
+		"WashCavity_OpSetBulkDispense1Selection": "Bulk Dispense 1 Selection",
+		"WashCavity_OpSetBulkDispense2Selection": "Bulk Dispense 2 Selection",
+		"XCat_ConfigSetMaxFavorites": "Max Favorites",
+		"XCat_ConfigSetMaxMessageLength": "Max Message Length",
+		"XCat_ConfigSetMaxRelationalMemory.Label": "Maximum Relational Memory",
+		"XCat_ConfigSetMaxRelationalSteps.Label": "Maximum Relational Steps",
+		"XCat_ConfigSetNumberEnvelopes": "Number Envelopes",
+		"XCat_DateTimeSetDateTimeSet": "DateTime Set",
+		"XCat_OdometerStatusCycleCount.Label": "CycleCount",
+		"XCat_RemoteSetRebootAppliance.Label": "Reboot Appliance",
+		"XCat_RemoteSetRemoteDiagnosticsEnable.Label": "Remote Diagnostics Enable",
+		"XCat_WifiSetDeprovisionWifiCommModule.Label": "Deprovision WiFi Comm Module",
+		"XCat_WifiSetDisableWifiCommModule.Label": "Disable WiFi Comm Module",
+		"XCat_WifiSetIspAuthorized": "Isp Authorized",
+		"XCat_WifiSetRebootWifiCommModule.Label": "Reboot WiFi Comm Module"
 	},
 	"AFCSelfHelpPack": {
 		"F0,E1": {
@@ -552,7 +617,7 @@
 		"Manuals": {
 			"UseCareGuide": {
 				"Title": "Use and Care Guide",
-				"FilePath": "NAR/WHIRLPOOL/DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1/DOCS/ENG/W11339488A.pdf"
+				"FilePath": "NAR/WHIRLPOOL/DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1/DOCS/ENG/W11339488A.pdf"
 			},
 			"InstallationInstructions": {
 				"Title": "Installation Instructions",
@@ -560,7 +625,7 @@
 			},
 			"QuickReferenceGuide": {
 				"Title": "Quick Reference Guide",
-				"FilePath": "NAR/WHIRLPOOL/DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1/DOCS/ENG/W11339711A.pdf"
+				"FilePath": "NAR/WHIRLPOOL/DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1/DOCS/ENG/W11339711A.pdf"
 			}
 		},
 		"NestSettings": {
@@ -713,20 +778,17 @@
 				"Name": "Extended Warranty",
 				"Description": "Extended Warranty",
 				"Disclaimer": "Extended Warranty",
-				"SupplyLocations": [
-					{
-						"Merchant": "Whirlpool",
-						"url": "https://serviceplans.whirlpool.com/",
-						"Country": "United States"
-					}
-				]
+				"SupplyLocations": [{
+					"Merchant": "Whirlpool",
+					"url": "https://serviceplans.whirlpool.com/",
+					"Country": "United States"
+				}]
 			},
 			"ScheduleService": {
 				"Name": "Schedule Service",
 				"Description": "Schedule Service",
 				"Disclaimer": "",
-				"SupplyLocations": [
-					{
+				"SupplyLocations": [{
 						"Merchant": "Whirlpool",
 						"Country": "United States",
 						"url": "https://www.servicebench.com/servicebenchv5/consumerApp/consumerRequestForward.action?token=ZHU6Y29uc3VtZXJQb3J0YWxQcm9kdWN0RGVzY3JpcHRpb247c2s6V1A7c2E6Mjc&cparam="
@@ -747,31 +809,26 @@
 				"Name": "affresh® Machine Cleaning Wipes",
 				"Description": "Keeping your washer looking like new is easy, thanks to the versatility of affresh® Machine Cleaning Wipes—the strongest and thickest washing machine cleaning wipe available. Featuring dual-sided durability, a clean lemongrass scent and Micro-Grab™ fibers that visibly lift and lock in residue, dirt and dust from machine surfaces, no other washing machine wipe cleans better.",
 				"Disclaimer": "Keeping your washer looking like new is easy, thanks to the versatility of affresh® Machine Cleaning Wipes—the strongest and thickest washing machine cleaning wipe available. Featuring dual-sided durability, a clean lemongrass scent and Micro-Grab™ fibers that visibly lift and lock in residue, dirt and dust from machine surfaces, no other washing machine wipe cleans better.",
-				"SupplyLocations": [
-					{
-						"Merchant": "Amazon",
-						"Country": "United States",
-						"url": "https://www.amazon.com/Affresh-W10355053-Machine-Cleaning-Wipes/dp/B01BHUSR38/ref=sr_1_1?s=hi&ie=UTF8&qid=1532454323&sr=1-1&keywords=W10355053&th=1",
-						"FilePath": "NAR/WHIRLPOOL/DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1/DOCS/ENG/amazon_logo_RGB.jpg"
-					}
-				]
+				"SupplyLocations": [{
+					"Merchant": "Amazon",
+					"Country": "United States",
+					"url": "https://www.amazon.com/Affresh-W10355053-Machine-Cleaning-Wipes/dp/B01BHUSR38/ref=sr_1_1?s=hi&ie=UTF8&qid=1532454323&sr=1-1&keywords=W10355053&th=1",
+					"FilePath": "NAR/WHIRLPOOL/DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1/DOCS/ENG/amazon_logo_RGB.jpg"
+				}]
 			},
 			"MachineCleanerTablets6count": {
 				"Name": "affresh® Washing Machine Cleaner Tablets – 6 count",
 				"Description": "Did you know that your washing machine needs a wash of its own? That’s why each affresh® Washing Machine Cleaner tablet is specially formulated to help keep your washing machine performing and looking like new. Simply drop a tablet in for a clean with confidence.",
 				"Disclaimer": "Did you know that your washing machine needs a wash of its own? That’s why each affresh® Washing Machine Cleaner tablet is specially formulated to help keep your washing machine performing and looking like new. Simply drop a tablet in for a clean with confidence.",
-				"SupplyLocations": [
-					{
-						"Merchant": "Amazon",
-						"Country": "United States",
-						"url": "https://www.amazon.com/Affresh-Washer-Machine-Cleaner-6-Tablets/dp/B00C91Q86I/ref=sr_1_1?s=hi&ie=UTF8&qid=1532454376&sr=8-1&keywords=W10501250",
-						"FilePath": "NAR/WHIRLPOOL/DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1/DOCS/ENG/amazon_logo_RGB.jpg"
-					}
-				]
+				"SupplyLocations": [{
+					"Merchant": "Amazon",
+					"Country": "United States",
+					"url": "https://www.amazon.com/Affresh-Washer-Machine-Cleaner-6-Tablets/dp/B00C91Q86I/ref=sr_1_1?s=hi&ie=UTF8&qid=1532454376&sr=8-1&keywords=W10501250",
+					"FilePath": "NAR/WHIRLPOOL/DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1/DOCS/ENG/amazon_logo_RGB.jpg"
+				}]
 			}
 		},
-		"SmartTip": [
-			{
+		"SmartTip": [{
 				"Id": 1,
 				"Title": "Care Tip",
 				"Content": "Be sure to use high efficiency (HE) detergents with high efficiency clothes washers. HE detergent produces fewer suds and helps keep your machine performing at its best."
@@ -843,28 +900,25 @@
 			}
 		},
 		"Replenishment": {},
-		"LaundryDAPaths": [
-			{
-				"StainGuide": [
-					"NAR/LAUNDRY/STAINGUIDE/eng",
-					"NAR/LAUNDRY/STAINGUIDE/stainguide_v2.sqlite"
-				],
-				"TIPs": [
-					"NAR/LAUNDRY/TIPS/WHIRLPOOL/SmartTips/eng",
-					"NAR/LAUNDRY/TIPS/WHIRLPOOL/GeneralTips/eng"
-				],
-				"WorryFreeAlert": [
-					"NAR/LAUNDRY/TIPS/WHIRLPOOL/WorryFreeAlert/eng"
-				],
-				"ReadyAt": [
-					"NAR/LAUNDRY/READYAT/LaundryETR_ReadyAt_v1.sqlite"
-				]
-			}
-		]
+		"LaundryDAPaths": [{
+			"StainGuide": [
+				"NAR/LAUNDRY/STAINGUIDE/eng",
+				"NAR/LAUNDRY/STAINGUIDE/stainguide_v2.sqlite"
+			],
+			"TIPs": [
+				"NAR/LAUNDRY/TIPS/WHIRLPOOL/SmartTips/eng",
+				"NAR/LAUNDRY/TIPS/WHIRLPOOL/GeneralTips/eng"
+			],
+			"WorryFreeAlert": [
+				"NAR/LAUNDRY/TIPS/WHIRLPOOL/WorryFreeAlert/eng"
+			],
+			"ReadyAt": [
+				"NAR/LAUNDRY/READYAT/LaundryETR_ReadyAt_v1.sqlite"
+			]
+		}]
 	},
 	"NotificationMessages": {
-		"NotificationContents": [
-			{
+		"NotificationContents": [{
 				"TemplateId": "MachineState",
 				"SmsText": "Your clothes are clean!",
 				"EmailText": "Your clothes are clean!",
