@@ -3094,7 +3094,20 @@
                }
             },
             "QueryParams":{
-
+				"Common": {
+					"FaultCodeHistory": {
+						"isLegacy": false,
+						"groupBy": "Sys_AlertStatusCustomerFaultCode",
+						"attributes": "Sys_AlertStatusCustomerFaultCode"
+					}
+				},
+				"DryCavity": {
+					"CycleHistory": {
+						"isLegacy": false,
+						"attributes": "DryCavity_CycleSetCycleSelect,DryCavity_CycleSetWrinkleShield,DryCavity_CycleSetManualDryTime,DryCavity_CycleSetDryness,DryCavity_CycleSetTemperature,DryCavity_CycleSetEcoBoostEnable,DryCavity_CycleSetStaticGuardEnable,DrySys_OpSetDampNotificationToneVolume",
+                        "groupBy": "XCat_OdometerStatusCycleCount"
+					}
+				}
             }
          }
       ]
