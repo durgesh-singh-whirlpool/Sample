@@ -4534,9 +4534,6 @@
 					}
 				}
 			},
-			"CycleOrder": {
-
-			},
 			"ApplianceRulesets": {
 				"WashCavity": {
 					"Runtime": [{
