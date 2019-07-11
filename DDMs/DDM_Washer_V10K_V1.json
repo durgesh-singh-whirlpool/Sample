@@ -1725,64 +1725,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Heavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Heavy"
 								}
 
 							}
@@ -1791,65 +1791,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Light",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Light"
 								}
 
 							}
@@ -1858,64 +1858,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp0",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp0"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "VeryHeavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "VeryHeavy"
 								}
 
 							}
@@ -1924,65 +1924,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "VeryHeavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "VeryHeavy"
 								}
 
 							}
@@ -1991,64 +1991,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp1",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp1"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Light",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Light"
 								}
 
 							}
@@ -2057,65 +2057,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Medium",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Medium"
 								}
 
 							}
@@ -2124,65 +2124,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Light",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Light"
 								}
 
 							}
@@ -2191,64 +2191,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp0",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp0"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Heavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Heavy"
 								}
 
 							}
@@ -2257,65 +2257,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Heavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Heavy"
 								}
 
 							}
@@ -2324,64 +2324,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp1",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp1"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Medium",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Medium"
 								}
 
 							}
@@ -2390,65 +2390,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp4",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp4"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "VeryHeavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "VeryHeavy"
 								}
 
 							}
@@ -2457,65 +2457,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp4",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp4"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Light",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Light"
 								}
 
 							}
@@ -2524,64 +2524,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp0",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp0"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "VeryHeavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "VeryHeavy"
 								}
 
 							}
@@ -2590,65 +2590,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp3",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp3"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed2",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed2"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "VeryHeavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "VeryHeavy"
 								}
 
 							}
@@ -2657,65 +2657,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp1",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp1"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Medium",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Medium"
 								}
 
 							}
@@ -2724,65 +2724,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp1",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp1"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Light",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Light"
 								}
 
 							}
@@ -2791,64 +2791,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp0",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp0"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Heavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Heavy"
 								}
 							}
 						},
@@ -2856,65 +2856,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp1",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp1"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Heavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Heavy"
 								}
 
 							}
@@ -2923,64 +2923,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp1",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp1"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Medium",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Medium"
 								}
 
 							}
@@ -2989,65 +2989,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Medium",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Medium"
 								}
 
 							}
@@ -3056,65 +3056,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Light",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Light"
 								}
 
 							}
@@ -3123,64 +3123,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp0",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp0"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Heavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Heavy"
 								}
 
 							}
@@ -3189,65 +3189,65 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp2",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp2"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Heavy",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Heavy"
 								}
 
 							}
@@ -3256,64 +3256,64 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
-									"Default": "Temp1",
 									"Enumeration": [
 										"Temp0",
 										"Temp1",
 										"Temp2",
 										"Temp3",
 										"Temp4"
-									]
+									],
+									"Default": "Temp1"
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
-									"Default": "Medium",
 									"Enumeration": [
 										"Light",
 										"Medium",
 										"Heavy",
 										"VeryHeavy"
-									]
+									],
+									"Default": "Medium"
 								}
 
 							}
@@ -3322,18 +3322,18 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": true,
 									"Bool": [
 										false,
 										true
-									]
+									],
+									"Default": true
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
@@ -3341,26 +3341,26 @@
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
-									"Default": "SpinSpeed1",
 									"Enumeration": [
 										"SpinSpeed0",
 										"SpinSpeed1",
 										"SpinSpeed2"
-									]
+									],
+									"Default": "SpinSpeed1"
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
@@ -3372,17 +3372,17 @@
 							"Required": {
 								"CycleOptionsWHR_ExtraRinse": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_OxiClean": {
 									"Retention": 5,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_Temperature": {
 									"Retention": 4,
@@ -3390,10 +3390,10 @@
 								},
 								"CycleOptionsWHR_DeepClean": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SpinSpeed": {
 									"Retention": 4,
@@ -3401,10 +3401,10 @@
 								},
 								"CycleOptionsWHR_Presoak": {
 									"Retention": 1,
-									"Default": false,
 									"Bool": [
 										false
-									]
+									],
+									"Default": false
 								},
 								"CycleOptionsWHR_SoilLevel": {
 									"Retention": 4,
