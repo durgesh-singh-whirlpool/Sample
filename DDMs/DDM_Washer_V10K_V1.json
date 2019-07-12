@@ -3761,8 +3761,80 @@
 					}
 				}
 			},
-			"ApplianceRulesets": {},
-			"Rulesets": {},
+			"ApplianceRulesets": {
+			"WashCavity": {
+					"Runtime": [{
+							"ruleName": "Disable All Features when appliance is offline",
+							"description": "Disable All Features when appliance is offline",
+							"features": {
+								"SetCycle": false
+							},
+							"condition": {
+								"type": "value",
+								"key": "Online",
+								"valueOperator": "=",
+								"value": 0
+							}
+						},
+						{
+							"ruleName": "Enable Start option if a cycle is set on Appliance",
+							"description": "Cavity_OperationStatusMachineState ==Setting , this is instruction sent to appliance",
+							"actions": {
+								"ActionStartCommand": true
+							},
+							"condition": {
+								"type": "value",
+								"key": "Compartment_State",
+								"valueOperator": "=",
+								"value": "1"
+							}
+						},
+						{
+							"ruleName": "Disable Cancel, Modify, options if appliance is Complete",
+							"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+							"actions": {
+								"ActionCancelCommand": false,
+								"ActionModifyCommand": false
+							},
+							"condition": {
+								"type": "value",
+								"key": "Compartment_State",
+								"valueOperator": "=",
+								"value": "4"
+							}
+						},
+						{
+							"ruleName": "Disable the StartCommand button",
+							"description": "Appliance can not be started if the remote is disabled",
+							"actions": {
+								"ActionStartCommand": false
+							},
+							"condition": {
+								"type": "value",
+								"key": "Appliance_RemoteControlEnabled",
+								"valueOperator": "=",
+								"value": 0
+							}
+						}
+					]
+				},
+				"Common": {
+					"Runtime": [{
+						"ruleName": "Disable All Features when appliance is offline",
+						"description": "Disable All Features when appliance is offline",
+						"features": {
+							"ControlLock": false
+						},
+						"condition": {
+							"type": "value",
+							"key": "Online",
+							"valueOperator": "=",
+							"value": 0
+						}
+					}]
+				}
+			
+			},
 			"QueryParams": {
 				"Common": {
 					"FaultCodeHistory": {
