@@ -1769,6 +1769,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -1831,6 +1839,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -1894,6 +1910,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -1956,6 +1980,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2011,6 +2043,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2060,6 +2100,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2124,6 +2172,14 @@
 										],
 										"Default": "FresheningNone"
 									}
+								},
+								"Cavity_TimeSetDelayTime": {
+									"Range": {
+										"Default": 0,
+										"Min": 0,
+										"Max": 28800,
+										"Step": 60
+									}
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToQuick": {
@@ -2186,6 +2242,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								},
+								"Cavity_TimeSetDelayTime": {
+									"Range": {
+										"Default": 0,
+										"Min": 0,
+										"Max": 28800,
+										"Step": 60
 									}
 								}
 							},
@@ -2250,6 +2314,14 @@
 										],
 										"Default": "FresheningNone"
 									}
+								},
+								"Cavity_TimeSetDelayTime": {
+									"Range": {
+										"Default": 0,
+										"Min": 0,
+										"Max": 28800,
+										"Step": 60
+									}
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToHeavyDuty": {
@@ -2313,6 +2385,14 @@
 										],
 										"Default": "FresheningNone"
 									}
+								},
+								"Cavity_TimeSetDelayTime": {
+									"Range": {
+										"Default": 0,
+										"Min": 0,
+										"Max": 28800,
+										"Step": 60
+									}
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToColdWash": {
@@ -2369,6 +2449,14 @@
 										],
 										"Default": "FresheningNone"
 									}
+								},
+								"Cavity_TimeSetDelayTime": {
+									"Range": {
+										"Default": 0,
+										"Min": 0,
+										"Max": 28800,
+										"Step": 60
+									}
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToSanitize": {
@@ -2418,6 +2506,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2481,6 +2577,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2544,6 +2648,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2607,6 +2719,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2671,6 +2791,14 @@
 										],
 										"Default": "FresheningNone"
 									}
+								},
+								"Cavity_TimeSetDelayTime": {
+									"Range": {
+										"Default": 0,
+										"Min": 0,
+										"Max": 28800,
+										"Step": 60
+									}
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToColdWash": {
@@ -2726,6 +2854,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2776,6 +2912,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2839,6 +2983,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2902,6 +3054,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -2965,6 +3125,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3028,6 +3196,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3084,6 +3260,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3134,6 +3318,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3197,6 +3389,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3260,6 +3460,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3323,6 +3531,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3386,6 +3602,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3442,6 +3666,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3492,6 +3724,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3555,6 +3795,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3618,6 +3866,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3681,6 +3937,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3744,6 +4008,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3800,6 +4072,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
@@ -3829,14 +4109,40 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									},
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleCleanWasher": {
-								"Required": {}
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								}
 							},
 							"Cavity_CycleSetCycleNameActivewear": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleNormal",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
@@ -3845,7 +4151,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameJeans": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleTowels",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
@@ -3854,7 +4169,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameSwimwear": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToColdWash",
 									"WashCavity_CycleSetTemperature": "WashTempCold",
@@ -3863,7 +4187,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameSleepingBags": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
@@ -3872,7 +4205,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameBusinessCasual": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleWrinkleControl",
 									"WashCavity_CycleSetTemperature": "WashTempCool",
@@ -3881,7 +4223,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameComforters": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
@@ -3890,7 +4241,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameBlankets": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToHeavyDuty",
 									"WashCavity_CycleSetTemperature": "WashTempHot",
@@ -3899,7 +4259,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameCoatsJackets": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToBulkyHowToColdWash",
 									"WashCavity_CycleSetTemperature": "WashTempCold",
@@ -3908,7 +4277,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameLingerie": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToWrinkleControl",
 									"WashCavity_CycleSetTemperature": "WashTempCool",
@@ -3917,7 +4295,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameMachineWashCurtains": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToColorsBrightsHowToColdWash",
 									"WashCavity_CycleSetTemperature": "WashTempCold",
@@ -3926,7 +4313,16 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameDiapers": {
-								"Required": {},
+								"Required": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToSanitize",
 									"WashCavity_CycleSetTemperature": "WashTempExtraHot",
@@ -4392,7 +4788,15 @@
 						"ExtraRinse": "WashCavity_CycleSetExtraRinseSelect",
 						"FresheningSelect": "WashCavity_CycleSetFresheningSelect",
 						"SteamEnable": "Cavity_CycleSetSteamEnable",
-						"DelayTime": "Cavity_TimeSetDelayTime"
+						"DelayTime": "Cavity_TimeSetDelayTime",
+						"BulkDispense1Level": "WashCavity_OpStatusBulkDispense1Level",
+						"BulkDispense2Level": "WashCavity_OpStatusBulkDispense2Level",
+						"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration",
+						"BulkDispense2Concentration": "WashCavity_OpSetBulkDispense2Concentration",
+						"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
+						"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
+						"BulkDispense1Enable" : "WashCavity_CycleSetBulkDispense1Enable",
+						"BulkDispense2Enable" : "WashCavity_CycleSetBulkDispense2Enable"
 					},
 					"Common": {
 						"ControlLock": "Sys_OpSetControlLock",
