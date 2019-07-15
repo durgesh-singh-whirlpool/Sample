@@ -3030,7 +3030,8 @@
 										]
 									}
 								}
-							}
+							},
+							"Default": "DryCavity_CycleSetCycleSelectMixed_Normal"
 						},
 						"UtilityCycle": {}
 					}
