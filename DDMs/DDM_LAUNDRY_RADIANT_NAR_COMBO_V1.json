@@ -1305,13 +1305,11 @@
 				"IsTimeSeries": false,
 				"DataType": "BEIntegerUnsigned16Bit",
 				"AttributeName": "ManualDryTime",
-				"List": [
-					1800,
-					3600,
-					7200,
-					10800,
-					14400
-				],
+				"RangeValues": {
+					"Min": 0,
+					"Max": 65535,
+					"StepSize": 1
+				},
 				"DeviceIO": "RW",
 				"MappedAttributeName": "DryCavity_CycleSetManualDryTime",
 				"Default": 0,
@@ -2059,16 +2057,6 @@
 							}
 						},
 						"SetCycle": {
-							"Off": {
-								"DryCavity_CycleSetCycleSelectDryCycleNone": {
-									"Name": "DryCycleNone",
-									"Attributes": {
-										"DryCavity_CycleSetCycleSelect": [
-											"DryCycleNone"
-										]
-									}
-								}
-							},
 							"Auto": {
 								"DryCavity_CycleSetCycleSelectDryCycleNormal": {
 									"Name": "DryCavity_CycleSetCycleSelectDryCycleNormal",
@@ -2161,7 +2149,7 @@
 									}
 								},
 								"DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToTimed": {
-								"Name": "DryCavity_CycleSetCycleSelectDryCycleBeddingBulkyTimed",
+									"Name": "DryCavity_CycleSetCycleSelectDryCycleBeddingBulkyTimed",
 									"Attributes": {
 										"DryCavity_CycleSetCycleSelect": [
 											"DryCycleWhatToBulkyHowToTimed"
@@ -2169,7 +2157,7 @@
 									}
 								}
 							},
-							"Default" : "DryCavity_CycleSetCycleSelectDryCycleNormal"
+							"Default": "DryCavity_CycleSetCycleSelectDryCycleNormal"
 						}
 					},
 					"ComboCavity": {
@@ -4096,47 +4084,46 @@
 							"WhitesNormalOff": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelNormal"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-                            
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
 									"WashCavity_CycleSetFresheningSelect": {
 										"Enumeration": [
 											"FresheningNone",
@@ -4152,63 +4139,62 @@
 							"WhitesNormalAuto": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelNormal"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-								 "DryCavity_CycleSetDryness": {
-                                                "Enumeration": [
-                                                    "DrynessLessLow",
-                                                    "DrynessNormMid",
-                                                    "DrynessMoreMid"
-                                                ],
-                                                "Default": "DrynessNormMid"
-                                            },
-                                            "DryCavity_CycleSetWrinkleShield": {
-                                                "Enumeration": [
-                                                    "WrinkleShieldOff",
-                                                    "WrinkleShieldOn"
-                                                ],
-                                                "Default": "WrinkleShieldOff"
-                                            }
-                                        
-                            },
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
 								}
@@ -4216,67 +4202,65 @@
 							"WhitesNormalTimed": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelNormal"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-								"DryCavity_CycleSetManualDryTime": {
-                                                "List": [
-                                                    1800,
-                                                    3600,
-                                                    5400,
-                                                    7200,
-                                                    10800,
-                                                    14400
-                                                ],
-                                                "Default": 3600
-                                            },
-                                            "DryCavity_CycleSetWrinkleShield": {
-                                                "Enumeration": [
-                                                    "WrinkleShieldOff",
-                                                    "WrinkleShieldOn"
-                                                ],
-                                                "Default": "WrinkleShieldOff"
-                                            }
-                                        
-                                        
-                            },
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
 								}
@@ -4284,47 +4268,47 @@
 							"WhitesQuickOff": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempWarm"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelLight"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 1,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedHigh"
-                                },
-                           "WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedHigh"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
 										"Enumeration": [
 											"FresheningNone",
 											"FresheningFanFresh"
@@ -4339,63 +4323,62 @@
 							"WhitesQuickAuto": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempWarm"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelLight"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 1,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedHigh"
-                                },
-								"DryCavity_CycleSetDryness": {
-                                                "Enumeration": [
-                                                    "DrynessLessLow",
-                                                    "DrynessNormMid",
-                                                    "DrynessMoreMid"
-                                                ],
-                                                "Default": "DrynessNormMid"
-                                            },
-                                            "DryCavity_CycleSetWrinkleShield": {
-                                                "Enumeration": [
-                                                    "WrinkleShieldOff",
-                                                    "WrinkleShieldOn"
-                                                ],
-                                                "Default": "WrinkleShieldOff"
-                                            }
-                                        
-                           },
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedHigh"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
 								}
@@ -4403,66 +4386,65 @@
 							"WhitesQuickTimed": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempWarm"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelLight"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 1,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedHigh"
-                                },
-								"DryCavity_CycleSetManualDryTime": {
-                                                "List": [
-                                                    1800,
-                                                    3600,
-                                                    5400,
-                                                    7200,
-                                                    10800,
-                                                    14400
-                                                ],
-                                                "Default": 3600
-                                            },
-                                            "DryCavity_CycleSetWrinkleShield": {
-                                                "Enumeration": [
-                                                    "WrinkleShieldOff",
-                                                    "WrinkleShieldOn"
-                                                ],
-                                                "Default": "WrinkleShieldOff"
-                                            }
-                                        
-                           },
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedHigh"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
 								}
@@ -4470,47 +4452,47 @@
 							"WhitesHeavyDutyOff": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelHeavy"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-                            "WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
 										"Enumeration": [
 											"FresheningNone",
 											"FresheningFanFresh"
@@ -4525,63 +4507,62 @@
 							"WhitesHeavyDutyAuto": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelHeavy"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-								"DryCavity_CycleSetDryness": {
-                                                "Enumeration": [
-                                                    "DrynessLessLow",
-                                                    "DrynessNormMid",
-                                                    "DrynessMoreMid"
-                                                ],
-                                                "Default": "DrynessNormMid"
-                                            },
-                                            "DryCavity_CycleSetWrinkleShield": {
-                                                "Enumeration": [
-                                                    "WrinkleShieldOff",
-                                                    "WrinkleShieldOn"
-                                                ],
-                                                "Default": "WrinkleShieldOff"
-                                            }
-                                       
-                            },
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
 								}
@@ -4589,107 +4570,106 @@
 							"WhitesHeavyDutyTimed": {
 								"Required": {
 									"WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempCold",
-                                        "WashTempCool",
-                                        "WashTempWarm",
-                                        "WashTempHot",
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelHeavy"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false,
-                                        true
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedOff",
-                                        "SpinSpeedLow",
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-								"DryCavity_CycleSetManualDryTime": {
-                                                "List": [
-                                                    1800,
-                                                    3600,
-                                                    5400,
-                                                    7200,
-                                                    10800,
-                                                    14400
-                                                ],
-                                                "Default": 3600
-                                            },
-                                            "DryCavity_CycleSetWrinkleShield": {
-                                                "Enumeration": [
-                                                    "WrinkleShieldOff",
-                                                    "WrinkleShieldOn"
-                                                ],
-                                                "Default": "WrinkleShieldOff"
-                                            }
-                                        
-                            },
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
 								}
 							},
 							"WhitesSanitizeOff": {
 								"Required": {
-									 "WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempExtraHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelNormal"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-                            "WashCavity_CycleSetFresheningSelect": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempExtraHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
 										"Enumeration": [
 											"FresheningNone",
 											"FresheningFanFresh"
@@ -4703,243 +4683,1364 @@
 							},
 							"WhitesSanitizeAuto": {
 								"Required": {
-									 "WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempExtraHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelNormal"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-								"DryCavity_CycleSetDryness": {
-                                                "Enumeration": [
-                                                    "DrynessLessLow",
-                                                    "DrynessNormMid",
-                                                    "DrynessMoreMid"
-                                                ],
-                                                "Default": "DrynessNormMid"
-                                            },
-                                            "DryCavity_CycleSetWrinkleShield": {
-                                                "Enumeration": [
-                                                    "WrinkleShieldOff",
-                                                    "WrinkleShieldOn"
-                                                ],
-                                                "Default": "WrinkleShieldOff"
-                                            }
-                                        
-                            },
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempExtraHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
 								}
 							},
 							"WhitesSanitizeTimed": {
 								"Required": {
-									 "WashCavity_CycleSetTemperature": {
-                                    "Enumeration": [
-                                        "WashTempExtraHot"
-                                    ],
-                                    "Default": "WashTempExtraHot"
-                                },
-                                "WashCavity_CycleSetSoilLevel": {
-                                    "Enumeration": [
-                                        "SoilLevelLight",
-                                        "SoilLevelNormal",
-                                        "SoilLevelHeavy"
-                                    ],
-                                    "Default": "SoilLevelNormal"
-                                },
-                                "WashCavity_CycleSetExtraRinseSelect": {
-                                    "Min": 0,
-                                    "Max": 3,
-                                    "Step": 1,
-                                    "Default": 0
-                                },
-                                "WashCavity_CycleSetPresoakNotTimedEnable": {
-                                    "Default": false,
-                                    "Allowed": [
-                                        false
-                                    ]
-                                },
-                                "WashCavity_CycleSetSpinSpeed": {
-                                    "Enumeration": [
-                                        "SpinSpeedMedium",
-                                        "SpinSpeedHigh",
-                                        "SpinSpeedExtraHigh"
-                                    ],
-                                    "Default": "SpinSpeedExtraHigh"
-                                },
-								"DryCavity_CycleSetManualDryTime": {
-                                                "List": [
-                                                    1800,
-                                                    3600,
-                                                    5400,
-                                                    7200,
-                                                    10800,
-                                                    14400
-                                                ],
-                                                "Default": 3600
-                                            },
-                                            "DryCavity_CycleSetWrinkleShield": {
-                                                "Enumeration": [
-                                                    "WrinkleShieldOff",
-                                                    "WrinkleShieldOn"
-                                                ],
-                                                "Default": "WrinkleShieldOff"
-                                            }
-                                        
-                            },
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempExtraHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
 								}
 							},
 							"TowelsNormalOff": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"FresheningNone",
+											"FresheningFanFresh"
+										],
+										"Default": "FresheningNone"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"TowelsNormalAuto": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
 								}
 							},
 							"TowelsNormalTimed": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
 								}
 							},
 							"TowelsQuickOff": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedHigh"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"FresheningNone",
+											"FresheningFanFresh"
+										],
+										"Default": "FresheningNone"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"TowelsQuickAuto": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedHigh"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
 								}
 							},
 							"TowelsQuickTimed": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedHigh"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
 								}
 							},
 							"TowelsHeavyDutyOff": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"FresheningNone",
+											"FresheningFanFresh"
+										],
+										"Default": "FresheningNone"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"TowelsHeavyDutyAuto": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
 								}
 							},
 							"TowelsHeavyDutyTimed": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
 								}
 							},
 							"TowelsSanitizeOff": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempExtraHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"FresheningNone",
+											"FresheningFanFresh"
+										],
+										"Default": "FresheningNone"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"TowelsSanitizeAuto": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempExtraHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
 								}
 							},
 							"TowelsSanitizeTimed": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempExtraHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedMedium",
+											"SpinSpeedHigh",
+											"SpinSpeedExtraHigh"
+										],
+										"Default": "SpinSpeedExtraHigh"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
 								}
 							},
 							"BulkyNormalOff": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"FresheningNone",
+											"FresheningFanFresh"
+										],
+										"Default": "FresheningNone"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"BulkyNormalAuto": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
 								}
 							},
 							"BulkyNormalTimed": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelNormal"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
 								}
 							},
 							"BulkyQuickOff": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"FresheningNone",
+											"FresheningFanFresh"
+										],
+										"Default": "FresheningNone"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"BulkyQuickAuto": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
 								}
 							},
 							"BulkyQuickTimed": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempWarm"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelLight"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 1,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
 								}
 							},
 							"BulkyHeavyDutyOff": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"WashCavity_CycleSetFresheningSelect": {
+										"Enumeration": [
+											"FresheningNone",
+											"FresheningFanFresh"
+										],
+										"Default": "FresheningNone"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"BulkyHeavyDutyAuto": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"DryCavity_CycleSetDryness": {
+										"Enumeration": [
+											"DrynessLessLow",
+											"DrynessNormMid",
+											"DrynessMoreMid"
+										],
+										"Default": "DrynessNormMid"
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
 								}
 							},
 							"BulkyHeavyDutyTimed": {
-								"Required": {},
+								"Required": {
+									"WashCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"WashTempCold",
+											"WashTempCool",
+											"WashTempWarm",
+											"WashTempHot",
+											"WashTempExtraHot"
+										],
+										"Default": "WashTempHot"
+									},
+									"WashCavity_CycleSetSoilLevel": {
+										"Enumeration": [
+											"SoilLevelLight",
+											"SoilLevelNormal",
+											"SoilLevelHeavy"
+										],
+										"Default": "SoilLevelHeavy"
+									},
+									"WashCavity_CycleSetExtraRinseSelect": {
+										"Min": 0,
+										"Max": 3,
+										"Step": 1,
+										"Default": 0
+									},
+									"WashCavity_CycleSetPresoakNotTimedEnable": {
+										"Default": false,
+										"Allowed": [
+											false,
+											true
+										]
+									},
+									"WashCavity_CycleSetSpinSpeed": {
+										"Enumeration": [
+											"SpinSpeedOff",
+											"SpinSpeedLow",
+											"SpinSpeedMedium"
+										],
+										"Default": "SpinSpeedMedium"
+									},
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400,
+											7200,
+											10800,
+											14400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
 								}
@@ -4969,6 +6070,9 @@
 										],
 										"Default": "FresheningNone"
 									}
+								},
+								"NonEditable": {
+									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleRinseSpin": {
@@ -4989,13 +6093,22 @@
 										],
 										"Default": "SpinSpeedHigh"
 									}
+								},
+								"NonEditable": {
+									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleDrain": {
-								"Required": {}
+								"Required": {},
+								"NonEditable": {
+									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
+								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleCleanWasher": {
-								"Required": {}
+								"Required": {},
+								"NonEditable": {
+									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
+								}
 							}
 						},
 						"SetCycle": {
@@ -5585,7 +6698,7 @@
 							},
 							"Default": "RegularNormalOff"
 						},
-						"UtilityCycle": {
+						"SetUtilityCycle": {
 							"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
 								"Name": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin",
 								"Attributes": {
@@ -5620,11 +6733,10 @@
 							},
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
 						}
-						
 					}
 				},
 				"AttributesMapping": {
-				"Common": {
+					"Common": {
 						"OpStatusState": "Cavity_CycleStatusMachineState",
 						"ControlLock": "Sys_OpSetControlLock"
 					},
@@ -5763,7 +6875,6 @@
 								"DryCavity_CycleSetManualDryTime",
 								"DryCavity_CycleSetDryness",
 								"Cavity_OpSetOperations"
-								
 							],
 							"SetOperationsMapping": {
 								"Operation": "Cavity_OpSetOperations"
@@ -5772,7 +6883,7 @@
 					}
 				},
 				"ApplianceRulesets": {
-				"Common": {
+					"Common": {
 						"Runtime": [
 							{
 								"ruleName": "Disable All Features when appliance is offline",
