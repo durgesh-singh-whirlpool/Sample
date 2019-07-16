@@ -1760,7 +1760,6 @@
 		"capability": [
 			{
 				"CavityOrder": [
-					"WashCavity",
 					"DryCavity",
 					"ComboCavity"
 				],
@@ -6850,23 +6849,6 @@
 					}
 				},
 				"AttributesMapping": {
-					"WashCavity": {
-						"CycleName": [
-							"WashCavity_CycleSetCycleSelect",
-							"Cavity_CycleSetCycleName"
-						],
-						"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
-						"MachineState": "Cavity_CycleStatusMachineState",
-						"DoorOpen": "Cavity_OpStatusDoorOpen",
-						"DelayTimeSetTime": "Cavity_TimeSetDelayTime",
-						"Temperature": "WashCavity_CycleSetTemperature",
-						"SoilLevel": "WashCavity_CycleSetSoilLevel",
-						"SpinSpeed": "WashCavity_CycleSetSpinSpeed",
-						"PresoakNotTimedEnable": "WashCavity_CycleSetPresoakNotTimedEnable",
-						"ExtraRinse": "WashCavity_CycleSetExtraRinseSelect",
-						"FresheningSelect": "WashCavity_CycleSetFresheningSelect",
-						"DelayTime": "Cavity_TimeSetDelayTime"
-					},
 					"DryCavity": {
 						"CycleName": [
 							"DryCavity_CycleSetCycleSelect",
