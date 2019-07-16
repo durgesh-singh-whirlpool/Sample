@@ -2984,7 +2984,8 @@
 						"EcoBoostEnable": "DryCavity_CycleSetEcoBoostEnable",
 						"StaticGuardEnable": "DryCavity_CycleSetStaticGuardEnable",
 						"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume",
-						"ManualDryTime": "DryCavity_CycleSetManualDryTime"
+						"ManualDryTime": "DryCavity_CycleSetManualDryTime",
+						"AirFlowStatus": "DryCavity_CycleStatusAirFlowStatus"
 					},
 					"Common": {
 						"OpStatusState": "Cavity_CycleStatusMachineState",
@@ -3028,6 +3029,46 @@
 								"US",
 								"CA"
 							]
+						},
+						"ChangeApplianceLanguage": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_DisplaySetLanguage"
+							}
+						},
+						"ChangeSoundKeyAlert": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetKeyPressToneVolume"
+							}
+						},
+						"ChangeSoundKeyPress": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetAlertToneVolume"
+							}
+						},
+						"ChangeBrightness": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_DisplaySetBrightnessPercent"
+							}
 						}
 					},
 					"DryCavity": {
