@@ -1,7 +1,7 @@
 {
 	"ddm": {
-		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
-		"ddmName": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
+		"ddmName": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"modelNo": "WFW9620HW0,WFW9620HC0,WFW9620HBK0,test, WFW9620H,WFW9620HW1,WFW9620HC1,WFW9620HBK1",
 		"createdAt": 1549170000000,
 		"createdBy": "Preethy",
@@ -1620,7 +1620,7 @@
 		]
 	},
 	"personality": {
-		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"capability": [
 			{
 				"CavityOrder": [
@@ -4795,8 +4795,8 @@
 						"BulkDispense2Concentration": "WashCavity_OpSetBulkDispense2Concentration",
 						"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 						"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
-						"BulkDispense1Enable" : "WashCavity_CycleSetBulkDispense1Enable",
-						"BulkDispense2Enable" : "WashCavity_CycleSetBulkDispense2Enable"
+						"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
+						"BulkDispense2Enable": "WashCavity_CycleSetBulkDispense2Enable"
 					},
 					"Common": {
 						"ControlLock": "Sys_OpSetControlLock",
@@ -4869,6 +4869,46 @@
 							],
 							"StateAttributes": {
 								"State": "Sys_OpSetKeyPressToneVolume"
+							}
+						},
+						"ChangeApplianceLanguage": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_DisplaySetLanguage"
+							}
+						},
+						"ChangeSoundKeyAlert": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetKeyPressToneVolume"
+							}
+						},
+						"ChangeSoundKeyPress": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetAlertToneVolume"
+							}
+						},
+						"ChangeBrightness": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_DisplaySetBrightnessPercent"
 							}
 						}
 					},
@@ -5128,7 +5168,7 @@
 		]
 	},
 	"alerts": {
-		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"alerts": [
 			{
 				"GenericAlerts": [
@@ -5235,7 +5275,7 @@
 		]
 	},
 	"Services": {
-		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"thirdPartyServices": [
 			{
 				"name": "Replenishment",
