@@ -1,7 +1,7 @@
 {
 	"ddm": {
-		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
-		"ddmName": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
+		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"ddmName": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
 		"modelNo": "WFW9620HW0,WFW9620HC0,WFW9620HBK0,test, WFW9620H,WFW9620HW1,WFW9620HC1,WFW9620HBK1",
 		"createdAt": 1549170000000,
 		"createdBy": "Preethy",
@@ -1620,7 +1620,7 @@
 		]
 	},
 	"personality": {
-		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
+		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
 		"capability": [
 			{
 				"CavityOrder": [
@@ -4805,7 +4805,13 @@
 						"QuietMode": [
 							"Sys_OpSetAlertToneVolume",
 							"Sys_OpSetKeyPressToneVolume"
-						]
+						],
+						"DisplayLanguage": "Sys_DisplaySetLanguage",
+            "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
+            "SoundKeyAlert": "Sys_OpSetAlertToneVolume",
+            "TempDisplayUnits": "SystemSettings_TempDisplayUnits",
+            "DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
+            "SoundKeyPress": "Sys_OpSetKeyPressToneVolume"
 					}
 				},
 				"Features": {
@@ -5168,7 +5174,7 @@
 		]
 	},
 	"alerts": {
-		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
+		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
 		"alerts": [
 			{
 				"GenericAlerts": [
@@ -5275,7 +5281,7 @@
 		]
 	},
 	"Services": {
-		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
+		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
 		"thirdPartyServices": [
 			{
 				"name": "Replenishment",
