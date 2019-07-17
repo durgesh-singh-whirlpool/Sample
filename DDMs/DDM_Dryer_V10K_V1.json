@@ -1726,53 +1726,47 @@
 							"DryCavity_CycleSetCycleSelectMixed_Normal": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp3",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp3"
 									},
 									"StaticGuard": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
 										"Allowed": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 2,
-										"Default": true,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": true
 									},
 									"Dryness": {
-										"Retention": 2,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -1780,53 +1774,47 @@
 							"DryCavity_CycleSetCycleSelectMixed_Gentle": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -1834,46 +1822,40 @@
 							"DryCavity_CycleSetCycleSelectMixed_Sanitize": {
 								"Required": {
 									"Temperature": {
-										"Retention": 0,
-										"Default": "Temp4",
 										"Allowed": [
 											"Temp4"
-										]
+										],
+										"Default": "Temp4"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Default": "MoreDry",
-										"Allowed": [
+										"Enumeration": [
 											"MoreDry"
-										]
+										],
+										"Default": "MoreDry"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -1881,48 +1863,42 @@
 							"DryCavity_CycleSetCycleSelectMixed_SteamRefresh": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"Normal"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -1930,47 +1906,41 @@
 							"DryCavity_CycleSetCycleSelectMixed_TimedDry": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp3",
-										"Allowed": [
+										"Enumeration": [
 											"Temp0",
 											"Temp1",
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp3"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Allowed": []
+										"Enumeration": []
 									},
 									"ManualDryTime": {
 										"Min": 1,
 										"Settable": true,
 										"Max": 150,
-										"Retention": 4,
 										"Default": 50
 									}
 								}
@@ -1978,51 +1948,45 @@
 							"DryCavity_CycleSetCycleSelectTowels_Normal": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp4",
-										"Allowed": [
+										"Enumeration": [
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp4"
 									},
 									"StaticGuard": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "MoreDry",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "MoreDry"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2030,52 +1994,46 @@
 							"DryCavity_CycleSetCycleSelectTowels_Gentle": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp3",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp3"
 									},
 									"StaticGuard": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "MoreDry",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "MoreDry"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2086,48 +2044,42 @@
 							"DryCavity_CycleSetCycleSelectTowels_SteamRefresh": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp4",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp4"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"Normal"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2135,47 +2087,41 @@
 							"DryCavity_CycleSetCycleSelectTowels_TimedDry": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp4",
-										"Allowed": [
+										"Enumeration": [
 											"Temp0",
 											"Temp1",
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp4"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Allowed": []
+										"Enumeration": []
 									},
 									"ManualDryTime": {
 										"Min": 1,
 										"Settable": true,
 										"Max": 150,
-										"Retention": 4,
 										"Default": 55
 									}
 								}
@@ -2183,53 +2129,47 @@
 							"DryCavity_CycleSetCycleSelectDelicate_Normal": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp1",
 											"Temp2",
 											"Temp3"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2237,52 +2177,46 @@
 							"DryCavity_CycleSetCycleSelectDelicate_Gentle": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp1",
-										"Allowed": [
+										"Enumeration": [
 											"Temp1",
 											"Temp2"
-										]
+										],
+										"Default": "Temp1"
 									},
 									"StaticGuard": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2290,47 +2224,41 @@
 							"DryCavity_CycleSetCycleSelectDelicate_TimedDry": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp0",
 											"Temp1",
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Allowed": []
+										"Enumeration": []
 									},
 									"ManualDryTime": {
 										"Min": 1,
 										"Settable": true,
 										"Max": 150,
-										"Retention": 4,
 										"Default": 20
 									}
 								}
@@ -2338,53 +2266,47 @@
 							"DryCavity_CycleSetCycleSelectCasuals_Normal": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp1",
 											"Temp2",
 											"Temp3"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"Steam"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2392,53 +2314,47 @@
 							"DryCavity_CycleSetCycleSelectCasuals_Gentle": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp1",
-										"Allowed": [
+										"Enumeration": [
 											"Temp1",
 											"Temp2",
 											"Temp3"
-										]
+										],
+										"Default": "Temp1"
 									},
 									"StaticGuard": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2446,46 +2362,40 @@
 							"DryCavity_CycleSetCycleSelectCasuals_Sanitize": {
 								"Required": {
 									"Temperature": {
-										"Retention": 0,
-										"Default": "Temp4",
 										"Allowed": [
 											"Temp4"
-										]
+										],
+										"Default": "Temp4"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Default": "MoreDry",
-										"Allowed": [
+										"Enumeration": [
 											"MoreDry"
-										]
+										],
+										"Default": "MoreDry"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2493,48 +2403,42 @@
 							"DryCavity_CycleSetCycleSelectCasuals_SteamRefresh": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"Normal"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2542,47 +2446,41 @@
 							"DryCavity_CycleSetCycleSelectCasuals_TimedDry": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp0",
 											"Temp1",
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Allowed": []
+										"Enumeration": []
 									},
 									"ManualDryTime": {
 										"Min": 1,
 										"Settable": true,
 										"Max": 150,
-										"Retention": 4,
 										"Default": 30
 									}
 								}
@@ -2590,51 +2488,45 @@
 							"DryCavity_CycleSetCycleSelectBulkySheets_Normal": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp3",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp3"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2642,51 +2534,45 @@
 							"DryCavity_CycleSetCycleSelectBulkySheets_Gentle": {
 								"Required": {
 									"Temperature": {
-										"Retention": 1,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 4,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 4,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
 											"Normal",
 											"MoreDry"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2694,46 +2580,40 @@
 							"DryCavity_CycleSetCycleSelectBulkySheets_Sanitize": {
 								"Required": {
 									"Temperature": {
-										"Retention": 0,
-										"Default": "Temp4",
-										"Allowed": [
+										"Enumeration": [
 											"Temp4"
-										]
+										],
+										"Default": "Temp4"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Default": "MoreDry",
-										"Allowed": [
+										"Enumeration": [
 											"MoreDry"
-										]
+										],
+										"Default": "MoreDry"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2741,48 +2621,42 @@
 							"DryCavity_CycleSetCycleSelectBulkySheets_SteamRefresh": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp2",
-										"Allowed": [
+										"Enumeration": [
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp2"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Default": "Normal",
-										"Allowed": [
+										"Enumeration": [
 											"Normal"
-										]
+										],
+										"Default": "Normal"
 									},
 									"ManualDryTime": {
 										"Min": 0,
 										"Settable": false,
 										"Max": 0,
-										"Retention": 0,
 										"Default": 0
 									}
 								}
@@ -2790,47 +2664,41 @@
 							"DryCavity_CycleSetCycleSelectBulkySheets_TimedDry": {
 								"Required": {
 									"Temperature": {
-										"Retention": 4,
-										"Default": "Temp3",
-										"Allowed": [
+										"Enumeration": [
 											"Temp0",
 											"Temp1",
 											"Temp2",
 											"Temp3",
 											"Temp4"
-										]
+										],
+										"Default": "Temp3"
 									},
 									"StaticGuard": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"WrinkleShield": {
-										"Retention": 4,
-										"Default": "Off",
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
-										]
+										],
+										"Default": "Off"
 									},
 									"EcoBoost": {
-										"Retention": 0,
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false
-										]
+										],
+										"Default": false
 									},
 									"Dryness": {
-										"Retention": 0,
-										"Allowed": []
+										"Enumeration": []
 									},
 									"ManualDryTime": {
 										"Min": 1,
 										"Settable": true,
 										"Max": 150,
-										"Retention": 4,
 										"Default": 75
 									}
 								}
@@ -3032,8 +2900,7 @@
 								}
 							},
 							"Default": "DryCavity_CycleSetCycleSelectMixed_Normal"
-						},
-						"UtilityCycle": {}
+						}
 					}
 				},
 				"AttributesMapping": {
@@ -3155,6 +3022,50 @@
 							"SetOperationsMapping": {
 								"Operation": "System_Command",
 								"TimeRemaining": "Compartment_EstTimeRemaining"
+							}
+						},
+						"CyclesHistory": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"SendCommandAttributes": [
+								"Compartment_CycleId",
+								"CycleOptionsWHR_TemperatureChangeable",
+								"CycleOptionsWHR_StaticGuard",
+								"CycleOptionsWHR_WrinkleShield",
+								"CycleOptionsWHR_EcoBoost",
+								"CycleOptionsWHR_Dryness",
+								"CycleOptionsWHR_ManualDryTime",
+								"System_Command"
+							],
+							"StateAttributes": {},
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"FavoriteCycles": {
+							"Visible": true,
+							"ReadOnly": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StatusAttributes": [],
+							"StateAttributes": {},
+							"SendCommandAttributes": [
+								"Compartment_CycleId",
+								"CycleOptionsWHR_TemperatureChangeable",
+								"CycleOptionsWHR_StaticGuard",
+								"CycleOptionsWHR_WrinkleShield",
+								"CycleOptionsWHR_EcoBoost",
+								"CycleOptionsWHR_Dryness",
+								"CycleOptionsWHR_ManualDryTime",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
 							}
 						}
 					}
