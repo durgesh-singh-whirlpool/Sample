@@ -3666,7 +3666,7 @@
 				"QueryParams": {
 					"Common": {
 						"FaultCodeHistory": {
-							"isLegacy": "true",
+							"isLegacy": true,
 							"groupBy": "System_FaultCode",
 							"attributes": "System_FaultCode"
 						}
