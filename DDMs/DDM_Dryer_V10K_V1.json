@@ -2905,7 +2905,7 @@
 					},
 					"Common": {
 						"ControlLock": "Sys_OpSetControlLock",
-						"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
+						"RemoteStatus": "Appliance_RemoteControlEnabled",
 						"Online": "online",
 						"QuietModeEnabled": "Sys_OpSetKeyPressToneVolume"
 					}
@@ -2950,7 +2950,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "XCat_RemoteSetRemoteControlEnable"
+								"State": "Appliance_RemoteControlEnabled"
 							}
 						},
 						"Online": {
