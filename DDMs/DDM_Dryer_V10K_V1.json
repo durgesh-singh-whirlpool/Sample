@@ -1934,9 +1934,6 @@
 										],
 										"Default": false
 									},
-									"Dryness": {
-										"Enumeration": []
-									},
 									"ManualDryTime": {
 										"Min": 1,
 										"Settable": true,
@@ -2115,9 +2112,6 @@
 										],
 										"Default": false
 									},
-									"Dryness": {
-										"Enumeration": []
-									},
 									"ManualDryTime": {
 										"Min": 1,
 										"Settable": true,
@@ -2251,9 +2245,6 @@
 											false
 										],
 										"Default": false
-									},
-									"Dryness": {
-										"Enumeration": []
 									},
 									"ManualDryTime": {
 										"Min": 1,
@@ -2474,9 +2465,6 @@
 										],
 										"Default": false
 									},
-									"Dryness": {
-										"Enumeration": []
-									},
 									"ManualDryTime": {
 										"Min": 1,
 										"Settable": true,
@@ -2691,9 +2679,6 @@
 											false
 										],
 										"Default": false
-									},
-									"Dryness": {
-										"Enumeration": []
 									},
 									"ManualDryTime": {
 										"Min": 1,
