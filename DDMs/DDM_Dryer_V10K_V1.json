@@ -2904,10 +2904,9 @@
 						"ManualDryTime": "CycleOptionsWHR_ManualDryTime"
 					},
 					"Common": {
-						"ControlLock": "Sys_OpSetControlLock",
 						"RemoteStatus": "Appliance_RemoteControlEnabled",
 						"Online": "online",
-						"QuietModeEnabled": "Sys_OpSetKeyPressToneVolume"
+						"QuietModeEnabled": "Appliance_QuietModeEnabled"
 					}
 				},
 				"Features": {
@@ -2918,16 +2917,6 @@
 								"US",
 								"CA"
 							]
-						},
-						"ControlLock": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_OpSetControlLock"
-							}
 						},
 						"Notifications": {
 							"Visible": true,
@@ -2970,7 +2959,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Sys_OpSetKeyPressToneVolume"
+								"State": "Appliance_EnterQuietMode"
 							}
 						}
 					},
@@ -3079,7 +3068,7 @@
 								"ruleName": "Disable All Features when appliance is offline",
 								"description": "Disable All Features when appliance is offline",
 								"features": {
-									"ControlLock": false
+									"SetCycle": false
 								},
 								"condition": {
 									"type": "value",
