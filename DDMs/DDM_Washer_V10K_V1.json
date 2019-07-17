@@ -3437,10 +3437,10 @@
 					},
 					"Common": {
 						"ControlLock": "Sys_OpSetControlLock",
-						"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
+						"RemoteStatus": "Appliance_RemoteControlEnabled",
 						"Online": "online",
 						"QuietModeEnabled": "Appliance_EnterQuietMode",
-						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable"
+						"RemoteEnabledStatus": "Appliance_RemoteControlEnabled"
 					}
 				},
 				"Features": {
@@ -3483,7 +3483,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "XCat_RemoteSetRemoteControlEnable"
+								"State": "Appliance_RemoteControlEnabled"
 							}
 						},
 						"Online": {
