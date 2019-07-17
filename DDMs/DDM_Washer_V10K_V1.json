@@ -3144,9 +3144,6 @@
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_Temperature": {
-										"Enumeration": []
-									},
 									"CycleOptionsWHR_DeepClean": {
 										"Bool": [
 											false
@@ -3166,9 +3163,6 @@
 											false
 										],
 										"Default": false
-									},
-									"CycleOptionsWHR_SoilLevel": {
-										"Enumeration": []
 									}
 								}
 							},
@@ -3186,26 +3180,17 @@
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_Temperature": {
-										"Enumeration": []
-									},
 									"CycleOptionsWHR_DeepClean": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_SpinSpeed": {
-										"Enumeration": []
-									},
 									"CycleOptionsWHR_Presoak": {
 										"Bool": [
 											false
 										],
 										"Default": false
-									},
-									"CycleOptionsWHR_SoilLevel": {
-										"Enumeration": []
 									}
 								}
 							}
