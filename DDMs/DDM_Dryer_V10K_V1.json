@@ -1762,13 +1762,10 @@
 											"MoreDry"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectMixed_Gentle": {
@@ -1810,13 +1807,10 @@
 											"MoreDry"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectMixed_Sanitize": {
@@ -1851,13 +1845,10 @@
 											"MoreDry"
 										],
 										"Default": "MoreDry"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectMixed_SteamRefresh": {
@@ -1894,13 +1885,10 @@
 											"Normal"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectMixed_TimedDry": {
@@ -1936,8 +1924,8 @@
 									},
 									"ManualDryTime": {
 										"Min": 1,
-										"Settable": true,
 										"Max": 150,
+										"Step": 1,
 										"Default": 50
 									}
 								}
@@ -1979,13 +1967,10 @@
 											"MoreDry"
 										],
 										"Default": "MoreDry"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectTowels_Gentle": {
@@ -2026,17 +2011,49 @@
 											"MoreDry"
 										],
 										"Default": "MoreDry"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectTowels_Sanitize": {
-								"Required": {}
+								"Required": {
+									"Temperature": {
+										"Enumeration": [
+										"Temp4"
+										],
+										"Default": "Temp4"
+									},
+									"StaticGuard": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"WrinkleShield": {
+										"Enumeration": [
+											"Off",
+											"On"
+										],
+										"Default": "Off"
+									},
+									"EcoBoost": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"Dryness": {
+										"Enumeration": [
+											"MoreDry"
+										],
+										"Default": "MoreDry"
+									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
+								}
 							},
 							"DryCavity_CycleSetCycleSelectTowels_SteamRefresh": {
 								"Required": {
@@ -2072,13 +2089,10 @@
 											"Normal"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectTowels_TimedDry": {
@@ -2114,8 +2128,8 @@
 									},
 									"ManualDryTime": {
 										"Min": 1,
-										"Settable": true,
 										"Max": 150,
+										"Step": 1,
 										"Default": 55
 									}
 								}
@@ -2159,13 +2173,10 @@
 											"MoreDry"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectDelicate_Gentle": {
@@ -2206,13 +2217,10 @@
 											"MoreDry"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectDelicate_TimedDry": {
@@ -2248,8 +2256,8 @@
 									},
 									"ManualDryTime": {
 										"Min": 1,
-										"Settable": true,
 										"Max": 150,
+										"Step": 1,
 										"Default": 20
 									}
 								}
@@ -2293,13 +2301,10 @@
 											"MoreDry"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectCasuals_Gentle": {
@@ -2341,13 +2346,10 @@
 											"MoreDry"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectCasuals_Sanitize": {
@@ -2382,13 +2384,10 @@
 											"MoreDry"
 										],
 										"Default": "MoreDry"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectCasuals_SteamRefresh": {
@@ -2425,12 +2424,6 @@
 											"Normal"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
 								}
 							},
@@ -2467,8 +2460,8 @@
 									},
 									"ManualDryTime": {
 										"Min": 1,
-										"Settable": true,
 										"Max": 150,
+										"Step" : 1,
 										"Default": 30
 									}
 								}
@@ -2510,13 +2503,10 @@
 											"MoreDry"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectBulkySheets_Gentle": {
@@ -2556,13 +2546,10 @@
 											"MoreDry"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectBulkySheets_Sanitize": {
@@ -2597,13 +2584,10 @@
 											"MoreDry"
 										],
 										"Default": "MoreDry"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectBulkySheets_SteamRefresh": {
@@ -2640,13 +2624,10 @@
 											"Normal"
 										],
 										"Default": "Normal"
-									},
-									"ManualDryTime": {
-										"Min": 0,
-										"Settable": false,
-										"Max": 0,
-										"Default": 0
 									}
+								},
+								"NonEditable": {
+									"ManualDryTime": 0
 								}
 							},
 							"DryCavity_CycleSetCycleSelectBulkySheets_TimedDry": {
@@ -2682,8 +2663,8 @@
 									},
 									"ManualDryTime": {
 										"Min": 1,
-										"Settable": true,
 										"Max": 150,
+										"Step": 1,
 										"Default": 75
 									}
 								}
