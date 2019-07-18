@@ -6738,7 +6738,17 @@
 				"AttributesMapping": {
 					"Common": {
 						"OpStatusState": "Cavity_CycleStatusMachineState",
-						"ControlLock": "Sys_OpSetControlLock"
+						"ControlLock": "Sys_OpSetControlLock",
+						"QuietMode": [
+							"Sys_OpSetAlertToneVolume",
+							"Sys_OpSetKeyPressToneVolume"
+						],
+						"DisplayLanguage": "Sys_DisplaySetLanguage",
+						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
+						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
+						"TempDisplayUnits": "SystemSettings_TempDisplayUnits",
+						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
+						"SoundKeyPress": "Sys_OpSetKeyPressToneVolume"
 					},
 					"DryCavity": {
 						"CycleName": [
@@ -6803,6 +6813,84 @@
 								"US",
 								"CA"
 							]
+						},
+						"FaultCodes": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"RemoteStatus": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "XCat_RemoteSetRemoteControlEnable"
+							}
+						},
+						"Online": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "online"
+							}
+						},
+						"QuietMode": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StatusAttributes": {
+								"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
+								"SoundKeyPress": "Sys_OpSetKeyPressToneVolume"
+							}
+						},
+						"ChangeApplianceLanguage": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_DisplaySetLanguage"
+							}
+						},
+						"ChangeSoundKeyAlert": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetKeyPressToneVolume"
+							}
+						},
+						"ChangeSoundKeyPress": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetAlertToneVolume"
+							}
+						},
+						"ChangeBrightness": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_DisplaySetBrightnessPercent"
+							}
 						}
 					},
 					"DryCavity": {
