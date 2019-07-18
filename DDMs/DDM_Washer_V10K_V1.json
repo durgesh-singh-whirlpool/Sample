@@ -3423,8 +3423,7 @@
 				"AttributesMapping": {
 					"WashCavity": {
 						"CycleName": [
-							"WashCavity_CycleSetCycleSelect",
-							"Cavity_CycleSetCycleName"
+							"Compartment_CycleId"
 						],
 						"TimeRemaining": "Compartment_EstTimeRemaining",
 						"MachineState": "Compartment_State",
