@@ -3436,7 +3436,6 @@
 						"DelayTime": "Compartment_DelayMinutes"
 					},
 					"Common": {
-						"ControlLock": "Sys_OpSetControlLock",
 						"RemoteStatus": "Appliance_RemoteControlEnabled",
 						"Online": "online",
 						"QuietModeEnabled": "Appliance_EnterQuietMode",
@@ -3451,16 +3450,6 @@
 								"US",
 								"CA"
 							]
-						},
-						"ControlLock": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_OpSetControlLock"
-							}
 						},
 						"Notifications": {
 							"Visible": true,
@@ -3639,23 +3628,6 @@
 								"condition": {
 									"type": "value",
 									"key": "Appliance_RemoteControlEnabled",
-									"valueOperator": "=",
-									"value": 0
-								}
-							}
-						]
-					},
-					"Common": {
-						"Runtime": [
-							{
-								"ruleName": "Disable All Features when appliance is offline",
-								"description": "Disable All Features when appliance is offline",
-								"features": {
-									"ControlLock": false
-								},
-								"condition": {
-									"type": "value",
-									"key": "Online",
 									"valueOperator": "=",
 									"value": 0
 								}
