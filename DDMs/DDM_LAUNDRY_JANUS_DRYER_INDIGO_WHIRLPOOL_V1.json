@@ -3053,11 +3053,11 @@
 								"US",
 								"CA"
 							],
-							"StatusAttributes": {
-							"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
-							"SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
-							"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume"
-							}
+							"StatusAttributes": [
+							"Sys_OpSetAlertToneVolume",
+							"Sys_OpSetKeyPressToneVolume",
+							"DrySys_OpSetDampNotificationToneVolume"
+							]
 						},
 						"ChangeApplianceLanguage": {
 							"Visible": true,
