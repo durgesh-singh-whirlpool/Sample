@@ -2978,8 +2978,7 @@
 								"System_Command"
 							],
 							"SetOperationsMapping": {
-								"Operation": "System_Command",
-								"TimeRemaining": "Compartment_EstTimeRemaining"
+								"Operation": "System_Command"
 							}
 						},
 						"CyclesHistory": {
