@@ -3507,7 +3507,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Cavity_CycleStatusMachineState"
+								"State": "Compartment_State"
 							},
 							"StatusAttributes": [
 								"Compartment_CycleId",
