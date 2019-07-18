@@ -3450,6 +3450,10 @@
 								"CA"
 							]
 						},
+						"ControlLock": {
+							"Visible": false,
+							"AvailableIn": []
+						},
 						"Notifications": {
 							"Visible": true,
 							"AvailableIn": [
