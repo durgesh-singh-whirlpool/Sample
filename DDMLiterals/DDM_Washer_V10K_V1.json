@@ -1,0 +1,678 @@
+{
+    "DDMLiterals": {
+        "ApplianceSmartGridCompliance.Label": "Appliance Smart Grid Compliance",
+        "ApplianceSmartGridMode.Label": "Appliance Smart Grid Mode",
+        "Brand.Label": "Brand",
+        "Category.Label": "Category",
+        "EnergyProfileSetting.Label": "Energy Profile Setting",
+        "GetRealTimePowerReading.Label": "Get Real Time Power Reading",
+        "GetRealTimePowerSequence.Label": "Get Real Time Power Sequence",
+        "MACAddress.Label": "MAC Address",
+        "ModelNumber.Label": "Model Number",
+        "Password.Label": "Password",
+        "PublishSmartGridMode.Label": "Publish Smart Grid Mode",
+        "RatePlanID.Label": "Rate Plan ID",
+        "RealTimePowerReading.Label": "Real Time Power Reading",
+        "SerialNumber.Label": "Serial Number",
+        "SmartID.Label": "Smart ID",
+        "SmartMode.Label": "Smart Mode",
+        "UtilityID.Label": "Utility ID",
+        "Zip.Label": "Zip",
+        "Appliance_ApplianceClaimedStatus.Label": "Appliance Claimed Status",
+        "Appliance_CmdSeq.Label": "Command Sequence",
+        "Appliance_CmdSeqAck.Label": "Command Sequence Acknowledgement",
+        "Appliance_EnterQuietMode.Label": "Enter Quiet Mode",
+        "Appliance_EnterSpecialMode.Label": "Enter Special Mode",
+        "Appliance_Idle.Label": "Idle",
+        "Appliance_QuietModeEnabled.Label": "Quiet Mode",
+        "Appliance_RemoteControlEnabled.Label": "Remote Control",
+        "Appliance_ServiceMode.Label": "Service Mode",
+        "Appliance_ServiceMode.EnumValues.KeyEncoderTest.Label": "Key Encoder Test",
+        "Appliance_ServiceMode.EnumValues.Exit.Label": "Exit",
+        "Appliance_ServiceMode.EnumValues.LoadTest.Label": "Load Test",
+        "Appliance_ServiceMode.EnumValues.SwVersionDisplay.Label": "Software Version Display",
+        "Appliance_ServiceMode.EnumValues.DisplayNextError.Label": "Display Next Error",
+        "Appliance_ServiceMode.EnumValues.ClearErrors.Label": "Clear Errors",
+        "Appliance_SpecialModeEnabled.Label": "Special Mode Enabled",
+        "Appliance_State.Label": "State",
+        "Appliance_State.EnumValues.Initialize.Label": "Initialize",
+        "Appliance_State.EnumValues.Standby.Label": "Standby",
+        "Appliance_State.EnumValues.Sleep.Label": "Sleep",
+        "Appliance_State.EnumValues.KeyTest.Label": "Key Test",
+        "Appliance_State.EnumValues.Factory.Label": "Factory",
+        "Appliance_State.EnumValues.Error.Label": "Error",
+        "Appliance_State.EnumValues.Cycle.Label": "Cycle",
+        "Appliance_State.EnumValues.Service.Label": "Service",
+        "Appliance_State.EnumValues.LifeTest.Label": "Life Test",
+        "Appliance_State.EnumValues.SalesDemo.Label": "Sales Demo",
+        "Appliance_State.EnumValues.CustomerFocusedDrying.Label": "Customer Focused Drying",
+        "Appliance_State.EnumValues.DevelopmentMode.Label": "Development Mode",
+        "Appliance_State.EnumValues.FvtMode.Label": "Fvt Mode",
+        "Appliance_TotalWattsHour.Label": "Total Watts Hour",
+        "Appliance_UserEvent.Label": "User Event",
+        "Appliance_Version.Label": "Version",
+        "Appliance_WifiRssi.Label": "Wi-Fi RSSI",
+        "Appliance_WifiRssiA.Label": "Wi-Fi RSSI A",
+        "Appliance_WifiRssiB.Label": "Wi-Fi RSSI B",
+        "Compartment_CycleId.Label": "CycleId",
+        "Compartment_CycleId.EnumValues.Mixed_Normal.Label": "Mixed - Normal",
+        "Compartment_CycleId.EnumValues.Mixed_Quick.Label": "Mixed - Quick",
+        "Compartment_CycleId.EnumValues.Mixed_Cold.Label": "Mixed - Cold",
+        "Compartment_CycleId.EnumValues.Mixed_DeepWater.Label": "Mixed - Deep Water",
+        "Compartment_CycleId.EnumValues.Mixed_ColorLast.Label": "Mixed - Color Last",
+        "Compartment_CycleId.EnumValues.Casuals_Normal.Label": "Casuals - Normal",
+        "Compartment_CycleId.EnumValues.Casuals_Quick.Label": "Casuals - Quick",
+        "Compartment_CycleId.EnumValues.Casuals_Cold.Label": "Casuals - Cold",
+        "Compartment_CycleId.EnumValues.Casuals_DeepWater.Label": "Casuals - Deep Water",
+        "Compartment_CycleId.EnumValues.Casuals_ColorLast.Label": "Casuals - Color Last",
+        "Compartment_CycleId.EnumValues.Whites_Normal.Label": "Whites - Normal",
+        "Compartment_CycleId.EnumValues.Whites_Quick.Label": "Whites - Quick",
+        "Compartment_CycleId.EnumValues.Whites_Cold.Label": "Whites - Cold",
+        "Compartment_CycleId.EnumValues.Whites_DeepWater.Label": "Whites - Deep Water",
+        "Compartment_CycleId.EnumValues.Delicates_Normal.Label": "Delicates - Normal",
+        "Compartment_CycleId.EnumValues.Delicates_Quick.Label": "Delicates - Quick",
+        "Compartment_CycleId.EnumValues.Delicates_Cold.Label": "Delicates - Cold",
+        "Compartment_CycleId.EnumValues.Delicates_DeepWater.Label": "Delicates - Deep Water",
+        "Compartment_CycleId.EnumValues.Delicates_ColorLast.Label": "Delicates - Color Last",
+        "Compartment_CycleId.EnumValues.BulkySheets_Normal.Label": "Bulky/Sheets - Normal",
+        "Compartment_CycleId.EnumValues.BulkySheets_Quick.Label": "Bulky/Sheets - Quick",
+        "Compartment_CycleId.EnumValues.BulkySheets_Cold.Label": "Bulky/Sheets - Cold",
+        "Compartment_CycleId.EnumValues.BulkySheets_DeepWater.Label": "Bulky/Sheets - Deep Water",
+        "Compartment_CycleId.EnumValues.BulkySheets_ColorLast.Label": "Bulky/Sheets - Color Last",
+        "Compartment_CycleId.EnumValues.RinseSpin.Label": "Rinse & Spin",
+        "Compartment_CycleId.EnumValues.CleanWasher.Label": "Clean Washer",
+        "Compartment_CycleDisplayName.Label": "Cycle Display Name",
+        "Compartment_CycleDisplayName2.Label": "Cycle Display Name 2",
+        "Compartment_CycleNameLastDownload.Label": "Cycle Name Last Download",
+        "Compartment_CycleState.Label": "Cycle State",
+        "Compartment_CycleState.EnumValues.Sensing.Label": "Sensing",
+        "Compartment_CycleState.EnumValues.MainCycleComplete.Label": "Main Cycle Complete",
+        "Compartment_CycleState.EnumValues.PostCycleComplete.Label": "Post Cycle Complete",
+        "Compartment_CycleState.EnumValues.Steaming.Label": "Steaming",
+        "Compartment_CycleState.EnumValues.Spinning.Label": "Spinning",
+        "Compartment_CycleState.EnumValues.Draining.Label": "Draining",
+        "Compartment_CycleState.EnumValues.Filling.Label": "Filling",
+        "Compartment_CycleState.EnumValues.Rinsing.Label": "Rinsing",
+        "Compartment_CycleState.EnumValues.Dispensing.Label": "Dispensing",
+        "Compartment_CycleState.EnumValues.Distributing.Label": "Distributing",
+        "Compartment_CycleState.EnumValues.Drying.Label": "Drying",
+        "Compartment_CycleState.EnumValues.Cooling.Label": "Cooling",
+        "Compartment_CycleState.EnumValues.Finishing.Label": "Finishing",
+        "Compartment_CycleState.EnumValues.Misting.Label": "Misting",
+        "Compartment_CycleState.EnumValues.Washing.Label": "Washing",
+        "Compartment_CycleState.EnumValues.DoorLockStatus.Label": "Door verified",
+        "Compartment_CycleSummary.Label": "Cycle Summary",
+        "Compartment_DelayMinutes.Label": "Delay Minutes",
+        "Compartment_DelayStartAllowed.Label": "Delay Start",
+        "Compartment_DelayStartAllowed.EnumValues.None.Label": "None",
+        "Compartment_DelayStartAllowed.EnumValues.Start.Label": "Start",
+        "Compartment_DelayStartAllowed.EnumValues.Update.Label": "Update",
+        "Compartment_DownloadAndGo.Label": "Download & Go",
+        "Compartment_DownloadCyclePersist.Label": "Download Cycle Persist",
+        "Compartment_DownloadNonPersistentEnabled.Label": "Download Nonpersistent Enabled",
+        "Compartment_DownloadPersistentEnabled.Label": "Download Persistent Enabled",
+        "Compartment_EstTimeRemaining.Label": "Estimated Time Remaining",
+        "Compartment_LoadFreshEnabled.Label": "Load Fresh Cycle",
+        "Compartment_Odometer.Label": "Odometer",
+        "Compartment_StartPauseAllowed.Label": "Start Pause Allowed",
+        "Compartment_StartPauseAllowed.EnumValues.None.Label": "None",
+        "Compartment_StartPauseAllowed.EnumValues.Start.Label": "Start",
+        "Compartment_StartPauseAllowed.EnumValues.Pause.Label": "Pause",
+        "Compartment_State.Label": "State",
+        "Compartment_State.EnumValues.Idle.Label": "Idle",
+        "Compartment_State.EnumValues.Programming.Label": "Cycle Selection",
+        "Compartment_State.EnumValues.Paused.Label": "Paused",
+        "Compartment_State.EnumValues.Running.Label": "Running",
+        "Compartment_State.EnumValues.Complete.Label": "Complete",
+        "Compartment_State.EnumValues.DelayStart.Label": "Delay Start",
+        "Compartment_State.EnumValues.DelayPaused.Label": "Delay Paused",
+        "Compartment_State.EnumValues.Cancelled.Label": "Cancelled",
+        "Compartment_State.EnumValues.RemoteStart.Label": "Remote Start",
+        "Compartment_State.EnumValues.RemotePaused.Label": "Remote Paused",
+        "Compartment_State.EnumValues.RemoteResume.Label": "Remote Resume",
+        "Compartment_State.EnumValues.PowerFailCycleRecovered.Label": "Power Fail Cycle Recovered",
+        "Compartment_State.EnumValues.PowerFailCycleLost.Label": "Power Fail Cycle Lost",
+        "Compartment_State.EnumValues.Pausing.Label": "Pausing",
+        "Compartment_State.EnumValues.Failure.Label": "Failure",
+        "Compartment_State.EnumValues.Stopping.Label": "Stopping",
+        "Compartment_State.EnumValues.PowerFail.Label": "Power Fail",
+        "Compartment_State.EnumValues.PostRunning.Label": "Post Running",
+        "Compartment_State.EnumValues.PostRunningPaused.Label": "Post Running Paused",
+        "CycleOptionsWHR_DeepClean.Label": "Steam",
+        "CycleOptionsWHR_DeepCleanChangeable.Label": "Deep Clean Changeable",
+        "CycleOptionsWHR_ExtraRinse.Label": "Extra Rinse",
+        "CycleOptionsWHR_ExtraRinseChangeable.Label": "Extra Rinse Changeable",
+        "CycleOptionsWHR_HowTo.Label": "How To Wash",
+        "CycleOptionsWHR_HowTo.EnumValues.Normal.Label": "Normal",
+        "CycleOptionsWHR_HowTo.EnumValues.Quick.Label": "Quick",
+        "CycleOptionsWHR_HowTo.EnumValues.Cold.Label": "Cold",
+        "CycleOptionsWHR_HowTo.EnumValues.DeepWater.Label": "Deep Water",
+        "CycleOptionsWHR_HowTo.EnumValues.ColorLast.Label": "Color Last",
+        "CycleOptionsWHR_HowToChangeable.Label": "How To Changeable",
+        "CycleOptionsWHR_OxiClean.Label": "Oxi",
+        "CycleOptionsWHR_OxiCleanChangeable.Label": "Oxi Clean Changeable",
+        "CycleOptionsWHR_Presoak.Label": "Presoak",
+        "CycleOptionsWHR_PresoakChangeable.Label": "Presoak Changeable",
+        "CycleOptionsWHR_SoilLevel.Label": "Soil Level",
+        "CycleOptionsWHR_SoilLevel.EnumValues.Light.Label": "Light",
+        "CycleOptionsWHR_SoilLevel.EnumValues.Medium.Label": "Medium",
+        "CycleOptionsWHR_SoilLevel.EnumValues.Heavy.Label": "Medium Heavy",
+        "CycleOptionsWHR_SoilLevel.EnumValues.VeryHeavy.Label": "Heavy",
+        "CycleOptionsWHR_SoilLevelChangeable.Label": "Soil Level Changeable",
+        "CycleOptionsWHR_SpinSpeed.Label": "Spin Speed",
+        "CycleOptionsWHR_SpinSpeed.EnumValues.SpinSpeed0.Label": "None",
+        "CycleOptionsWHR_SpinSpeed.EnumValues.SpinSpeed1.Label": "Low",
+        "CycleOptionsWHR_SpinSpeed.EnumValues.SpinSpeed2.Label": "High",
+        "CycleOptionsWHR_SpinSpeedChangeable.Label": "Spin Speed Changeable",
+        "CycleOptionsWHR_Temperature.Label": "Temperature",
+        "CycleOptionsWHR_Temperature.EnumValues.Temp0.Label": "Cold",
+        "CycleOptionsWHR_Temperature.EnumValues.Temp1.Label": "Cool",
+        "CycleOptionsWHR_Temperature.EnumValues.Temp2.Label": "Warm",
+        "CycleOptionsWHR_Temperature.EnumValues.Temp3.Label": "Warmer",
+        "CycleOptionsWHR_Temperature.EnumValues.Temp4.Label": "Hot",
+        "CycleOptionsWHR_TemperatureChangeable.Label": "Temperature Changeable",
+        "CycleOptionsWHR_WhatTo.Label": "What To Wash",
+        "CycleOptionsWHR_WhatTo.EnumValues.Mixed.Label": "Mixed",
+        "CycleOptionsWHR_WhatTo.EnumValues.Casuals.Label": "Casuals",
+        "CycleOptionsWHR_WhatTo.EnumValues.Whites.Label": "Whites",
+        "CycleOptionsWHR_WhatTo.EnumValues.Delicates.Label": "Delicates",
+        "CycleOptionsWHR_WhatTo.EnumValues.BulkySheets.Label": "Bulky/Sheets",
+        "CycleOptionsWHR_WhatToChangeable.Label": "What To Changeable",
+        "System_ButtonBeepVolume.Label": "Button Beep Volume",
+        "System_ButtonBeepVolume.EnumValues.Off.Label": "Off",
+        "System_ButtonBeepVolume.EnumValues.Medium.Label": "Medium",
+        "System_ButtonBeepVolume.EnumValues.High.Label": "High",
+        "System_Command.Label": "Command",
+        "System_Command.EnumValues.StartCycle.Label": "Start Cycle",
+        "System_Command.EnumValues.PauseCycle.Label": "Pause Cycle",
+        "System_Command.EnumValues.CancelCycle.Label": "Cancel Cycle",
+        "System_EndOfCycleBeepVolume.Label": "End Of Cycle Beep Volume",
+        "System_EndOfCycleBeepVolume.EnumValues.Off.Label": "Off",
+        "System_EndOfCycleBeepVolume.EnumValues.Medium.Label": "Medium",
+        "System_EndOfCycleBeepVolume.EnumValues.High.Label": "High",
+        "System_FaultCode.Label": "Fault Code",
+        "System_Online.Label": "Online"
+    },
+    "AFCSelfHelpPack": {
+        "F0,E2": {
+            "ErrorCode": "F0,E2",
+            "Name": "Oversuds Alert",
+            "Description": "Looks like there are too many suds in the washer. You may experience longer cycle times as the washer tries to clear the soap.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F0E2_P1.html"
+        },
+        "F0,E3": {
+            "ErrorCode": "F0,E3",
+            "Name": "Overloaded Washer Alert",
+            "Description": "Looks like there's an oversized load in the washer. Overloading can significantly reduce performance.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F0E3_P1.html"
+        },
+        "F0,E4": {
+            "ErrorCode": "F0,E4",
+            "Name": "Spin Speed Limitation",
+            "Description": "Spin speed is limited due to excessive incoming water temperature.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F0E4_P1.html"
+        },
+        "F0,E5": {
+            "ErrorCode": "F0,E5",
+            "Name": "Unbalanced Load Alert",
+            "Description": "Looks like there's an unbalanced load in the washer. You may experience longer cycle times as the washer tries to correct for this.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F0E5_P1.html"
+        },
+        "F1,E1": {
+            "ErrorCode": "F1,E1",
+            "Name": "Communication Error",
+            "Description": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F1E1_P1.html"
+        },
+        "F2,E1": {
+            "ErrorCode": "F2,E1",
+            "Name": "UI Stuck Button",
+            "Description": "One or more UI buttons are recognized as stuck on.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F2E1_P1.html"
+        },
+        "F2,E3": {
+            "ErrorCode": "F2,E3",
+            "Name": "Communication Error",
+            "Description": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F2E3_P1.html"
+        },
+        "F2,E4": {
+            "ErrorCode": "F2,E4",
+            "Name": "Communication Error",
+            "Description": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F2E4_P1.html"
+        },
+        "F2,E5": {
+            "ErrorCode": "F2,E5",
+            "Name": "Communication Error",
+            "Description": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F2E5_P1.html"
+        },
+        "F3,E1": {
+            "ErrorCode": "F3,E1",
+            "Name": "Water Level Alert",
+            "Description": "Looks like the washer can't detect the water level. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F3E1_P1.html"
+        },
+        "F5,E2": {
+            "ErrorCode": "F5,E2",
+            "Name": "Lid Lock Error",
+            "Description": "Looks like the washer can't engage its lid lock.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F5E2_P1.html"
+        },
+        "F5,E3": {
+            "ErrorCode": "F5,E3",
+            "Name": "Lid Unlock Error",
+            "Description": "Looks like there's a performance issue with the lid lock. Do not try to force the lid open, as this could cause injury or damage to the washer. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F5E3_P1.html"
+        },
+        "F5,E4": {
+            "ErrorCode": "F5,E4",
+            "Name": "Lid not open between cycles",
+            "Description": "Washer must see washer lid opening between cycles.  If it does not, a faulty lid switch feedback is assumed.  After fault detected, the system will not respond to Start Command until lid switch transition occurs.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F5E4_P1.html"
+        },
+        "F6,E2": {
+            "ErrorCode": "F6,E2",
+            "Name": "Communication Error",
+            "Description": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F6E2_P1.html"
+        },
+        "F6,E3": {
+            "ErrorCode": "F6,E3",
+            "Name": "Communication error",
+            "Description": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F6E3_P1.html"
+        },
+        "F8,E1": {
+            "ErrorCode": "F8,E1",
+            "Name": "Water Fill Delay Alert",
+            "Description": "Looks like the washer is taking too long to fill or will not fill and has cancelled the cycle. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F8E1_P1.html"
+        },
+        "F8,E3": {
+            "ErrorCode": "F8,E3",
+            "Name": "Overflow or Flood Condition",
+            "Description": "Product at risk of overflow or flood condition.  System enters Cycle Drainout state.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F8E3_P1.html"
+        },
+        "F9,E1": {
+            "ErrorCode": "F9,E1",
+            "Name": "Drain System Alert",
+            "Description": "Looks like the washer is taking longer to drain than expected. Please see recommended action.",
+            "StepsToRepair": [],
+            "HelpPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/F9E1_P1.html"
+        }
+    },
+    "MobileLiterals": {
+        "Manuals": {
+            "FccInformationForm": {
+                "Title": "FCC Information Form",
+                "FilePath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/FCC_Information_Form.pdf"
+            },
+            "UseCareGuide": {
+                "Title": "Use & Care Guide",
+                "FilePath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/Washer_Use_and_Care_Guide.pdf"
+            },
+            "InstallationInstructions": {
+                "Title": "Installation Instructions",
+                "FilePath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/eng/Washer_Installation_Guide.pdf"
+            }
+        },
+        "NestSettings": {
+            "QuietWhileHome.Name": "Quiet While Home",
+            "QuietWhileHome.Description": "Your washer will automatically go into Quiet Mode when Nest™ is set to Home.",
+            "SmartEnergy.Name": "Smart Energy",
+            "SmartEnergy.Description": "Use Smart Delay to delay your washer from running during peak energy hours."
+        },
+        "SpecialtyCycles": {
+            "AthleticHighPerformanceWear.Name": "Athletic / High Performance Wear",
+            "AthleticHighPerformanceWear.Description": "A cycle for cleaning work out clothing.",
+            "AthleticHighPerformanceWear.LongDescription": "A cycle for cleaning work out clothing.",
+            "AthleticHighPerformanceWear.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/AthleticHighPerformanceWear.png",
+            "BrightColors.Name": "Bright Colors",
+            "BrightColors.Description": "A cycle for vibrant colors.",
+            "BrightColors.LongDescription": "A cycle for vibrant colors.",
+            "BrightColors.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/BrightColors.png",
+            "BusinessCasual.Name": "Business Casual",
+            "BusinessCasual.Description": "A cycle to wash loads of no-iron fabrics such as sport shirts, blouses, casual business clothes, and blends.",
+            "BusinessCasual.LongDescription": "A cycle to wash loads of no-iron fabrics such as sport shirts, blouses, casual business clothes, and blends.",
+            "BusinessCasual.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/BusinessCasual.png",
+            "Comforters.Name": "Comforters",
+            "Comforters.Description": "A cycle to wash bulky items such as comforters.",
+            "Comforters.LongDescription": "A cycle to wash bulky items such as comforters.",
+            "Comforters.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/Comforters.png",
+            "HandwashFabrics.Name": "Handwash Fabrics",
+            "HandwashFabrics.Description": "A cycle for small loads of items labeled \"handwash,\" undergarments, silks, etc. Note: use mesh garment bags as needed",
+            "HandwashFabrics.LongDescription": "A cycle for small loads of items labeled \"handwash,\" undergarments, silks, etc. Note: use mesh garment bags as needed",
+            "HandwashFabrics.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/HandwashFabrics.png",
+            "HeavyDuty.Name": "Heavy Duty",
+            "HeavyDuty.Description": "A cycle for sturdy colorfast fabrics and heavily soiled garments.",
+            "HeavyDuty.LongDescription": "A cycle for sturdy colorfast fabrics and heavily soiled garments.",
+            "HeavyDuty.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/HeavyDuty.png",
+            "Intimates.Name": "Intimates",
+            "Intimates.Description": "A cycle for delicate intimate garments such as bras, sheer fabrics, and lingerie. Note: use mesh garment bags as needed",
+            "Intimates.LongDescription": "A cycle for delicate intimate garments such as bras, sheer fabrics, and lingerie. Note: use mesh garment bags as needed",
+            "Intimates.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/Intimates.png",
+            "SleepingBags.Name": "Sleeping Bags",
+            "SleepingBags.Description": "A cycle to wash bulky items such as sleeping bags.",
+            "SleepingBags.LongDescription": "A cycle to wash bulky items such as sleeping bags.",
+            "SleepingBags.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/SleepingBags.png",
+            "Swimwear.Name": "Swimwear",
+            "Swimwear.Description": "A cycle for swim garments (we recommend no detergent for this cycle)",
+            "Swimwear.LongDescription": "A cycle for swim garments (we recommend no detergent for this cycle)",
+            "Swimwear.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/Swimwear.png",
+            "Towels.Name": "Towels",
+            "Towels.Description": "A cycle for cleaning towels.",
+            "Towels.LongDescription": "A cycle for cleaning towels.",
+            "Towels.IconPath": "NAR/WHIRLPOOL/DDM_Washer_V10K_V1/Docs/Towels.png"
+        },
+        "Notifications": {
+            "ClothesClean": {
+                "Name": "Clothes Clean",
+                "Description": "Don't worry about checking the washer, it will let you know when the clothes are clean."
+            },
+            "Overloaded": {
+                "Name": "Overloaded Washer Alert",
+                "Description": "When your washer detects that something is wrong it speaks up, texting, emailing, or alerting you in the app so you can keep it running perfectly."
+            },
+            "OverSuds": {
+                "Name": "Oversuds Alert",
+                "Description": "When your washer detects that something is wrong it speaks up, texting, emailing, or alerting you in the app so you can keep it running perfectly."
+            },
+            "SystemAlerts": {
+                "Name": "System Alerts",
+                "Description": "When your washer detects that something is wrong it speaks up, texting, emailing, or alerting you in the app so you can keep it running perfectly."
+            },
+            "Unbalanced": {
+                "Name": "Unbalanced Load Alert",
+                "Description": "When your washer detects that something is wrong it speaks up, texting, emailing, or alerting you in the app so you can keep it running perfectly."
+            }
+        },
+        "SupplyItem": {
+            "ExtendedWarranty": {
+                "Name": "Extended Warranty",
+                "Description": null,
+                "Disclaimer": null,
+                "SupplyLocations": [
+                    {
+                        "Merchant": "Whirlpool",
+                        "url": "https://www.whirlpoolextendedserviceplans.com/Home/Welcome/",
+                        "Country": "United States"
+                    }
+                ]
+            }
+        },
+        "SmartTip": [
+            {
+                "Id": 1,
+                "Title": "Tip 1",
+                "Content": "With typical usage, your clothes washer uses, per year, more than three times the energy of a hair dryer. Use the Energy Advisor feature to reduce your energy foot-print. Now that’s Smart!"
+            },
+            {
+                "Id": 2,
+                "Title": "Tip 2",
+                "Content": "Clean clothes = better attendance rates. School administrators have found that students not having clean clothes to wear is a known contributor to truancy."
+            }
+        ],
+        "cxcDetail": {
+            "US": {
+                "Country": "United States",
+                "cxcEmail": {
+                    "Development": "wcloud@mailinator.com",
+                    "Test": "wcloud@mailinator.com",
+                    "Staging": "wcloud@mailinator.com",
+                    "Cuft": "Connected_Appliances@Whirlpool.com",
+                    "Production": "Connected_Appliances@Whirlpool.com"
+                },
+                "cxcPhone": {
+                    "Development": "1-866-555-1212",
+                    "Test": "1-866-333-4591",
+                    "Staging": "1-866-333-4591",
+                    "Cuft": "1-866-555-1212",
+                    "Production": "1-866-333-4591"
+                },
+                "cxcHours": {
+                    "Development": "8.00 AM-8.00 PM EST,Monday-Friday",
+                    "Test": "8.00 AM-8.00 PM EST,Monday-Friday",
+                    "Staging": "8.00 AM-8.00 PM EST,Monday-Friday",
+                    "Cuft": "8.00 AM-8.00 PM EST,Monday-Friday",
+                    "Production": "8.00 AM-8.00 PM EST,Monday-Friday"
+                }
+            },
+            "CA": {
+                "Country": "Canada",
+                "cxcEmail": {
+                    "Development": "Connected_Appliances@Whirlpool.com",
+                    "Test": "Connected_Appliances@Whirlpool.com",
+                    "Staging": "Connected_Appliances@Whirlpool.com",
+                    "Cuft": "Connected_Appliances@Whirlpool.com",
+                    "Production": "Connected_Appliances@Whirlpool.com"
+                },
+                "cxcPhone": {
+                    "Development": "1-866-555-1212",
+                    "Test": "1-866-333-4591",
+                    "Staging": "1-866-333-4591",
+                    "Cuft": "1-866-555-1212",
+                    "Production": "1-866-333-4591"
+                },
+                "cxcHours": {
+                    "Development": "8.00 AM-8.00 PM EST,Monday-Friday",
+                    "Test": "8.00 AM-8.00 PM EST,Monday-Friday",
+                    "Staging": "8.00 AM-8.00 PM EST,Monday-Friday",
+                    "Cuft": "8.00 AM-8.00 PM EST,Monday-Friday",
+                    "Production": "8.00 AM-8.00 PM EST,Monday-Friday"
+                }
+            }
+        },
+        "Replenishment": {
+            "ReplenishmentSlot": {
+                "DisplayName": {
+                    "TopLoadWasherSlot1Name": "Top Load Washer Slot 1 Name",
+                    "TopLoadWasherSlot2Name": "Top Load Washer Slot 2 Name"
+                },
+                "UomDisplay": {
+                    "TopLoadWasherSlot1UomDisplay": "Top Load Washer Slot 1 UOM Display",
+                    "TopLoadWasherSlot2UomDisplay": "Top Load Washer Slot 2 OUM Display"
+                }
+            },
+            "ReplenishmentDelay": {
+                "DisplayName": {
+                    "TopLoadWasherSlot1Delay0": "Delay 0",
+                    "TopLoadWasherSlot1Delay2": "Delay 2",
+                    "TopLoadWasherSlot1Delay4": "Delay 4",
+                    "TopLoadWasherSlot1Delay6": "Delay 6",
+                    "TopLoadWasherSlot2Delay0": "Delay 0",
+                    "TopLoadWasherSlot2Delay2": "Delay 2",
+                    "TopLoadWasherSlot2Delay4": "Delay 4",
+                    "TopLoadWasherSlot2Delay6": "Delay 6"
+                }
+            },
+            "ReplenishmentUsage": {
+                "DisplayName": {
+                    "TopLoadWasherSlot1UsageDefault": "Top Load Washer Usage Slot 1 Default",
+                    "TopLoadWasherSlot1UsageSmall": "Top Load Washer Usage Slot 1 Small",
+                    "TopLoadWasherSlot1UsageMedium": "Top Load Washer Usage Slot 1 Medium",
+                    "TopLoadWasherSlot1UsageLarge": "Top Load Washer Usage Slot 1 large",
+                    "TopLoadWasherSlot2UsageDefault": "Top Load Washer Usage Slot 2 Default",
+                    "TopLoadWasherSlot2UsageSmall": "Top Load Washer Usage Slot 1 Small",
+                    "TopLoadWasherSlot2UsageMedium": "Top Load Washer Usage Slot 1 Medium",
+                    "TopLoadWasherSlot2UsageLarge": "Top Load Washer Usage Slot 1 large"
+                }
+            }
+        }
+    },
+    "NotificationMessages": {
+        "NotificationContents": [
+            {
+                "TemplateId": "ClothesClean",
+                "SmsText": "Your clothes in the washer are clean!",
+                "EmailText": "Your clothes in the washer are clean!",
+                "PushText": "Your clothes in the washer are clean!",
+                "AlertTitle": "Cycle Alert",
+                "Type": "cycle"
+            },
+            {
+                "TemplateId": "F0E2",
+                "SmsText": "Looks like there are too many suds in the washer. You may experience longer cycle times as the washer tries to clear the soap.",
+                "EmailText": "Looks like there are too many suds in the washer. You may experience longer cycle times as the washer tries to clear the soap.",
+                "PushText": "Looks like there are too many suds in the washer. You may experience longer cycle times as the washer tries to clear the soap.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F0E3",
+                "SmsText": "Looks like there's an oversized load in the washer. Overloading can significantly reduce performance.",
+                "EmailText": "Looks like there's an oversized load in the washer. Overloading can significantly reduce performance.",
+                "PushText": "Looks like there's an oversized load in the washer. Overloading can significantly reduce performance.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F0E4",
+                "SmsText": "Spin Speed Limitation",
+                "EmailText": "Spin Speed Limitation",
+                "PushText": "Spin Speed Limitation",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F0E5",
+                "SmsText": "Looks like there's an unbalanced load in the washer. You may experience longer cycle times as the washer tries to correct for this.",
+                "EmailText": "Looks like there's an unbalanced load in the washer. You may experience longer cycle times as the washer tries to correct for this.",
+                "PushText": "Looks like there's an unbalanced load in the washer. You may experience longer cycle times as the washer tries to correct for this.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F1E1",
+                "SmsText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "EmailText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "PushText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F2E1",
+                "SmsText": "UI Stuck Button",
+                "EmailText": "UI Stuck Button",
+                "PushText": "UI Stuck Button",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F2E3",
+                "SmsText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "EmailText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "PushText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F2E4",
+                "SmsText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "EmailText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "PushText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F2E5",
+                "SmsText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "EmailText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "PushText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F3E1",
+                "SmsText": "Looks like the washer can't detect the water level. Please see recommended action.",
+                "EmailText": "Looks like the washer can't detect the water level. Please see recommended action.",
+                "PushText": "Looks like the washer can't detect the water level. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F5E2",
+                "SmsText": "Looks like the washer can't engage its lid lock.",
+                "EmailText": "Looks like the washer can't engage its lid lock.",
+                "PushText": "Looks like the washer can't engage its lid lock.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F5E3",
+                "SmsText": "Looks like there's a performance issue with the lid lock. Do not try to force the lid open, as this could cause injury or damage to the washer. Please see recommended action.",
+                "EmailText": "Looks like there's a performance issue with the lid lock. Do not try to force the lid open, as this could cause injury or damage to the washer. Please see recommended action.",
+                "PushText": "Looks like there's a performance issue with the lid lock. Do not try to force the lid open, as this could cause injury or damage to the washer. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F5E4",
+                "SmsText": "Lid not open between cycles",
+                "EmailText": "Lid not open between cycles",
+                "PushText": "Lid not open between cycles",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F6E2",
+                "SmsText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "EmailText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "PushText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F6E3",
+                "SmsText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "EmailText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "PushText": "Looks like there's an error that requires a washer reboot. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F8E1",
+                "SmsText": "Looks like the washer is taking too long to fill or will not fill and has cancelled the cycle. Please see recommended action.",
+                "EmailText": "Looks like the washer is taking too long to fill or will not fill and has cancelled the cycle. Please see recommended action.",
+                "PushText": "Looks like the washer is taking too long to fill or will not fill and has cancelled the cycle. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F8E3",
+                "SmsText": "Overflow or Flood Condition",
+                "EmailText": "Overflow or Flood Condition",
+                "PushText": "Overflow or Flood Condition",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            },
+            {
+                "TemplateId": "F9E1",
+                "SmsText": "Looks like the washer is taking longer to drain than expected. Please see recommended action.",
+                "EmailText": "Looks like the washer is taking longer to drain than expected. Please see recommended action.",
+                "PushText": "Looks like the washer is taking longer to drain than expected. Please see recommended action.",
+                "AlertTitle": "Fault Code Alert",
+                "Type": "fault"
+            }
+        ]
+    }
+}
