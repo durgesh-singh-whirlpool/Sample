@@ -6847,10 +6847,10 @@
 								"US",
 								"CA"
 							],
-							"StatusAttributes": {
+							"StatusAttributes": [
 								"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
 								"SoundKeyPress": "Sys_OpSetKeyPressToneVolume"
-							}
+							]
 						},
 						"ChangeApplianceLanguage": {
 							"Visible": true,
