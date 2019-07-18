@@ -4873,10 +4873,10 @@
 								"US",
 								"CA"
 							],
-							"StatusAttributes": {
-							"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
-							"SoundKeyPress" : "Sys_OpSetKeyPressToneVolume"
-							}
+							"StatusAttributes": [
+							"Sys_OpSetAlertToneVolume",
+							"Sys_OpSetKeyPressToneVolume"
+							]
 						},
 						"ChangeApplianceLanguage": {
 							"Visible": true,
