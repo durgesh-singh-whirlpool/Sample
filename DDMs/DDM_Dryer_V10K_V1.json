@@ -2891,8 +2891,7 @@
 				"AttributesMapping": {
 					"DryCavity": {
 						"CycleName": [
-							"WashCavity_CycleSetCycleSelect",
-							"Cavity_CycleSetCycleName"
+							"Compartment_CycleId"
 						],
 						"TimeRemaining": "Compartment_EstTimeRemaining",
 						"MachineState": "Compartment_State",
@@ -2917,6 +2916,10 @@
 								"US",
 								"CA"
 							]
+						},
+						"ControlLock": {
+							"Visible": false,
+							"AvailableIn": []
 						},
 						"Notifications": {
 							"Visible": true,
