@@ -1741,7 +1741,7 @@
 										"Default": false
 									},
 									"WrinkleShield": {
-										"Allowed": [
+										"Enumeration": [
 											"Off",
 											"On"
 										],
@@ -1822,7 +1822,7 @@
 							"DryCavity_CycleSetCycleSelectMixed_Sanitize": {
 								"Required": {
 									"Temperature": {
-										"Allowed": [
+										"Enumeration": [
 											"Temp4"
 										],
 										"Default": "Temp4"
@@ -2353,7 +2353,7 @@
 							"DryCavity_CycleSetCycleSelectCasuals_Sanitize": {
 								"Required": {
 									"Temperature": {
-										"Allowed": [
+										"Enumeration": [
 											"Temp4"
 										],
 										"Default": "Temp4"
