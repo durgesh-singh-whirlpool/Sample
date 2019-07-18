@@ -3058,7 +3058,7 @@
 							"SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
 							"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume"
 							}
-						}
+						},
 						"ChangeApplianceLanguage": {
 							"Visible": true,
 							"AvailableIn": [
