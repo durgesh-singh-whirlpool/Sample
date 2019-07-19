@@ -1,7 +1,5 @@
 {
-  "_id": "DDM_Washer_SmartGrid_V1",
-  "_rev": "16-35f8efa4dc53f8d767e5d18eeca32121",
-  "DDM": {
+  "ddm": {
     "_id": "DDM_Washer_SmartGrid_V1",
     "ddmName": "DDM_Washer_SmartGrid_V1",
     "modelNumber": "WFL98HEBU0",
@@ -13,7 +11,7 @@
     "ccuriVersion": "1.0",
     "ccURI": "ecm_washer"
   },
-  "DataModel": {
+  "dataModel": {
     "Key": "DDM_Washer_SmartGrid_V1",
     "attributes": [
       {
@@ -1264,79 +1262,147 @@
       }
     ]
   },
-  "Personality": {
+  "personality": {
     "Key": "DDM_Washer_SmartGrid_V1",
-    "Rulesets": [
-      {
-        "Idle": {
-          "State": {
-            "Idle": {
-              "ApplianceStateCode": [
-                "Idle,Done"
-              ],
-              "Online": true
-            }
-          }
-        },
-        "CompartmentStartPauseAllowed": {
-          "State": {
-            "Pause": {
-              "ApplianceStateCode": [
-                "Init",
-                "Delayed",
-                "Running",
-                "Sensing",
-                "Steaming",
-                "Filling",
-                "Dispensing",
-                "Washing",
-                "Soaking",
-                "Rinsing",
-                "Spinning",
-                "FanFresh"
-              ],
-              "Online": true
-            },
-            "Start": {
-              "ApplianceStateCode": [
-                "Idle",
-                "CycleSelection",
-                "Paused"
-              ],
-              "RemoteControlStatus": true,
-              "Online": true
-            },
-            "None": {
-              "ApplianceStateCode": [
-                "Done"
-              ],
-              "Online": false
-            }
-          }
-        }
-      },
-      {
-        "EnergyHistory": {
-          "isLegacy": "true",
-          "groupBy": "CycleNameEnergy",
-          "attributes": "CycleName,CycleEnergyConsumption"
-        }
-      },
-      {
-        "FanFreshChangeable": {
-          "State": {
-            "Running": {
-              "CycleNameCode": [
-                "Delicate,HandWash,Jeans,WhitestWhites,NormalCasual,HeavyDuty,BulkyItems,QuickWash,RinseDrainSpin,DrainSpin,Allergen"
-              ],
-              "Online": true
-            }
-          }
-        }
-      }
-    ]
-  },
-  "Alerts": {
+	"capability": [
+			{
+				"CavityOrder": [
+					"WashCavity"
+				],
+				"Capability": {},
+				"AttributesMapping": {
+					"WashCavity": {
+						"CycleName": "CycleName",
+						"TimeRemaining": "EstTimeRemaining",
+						"MachineState": "ApplianceStateCode",
+						"FresheningSelect": "GetFanFreshStatus",
+						"DelayTime": "Cavity_TimeSetDelayTime",
+						"AffreshStatus": "GetAffreshStatus",
+						"DispenseStatus": "DetergentDispenseStatus"
+					},
+					"Common": {
+						"RemoteStatus": "GetRemoteControlStatus",
+						"Online": "Online",
+						"RemoteEnabledStatus": "GetRemoteControlStatus"
+					}
+				},
+				"Features": {
+					"Common": {
+						"ApplianceDocuments": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ControlLock": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetControlLock"
+							}
+						},
+						"Notifications": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"FaultCodes": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"RemoteStatus": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "RemoteControlStatus"
+							}
+						},
+						"Online": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Online"
+							}
+						},
+						"QuietMode": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ChangeSoundKeyAlert": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ChangeSoundKeyPress": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ChangeBrightness": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						}
+					},
+					"WashCavity": {}
+				},
+				"ApplianceRulesets": {
+					"WashCavity": {
+						"Runtime": [
+						
+						]
+					},
+					"Common": {
+						"Runtime": [
+						]
+					}
+				},
+				"Rulesets": {
+					"FaultCodeHistory": {
+						"isLegacy": false,
+						"groupBy": "FaultCodeDetails",
+						"attributes": "FaultCodeDetails"
+					}
+				},
+				"QueryParams": {
+					"Common": {
+						"FaultCodeHistory": {
+							"isLegacy": false,
+							"groupBy": "FaultCodeDetails",
+							"attributes": "FaultCodeDetails"
+						}
+					},
+					"WashCavity": {
+					}
+				}
+			}
+		]
+   },
+  "alerts": {
     "Key": "DDM_Washer_SmartGrid_V1",
     "Alerts": [
       {
@@ -1393,7 +1459,7 @@
       }
     ]
   },
-  "Services": {
+  "services": {
     "_id": "DDM_Washer_SmartGrid_V1",
     "thirdPartyServices": [
       {
