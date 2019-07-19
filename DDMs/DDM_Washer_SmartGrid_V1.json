@@ -1269,7 +1269,11 @@
 				"CavityOrder": [
 					"WashCavity"
 				],
-				"Capability": {},
+				"Capability": {
+				"WashCavity":{
+				"CapabilityData": {}
+				}
+				},
 				"AttributesMapping": {
 					"WashCavity": {
 						"CycleName": "CycleName",
