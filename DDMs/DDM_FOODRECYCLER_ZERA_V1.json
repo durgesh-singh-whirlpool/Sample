@@ -1111,7 +1111,7 @@
 					},
 					"Common": {
 						"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
-						"Online": "Online",
+						"Online": "online",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable"
 					}
 				},
@@ -1165,7 +1165,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Online"
+								"State": "online"
 							}
 						},
 						"QuietMode": {
