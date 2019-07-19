@@ -1,7 +1,7 @@
 {
   "_id": "DDM_FOODRECYCLER_ZERA_V1",
   "_rev": "11-4724225cdd983dca928bbfe9640da45b",
-  "DDM": {
+  "ddm": {
     "_id": "DDM_FOODRECYCLER_ZERA_V1",
     "ddmName": "DDM_FOODRECYCLER_ZERA_V1",
     "modelNumber": "ZFR100UGW0,ZFR100UGW00",
@@ -13,7 +13,7 @@
     "ccuriVersion": "7",
     "ccURI": "API144_COMP_V7"
   },
-  "DataModel": {
+  "dataModel": {
     "Key": "DDM_FOODRECYCLER_ZERA_V1",
     "attributes": [
       {
@@ -1071,19 +1071,162 @@
       }
     ]
   },
-  "Personality": {
-    "Capability": [],
-    "Rulesets": [
-      {
-        "FaultCodeHistory": {
-          "isLegacy": "false",
-          "groupBy": "Sys_AlertStatusCustomerFaultCode",
-          "attributes": "Sys_AlertStatusCustomerFaultCode"
-        }
-      }
-    ]
+  "personality": {
+    
+	"capability": [
+			{
+				"CavityOrder": [
+					"FoodRecyclerCavity"
+				],
+				"Capability": {
+				"FoodRecyclerCavity":{
+				"CapabilityData": {
+				"Cycle":{
+				"Required": {}
+				}
+				},
+				"SetCycle":{
+				
+				"Cycle": {
+					"Name": "Cycle",
+						"Attributes": {
+							"Mwo_ModeSetCook": [
+								"Manual"
+										]
+									}
+								}
+				}
+				}
+				},
+				"AttributesMapping": {
+					"FoodRecyclerCavity": {
+						"LidStatus": "Sys_OperationStatusLidLockOperationAllowed",
+						"FilterStatus": "Sys_AlertStatusFilterStatus",
+						"WaterLevelStatus": "Sys_OperationStatusMachineHumidity",
+						"SleepMode": "Sys_DisplayStatusSleepMode",
+						"MachineState": "Sys_OperationStatusMachineState",
+						"TimeRemaining": "Cavity_CycleStatusTimeRemaining",
+						"DigestCyclePhase": "Sys_OperationStatusDigestCyclePhase",
+						"DigestCycleTimerRemaining":"Sys_OperationStatusDigestCycleTimerRemaining"
+					},
+					"Common": {
+						"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
+						"Online": "Online",
+						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable"
+					}
+				},
+				"Features": {
+					"Common": {
+						"ApplianceDocuments": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ControlLock": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OperationSetControlLock"
+							}
+						},
+						"Notifications": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"FaultCodes": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"RemoteStatus": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "RemoteControlStatus"
+							}
+						},
+						"Online": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Online"
+							}
+						},
+						"QuietMode": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						}
+					},
+					"FoodRecyclerCavity": {
+					"LidLock": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_OperationSetDoorLocked"
+							}
+						},
+						"Achievements": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						}
+					}
+				},
+				"ApplianceRulesets": {
+					"FoodRecyclerCavity": {
+						"Runtime": [
+						
+						]
+					},
+					"Common": {
+						"Runtime": [
+						]
+					}
+				},
+				"Rulesets": {
+					"FaultCodeHistory": {
+						"isLegacy": false,
+						"groupBy": "Sys_AlertStatusCustomerFaultCode",
+						"attributes": "Sys_AlertStatusCustomerFaultCode"
+					}
+				},
+				"QueryParams": {
+					"Common": {
+						"FaultCodeHistory": {
+							"isLegacy": false,
+							"groupBy": "Sys_AlertStatusCustomerFaultCode",
+							"attributes": "Sys_AlertStatusCustomerFaultCode"
+						}
+					}
+				}
+				}
+				]
   },
-  "Alerts": {
+  "alerts": {
     "Key": "DDM_FOODRECYCLER_ZERA_V1",
     "Alerts": [
       {
