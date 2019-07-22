@@ -1440,11 +1440,11 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -1502,11 +1502,11 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -1622,11 +1622,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -1686,11 +1686,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -1750,11 +1750,11 @@
 										"Default": "SoilLevelExtraLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -1814,11 +1814,11 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -1878,11 +1878,11 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -1942,11 +1942,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -1998,11 +1998,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2062,11 +2062,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2126,11 +2126,11 @@
 										"Default": "SoilLevelExtraLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2190,11 +2190,11 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2251,11 +2251,11 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2312,11 +2312,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2365,11 +2365,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2426,11 +2426,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2487,11 +2487,11 @@
 										"Default": "SoilLevelExtraLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2548,11 +2548,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2612,11 +2612,11 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2676,11 +2676,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2732,11 +2732,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2796,11 +2796,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2860,11 +2860,11 @@
 										"Default": "SoilLevelExtraLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2924,11 +2924,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -2988,11 +2988,11 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3052,11 +3052,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3108,11 +3108,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3172,11 +3172,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3236,11 +3236,11 @@
 										"Default": "SoilLevelExtraLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3300,11 +3300,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3364,11 +3364,11 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3428,11 +3428,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3484,11 +3484,11 @@
 										"Default": "SoilLevelExtraHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3548,11 +3548,11 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -3612,11 +3612,11 @@
 										"Default": "SoilLevelExtraLight"
 									},
 									"WashCavity_CycleSetFabricSoftenerEnable": {
-										"Default": false,
 										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetPresoakTimed": {
 										"List": [
@@ -4397,7 +4397,7 @@
 						"SoilLevel": "WashCavity_CycleSetSoilLevel",
 						"SpinSpeed": "WashCavity_CycleSetSpinSpeed",
 						"PresoakTimed": "WashCavity_CycleSetPresoakTimed",
-						"FabricSoftenerEnable":"WashCavity_CycleSetFabricSoftenerEnable",
+						"FabricSoftenerEnable": "WashCavity_CycleSetFabricSoftenerEnable",
 						"ExtraRinse": "WashCavity_CycleSetExtraRinseSelect",
 						"FresheningSelect": "WashCavity_CycleSetFresheningSelect",
 						"DeepFillEnable": "WashCavity_CycleSetDeepFillEnable",
@@ -4500,7 +4500,7 @@
 						}
 					},
 					"WashCavity": {
-					"SetCycle": {
+						"SetCycle": {
 							"Visible": true,
 							"AvailableIn": [
 								"US",
@@ -4587,7 +4587,7 @@
 								"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
 							}
 						}
-				}
+					}
 				},
 				"ApplianceRulesets": {
 					"WashCavity": {
@@ -4616,7 +4616,7 @@
 						"CycleHistory": {
 							"isLegacy": false,
 							"attributes": "WashCavity_CycleSetCycleSelect,WashCavity_CycleSetTemperature,WashCavity_CycleSetSoilLevel,WashCavity_CycleSetSpinSpeed,Cavity_TimeSetDelayTime,WashCavity_CycleSetExtraRinseSelect,WashCavity_CycleSetDeepFillEnable,WashCavity_CycleSetPresoakTimed,WashCavity_CycleSetFabricSoftenerEnable",
-					"groupBy": "XCat_OdometerStatusCycleCount"
+							"groupBy": "XCat_OdometerStatusCycleCount"
 						}
 					}
 				}
