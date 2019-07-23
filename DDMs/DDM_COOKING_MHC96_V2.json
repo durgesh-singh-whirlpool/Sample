@@ -2671,9 +2671,7 @@
 								"Required": {}
 							},
 							"Mwo_ModeSetConvectRoastManual": {
-								"Required": {
-								
-								}
+								"Required": {}
 							},
 							"Mwo_ModeSetSoftenManual": {
 								"Required": {}
@@ -3419,39 +3417,34 @@
 						"CycleName": [
 							"UpperCavity_CavityModeMicrowaveOven"
 						],
-						"CookTimeRemaining": "UpperCavity_CookTimeRemaining",
-						"DoorOpen": "UpperCavity_DoorLockStatus",
-						"OpStatusState": "UpperCavity_CavityHeatState",
-						"DoorLockStatus": "UpperCavity_DoorLockStatus",
-						"CavityLight": "UpperCavity_CavityLight",
-						"UserInstruction": "UpperCavity_MicrowaveOvenUserInstruction",
-						"MeatProbeTemp": "UpperCavity_MeatProbeTemp",
-						"MWCookPower": "UpperCavity_MWCookPower",
-						"MeatProbeStatus": "UpperCavity_MeatProbeStatus",
-						"MWAmountUnits": "UpperCavity_MWAmountUnits",
-						"MWFoodClass": "UpperCavity_MWFoodClass",
-						"MWDoneness": "UpperCavity_MWDoneness",
-						"Amount": "UpperCavity_Amount",
-						"CookTimeSetTime": "UpperCavity_CookTimeSetTime"
+						"CookTimeRemaining": "Mwo_TimeStatusCookTimeRemaining",
+						"DoorOpen": "Mwo_OperationStatusDoorOpen",
+						"OpStatusState": "Mwo_OperationStatusState",
+						"MWCookPower": "Mwo_CycleSetCookPower",
+						"Odometer": "Mwo_CycleStatusOdometer"
 					},
 					"Common": {
-						"DisplayOnOff": "SystemSettings_DisplayOnOff",
-						"DisplayLanguage": "SystemSettings_DisplayLanguage",
-						"NumberEntry": "SystemSettings_NumberEntry",
-						"TimeZone": "ClockTime_TimeZone",
-						"ClockThemes": "SystemSettings_ClockThemes",
-						"ClockOnOff": "SystemSettings_ClockOnOff",
-						"RemoteEnabledStatus": "Appliance_RemoteEnabledStatus",
-						"SoundKeyAlert": "SystemSettings_SoundKeyAlert",
-						"TempDisplayUnits": "SystemSettings_TempDisplayUnits",
-						"DisplayBrightness": "SystemSettings_DisplayBrightness",
-						"ControlLock": "SystemSettings_ControlLock",
-						"SoundKeyPress": "SystemSettings_SoundKeyPress",
-						"SoundKeyPower": "SystemSettings_SoundKeyPower"
+						"DisplayLanguage": "Sys_DisplaySetLanguage",
+						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
+						"TempDisplayUnits": "Sys_DisplaySetTempUnits",
+						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
+						"ControlLock": "Sys_OperationSetControlLock",
+						"SoundKeyPress": "Sys_OperationSetKeyPressToneVolume"
 					}
 				},
 				"Features": {
 					"Common": {
+						"QuietMode": {
+						"Visible": true,
+							"ReadOnly": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OperationSetQuietModeEnabled"
+							}
+						},
 						"ChangeTempUnits": {
 							"Visible": true,
 							"AvailableIn": [
@@ -3469,7 +3462,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_ControlLock"
+								"State": "Sys_OperationSetControlLock"
 							}
 						},
 						"RemoteStatus": {
@@ -3480,7 +3473,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Appliance_RemoteEnabledStatus"
+								"State": "XCat_RemoteSetRemoteControlEnable"
 							}
 						},
 						"KitchenTimer": {
@@ -3490,17 +3483,17 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "KitchenTimer1_KitchenTimerState"
+								"State": "KitchenTimer01_StatusState"
 							},
 							"StatusAttributes": [
-								"KitchenTimer1_KitchenTimerCurrentTime"
+								"KitchenTimer01_StatusTimeRemaining"
 							],
 							"SendCommandAttributes": [
-								"KitchenTimer1_KitchenTimerSetTime",
-								"KitchenTimer1_KitchenTimerOperations"
+								"KitchenTimer01_SetTimeSet",
+								"KitchenTimer01_SetOperations"
 							],
 							"SetOperationsMapping": {
-								"Operation": "KitchenTimer1_KitchenTimerOperations"
+								"Operation": "KitchenTimer01_SetOperations"
 							}
 						},
 						"Notifications": {
@@ -3525,36 +3518,6 @@
 							],
 							"StateAttributes": {
 								"State": "SystemSettings_SoundKeyPower"
-							}
-						},
-						"ChangeNumberEntry": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_NumberEntry"
-							}
-						},
-						"ChangeClockTheme": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_ClockThemes"
-							}
-						},
-						"ChangeClockOnOffStatus": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_ClockOnOff"
 							}
 						},
 						"ChangeApplianceLanguage": {
@@ -3587,16 +3550,6 @@
 								"State": "SystemSettings_SoundKeyPress"
 							}
 						},
-						"ChangeDisplayOnOffStatus": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_DisplayOnOff"
-							}
-						},
 						"ChangeBrightness": {
 							"Visible": true,
 							"AvailableIn": [
@@ -3616,27 +3569,6 @@
 						}
 					},
 					"MwoCavity": {
-						"MeatProbeTemp": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "UpperCavity_MeatProbeTemp"
-							}
-						},
-						"MeatProbe": {
-							"Visible": true,
-							"ReadOnly": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "UpperCavity_MeatProbeStatus"
-							}
-						}
 					}
 				},
 				"CycleOrder": {
