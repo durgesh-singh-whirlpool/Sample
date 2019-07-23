@@ -3435,7 +3435,7 @@
 				"Features": {
 					"Common": {
 						"QuietMode": {
-						"Visible": true,
+							"Visible": true,
 							"ReadOnly": true,
 							"AvailableIn": [
 								"US",
@@ -3569,6 +3569,47 @@
 						}
 					},
 					"MwoCavity": {
+					"SetOven": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "LowerCavity_CavityHeatState",
+                "MeatProbeTargetTemp": "LowerCavity_MeatProbeTargetTemp"
+              },
+              "StatusAttributes": [
+                "LowerCavity_CavityModeOven",
+                "LowerCavity_CavityTargetTemp",
+                "LowerCavity_DelayTimeRemaining",
+                "LowerCavity_CookTimeRemaining",
+                "LowerCavity_OvenTimerState",
+                "LowerCavity_CavityHeatState",
+                "LowerCavity_MeatProbeStatus",
+                "LowerCavity_CookTimeSetTime",
+                "LowerCavity_MeatProbeTargetTemp",
+                "LowerCavity_MeatProbeTemp",
+                "LowerCavity_DelayTimeSetTime",
+                "LowerCavity_CavityActualTemp"
+              ],
+              "SendCommandAttributes": [
+                "LowerCavity_CavityModeOven",
+                "LowerCavity_CavityTargetTemp",
+                "LowerCavity_MeatProbeTargetTemp",
+                "LowerCavity_DelayTimeSetTime",
+                "LowerCavity_CookTimeSetTime",
+                "LowerCavity_OvenTimerOperations",
+                "LowerCavity_CookTimeCompleteAction",
+                "LowerCavity_CavityOperations"
+              ],
+              "SetOperationsMapping": {
+                "Operation": "LowerCavity_CavityOperations",
+                "TimerOperations": "LowerCavity_OvenTimerOperations",
+                "CookTime": "LowerCavity_CookTimeSetTime",
+                "CookTemp": "LowerCavity_CavityTargetTemp"
+              }
+            }
 					}
 				},
 				"CycleOrder": {
