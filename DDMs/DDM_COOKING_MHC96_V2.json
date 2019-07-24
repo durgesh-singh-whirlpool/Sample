@@ -3725,17 +3725,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_TempDisplayUnits"
-							}
-						},
-						"ControlLock": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_OperationSetControlLock"
+								"State": "Sys_DisplaySetTempUnits"
 							}
 						},
 						"RemoteStatus": {
@@ -3849,8 +3839,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "LowerCavity_CavityHeatState",
-								"MeatProbeTargetTemp": "LowerCavity_MeatProbeTargetTemp"
+								"State": "Mwo_OperationStatusState"
 							},
 							"StatusAttributes": [
 								"Mwo_TimeSetCookTimeSet",
