@@ -3866,7 +3866,6 @@
 								"State": "Mwo_OperationStatusState"
 							},
 							"StatusAttributes": [
-								"Mwo_TimeSetCookTimeSet",
 								"Mwo_ModeSetConvectRoast",
 								"Mwo_ModeSetConvectBake",
 								"Mwo_ModeSetSteamCook",
@@ -3881,7 +3880,6 @@
 								"Mwo_ModeSetMelt",
 								"Mwo_ModeSetBoilAndSimmer",
 								"Mwo_ModeSetKidsMenu",
-								"Mwo_CycleSetCookPower",
 								"Mwo_CycleSetTargetTemp",
 								"Mwo_CycleSetAmount",
 								"Mwo_TimeSetCookTimeSet",
@@ -3889,7 +3887,6 @@
 								"Mwo_CycleSetCookPower"
 							],
 							"SendCommandAttributes": [
-								"Mwo_TimeSetCookTimeSet",
 								"Mwo_ModeSetConvectRoast",
 								"Mwo_ModeSetConvectBake",
 								"Mwo_ModeSetSteamCook",
@@ -3904,7 +3901,6 @@
 								"Mwo_ModeSetMelt",
 								"Mwo_ModeSetBoilAndSimmer",
 								"Mwo_ModeSetKidsMenu",
-								"Mwo_CycleSetCookPower",
 								"Mwo_CycleSetTargetTemp",
 								"Mwo_CycleSetAmount",
 								"Mwo_TimeSetCookTimeSet",
