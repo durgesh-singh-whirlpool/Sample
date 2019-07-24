@@ -3914,7 +3914,6 @@
 						},
 						"HoodLight": {
 							"Visible": true,
-							"ReadOnly": true,
 							"AvailableIn": [
 								"US",
 								"CA"
@@ -3931,7 +3930,6 @@
 						},
 						"HoodFan": {
 							"Visible": true,
-							"ReadOnly": true,
 							"AvailableIn": [
 								"US",
 								"CA"
