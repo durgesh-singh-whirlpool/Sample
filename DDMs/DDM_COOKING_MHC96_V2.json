@@ -3914,6 +3914,40 @@
 							"SetOperationsMapping": {
 								"Operation": "Mwo_OperationSetOperations"
 							}
+						},
+						"HoodLight": {
+							"Visible": true,
+							"ReadOnly": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": { 
+								"State": "Hood_OperationSetSurfaceLight"
+							},
+							"SendCommandAttributes": [
+							 "Hood_OperationSetSurfaceLight"
+							],
+							"SetOperationsMapping": {
+							"Operation": "Hood_OperationSetSurfaceLight"
+							}
+						},
+						"HoodFan": {
+							"Visible": true,
+							"ReadOnly": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Hood_OperationSetExhaustFanSpeed"
+							},
+							"SendCommandAttributes": [
+							"Hood_OperationSetExhaustFanSpeed"
+							],
+							"SetOperationsMapping": {
+							"Operation": "Hood_OperationSetExhaustFanSpeed"
+							}
 						}
 					}
 				},
