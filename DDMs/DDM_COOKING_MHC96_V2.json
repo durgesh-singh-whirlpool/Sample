@@ -2655,12 +2655,13 @@
 							"Mwo_ModeSetCookManual": {
 								"Required": {
 									"Mwo_CycleSetCookPower": {
+										"Default": 100,
 										"Min": 10,
 										"Max": 100,
-										"Step": 10,
-										"Default": 100
+										"Step": 10
 									},
 									"Mwo_TimeSetCookTimeSet": {
+										"Default": 1,
 										"Min": 1,
 										"Max": 5999,
 										"Step": 1
