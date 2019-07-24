@@ -4849,6 +4849,7 @@
 						},
 						"RemoteStatus": {
 							"Visible": true,
+							"ReadOnly": true,
 							"AvailableIn": [
 								"US",
 								"CA"
@@ -4953,8 +4954,7 @@
 								"Cavity_OpSetOperations"
 							],
 							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations",
-								"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						},
 						"CyclesHistory": {
@@ -4977,8 +4977,7 @@
 							],
 							"StateAttributes": {},
 							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations",
-								"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						},
 						"FavoriteCycles": {
@@ -5003,8 +5002,7 @@
 								"Cavity_OpSetOperations"
 							],
 							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations",
-								"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						}
 					}
