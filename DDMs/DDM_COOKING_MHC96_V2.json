@@ -3702,7 +3702,8 @@
 						"TempDisplayUnits": "Sys_DisplaySetTempUnits",
 						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
 						"ControlLock": "Sys_OperationSetControlLock",
-						"SoundKeyPress": "Sys_OperationSetKeyPressToneVolume"
+						"SoundKeyPress": "Sys_OperationSetKeyPressToneVolume",
+						"SabbathMode": "Sys_OperationSetSabbathModeEnabled"
 					}
 				},
 				"Features": {
@@ -3716,6 +3717,28 @@
 							],
 							"StateAttributes": {
 								"State": "Sys_OperationSetQuietModeEnabled"
+							}
+						},
+						"ControlLock": {
+							"Visible": true,
+							"ReadOnly": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OperationSetControlLock"
+							}
+						},
+						"SabbathMode": {
+							"Visible": true,
+							"ReadOnly": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Mwo_OperationSetSabbathModeActive"
 							}
 						},
 						"ChangeTempUnits": {
