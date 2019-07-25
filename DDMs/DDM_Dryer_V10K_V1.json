@@ -2881,11 +2881,15 @@
 						"WrinkleShield": "CycleOptionsWHR_WrinkleShield",
 						"EcoBoostEnable": "CycleOptionsWHR_EcoBoost",
 						"StaticGuardEnable": "CycleOptionsWHR_StaticGuard",
-						"ManualDryTime": "CycleOptionsWHR_ManualDryTime"
+						"ManualDryTime": "CycleOptionsWHR_ManualDryTime",
+						"AirflowStatus":"Compartment_AirFlowStatus",
+						"CycleState":"Compartment_CycleState",
+						"WhatTo": "CycleOptionsWHR_WhatTo"
+						"HowTo": "CycleOptionsWHR_HowTo"
 					},
 					"Common": {
 						"RemoteStatus": "Appliance_RemoteControlEnabled",
-						"Online": "online",
+						"Online": "Online",
 						"QuietModeEnabled": "Appliance_QuietModeEnabled"
 					}
 				},
@@ -2933,7 +2937,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "online"
+								"State": "Online"
 							}
 						},
 						"QuietMode": {
@@ -2943,7 +2947,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Appliance_EnterQuietMode"
+								"State": "Appliance_QuietModeEnabled"
 							}
 						}
 					},
