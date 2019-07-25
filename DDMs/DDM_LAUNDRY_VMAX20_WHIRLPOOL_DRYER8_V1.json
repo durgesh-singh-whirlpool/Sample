@@ -14,6 +14,7 @@
 		"ccURI": "API144_LAUNDRY_V18"
 	},
 	"dataModel": {
+	"Key": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_DRYER8_V1",
 		"attributes": [
 			{
 				"IsTemplate": false,
@@ -1222,11 +1223,10 @@
 				"Default": 0,
 				"Key": "0x00000000"
 			}
-		],
-		"id": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_DRYER8_V1"
+		]
 	},
 	"personality": {
-	"Key": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_DRYER8_V1",
+		"Key": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_DRYER8_V1",
 		"capability": [
 			{
 				"CavityOrder": [
@@ -3368,10 +3368,10 @@
 								"CA"
 							],
 							"StateAttributes": {
-							"State": "Cavity_CycleStatusMachineState"
+								"State": "Cavity_CycleStatusMachineState"
 							},
 							"StatusAttributes": [
-							"DryCavity_CycleSetCycleSelect",
+								"DryCavity_CycleSetCycleSelect",
 								"DryCavity_CycleSetTemperature",
 								"DryCavity_CycleSetDryness",
 								"DryCavity_CycleSetWrinkleShield",
@@ -3402,10 +3402,10 @@
 								"CA"
 							],
 							"StateAttributes": {
-							"State": "Cavity_CycleStatusMachineState"
+								"State": "Cavity_CycleStatusMachineState"
 							},
 							"StatusAttributes": [
-							"DryCavity_CycleSetCycleSelect",
+								"DryCavity_CycleSetCycleSelect",
 								"DryCavity_CycleSetTemperature",
 								"DryCavity_CycleSetDryness",
 								"DryCavity_CycleSetWrinkleShield",
@@ -3437,10 +3437,10 @@
 								"CA"
 							],
 							"StateAttributes": {
-							"State": "Cavity_CycleStatusMachineState"
+								"State": "Cavity_CycleStatusMachineState"
 							},
 							"StatusAttributes": [
-							"DryCavity_CycleSetCycleSelect",
+								"DryCavity_CycleSetCycleSelect",
 								"DryCavity_CycleSetTemperature",
 								"DryCavity_CycleSetDryness",
 								"DryCavity_CycleSetWrinkleShield",
