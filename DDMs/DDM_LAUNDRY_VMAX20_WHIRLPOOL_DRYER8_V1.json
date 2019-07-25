@@ -3265,7 +3265,7 @@
 					},
 					"Common": {
 						"OpStatusState": "Cavity_CycleStatusMachineState",
-						"ControlLock": "Sys_OpSetControlLock",
+						"ControlLock": "ControlLockChangedByAppliance",
 						"QuietMode": [
 							"Sys_OpSetAlertToneVolume",
 							"Sys_OpSetKeyPressToneVolume",
@@ -3297,7 +3297,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Sys_OpSetControlLock"
+								"State": "ControlLockChangedByAppliance"
 							}
 						},
 						"Notifications": {
@@ -3329,11 +3329,6 @@
 							"AvailableIn": [
 								"US",
 								"CA"
-							],
-							"StatusAttributes": [
-								"Sys_OpSetAlertToneVolume",
-								"Sys_OpSetKeyPressToneVolume",
-								"DrySys_OpSetDampNotificationToneVolume"
 							]
 						},
 						"ChangeApplianceLanguage": {
