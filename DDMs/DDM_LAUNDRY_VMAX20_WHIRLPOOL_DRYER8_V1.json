@@ -3319,13 +3319,6 @@
 								"State": "XCat_RemoteSetRemoteControlEnable"
 							}
 						},
-						"QuietMode": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
-						},
 						"ChangeApplianceLanguage": {
 							"Visible": true,
 							"AvailableIn": [
@@ -3375,10 +3368,10 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Cavity_CycleStatusMachineState"
+							"State": "Cavity_CycleStatusMachineState"
 							},
 							"StatusAttributes": [
-								"DryCavity_CycleSetCycleSelect",
+							"DryCavity_CycleSetCycleSelect",
 								"DryCavity_CycleSetTemperature",
 								"DryCavity_CycleSetDryness",
 								"DryCavity_CycleSetWrinkleShield",
@@ -3408,6 +3401,19 @@
 								"US",
 								"CA"
 							],
+							"StateAttributes": {
+							"State": "Cavity_CycleStatusMachineState"
+							},
+							"StatusAttributes": [
+							"DryCavity_CycleSetCycleSelect",
+								"DryCavity_CycleSetTemperature",
+								"DryCavity_CycleSetDryness",
+								"DryCavity_CycleSetWrinkleShield",
+								"DryCavity_CycleSetStaticGuardEnable",
+								"DrySys_OpSetDampNotificationToneVolume",
+								"DryCavity_CycleSetEcoBoostEnable",
+								"DryCavity_CycleSetManualDryTime"
+							],
 							"SendCommandAttributes": [
 								"DryCavity_CycleSetCycleSelect",
 								"DryCavity_CycleSetTemperature",
@@ -3419,7 +3425,6 @@
 								"DryCavity_CycleSetManualDryTime",
 								"Cavity_OpSetOperations"
 							],
-							"StateAttributes": {},
 							"SetOperationsMapping": {
 								"Operation": "Cavity_OpSetOperations"
 							}
@@ -3431,8 +3436,19 @@
 								"US",
 								"CA"
 							],
-							"StatusAttributes": [],
-							"StateAttributes": {},
+							"StateAttributes": {
+							"State": "Cavity_CycleStatusMachineState"
+							},
+							"StatusAttributes": [
+							"DryCavity_CycleSetCycleSelect",
+								"DryCavity_CycleSetTemperature",
+								"DryCavity_CycleSetDryness",
+								"DryCavity_CycleSetWrinkleShield",
+								"DryCavity_CycleSetStaticGuardEnable",
+								"DrySys_OpSetDampNotificationToneVolume",
+								"DryCavity_CycleSetEcoBoostEnable",
+								"DryCavity_CycleSetManualDryTime"
+							],
 							"SendCommandAttributes": [
 								"DryCavity_CycleSetCycleSelect",
 								"DryCavity_CycleSetTemperature",
