@@ -4441,10 +4441,6 @@
 							"AvailableIn": [
 								"US",
 								"CA"
-							],
-							"StateAttributes": [
-								"Sys_OpSetKeyPressToneVolume",
-								"Sys_OpSetAlertToneVolume"
 							]
 						},
 						"ChangeSoundKeyAlert": {
