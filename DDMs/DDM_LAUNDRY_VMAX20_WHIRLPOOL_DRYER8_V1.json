@@ -3248,10 +3248,7 @@
 				},
 				"AttributesMapping": {
 					"DryCavity": {
-						"CycleName": [
-							"DryCavity_CycleSetCycleSelect",
-							"Cavity_CycleSetCycleName"
-						],
+						"CycleName":"Cavity_CycleSetCycleName",
 						"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
 						"MachineState": "Cavity_CycleStatusMachineState",
 						"DoorOpen": "Cavity_OpStatusDoorOpen",
@@ -3264,15 +3261,12 @@
 						"AirFlowStatus": "DryCavity_CycleStatusAirFlowStatus"
 					},
 					"Common": {
-						"OpStatusState": "Cavity_CycleStatusMachineState",
 						"ControlLock": "ControlLockChangedByAppliance",
 						"Online": "online",
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
-						"TempDisplayUnits": "SystemSettings_TempDisplayUnits",
 						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
-						"SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
 						"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume"
 					}
 				},
@@ -3327,16 +3321,6 @@
 							],
 							"StateAttributes": {
 								"State": "Sys_DisplaySetLanguage"
-							}
-						},
-						"ChangeSoundKeyAlert": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_OpSetKeyPressToneVolume"
 							}
 						},
 						"ChangeSoundKeyPress": {
