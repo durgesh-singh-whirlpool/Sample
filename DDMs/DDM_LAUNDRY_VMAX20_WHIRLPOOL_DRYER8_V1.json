@@ -3266,11 +3266,6 @@
 					"Common": {
 						"OpStatusState": "Cavity_CycleStatusMachineState",
 						"ControlLock": "ControlLockChangedByAppliance",
-						"QuietMode": [
-							"Sys_OpSetAlertToneVolume",
-							"Sys_OpSetKeyPressToneVolume",
-							"DrySys_OpSetDampNotificationToneVolume"
-						],
 						"Online": "online",
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
