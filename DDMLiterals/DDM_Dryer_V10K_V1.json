@@ -191,7 +191,17 @@
         "System_EndOfCycleBeepVolume.EnumValues.Medium.Label": "Medium",
         "System_EndOfCycleBeepVolume.EnumValues.High.Label": "High",
         "System_FaultCode.Label": "Fault Code",
-        "System_Online.Label": "Online"
+        "System_Online.Label": "Online",
+		"CycleOptionsWHR_DrynessChangeable.EnumValues.LessDry1.Label": "Less",
+        "CycleOptionsWHR_DrynessChangeable.EnumValues.LessDry2.Label": "Low",
+        "CycleOptionsWHR_DrynessChangeable.EnumValues.Normal.Label": "Normal",
+        "CycleOptionsWHR_DrynessChangeable.EnumValues.MoreDry.Label": "More",
+		"CycleOptionsWHR_TemperatureChangeable.EnumValues.Temp0.Label": "No Heat",
+        "CycleOptionsWHR_TemperatureChangeable.EnumValues.Temp1.Label": "Low",
+        "CycleOptionsWHR_TemperatureChangeable.EnumValues.Temp2.Label": "Medium",
+        "CycleOptionsWHR_TemperatureChangeable.EnumValues.Temp3.Label": "High",
+        "CycleOptionsWHR_TemperatureChangeable.EnumValues.Temp4.Label": "Hot"
+		
     },
     "AFCSelfHelpPack": {
         "F1,E1": {
