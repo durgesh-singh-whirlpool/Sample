@@ -3736,28 +3736,6 @@
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
 								}
 							},
-							"Cavity_CycleSetCycleNameBrightColors": {
-								"Required": {
-									"Cavity_TimeSetDelayTime": {
-										"Range": {
-											"Default": 0,
-											"Min": 0,
-											"Max": 28800,
-											"Step": 60
-										}
-									}
-								},
-								"NonEditable": {
-									"WashCavity_CycleSetTemperature": "WashTempCold",
-									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToColorsBrightsHowToColdWash",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
-									"WashCavity_CycleSetDeepFillEnable": "DeepFillLow",
-									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
-								}
-							},
 							"Cavity_CycleSetCycleNameSwimwear": {
 								"Required": {
 									"Cavity_TimeSetDelayTime": {
@@ -4278,14 +4256,6 @@
 								"Attributes": {
 									"WashCavity_CycleSetCycleSelect": [
 										"Swimwear"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameBrightColors": {
-								"Name": "BrightColors",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"BrightColors"
 									]
 								}
 							},
