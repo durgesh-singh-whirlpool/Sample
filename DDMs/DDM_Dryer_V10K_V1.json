@@ -2884,7 +2884,7 @@
 						"ManualDryTime": "CycleOptionsWHR_ManualDryTime",
 						"AirflowStatus":"Compartment_AirFlowStatus",
 						"CycleState":"Compartment_CycleState",
-						"WhatTo": "CycleOptionsWHR_WhatTo"
+						"WhatTo": "CycleOptionsWHR_WhatTo",
 						"HowTo": "CycleOptionsWHR_HowTo"
 					},
 					"Common": {
