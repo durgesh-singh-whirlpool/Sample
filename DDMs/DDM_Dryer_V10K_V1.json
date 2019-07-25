@@ -1723,7 +1723,7 @@
 				"Capability": {
 					"DryCavity": {
 						"CapabilityData": {
-							"DryCavity_CycleSetCycleSelectMixed_Normal": {
+							"Compartment_CycleIdMixed_Normal": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -1768,7 +1768,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectMixed_Gentle": {
+							"Compartment_CycleIdMixed_Gentle": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -1813,7 +1813,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectMixed_Sanitize": {
+							"Compartment_CycleIdMixed_Sanitize": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -1851,7 +1851,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectMixed_SteamRefresh": {
+							"Compartment_CycleIdMixed_SteamRefresh": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -1891,7 +1891,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectMixed_TimedDry": {
+							"Compartment_CycleIdMixed_TimedDry": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -1930,7 +1930,7 @@
 									}
 								}
 							},
-							"DryCavity_CycleSetCycleSelectTowels_Normal": {
+							"Compartment_CycleIdTowels_Normal": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -1973,7 +1973,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectTowels_Gentle": {
+							"Compartment_CycleIdTowels_Gentle": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2017,7 +2017,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectTowels_Sanitize": {
+							"Compartment_CycleIdTowels_Sanitize": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2055,7 +2055,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectTowels_SteamRefresh": {
+							"Compartment_CycleIdTowels_SteamRefresh": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2095,7 +2095,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectTowels_TimedDry": {
+							"Compartment_CycleIdTowels_TimedDry": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2134,7 +2134,7 @@
 									}
 								}
 							},
-							"DryCavity_CycleSetCycleSelectDelicate_Normal": {
+							"Compartment_CycleIdDelicate_Normal": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2179,7 +2179,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectDelicate_Gentle": {
+							"Compartment_CycleIdDelicate_Gentle": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2223,7 +2223,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectDelicate_TimedDry": {
+							"Compartment_CycleIdDelicate_TimedDry": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2262,7 +2262,7 @@
 									}
 								}
 							},
-							"DryCavity_CycleSetCycleSelectCasuals_Normal": {
+							"Compartment_CycleIdCasuals_Normal": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2307,7 +2307,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectCasuals_Gentle": {
+							"Compartment_CycleIdCasuals_Gentle": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2352,7 +2352,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectCasuals_Sanitize": {
+							"Compartment_CycleIdCasuals_Sanitize": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2390,7 +2390,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectCasuals_SteamRefresh": {
+							"Compartment_CycleIdCasuals_SteamRefresh": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2427,7 +2427,7 @@
 									}
 								}
 							},
-							"DryCavity_CycleSetCycleSelectCasuals_TimedDry": {
+							"Compartment_CycleIdCasuals_TimedDry": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2466,7 +2466,7 @@
 									}
 								}
 							},
-							"DryCavity_CycleSetCycleSelectBulkySheets_Normal": {
+							"Compartment_CycleIdBulkySheets_Normal": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2509,7 +2509,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectBulkySheets_Gentle": {
+							"Compartment_CycleIdBulkySheets_Gentle": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2552,7 +2552,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectBulkySheets_Sanitize": {
+							"Compartment_CycleIdBulkySheets_Sanitize": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2590,7 +2590,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectBulkySheets_SteamRefresh": {
+							"Compartment_CycleIdBulkySheets_SteamRefresh": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2630,7 +2630,7 @@
 									"CycleOptionsWHR_ManualDryTimeChangeable": 0
 								}
 							},
-							"DryCavity_CycleSetCycleSelectBulkySheets_TimedDry": {
+							"Compartment_CycleIdBulkySheets_TimedDry": {
 								"Required": {
 									"CycleOptionsWHR_TemperatureChangeable": {
 										"Enumeration": [
@@ -2672,7 +2672,7 @@
 						},
 						"SetCycle": {
 							"Mixed": {
-								"DryCavity_CycleSetCycleSelectMixed_Normal": {
+								"Compartment_CycleIdMixed_Normal": {
 									"Name": "MixedNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2680,7 +2680,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectMixed_Gentle": {
+								"Compartment_CycleIdMixed_Gentle": {
 									"Name": "MixedGentle",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2688,7 +2688,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectMixed_Sanitize": {
+								"Compartment_CycleIdMixed_Sanitize": {
 									"Name": "MixedSanitize",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2696,7 +2696,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectMixed_SteamRefresh": {
+								"Compartment_CycleIdMixed_SteamRefresh": {
 									"Name": "Mixed_SteamRefresh",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2704,7 +2704,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectMixed_TimedDry": {
+								"Compartment_CycleIdMixed_TimedDry": {
 									"Name": "MixedTimedDry",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2714,7 +2714,7 @@
 								}
 							},
 							"Towels": {
-								"DryCavity_CycleSetCycleSelectTowels_Normal": {
+								"Compartment_CycleIdTowels_Normal": {
 									"Name": "TowelsNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2722,7 +2722,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectTowels_Gentle": {
+								"Compartment_CycleIdTowels_Gentle": {
 									"Name": "TowelsGentle",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2730,7 +2730,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectTowels_Sanitize": {
+								"Compartment_CycleIdTowels_Sanitize": {
 									"Name": "TowelsSanitize",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2738,7 +2738,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectTowels_SteamRefresh": {
+								"Compartment_CycleIdTowels_SteamRefresh": {
 									"Name": "TowelsSteamRefresh",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2746,7 +2746,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectTowels_TimedDry": {
+								"Compartment_CycleIdTowels_TimedDry": {
 									"Name": "TowelsTimedDry",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2756,7 +2756,7 @@
 								}
 							},
 							"Delicates": {
-								"DryCavity_CycleSetCycleSelectDelicate_Normal": {
+								"Compartment_CycleIdDelicate_Normal": {
 									"Name": "DelicateNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2764,7 +2764,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectDelicate_Gentle": {
+								"Compartment_CycleIdDelicate_Gentle": {
 									"Name": "DelicateGentle",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2772,7 +2772,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectDelicate_TimedDry": {
+								"Compartment_CycleIdDelicate_TimedDry": {
 									"Name": "DelicateTimedDry",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2782,7 +2782,7 @@
 								}
 							},
 							"Casuals": {
-								"DryCavity_CycleSetCycleSelectCasuals_Normal": {
+								"Compartment_CycleIdCasuals_Normal": {
 									"Name": "CasualsNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2790,7 +2790,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectCasuals_Gentle": {
+								"Compartment_CycleIdCasuals_Gentle": {
 									"Name": "CasualsGentle",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2798,7 +2798,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectCasuals_Sanitize": {
+								"Compartment_CycleIdCasuals_Sanitize": {
 									"Name": "CasualsSanitize",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2806,7 +2806,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectCasuals_SteamRefresh": {
+								"Compartment_CycleIdCasuals_SteamRefresh": {
 									"Name": "CasualsSteamRefresh",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2814,7 +2814,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectCasuals_TimedDry": {
+								"Compartment_CycleIdCasuals_TimedDry": {
 									"Name": "CasualsTimedDry",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2824,7 +2824,7 @@
 								}
 							},
 							"BulkySheets": {
-								"DryCavity_CycleSetCycleSelectBulkySheets_Normal": {
+								"Compartment_CycleIdBulkySheets_Normal": {
 									"Name": "BulkySheetsNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2832,7 +2832,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectBulkySheets_Gentle": {
+								"Compartment_CycleIdBulkySheets_Gentle": {
 									"Name": "BulkySheetsGentle",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2840,7 +2840,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectBulkySheets_Sanitize": {
+								"Compartment_CycleIdBulkySheets_Sanitize": {
 									"Name": "BulkySheetsSanitize",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2848,7 +2848,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectBulkySheets_SteamRefresh": {
+								"Compartment_CycleIdBulkySheets_SteamRefresh": {
 									"Name": "BulkySheetsSteamRefresh",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2856,7 +2856,7 @@
 										]
 									}
 								},
-								"DryCavity_CycleSetCycleSelectBulkySheets_TimedDry": {
+								"Compartment_CycleIdBulkySheets_TimedDry": {
 									"Name": "BulkySheetsTimedDry",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -2865,7 +2865,7 @@
 									}
 								}
 							},
-							"Default": "DryCavity_CycleSetCycleSelectMixed_Normal"
+							"Default": "Compartment_CycleIdMixed_Normal"
 						}
 					}
 				},
