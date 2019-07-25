@@ -2959,7 +2959,7 @@
 							},
 							"StatusAttributes": [
 								"Compartment_CycleId",
-								"CycleOptionsWHR_TemperatureChangeable",
+								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_StaticGuard",
 								"CycleOptionsWHR_WrinkleShield",
 								"CycleOptionsWHR_EcoBoost",
@@ -2968,13 +2968,16 @@
 								"System_Command"
 							],
 							"SendCommandAttributes": [
+							"Compartment_DownloadCyclePersist",
+							"CycleOptionsWHR_WhatTo",
+							"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
-								"CycleOptionsWHR_TemperatureChangeable",
-								"CycleOptionsWHR_StaticGuard",
-								"CycleOptionsWHR_WrinkleShield",
-								"CycleOptionsWHR_EcoBoost",
+								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_Dryness",
 								"CycleOptionsWHR_ManualDryTime",
+								"CycleOptionsWHR_WrinkleShield",
+								"CycleOptionsWHR_StaticGuard",
+								"CycleOptionsWHR_EcoBoost",
 								"System_Command"
 							],
 							"SetOperationsMapping": {
