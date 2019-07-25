@@ -2994,11 +2994,10 @@
 							"Sys_OpSetKeyPressToneVolume",
 							"DrySys_OpSetDampNotificationToneVolume"
 						],
-						"Online": "online",
+						"Online": "Online",
             "DisplayLanguage": "Sys_DisplaySetLanguage",
             "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
             "SoundKeyAlert": "Sys_OpSetAlertToneVolume",
-            "TempDisplayUnits": "SystemSettings_TempDisplayUnits",
             "DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
             "SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
 			"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume"
