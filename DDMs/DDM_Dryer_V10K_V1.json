@@ -1725,7 +1725,7 @@
 						"CapabilityData": {
 							"Compartment_CycleIdMixed_Normal": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -1747,14 +1747,14 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false,
 											true
 										],
 										"Default": true
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -1765,12 +1765,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdMixed_Gentle": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -1792,14 +1792,14 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false,
 											true
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -1810,12 +1810,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdMixed_Sanitize": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp4"
 										],
@@ -1834,13 +1834,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"MoreDry"
 										],
@@ -1848,12 +1848,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdMixed_SteamRefresh": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -1874,13 +1874,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"Normal"
 										],
@@ -1888,12 +1888,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdMixed_TimedDry": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp0",
 											"Temp1",
@@ -1916,23 +1916,23 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_ManualDryTimeChangeable": {
+									"CycleOptionsWHR_ManualDryTime": {
+										"Default": 50,
 										"Min": 1,
 										"Max": 150,
-										"Step": 1,
-										"Default": 50
+										"Step": 1
 									}
 								}
 							},
 							"Compartment_CycleIdTowels_Normal": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp3",
 											"Temp4"
@@ -1953,13 +1953,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -1970,12 +1970,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdTowels_Gentle": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -1997,13 +1997,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -2014,12 +2014,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdTowels_Sanitize": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp4"
 										],
@@ -2038,13 +2038,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"MoreDry"
 										],
@@ -2052,12 +2052,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdTowels_SteamRefresh": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -2078,13 +2078,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"Normal"
 										],
@@ -2092,12 +2092,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdTowels_TimedDry": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp0",
 											"Temp1",
@@ -2120,23 +2120,23 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_ManualDryTimeChangeable": {
+									"CycleOptionsWHR_ManualDryTime": {
+										"Default": 55,
 										"Min": 1,
 										"Max": 150,
-										"Step": 1,
-										"Default": 55
+										"Step": 1
 									}
 								}
 							},
 							"Compartment_CycleIdDelicate_Normal": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp1",
 											"Temp2",
@@ -2158,14 +2158,14 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false,
 											true
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -2176,12 +2176,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdDelicate_Gentle": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp1",
 											"Temp2"
@@ -2202,14 +2202,14 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false,
 											true
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -2220,12 +2220,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdDelicate_TimedDry": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp0",
 											"Temp1",
@@ -2248,23 +2248,23 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_ManualDryTimeChangeable": {
+									"CycleOptionsWHR_ManualDryTime": {
+										"Default": 20,
 										"Min": 1,
 										"Max": 150,
-										"Step": 1,
-										"Default": 20
+										"Step": 1
 									}
 								}
 							},
 							"Compartment_CycleIdCasuals_Normal": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp1",
 											"Temp2",
@@ -2286,14 +2286,14 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false,
 											true
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -2304,12 +2304,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdCasuals_Gentle": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp1",
 											"Temp2",
@@ -2331,14 +2331,14 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false,
 											true
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -2349,12 +2349,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdCasuals_Sanitize": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp4"
 										],
@@ -2373,13 +2373,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"MoreDry"
 										],
@@ -2387,12 +2387,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdCasuals_SteamRefresh": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -2413,13 +2413,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"Normal"
 										],
@@ -2429,7 +2429,7 @@
 							},
 							"Compartment_CycleIdCasuals_TimedDry": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp0",
 											"Temp1",
@@ -2452,23 +2452,23 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_ManualDryTimeChangeable": {
+									"CycleOptionsWHR_ManualDryTime": {
+										"Default": 30,
 										"Min": 1,
 										"Max": 150,
-										"Step": 1,
-										"Default": 30
+										"Step": 1
 									}
 								}
 							},
 							"Compartment_CycleIdBulkySheets_Normal": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -2489,13 +2489,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -2506,12 +2506,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdBulkySheets_Gentle": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -2532,13 +2532,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"LessDry1",
 											"LessDry2",
@@ -2549,12 +2549,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdBulkySheets_Sanitize": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp4"
 										],
@@ -2573,13 +2573,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"MoreDry"
 										],
@@ -2587,12 +2587,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdBulkySheets_SteamRefresh": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp2",
 											"Temp3",
@@ -2613,13 +2613,13 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_DrynessChangeable": {
+									"CycleOptionsWHR_Dryness": {
 										"Enumeration": [
 											"Normal"
 										],
@@ -2627,12 +2627,12 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTimeChangeable": 0
+									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdBulkySheets_TimedDry": {
 								"Required": {
-									"CycleOptionsWHR_TemperatureChangeable": {
+									"CycleOptionsWHR_Temperature": {
 										"Enumeration": [
 											"Temp0",
 											"Temp1",
@@ -2655,17 +2655,17 @@
 										],
 										"Default": "Off"
 									},
-									"CycleOptionsWHR_EcoBoostChangeable": {
+									"CycleOptionsWHR_EcoBoost": {
 										"Bool": [
 											false
 										],
 										"Default": false
 									},
-									"CycleOptionsWHR_ManualDryTimeChangeable": {
+									"CycleOptionsWHR_ManualDryTime": {
+										"Default": 75,
 										"Min": 1,
 										"Max": 150,
-										"Step": 1,
-										"Default": 75
+										"Step": 1
 									}
 								}
 							}
@@ -2876,7 +2876,7 @@
 						],
 						"TimeRemaining": "Compartment_EstTimeRemaining",
 						"MachineState": "Compartment_State",
-						"Temperature": "CycleOptionsWHR_TemperatureChangeable",
+						"Temperature": "CycleOptionsWHR_Temperature",
 						"Dryness": "CycleOptionsWHR_Dryness",
 						"WrinkleShield": "CycleOptionsWHR_WrinkleShield",
 						"EcoBoostEnable": "CycleOptionsWHR_EcoBoost",
@@ -2992,7 +2992,7 @@
 							],
 							"SendCommandAttributes": [
 								"Compartment_CycleId",
-								"CycleOptionsWHR_TemperatureChangeable",
+								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_StaticGuard",
 								"CycleOptionsWHR_WrinkleShield",
 								"CycleOptionsWHR_EcoBoost",
@@ -3016,7 +3016,7 @@
 							"StateAttributes": {},
 							"SendCommandAttributes": [
 								"Compartment_CycleId",
-								"CycleOptionsWHR_TemperatureChangeable",
+								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_StaticGuard",
 								"CycleOptionsWHR_WrinkleShield",
 								"CycleOptionsWHR_EcoBoost",
