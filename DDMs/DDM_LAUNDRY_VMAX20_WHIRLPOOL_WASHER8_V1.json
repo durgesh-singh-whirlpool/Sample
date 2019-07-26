@@ -4413,7 +4413,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "RemoteControlStatus"
+								"State": "XCat_RemoteSetRemoteControlEnable"
 							}
 						},
 						"Online": {
