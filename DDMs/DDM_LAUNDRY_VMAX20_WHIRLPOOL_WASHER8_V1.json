@@ -216,6 +216,18 @@
       },
       {
         "IsTemplate": false,
+        "M2MAttributeName": "WashCavity_CycleSetFresheningSelect",
+        "Instance": "XCat_SmartGridSet",
+        "IsTimeSeries": false,
+        "DataType": "Boolean",
+        "AttributeName": "SmartGridEnable",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "WashCavity_CycleSetFresheningSelect",
+        "Key": "0x010B0001",
+        "Default": true
+      },
+      {
+        "IsTemplate": false,
         "M2MAttributeName": "XCat_SmartGridSetSmartGridMode",
         "Instance": "XCat_SmartGridSet",
         "IsTimeSeries": false,
@@ -232,15 +244,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "MaxCustomCycles",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "XCat_ConfigSetMaxCustomCycles",
+        "Key": "0x010C0005",
         "RangeValues": {
           "StepSize": 1,
           "Min": 1,
           "Max": 1
         },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "XCat_ConfigSetMaxCustomCycles",
-        "Default": 1,
-        "Key": "0x010C0005"
+        "Default": 1
       },
       {
         "IsTemplate": false,
@@ -280,13 +292,13 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Sys_OpSetAlertToneVolume",
         "Default": "2",
+        "Key": "0x02030004",
         "EnumValues": {
           "0": "VolumeValueOff",
           "1": "VolumeValueLow",
           "2": "VolumeValueMedium",
           "3": "VolumeValueHigh"
-        },
-        "Key": "0x02030004"
+        }
       },
       {
         "IsTemplate": false,
@@ -307,15 +319,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "EstTimeRemaining",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "Cavity_TimeStatusEstTimeRemaining",
+        "Default": 0,
+        "Key": "0x03010001",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 4294967295
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "Cavity_TimeStatusEstTimeRemaining",
-        "Default": 0,
-        "Key": "0x03010001"
+        }
       },
       {
         "IsTemplate": false,
@@ -410,8 +422,8 @@
         "AttributeName": "Operations",
         "DeviceIO": "WO",
         "MappedAttributeName": "Cavity_OpSetOperations",
-        "Default": "0",
         "Key": "0x03070001",
+        "Default": "0",
         "EnumValues": {
           "0": "OperationsNone",
           "1": "OperationsCancel",
@@ -789,12 +801,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "WashCavity_CycleSetBulkDispense1Enable",
         "Default": "0",
+        "Key": "0x05050002",
         "EnumValues": {
           "0": "BulkDispenseEnablePermanentlyDisabled",
           "1": "BulkDispenseEnablePermanentlyEnabled",
           "2": "BulkDispenseEnableNextCycleDisabled"
-        },
-        "Key": "0x05050002"
+        }
       },
       {
         "IsTemplate": false,
@@ -924,14 +936,14 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "WashCavity_CycleSetSoilLevel",
         "Default": "0",
+        "Key": "0x05050014",
         "EnumValues": {
           "0": "SoilLevelLight",
           "1": "SoilLevelNormal",
           "2": "SoilLevelHeavy",
           "3": "SoilLevelExtraHeavy",
           "4": "SoilLevelExtraLight"
-        },
-        "Key": "0x05050014"
+        }
       },
       {
         "IsTemplate": false,
@@ -942,8 +954,8 @@
         "AttributeName": "SpinSpeed",
         "DeviceIO": "RW",
         "MappedAttributeName": "WashCavity_CycleSetSpinSpeed",
-        "Default": "0",
         "Key": "0x05050015",
+        "Default": "0",
         "EnumValues": {
           "0": "SpinSpeedOff",
           "3": "SpinSpeedMedium",
@@ -1173,8 +1185,8 @@
         "AttributeName": "ControlLockChangedByAppliance",
         "DeviceIO": "WO",
         "MappedAttributeName": "ControlLockChangedByAppliance",
-        "Default": false,
-        "Key": "0x00000000"
+        "Key": "0x00000000",
+        "Default": false
       },
       {
         "IsTemplate": false,
@@ -1324,8 +1336,8 @@
         "AttributeName": "online",
         "DeviceIO": "RO",
         "MappedAttributeName": "online",
-        "Default": false,
-        "Key": "0x00000000"
+        "Key": "0x00000000",
+        "Default": false
       },
       {
         "IsTemplate": false,
