@@ -4461,8 +4461,7 @@
 								"Cavity_OpSetOperations"
 							],
 							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations",
-								"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						},
 						"CyclesHistory": {
@@ -4471,6 +4470,9 @@
 								"US",
 								"CA"
 							],
+							"StateAttributes": {
+								"State": "Cavity_CycleStatusMachineState"
+							},
 							"SendCommandAttributes": [
 								"WashCavity_CycleSetCycleSelect",
 								"Cavity_TimeSetDelayTime",
@@ -4483,21 +4485,19 @@
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
 							],
-							"StateAttributes": {},
 							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations",
-								"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						},
 						"FavoriteCycles": {
 							"Visible": true,
-							"ReadOnly": false,
 							"AvailableIn": [
 								"US",
 								"CA"
 							],
-							"StatusAttributes": [],
-							"StateAttributes": {},
+							"StateAttributes": {
+								"State": "Cavity_CycleStatusMachineState"
+							},
 							"SendCommandAttributes": [
 								"WashCavity_CycleSetCycleSelect",
 								"Cavity_TimeSetDelayTime",
@@ -4511,15 +4511,28 @@
 								"Cavity_OpSetOperations"
 							],
 							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations",
-								"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						}
 					}
 				},
 				"ApplianceRulesets": {
 					"WashCavity": {
-						"Runtime": []
+						"Runtime": [
+						{
+								"ruleName": "Disable All Features when appliance is offline*** For feature show change back",
+								"description": "Disable All Features when appliance is offline",
+								"features": {
+									"SetCycle": true
+								},
+								"condition": {
+									"type": "value",
+									"key": "Online",
+									"valueOperator": "=",
+									"value": 0
+								}
+							}
+						]
 					},
 					"Common": {
 						"Runtime": []
