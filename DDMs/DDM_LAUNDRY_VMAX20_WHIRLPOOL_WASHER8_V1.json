@@ -4380,7 +4380,8 @@
           "Common": {
             "RemoteStatus": "GetRemoteControlStatus",
             "Online": "Online",
-            "RemoteEnabledStatus": "GetRemoteControlStatus"
+            "RemoteEnabledStatus": "GetRemoteControlStatus",
+            "ControlLock":"Sys_OpSetControlLock"
           }
         },
         "Features": {
@@ -4390,10 +4391,7 @@
               "AvailableIn": [
                 "US",
                 "CA"
-              ],
-              "StateAttributes": {
-                "State": "Sys_OpSetControlLock"
-              }
+              ]
             },
             "ControlLock": {
               "Visible": false,
@@ -4410,20 +4408,14 @@
               "AvailableIn": [
                 "US",
                 "CA"
-              ],
-              "StateAttributes": {
-                "State": "Sys_OpSetControlLock"
-              }
+              ]
             },
             "FaultCodes": {
               "Visible": true,
               "AvailableIn": [
                 "US",
                 "CA"
-              ],
-              "StateAttributes": {
-                "State": "Sys_OpSetControlLock"
-              }
+              ]
             },
             "RemoteStatus": {
               "Visible": true,
@@ -4450,40 +4442,28 @@
               "AvailableIn": [
                 "US",
                 "CA"
-              ],
-              "StateAttributes": {
-                "State": "Sys_OpSetControlLock"
-              }
+              ]
             },
             "ChangeSoundKeyAlert": {
               "Visible": false,
               "AvailableIn": [
                 "US",
                 "CA"
-              ],
-              "StateAttributes": {
-                "State": "Sys_OpSetControlLock"
-              }
+              ]
             },
             "ChangeSoundKeyPress": {
               "Visible": false,
               "AvailableIn": [
                 "US",
                 "CA"
-              ],
-              "StateAttributes": {
-                "State": "Sys_OpSetControlLock"
-              }
+              ]
             },
             "ChangeBrightness": {
               "Visible": false,
               "AvailableIn": [
                 "US",
                 "CA"
-              ],
-              "StateAttributes": {
-                "State": "Sys_OpSetControlLock"
-              }
+              ]
             }
           },
           "WashCavity": {
@@ -4542,9 +4522,7 @@
                 "WashCavity_CycleSetDeepFillEnable",
                 "Cavity_OpSetOperations"
               ],
-              "StateAttributes": {
-                "State": "Cavity_CycleStatusMachineState"
-              },
+              "StateAttributes": {},
               "SetOperationsMapping": {
                 "Operation": "Cavity_OpSetOperations",
                 "TimeRemaining": "Cavity_TimeStatusEstTimeRemaining"
@@ -4558,9 +4536,7 @@
                 "CA"
               ],
               "StatusAttributes": [],
-              "StateAttributes": {
-                "State": "Cavity_CycleStatusMachineState"
-              },
+              "StateAttributes": {},
               "SendCommandAttributes": [
                 "WashCavity_CycleSetCycleSelect",
                 "Cavity_TimeSetDelayTime",
