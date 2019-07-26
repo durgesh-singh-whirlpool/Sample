@@ -321,7 +321,8 @@
 		"XCat_WifiSetDeprovisionWifiCommModule.Label": "Deprovision WiFi Comm Module",
 		"XCat_WifiSetDisableWifiCommModule.Label": "Disable WiFi Comm Module",
 		"XCat_WifiSetIspAuthorized": "Isp Authorized",
-		"XCat_WifiSetRebootWifiCommModule.Label": "Reboot WiFi Comm Module"
+		"XCat_WifiSetRebootWifiCommModule.Label": "Reboot WiFi Comm Module",
+		"WashCavity.Lavbel": "Washer"
 	},
 	"AFCSelfHelpPack": {
 		"F0,E1": {
