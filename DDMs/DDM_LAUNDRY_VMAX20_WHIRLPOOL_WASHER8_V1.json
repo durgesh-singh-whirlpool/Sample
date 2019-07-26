@@ -4390,7 +4390,10 @@
               "AvailableIn": [
                 "US",
                 "CA"
-              ]
+              ],
+              "StateAttributes": {
+                "State": "Sys_OpSetControlLock"
+              }
             },
             "ControlLock": {
               "Visible": false,
@@ -4407,14 +4410,20 @@
               "AvailableIn": [
                 "US",
                 "CA"
-              ]
+              ],
+              "StateAttributes": {
+                "State": "Sys_OpSetControlLock"
+              }
             },
             "FaultCodes": {
               "Visible": true,
               "AvailableIn": [
                 "US",
                 "CA"
-              ]
+              ],
+              "StateAttributes": {
+                "State": "Sys_OpSetControlLock"
+              }
             },
             "RemoteStatus": {
               "Visible": true,
@@ -4441,28 +4450,40 @@
               "AvailableIn": [
                 "US",
                 "CA"
-              ]
+              ],
+              "StateAttributes": {
+                "State": "Sys_OpSetControlLock"
+              }
             },
             "ChangeSoundKeyAlert": {
               "Visible": false,
               "AvailableIn": [
                 "US",
                 "CA"
-              ]
+              ],
+              "StateAttributes": {
+                "State": "Sys_OpSetControlLock"
+              }
             },
             "ChangeSoundKeyPress": {
               "Visible": false,
               "AvailableIn": [
                 "US",
                 "CA"
-              ]
+              ],
+              "StateAttributes": {
+                "State": "Sys_OpSetControlLock"
+              }
             },
             "ChangeBrightness": {
               "Visible": false,
               "AvailableIn": [
                 "US",
                 "CA"
-              ]
+              ],
+              "StateAttributes": {
+                "State": "Sys_OpSetControlLock"
+              }
             }
           },
           "WashCavity": {
