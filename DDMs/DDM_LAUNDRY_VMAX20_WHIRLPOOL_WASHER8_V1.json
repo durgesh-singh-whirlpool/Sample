@@ -4378,9 +4378,9 @@
 						"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable"
 					},
 					"Common": {
-						"RemoteStatus": "GetRemoteControlStatus",
+						"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
 						"Online": "Online",
-						"RemoteEnabledStatus": "GetRemoteControlStatus"
+						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable"
 					}
 				},
 				"Features": {
