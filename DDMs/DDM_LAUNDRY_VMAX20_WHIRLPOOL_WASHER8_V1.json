@@ -290,6 +290,18 @@
       },
       {
         "IsTemplate": false,
+        "M2MAttributeName": "RemoteControlStatus",
+        "Instance": "XCat_RemoteSet",
+        "IsTimeSeries": false,
+        "DataType": "Boolean",
+        "AttributeName": "RemoteControlEnable",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "RemoteControlStatus",
+        "Default": false,
+        "Key": "0x01080001"
+      },
+      {
+        "IsTemplate": false,
         "M2MAttributeName": "Cavity_TimeStatusEstTimeRemaining",
         "Instance": "Cavity_TimeStatus",
         "IsTimeSeries": false,
@@ -312,15 +324,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "DelayTimeRemaining",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "Cavity_TimeStatusDelayTimeRemaining",
+        "Default": 0,
+        "Key": "0x03010002",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 4294967295
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "Cavity_TimeStatusDelayTimeRemaining",
-        "Default": 0,
-        "Key": "0x03010002"
+        }
       },
       {
         "IsTemplate": false,
@@ -356,6 +368,7 @@
         "DeviceIO": "RO",
         "MappedAttributeName": "Cavity_CycleStatusMachineState",
         "Default": "0",
+        "Key": "0x03040001",
         "EnumValues": {
           "0": "MachineStateStandby",
           "1": "MachineStateSetting",
@@ -369,8 +382,7 @@
           "11": "MachineStatePowerFailure",
           "17": "MachineStateHardStopOrError",
           "19": "MachineStateCancelled"
-        },
-        "Key": "0x03040001"
+        }
       },
       {
         "IsTemplate": false,
@@ -379,15 +391,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "DelayTime",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Cavity_TimeSetDelayTime",
+        "Default": 0,
+        "Key": "0x03050001",
         "RangeValues": {
           "StepSize": 3600,
           "Min": 0,
           "Max": 43200
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Cavity_TimeSetDelayTime",
-        "Default": 0,
-        "Key": "0x03050001"
+        }
       },
       {
         "IsTemplate": false,
@@ -399,6 +411,7 @@
         "DeviceIO": "WO",
         "MappedAttributeName": "Cavity_OpSetOperations",
         "Default": "0",
+        "Key": "0x03070001",
         "EnumValues": {
           "0": "OperationsNone",
           "1": "OperationsCancel",
@@ -408,8 +421,7 @@
           "6": "OperationsResume",
           "9": "OperationsSave",
           "10": "OperationsSaveAndStart"
-        },
-        "Key": "0x03070001"
+        }
       },
       {
         "IsTemplate": false,
@@ -418,15 +430,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "DownloadAndGo",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Cavity_CycleSetDownloadAndGo",
+        "Key": "0x03080001",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 1
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Cavity_CycleSetDownloadAndGo",
-        "Default": 0,
-        "Key": "0x03080001"
+        "Default": 0
       },
       {
         "IsTemplate": false,
@@ -446,15 +458,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "SpecialtyCycleId",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Cavity_CycleSetSpecialtyCycleId",
+        "Default": 0,
+        "Key": "0x03080007",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 1
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Cavity_CycleSetSpecialtyCycleId",
-        "Default": 0,
-        "Key": "0x03080007"
+        }
       },
       {
         "IsTemplate": false,
@@ -466,13 +478,13 @@
         "DeviceIO": "RO",
         "MappedAttributeName": "WashCavity_OpStatusBulkDispense1Level",
         "Default": "0",
+        "Key": "0x05010001",
         "EnumValues": {
           "1": "BulkDispenseLevelEmpty",
           "2": "BulkDispenseLevelLow",
           "3": "BulkDispenseLevelMid",
           "4": "BulkDispenseLevelFull"
-        },
-        "Key": "0x05010001"
+        }
       },
       {
         "IsTemplate": false,
@@ -497,6 +509,18 @@
         "MappedAttributeName": "WashCavity_ChangeStatusBulkDispense1",
         "Default": true,
         "Key": "0x05020002"
+      },
+      {
+        "IsTemplate": false,
+        "M2MAttributeName": "Sys_OpSetControlLock",
+        "Instance": "Sys_OpSet",
+        "IsTimeSeries": false,
+        "DataType": "Boolean",
+        "AttributeName": "ControlLock",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Sys_OpSetControlLock",
+        "Default": false,
+        "Key": "0x02030002"
       },
       {
         "IsTemplate": false,
@@ -745,15 +769,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "BulkDispense1Concentration",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "WashCavity_OpSetBulkDispense1Concentration",
+        "Default": 0,
+        "Key": "0x05040001",
         "RangeValues": {
           "StepSize": 5,
           "Min": 0,
           "Max": 55
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "WashCavity_OpSetBulkDispense1Concentration",
-        "Default": 0,
-        "Key": "0x05040001"
+        }
       },
       {
         "IsTemplate": false,
@@ -782,6 +806,7 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "WashCavity_CycleSetCycleSelect",
         "Default": "1",
+        "Key": "0x05050006",
         "EnumValues": {
           "1": "WashCycleNormal",
           "2": "WashCycleHeavyDuty",
@@ -823,8 +848,7 @@
           "93": "WashCycleWhatToWhitesHowToWrinkleControl",
           "94": "WashCycleWhatToBulkyHowToSanitize",
           "101": "WashCycleFaucet"
-        },
-        "Key": "0x05050006"
+        }
       },
       {
         "IsTemplate": false,
@@ -836,13 +860,13 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "WashCavity_CycleSetDeepFillEnable",
         "Default": "0",
+        "Key": "0x05050007",
         "EnumValues": {
           "1": "DeepFillLow",
           "2": "DeepFillMed",
           "3": "DeepFillHigh",
           "4": "DeepFillMax"
-        },
-        "Key": "0x05050007"
+        }
       },
       {
         "IsTemplate": false,
@@ -851,15 +875,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "ExtraRinseSelect",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "WashCavity_CycleSetExtraRinseSelect",
+        "Default": 0,
+        "Key": "0x0505000A",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 1
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "WashCavity_CycleSetExtraRinseSelect",
-        "Default": 0,
-        "Key": "0x0505000A"
+        }
       },
       {
         "IsTemplate": false,
@@ -880,15 +904,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "PresoakTimed",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "WashCavity_CycleSetPresoakTimed",
+        "Default": 0,
+        "Key": "0x05050011",
         "RangeValues": {
           "StepSize": 900,
           "Min": 0,
           "Max": 7200
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "WashCavity_CycleSetPresoakTimed",
-        "Default": 0,
-        "Key": "0x05050011"
+        }
       },
       {
         "IsTemplate": false,
@@ -919,12 +943,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "WashCavity_CycleSetSpinSpeed",
         "Default": "0",
+        "Key": "0x05050015",
         "EnumValues": {
           "0": "SpinSpeedOff",
           "3": "SpinSpeedMedium",
           "4": "SpinSpeedHigh"
-        },
-        "Key": "0x05050015"
+        }
       },
       {
         "IsTemplate": false,
@@ -935,6 +959,7 @@
         "AttributeName": "Temperature",
         "DeviceIO": "RW",
         "MappedAttributeName": "WashCavity_CycleSetTemperature",
+        "Key": "0x05050018",
         "Default": "0",
         "EnumValues": {
           "0": "WashTempCold",
@@ -942,8 +967,7 @@
           "2": "WashTempWarm",
           "3": "WashTempHot",
           "5": "WashTempTapCold"
-        },
-        "Key": "0x05050018"
+        }
       },
       {
         "IsTemplate": false,
@@ -952,15 +976,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerSigned32Bit",
         "AttributeName": "PushTrigger",
+        "DeviceIO": "WO",
+        "MappedAttributeName": "PushTrigger",
+        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": -2147483648,
           "Max": 2147483647
         },
-        "DeviceIO": "WO",
-        "MappedAttributeName": "PushTrigger",
-        "Default": 0,
-        "Key": "0x00000000"
+        "Default": 0
       },
       {
         "IsTemplate": false,
@@ -980,15 +1004,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "GetSubscribeListVersion",
+        "DeviceIO": "WO",
+        "MappedAttributeName": "GetSubscribeListVersion",
+        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 4294967295
         },
-        "DeviceIO": "WO",
-        "MappedAttributeName": "GetSubscribeListVersion",
-        "Default": 0,
-        "Key": "0x00000000"
+        "Default": 0
       },
       {
         "IsTemplate": false,
@@ -1098,8 +1122,8 @@
         "AttributeName": "GetApplianceVersionNumber",
         "DeviceIO": "WO",
         "MappedAttributeName": "GetApplianceVersionNumber",
-        "Default": false,
-        "Key": "0x00000000"
+        "Key": "0x00000000",
+        "Default": false
       },
       {
         "IsTemplate": false,
@@ -1119,15 +1143,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "ISPStep",
+        "DeviceIO": "WO",
+        "MappedAttributeName": "ISPStep",
+        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 255
         },
-        "DeviceIO": "WO",
-        "MappedAttributeName": "ISPStep",
-        "Default": 0,
-        "Key": "0x00000000"
+        "Default": 0
       },
       {
         "IsTemplate": false,
@@ -1159,15 +1183,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "ApplianceVersionNumber",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "ApplianceVersionNumber",
+        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 65535
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "ApplianceVersionNumber",
-        "Default": 0,
-        "Key": "0x00000000"
+        "Default": 0
       },
       {
         "IsTemplate": false,
@@ -1176,15 +1200,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "EnergyProfileSetting",
+        "DeviceIO": "WO",
+        "MappedAttributeName": "EnergyProfileSetting",
+        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 4294967295
         },
-        "DeviceIO": "WO",
-        "MappedAttributeName": "EnergyProfileSetting",
-        "Default": 0,
-        "Key": "0x00000000"
+        "Default": 0
       },
       {
         "IsTemplate": false,
@@ -1281,15 +1305,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "trid",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "trid",
+        "Default": 0,
+        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 65535
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "trid",
-        "Default": 0,
-        "Key": "0x00000000"
+        }
       },
       {
         "IsTemplate": false,
@@ -1310,15 +1334,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerSigned32Bit",
         "AttributeName": "UtcOffset",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "UtcOffset",
+        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": -2147483648,
           "Max": 2147483647
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "UtcOffset",
-        "Default": 0,
-        "Key": "0x00000000"
+        "Default": 0
       },
       {
         "IsTemplate": false,
@@ -1327,15 +1351,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerSigned32Bit",
         "AttributeName": "DstOffset",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "DstOffset",
+        "Key": "0x00000000",
         "RangeValues": {
           "StepSize": 1,
           "Min": -2147483648,
           "Max": 2147483647
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "DstOffset",
-        "Default": 0,
-        "Key": "0x00000000"
+        "Default": 0
       },
       {
         "IsTemplate": false,
@@ -4378,10 +4402,10 @@
             "BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable"
           },
           "Common": {
-            "RemoteStatus": "GetRemoteControlStatus",
+            "RemoteStatus": "RemoteControlStatus",
             "Online": "Online",
-            "RemoteEnabledStatus": "GetRemoteControlStatus",
-            "ControlLock":"Sys_OpSetControlLock"
+            "RemoteEnabledStatus": "RemoteControlStatus",
+            "ControlLock": "Sys_OpSetControlLock"
           }
         },
         "Features": {
