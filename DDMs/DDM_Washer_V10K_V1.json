@@ -3669,7 +3669,7 @@
 	},
 	"alerts": {
 		"Key": "DDM_Washer_V10K_V1",
-		"Alerts": [
+		"alerts": [
 			{
 				"ApplianceAlerts": [
 					{
