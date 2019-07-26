@@ -4392,16 +4392,6 @@
 								"CA"
 							]
 						},
-						"ControlLock": {
-							"Visible": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_OpSetControlLock"
-							}
-						},
 						"Notifications": {
 							"Visible": true,
 							"AvailableIn": [
@@ -4435,34 +4425,6 @@
 							"StateAttributes": {
 								"State": "Online"
 							}
-						},
-						"QuietMode": {
-							"Visible": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
-						},
-						"ChangeSoundKeyAlert": {
-							"Visible": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
-						},
-						"ChangeSoundKeyPress": {
-							"Visible": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
-						},
-						"ChangeBrightness": {
-							"Visible": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
 						}
 					},
 					"WashCavity": {
