@@ -3267,7 +3267,6 @@
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
-						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
 						"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume"
 					}
 				},
@@ -3312,36 +3311,6 @@
 							],
 							"StateAttributes": {
 								"State": "XCat_RemoteSetRemoteControlEnable"
-							}
-						},
-						"ChangeApplianceLanguage": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_DisplaySetLanguage"
-							}
-						},
-						"ChangeSoundKeyPress": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_OpSetAlertToneVolume"
-							}
-						},
-						"ChangeBrightness": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_DisplaySetBrightnessPercent"
 							}
 						}
 					},
