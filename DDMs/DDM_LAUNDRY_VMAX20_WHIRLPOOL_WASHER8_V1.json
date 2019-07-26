@@ -4519,7 +4519,7 @@
 				"ApplianceRulesets": {
 					"WashCavity": {
 						"Runtime": [
-						{
+							{
 								"ruleName": "Disable All Features when appliance is offline*** For feature show change back",
 								"description": "Disable All Features when appliance is offline",
 								"features": {
@@ -4644,5 +4644,9 @@
 				]
 			}
 		]
+	},
+	"Services": {
+		"_id": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_WASHER8_V1",
+		"thirdPartyServices": []
 	}
 }
