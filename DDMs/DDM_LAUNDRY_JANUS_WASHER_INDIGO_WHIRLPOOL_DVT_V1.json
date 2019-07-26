@@ -4873,9 +4873,7 @@
 								"US",
 								"CA"
 							],
-							 "StateAttributes": {
-							"State": "Cavity_OperationStatusMachineState"
-								},
+							 "StateAttributes": {},
 							"StatusAttributes": [
 							"Sys_OpSetAlertToneVolume",
 							"Sys_OpSetKeyPressToneVolume"
