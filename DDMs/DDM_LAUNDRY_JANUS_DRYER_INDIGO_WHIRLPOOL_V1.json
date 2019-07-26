@@ -3240,7 +3240,7 @@
 	},
 	"alerts": {
 		"Key": "DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
-		"Alerts": [
+		"alerts": [
 			{
 				"ApplianceAlerts": [
 					{
