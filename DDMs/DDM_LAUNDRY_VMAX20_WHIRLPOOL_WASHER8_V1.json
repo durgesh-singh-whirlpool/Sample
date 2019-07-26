@@ -228,6 +228,18 @@
       },
       {
         "IsTemplate": false,
+        "M2MAttributeName": "WashCavity_OpSetBulkDispense1Selection",
+        "Instance": "XCat_SmartGridSet",
+        "IsTimeSeries": false,
+        "DataType": "Boolean",
+        "AttributeName": "SmartGridEnable",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "WashCavity_OpSetBulkDispense1Selection",
+        "Key": "0x010B0001",
+        "Default": true
+      },
+      {
+        "IsTemplate": false,
         "M2MAttributeName": "XCat_SmartGridSetSmartGridMode",
         "Instance": "XCat_SmartGridSet",
         "IsTimeSeries": false,
