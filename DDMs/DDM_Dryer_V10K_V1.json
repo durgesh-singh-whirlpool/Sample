@@ -3084,7 +3084,7 @@
 	},
 	"alerts": {
 		"Key": "DDM_Dryer_V10K_V1",
-		"Alerts": [
+		"alerts": [
 			{
 				"ApplianceAlerts": [
 					{
