@@ -4523,7 +4523,6 @@
 								"ruleName": "Disable All Features when appliance is offline*** For feature show change back",
 								"description": "Disable All Features when appliance is offline",
 								"features": {
-									"SetCycle": true
 								},
 								"condition": {
 									"type": "value",
