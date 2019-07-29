@@ -5168,7 +5168,7 @@
 					"WashCavity": {
 						"CycleHistory": {
 							"isLegacy": false,
-							"attributes": "WashCavity_CycleSetCycleSelect,WashCavity_CycleSetTemperature,WashCavity_CycleSetSoilLevel,WashCavity_CycleSetSpinSpeed,WashCavity_CycleSetPresoakNotTimedEnable,Cavity_TimeSetDelayTime,WashCavity_CycleSetExtraRinseSelect,WashCavity_CycleSetFresheningSelect,Cavity_CycleSetSteamEnable",
+							"attributes": "WashCavity_CycleSetCycleSelect,WashCavity_CycleSetTemperature,WashCavity_CycleSetSoilLevel,WashCavity_CycleSetSpinSpeed,WashCavity_CycleSetPresoakTimed,Cavity_TimeSetDelayTime,WashCavity_CycleSetExtraRinseSelect,WashCavity_CycleSetFresheningSelect,Cavity_CycleSetSteamEnable",
 							"groupBy": "XCat_OdometerStatusCycleCount"
 						}
 					}
