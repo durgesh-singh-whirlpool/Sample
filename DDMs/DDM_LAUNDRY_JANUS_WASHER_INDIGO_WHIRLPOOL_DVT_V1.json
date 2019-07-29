@@ -4797,12 +4797,12 @@
 						"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
 						"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
 						"BulkDispense2Enable": "WashCavity_CycleSetBulkDispense2Enable",
+						"CleanDetection": "WashCavity_CycleStatusCleanDetection",
 						"CleanReminder": "WashCavity_CycleStatusCleanReminder"
 					},
 					"Common": {
 						"ControlLock": "Sys_OpSetControlLock",
 						"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
-						"Online": "online",
 						"QuietMode": [
 							"Sys_OpSetAlertToneVolume",
 							"Sys_OpSetKeyPressToneVolume"
