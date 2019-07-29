@@ -4810,7 +4810,8 @@
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
 						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
-						"SoundKeyPress": "Sys_OpSetKeyPressToneVolume"
+						"SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
+						"CleanReminder": "WashCavity_CycleStatusCleanReminder"
 					}
 				},
 				"Features": {
