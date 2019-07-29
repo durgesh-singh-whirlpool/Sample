@@ -1,20 +1,17 @@
 {
-  "_id": "DDM_Dryer_V10K_V1",
-  "_rev": "13-bf1db302aea649137915b70c9432c983",
-  "DDM": {
+  "ddm": {
     "_id": "DDM_Dryer_V10K_V1",
     "ddmName": "DDM_Dryer_V10K_V1",
-    "modelNumber": "WED8700EC0,WED8700EC1,WED8700EC2,WGD8700EC0,WGD8700EC1,WGD8700EC2",
     "createdAt": "Mar 20, 2018 6:30:00 PM",
     "createdBy": "Madhuri Chaudhari",
     "brandName": "Whirlpool",
     "category": "FabricCare",
     "version": "1.0",
     "ccuriVersion": "1.0",
-    "ccURI": "FabricCareMaster"
+    "ccURI": "FabricCareMaster",
+    "modelNumber": "WED8700EC0,WED8700EC1,WED8700EC2,WGD8700EC0,WGD8700EC1,WGD8700EC2"
   },
-  "DataModel": {
-    "Key": "DDM_Dryer_V10K_V1",
+  "dataModel": {
     "attributes": [
       {
         "IsTemplate": false,
@@ -40,15 +37,15 @@
         "IsTimeSeries": false,
         "DataType": "BEInteger32Bit",
         "AttributeName": "ReasonCode",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "ReasonCode",
+        "Key": "0x0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-2147483648",
           "Max": "2147483647"
         },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "ReasonCode",
-        "Default": "0",
-        "Key": "0x0"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -59,8 +56,8 @@
         "AttributeName": "Password",
         "DeviceIO": "RO",
         "MappedAttributeName": "Password",
-        "Default": "0",
-        "Key": "0x0"
+        "Key": "0x0",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -139,15 +136,15 @@
         "IsTimeSeries": false,
         "DataType": "Integer8Bit",
         "AttributeName": "ISPReasonCode",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "ISPReasonCode",
+        "Key": "0x0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-128",
           "Max": "127"
         },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "ISPReasonCode",
-        "Default": "0",
-        "Key": "0x0"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -156,15 +153,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "Appliance_TotalWattsHour",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "Appliance_TotalWattsHour",
+        "Key": "0x104",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "2147483647"
         },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "Appliance_TotalWattsHour",
-        "Default": "0",
-        "Key": "0x104"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -176,6 +173,7 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Compartment_State",
         "Default": "0",
+        "Key": "0x304",
         "EnumValues": {
           "0": "Idle",
           "1": "Programming",
@@ -196,8 +194,7 @@
           "16": "PowerFail",
           "17": "PostRunning",
           "18": "PostRunningPaused"
-        },
-        "Key": "0x304"
+        }
       },
       {
         "IsTemplate": false,
@@ -244,6 +241,7 @@
         "AttributeName": "CycleOptionsWHR_WhatTo",
         "DeviceIO": "RW",
         "MappedAttributeName": "CycleOptionsWHR_WhatTo",
+        "Key": "0x401",
         "Default": "0",
         "EnumValues": {
           "0": "Mixed",
@@ -251,8 +249,7 @@
           "2": "Towels",
           "3": "Delicates",
           "4": "BulkySheets"
-        },
-        "Key": "0x401"
+        }
       },
       {
         "IsTemplate": false,
@@ -275,8 +272,8 @@
         "AttributeName": "Online",
         "DeviceIO": "RO",
         "MappedAttributeName": "Online",
-        "Default": "0",
-        "Key": "0x0"
+        "Key": "0x0",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -285,15 +282,15 @@
         "IsTimeSeries": false,
         "DataType": "BEInteger16Bit",
         "AttributeName": "ApplianceVersionNumber",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "ApplianceVersionNumber",
+        "Default": "0",
+        "Key": "0x0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-32768",
           "Max": "32767"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "ApplianceVersionNumber",
-        "Default": "0",
-        "Key": "0x0"
+        }
       },
       {
         "IsTemplate": false,
@@ -391,15 +388,15 @@
         "IsTimeSeries": false,
         "DataType": "Integer8Bit",
         "AttributeName": "CategoryID",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "CategoryID",
+        "Default": "0",
+        "Key": "0x0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-128",
           "Max": "127"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "CategoryID",
-        "Default": "0",
-        "Key": "0x0"
+        }
       },
       {
         "IsTemplate": false,
@@ -411,12 +408,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "System_Command",
         "Default": "0",
+        "Key": "0x203",
         "EnumValues": {
           "0": "StartCycle",
           "1": "PauseCycle",
           "2": "CancelCycle"
-        },
-        "Key": "0x203"
+        }
       },
       {
         "IsTemplate": false,
@@ -425,15 +422,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "Appliance_SmartGridModeOffsetMinutes",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Appliance_SmartGridModeOffsetMinutes",
+        "Key": "0x10B",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Appliance_SmartGridModeOffsetMinutes",
-        "Default": "0",
-        "Key": "0x10B"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -466,15 +463,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "Appliance_SmartGridMode",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Appliance_SmartGridMode",
+        "Default": "0",
+        "Key": "0xC02E",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Appliance_SmartGridMode",
-        "Default": "0",
-        "Key": "0xC02E"
+        }
       },
       {
         "IsTemplate": false,
@@ -486,6 +483,7 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Compartment_CycleId",
         "Default": "0",
+        "Key": "0x307",
         "EnumValues": {
           "1": "Mixed_Normal",
           "2": "Mixed_Heavy",
@@ -510,8 +508,7 @@
           "44": "Towels_SteamRefresh",
           "45": "Casuals_SteamRefresh",
           "46": "BulkySheets_SteamRefresh"
-        },
-        "Key": "0x307"
+        }
       },
       {
         "IsTemplate": false,
@@ -547,6 +544,7 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Appliance_State",
         "Default": "0",
+        "Key": "0x105",
         "EnumValues": {
           "0": "Initialize",
           "1": "Standby",
@@ -561,8 +559,7 @@
           "10": "CustomerFocusedDrying",
           "11": "DevelopmentMode",
           "12": "FvtMode"
-        },
-        "Key": "0x105"
+        }
       },
       {
         "IsTemplate": false,
@@ -610,13 +607,13 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "CycleOptionsWHR_Dryness",
         "Default": "0",
+        "Key": "0x413",
         "EnumValues": {
           "0": "LessDry1",
           "1": "LessDry2",
           "2": "Normal",
           "3": "MoreDry"
-        },
-        "Key": "0x413"
+        }
       },
       {
         "IsTemplate": false,
@@ -745,15 +742,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "Appliance_RealTimePowerReadingDuration",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Appliance_RealTimePowerReadingDuration",
+        "Default": "0",
+        "Key": "0x10D",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Appliance_RealTimePowerReadingDuration",
-        "Default": "0",
-        "Key": "0x10D"
+        }
       },
       {
         "IsTemplate": false,
@@ -774,15 +771,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "Appliance_RealTimePowerFrequency",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Appliance_RealTimePowerFrequency",
+        "Default": "0",
+        "Key": "0x10E",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Appliance_RealTimePowerFrequency",
-        "Default": "0",
-        "Key": "0x10E"
+        }
       },
       {
         "IsTemplate": false,
@@ -815,15 +812,15 @@
         "IsTimeSeries": false,
         "DataType": "BEInteger32Bit",
         "AttributeName": "RealTimePowerReading",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "RealTimePowerReading",
+        "Default": "0",
+        "Key": "0x30003",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-2147483648",
           "Max": "2147483647"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "RealTimePowerReading",
-        "Default": "0",
-        "Key": "0x30003"
+        }
       },
       {
         "IsTemplate": false,
@@ -847,6 +844,7 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Compartment_CycleState",
         "Default": "0",
+        "Key": "0x308",
         "EnumValues": {
           "0": "Sensing",
           "1": "MainCycleComplete",
@@ -864,8 +862,7 @@
           "13": "Misting",
           "14": "Washing",
           "15": "DoorLockStatus"
-        },
-        "Key": "0x308"
+        }
       },
       {
         "IsTemplate": false,
@@ -874,15 +871,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "Appliance_SmartGridModeOffsetHours",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Appliance_SmartGridModeOffsetHours",
+        "Default": "0",
+        "Key": "0x10A",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Appliance_SmartGridModeOffsetHours",
-        "Default": "0",
-        "Key": "0x10A"
+        }
       },
       {
         "IsTemplate": false,
@@ -961,15 +958,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "CycleOptionsWHR_SpinSpeed",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "CycleOptionsWHR_SpinSpeed",
+        "Key": "0x409",
+        "Default": "0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "CycleOptionsWHR_SpinSpeed",
-        "Default": "0",
-        "Key": "0x409"
+        }
       },
       {
         "IsTemplate": false,
@@ -997,6 +994,7 @@
         "AttributeName": "CycleOptionsWHR_Temperature",
         "DeviceIO": "RW",
         "MappedAttributeName": "CycleOptionsWHR_Temperature",
+        "Key": "0x405",
         "Default": "0",
         "EnumValues": {
           "0": "Temp0",
@@ -1004,8 +1002,7 @@
           "2": "Temp2",
           "3": "Temp3",
           "4": "Temp4"
-        },
-        "Key": "0x405"
+        }
       },
       {
         "IsTemplate": false,
@@ -1016,8 +1013,8 @@
         "AttributeName": "CycleOptionsWHR_DrynessChangeable",
         "DeviceIO": "RO",
         "MappedAttributeName": "CycleOptionsWHR_DrynessChangeable",
-        "Default": "0",
-        "Key": "0x414"
+        "Key": "0x414",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1028,13 +1025,13 @@
         "AttributeName": "System_EndOfCycleBeepVolume",
         "DeviceIO": "RW",
         "MappedAttributeName": "System_EndOfCycleBeepVolume",
+        "Key": "0x202",
         "Default": "0",
         "EnumValues": {
           "0": "Off",
           "1": "Medium",
           "2": "High"
-        },
-        "Key": "0x202"
+        }
       },
       {
         "IsTemplate": false,
@@ -1045,8 +1042,8 @@
         "AttributeName": "Appliance_ApplianceClaimedStatus",
         "DeviceIO": "RW",
         "MappedAttributeName": "Appliance_ApplianceClaimedStatus",
-        "Default": "0",
-        "Key": "0x116"
+        "Key": "0x116",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1057,6 +1054,7 @@
         "AttributeName": "Appliance_ServiceMode",
         "DeviceIO": "RW",
         "MappedAttributeName": "Appliance_ServiceMode",
+        "Key": "0x10C",
         "Default": "0",
         "EnumValues": {
           "1": "KeyEncoderTest",
@@ -1065,8 +1063,7 @@
           "4": "SwVersionDisplay",
           "5": "DisplayNextError",
           "6": "ClearErrors"
-        },
-        "Key": "0x10C"
+        }
       },
       {
         "IsTemplate": false,
@@ -1077,8 +1074,8 @@
         "AttributeName": "SetDNSNames",
         "DeviceIO": "RW",
         "MappedAttributeName": "SetDNSNames",
-        "Default": "0",
-        "Key": "0x0"
+        "Key": "0x0",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1087,15 +1084,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "Compartment_EstTimeRemaining",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "Compartment_EstTimeRemaining",
+        "Key": "0x303",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "65535"
         },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "Compartment_EstTimeRemaining",
-        "Default": "0",
-        "Key": "0x303"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1106,8 +1103,8 @@
         "AttributeName": "CycleOptionsWHR_WrinkleShieldChangeable",
         "DeviceIO": "RO",
         "MappedAttributeName": "CycleOptionsWHR_WrinkleShieldChangeable",
-        "Default": "0",
-        "Key": "0x418"
+        "Key": "0x418",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1118,8 +1115,8 @@
         "AttributeName": "CycleOptionsWHR_EcoBoostChangeable",
         "DeviceIO": "RO",
         "MappedAttributeName": "CycleOptionsWHR_EcoBoostChangeable",
-        "Default": "0",
-        "Key": "0x412"
+        "Key": "0x412",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1140,15 +1137,15 @@
         "IsTimeSeries": false,
         "DataType": "BEInteger32Bit",
         "AttributeName": "CycleEnergyConsumption",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "CycleEnergyConsumption",
+        "Key": "0x0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-2147483648",
           "Max": "2147483647"
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "CycleEnergyConsumption",
-        "Default": "0",
-        "Key": "0x0"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1171,8 +1168,8 @@
         "AttributeName": "CycleOptionsWHR_DeepClean",
         "DeviceIO": "RW",
         "MappedAttributeName": "CycleOptionsWHR_DeepClean",
-        "Default": "0",
-        "Key": "0x40D"
+        "Key": "0x40D",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1196,13 +1193,13 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Compartment_AirFlowStatus",
         "Default": "0",
+        "Key": "0x305",
         "EnumValues": {
           "0": "Unknown",
           "1": "Detecting",
           "2": "Good",
           "3": "Poor"
-        },
-        "Key": "0x305"
+        }
       },
       {
         "IsTemplate": false,
@@ -1225,8 +1222,8 @@
         "AttributeName": "Category",
         "DeviceIO": "RO",
         "MappedAttributeName": "Category",
-        "Default": "0",
-        "Key": "0x0"
+        "Key": "0x0",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1237,8 +1234,8 @@
         "AttributeName": "Zip",
         "DeviceIO": "RW",
         "MappedAttributeName": "Zip",
-        "Default": "0",
-        "Key": "0x0"
+        "Key": "0x0",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1249,8 +1246,8 @@
         "AttributeName": "CycleOptionsWHR_ManualDryTimeChangeable",
         "DeviceIO": "RO",
         "MappedAttributeName": "CycleOptionsWHR_ManualDryTimeChangeable",
-        "Default": "0",
-        "Key": "0x416"
+        "Key": "0x416",
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1259,15 +1256,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "Appliance_SmartGridModeHours",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Appliance_SmartGridModeHours",
+        "Key": "0x108",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Appliance_SmartGridModeHours",
-        "Default": "0",
-        "Key": "0x108"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1276,15 +1273,15 @@
         "IsTimeSeries": false,
         "DataType": "BEInteger32Bit",
         "AttributeName": "DeviceInformationChanged",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "DeviceInformationChanged",
+        "Key": "0x0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-2147483648",
           "Max": "2147483647"
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "DeviceInformationChanged",
-        "Default": "0",
-        "Key": "0x0"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1293,15 +1290,15 @@
         "IsTimeSeries": false,
         "DataType": "Integer8Bit",
         "AttributeName": "BrandID",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "BrandID",
+        "Key": "0x0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-128",
           "Max": "127"
         },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "BrandID",
-        "Default": "0",
-        "Key": "0x0"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1310,15 +1307,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "Appliance_SmartGridCompliant",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "Appliance_SmartGridCompliant",
+        "Key": "0xC02D",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
         },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "Appliance_SmartGridCompliant",
-        "Default": "0",
-        "Key": "0xC02D"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1327,15 +1324,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "Compartment_Odometer",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "Compartment_Odometer",
+        "Key": "0x301",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "2147483647"
         },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "Compartment_Odometer",
-        "Default": "0",
-        "Key": "0x301"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1383,12 +1380,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "CycleOptionsWHR_WrinkleShield",
         "Default": "0",
+        "Key": "0x417",
         "EnumValues": {
           "0": "Off",
           "1": "On",
           "2": "Steam"
-        },
-        "Key": "0x417"
+        }
       },
       {
         "IsTemplate": false,
@@ -1397,15 +1394,15 @@
         "IsTimeSeries": false,
         "DataType": "BEInteger32Bit",
         "AttributeName": "DeviceInformationEmpty",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "DeviceInformationEmpty",
+        "Key": "0x0",
         "RangeValues": {
           "StepSize": "1",
           "Min": "-2147483648",
           "Max": "2147483647"
         },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "DeviceInformationEmpty",
-        "Default": "0",
-        "Key": "0x0"
+        "Default": "0"
       },
       {
         "IsTemplate": false,
@@ -1535,15 +1532,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "CycleOptionsWHR_SoilLevel",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "CycleOptionsWHR_SoilLevel",
+        "Default": "0",
+        "Key": "0x407",
         "RangeValues": {
           "StepSize": "1",
           "Min": "0",
           "Max": "255"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "CycleOptionsWHR_SoilLevel",
-        "Default": "0",
-        "Key": "0x407"
+        }
       },
       {
         "IsTemplate": false,
@@ -1675,12 +1672,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Compartment_DampBeep",
         "Default": "0",
+        "Key": "0x306",
         "EnumValues": {
           "0": "Off",
           "1": "Medium",
           "2": "High"
-        },
-        "Key": "0x306"
+        }
       },
       {
         "IsTemplate": false,
@@ -1711,1438 +1708,1380 @@
         "Default": "0",
         "Key": "0x109"
       }
-    ]
-  },
-  "Personality": {
-    "Key": "DDM_Dryer_V10K_V1",
-    "Capability": [
-      {
-        "Cycles": [
-          {
-            "CycleId": "Mixed_Normal",
-            "HowTo": "Normal",
-            "WhatTo": "Mixed",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp3",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 2,
-              "Default": true,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 2,
-              "Default": "Normal",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Mixed_Gentle",
-            "HowTo": "Gentle",
-            "WhatTo": "Mixed",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "Normal",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Towels_Gentle",
-            "HowTo": "Gentle",
-            "WhatTo": "Towels",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp3",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "MoreDry",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Towels_Normal",
-            "HowTo": "Normal",
-            "WhatTo": "Towels",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp4",
-              "Allowed": [
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "MoreDry",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Delicate_Normal",
-            "HowTo": "Normal",
-            "WhatTo": "Delicates",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp1",
-                "Temp2",
-                "Temp3"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "Normal",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Delicate_Gentle",
-            "HowTo": "Gentle",
-            "WhatTo": "Delicates",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp1",
-              "Allowed": [
-                "Temp1",
-                "Temp2"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "Normal",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Casuals_Normal",
-            "HowTo": "Normal",
-            "WhatTo": "Casuals",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp1",
-                "Temp2",
-                "Temp3"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "Steam"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "Normal",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Casuals_Gentle",
-            "HowTo": "Gentle",
-            "WhatTo": "Casuals",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp1",
-              "Allowed": [
-                "Temp1",
-                "Temp2",
-                "Temp3"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false,
-                true
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "Normal",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "BulkySheets_Normal",
-            "HowTo": "Normal",
-            "WhatTo": "BulkySheets",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp3",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "Normal",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "BulkySheets_Gentle",
-            "HowTo": "Gentle",
-            "WhatTo": "BulkySheets",
-            "Temperature": {
-              "Retention": 1,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 4,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 4,
-              "Default": "Normal",
-              "Allowed": [
-                "LessDry1",
-                "LessDry2",
-                "Normal",
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Mixed_Sanitize",
-            "HowTo": "Sanitize",
-            "WhatTo": "Mixed",
-            "Temperature": {
-              "Retention": 0,
-              "Default": "Temp4",
-              "Allowed": [
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Default": "MoreDry",
-              "Allowed": [
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Towels_Sanitize",
-            "HowTo": "Sanitize",
-            "WhatTo": "Towels",
-            "Temperature": {
-              "Retention": 0,
-              "Default": "Temp4",
-              "Allowed": [
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Default": "MoreDry",
-              "Allowed": [
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Casuals_Sanitize",
-            "HowTo": "Sanitize",
-            "WhatTo": "Casuals",
-            "Temperature": {
-              "Retention": 0,
-              "Default": "Temp4",
-              "Allowed": [
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Default": "MoreDry",
-              "Allowed": [
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "BulkySheets_Sanitize",
-            "HowTo": "Sanitize",
-            "WhatTo": "BulkySheets",
-            "Temperature": {
-              "Retention": 0,
-              "Default": "Temp4",
-              "Allowed": [
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Default": "MoreDry",
-              "Allowed": [
-                "MoreDry"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Mixed_SteamRefresh",
-            "HowTo": "SteamRefresh",
-            "WhatTo": "Mixed",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Default": "Normal",
-              "Allowed": [
-                "Normal"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Casuals_SteamRefresh",
-            "HowTo": "SteamRefresh",
-            "WhatTo": "Casuals",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Default": "Normal",
-              "Allowed": [
-                "Normal"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "Towels_SteamRefresh",
-            "HowTo": "SteamRefresh",
-            "WhatTo": "Towels",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp4",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Default": "Normal",
-              "Allowed": [
-                "Normal"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "BulkySheets_SteamRefresh",
-            "HowTo": "SteamRefresh",
-            "WhatTo": "BulkySheets",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Default": "Normal",
-              "Allowed": [
-                "Normal"
-              ]
-            },
-            "ManualDryTime": {
-              "Min": 0,
-              "Settable": false,
-              "Max": 0,
-              "Retention": 0,
-              "Default": 0
-            }
-          },
-          {
-            "CycleId": "TimedDry",
-            "HowTo": "TimedDry",
-            "WhatTo": "Mixed",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp3",
-              "Allowed": [
-                "Temp0",
-                "Temp1",
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Allowed": []
-            },
-            "ManualDryTime": {
-              "Min": 1,
-              "Settable": true,
-              "Max": 150,
-              "Retention": 4,
-              "Default": 50
-            }
-          },
-          {
-            "CycleId": "TimedDry",
-            "HowTo": "TimedDry",
-            "WhatTo": "Towels",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp4",
-              "Allowed": [
-                "Temp0",
-                "Temp1",
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Allowed": []
-            },
-            "ManualDryTime": {
-              "Min": 1,
-              "Settable": true,
-              "Max": 150,
-              "Retention": 4,
-              "Default": 55
-            }
-          },
-          {
-            "CycleId": "TimedDry",
-            "HowTo": "TimedDry",
-            "WhatTo": "Delicates",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp0",
-                "Temp1",
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Allowed": []
-            },
-            "ManualDryTime": {
-              "Min": 1,
-              "Settable": true,
-              "Max": 150,
-              "Retention": 4,
-              "Default": 20
-            }
-          },
-          {
-            "CycleId": "TimedDry",
-            "HowTo": "TimedDry",
-            "WhatTo": "Casuals",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp2",
-              "Allowed": [
-                "Temp0",
-                "Temp1",
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Allowed": []
-            },
-            "ManualDryTime": {
-              "Min": 1,
-              "Settable": true,
-              "Max": 150,
-              "Retention": 4,
-              "Default": 30
-            }
-          },
-          {
-            "CycleId": "TimedDry",
-            "HowTo": "TimedDry",
-            "WhatTo": "BulkySheets",
-            "Temperature": {
-              "Retention": 4,
-              "Default": "Temp3",
-              "Allowed": [
-                "Temp0",
-                "Temp1",
-                "Temp2",
-                "Temp3",
-                "Temp4"
-              ]
-            },
-            "StaticGuard": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "WrinkleShield": {
-              "Retention": 4,
-              "Default": "Off",
-              "Allowed": [
-                "Off",
-                "On"
-              ]
-            },
-            "EcoBoost": {
-              "Retention": 0,
-              "Default": false,
-              "Allowed": [
-                false
-              ]
-            },
-            "SendAsId": false,
-            "Dryness": {
-              "Retention": 0,
-              "Allowed": []
-            },
-            "ManualDryTime": {
-              "Min": 1,
-              "Settable": true,
-              "Max": 150,
-              "Retention": 4,
-              "Default": 75
-            }
-          }
-        ],
-        "FaultCodes": [
-          "F1E1",
-          "F1E3",
-          "F1E4",
-          "F1E5",
-          "F2E4",
-          "F2E5",
-          "F4E3",
-          "F4E4",
-          "F6E2",
-          "F6E3"
-        ],
-        "PostCycles": [
-          {
-            "CycleOptions": {
-              "CycleId": "TimedDry",
-              "Temperature": "Temp0",
-              "WrinkleShield": "On",
-              "ManualDryTime": 1
-            },
-            "Key": "WrinkleRelease"
-          }
-        ],
-        "SpecialtyCycles": [
-          {
-            "CycleOptions": {
-              "HowTo": "Normal",
-              "WhatTo": "Delicates",
-              "Temperature": "Temp1",
-              "Dryness": "Normal"
-            },
-            "Key": "AthleticHighPerformanceWear"
-          },
-          {
-            "CycleOptions": {
-              "HowTo": "Normal",
-              "WhatTo": "Casuals",
-              "Temperature": "Temp2",
-              "Dryness": "Normal"
-            },
-            "Key": "BusinessCasual"
-          },
-          {
-            "CycleOptions": {
-              "HowTo": "Normal",
-              "WhatTo": "BulkySheets",
-              "Temperature": "Temp3",
-              "Dryness": "Normal"
-            },
-            "Key": "Comforters"
-          },
-          {
-            "CycleOptions": {
-              "HowTo": "Gentle",
-              "WhatTo": "Delicates",
-              "Temperature": "Temp1",
-              "Dryness": "LessDry2"
-            },
-            "Key": "HandwashFabrics"
-          },
-          {
-            "CycleOptions": {
-              "HowTo": "Normal",
-              "WhatTo": "Towels",
-              "Temperature": "Temp4",
-              "Dryness": "MoreDry"
-            },
-            "Key": "HeavyDuty"
-          },
-          {
-            "CycleOptions": {
-              "HowTo": "Gentle",
-              "WhatTo": "Delicates",
-              "Temperature": "Temp1",
-              "Dryness": "LessDry2"
-            },
-            "Key": "Intimates"
-          },
-          {
-            "CycleOptions": {
-              "HowTo": "Normal",
-              "WhatTo": "BulkySheets",
-              "Temperature": "Temp3",
-              "Dryness": "Normal"
-            },
-            "Key": "SleepingBags"
-          },
-          {
-            "CycleOptions": {
-              "HowTo": "Normal",
-              "WhatTo": "Towels",
-              "Temperature": "Temp4",
-              "Dryness": "Normal"
-            },
-            "Key": "Towels"
-          }
-        ]
-      }
     ],
-    "Rulesets": [
+    "Key": "DDM_Dryer_V10K_V1"
+  },
+  "personality": {
+    "Key": "DDM_Dryer_V10K_V1",
+    "capability": [
       {
-        "CompartmentLoadFreshEnabled": {
-          "State": {
-            "LoadFreshEnabled": {
-              "Appliance_RemoteControlEnabled": true,
-              "Compartment_State": [
-                "Complete"
-              ],
-              "Online": true
-            }
-          }
-        },
-        "CompartmentWrinkleRelease": {
-          "State": {
-            "CycleOptionsWHR_WrinkleShield": {
-              "Appliance_RemoteControlEnabled": true,
-              "Compartment_State": [
-                "Complete"
-              ],
-              "Online": true
-            }
-          }
-        },
-        "CompartmentDelayStartAllowed": {
-          "State": {
-            "Start": {
-              "Appliance_RemoteControlEnabled": true,
-              "Compartment_State": [
-                "Programming",
-                "RemoteStart"
-              ],
-              "Online": true
+        "CavityOrder": [
+          "DryCavity"
+        ],
+        "Capability": {
+          "DryCavity": {
+            "CapabilityData": {
+              "Compartment_CycleIdMixed_Normal": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp3"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": true
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdMixed_Gentle": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdMixed_Sanitize": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp4"
+                    ],
+                    "Default": "Temp4"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "MoreDry"
+                    ],
+                    "Default": "MoreDry"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdMixed_SteamRefresh": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "Normal"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdMixed_TimedDry": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp0",
+                      "Temp1",
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp3"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_ManualDryTime": {
+                    "Default": 50,
+                    "Min": 1,
+                    "Max": 150,
+                    "Step": 1
+                  }
+                }
+              },
+              "Compartment_CycleIdTowels_Normal": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp4"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "MoreDry"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdTowels_Gentle": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp3"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "MoreDry"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdTowels_Sanitize": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp4"
+                    ],
+                    "Default": "Temp4"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "MoreDry"
+                    ],
+                    "Default": "MoreDry"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdTowels_SteamRefresh": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp4"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "Normal"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdTowels_TimedDry": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp0",
+                      "Temp1",
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp4"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_ManualDryTime": {
+                    "Default": 55,
+                    "Min": 1,
+                    "Max": 150,
+                    "Step": 1
+                  }
+                }
+              },
+              "Compartment_CycleIdDelicate_Normal": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp1",
+                      "Temp2",
+                      "Temp3"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdDelicate_Gentle": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp1",
+                      "Temp2"
+                    ],
+                    "Default": "Temp1"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdDelicate_TimedDry": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp0",
+                      "Temp1",
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_ManualDryTime": {
+                    "Default": 20,
+                    "Min": 1,
+                    "Max": 150,
+                    "Step": 1
+                  }
+                }
+              },
+              "Compartment_CycleIdCasuals_Normal": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp1",
+                      "Temp2",
+                      "Temp3"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "Steam"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdCasuals_Gentle": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp1",
+                      "Temp2",
+                      "Temp3"
+                    ],
+                    "Default": "Temp1"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false,
+                      true
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdCasuals_Sanitize": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp4"
+                    ],
+                    "Default": "Temp4"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "MoreDry"
+                    ],
+                    "Default": "MoreDry"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdCasuals_SteamRefresh": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "Normal"
+                    ],
+                    "Default": "Normal"
+                  }
+                }
+              },
+              "Compartment_CycleIdCasuals_TimedDry": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp0",
+                      "Temp1",
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_ManualDryTime": {
+                    "Default": 30,
+                    "Min": 1,
+                    "Max": 150,
+                    "Step": 1
+                  }
+                }
+              },
+              "Compartment_CycleIdBulkySheets_Normal": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp3"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdBulkySheets_Gentle": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "LessDry1",
+                      "LessDry2",
+                      "Normal",
+                      "MoreDry"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdBulkySheets_Sanitize": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp4"
+                    ],
+                    "Default": "Temp4"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "MoreDry"
+                    ],
+                    "Default": "MoreDry"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdBulkySheets_SteamRefresh": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp2"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_Dryness": {
+                    "Enumeration": [
+                      "Normal"
+                    ],
+                    "Default": "Normal"
+                  }
+                },
+                "NonEditable": {
+                  "CycleOptionsWHR_ManualDryTime": 0
+                }
+              },
+              "Compartment_CycleIdBulkySheets_TimedDry": {
+                "Required": {
+                  "CycleOptionsWHR_Temperature": {
+                    "Enumeration": [
+                      "Temp0",
+                      "Temp1",
+                      "Temp2",
+                      "Temp3",
+                      "Temp4"
+                    ],
+                    "Default": "Temp3"
+                  },
+                  "CycleOptionsWHR_StaticGuard": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_WrinkleShield": {
+                    "Enumeration": [
+                      "Off",
+                      "On"
+                    ],
+                    "Default": "Off"
+                  },
+                  "CycleOptionsWHR_EcoBoost": {
+                    "Bool": [
+                      false
+                    ],
+                    "Default": false
+                  },
+                  "CycleOptionsWHR_ManualDryTime": {
+                    "Default": 75,
+                    "Min": 1,
+                    "Max": 150,
+                    "Step": 1
+                  }
+                }
+              }
             },
-            "Update": {
-              "Appliance_RemoteControlEnabled": true,
-              "Compartment_State": [
-                "DelayStart",
-                "DelayPaused"
-              ],
-              "Online": true
-            },
-            "None": {
-              "Appliance_RemoteControlEnabled": false,
-              "Compartment_State": [],
-              "Online": false
+            "SetCycle": {
+              "Mixed": {
+                "Compartment_CycleIdMixed_Normal": {
+                  "Name": "MixedNormal",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Mixed_Normal"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdMixed_Gentle": {
+                  "Name": "MixedGentle",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Mixed_Gentle"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdMixed_Sanitize": {
+                  "Name": "MixedSanitize",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Mixed_Sanitize"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdMixed_SteamRefresh": {
+                  "Name": "Mixed_SteamRefresh",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Mixed_SteamRefresh"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdMixed_TimedDry": {
+                  "Name": "MixedTimedDry",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "TimedDry"
+                    ]
+                  }
+                }
+              },
+              "Towels": {
+                "Compartment_CycleIdTowels_Normal": {
+                  "Name": "TowelsNormal",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Towels_Normal"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdTowels_Gentle": {
+                  "Name": "TowelsGentle",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Towels_Gentle"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdTowels_Sanitize": {
+                  "Name": "TowelsSanitize",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Towels_Sanitize"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdTowels_SteamRefresh": {
+                  "Name": "TowelsSteamRefresh",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Towels_SteamRefresh"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdTowels_TimedDry": {
+                  "Name": "TowelsTimedDry",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "TimedDry"
+                    ]
+                  }
+                }
+              },
+              "Delicates": {
+                "Compartment_CycleIdDelicate_Normal": {
+                  "Name": "DelicateNormal",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Delicate_Normal"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdDelicate_Gentle": {
+                  "Name": "DelicateGentle",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Delicate_Gentle"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdDelicate_TimedDry": {
+                  "Name": "DelicateTimedDry",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "TimedDry"
+                    ]
+                  }
+                }
+              },
+              "Casuals": {
+                "Compartment_CycleIdCasuals_Normal": {
+                  "Name": "CasualsNormal",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Casuals_Normal"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdCasuals_Gentle": {
+                  "Name": "CasualsGentle",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Casuals_Gentle"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdCasuals_Sanitize": {
+                  "Name": "CasualsSanitize",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Casuals_Sanitize"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdCasuals_SteamRefresh": {
+                  "Name": "CasualsSteamRefresh",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "Casuals_SteamRefresh"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdCasuals_TimedDry": {
+                  "Name": "CasualsTimedDry",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "TimedDry"
+                    ]
+                  }
+                }
+              },
+              "BulkySheets": {
+                "Compartment_CycleIdBulkySheets_Normal": {
+                  "Name": "BulkySheetsNormal",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "BulkySheets_Normal"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdBulkySheets_Gentle": {
+                  "Name": "BulkySheetsGentle",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "BulkySheets_Gentle"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdBulkySheets_Sanitize": {
+                  "Name": "BulkySheetsSanitize",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "BulkySheets_Sanitize"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdBulkySheets_SteamRefresh": {
+                  "Name": "BulkySheetsSteamRefresh",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "BulkySheets_SteamRefresh"
+                    ]
+                  }
+                },
+                "Compartment_CycleIdBulkySheets_TimedDry": {
+                  "Name": "BulkySheetsTimedDry",
+                  "Attributes": {
+                    "Compartment_CycleId": [
+                      "TimedDry"
+                    ]
+                  }
+                }
+              },
+              "Default": "Compartment_CycleIdMixed_Normal"
             }
           }
         },
-        "CompartmentPostCycleEnabled": {
-          "State": {
-            "PostCycle": {
-              "RestrictedCycleIds": [],
-              "Compartment_State": [
-                "Complete"
+        "AttributesMapping": {
+          "Common": {
+            "RemoteStatus": "Appliance_RemoteControlEnabled",
+            "Online": "Online",
+            "QuietModeEnabled": "Appliance_QuietModeEnabled"
+          },
+          "DryCavity": {
+            "CycleName": [
+              "Compartment_CycleId"
+            ],
+            "TimeRemaining": "Compartment_EstTimeRemaining",
+            "MachineState": "Compartment_State",
+            "Temperature": "CycleOptionsWHR_Temperature",
+            "Dryness": "CycleOptionsWHR_Dryness",
+            "WrinkleShield": "CycleOptionsWHR_WrinkleShield",
+            "EcoBoostEnable": "CycleOptionsWHR_EcoBoost",
+            "StaticGuardEnable": "CycleOptionsWHR_StaticGuard",
+            "ManualDryTime": "CycleOptionsWHR_ManualDryTime",
+            "AirflowStatus": "Compartment_AirFlowStatus",
+            "CycleState": "Compartment_CycleState",
+            "WhatTo": "CycleOptionsWHR_WhatTo",
+            "HowTo": "CycleOptionsWHR_HowTo"
+          }
+        },
+        "Features": {
+          "Common": {
+            "ApplianceDocuments": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
               ]
-            }
-          }
-        },
-        "CompartmentStartPauseAllowed": {
-          "State": {
-            "Pause": {
-              "Compartment_State": [
-                "Running",
-                "PostRunning"
-              ],
-              "Online": true
             },
-            "Start": {
-              "Appliance_RemoteControlEnabled": true,
-              "Compartment_State": [
-                "Programming",
-                "DelayStart",
-                "DelayPaused",
-                "RemoteStart",
-                "Paused",
-                "PostRunningPaused"
-              ],
-              "Online": true
-            },
-            "None": {
-              "Compartment_State": [],
-              "Online": false
-            }
-          }
-        },
-        "CompartmentDownloadEnabled": {
-          "State": {
-            "Compartment_DownloadAndGo": {
-              "ApplianceState": [
-                "Standby",
-                "Cycle"
-              ],
-              "Online": true,
-              "Compartment_State": [
-                "Programming",
-                "Idle",
-                "DelayPaused",
-                "DelayStart",
-                "RemoteStart",
-                "Complete",
-                "PostRunning",
-                "PostRunningPaused"
+            "Notifications": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
               ]
+            },
+            "FaultCodes": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            },
+            "RemoteStatus": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "Appliance_RemoteControlEnabled"
+              }
+            },
+            "Online": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "Online"
+              }
+            },
+            "ControlLock": {
+              "Visible": false,
+              "AvailableIn": []
+            },
+            "QuietMode": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "Appliance_QuietModeEnabled"
+              }
+            }
+          },
+          "DryCavity": {
+            "SetCycle": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "Compartment_State"
+              },
+              "StatusAttributes": [
+                "Compartment_CycleId",
+                "CycleOptionsWHR_Temperature",
+                "CycleOptionsWHR_StaticGuard",
+                "CycleOptionsWHR_WrinkleShield",
+                "CycleOptionsWHR_EcoBoost",
+                "CycleOptionsWHR_Dryness",
+                "CycleOptionsWHR_ManualDryTime",
+                "System_Command"
+              ],
+              "SendCommandAttributes": [
+                "Compartment_DownloadCyclePersist",
+                "CycleOptionsWHR_WhatTo",
+                "CycleOptionsWHR_HowTo",
+                "Compartment_CycleId",
+                "CycleOptionsWHR_Temperature",
+                "CycleOptionsWHR_Dryness",
+                "CycleOptionsWHR_ManualDryTime",
+                "CycleOptionsWHR_WrinkleShield",
+                "CycleOptionsWHR_StaticGuard",
+                "CycleOptionsWHR_EcoBoost",
+                "System_Command"
+              ],
+              "SetOperationsMapping": {
+                "Operation": "System_Command"
+              }
+            },
+            "CyclesHistory": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "SendCommandAttributes": [
+                "Compartment_CycleId",
+                "CycleOptionsWHR_Temperature",
+                "CycleOptionsWHR_StaticGuard",
+                "CycleOptionsWHR_WrinkleShield",
+                "CycleOptionsWHR_EcoBoost",
+                "CycleOptionsWHR_Dryness",
+                "CycleOptionsWHR_ManualDryTime",
+                "System_Command"
+              ],
+              "StateAttributes": {},
+              "SetOperationsMapping": {
+                "Operation": "System_Command"
+              }
+            },
+            "FavoriteCycles": {
+              "Visible": true,
+              "ReadOnly": false,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StatusAttributes": [],
+              "StateAttributes": {},
+              "SendCommandAttributes": [
+                "Compartment_CycleId",
+                "CycleOptionsWHR_Temperature",
+                "CycleOptionsWHR_StaticGuard",
+                "CycleOptionsWHR_WrinkleShield",
+                "CycleOptionsWHR_EcoBoost",
+                "CycleOptionsWHR_Dryness",
+                "CycleOptionsWHR_ManualDryTime",
+                "System_Command"
+              ],
+              "SetOperationsMapping": {
+                "Operation": "System_Command"
+              }
             }
           }
         },
-        "EnergyHistory": {
-          "isLegacy": "true",
-          "groupBy": "Compartment_CycleSummary",
-          "attributes": "Appliance_TotalWattsHour,Compartment_DownloadAndGo,Compartment_CycleId,CycleOptionsWHR_WhatTo,CycleOptionsWHR_HowTo,CycleOptionsWHR_Dryness,CycleOptionsWHR_EcoBoost,CycleOptionsWHR_ManualDryTime,CycleOptionsWHR_StaticGuard,CycleOptionsWHR_Temperature,CycleOptionsWHR_WrinkleShield"
+        "ApplianceRulesets": {
+          "DryCavity": {
+            "Runtime": [
+              {
+                "ruleName": "Disable All Features when appliance is offline",
+                "description": "Disable All Features when appliance is offline",
+                "features": {
+                  "SetCycle": false
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "Online",
+                  "valueOperator": "=",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          "Common": {
+            "Runtime": [
+              {
+                "ruleName": "Disable All Features when appliance is offline",
+                "description": "Disable All Features when appliance is offline",
+                "features": {
+                  "SetCycle": false
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "Online",
+                  "valueOperator": "=",
+                  "value": 0
+                }
+              }
+            ]
+          }
         },
-        "FaultCodeHistory": {
-          "isLegacy": "true",
-          "groupBy": "System_FaultCode",
-          "attributes": "System_FaultCode"
+        "QueryParams": {
+          "Common": {
+            "FaultCodeHistory": {
+              "isLegacy": true,
+              "attributes": "System_FaultCode",
+              "groupBy": "System_FaultCode"
+            }
+          }
         }
       }
     ]
   },
-  "Alerts": {
-    "Key": "DDM_Dryer_V10K_V1",
-    "Alerts": [
+  "alerts": {
+    "alerts": [
       {
         "ApplianceAlerts": [
           {
@@ -3183,7 +3122,8 @@
           }
         ]
       }
-    ]
+    ],
+    "Key": "DDM_Dryer_V10K_V1"
   },
   "Services": {
     "_id": "DDM_Dryer_V10K_V1",
@@ -3227,9 +3167,9 @@
               {
                 "Key": "QuietWhileHome",
                 "Type": "home_away",
-                "value": true,
                 "commandName": "",
-                "commandValue": ""
+                "commandValue": "",
+                "value": true
               },
               {
                 "Key": "EcoBoost",
@@ -3289,5 +3229,7 @@
         ]
       }
     ]
-  }
+  },
+  "_id": "DDM_Dryer_V10K_V1",
+  "_rev": "13-bf1db302aea649137915b70c9432c983"
 }
