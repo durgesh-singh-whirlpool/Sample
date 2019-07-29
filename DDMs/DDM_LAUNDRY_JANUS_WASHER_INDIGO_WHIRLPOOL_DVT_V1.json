@@ -4624,28 +4624,7 @@
 									}
 								}
 							},
-							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
-						},
-						"UtilityCycle": {
-							"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
-								"Name": "WashCycleDrainSpin",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"WashCycleDrainSpin"
-									]
-								}
-							},
-							"WashCavity_CycleSetCycleSelectWashCycleCleanWasher": {
-								"Name": "WashCycleCleanWasher",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"WashCycleCleanWasher"
-									]
-								}
-							},
-							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
-						},
-						"DownloadAndGo": {
+							"DownloadAndGo": {
 							"Cavity_CycleSetCycleNameActivewear": {
 								"Name": "Activewear",
 								"Attributes": {
@@ -4734,6 +4713,27 @@
 									]
 								}
 							}
+						},
+						"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
+						},
+						"UtilityCycle": {
+							"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
+								"Name": "WashCycleDrainSpin",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleDrainSpin"
+									]
+								}
+							},
+							"WashCavity_CycleSetCycleSelectWashCycleCleanWasher": {
+								"Name": "WashCycleCleanWasher",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleCleanWasher"
+									]
+								}
+							},
+							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
 						},
 						"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
