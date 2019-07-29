@@ -3201,7 +3201,7 @@
 									"Name": "MixedNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
-											"WashCycleNormal"
+											"Mixed_Normal"
 										]
 									}
 								},
