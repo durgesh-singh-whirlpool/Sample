@@ -3510,23 +3510,32 @@
 								"State": "Compartment_State"
 							},
 							"StatusAttributes": [
+								"Compartment_DownloadCyclePersist",
+							"CycleOptionsWHR_WhatTo",
+							"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
-								"CycleOptionsWHR_ExtraRinse",
 								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
 								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
-								"System_Command"
+								"CycleOptionsWHR_Presoak"
 							],
 							"SendCommandAttributes": [
+							"Compartment_DownloadCyclePersist",
+							"CycleOptionsWHR_WhatTo",
+							"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
-								"CycleOptionsWHR_ExtraRinse",
 								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
 								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
 								"System_Command"
 							],
 							"SetOperationsMapping": {
@@ -3540,13 +3549,18 @@
 								"CA"
 							],
 							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+							"CycleOptionsWHR_WhatTo",
+							"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
-								"CycleOptionsWHR_ExtraRinse",
 								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
 								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
 								"System_Command"
 							],
 							"StateAttributes": {},
@@ -3564,13 +3578,18 @@
 							"StatusAttributes": [],
 							"StateAttributes": {},
 							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+							"CycleOptionsWHR_WhatTo",
+							"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
-								"CycleOptionsWHR_ExtraRinse",
 								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
 								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
 								"System_Command"
 							],
 							"SetOperationsMapping": {
