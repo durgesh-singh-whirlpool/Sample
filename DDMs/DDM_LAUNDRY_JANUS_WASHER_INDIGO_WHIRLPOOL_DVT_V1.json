@@ -4714,8 +4714,6 @@
 								}
 							}
 						},
-						"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
-						},
 						"UtilityCycle": {
 							"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
 								"Name": "WashCycleDrainSpin",
@@ -4734,6 +4732,8 @@
 								}
 							},
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
+						},
+						"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
 						},
 						"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
