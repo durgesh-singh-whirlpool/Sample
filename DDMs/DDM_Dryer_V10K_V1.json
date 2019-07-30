@@ -1765,7 +1765,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
+									
 								}
 							},
 							"Compartment_CycleIdMixed_Gentle": {
@@ -1810,7 +1810,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
+									
 								}
 							},
 							"Compartment_CycleIdMixed_Sanitize": {
@@ -1848,7 +1848,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
+									
 								}
 							},
 							"Compartment_CycleIdMixed_SteamRefresh": {
@@ -1888,7 +1888,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
+									
 								}
 							},
 							"Compartment_CycleIdMixed_TimedDry": {
@@ -1970,7 +1970,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
+								
 								}
 							},
 							"Compartment_CycleIdTowels_Gentle": {
@@ -2014,7 +2014,6 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
 								}
 							},
 							"Compartment_CycleIdTowels_Sanitize": {
@@ -2052,7 +2051,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
+									
 								}
 							},
 							"Compartment_CycleIdTowels_SteamRefresh": {
@@ -2092,7 +2091,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
+									
 								}
 							},
 							"Compartment_CycleIdTowels_TimedDry": {
@@ -2176,8 +2175,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdDelicate_Gentle": {
 								"Required": {
@@ -2220,8 +2218,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdDelicate_TimedDry": {
 								"Required": {
@@ -2304,8 +2301,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdCasuals_Gentle": {
 								"Required": {
@@ -2349,8 +2345,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdCasuals_Sanitize": {
 								"Required": {
@@ -2387,8 +2382,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdCasuals_SteamRefresh": {
 								"Required": {
@@ -2506,8 +2500,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdBulkySheets_Gentle": {
 								"Required": {
@@ -2549,8 +2542,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdBulkySheets_Sanitize": {
 								"Required": {
@@ -2587,8 +2579,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdBulkySheets_SteamRefresh": {
 								"Required": {
@@ -2627,8 +2618,7 @@
 									}
 								},
 								"NonEditable": {
-									"CycleOptionsWHR_ManualDryTime": 0
-								}
+												}
 							},
 							"Compartment_CycleIdBulkySheets_TimedDry": {
 								"Required": {
@@ -3077,7 +3067,8 @@
 							"groupBy": "System_FaultCode",
 							"attributes": "System_FaultCode"
 						}
-					}
+					},
+					"DryCavity":{}
 				}
 			}
 		]
