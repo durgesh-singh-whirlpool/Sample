@@ -1790,7 +1790,7 @@
             ],
             "TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
             "MachineState": "Cavity_OperationStatusMachineState",
-            "DoorOpenStatus": "Cavity_OperationStatusDoorOpen",
+            "DoorOpen": "Cavity_OperationStatusDoorOpen",
             "FilterStatus": "Cavity_OperationStatusCleanFilter",
             "CycleState": "Cavity_CycleStatusCycleState",
             "OdometerStatus": "Cavity_CycleStatusOdometer",
@@ -2031,6 +2031,23 @@
                   "key": "Cavity_TimeSetDelayTime",
                   "valueOperator": ">",
                   "value": 0
+                }
+              }
+            ]
+          },
+          "Common": {
+            "Runtime": [
+              {
+                "ruleName": "Disable quitemode when appliance is on Sabbath",
+                "description": "Disable quitemode when appliance is on Sabbath",
+                "features": {
+                  "QuietMode" : false
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "Sys_OperationSetSabbathModeEnabled",
+                  "valueOperator": "=",
+                  "value": 1
                 }
               }
             ]
