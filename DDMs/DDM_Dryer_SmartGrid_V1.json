@@ -1,7 +1,7 @@
 {
   "_id": "DDM_Dryer_SmartGrid_V1",
   "_rev": "15-074dac21d22a40f3fbb1d907cdf6e5b6",
-  "DDM": {
+  "ddm": {
     "_id": "DDM_Dryer_SmartGrid_V1",
     "ddmName": "DDM_Dryer_SmartGrid_V1",
     "modelNumber": "WEL98HEBU0",
@@ -13,7 +13,7 @@
     "ccuriVersion": "1.0",
     "ccURI": "ecm_dryer"
   },
-  "DataModel": {
+  "dataModel": {
     "Key": "DDM_Dryer_SmartGrid_V1",
     "attributes": [
       {
@@ -1256,11 +1256,145 @@
       }
     ]
   },
-  "Personality": {
+  "personality": {
     "Key": "DDM_Dryer_SmartGrid_V1",
-    "Capability": [
-      {}
-    ],
+	"capability": [
+			{
+				"CavityOrder": [
+					"DryCavity"
+				],
+				"Capability": {
+				"DryCavity":{
+				"CapabilityData": {}
+				}
+				},
+				"AttributesMapping": {
+					"DryCavity": {
+						"CycleName": "CycleName",
+						"TimeRemaining": "EstTimeRemaining",
+						"MachineState": "ApplianceStateCode",
+						"WrinkleShield": "WrinkleShield",
+						"AirFlowStatus": "AirFlowStatus"
+					},
+					"Common": {
+						"RemoteStatus": "GetRemoteControlStatus",
+						"Online": "Online",
+						"RemoteEnabledStatus": "GetRemoteControlStatus"
+					}
+				},
+				"Features": {
+					"Common": {
+						"ApplianceDocuments": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ControlLock": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetControlLock"
+							}
+						},
+						"Notifications": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"FaultCodes": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"RemoteStatus": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "RemoteControlStatus"
+							}
+						},
+						"Online": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Online"
+							}
+						},
+						"QuietMode": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ChangeSoundKeyAlert": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ChangeSoundKeyPress": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ChangeBrightness": {
+							"Visible": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						}
+					},
+					"DryCavity": {}
+				},
+				"ApplianceRulesets": {
+					"DryCavity": {
+						"Runtime": [
+						
+						]
+					},
+					"Common": {
+						"Runtime": [
+						]
+					}
+				},
+				"Rulesets": {
+					"FaultCodeHistory": {
+						"isLegacy": false,
+						"groupBy": "FaultCodeDetails",
+						"attributes": "FaultCodeDetails"
+					}
+				},
+				"QueryParams": {
+					"Common": {
+						"FaultCodeHistory": {
+							"isLegacy": false,
+							"groupBy": "FaultCodeDetails",
+							"attributes": "FaultCodeDetails"
+						}
+					}
+				}
+				}
+				],
     "Rulesets": [
       {
         "Idle": {
@@ -1307,17 +1441,10 @@
             }
           }
         }
-      },
-      {
-        "EnergyHistory": {
-          "isLegacy": "true",
-          "groupBy": "CycleNameEnergy",
-          "attributes": "CycleName,CycleEnergyConsumption"
-        }
       }
     ]
-  },
-  "Alerts": {
+},
+  "alerts": {
     "Key": "DDM_Dryer_SmartGrid_V1",
     "Alerts": [
       {
