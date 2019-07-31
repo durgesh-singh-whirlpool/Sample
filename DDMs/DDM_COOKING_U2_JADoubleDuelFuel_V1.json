@@ -4378,7 +4378,7 @@
               }
             },
             "FavoriteCycles": {
-              "Visible": true,
+              "Visible": false,
               "ReadOnly": false,
               "AvailableIn": [
                 "US",
@@ -4530,6 +4530,12 @@
                 "attributes": {
                   "OvenUpperCavity_CycleSetTargetTemp": false
                 },
+                "actions": {
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleSendCommand" : false
+                },
                 "condition": {
                   "type": "operation",
                   "binaryOperator": "and",
@@ -4592,13 +4598,14 @@
                 "actions": {
                   "ActionSetCycleStartCommand": false,
                   "ActionSetCycleCancelCommand": true,
-                  "ActionSetCycleModifyCommand": true
+                  "ActionSetCycleModifyCommand": true,
+                  "ActionSetCycleSendCommand" : false
                 },
                 "condition": {
-                  "type": "value",
-                  "key": "OvenUpperCavity_OpStatusState",
-                  "valueOperator": "!=",
-                  "value": 0
+                    "type": "operation",
+                    "binaryOperator": "in",
+                    "key": "OvenUpperCavity_OpStatusState",
+                    "value": [1, 2, 4]   
                 }
               },
               {
@@ -4686,6 +4693,12 @@
                 "features": {
                   "OvenUpperCavity_CycleSetTargetTemp": false
                 },
+                "actions": {
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleSendCommand" : false
+                },
                 "condition": {
                   "type": "operation",
                   "binaryOperator": "and",
@@ -4748,13 +4761,14 @@
                 "actions": {
                   "ActionSetCycleStartCommand": false,
                   "ActionSetCycleCancelCommand": true,
-                  "ActionSetCycleModifyCommand": true
+                  "ActionSetCycleModifyCommand": true,
+                  "ActionSetCycleSendCommand" : false
                 },
                 "condition": {
-                  "type": "value",
-                  "key": "OvenLowerCavity_OpStatusState",
-                  "valueOperator": "!=",
-                  "value": 0
+                    "type": "operation",
+                    "binaryOperator": "in",
+                    "key": "OvenLowerCavity_OpStatusState",
+                    "value": [1, 2, 4]   
                 }
               }
             ]
