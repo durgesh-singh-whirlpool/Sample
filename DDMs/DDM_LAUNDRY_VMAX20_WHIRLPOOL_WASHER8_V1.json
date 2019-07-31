@@ -1465,10 +1465,12 @@
 										"Default": "DeepFillLow"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -1528,10 +1530,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -1592,10 +1596,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -1648,10 +1654,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 1,
-										"Max": 1,
-										"Step": 1,
-										"Default": 1
+										"Range": {
+											"Default": 1,
+											"Min": 1,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -1712,10 +1720,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -1776,10 +1786,12 @@
 										"Default": "DeepFillLow"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -1840,10 +1852,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -1904,10 +1918,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -1968,10 +1984,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2024,10 +2042,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 1,
-										"Max": 1,
-										"Step": 1,
-										"Default": 1
+										"Range": {
+											"Default": 1,
+											"Min": 1,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2088,10 +2108,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2152,10 +2174,12 @@
 										"Default": "DeepFillLow"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2213,10 +2237,12 @@
 										"Default": "DeepFillMax"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2274,10 +2300,12 @@
 										"Default": "DeepFillMax"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2335,10 +2363,12 @@
 										"Default": "DeepFillMax"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2388,10 +2418,12 @@
 										"Default": "DeepFillMax"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 1,
-										"Max": 1,
-										"Step": 1,
-										"Default": 1
+										"Range": {
+											"Default": 1,
+											"Min": 1,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2449,10 +2481,12 @@
 										"Default": "DeepFillMax"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2510,10 +2544,12 @@
 										"Default": "DeepFillMax"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2574,10 +2610,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2638,10 +2676,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2702,10 +2742,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2758,10 +2800,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 1,
-										"Max": 1,
-										"Step": 1,
-										"Default": 1
+										"Range": {
+											"Default": 1,
+											"Min": 1,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2822,10 +2866,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2886,10 +2932,12 @@
 										"Default": "DeepFillLow"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2950,10 +2998,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3014,10 +3064,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3078,10 +3130,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3134,10 +3188,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 1,
-										"Max": 1,
-										"Step": 1,
-										"Default": 1
+										"Range": {
+											"Default": 1,
+											"Min": 1,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3198,10 +3254,12 @@
 										"Default": "DeepFillMed"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3262,10 +3320,12 @@
 										"Default": "DeepFillLow"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3326,10 +3386,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3390,10 +3452,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3454,10 +3518,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3510,10 +3576,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 1,
-										"Max": 1,
-										"Step": 1,
-										"Default": 1
+										"Range": {
+											"Default": 1,
+											"Min": 1,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3574,10 +3642,12 @@
 										"Default": "DeepFillHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3638,10 +3708,12 @@
 										"Default": "DeepFillLow"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3656,10 +3728,12 @@
 							"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
 								"Required": {
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Default": 0,
-										"Min": 0,
-										"Max": 1,
-										"Step": 1
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3674,10 +3748,12 @@
 							"WashCavity_CycleSetCycleSelectWashCycleRinseSpin": {
 								"Required": {
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 1,
-										"Step": 1,
-										"Default": 1
+										"Range": {
+											"Default": 1,
+											"Min": 0,
+											"Max": 1,
+											"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4232,97 +4308,97 @@
 									}
 								}
 							},
+							"DownloadGo": {
+								"Cavity_CycleSetCycleNameActivewear": {
+									"Name": "Activewear",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Activewear"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameJeans": {
+									"Name": "Jeans",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Jeans"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameSwimwear": {
+									"Name": "Swimwear",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Swimwear"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameSleepingBags": {
+									"Name": "SleepingBags",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"SleepingBags"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameBusinessCasual": {
+									"Name": "BusinessCasual",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"BusinessCasual"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameComforters": {
+									"Name": "Comforters",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Comforters"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameBlankets": {
+									"Name": "Blankets",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Blankets"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameCoatsJackets": {
+									"Name": "CoatsJackets",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Jackets"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameLingerie": {
+									"Name": "Lingerie",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Lingerie"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameMachineWashCurtains": {
+									"Name": "MachineWashCurtains",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"MachineWashCurtains"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameDiapers": {
+									"Name": "Diapers",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Diapers"
+										]
+									}
+								}
+							},
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
-						},
-						"SetDownloadGo": {
-							"Cavity_CycleSetCycleNameActivewear": {
-								"Name": "Activewear",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Activewear"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameJeans": {
-								"Name": "Jeans",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Jeans"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameSwimwear": {
-								"Name": "Swimwear",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Swimwear"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameSleepingBags": {
-								"Name": "SleepingBags",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"SleepingBags"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameBusinessCasual": {
-								"Name": "BusinessCasual",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"BusinessCasual"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameComforters": {
-								"Name": "Comforters",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Comforters"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameBlankets": {
-								"Name": "Blankets",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Blankets"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameCoatsJackets": {
-								"Name": "CoatsJackets",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Jackets"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameLingerie": {
-								"Name": "Lingerie",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Lingerie"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameMachineWashCurtains": {
-								"Name": "MachineWashCurtains",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"MachineWashCurtains"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameDiapers": {
-								"Name": "Diapers",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Diapers"
-									]
-								}
-							}
 						},
 						"SetUtilityCycle": {
 							"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
@@ -4444,6 +4520,7 @@
 								"WashCavity_CycleSetSpinSpeed",
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFabricSoftenerEnable",
 								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_TimeSetDelayTime"
@@ -4456,6 +4533,7 @@
 								"WashCavity_CycleSetSpinSpeed",
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFabricSoftenerEnable",
 								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
@@ -4481,6 +4559,7 @@
 								"WashCavity_CycleSetSpinSpeed",
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFabricSoftenerEnable",
 								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
@@ -4506,6 +4585,7 @@
 								"WashCavity_CycleSetSpinSpeed",
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFabricSoftenerEnable",
 								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
@@ -4523,6 +4603,7 @@
 								"ruleName": "Disable All Features when appliance is offline*** For feature show change back",
 								"description": "Disable All Features when appliance is offline",
 								"features": {
+									"SetCycle": true
 								},
 								"condition": {
 									"type": "value",
@@ -4564,7 +4645,7 @@
 		]
 	},
 	"alerts": {
-		"_id": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_WASHER8_V1",
+		"Key": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_WASHER8_V1",
 		"alerts": [
 			{
 				"ApplianceAlerts": [
