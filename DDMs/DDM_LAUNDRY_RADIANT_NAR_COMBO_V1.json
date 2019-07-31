@@ -2183,17 +2183,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2236,17 +2238,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2297,17 +2301,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2367,11 +2373,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2422,11 +2428,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2485,11 +2491,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2542,17 +2548,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2594,17 +2602,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2654,17 +2664,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2720,17 +2732,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2775,17 +2789,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2838,17 +2854,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -2900,10 +2918,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -2948,10 +2968,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -3004,10 +3026,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -3065,17 +3089,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3118,17 +3144,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3178,17 +3206,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3240,17 +3270,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3293,17 +3325,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3353,17 +3387,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3415,17 +3451,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3468,17 +3506,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3528,17 +3568,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3699,17 +3741,19 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3767,11 +3811,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3818,11 +3862,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3876,11 +3920,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3931,17 +3975,19 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -3981,17 +4027,19 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4038,17 +4086,19 @@
 										"Default": "SoilLevelLight"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4102,17 +4152,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4157,17 +4209,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4220,17 +4274,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4292,11 +4348,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4347,11 +4403,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4410,11 +4466,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4470,17 +4526,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4525,17 +4583,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4588,17 +4648,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4650,10 +4712,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -4698,10 +4762,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -4754,10 +4820,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -4817,17 +4885,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4872,17 +4942,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -4935,17 +5007,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5007,11 +5081,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5062,11 +5136,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5125,11 +5199,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5185,17 +5259,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5240,17 +5316,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5303,17 +5381,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5365,10 +5445,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -5413,10 +5495,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -5469,10 +5553,12 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
 										"Default": false,
@@ -5532,17 +5618,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5585,17 +5673,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5646,17 +5736,19 @@
 										"Default": "SoilLevelNormal"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5716,11 +5808,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5769,11 +5861,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5830,11 +5922,11 @@
 										"Default": 0
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5888,17 +5980,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -5941,17 +6035,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
@@ -6002,17 +6098,19 @@
 										"Default": "SoilLevelHeavy"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
-										"Min": 0,
-										"Max": 3,
-										"Step": 1,
-										"Default": 0
+										"Range": {
+											"Min": 0,
+											"Max": 3,
+											"Step": 1,
+											"Default": 0
+										}
 									},
 									"WashCavity_CycleSetPresoakNotTimedEnable": {
-										"Default": false,
-										"Allowed": [
+										"Bool": [
 											false,
 											true
-										]
+										],
+										"Default": false
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
