@@ -2072,6 +2072,23 @@
                 }
               }
             ]
+          },
+          "Common": {
+            "Runtime": [
+              {
+                "ruleName": "Disable quitemode when appliance is on Sabbath",
+                "description": "Disable quitemode when appliance is on Sabbath",
+                "features": {
+                  "QuietMode" : false
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "Sys_OperationSetSabbathModeEnabled",
+                  "valueOperator": "=",
+                  "value": 1
+                }
+              }
+            ]
           }
         },
         "QueryParams": {
