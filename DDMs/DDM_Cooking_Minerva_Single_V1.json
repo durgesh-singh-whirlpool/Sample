@@ -2259,7 +2259,8 @@
       {
         "Compatibility": {
           "TempExchangeUnits": "F",
-          "MultipliedByTen": false
+          "MultipliedByTen": false,
+          "ResetDelayTime" : 15
         },
         "CavityOrder": [
           "OvenUpperCavity"
@@ -4398,7 +4399,8 @@
             "DelayTimeSetTime": "UpperCavity_DelayTimeSetTime",
             "CookTimeRemaining": "UpperCavity_CookTimeRemaining",
             "CulinaryCtrSetId": "UpperCavity_CulinaryCenterID",
-            "CavityOperations": "UpperCavity_CavityOperations"
+            "CavityOperations": "UpperCavity_CavityOperations",
+            "CulinaryVersion": "UpperCavity_CulinaryCenterVersionNumber"
           },
           "Common": {
             "DisplayOnOff": "SystemSettings_DisplayOnOff",
@@ -4704,13 +4706,6 @@
                 "TimerOperations": "UpperCavity_OvenTimerOperations",
                 "MyCreationId": "UpperCavity_MyCreationID"
               }
-            },
-            "CyclesHistory": {
-              "Visible": true,
-              "AvailableIn": [
-                "US",
-                "CA"
-              ]
             }
           }
         },
@@ -4785,25 +4780,74 @@
                   "ActionSetCycleCancelCookTimeCommand": false
                 },
                 "condition": {
-                  "type": "value",
-                  "key": "Online",
-                  "valueOperator": "=",
-                  "value": 0
+                  "type": "operation",
+                  "valueOperator": "or",
+                   "left": {
+                      "type": "value",
+                      "key": "Online",
+                      "valueOperator": "=",
+                      "value": 0
+                    },
+                    "right": {
+                      "type": "value",
+                      "key": "SystemSettings_ControlLock",
+                      "valueOperator": "=",
+                      "value": 1
+                    }
                 }
               },
               {
                 "ruleName": "Cancel the Running Cycle",
                 "description": "If Appliance is not idle, we can enable the cancel action",
                 "actions": {
+                  "ActionSetCycleStartCommand": true,
+                  "ActionSetCycleSendCommand": true,
                   "ActionSetCycleCancelCommand": false,
-                  "ActionSetCycleModifyCommand": false
-
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleResetDelayCommand" : false
                 },
                 "condition": {
                   "type": "value",
-                  "key": "UpperCavity_CavityModeOven",
-                  "valueOperator": "=",
-                  "value": "0"
+                  "key": "UpperCavity_CavityHeatState",
+                  "valueOperator": "in",
+                  "value": [0,3]
+                }
+              },{
+                "ruleName": "When Sabbath is active, disable the features",
+                "description": "When Sabbath is active, disable the features",
+                "features": {
+                  "MeatProbeTemp": false,
+                  "MeatProbe": false,
+                  "AssistedCooking": false,
+                  "SetOven": true,
+                  "LightOnOff": false,
+                  "MyCreations": false
+                },
+                "actions": {
+                  "ActionKitchenTimerStart": false,
+                  "ActionKitchenTimerCancel": false,
+                  "ActionKitchenTimerModify": false,
+                  "ActionSetCycleSendCommand": false,
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleCancelCookTimeCommand": false
+                },
+                "condition": {
+                  "type": "operation",
+                  "valueOperator": "or",
+                   "left": {
+                      "type": "value",
+                      "key": "UpperCavity_SabbathModeActive",
+                      "valueOperator": "=",
+                      "value": 1
+                    },
+                    "right": {
+                      "type": "value",
+                      "key": "UpperCavity_SabbathModeEnabled",
+                      "valueOperator": "=",
+                      "value": 1
+                    }
                 }
               },
               {
