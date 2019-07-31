@@ -1629,7 +1629,7 @@
 				"Capability": {
 					"SystemCavity": {
 						"CapabilityData": {
-							"WashCavity_OpSetBulkDispense1Concentration": {
+							"WashCavity_OpSetBulkDispenseConcentration": {
 								"Required": {
 									"WashCavity_OpSetBulkDispense1Concentration": {
 										"Map": [
@@ -1658,11 +1658,7 @@
 												"Display": "8X"
 											}
 										]
-									}
-								}
-							},
-							"WashCavity_OpSetBulkDispense2Concentration": {
-								"Required": {
+									},
 									"WashCavity_OpSetBulkDispense2Concentration": {
 										"Map": [
 											{
@@ -1692,15 +1688,80 @@
 										]
 									}
 								}
+							},
+							"WashCavity_CycleSetBulkDispenseEnable": {
+								"Required": {
+									"WashCavity_CycleSetBulkDispense1Enable": {
+										"Enumeration": [
+											"BulkDispenseEnablePermanentlyDisabled",
+											"BulkDispenseEnablePermanentlyEnabled",
+											"BulkDispenseEnableNextCycleDisabled"
+										],
+										"Default": "BulkDispenseEnablePermanentlyEnabled"
+									},
+									"WashCavity_CycleSetBulkDispense2Enable": {
+										"Enumeration": [
+											"BulkDispenseEnablePermanentlyDisabled",
+											"BulkDispenseEnablePermanentlyEnabled",
+											"BulkDispenseEnableNextCycleDisabled"
+										],
+										"Default": "BulkDispenseEnablePermanentlyDisabled"
+									}
+								}
+							},
+							"WashCavity_OpSetBulkDispenseSelection": {
+								"Required": {
+									"WashCavity_OpSetBulkDispense1Selection": {
+										"Enumeration": [
+											"BulkDispenseSelectDisabled",
+											"BulkDispenseSelectDetergent"
+										],
+										"Default": "BulkDispenseSelectDisabled"
+									},
+									"WashCavity_OpSetBulkDispense2Selection": {
+										"Enumeration": [
+											"BulkDispenseSelectDisabled",
+											"BulkDispenseSelectDetergent",
+											"BulkDispenseSelectSoftener"
+										],
+										"Default": "BulkDispenseSelectDisabled"
+									}
+								}
 							}
 						},
 						"SetCycle": {
-							"Preferences": {
-								"WashCavity_OpSetBulkDispense1Concentration": {
-									"Name": "BulkPlaceholder"
+							"LoadandGoDispenser1": {
+								"WashCavity_CycleSetBulkDispenseEnable": {
+									"NotAllowed": [
+										"WashCavity_CycleSetBulkDispense2Enable"
+									]
 								},
-								"WashCavity_OpSetBulkDispense2Concentration": {
-									"Name": "BulkPlaceholder"
+								"WashCavity_OpSetBulkDispenseConcentration": {
+									"NotAllowed": [
+										"WashCavity_OpSetBulkDispense2Concentration"
+									]
+								},
+								"WashCavity_OpSetBulkDispenseSelection": {
+									"NotAllowed": [
+										"WashCavity_OpSetBulkDispense2Selection"
+									]
+								}
+							},
+							"LoadandGoDispenser2": {
+								"WashCavity_CycleSetBulkDispenseEnable": {
+									"NotAllowed": [
+										"WashCavity_CycleSetBulkDispense1Enable"
+									]
+								},
+								"WashCavity_OpSetBulkDispenseConcentration": {
+									"NotAllowed": [
+										"WashCavity_OpSetBulkDispense1Concentration"
+									]
+								},
+								"WashCavity_OpSetBulkDispenseSelection": {
+									"NotAllowed": [
+										"WashCavity_OpSetBulkDispense1Selection"
+									]
 								}
 							}
 						}
@@ -4625,115 +4686,115 @@
 								}
 							},
 							"DownloadAndGo": {
-							"Cavity_CycleSetCycleNameActivewear": {
-								"Name": "Activewear",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Activewear"
-									]
+								"Cavity_CycleSetCycleNameActivewear": {
+									"Name": "Activewear",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleNormal"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameJeans": {
+									"Name": "Jeans",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleTowels"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameSwimwear": {
+									"Name": "Swimwear",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleWhatToDelicatesHowToColdWash"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameSleepingBags": {
+									"Name": "SleepingBags",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleBulky"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameBusinessCasual": {
+									"Name": "BusinessCasual",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleWrinkleControl"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameComforters": {
+									"Name": "Comforters",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleWhatToWhitesHowToHeavyDuty"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameBlankets": {
+									"Name": "Blankets",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleWhatToBulkyHowToColdWash"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameCoatsJackets": {
+									"Name": "CoatsJackets",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleWhatToDelicatesHowToWrinkleControl"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameLingerie": {
+									"Name": "Lingerie",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleWhatToDelicatesHowToWrinkleControl"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameMachineWashCurtains": {
+									"Name": "MachineWashCurtains",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleWhatToColorsBrightsHowToColdWash"
+										]
+									}
+								},
+								"Cavity_CycleSetCycleNameDiapers": {
+									"Name": "Diapers",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"Diapers"
+										]
+									}
 								}
 							},
-							"Cavity_CycleSetCycleNameJeans": {
-								"Name": "Jeans",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Jeans"
-									]
-								}
+							"UtilityCycle": {
+								"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
+									"Name": "WashCycleDrainSpin",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleDrainSpin"
+										]
+									}
+								},
+								"WashCavity_CycleSetCycleSelectWashCycleCleanWasher": {
+									"Name": "WashCycleCleanWasher",
+									"Attributes": {
+										"WashCavity_CycleSetCycleSelect": [
+											"WashCycleWhatToWhitesHowToSanitize"
+										]
+									}
+								},
+								"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
 							},
-							"Cavity_CycleSetCycleNameSwimwear": {
-								"Name": "Swimwear",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Swimwear"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameSleepingBags": {
-								"Name": "SleepingBags",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"SleepingBags"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameBusinessCasual": {
-								"Name": "BusinessCasual",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"BusinessCasual"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameComforters": {
-								"Name": "Comforters",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Comforters"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameBlankets": {
-								"Name": "Blankets",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Blankets"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameCoatsJackets": {
-								"Name": "CoatsJackets",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Jackets"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameLingerie": {
-								"Name": "Lingerie",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Lingerie"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameMachineWashCurtains": {
-								"Name": "MachineWashCurtains",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"MachineWashCurtains"
-									]
-								}
-							},
-							"Cavity_CycleSetCycleNameDiapers": {
-								"Name": "Diapers",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"Diapers"
-									]
-								}
-							}
-						},
-						"UtilityCycle": {
-							"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
-								"Name": "WashCycleDrainSpin",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"WashCycleDrainSpin"
-									]
-								}
-							},
-							"WashCavity_CycleSetCycleSelectWashCycleCleanWasher": {
-								"Name": "WashCycleCleanWasher",
-								"Attributes": {
-									"WashCavity_CycleSetCycleSelect": [
-										"WashCycleCleanWasher"
-									]
-								}
-							},
-							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
-						},
-						"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
+							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
 						},
 						"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
@@ -4873,15 +4934,15 @@
 								"US",
 								"CA"
 							],
-							 "StateAttributes": {},
+							"StateAttributes": {},
 							"StatusAttributes": [
-							"Sys_OpSetAlertToneVolume",
-							"Sys_OpSetKeyPressToneVolume"
+								"Sys_OpSetAlertToneVolume",
+								"Sys_OpSetKeyPressToneVolume"
 							],
-							 "SendCommandAttributes": [
-							 "Sys_OpSetAlertToneVolume",
-							"Sys_OpSetKeyPressToneVolume"
-							 ]
+							"SendCommandAttributes": [
+								"Sys_OpSetAlertToneVolume",
+								"Sys_OpSetKeyPressToneVolume"
+							]
 						},
 						"ChangeApplianceLanguage": {
 							"Visible": true,
@@ -4922,6 +4983,13 @@
 							"StateAttributes": {
 								"State": "Sys_DisplaySetBrightnessPercent"
 							}
+						},
+						"LoadandGoDispenser": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
 					},
 					"WashCavity": {
