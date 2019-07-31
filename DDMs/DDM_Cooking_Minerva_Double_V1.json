@@ -2953,7 +2953,8 @@
       {
         "Compatibility": {
           "TempExchangeUnits": "F",
-          "MultipliedByTen": false
+          "MultipliedByTen": false,
+          "ResetDelayTime" : 15
         },
         "CavityOrder": [
           "OvenUpperCavity",
@@ -7198,7 +7199,8 @@
             "DelayTimeSetTime": "UpperCavity_DelayTimeSetTime",
             "CookTimeRemaining": "UpperCavity_CookTimeRemaining",
             "CulinaryCtrSetId": "UpperCavity_CulinaryCenterID",
-            "CavityOperations": "UpperCavity_CavityOperations"
+            "CavityOperations": "UpperCavity_CavityOperations",
+            "CulinaryVersion": "UpperCavity_CulinaryCenterVersionNumber"
           },
           "OvenLowerCavity": {
             "CycleName": [
@@ -7226,7 +7228,8 @@
             "DelayTimeSetTime": "LowerCavity_DelayTimeSetTime",
             "CookTimeRemaining": "LowerCavity_CookTimeRemaining",
             "CulinaryCtrSetId": "LowerCavity_CulinaryCenterID",
-            "CavityOperations": "LowerCavity_CavityOperations"
+            "CavityOperations": "LowerCavity_CavityOperations",
+            "CulinaryVersion": "LowerCavity_CulinaryCenterVersionNumber"
           },
           "Common": {
             "DisplayOnOff": "SystemSettings_DisplayOnOff",
@@ -7533,13 +7536,6 @@
                 "TimerOperations": "UpperCavity_OvenTimerOperations",
                 "MyCreationId": "UpperCavity_MyCreationID"
               }
-            },
-            "CyclesHistory": {
-              "Visible": false,
-              "AvailableIn": [
-                "US",
-                "CA"
-              ]
             }
           },
           "OvenLowerCavity": {
@@ -7784,12 +7780,21 @@
                   "ActionSetCycleCancelCookTimeCommand": false
                 },
                 "condition": {
-                  "type": "value",
-                  "key": "Online",
-                  "valueOperator": "=",
-                  "value": 0
-                }
-              },
+                  "type": "operation",
+                  "valueOperator": "or",
+                   "left": {
+                      "type": "value",
+                      "key": "Online",
+                      "valueOperator": "=",
+                      "value": 0
+                    },
+                    "right": {
+                      "type": "value",
+                      "key": "SystemSettings_ControlLock",
+                      "valueOperator": "=",
+                      "value": 1
+                    }
+                }              },
               {
                 "ruleName": "Disable the StartCommand button",
                 "description": "Appliance can not be started if the remote is disabled",
@@ -7840,16 +7845,55 @@
                 "ruleName": "Cancel the Running Cycle",
                 "description": "If Appliance is not idle, we can enable the cancel action",
                 "actions": {
-                  "ActionSetCycleStartCommand": false,
-                  "ActionSetCycleSendCommand": false,
-                  "ActionSetCycleCancelCommand": true,
-                  "ActionSetCycleModifyCommand": true
+                  "ActionSetCycleStartCommand": true,
+                  "ActionSetCycleSendCommand": true,
+                  "ActionSetCycleCancelCommand": false,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleResetDelayCommand" : false
                 },
                 "condition": {
                   "type": "value",
                   "key": "UpperCavity_CavityHeatState",
-                  "valueOperator": "!=",
-                  "value": "0"
+                  "valueOperator": "in",
+                  "value": [0,3]
+                }
+              },
+              {
+                "ruleName": "When Sabbath is active, disable the features",
+                "description": "When Sabbath is active, disable the features",
+                "features": {
+                  "MeatProbeTemp": false,
+                  "MeatProbe": false,
+                  "AssistedCooking": false,
+                  "SetOven": true,
+                  "LightOnOff": false,
+                  "MyCreations": false
+                },
+                "actions": {
+                  "ActionKitchenTimerStart": false,
+                  "ActionKitchenTimerCancel": false,
+                  "ActionKitchenTimerModify": false,
+                  "ActionSetCycleSendCommand": false,
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleCancelCookTimeCommand": false
+                },
+                "condition": {
+                  "type": "operation",
+                  "valueOperator": "or",
+                   "left": {
+                      "type": "value",
+                      "key": "UpperCavity_SabbathModeActive",
+                      "valueOperator": "=",
+                      "value": 1
+                    },
+                    "right": {
+                      "type": "value",
+                      "key": "UpperCavity_SabbathModeEnabled",
+                      "valueOperator": "=",
+                      "value": 1
+                    }
                 }
               }
             ]
@@ -7867,27 +7911,86 @@
                   "LightOnOff": false,
                   "MyCreations": false
                 },
+                "actions": {
+                  "ActionKitchenTimerStart": false,
+                  "ActionKitchenTimerCancel": false,
+                  "ActionKitchenTimerModify": false,
+                  "ActionSetCycleSendCommand": false,
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": false,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleCancelCookTimeCommand": false
+                },
                 "condition": {
-                  "type": "value",
-                  "key": "Online",
-                  "valueOperator": "=",
-                  "value": 0
+                  "type": "operation",
+                  "valueOperator": "or",
+                   "left": {
+                      "type": "value",
+                      "key": "Online",
+                      "valueOperator": "=",
+                      "value": 0
+                    },
+                    "right": {
+                      "type": "value",
+                      "key": "SystemSettings_ControlLock",
+                      "valueOperator": "=",
+                      "value": 1
+                    }
                 }
               },
               {
                 "ruleName": "Cancel the Running Cycle",
                 "description": "If Appliance is not idle, we can enable the cancel action",
                 "actions": {
-                  "ActionSetCycleStartCommand": false,
-                  "ActionSetCycleSendCommand": false,
-                  "ActionSetCycleCancelCommand": true,
-                  "ActionSetCycleModifyCommand": true
+                  "ActionSetCycleStartCommand": true,
+                  "ActionSetCycleSendCommand": true,
+                  "ActionSetCycleCancelCommand": false,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleResetDelayCommand" : false
                 },
                 "condition": {
                   "type": "value",
                   "key": "LowerCavity_CavityHeatState",
-                  "valueOperator": "!=",
-                  "value": "0"
+                  "valueOperator": "in",
+                  "value": [0,3]
+                }
+              },
+               {
+                "ruleName": "When Sabbath is active, disable the features",
+                "description": "When Sabbath is active, disable the features",
+                "features": {
+                  "MeatProbeTemp": false,
+                  "MeatProbe": false,
+                  "AssistedCooking": false,
+                  "SetOven": true,
+                  "LightOnOff": false,
+                  "MyCreations": false
+                },
+                "actions": {
+                  "ActionKitchenTimerStart": false,
+                  "ActionKitchenTimerCancel": false,
+                  "ActionKitchenTimerModify": false,
+                  "ActionSetCycleSendCommand": false,
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleCancelCookTimeCommand": false
+                },
+                "condition": {
+                  "type": "operation",
+                  "valueOperator": "or",
+                   "left": {
+                      "type": "value",
+                      "key": "LowerCavity_SabbathModeActive",
+                      "valueOperator": "=",
+                      "value": 1
+                    },
+                    "right": {
+                      "type": "value",
+                      "key": "LowerCavity_SabbathModeEnabled",
+                      "valueOperator": "=",
+                      "value": 1
+                    }
                 }
               },
               {
