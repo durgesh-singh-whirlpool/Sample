@@ -1623,6 +1623,11 @@
 		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
 		"capability": [
 			{
+			"Compatibility": {
+					"SkipPrefixForFavorites": [
+						"Cavity_TimeSetDelayTime"
+					]
+				},
 				"CavityOrder": [
 					"WashCavity"
 				],
@@ -4685,7 +4690,9 @@
 									}
 								}
 							},
-							"DownloadAndGo": {
+							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
+						},
+						"SetDownloadAndGo": {
 								"Cavity_CycleSetCycleNameActivewear": {
 									"Name": "Activewear",
 									"Attributes": {
@@ -4770,12 +4777,13 @@
 									"Name": "Diapers",
 									"Attributes": {
 										"WashCavity_CycleSetCycleSelect": [
-											"Diapers"
+											"WashCycleWhatToWhitesHowToSanitize"
 										]
 									}
-								}
+								},
+								"Default": "Cavity_CycleSetCycleNameActivewear"
 							},
-							"UtilityCycle": {
+						"SetUtilityCycle": {
 								"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
 									"Name": "WashCycleDrainSpin",
 									"Attributes": {
@@ -4793,9 +4801,7 @@
 									}
 								},
 								"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
-							},
-							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
-						},
+							},	
 						"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
 								"Name": "RegularNormal",
@@ -5000,6 +5006,51 @@
 								"CA"
 							],
 							"StateAttributes": {
+								"State": "Cavity_CycleStatusMachineState",
+								"DelayTimeSetTime": "Cavity_TimeSetDelayTime",
+						"Temperature": "WashCavity_CycleSetTemperature",
+						"SoilLevel": "WashCavity_CycleSetSoilLevel",
+						"SpinSpeed": "WashCavity_CycleSetSpinSpeed",
+						"PresoakTimed": "WashCavity_CycleSetPresoakTimed",
+						"ExtraRinse": "WashCavity_CycleSetExtraRinseSelect",
+						"FresheningSelect": "WashCavity_CycleSetFresheningSelect",
+						"SteamEnable": "Cavity_CycleSetSteamEnable",
+						"DelayTime": "Cavity_TimeSetDelayTime",
+						"CycleName": "WashCavity_CycleSetCycleSelect"
+							},
+							"StatusAttributes": [
+								"WashCavity_CycleSetCycleSelect",
+								"WashCavity_CycleSetTemperature",
+								"WashCavity_CycleSetSoilLevel",
+								"WashCavity_CycleSetSpinSpeed",
+								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFresheningSelect",
+								"Cavity_CycleSetSteamEnable",
+								"Cavity_TimeSetDelayTime"
+							],
+							"SendCommandAttributes": [
+								"Cavity_TimeSetDelayTime",
+								"WashCavity_CycleSetCycleSelect",
+								"WashCavity_CycleSetTemperature",
+								"WashCavity_CycleSetSoilLevel",
+								"WashCavity_CycleSetSpinSpeed",
+								"Cavity_CycleSetSteamEnable",
+								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetFresheningSelect",
+								"Cavity_OpSetOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							}
+						},
+						"SetDownloadAndGo": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
 								"State": "Cavity_CycleStatusMachineState"
 							},
 							"StatusAttributes": [
@@ -5014,14 +5065,48 @@
 								"Cavity_TimeSetDelayTime"
 							],
 							"SendCommandAttributes": [
-								"WashCavity_CycleSetCycleSelect",
 								"Cavity_TimeSetDelayTime",
+								"WashCavity_CycleSetCycleSelect",
+								"WashCavity_CycleSetTemperature",
+								"WashCavity_CycleSetSoilLevel",
+								"WashCavity_CycleSetSpinSpeed",
+								"Cavity_CycleSetSteamEnable",
+								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetFresheningSelect",
+								"Cavity_OpSetOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							}
+						},
+						"SetUtilityCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_CycleStatusMachineState"
+							},
+							"StatusAttributes": [
+								"WashCavity_CycleSetCycleSelect",
 								"WashCavity_CycleSetTemperature",
 								"WashCavity_CycleSetSoilLevel",
 								"WashCavity_CycleSetSpinSpeed",
 								"WashCavity_CycleSetPresoakTimed",
-								"Cavity_CycleSetSteamEnable",
 								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFresheningSelect",
+								"Cavity_CycleSetSteamEnable",
+								"Cavity_TimeSetDelayTime"
+							],
+							"SendCommandAttributes": [
+								"Cavity_TimeSetDelayTime",
+								"WashCavity_CycleSetCycleSelect",
+								"WashCavity_CycleSetTemperature",
+								"WashCavity_CycleSetSoilLevel",
+								"WashCavity_CycleSetSpinSpeed",
+								"Cavity_CycleSetSteamEnable",
+								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetFresheningSelect",
 								"Cavity_OpSetOperations"
 							],
@@ -5096,6 +5181,108 @@
 								}
 							},
 							{
+								"ruleName": "Enable pause only if running cycle",
+								"description": "Enable pause only if in Running cycle or Postcycle and online",
+								"actions": {
+									"ActionPauseCommand": true
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "and",
+									"left": {
+										"type": "operation",
+										"binaryOperator": "or",
+										"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 7
+										},
+										"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 8
+										}
+										
+									},
+									"right": {
+										"type": "value",
+										"key": "online",
+										"valueOperator": "=",
+										"value": 1
+									}
+								}
+							},
+							{
+								"ruleName": "Enable start only if not running cycle",
+								"description": "Enable start only if MachineStateStandby,MachineStateSetting,MachineStateComplete,MachineStateDelayCountdownMode  and online and remote enable",
+								"actions": {
+									"ActionStartCommand": true
+								},
+								"condition": {
+								"type": "operation",
+								"binaryOperator": "and",
+								"left":{
+								"type": "operation",
+								"binaryOperator": "and",
+								"left":{
+								"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "operation",
+										"binaryOperator": "or",
+										"left": { 
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 0
+										},
+										"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 1
+										}
+									},
+									"right": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "operation",
+										"binaryOperator": "or",
+										"left": { 
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 10
+										},
+										"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 2
+										}
+									}
+								}
+							
+								},
+								"right":{
+								"type": "value",
+									"key": "online",
+									"valueOperator": "=",
+									"value": 1
+								}
+								},
+								"right":{
+								"type": "value",
+									"key": "XCat_RemoteSetRemoteControlEnable",
+									"valueOperator": "=",
+									"value": 1
+								}
+									}
+									},
+							{
 								"ruleName": "Cancel the Running Cycle",
 								"description": "If Appliance is not idle, we can enable the cancel action",
 								"actions": {
@@ -5109,6 +5296,23 @@
 								}
 							},
 							{
+								"ruleName": "Disable Features for modify cycle if a cycle is already running in Appliance",
+								"description": "Disable Features for modify cycle  if a cycle is already running in Appliance",
+								"attributes": {
+									"WashCavity_CycleSetCycleSelect": false,
+									"Cavity_TimeSetDelayTime": false,
+									"WashCavity_CycleSetTemperature": false,
+								"WashCavity_CycleSetPresoakTimed": false,
+								"Cavity_CycleSetSteamEnable": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "Cavity_CycleStatusMachineState",
+									"valueOperator": "=",
+									"value": 7
+								}
+							},
+							{
 								"ruleName": "Enable Cancel option if a cycle is already running in Appliance",
 								"description": "Cavity_OperationStatusMachineState ==Standby, this is instruction sent to appliance",
 								"actions": {
@@ -5118,7 +5322,7 @@
 									"type": "value",
 									"key": "Cavity_CycleStatusMachineState",
 									"valueOperator": "=",
-									"value": "7"
+									"value": 7
 								}
 							},
 							{
@@ -5131,7 +5335,7 @@
 									"type": "value",
 									"key": "Cavity_CycleStatusMachineState",
 									"valueOperator": "=",
-									"value": "1"
+									"value": 1
 								}
 							},
 							{
@@ -5145,7 +5349,7 @@
 									"type": "value",
 									"key": "Cavity_OperationStatusMachineState",
 									"valueOperator": "=",
-									"value": "10"
+									"value": 10
 								}
 							},
 							{
@@ -5175,13 +5379,13 @@
 										"type": "value",
 										"key": "Cavity_CycleStatusMachineState",
 										"valueOperator": "=",
-										"value": "2"
+										"value": 2
 									},
 									"right": {
 										"type": "value",
 										"key": "Cavity_CycleStatusMachineState",
 										"valueOperator": "=",
-										"value": "4"
+										"value": 4
 									}
 								}
 							},
@@ -5196,6 +5400,29 @@
 									"key": "XCat_RemoteSetRemoteControlEnable",
 									"valueOperator": "=",
 									"value": 0
+								}
+							},
+							{
+								"ruleName": "Resume if pause",
+								"description": "Check for pause state before resuming and online",
+								"actions": {
+									"ActionResumeCommand": true
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "and",
+									"left":{
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 6
+									},
+									"right": {
+										"type": "value",
+										"key": "online",
+										"valueOperator": "=",
+										"value": 1
+									}
 								}
 							}
 						]
@@ -5213,6 +5440,18 @@
 									"key": "Online",
 									"valueOperator": "=",
 									"value": 0
+								}
+							},{
+								"ruleName": "Disable ControlLock when cycle is running",
+								"description": "Disable ControlLock when cycle is running",
+								"features": {
+									"ControlLock": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "Cavity_CycleStatusMachineState",
+									"valueOperator": "=",
+									"value": 7
 								}
 							}
 						]
