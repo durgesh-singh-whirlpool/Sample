@@ -1271,12 +1271,13 @@
 				],
 				"Capability": {
 				"WashCavity":{
-				"CapabilityData": {}
+				"CapabilityData": {},
+				"SetCycle":{}
 				}
 				},
 				"AttributesMapping": {
 					"WashCavity": {
-						"CycleName": "CycleName",
+						"CycleName": "CycleNameCode",
 						"TimeRemaining": "EstTimeRemaining",
 						"MachineState": "ApplianceStateCode",
 						"FresheningSelect": "GetFanFreshStatus",
@@ -1286,8 +1287,7 @@
 					},
 					"Common": {
 						"RemoteStatus": "GetRemoteControlStatus",
-						"Online": "Online",
-						"RemoteEnabledStatus": "GetRemoteControlStatus"
+						"Online": "Online"
 					}
 				},
 				"Features": {
@@ -1343,27 +1343,6 @@
 								"State": "Online"
 							}
 						},
-						"QuietMode": {
-							"Visible": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
-						},
-						"ChangeSoundKeyAlert": {
-							"Visible": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
-						},
-						"ChangeSoundKeyPress": {
-							"Visible": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
-						},
 						"ChangeBrightness": {
 							"Visible": false,
 							"AvailableIn": [
@@ -1372,7 +1351,28 @@
 							]
 						}
 					},
-					"WashCavity": {}
+					"WashCavity": {
+					"SetCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "ApplianceStateCode"
+							},
+							"StatusAttributes": [
+								
+							],
+							"SendCommandAttributes": [
+								"RemoteStartCycle"
+							],
+							"SetOperationsMapping": {
+								"Operation": "RemoteStartCycle"
+							}
+						}
+					
+					}
 				},
 				"ApplianceRulesets": {
 					"WashCavity": {
