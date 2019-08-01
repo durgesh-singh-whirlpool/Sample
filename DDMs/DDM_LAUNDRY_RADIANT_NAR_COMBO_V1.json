@@ -197,6 +197,17 @@
       },
       {
         "IsTemplate": false,
+        "M2MAttributeName": "Cavity_CycleSetCycleName",
+        "Instance": "Cavity_CycleSet",
+        "IsTimeSeries": false,
+        "DataType": "String",
+        "AttributeName": "CycleName",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Cavity_CycleSetCycleName",
+        "Key": "0x03080006"
+      },
+      {
+        "IsTemplate": false,
         "M2MAttributeName": "XCat_RemoteSetRebootAppliance",
         "Instance": "XCat_RemoteSet",
         "IsTimeSeries": false,
@@ -1474,17 +1485,6 @@
         "DeviceIO": "WO",
         "MappedAttributeName": "ISPReasonCode",
         "Key": "0x00000000"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "Cavity_CycleSetCycleName",
-        "Instance": "Cavity_CycleSet",
-        "IsTimeSeries": false,
-        "DataType": "String",
-        "AttributeName": "CycleName",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Cavity_CycleSetCycleName",
-        "Key": "0x03080006"
       },
       {
         "IsTemplate": false,
