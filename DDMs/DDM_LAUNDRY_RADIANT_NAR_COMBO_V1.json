@@ -270,12 +270,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "XCat_WifiSetIspAuthorized",
         "Default": "0",
-        "Key": "0x01090005",
         "EnumValues": {
           "0": "IspAuthorizedNotAuthorized",
           "1": "IspAuthorizedSchedule",
           "2": "IspAuthorizedImmediate"
-        }
+        },
+        "Key": "0x01090005"
       },
       {
         "IsTemplate": false,
@@ -307,15 +307,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned16Bit",
         "AttributeName": "MaxMessageLength",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "XCat_ConfigSetMaxMessageLength",
-        "Key": "0x010C0001",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 0
         },
-        "Default": 0
+        "DeviceIO": "RO",
+        "MappedAttributeName": "XCat_ConfigSetMaxMessageLength",
+        "Default": 0,
+        "Key": "0x010C0001"
       },
       {
         "IsTemplate": false,
@@ -409,15 +409,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "NumberEnvelopes",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "XCat_ConfigSetNumberEnvelopes",
-        "Key": "0x010C0008",
         "RangeValues": {
           "StepSize": 1,
           "Min": 1,
           "Max": 1
         },
-        "Default": 1
+        "DeviceIO": "RO",
+        "MappedAttributeName": "XCat_ConfigSetNumberEnvelopes",
+        "Default": 1,
+        "Key": "0x010C0008"
       },
       {
         "IsTemplate": false,
@@ -440,12 +440,12 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Sys_DisplaySetLanguage",
         "Default": "0",
-        "Key": "0x02020002",
         "EnumValues": {
           "0": "LanguageEnglish",
           "33": "LanguageFrench",
           "34": "LanguageSpanish"
-        }
+        },
+        "Key": "0x02020002"
       },
       {
         "IsTemplate": false,
@@ -466,15 +466,15 @@
         "IsTimeSeries": false,
         "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "BrightnessPercent",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "Sys_DisplaySetBrightnessPercent",
-        "Default": 100,
-        "Key": "0x02020009",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 100
-        }
+        },
+        "DeviceIO": "RW",
+        "MappedAttributeName": "Sys_DisplaySetBrightnessPercent",
+        "Default": 100,
+        "Key": "0x02020009"
       },
       {
         "IsTemplate": false,
@@ -509,14 +509,14 @@
         "DeviceIO": "RW",
         "MappedAttributeName": "Sys_OpSetAlertToneVolume",
         "Default": "2",
-        "Key": "0x02030004",
         "EnumValues": {
           "0": "VolumeValueOff",
           "1": "VolumeValueLow",
           "2": "VolumeValueMedium",
           "3": "VolumeValueHigh",
           "4": "VolumeValueMax"
-        }
+        },
+        "Key": "0x02030004"
       },
       {
         "IsTemplate": false,
@@ -544,15 +544,15 @@
         "IsTimeSeries": false,
         "DataType": "BEIntegerUnsigned32Bit",
         "AttributeName": "EstTimeRemaining",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "Cavity_TimeStatusEstTimeRemaining",
-        "Default": 0,
-        "Key": "0x03010001",
         "RangeValues": {
           "StepSize": 1,
           "Min": 0,
           "Max": 4294967295
-        }
+        },
+        "DeviceIO": "RO",
+        "MappedAttributeName": "Cavity_TimeStatusEstTimeRemaining",
+        "Default": 0,
+        "Key": "0x03010001"
       },
       {
         "IsTemplate": false,
@@ -647,14 +647,14 @@
         "DeviceIO": "WO",
         "MappedAttributeName": "Cavity_OpSetOperations",
         "Default": "0",
-        "Key": "0x03070001",
         "EnumValues": {
           "0": "OperationsNone",
           "1": "OperationsCancel",
           "2": "OperationsStart",
           "5": "OperationsPause",
           "6": "OperationsResume"
-        }
+        },
+        "Key": "0x03070001"
       },
       {
         "IsTemplate": false,
@@ -666,12 +666,12 @@
         "DeviceIO": "RO",
         "MappedAttributeName": "WashCavity_OpStatusBulkDispense1Level",
         "Default": "0",
-        "Key": "0x05010001",
         "EnumValues": {
           "0": "BulkDispenseLevelDisabled",
           "2": "BulkDispenseLevelLow",
           "4": "BulkDispenseLevelFull"
-        }
+        },
+        "Key": "0x05010001"
       },
       {
         "IsTemplate": false,
@@ -682,8 +682,8 @@
         "AttributeName": "BulkDispense2Level",
         "DeviceIO": "RO",
         "MappedAttributeName": "WashCavity_OpStatusBulkDispense2Level",
-        "Key": "0x05010002",
         "Default": "0",
+        "Key": "0x05010002",
         "EnumValues": {
           "0": "BulkDispenseLevelDisabled",
           "2": "BulkDispenseLevelLow",
@@ -1195,8 +1195,8 @@
         "AttributeName": "CycleSelect",
         "DeviceIO": "RO",
         "MappedAttributeName": "DryCavity_ChangeStatusCycleSelect",
-        "Key": "0x07020001",
-        "Default": true
+        "Default": true,
+        "Key": "0x07020001"
       },
       {
         "IsTemplate": false,
@@ -1219,8 +1219,8 @@
         "AttributeName": "ManualDryTime",
         "DeviceIO": "RO",
         "MappedAttributeName": "DryCavity_ChangeStatusManualDryTime",
-        "Key": "0x07020005",
-        "Default": true
+        "Default": true,
+        "Key": "0x07020005"
       },
       {
         "IsTemplate": false,
@@ -1231,8 +1231,8 @@
         "AttributeName": "WrinkleShield",
         "DeviceIO": "RO",
         "MappedAttributeName": "DryCavity_ChangeStatusWrinkleShield",
-        "Key": "0x07020009",
-        "Default": true
+        "Default": true,
+        "Key": "0x07020009"
       },
       {
         "IsTemplate": false,
@@ -1243,8 +1243,8 @@
         "AttributeName": "CoolDown",
         "DeviceIO": "RO",
         "MappedAttributeName": "DryCavity_CycleStatusCoolDown",
-        "Key": "0x07030002",
-        "Default": false
+        "Default": false,
+        "Key": "0x07030002"
       },
       {
         "IsTemplate": false,
@@ -1255,8 +1255,8 @@
         "AttributeName": "Drying",
         "DeviceIO": "RO",
         "MappedAttributeName": "DryCavity_CycleStatusDrying",
-        "Key": "0x07030004",
-        "Default": false
+        "Default": false,
+        "Key": "0x07030004"
       },
       {
         "IsTemplate": false,
@@ -1267,8 +1267,8 @@
         "AttributeName": "Sensing",
         "DeviceIO": "RO",
         "MappedAttributeName": "DryCavity_CycleStatusSensing",
-        "Key": "0x07030006",
-        "Default": false
+        "Default": false,
+        "Key": "0x07030006"
       },
       {
         "IsTemplate": false,
@@ -1279,7 +1279,6 @@
         "AttributeName": "CycleSelect",
         "DeviceIO": "RW",
         "MappedAttributeName": "DryCavity_CycleSetCycleSelect",
-        "Key": "0x07040001",
         "Default": "0",
         "EnumValues": {
           "0": "DryCycleNone",
@@ -1289,7 +1288,8 @@
           "29": "DryCycleWhatToDelicatesHowToTimed",
           "34": "DryCycleWhatToTowelsHowToTimed",
           "39": "DryCycleWhatToWhitesHowToTimed"
-        }
+        },
+        "Key": "0x07040001"
       },
       {
         "IsTemplate": false,
@@ -1300,8 +1300,8 @@
         "AttributeName": "Dryness",
         "DeviceIO": "RW",
         "MappedAttributeName": "DryCavity_CycleSetDryness",
-        "Key": "0x07040002",
         "Default": "0",
+        "Key": "0x07040002",
         "EnumValues": {
           "0": "DrynessLessLow",
           "4": "DrynessNormMid",
@@ -1318,8 +1318,8 @@
         "AttributeName": "ManualDryTime",
         "DeviceIO": "RW",
         "MappedAttributeName": "DryCavity_CycleSetManualDryTime",
-        "Key": "0x07040005",
         "Default": 0,
+        "Key": "0x07040005",
         "RangeValues": {
           "Min": 0,
           "Max": 65535,
@@ -1335,8 +1335,8 @@
         "AttributeName": "WrinkleShield",
         "DeviceIO": "RW",
         "MappedAttributeName": "DryCavity_CycleSetWrinkleShield",
-        "Key": "0x07040009",
         "Default": "0",
+        "Key": "0x07040009",
         "EnumValues": {
           "0": "WrinkleShieldOff",
           "1": "WrinkleShieldOn"
@@ -2194,14 +2194,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2247,14 +2249,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2308,14 +2312,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2379,7 +2385,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2434,7 +2440,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2497,7 +2503,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2553,14 +2559,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2605,14 +2613,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2665,14 +2675,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2731,14 +2743,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2786,14 +2800,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2849,14 +2865,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -2911,10 +2929,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -2959,10 +2979,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -3015,10 +3037,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -3076,14 +3100,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3129,14 +3155,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3189,14 +3217,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3251,14 +3281,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3304,14 +3336,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3364,14 +3398,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3426,14 +3462,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3479,14 +3517,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3539,14 +3579,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3710,14 +3752,16 @@
                     "Default": "SoilLevelLight"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3779,7 +3823,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3830,7 +3874,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3888,7 +3932,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3942,14 +3986,16 @@
                     "Default": "SoilLevelLight"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -3992,14 +4038,16 @@
                     "Default": "SoilLevelLight"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4049,14 +4097,16 @@
                     "Default": "SoilLevelLight"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4113,14 +4163,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4168,14 +4220,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4231,14 +4285,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4304,7 +4360,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4359,7 +4415,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4422,7 +4478,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4481,14 +4537,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4536,14 +4594,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4599,14 +4659,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4661,10 +4723,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -4709,10 +4773,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -4765,10 +4831,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -4828,14 +4896,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4883,14 +4953,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -4946,14 +5018,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5019,7 +5093,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5074,7 +5148,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5137,7 +5211,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5196,14 +5270,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5251,14 +5327,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5314,14 +5392,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5376,10 +5456,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -5424,10 +5506,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -5480,10 +5564,12 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
@@ -5543,14 +5629,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5596,14 +5684,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5657,14 +5747,16 @@
                     "Default": "SoilLevelNormal"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5728,7 +5820,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5781,7 +5873,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5842,7 +5934,7 @@
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5899,14 +5991,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -5952,14 +6046,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -6013,14 +6109,16 @@
                     "Default": "SoilLevelHeavy"
                   },
                   "WashCavity_CycleSetExtraRinseSelect": {
-                    "Min": 0,
-                    "Max": 3,
-                    "Step": 1,
-                    "Default": 0
+                    "Range": {
+                      "Min": 0,
+                      "Max": 3,
+                      "Step": 1,
+                      "Default": 0
+                    }
                   },
                   "WashCavity_CycleSetPresoakNotTimedEnable": {
                     "Default": false,
-                    "Allowed": [
+                    "Bool": [
                       false,
                       true
                     ]
@@ -6748,15 +6846,15 @@
         },
         "AttributesMapping": {
           "Common": {
+            "OpStatusState": "Cavity_CycleStatusMachineState",
             "ControlLock": "Sys_OpSetControlLock",
             "QuietMode": "Sys_OpSetAlertToneVolume",
             "DisplayLanguage": "Sys_DisplaySetLanguage",
-            "SoundKeyAlert": "Sys_OpSetAlertToneVolume",
-            "DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
-            "SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
-            "OpStatusState": "Cavity_CycleStatusMachineState",
             "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
-            "TempDisplayUnits": "SystemSettings_TempDisplayUnits"
+            "SoundKeyAlert": "Sys_OpSetAlertToneVolume",
+            "TempDisplayUnits": "SystemSettings_TempDisplayUnits",
+            "DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
+            "SoundKeyPress": "Sys_OpSetKeyPressToneVolume"
           },
           "DryCavity": {
             "CycleName": [
