@@ -3198,7 +3198,21 @@
 									"valueOperator": "=",
 									"value": 0
 								}
-							}
+							},
+							{
+								"ruleName": "Disable Features for modify cycle if a cycle is already running in Appliance",
+								"description": "Disable Features for modify cycle  if a cycle is already running in Appliance",
+								"attributes": {
+									"DryCavity_CycleSetWrinkleShield": false,
+									"DryCavity_CycleSetStaticGuardEnable": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "Cavity_CycleStatusMachineState",
+									"valueOperator": "=",
+									"value": 7
+								}
+							},
 						]
 					},
 					"Common": {
