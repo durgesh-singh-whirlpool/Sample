@@ -1265,7 +1265,8 @@
 				],
 				"Capability": {
 				"DryCavity":{
-				"CapabilityData": {}
+				"CapabilityData": {},
+				"SetCycle": {}
 				}
 				},
 				"AttributesMapping": {
@@ -1364,7 +1365,27 @@
 							]
 						}
 					},
-					"DryCavity": {}
+					"DryCavity": {
+					"SetCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "ApplianceStateCode"
+							},
+							"StatusAttributes": [
+								
+							],
+							"SendCommandAttributes": [
+								
+							],
+							"SetOperationsMapping": {
+								"Operation": "RemoteStartCycle"
+							}
+						}
+					}
 				},
 				"ApplianceRulesets": {
 					"DryCavity": {
@@ -1373,6 +1394,7 @@
 						]
 					},
 					"Common": {
+
 						"Runtime": [
 						]
 					}
