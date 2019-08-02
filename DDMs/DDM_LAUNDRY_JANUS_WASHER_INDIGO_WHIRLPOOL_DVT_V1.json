@@ -4236,8 +4236,7 @@
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
 									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
-									"Cavity_CycleSetCycleName": "Jeans"
+									"Cavity_CycleSetSpecialtyCycleId": 1
 								}
 							},
 							"Cavity_CycleSetCycleNameSwimwear": {
@@ -4710,8 +4709,8 @@
 								"Cavity_CycleSetCycleNameJeans": {
 									"Name": "Jeans",
 									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleTowels"
+										"Cavity_CycleSetCycleName": [
+											"Jeans"
 										]
 									}
 								},
