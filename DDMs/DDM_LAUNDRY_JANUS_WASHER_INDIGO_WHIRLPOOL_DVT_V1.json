@@ -4214,8 +4214,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
-									"Cavity_CycleSetDownloadAndGo": "1",
-									"Cavity_CycleSetSpecialtyCycleId": "1",
+									"Cavity_CycleSetDownloadAndGo": 1,
+									"Cavity_CycleSetSpecialtyCycleId": 1,
 									"Cavity_CycleSetCycleName": "Activewear"
 								}
 							},
@@ -4235,8 +4235,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"Cavity_CycleSetDownloadAndGo": "1",
-									"Cavity_CycleSetSpecialtyCycleId": "1",
+									"Cavity_CycleSetDownloadAndGo": 1,
+									"Cavity_CycleSetSpecialtyCycleId": 1,
 									"Cavity_CycleSetCycleName": "Jeans"
 								}
 							},
