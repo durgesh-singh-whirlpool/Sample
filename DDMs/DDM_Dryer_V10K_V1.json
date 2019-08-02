@@ -1717,6 +1717,21 @@
 		"Key": "DDM_Dryer_V10K_V1",
 		"capability": [
 			{
+				"Compatibility": {
+					"SkipPrefixForFavorites": [
+						"Compartment_DownloadCyclePersist",
+						"CycleOptionsWHR_WhatTo",
+						"CycleOptionsWHR_HowTo",
+						"Compartment_CycleId",
+						"CycleOptionsWHR_Temperature",
+						"CycleOptionsWHR_Dryness",
+						"CycleOptionsWHR_ManualDryTime",
+						"CycleOptionsWHR_WrinkleShield",
+						"CycleOptionsWHR_StaticGuard",
+						"CycleOptionsWHR_EcoBoost",
+						"System_Command"
+					]
+				},
 				"CavityOrder": [
 					"DryCavity"
 				],
@@ -1764,9 +1779,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-									
-								}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdMixed_Gentle": {
 								"Required": {
@@ -1809,9 +1822,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-									
-								}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdMixed_Sanitize": {
 								"Required": {
@@ -1847,9 +1858,7 @@
 										"Default": "MoreDry"
 									}
 								},
-								"NonEditable": {
-									
-								}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdMixed_SteamRefresh": {
 								"Required": {
@@ -1887,9 +1896,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-									
-								}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdMixed_TimedDry": {
 								"Required": {
@@ -1969,9 +1976,7 @@
 										"Default": "MoreDry"
 									}
 								},
-								"NonEditable": {
-								
-								}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdTowels_Gentle": {
 								"Required": {
@@ -2013,8 +2018,7 @@
 										"Default": "MoreDry"
 									}
 								},
-								"NonEditable": {
-								}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdTowels_Sanitize": {
 								"Required": {
@@ -2050,9 +2054,7 @@
 										"Default": "MoreDry"
 									}
 								},
-								"NonEditable": {
-									
-								}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdTowels_SteamRefresh": {
 								"Required": {
@@ -2090,9 +2092,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-									
-								}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdTowels_TimedDry": {
 								"Required": {
@@ -2174,8 +2174,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdDelicate_Gentle": {
 								"Required": {
@@ -2217,8 +2216,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdDelicate_TimedDry": {
 								"Required": {
@@ -2300,8 +2298,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdCasuals_Gentle": {
 								"Required": {
@@ -2344,8 +2341,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdCasuals_Sanitize": {
 								"Required": {
@@ -2381,8 +2377,7 @@
 										"Default": "MoreDry"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdCasuals_SteamRefresh": {
 								"Required": {
@@ -2499,8 +2494,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdBulkySheets_Gentle": {
 								"Required": {
@@ -2541,8 +2535,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdBulkySheets_Sanitize": {
 								"Required": {
@@ -2578,8 +2571,7 @@
 										"Default": "MoreDry"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdBulkySheets_SteamRefresh": {
 								"Required": {
@@ -2617,8 +2609,7 @@
 										"Default": "Normal"
 									}
 								},
-								"NonEditable": {
-												}
+								"NonEditable": {}
 							},
 							"Compartment_CycleIdBulkySheets_TimedDry": {
 								"Required": {
@@ -2872,8 +2863,8 @@
 						"EcoBoostEnable": "CycleOptionsWHR_EcoBoost",
 						"StaticGuardEnable": "CycleOptionsWHR_StaticGuard",
 						"ManualDryTime": "CycleOptionsWHR_ManualDryTime",
-						"AirFlowStatus":"Compartment_AirFlowStatus",
-						"CycleState":"Compartment_CycleState",
+						"AirFlowStatus": "Compartment_AirFlowStatus",
+						"CycleState": "Compartment_CycleState",
 						"WhatTo": "CycleOptionsWHR_WhatTo",
 						"HowTo": "CycleOptionsWHR_HowTo"
 					},
@@ -2962,9 +2953,9 @@
 								"System_Command"
 							],
 							"SendCommandAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
 								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_Dryness",
@@ -3068,12 +3059,12 @@
 							"attributes": "System_FaultCode"
 						}
 					},
-					"DryCavity":{
-					"CycleHistory":{
-					 "isLegacy": true,
-                        "groupBy": "XCat_OdometerStatusCycleCount",
-                        "attributes": "Compartment_DownloadAndGo,Compartment_CycleId,CycleOptionsWHR_WhatTo,CycleOptionsWHR_HowTo,CycleOptionsWHR_Dryness,CycleOptionsWHR_EcoBoost,CycleOptionsWHR_ManualDryTime,CycleOptionsWHR_StaticGuard,CycleOptionsWHR_Temperature,CycleOptionsWHR_WrinkleShield"
-					}
+					"DryCavity": {
+						"CycleHistory": {
+							"isLegacy": false,
+							"groupBy": "XCat_OdometerStatusCycleCount",
+							"attributes": "Compartment_DownloadAndGo,Compartment_CycleId,CycleOptionsWHR_WhatTo,CycleOptionsWHR_HowTo,CycleOptionsWHR_Dryness,CycleOptionsWHR_EcoBoost,CycleOptionsWHR_ManualDryTime,CycleOptionsWHR_StaticGuard,CycleOptionsWHR_Temperature,CycleOptionsWHR_WrinkleShield"
+						}
 					}
 				}
 			}
