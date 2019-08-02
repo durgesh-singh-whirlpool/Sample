@@ -4213,7 +4213,10 @@
 									"WashCavity_CycleSetCycleSelect": "WashCycleNormal",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
-									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy"
+									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
+									"Cavity_CycleSetCycleName": "Activewear"
 								}
 							},
 							"Cavity_CycleSetCycleNameJeans": {
@@ -4231,7 +4234,10 @@
 									"WashCavity_CycleSetCycleSelect": "WashCycleTowels",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
-									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal"
+									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
+									"Cavity_CycleSetCycleName": "Jeans"
 								}
 							},
 							"Cavity_CycleSetCycleNameSwimwear": {
@@ -4870,10 +4876,6 @@
 					"Common": {
 						"ControlLock": "Sys_OpSetControlLock",
 						"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
-						"QuietMode": [
-							"Sys_OpSetAlertToneVolume",
-							"Sys_OpSetKeyPressToneVolume"
-						],
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
 						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
@@ -4934,13 +4936,15 @@
 								"State": "online"
 							}
 						},
-						"QuietMode": {
+						"ComposedQuietMode": {
 							"Visible": true,
 							"AvailableIn": [
 								"US",
 								"CA"
 							],
-							"StateAttributes": {},
+							"StateAttributes": {
+							
+							},
 							"StatusAttributes": [
 								"Sys_OpSetAlertToneVolume",
 								"Sys_OpSetKeyPressToneVolume"
@@ -5035,6 +5039,7 @@
 								"WashCavity_CycleSetTemperature",
 								"WashCavity_CycleSetSoilLevel",
 								"WashCavity_CycleSetSpinSpeed",
+								"WashCavity_CycleSetExtraRinseSelect",
 								"Cavity_CycleSetSteamEnable",
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetFresheningSelect",
@@ -5054,22 +5059,29 @@
 								"State": "Cavity_CycleStatusMachineState"
 							},
 							"StatusAttributes": [
+								"Cavity_CycleSetDownloadAndGo",
+								"Cavity_CycleSetSpecialtyCycleId",
 								"WashCavity_CycleSetCycleSelect",
-								"WashCavity_CycleSetTemperature",
 								"WashCavity_CycleSetSoilLevel",
 								"WashCavity_CycleSetSpinSpeed",
-								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetTemperature",
+								"Cavity_CycleSetCycleName",
+								"Cavity_CycleSetSteamEnable",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFresheningSelect",
-								"Cavity_CycleSetSteamEnable",
+								"WashCavity_CycleSetPresoakTimed",
 								"Cavity_TimeSetDelayTime"
 							],
 							"SendCommandAttributes": [
+								"Cavity_CycleSetDownloadAndGo",
+								"Cavity_CycleSetSpecialtyCycleId",
 								"Cavity_TimeSetDelayTime",
 								"WashCavity_CycleSetCycleSelect",
 								"WashCavity_CycleSetTemperature",
 								"WashCavity_CycleSetSoilLevel",
 								"WashCavity_CycleSetSpinSpeed",
+								"Cavity_CycleSetCycleName",
+								"WashCavity_CycleSetExtraRinseSelect",
 								"Cavity_CycleSetSteamEnable",
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetFresheningSelect",
@@ -5100,15 +5112,7 @@
 								"Cavity_TimeSetDelayTime"
 							],
 							"SendCommandAttributes": [
-								"Cavity_TimeSetDelayTime",
-								"WashCavity_CycleSetCycleSelect",
-								"WashCavity_CycleSetTemperature",
-								"WashCavity_CycleSetSoilLevel",
-								"WashCavity_CycleSetSpinSpeed",
-								"Cavity_CycleSetSteamEnable",
-								"WashCavity_CycleSetPresoakTimed",
-								"WashCavity_CycleSetFresheningSelect",
-								"Cavity_OpSetOperations"
+								
 							],
 							"SetOperationsMapping": {
 								"Operation": "Cavity_OpSetOperations"
