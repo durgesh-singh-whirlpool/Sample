@@ -6899,7 +6899,8 @@
 						"Dryness": "DryCavity_CycleSetDryness",
 						"WrinkleShield": "DryCavity_CycleSetWrinkleShield",
 						"StaticGuardEnable": "DryCavity_CycleSetStaticGuardEnable",
-						"ManualDryTime": "DryCavity_CycleSetManualDryTime"
+						"ManualDryTime": "DryCavity_CycleSetManualDryTime",
+						"CleanReminder": "WashCavity_CycleStatusCleanReminder"
 					}
 				},
 				"Features": {
@@ -7241,7 +7242,9 @@
 							"groupBy": "XCat_OdometerStatusCycleCount",
 							"attributes": "WashCavity_CycleSetCycleSelect,DryCavity_CycleSetCycleSelect,WashCavity_CycleSetTemperature,WashCavity_CycleSetSoilLevel,WashCavity_CycleSetSpinSpeed,WashCavity_CycleSetPresoakNotTimedEnable,Cavity_TimeSetDelayTime,WashCavity_CycleSetExtraRinseSelect,WashCavity_CycleSetFresheningSelect,DryCavity_CycleSetWrinkleShield,DryCavity_CycleSetManualDryTime,DryCavity_CycleSetDryness"
 						}
-					}
+					},
+					"DryCavity":{},
+					"ComboCavity":{}
 				}
 			}
 		]
