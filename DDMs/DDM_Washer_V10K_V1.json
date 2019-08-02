@@ -1717,6 +1717,24 @@
 		"Key": "DDM_Washer_V10K_V1",
 		"capability": [
 			{
+			
+			"Compatibility": {
+					"SkipPrefixForFavorites": [
+						"Compartment_DownloadCyclePersist",
+							"CycleOptionsWHR_WhatTo",
+							"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
+								"System_Command"
+					]
+				},
 				"CavityOrder": [
 					"WashCavity"
 				],
