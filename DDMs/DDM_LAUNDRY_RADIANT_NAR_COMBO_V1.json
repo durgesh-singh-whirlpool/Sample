@@ -6866,8 +6866,7 @@
 					},
 					"DryCavity": {
 						"CycleName": [
-							"DryCavity_CycleSetCycleSelect",
-							"Cavity_CycleSetCycleName"
+							"DryCavity_CycleSetCycleSelect"
 						],
 						"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
 						"MachineState": "Cavity_CycleStatusMachineState",
@@ -6881,8 +6880,7 @@
 					"ComboCavity": {
 						"CycleName": [
 							"WashCavity_CycleSetCycleSelect",
-							"DryCavity_CycleSetCycleSelect",
-							"Cavity_CycleSetCycleName"
+							"DryCavity_CycleSetCycleSelect"
 						],
 						"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
 						"MachineState": "Cavity_CycleStatusMachineState",
@@ -7285,8 +7283,8 @@
 							"attributes": "WashCavity_CycleSetCycleSelect,DryCavity_CycleSetCycleSelect,WashCavity_CycleSetTemperature,WashCavity_CycleSetSoilLevel,WashCavity_CycleSetSpinSpeed,WashCavity_CycleSetPresoakNotTimedEnable,Cavity_TimeSetDelayTime,WashCavity_CycleSetExtraRinseSelect,WashCavity_CycleSetFresheningSelect,DryCavity_CycleSetWrinkleShield,DryCavity_CycleSetManualDryTime,DryCavity_CycleSetDryness"
 						}
 					},
-					"DryCavity":{},
-					"ComboCavity":{}
+					"DryCavity": {},
+					"ComboCavity": {}
 				}
 			}
 		]
