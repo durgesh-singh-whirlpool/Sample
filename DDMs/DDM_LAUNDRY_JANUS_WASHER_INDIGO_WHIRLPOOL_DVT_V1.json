@@ -5077,14 +5077,14 @@
 								"Cavity_CycleSetSpecialtyCycleId",
 								"Cavity_TimeSetDelayTime",
 								"WashCavity_CycleSetCycleSelect",
-								"WashCavity_CycleSetTemperature",
 								"WashCavity_CycleSetSoilLevel",
 								"WashCavity_CycleSetSpinSpeed",
+								"WashCavity_CycleSetTemperature",
 								"Cavity_CycleSetCycleName",
-								"WashCavity_CycleSetExtraRinseSelect",
 								"Cavity_CycleSetSteamEnable",
-								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFresheningSelect",
+								"WashCavity_CycleSetPresoakTimed",
 								"Cavity_OpSetOperations"
 							],
 							"SetOperationsMapping": {
