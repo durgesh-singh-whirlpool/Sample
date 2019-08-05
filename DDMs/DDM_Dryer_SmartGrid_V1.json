@@ -1271,7 +1271,9 @@
 				},
 				"AttributesMapping": {
 					"DryCavity": {
-						"CycleName": "CycleName",
+						"CycleName": [
+						"CycleNameCode"
+						],
 						"TimeRemaining": "EstTimeRemaining",
 						"MachineState": "ApplianceStateCode",
 						"WrinkleShield": "WrinkleShield",
