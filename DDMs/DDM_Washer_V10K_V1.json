@@ -3308,6 +3308,14 @@
 										"Default": false
 									}
 								}
+							},
+							"WashCavity_CycleSetCycleSelectLoadFresh": {
+								"Required": {
+									
+								},
+								"NonEditable":{
+								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
 							}
 						},
 						"SetCycle": {
@@ -3645,6 +3653,16 @@
 									]
 								}
 							}
+						},
+						"SetPostCycle":{
+						"WashCavity_CycleSetCycleSelectLoadFresh": {
+								"Name": "LoadFresh",
+								"Attributes": {
+									"Compartment_CycleId": [
+										"RinseSpin"
+									]
+								}
+							}
 						}
 					}
 				},
@@ -3889,6 +3907,48 @@
 							],
 							"StatusAttributes": [],
 							"StateAttributes": {},
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"SetPostCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
+							},
+							"StatusAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak"
+							],
 							"SendCommandAttributes": [
 								"Compartment_DownloadCyclePersist",
 								"CycleOptionsWHR_WhatTo",
