@@ -3349,6 +3349,40 @@
 								"Operation": "Cavity_OpSetOperations"
 							}
 						},
+						"SetUtilityCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_CycleStatusMachineState"
+							},
+							"StatusAttributes": [
+								"DryCavity_CycleSetCycleSelect",
+								"DryCavity_CycleSetTemperature",
+								"DryCavity_CycleSetDryness",
+								"DryCavity_CycleSetWrinkleShield",
+								"DryCavity_CycleSetStaticGuardEnable",
+								"DrySys_OpSetDampNotificationToneVolume",
+								"DryCavity_CycleSetEcoBoostEnable",
+								"DryCavity_CycleSetManualDryTime"
+							],
+							"SendCommandAttributes": [
+								"DryCavity_CycleSetCycleSelect",
+								"DryCavity_CycleSetTemperature",
+								"DryCavity_CycleSetDryness",
+								"DryCavity_CycleSetWrinkleShield",
+								"DryCavity_CycleSetStaticGuardEnable",
+								"DrySys_OpSetDampNotificationToneVolume",
+								"DryCavity_CycleSetEcoBoostEnable",
+								"DryCavity_CycleSetManualDryTime",
+								"Cavity_OpSetOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							}
+						},
 						"CyclesHistory": {
 							"Visible": true,
 							"AvailableIn": [
