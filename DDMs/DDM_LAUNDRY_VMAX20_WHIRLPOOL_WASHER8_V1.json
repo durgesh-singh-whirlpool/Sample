@@ -3783,8 +3783,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleColorsBrights",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 1,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
@@ -3805,8 +3804,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleColorsBrights",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 0,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
@@ -3827,8 +3825,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempTapCold",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelExtraLight",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToColdWash",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 0,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
@@ -3849,8 +3846,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 0,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
@@ -3871,8 +3867,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToColorsBrightsHowToWrinkleControl",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 0,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
@@ -3893,8 +3888,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 0,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
@@ -3912,10 +3906,13 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToHeavyDuty",
-									"WashCavity_CycleSetTemperature": "WashTempHot",
-									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
-									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal"
+									"WashCavity_CycleSetTemperature": "WashTempWarm",
+									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
+									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
+									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
+									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
 								}
 							},
 							"Cavity_CycleSetCycleNameCoatsJackets": {
@@ -3933,8 +3930,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempCold",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 0,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
@@ -3955,8 +3951,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToWrinkleControl",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 0,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
@@ -3977,8 +3972,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempTapCold",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelExtraLight",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToColdWash",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 0,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
@@ -3999,8 +3993,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempHot",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelExtraHeavy",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToSanitize",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 1,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
@@ -4308,97 +4301,98 @@
 									}
 								}
 							},
-							"DownloadGo": {
-								"Cavity_CycleSetCycleNameActivewear": {
-									"Name": "Activewear",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"Activewear"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameJeans": {
-									"Name": "Jeans",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"Jeans"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameSwimwear": {
-									"Name": "Swimwear",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"Swimwear"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameSleepingBags": {
-									"Name": "SleepingBags",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"SleepingBags"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameBusinessCasual": {
-									"Name": "BusinessCasual",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"BusinessCasual"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameComforters": {
-									"Name": "Comforters",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"Comforters"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameBlankets": {
-									"Name": "Blankets",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"Blankets"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameCoatsJackets": {
-									"Name": "CoatsJackets",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"Jackets"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameLingerie": {
-									"Name": "Lingerie",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"Lingerie"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameMachineWashCurtains": {
-									"Name": "MachineWashCurtains",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"MachineWashCurtains"
-										]
-									}
-								},
-								"Cavity_CycleSetCycleNameDiapers": {
-									"Name": "Diapers",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"Diapers"
-										]
-									}
+							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
+						},
+						"SetDownloadAndGo": {
+							"Cavity_CycleSetCycleNameActivewear": {
+								"Name": "Activewear",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleColorsBrights"
+									]
 								}
 							},
-							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
+							"Cavity_CycleSetCycleNameJeans": {
+								"Name": "Jeans",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleColorsBrights"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameSwimwear": {
+								"Name": "Swimwear",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleWhatToDelicatesHowToColdWash"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameSleepingBags": {
+								"Name": "SleepingBags",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleBulky"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameBusinessCasual": {
+								"Name": "BusinessCasual",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleWhatToColorsBrightsHowToWrinkleControl"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameComforters": {
+								"Name": "Comforters",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleBulky"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameBlankets": {
+								"Name": "Blankets",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleBulky"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameCoatsJackets": {
+								"Name": "CoatsJackets",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleBulky"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameLingerie": {
+								"Name": "Lingerie",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleWhatToDelicatesHowToWrinkleControl"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameMachineWashCurtains": {
+								"Name": "MachineWashCurtains",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleWhatToDelicatesHowToColdWash"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameDiapers": {
+								"Name": "Diapers",
+								"Attributes": {
+									"WashCavity_CycleSetCycleSelect": [
+										"WashCycleWhatToWhitesHowToSanitize"
+									]
+								}
+							},
+							"Default": "Cavity_CycleSetCycleNameActivewear"
 						},
 						"SetUtilityCycle": {
 							"WashCavity_CycleSetCycleSelectWashCycleDrainSpin": {
@@ -4507,6 +4501,82 @@
 					},
 					"WashCavity": {
 						"SetCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_CycleStatusMachineState"
+							},
+							"StatusAttributes": [
+								"WashCavity_CycleSetCycleSelect",
+								"WashCavity_CycleSetTemperature",
+								"WashCavity_CycleSetSoilLevel",
+								"WashCavity_CycleSetSpinSpeed",
+								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFabricSoftenerEnable",
+								"WashCavity_CycleSetFresheningSelect",
+								"WashCavity_CycleSetDeepFillEnable",
+								"Cavity_TimeSetDelayTime"
+							],
+							"SendCommandAttributes": [
+								"WashCavity_CycleSetCycleSelect",
+								"Cavity_TimeSetDelayTime",
+								"WashCavity_CycleSetTemperature",
+								"WashCavity_CycleSetSoilLevel",
+								"WashCavity_CycleSetSpinSpeed",
+								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFabricSoftenerEnable",
+								"WashCavity_CycleSetFresheningSelect",
+								"WashCavity_CycleSetDeepFillEnable",
+								"Cavity_OpSetOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							}
+						},
+						"SetDownloadAndGo": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_CycleStatusMachineState"
+							},
+							"StatusAttributes": [
+								"WashCavity_CycleSetCycleSelect",
+								"WashCavity_CycleSetTemperature",
+								"WashCavity_CycleSetSoilLevel",
+								"WashCavity_CycleSetSpinSpeed",
+								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFabricSoftenerEnable",
+								"WashCavity_CycleSetFresheningSelect",
+								"WashCavity_CycleSetDeepFillEnable",
+								"Cavity_TimeSetDelayTime"
+							],
+							"SendCommandAttributes": [
+								"WashCavity_CycleSetCycleSelect",
+								"Cavity_TimeSetDelayTime",
+								"WashCavity_CycleSetTemperature",
+								"WashCavity_CycleSetSoilLevel",
+								"WashCavity_CycleSetSpinSpeed",
+								"WashCavity_CycleSetPresoakTimed",
+								"WashCavity_CycleSetExtraRinseSelect",
+								"WashCavity_CycleSetFabricSoftenerEnable",
+								"WashCavity_CycleSetFresheningSelect",
+								"WashCavity_CycleSetDeepFillEnable",
+								"Cavity_OpSetOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							}
+						},
+						"SetUtilityCycle": {
 							"Visible": true,
 							"AvailableIn": [
 								"US",
