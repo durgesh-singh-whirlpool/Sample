@@ -5045,14 +5045,7 @@
 								"BulkDispense2Enable": "WashCavity_CycleSetBulkDispense2Enable"
 							},
 							"SetOperationsMapping": {
-								"BulkDispense1Level": "WashCavity_OpStatusBulkDispense1Level",
-								"BulkDispense2Level": "WashCavity_OpStatusBulkDispense2Level",
-								"BulkDispense1Concentration": "WashCavity_ChangeStatusBulkDispense1Concentration",
-								"BulkDispense2Concentration": "WashCavity_ChangeStatusBulkDispense2Concentration",
-								"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
-								"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
-								"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
-								"BulkDispense2Enable": "WashCavity_CycleSetBulkDispense2Enable"
+
 							}
 						}
 					},
