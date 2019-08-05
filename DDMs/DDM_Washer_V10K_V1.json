@@ -1717,22 +1717,19 @@
 		"Key": "DDM_Washer_V10K_V1",
 		"capability": [
 			{
-			
-			"Compatibility": {
+				"Compatibility": {
 					"SkipPrefixForFavorites": [
 						"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-								"Compartment_CycleId",
-								"CycleOptionsWHR_Temperature",
-								"CycleOptionsWHR_DeepClean",
-								"CycleOptionsWHR_OxiClean",
-								"CycleOptionsWHR_SoilLevel",
-								"CycleOptionsWHR_SpinSpeed",
-								"CycleOptionsWHR_Presoak",
-								"CycleOptionsWHR_ExtraRinse",
-								"CycleOptionsWHR_Presoak",
-								"System_Command"
+						"CycleOptionsWHR_WhatTo",
+						"CycleOptionsWHR_HowTo",
+						"Compartment_CycleId",
+						"CycleOptionsWHR_Temperature",
+						"CycleOptionsWHR_DeepClean",
+						"CycleOptionsWHR_OxiClean",
+						"CycleOptionsWHR_SoilLevel",
+						"CycleOptionsWHR_SpinSpeed",
+						"CycleOptionsWHR_ExtraRinse",
+						"CycleOptionsWHR_Presoak"
 					]
 				},
 				"CavityOrder": [
@@ -3147,6 +3144,106 @@
 									}
 								}
 							},
+							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Heavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
+								}
+							},
+							"Cavity_CycleSetCycleNameBrightColors": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Light",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
+								}
+							},
+							"Cavity_CycleSetCycleNameBusinessCasual": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_SoilLevel": "Medium",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameComforters": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_SoilLevel": "Heavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameHandwashFabrics": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+								"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Light",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"	
+								}
+							},
+							"Cavity_CycleSetCycleNameHeavyDuty": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp4",
+									"CycleOptionsWHR_SoilLevel": "VeryHeavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
+								}
+							},
+							"Cavity_CycleSetCycleNameIntimates": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Light",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameSleepingBags": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_SoilLevel": "Heavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameSwimwear": {
+								"Required": {
+									
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Light",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameTowels": {
+								"Required": {
+								
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_SoilLevel": "Heavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
+								}
+							},
 							"WashCavity_CycleSetCycleSelectRinseSpin": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
@@ -3418,7 +3515,120 @@
 							},
 							"Default": "WashCavity_CycleSetCycleSelectMixed_Normal"
 						},
-						"UtilityCycle": {
+						"SetDownloadAndGo": {
+							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
+								"Name": "AthleticHighPerformanceWear",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Mixed"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameBrightColors": {
+								"Name": "BrightColors",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Mixed"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"ColorLast"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameBusinessCasual": {
+								"Name": "BusinessCasual",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Casuals"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameComforters": {
+								"Name": "Comforters",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"BulkySheets"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"DeepWater"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameHandwashFabrics": {
+								"Name": "HandwashFabrics",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameHeavyDuty": {
+								"Name": "HeavyDuty",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Whites"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameIntimates": {
+								"Name": "Intimates",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameSleepingBags": {
+								"Name": "SleepingBags",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"BulkySheets"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"DeepWater"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameSwimwear": {
+								"Name": "Swimwear",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"DeepWater"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameTowels": {
+								"Name": "Towels",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Mixed"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Default": "Cavity_CycleSetCycleNameAthleticHighPerformanceWear"
+						},
+						"SetUtilityCycle": {
 							"WashCavity_CycleSetCycleSelectRinseSpin": {
 								"Name": "RinseSpin",
 								"Attributes": {
@@ -3529,8 +3739,8 @@
 							},
 							"StatusAttributes": [
 								"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
 								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_DeepClean",
@@ -3542,9 +3752,93 @@
 								"CycleOptionsWHR_Presoak"
 							],
 							"SendCommandAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"SetUtilityCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
+							},
+							"StatusAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"SetDownloadAndGo": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
+							},
+							"StatusAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
 								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_DeepClean",
@@ -3568,8 +3862,8 @@
 							],
 							"SendCommandAttributes": [
 								"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
 								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_DeepClean",
@@ -3597,8 +3891,8 @@
 							"StateAttributes": {},
 							"SendCommandAttributes": [
 								"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
 								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_DeepClean",
