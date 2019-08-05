@@ -1277,7 +1277,9 @@
 				},
 				"AttributesMapping": {
 					"WashCavity": {
-						"CycleName": "CycleNameCode",
+						"CycleName": [
+						"CycleNameCode"
+						],
 						"TimeRemaining": "EstTimeRemaining",
 						"MachineState": "ApplianceStateCode",
 						"FresheningSelect": "GetFanFreshStatus",
