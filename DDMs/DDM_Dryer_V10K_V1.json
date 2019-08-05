@@ -2649,6 +2649,62 @@
 										"Step": 1
 									}
 								}
+							},
+							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp1",
+									"CycleOptionsWHR_Dryness": "Normal"
+								}
+							},
+							"Cavity_CycleSetCycleNameBusinessCasual": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_Dryness": "Normal"
+								}
+							},
+							"Cavity_CycleSetCycleNameComforters": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp3",
+									"CycleOptionsWHR_Dryness": "Normal"
+								}
+							},
+							"Cavity_CycleSetCycleNameHandwashFabrics": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp1",
+									"CycleOptionsWHR_Dryness": "LessDry2"
+								}
+							},
+							"Cavity_CycleSetCycleNameHeavyDuty": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp4",
+									"CycleOptionsWHR_Dryness": "MoreDry"
+								}
+							},
+							"Cavity_CycleSetCycleNameIntimates": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp1",
+									"CycleOptionsWHR_Dryness": "LessDry2"
+								}
+							},
+							"Cavity_CycleSetCycleNameSleepingBags": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp3",
+									"CycleOptionsWHR_Dryness": "Normal"
+								}
+							},
+							"Cavity_CycleSetCycleNameTowels": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp4",
+									"CycleOptionsWHR_Dryness": "Normal"
+								}
 							}
 						},
 						"SetCycle": {
@@ -2847,6 +2903,97 @@
 								}
 							},
 							"Default": "Compartment_CycleIdMixed_Normal"
+						},
+						"SetDownloadAndGo": {
+							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
+								"Name": "AthleticHighPerformanceWear",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameBusinessCasual": {
+								"Name": "BusinessCasual",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Casuals"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameComforters": {
+								"Name": "Comforters",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"BulkySheets"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameHandwashFabrics": {
+								"Name": "HandwashFabrics",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Gentle"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameHeavyDuty": {
+								"Name": "HeavyDuty",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Towels"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameIntimates": {
+								"Name": "Intimates",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Gentle"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameSleepingBags": {
+								"Name": "SleepingBags",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"BulkySheets"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameTowels": {
+								"Name": "Towels",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Towels"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Default": "Cavity_CycleSetCycleNameAthleticHighPerformanceWear"
 						}
 					}
 				},
@@ -3007,6 +3154,42 @@
 								"CycleOptionsWHR_EcoBoost",
 								"CycleOptionsWHR_Dryness",
 								"CycleOptionsWHR_ManualDryTime",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"SetDownloadAndGo": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
+							},
+							"StatusAttributes": [
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_StaticGuard",
+								"CycleOptionsWHR_WrinkleShield",
+								"CycleOptionsWHR_EcoBoost",
+								"CycleOptionsWHR_Dryness",
+								"CycleOptionsWHR_ManualDryTime",
+								"System_Command"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_Dryness",
+								"CycleOptionsWHR_ManualDryTime",
+								"CycleOptionsWHR_WrinkleShield",
+								"CycleOptionsWHR_StaticGuard",
+								"CycleOptionsWHR_EcoBoost",
 								"System_Command"
 							],
 							"SetOperationsMapping": {
