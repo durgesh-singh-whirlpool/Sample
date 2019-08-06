@@ -4211,7 +4211,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleNormal",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
@@ -4232,7 +4231,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleTowels",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
@@ -4253,7 +4251,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToColdWash",
 									"WashCavity_CycleSetTemperature": "WashTempCold",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
@@ -4274,7 +4271,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
@@ -4295,7 +4291,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleWrinkleControl",
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
@@ -4316,7 +4311,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleBulky",
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
@@ -4337,7 +4331,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToHeavyDuty",
 									"WashCavity_CycleSetTemperature": "WashTempHot",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
@@ -4358,7 +4351,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToBulkyHowToColdWash",
 									"WashCavity_CycleSetTemperature": "WashTempCold",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
@@ -4379,7 +4371,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToDelicatesHowToWrinkleControl",
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedLow",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
@@ -4400,7 +4391,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToColorsBrightsHowToColdWash",
 									"WashCavity_CycleSetTemperature": "WashTempCold",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
@@ -4421,7 +4411,6 @@
 									}
 								},
 								"NonEditable": {
-									"WashCavity_CycleSetCycleSelect": "WashCycleWhatToWhitesHowToSanitize",
 									"WashCavity_CycleSetTemperature": "WashTempExtraHot",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
