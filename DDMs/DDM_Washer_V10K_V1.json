@@ -1738,7 +1738,7 @@
 				"Capability": {
 					"WashCavity": {
 						"CapabilityData": {
-							"WashCavity_CycleSetCycleSelectMixed_Normal": {
+							"Compartment_CycleIdMixed_Normal": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -1796,7 +1796,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectMixed_Quick": {
+							"Compartment_CycleIdMixed_Quick": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -1855,7 +1855,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectMixed_Cold": {
+							"Compartment_CycleIdMixed_Cold": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -1913,7 +1913,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectMixed_DeepWater": {
+							"Compartment_CycleIdMixed_DeepWater": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -1972,7 +1972,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectMixed_ColorLast": {
+							"Compartment_CycleIdMixed_ColorLast": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2030,7 +2030,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectCasuals_Normal": {
+							"Compartment_CycleIdCasuals_Normal": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2089,7 +2089,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectCasuals_Quick": {
+							"Compartment_CycleIdCasuals_Quick": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2148,7 +2148,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectCasuals_Cold": {
+							"Compartment_CycleIdCasuals_Cold": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2206,7 +2206,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectCasuals_DeepWater": {
+							"Compartment_CycleIdCasuals_DeepWater": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2265,7 +2265,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectCasuals_ColorLast": {
+							"Compartment_CycleIdCasuals_ColorLast": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2323,7 +2323,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectWhites_Normal": {
+							"Compartment_CycleIdWhites_Normal": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2382,7 +2382,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectWhites_Quick": {
+							"Compartment_CycleIdWhites_Quick": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2441,7 +2441,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectWhites_Cold": {
+							"Compartment_CycleIdWhites_Cold": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2499,7 +2499,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectWhites_DeepWater": {
+							"Compartment_CycleIdWhites_DeepWater": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2558,7 +2558,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectDelicates_Normal": {
+							"Compartment_CycleIdDelicates_Normal": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2617,7 +2617,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectDelicates_Quick": {
+							"Compartment_CycleIdDelicates_Quick": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2676,7 +2676,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectDelicates_Cold": {
+							"Compartment_CycleIdDelicates_Cold": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2734,7 +2734,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectDelicates_DeepWater": {
+							"Compartment_CycleIdDelicates_DeepWater": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2793,7 +2793,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectDelicates_ColorLast": {
+							"Compartment_CycleIdDelicates_ColorLast": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2851,7 +2851,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectBulkySheets_Normal": {
+							"Compartment_CycleIdBulkySheets_Normal": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2910,7 +2910,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectBulkySheets_Quick": {
+							"Compartment_CycleIdBulkySheets_Quick": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -2969,7 +2969,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectBulkySheets_Cold": {
+							"Compartment_CycleIdBulkySheets_Cold": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -3027,7 +3027,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectBulkySheets_DeepWater": {
+							"Compartment_CycleIdBulkySheets_DeepWater": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -3086,7 +3086,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectBulkySheets_ColorLast": {
+							"Compartment_CycleIdBulkySheets_ColorLast": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -3320,7 +3320,7 @@
 						},
 						"SetCycle": {
 							"Mixed": {
-								"WashCavity_CycleSetCycleSelectMixed_Normal": {
+								"Compartment_CycleIdMixed_Normal": {
 									"Name": "MixedNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3328,7 +3328,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectMixed_Quick": {
+								"Compartment_CycleIdMixed_Quick": {
 									"Name": "MixedQuick",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3336,7 +3336,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectMixed_Cold": {
+								"Compartment_CycleIdMixed_Cold": {
 									"Name": "MixedCold",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3344,7 +3344,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectMixed_DeepWater": {
+								"Compartment_CycleIdMixed_DeepWater": {
 									"Name": "MixedDeepWater",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3352,7 +3352,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectMixed_ColorLast": {
+								"Compartment_CycleIdMixed_ColorLast": {
 									"Name": "MixedColorLast",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3362,7 +3362,7 @@
 								}
 							},
 							"Casuals": {
-								"WashCavity_CycleSetCycleSelectCasuals_Normal": {
+								"Compartment_CycleIdCasuals_Normal": {
 									"Name": "CasualsNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3370,7 +3370,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectCasuals_Quick": {
+								"Compartment_CycleIdCasuals_Quick": {
 									"Name": "CasualsQuick",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3378,7 +3378,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectCasuals_Cold": {
+								"Compartment_CycleIdCasuals_Cold": {
 									"Name": "CasualsCold",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3386,7 +3386,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectCasuals_DeepWater": {
+								"Compartment_CycleIdCasuals_DeepWater": {
 									"Name": "CasualsDeepWater",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3394,7 +3394,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectCasuals_ColorLast": {
+								"Compartment_CycleIdCasuals_ColorLast": {
 									"Name": "CasualsColorLast",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3404,7 +3404,7 @@
 								}
 							},
 							"Whites": {
-								"WashCavity_CycleSetCycleSelectWhites_Normal": {
+								"Compartment_CycleIdWhites_Normal": {
 									"Name": "WhitesNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3412,7 +3412,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectWhites_Quick": {
+								"Compartment_CycleIdWhites_Quick": {
 									"Name": "WhitesQuick",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3420,7 +3420,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectWhites_Cold": {
+								"Compartment_CycleIdWhites_Cold": {
 									"Name": "WhitesCold",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3428,7 +3428,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectWhites_DeepWater": {
+								"Compartment_CycleIdWhites_DeepWater": {
 									"Name": "WhitesDeepWater",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3438,7 +3438,7 @@
 								}
 							},
 							"Delicates": {
-								"WashCavity_CycleSetCycleSelectDelicates_Normal": {
+								"Compartment_CycleIdDelicates_Normal": {
 									"Name": "DelicatesNormal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3446,7 +3446,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectDelicates_Quick": {
+								"Compartment_CycleIdDelicates_Quick": {
 									"Name": "DelicatesQuick",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3454,7 +3454,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectDelicates_Cold": {
+								"Compartment_CycleIdDelicates_Cold": {
 									"Name": "DelicatesCold",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3462,7 +3462,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectDelicates_DeepWater": {
+								"Compartment_CycleIdDelicates_DeepWater": {
 									"Name": "DelicatesDeepWater",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3470,7 +3470,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectDelicates_ColorLast": {
+								"Compartment_CycleIdDelicates_ColorLast": {
 									"Name": "DelicatesColorLast",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3480,7 +3480,7 @@
 								}
 							},
 							"BulkySheets": {
-								"WashCavity_CycleSetCycleSelectBulkySheets_Normal": {
+								"Compartment_CycleIdBulkySheets_Normal": {
 									"Name": "BulkySheets_Normal",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3488,7 +3488,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectBulkySheets_Quick": {
+								"Compartment_CycleIdBulkySheets_Quick": {
 									"Name": "BulkySheetsQuick",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3496,7 +3496,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectBulkySheets_Cold": {
+								"Compartment_CycleIdBulkySheets_Cold": {
 									"Name": "BulkySheetsCold",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3504,7 +3504,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectBulkySheets_DeepWater": {
+								"Compartment_CycleIdBulkySheets_DeepWater": {
 									"Name": "BulkySheetsDeepWater",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3512,7 +3512,7 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectBulkySheets_ColorLast": {
+								"Compartment_CycleIdBulkySheets_ColorLast": {
 									"Name": "BulkySheetsColorLast",
 									"Attributes": {
 										"Compartment_CycleId": [
@@ -3521,7 +3521,7 @@
 									}
 								}
 							},
-							"Default": "WashCavity_CycleSetCycleSelectMixed_Normal"
+							"Default": "Compartment_CycleIdMixed_Normal"
 						},
 						"SetDownloadAndGo": {
 							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
