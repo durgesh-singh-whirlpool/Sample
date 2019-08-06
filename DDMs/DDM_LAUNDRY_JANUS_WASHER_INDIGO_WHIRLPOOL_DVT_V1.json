@@ -4766,7 +4766,6 @@
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
 						},
 						"SetLoadandGoDispenser": {
-						"LoadandGoDispenser1": {
 								"WashCavity_CycleSetCycleSelectWashCycleNormal": {
 									"Name": "RegularNormal",
 									"Attributes": {
@@ -4783,89 +4782,6 @@
 										]
 									}
 								},
-								"WashCavity_CycleSetCycleSelectWashCycleWrinkleControl": {
-									"Name": "RegularWrinkleControl",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleWrinkleControl"
-										]
-									}
-								},
-								"WashCavity_CycleSetCycleSelectWashCycleColdWash": {
-									"Name": "RegularColdWash",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleColdWash"
-										]
-									}
-								},
-								"WashCavity_CycleSetCycleSelectWashCycleHeavyDuty": {
-									"Name": "RegularHeavyDuty",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleHeavyDuty"
-										]
-									}
-								},
-								"WashCavity_CycleSetCycleSelectWashCycleSanitize": {
-									"Name": "RegularSanitize",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleSanitize"
-										]
-									}
-								}
-							},
-							"LoadandGoDispenser2": {
-								"WashCavity_CycleSetCycleSelectWashCycleColorsBrights": {
-									"Name": "ColorNormal",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleColorsBrights"
-										]
-									}
-								},
-								"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToQuick": {
-									"Name": "WashCycleWhatToColorsBrightsHowToQuick",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleWhatToColorsBrightsHowToQuick"
-										]
-									}
-								},
-								"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToWrinkleControl": {
-									"Name": "WashCycleWhatToColorsBrightsHowToWrinkleControl",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleWhatToColorsBrightsHowToWrinkleControl"
-										]
-									}
-								},
-								"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToHeavyDuty": {
-									"Name": "WashCycleWhatToColorsBrightsHowToHeavyDuty",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleWhatToColorsBrightsHowToHeavyDuty"
-										]
-									}
-								},
-								"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToColdWash": {
-									"Name": "WashCycleWhatToColorsBrightsHowToColdWash",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleWhatToColorsBrightsHowToColdWash"
-										]
-									}
-								},
-								"WashCavity_CycleSetCycleSelectWashCycleWhatToColorsBrightsHowToSanitize": {
-									"Name": "WashCycleWhatToColorsBrightsHowToSanitize",
-									"Attributes": {
-										"WashCavity_CycleSetCycleSelect": [
-											"WashCycleWhatToColorsBrightsHowToSanitize"
-										]
-									}
-								}
-							},
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
 						
 						},
