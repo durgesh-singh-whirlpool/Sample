@@ -1271,8 +1271,16 @@
 				],
 				"Capability": {
 				"WashCavity":{
-				"CapabilityData": {},
-				"SetCycle":{}
+				"CapabilityData": {
+				"WashCavity_CycleSetCycleSelectWashCycleNone": {
+								"Required": {}
+				}
+				},
+				"SetCycle":{
+				"WashCavity_CycleSetCycleSelectWashCycleNone": {
+									"Name": "None"
+								}
+				}
 				}
 				},
 				"AttributesMapping": {
