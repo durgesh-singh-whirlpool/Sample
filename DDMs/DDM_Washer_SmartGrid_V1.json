@@ -1279,7 +1279,8 @@
 				"SetCycle":{
 				"WashCavity_CycleSetCycleSelectWashCycleNone": {
 									"Name": "None"
-								}
+				},
+				"Default": "WashCavity_CycleSetCycleSelectWashCycleNone"
 				}
 				}
 				},
