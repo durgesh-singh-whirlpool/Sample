@@ -4766,7 +4766,7 @@
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
 						},
 						"SetLoadandGoDispenser": {
-						"Regular": {
+						"LoadandGoDispenser1": {
 								"WashCavity_CycleSetCycleSelectWashCycleNormal": {
 									"Name": "RegularNormal",
 									"Attributes": {
@@ -4816,7 +4816,7 @@
 									}
 								}
 							},
-							"Colors": {
+							"LoadandGoDispenser2": {
 								"WashCavity_CycleSetCycleSelectWashCycleColorsBrights": {
 									"Name": "ColorNormal",
 									"Attributes": {
