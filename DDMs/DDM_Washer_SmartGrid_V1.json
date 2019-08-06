@@ -1292,7 +1292,7 @@
 						"TimeRemaining": "EstTimeRemaining",
 						"MachineState": "ApplianceStateCode",
 						"FresheningSelect": "GetFanFreshStatus",
-						"AffreshStatus": "GetAffreshStatus",
+						"CleanReminder": "GetAffreshStatus",
 						"DispenseStatus": "DetergentDispenseStatus"
 					},
 					"Common": {
