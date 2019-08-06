@@ -4443,7 +4443,6 @@
 						"DelayTime": "Cavity_TimeSetDelayTime",
 						"BulkDispense1Level": "WashCavity_OpStatusBulkDispense1Level",
 						"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration",
-						"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 						"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
 						"CleanDetection": "WashCavity_CycleStatusCleanDetection",
 						"CleanReminder": "WashCavity_CycleStatusCleanReminder"
