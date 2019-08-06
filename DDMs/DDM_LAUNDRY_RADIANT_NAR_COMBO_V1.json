@@ -6860,7 +6860,6 @@
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
-						"TempDisplayUnits": "SystemSettings_TempDisplayUnits",
 						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
 						"SoundKeyPress": "Sys_OpSetKeyPressToneVolume"
 					},
@@ -6871,10 +6870,8 @@
 						"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
 						"MachineState": "Cavity_CycleStatusMachineState",
 						"DoorOpen": "Cavity_OpStatusDoorOpen",
-						"Temperature": "DryCavity_CycleSetTemperature",
 						"Dryness": "DryCavity_CycleSetDryness",
 						"WrinkleShield": "DryCavity_CycleSetWrinkleShield",
-						"StaticGuardEnable": "DryCavity_CycleSetStaticGuardEnable",
 						"ManualDryTime": "DryCavity_CycleSetManualDryTime"
 					},
 					"ComboCavity": {
@@ -6893,10 +6890,8 @@
 						"ExtraRinse": "WashCavity_CycleSetExtraRinseSelect",
 						"FresheningSelect": "WashCavity_CycleSetFresheningSelect",
 						"DelayTime": "Cavity_TimeSetDelayTime",
-						"DryTemperature": "DryCavity_CycleSetTemperature",
 						"Dryness": "DryCavity_CycleSetDryness",
 						"WrinkleShield": "DryCavity_CycleSetWrinkleShield",
-						"StaticGuardEnable": "DryCavity_CycleSetStaticGuardEnable",
 						"ManualDryTime": "DryCavity_CycleSetManualDryTime",
 						"CleanReminder": "WashCavity_CycleStatusCleanReminder"
 					}
@@ -7014,18 +7009,14 @@
 							},
 							"StatusAttributes": [
 								"DryCavity_CycleSetCycleSelect",
-								"DryCavity_CycleSetTemperature",
 								"DryCavity_CycleSetDryness",
 								"DryCavity_CycleSetWrinkleShield",
-								"DryCavity_CycleSetStaticGuardEnable",
 								"DryCavity_CycleSetManualDryTime"
 							],
 							"SendCommandAttributes": [
 								"DryCavity_CycleSetCycleSelect",
-								"DryCavity_CycleSetTemperature",
 								"DryCavity_CycleSetDryness",
 								"DryCavity_CycleSetWrinkleShield",
-								"DryCavity_CycleSetStaticGuardEnable",
 								"DryCavity_CycleSetManualDryTime",
 								"Cavity_OpSetOperations"
 							],
@@ -7041,10 +7032,8 @@
 							],
 							"SendCommandAttributes": [
 								"DryCavity_CycleSetCycleSelect",
-								"DryCavity_CycleSetTemperature",
 								"DryCavity_CycleSetDryness",
 								"DryCavity_CycleSetWrinkleShield",
-								"DryCavity_CycleSetStaticGuardEnable",
 								"DryCavity_CycleSetManualDryTime",
 								"Cavity_OpSetOperations"
 							],
@@ -7064,10 +7053,8 @@
 							"StateAttributes": {},
 							"SendCommandAttributes": [
 								"DryCavity_CycleSetCycleSelect",
-								"DryCavity_CycleSetTemperature",
 								"DryCavity_CycleSetDryness",
 								"DryCavity_CycleSetWrinkleShield",
-								"DryCavity_CycleSetStaticGuardEnable",
 								"DryCavity_CycleSetManualDryTime",
 								"Cavity_OpSetOperations"
 							],
@@ -7281,7 +7268,7 @@
 					"DryCavity": {
 					"CycleHistory": {
 							"isLegacy": false,
-							"attributes": "DryCavity_CycleSetCycleSelect,DryCavity_CycleSetWrinkleShield,DryCavity_CycleSetManualDryTime,DryCavity_CycleSetDryness,DryCavity_CycleSetTemperature,DryCavity_CycleSetEcoBoostEnable,DryCavity_CycleSetStaticGuardEnable,DrySys_OpSetDampNotificationToneVolume",
+							"attributes": "DryCavity_CycleSetCycleSelect,DryCavity_CycleSetWrinkleShield,DryCavity_CycleSetManualDryTime,DryCavity_CycleSetDryness,DryCavity_CycleSetEcoBoostEnable,DrySys_OpSetDampNotificationToneVolume",
 							"groupBy": "XCat_OdometerStatusCycleCount"
 						}
 					},
