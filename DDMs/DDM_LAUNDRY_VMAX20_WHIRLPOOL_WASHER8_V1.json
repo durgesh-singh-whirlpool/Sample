@@ -4439,7 +4439,6 @@
 						"PresoakTimed": "WashCavity_CycleSetPresoakTimed",
 						"FabricSoftenerEnable": "WashCavity_CycleSetFabricSoftenerEnable",
 						"ExtraRinse": "WashCavity_CycleSetExtraRinseSelect",
-						"FresheningSelect": "WashCavity_CycleSetFresheningSelect",
 						"DeepFillEnable": "WashCavity_CycleSetDeepFillEnable",
 						"DelayTime": "Cavity_TimeSetDelayTime",
 						"BulkDispense1Level": "WashCavity_OpStatusBulkDispense1Level",
@@ -4517,7 +4516,6 @@
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFabricSoftenerEnable",
-								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_TimeSetDelayTime"
 							],
@@ -4530,7 +4528,6 @@
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFabricSoftenerEnable",
-								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
 							],
@@ -4555,7 +4552,6 @@
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFabricSoftenerEnable",
-								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_TimeSetDelayTime"
 							],
@@ -4568,7 +4564,6 @@
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFabricSoftenerEnable",
-								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
 							],
@@ -4593,7 +4588,6 @@
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFabricSoftenerEnable",
-								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_TimeSetDelayTime"
 							],
@@ -4606,7 +4600,6 @@
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFabricSoftenerEnable",
-								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
 							],
@@ -4632,7 +4625,6 @@
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFabricSoftenerEnable",
-								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
 							],
@@ -4658,7 +4650,6 @@
 								"WashCavity_CycleSetPresoakTimed",
 								"WashCavity_CycleSetExtraRinseSelect",
 								"WashCavity_CycleSetFabricSoftenerEnable",
-								"WashCavity_CycleSetFresheningSelect",
 								"WashCavity_CycleSetDeepFillEnable",
 								"Cavity_OpSetOperations"
 							],
