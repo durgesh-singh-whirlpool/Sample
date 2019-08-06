@@ -4830,11 +4830,19 @@
 						"SetLoadandGoDispenser": {
 							"CycleSetBulkDispense1": {
 								"Name": "Dispense1",
-								"Attributes": {}
+								"Attributes": {
+								"WashCavity_CycleSetCycleSelect": [
+										"WashCycleNormal"
+									]
+								}
 							},
 							"CycleSetBulkDispense2": {
 								"Name": "Dispense2",
-								"Attributes": {}
+								"Attributes": {
+								"WashCavity_CycleSetCycleSelect": [
+										"WashCycleNormal"
+									]
+								}
 							},
 							"Default": "CycleSetBulkDispense1"
 						},
