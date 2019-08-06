@@ -5268,7 +5268,9 @@
 								"WashCavity_CycleSetBulkDispense1Enable",
 								"WashCavity_CycleSetBulkDispense2Enable"
 							],
-							"SetOperationsMapping": {}
+							"SetOperationsMapping": {
+							"Operation": "Cavity_OpSetOperations"
+							}
 						}
 					}
 				},
