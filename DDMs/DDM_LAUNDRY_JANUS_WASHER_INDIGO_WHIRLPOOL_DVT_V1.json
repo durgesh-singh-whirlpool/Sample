@@ -5261,12 +5261,12 @@
 								"WashCavity_CycleSetBulkDispense2Enable"
 							],
 							"SendCommandAttributes": [
+							"WashCavity_CycleSetBulkDispense1Enable",
+								"WashCavity_CycleSetBulkDispense2Enable",
 								"WashCavity_ChangeStatusBulkDispense1Concentration",
 								"WashCavity_ChangeStatusBulkDispense2Concentration",
 								"WashCavity_OpSetBulkDispense1Selection",
-								"WashCavity_OpSetBulkDispense2Selection",
-								"WashCavity_CycleSetBulkDispense1Enable",
-								"WashCavity_CycleSetBulkDispense2Enable"
+								"WashCavity_OpSetBulkDispense2Selection"
 							],
 							"SetOperationsMapping": {
 							"Operation": "Cavity_OpSetOperations"
