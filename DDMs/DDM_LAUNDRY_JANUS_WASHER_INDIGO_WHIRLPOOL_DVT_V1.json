@@ -5028,26 +5028,7 @@
 							"AvailableIn": [
 								"US",
 								"CA"
-							],
-							"SendCommandAttributes": [
-								"WashCavity_OpSetBulkDispense1Concentration",
-								"WashCavity_OpSetBulkDispense2Concentration",
-								"WashCavity_CycleSetBulkDispense1Enable",
-								"WashCavity_CycleSetBulkDispense2Enable",
-								"WashCavity_OpSetBulkDispense1Selection",
-								"WashCavity_OpSetBulkDispense2Selection"
-							],
-							"StateAttributes": {
-								"BulkDispense1Concentration": "WashCavity_ChangeStatusBulkDispense1Concentration",
-								"BulkDispense2Concentration": "WashCavity_ChangeStatusBulkDispense2Concentration",
-								"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
-								"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
-								"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
-								"BulkDispense2Enable": "WashCavity_CycleSetBulkDispense2Enable"
-							},
-							"SetOperationsMapping": {
-
-							}
+							]
 						}
 					},
 					"WashCavity": {
