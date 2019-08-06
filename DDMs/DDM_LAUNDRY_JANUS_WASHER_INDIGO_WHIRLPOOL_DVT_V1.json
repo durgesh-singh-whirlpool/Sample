@@ -4283,7 +4283,7 @@
 									"Cavity_CycleSetCycleName": "Diapers"
 								}
 							},
-							"WashCavity_OpSetBulkDispenseConcentration": {
+							"WashCavity_OpSetBulkDispense1Concentration": {
 								"Required": {
 									"WashCavity_OpSetBulkDispense1Concentration": {
 										"List": [
@@ -4292,9 +4292,14 @@
 											25,
 											20,
 											17,
-											13],
+											13
+											],
 									"Default" : 50
-									},
+									}
+								}
+							},
+							"WashCavity_OpSetBulkDispense2Concentration": {
+								"Required": {
 									"WashCavity_OpSetBulkDispense2Concentration": {
 										"List": [
 											50,
@@ -4302,12 +4307,13 @@
 											25,
 											20,
 											17,
-											13],
+											13
+											],
 									"Default" : 50
 									}
 								}
-							},
-							"WashCavity_CycleSetBulkDispenseEnable": {
+							},	
+							"WashCavity_CycleSetBulkDispense1Enable": {
 								"Required": {
 									"WashCavity_CycleSetBulkDispense1Enable": {
 										"Enumeration": [
@@ -4316,18 +4322,21 @@
 											"BulkDispenseEnableNextCycleDisabled"
 										],
 										"Default": "BulkDispenseEnablePermanentlyEnabled"
-									},
+									}
+							}
+							},
+							"WashCavity_CycleSetBulkDispense2Enable": {
+								"Required": {
 									"WashCavity_CycleSetBulkDispense2Enable": {
 										"Enumeration": [
 											"BulkDispenseEnablePermanentlyDisabled",
 											"BulkDispenseEnablePermanentlyEnabled",
 											"BulkDispenseEnableNextCycleDisabled"
 										],
-										"Default": "BulkDispenseEnablePermanentlyDisabled"
+										"Default": "BulkDispenseEnablePermanentlyEnabled"
 									}
-								}
-							},
-							"WashCavity_OpSetBulkDispenseSelection": {
+							}},
+							"WashCavity_OpSetBulkDispense1Selection": {
 								"Required": {
 									"WashCavity_OpSetBulkDispense1Selection": {
 										"Enumeration": [
@@ -4335,7 +4344,11 @@
 											"BulkDispenseSelectDetergent"
 										],
 										"Default": "BulkDispenseSelectDisabled"
-									},
+									}
+								}
+							},
+							"WashCavity_OpSetBulkDispense2Selection": {
+								"Required": {
 									"WashCavity_OpSetBulkDispense2Selection": {
 										"Enumeration": [
 											"BulkDispenseSelectDisabled",
@@ -4754,39 +4767,28 @@
 						},
 						"SetLoadandGoDispenser": {
 							"LoadandGoDispenser1": {
-								"WashCavity_CycleSetBulkDispenseEnable": {
-									"NotAllowed": [
-										"WashCavity_CycleSetBulkDispense2Enable"
-									]
+								"WashCavity_CycleSetBulkDispense1Enable": {
+									
 								},
-								"WashCavity_OpSetBulkDispenseConcentration": {
-									"NotAllowed": [
-										"WashCavity_OpSetBulkDispense2Concentration"
-									]
+								"WashCavity_OpSetBulkDispense1Concentration": {
+									
 								},
-								"WashCavity_OpSetBulkDispenseSelection": {
-									"NotAllowed": [
-										"WashCavity_OpSetBulkDispense2Selection"
-									]
+								"WashCavity_OpSetBulkDispense1Selection": {
+									
 								}
 							},
 							"LoadandGoDispenser2": {
-								"WashCavity_CycleSetBulkDispenseEnable": {
-									"NotAllowed": [
-										"WashCavity_CycleSetBulkDispense1Enable"
-									]
+								"WashCavity_CycleSetBulkDispense2Enable": {
+									
 								},
-								"WashCavity_OpSetBulkDispenseConcentration": {
-									"NotAllowed": [
-										"WashCavity_OpSetBulkDispense1Concentration"
-									]
+								"WashCavity_OpSetBulkDispense2Concentration": {
+									
 								},
-								"WashCavity_OpSetBulkDispenseSelection": {
-									"NotAllowed": [
-										"WashCavity_OpSetBulkDispense1Selection"
-									]
+								"WashCavity_OpSetBulkDispense2Selection": {
+									
 								}
-							}
+							},
+							"Default" : "WashCavity_CycleSetBulkDispense1Enable"
 						},
 						"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
@@ -5145,7 +5147,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"BulkDispense1Concentration": "WashCavity_ChangeStatusBulkDispense1Concentration",
+						"BulkDispense1Concentration": "WashCavity_ChangeStatusBulkDispense1Concentration",
 						"BulkDispense2Concentration": "WashCavity_ChangeStatusBulkDispense2Concentration",
 						"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 						"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
@@ -5161,7 +5163,7 @@
 						"WashCavity_CycleSetBulkDispense2Enable"
 							],
 							"SendCommandAttributes": [
-								"WashCavity_ChangeStatusBulkDispense1Concentration",
+						"WashCavity_ChangeStatusBulkDispense1Concentration",
 						"WashCavity_ChangeStatusBulkDispense2Concentration",
 						"WashCavity_OpSetBulkDispense1Selection",
 						"WashCavity_OpSetBulkDispense2Selection",
