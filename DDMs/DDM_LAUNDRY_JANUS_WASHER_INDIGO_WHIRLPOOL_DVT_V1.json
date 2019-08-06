@@ -4873,15 +4873,15 @@
 							"CycleSetBulkDispense1": {
 								"Name": "Dispense1",
 								"Attributes": {
-								"WashCavity_CycleSetCycleSelect": [
-										"WashCycleNormal"
+								"WashCavity_CycleSetBulkDispense1Enable": [
+										"BulkDispenseEnablePermanentlyEnabled"
 									]
 								}
 							},
 							"CycleSetBulkDispense2": {
 								"Name": "Dispense2",
 								"Attributes": {
-								"WashCavity_CycleSetCycleSelect": [
+								"WashCavity_CycleSetBulkDispense2Enable": [
 										"WashCycleNormal"
 									]
 								}
