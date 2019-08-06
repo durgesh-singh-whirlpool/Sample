@@ -4301,15 +4301,36 @@
 							"CycleSetBulkDispense1": {
 								"Required": {
 									"WashCavity_OpSetBulkDispense1Concentration": {
-										"List": [
-											50,
-											33,
-											25,
-											20,
-											17,
-											13
+										"Map": [
+											{
+												"Value": 50,
+												"Display": "2X"
+											},
+											{
+												"Value": 33,
+												"Display": "3X"
+											},
+											{
+												"Value": 25,
+												"Display": "4X"
+											},
+											{
+												"Value": 20,
+												"Display": "5X"
+											},
+											{
+												"Value": 17,
+												"Display": "6X"
+											},
+											{
+												"Value": 13,
+												"Display": "8X"
+											}
 										],
-										"Default": 50
+										"Default": {
+												"Value": 13,
+												"Display": "8X"
+											}
 									},
 									"WashCavity_CycleSetBulkDispense1Enable": {
 										"Enumeration": [
@@ -4331,15 +4352,36 @@
 							"CycleSetBulkDispense2": {
 								"Required": {
 									"WashCavity_OpSetBulkDispense2Concentration": {
-										"List": [
-											50,
-											33,
-											25,
-											20,
-											17,
-											13
+										"Map": [
+											{
+												"Value": 50,
+												"Display": "2X"
+											},
+											{
+												"Value": 33,
+												"Display": "3X"
+											},
+											{
+												"Value": 25,
+												"Display": "4X"
+											},
+											{
+												"Value": 20,
+												"Display": "5X"
+											},
+											{
+												"Value": 17,
+												"Display": "6X"
+											},
+											{
+												"Value": 13,
+												"Display": "8X"
+											}
 										],
-										"Default": 50
+										"Default": {
+												"Value": 13,
+												"Display": "8X"
+											}
 									},
 									"WashCavity_CycleSetBulkDispense2Enable": {
 										"Enumeration": [
