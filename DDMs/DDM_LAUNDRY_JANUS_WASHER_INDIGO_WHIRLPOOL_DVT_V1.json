@@ -1735,7 +1735,7 @@
 								}
 							}
 						},
-						"SetCycle": {
+						"SetLoadandGoDispenser": {
 							"LoadandGoDispenser1": {
 								"WashCavity_CycleSetBulkDispenseEnable": {
 									"NotAllowed": [
@@ -5012,7 +5012,7 @@
 								"State": "Sys_DisplaySetBrightnessPercent"
 							}
 						},
-						"LoadandGoDispenser": {
+						"SetLoadandGoDispenser": {
 							"Visible": true,
 							"AvailableIn": [
 								"US",
