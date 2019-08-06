@@ -4865,7 +4865,9 @@
 										]
 									}
 								}
-							}
+							},
+							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
+						
 						},
 						"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
