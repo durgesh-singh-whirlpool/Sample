@@ -4281,21 +4281,6 @@
 									"Cavity_CycleSetCycleName": "Diapers"
 								}
 							},
-							"WashCavity_OpSetBulkDispense1Concentration": {
-								"Required": {
-									"WashCavity_OpSetBulkDispense1Concentration": {
-										"List": [
-											50,
-											33,
-											25,
-											20,
-											17,
-											13
-										],
-										"Default": 50
-									}
-								}
-							},
 							"CycleSetBulkDispense1": {
 								"Required": {
 									"WashCavity_OpSetBulkDispense1Concentration": {
@@ -4398,70 +4383,8 @@
 										"Default": "BulkDispenseSelectDisabled"
 									}
 								}
-							},
-							"WashCavity_OpSetBulkDispense2Concentration": {
-								"Required": {
-									"WashCavity_OpSetBulkDispense2Concentration": {
-										"List": [
-											50,
-											33,
-											25,
-											20,
-											17,
-											13
-										],
-										"Default": 50
-									}
-								}
-							},
-							"WashCavity_CycleSetBulkDispense1Enable": {
-								"Required": {
-									"WashCavity_CycleSetBulkDispense1Enable": {
-										"Enumeration": [
-											"BulkDispenseEnablePermanentlyDisabled",
-											"BulkDispenseEnablePermanentlyEnabled",
-											"BulkDispenseEnableNextCycleDisabled"
-										],
-										"Default": "BulkDispenseEnablePermanentlyEnabled"
-									}
-								}
-							},
-							"WashCavity_CycleSetBulkDispense2Enable": {
-								"Required": {
-									"WashCavity_CycleSetBulkDispense2Enable": {
-										"Enumeration": [
-											"BulkDispenseEnablePermanentlyDisabled",
-											"BulkDispenseEnablePermanentlyEnabled",
-											"BulkDispenseEnableNextCycleDisabled"
-										],
-										"Default": "BulkDispenseEnablePermanentlyEnabled"
-									}
-								}
-							},
-							"WashCavity_OpSetBulkDispense1Selection": {
-								"Required": {
-									"WashCavity_OpSetBulkDispense1Selection": {
-										"Enumeration": [
-											"BulkDispenseSelectDisabled",
-											"BulkDispenseSelectDetergent"
-										],
-										"Default": "BulkDispenseSelectDisabled"
-									}
-								}
-							},
-							"WashCavity_OpSetBulkDispense2Selection": {
-								"Required": {
-									"WashCavity_OpSetBulkDispense2Selection": {
-										"Enumeration": [
-											"BulkDispenseSelectDisabled",
-											"BulkDispenseSelectDetergent",
-											"BulkDispenseSelectSoftener"
-										],
-										"Default": "BulkDispenseSelectDisabled"
-									}
-								}
 							}
-						},
+							},
 						"SetCycle": {
 							"Regular": {
 								"WashCavity_CycleSetCycleSelectWashCycleNormal": {
@@ -4880,7 +4803,7 @@
 								"Name": "Dispense2",
 								"Attributes": {
 									"WashCavity_CycleSetBulkDispense2Enable": [
-										"BulkDispenseEnablePermanentlyEnabled"
+										"BulkDispenseEnablePermanentlyDisabled"
 									]
 								}
 							},
