@@ -5348,6 +5348,7 @@
 								"actions": {
 									"ActionSetCycleStartCommand": true
 								},
+								"condition": {
 								"type": "operation",
 									"binaryOperator": "or",
 									"left": {
@@ -5361,6 +5362,7 @@
 										"key": "Cavity_CycleStatusMachineState",
 										"valueOperator": "=",
 										"value": 1
+									}
 									}
 							},
 							{
@@ -5415,10 +5417,14 @@
 								}
 							},
 							{
-								"ruleName": "Disable the StartCommand button",
+								"ruleName": "Disable Commands when remote disabled button",
 								"description": "Appliance can not be started if the remote is disabled",
 								"actions": {
-									"ActionSetCycleStartCommand": false
+									"ActionSetCycleStartCommand": false,
+									"ActionSetCycleCancelCommand": false,
+									"ActionSetCycleModifyCommand": false,
+									"ActionSetCyclePauseCommand": false,
+									"ActionSetCycleResumeCommand": false
 								},
 								"condition": {
 									"type": "value",
@@ -5452,7 +5458,7 @@
 							},
 							{
 								"ruleName": "Enable pause if cycle is running",
-								"description": "Appliance can not be started if the remote is disabled",
+								"description": "When cycle is running enable pause",
 								"actions": {
 									"ActionSetCyclePauseCommand": true
 								},
