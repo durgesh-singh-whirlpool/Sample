@@ -4326,9 +4326,9 @@
 											}
 										],
 										"Default": {
-												"Value": 13,
-												"Display": "8X"
-											}
+											"Value": 13,
+											"Display": "8X"
+										}
 									},
 									"WashCavity_CycleSetBulkDispense1Enable": {
 										"Enumeration": [
@@ -4377,9 +4377,9 @@
 											}
 										],
 										"Default": {
-												"Value": 13,
-												"Display": "8X"
-											}
+											"Value": 13,
+											"Display": "8X"
+										}
 									},
 									"WashCavity_CycleSetBulkDispense2Enable": {
 										"Enumeration": [
@@ -4871,7 +4871,7 @@
 							"CycleSetBulkDispense1": {
 								"Name": "Dispense1",
 								"Attributes": {
-								"WashCavity_CycleSetBulkDispense1Enable": [
+									"WashCavity_CycleSetBulkDispense1Enable": [
 										"BulkDispenseEnablePermanentlyEnabled"
 									]
 								}
@@ -4879,8 +4879,8 @@
 							"CycleSetBulkDispense2": {
 								"Name": "Dispense2",
 								"Attributes": {
-								"WashCavity_CycleSetBulkDispense2Enable": [
-										"WashCycleNormal"
+									"WashCavity_CycleSetBulkDispense2Enable": [
+										"BulkDispenseEnablePermanentlyEnabled"
 									]
 								}
 							},
@@ -5184,7 +5184,7 @@
 								"Cavity_TimeSetDelayTime"
 							],
 							"SendCommandAttributes": [
-							"Cavity_TimeSetDelayTime",
+								"Cavity_TimeSetDelayTime",
 								"WashCavity_CycleSetCycleSelect",
 								"WashCavity_CycleSetTemperature",
 								"WashCavity_CycleSetSoilLevel",
@@ -5270,7 +5270,7 @@
 								"WashCavity_CycleSetBulkDispense2Enable"
 							],
 							"SendCommandAttributes": [
-							"WashCavity_CycleSetBulkDispense1Enable",
+								"WashCavity_CycleSetBulkDispense1Enable",
 								"WashCavity_CycleSetBulkDispense2Enable",
 								"WashCavity_ChangeStatusBulkDispense1Concentration",
 								"WashCavity_ChangeStatusBulkDispense2Concentration",
@@ -5278,7 +5278,7 @@
 								"WashCavity_OpSetBulkDispense2Selection"
 							],
 							"SetOperationsMapping": {
-							"Operation": "Cavity_OpSetOperations"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						}
 					}
@@ -5349,7 +5349,7 @@
 									"ActionSetCycleStartCommand": true
 								},
 								"condition": {
-								"type": "operation",
+									"type": "operation",
 									"binaryOperator": "or",
 									"left": {
 										"type": "value",
@@ -5363,7 +5363,7 @@
 										"valueOperator": "=",
 										"value": 1
 									}
-									}
+								}
 							},
 							{
 								"ruleName": "Disable Cancel, Modify, options if appliance is Complete",
