@@ -5307,7 +5307,7 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "Cavity_CycleStatusCycleState",
+									"key": "Cavity_CycleStatusMachineState",
 									"valueOperator": "!=",
 									"value": "0"
 								}
