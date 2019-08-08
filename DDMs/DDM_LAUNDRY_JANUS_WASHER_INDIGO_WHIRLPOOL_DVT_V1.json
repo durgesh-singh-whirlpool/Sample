@@ -4281,21 +4281,6 @@
 									"Cavity_CycleSetCycleName": "Diapers"
 								}
 							},
-							"WashCavity_OpSetBulkDispense1Concentration": {
-								"Required": {
-									"WashCavity_OpSetBulkDispense1Concentration": {
-										"List": [
-											50,
-											33,
-											25,
-											20,
-											17,
-											13
-										],
-										"Default": 50
-									}
-								}
-							},
 							"CycleSetBulkDispense1": {
 								"Required": {
 									"WashCavity_OpSetBulkDispense1Concentration": {
@@ -4326,9 +4311,9 @@
 											}
 										],
 										"Default": {
-												"Value": 13,
-												"Display": "8X"
-											}
+											"Value": 13,
+											"Display": "8X"
+										}
 									},
 									"WashCavity_CycleSetBulkDispense1Enable": {
 										"Enumeration": [
@@ -4377,9 +4362,9 @@
 											}
 										],
 										"Default": {
-												"Value": 13,
-												"Display": "8X"
-											}
+											"Value": 13,
+											"Display": "8X"
+										}
 									},
 									"WashCavity_CycleSetBulkDispense2Enable": {
 										"Enumeration": [
@@ -4389,68 +4374,6 @@
 										],
 										"Default": "BulkDispenseEnablePermanentlyEnabled"
 									},
-									"WashCavity_OpSetBulkDispense2Selection": {
-										"Enumeration": [
-											"BulkDispenseSelectDisabled",
-											"BulkDispenseSelectDetergent",
-											"BulkDispenseSelectSoftener"
-										],
-										"Default": "BulkDispenseSelectDisabled"
-									}
-								}
-							},
-							"WashCavity_OpSetBulkDispense2Concentration": {
-								"Required": {
-									"WashCavity_OpSetBulkDispense2Concentration": {
-										"List": [
-											50,
-											33,
-											25,
-											20,
-											17,
-											13
-										],
-										"Default": 50
-									}
-								}
-							},
-							"WashCavity_CycleSetBulkDispense1Enable": {
-								"Required": {
-									"WashCavity_CycleSetBulkDispense1Enable": {
-										"Enumeration": [
-											"BulkDispenseEnablePermanentlyDisabled",
-											"BulkDispenseEnablePermanentlyEnabled",
-											"BulkDispenseEnableNextCycleDisabled"
-										],
-										"Default": "BulkDispenseEnablePermanentlyEnabled"
-									}
-								}
-							},
-							"WashCavity_CycleSetBulkDispense2Enable": {
-								"Required": {
-									"WashCavity_CycleSetBulkDispense2Enable": {
-										"Enumeration": [
-											"BulkDispenseEnablePermanentlyDisabled",
-											"BulkDispenseEnablePermanentlyEnabled",
-											"BulkDispenseEnableNextCycleDisabled"
-										],
-										"Default": "BulkDispenseEnablePermanentlyEnabled"
-									}
-								}
-							},
-							"WashCavity_OpSetBulkDispense1Selection": {
-								"Required": {
-									"WashCavity_OpSetBulkDispense1Selection": {
-										"Enumeration": [
-											"BulkDispenseSelectDisabled",
-											"BulkDispenseSelectDetergent"
-										],
-										"Default": "BulkDispenseSelectDisabled"
-									}
-								}
-							},
-							"WashCavity_OpSetBulkDispense2Selection": {
-								"Required": {
 									"WashCavity_OpSetBulkDispense2Selection": {
 										"Enumeration": [
 											"BulkDispenseSelectDisabled",
@@ -4461,7 +4384,7 @@
 									}
 								}
 							}
-						},
+							},
 						"SetCycle": {
 							"Regular": {
 								"WashCavity_CycleSetCycleSelectWashCycleNormal": {
@@ -4871,7 +4794,7 @@
 							"CycleSetBulkDispense1": {
 								"Name": "Dispense1",
 								"Attributes": {
-								"WashCavity_CycleSetBulkDispense1Enable": [
+									"WashCavity_CycleSetBulkDispense1Enable": [
 										"BulkDispenseEnablePermanentlyEnabled"
 									]
 								}
@@ -4879,8 +4802,8 @@
 							"CycleSetBulkDispense2": {
 								"Name": "Dispense2",
 								"Attributes": {
-								"WashCavity_CycleSetBulkDispense2Enable": [
-										"WashCycleNormal"
+									"WashCavity_CycleSetBulkDispense2Enable": [
+										"BulkDispenseEnablePermanentlyDisabled"
 									]
 								}
 							},
@@ -5184,7 +5107,7 @@
 								"Cavity_TimeSetDelayTime"
 							],
 							"SendCommandAttributes": [
-							"Cavity_TimeSetDelayTime",
+								"Cavity_TimeSetDelayTime",
 								"WashCavity_CycleSetCycleSelect",
 								"WashCavity_CycleSetTemperature",
 								"WashCavity_CycleSetSoilLevel",
@@ -5270,7 +5193,7 @@
 								"WashCavity_CycleSetBulkDispense2Enable"
 							],
 							"SendCommandAttributes": [
-							"WashCavity_CycleSetBulkDispense1Enable",
+								"WashCavity_CycleSetBulkDispense1Enable",
 								"WashCavity_CycleSetBulkDispense2Enable",
 								"WashCavity_ChangeStatusBulkDispense1Concentration",
 								"WashCavity_ChangeStatusBulkDispense2Concentration",
@@ -5278,7 +5201,7 @@
 								"WashCavity_OpSetBulkDispense2Selection"
 							],
 							"SetOperationsMapping": {
-							"Operation": "Cavity_OpSetOperations"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						}
 					}
@@ -5309,7 +5232,7 @@
 									"type": "value",
 									"key": "Cavity_CycleStatusMachineState",
 									"valueOperator": "!=",
-									"value": "0"
+									"value": 0
 								}
 							},
 							{
@@ -5349,10 +5272,20 @@
 									"ActionSetCycleStartCommand": true
 								},
 								"condition": {
-									"type": "value",
-									"key": "Cavity_CycleStatusMachineState",
-									"valueOperator": "=",
-									"value": 1
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 0
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 1
+									}
 								}
 							},
 							{
@@ -5364,7 +5297,7 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "Cavity_OperationStatusMachineState",
+									"key": "Cavity_CycleStatusMachineState",
 									"valueOperator": "=",
 									"value": 10
 								}
@@ -5407,16 +5340,66 @@
 								}
 							},
 							{
-								"ruleName": "Disable the StartCommand button",
+								"ruleName": "Disable Commands when remote disabled button",
 								"description": "Appliance can not be started if the remote is disabled",
 								"actions": {
-									"ActionSetCycleStartCommand": false
+									"ActionSetCycleStartCommand": false,
+									"ActionSetCycleCancelCommand": false,
+									"ActionSetCycleModifyCommand": false,
+									"ActionSetCyclePauseCommand": false,
+									"ActionSetCycleResumeCommand": false
 								},
 								"condition": {
 									"type": "value",
 									"key": "XCat_RemoteSetRemoteControlEnable",
 									"valueOperator": "=",
 									"value": 0
+								}
+							},
+							{
+								"ruleName": "Disable pause if cycle is running",
+								"description": "Disable pause if cycle is running",
+								"actions": {
+									"ActionSetCyclePauseCommand": false
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "and",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 7
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 8
+									}
+								}
+							},
+							{
+								"ruleName": "Enable pause if cycle is running",
+								"description": "When cycle is running enable pause",
+								"actions": {
+									"ActionSetCyclePauseCommand": true
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 7
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 8
+									}
 								}
 							},
 							{
