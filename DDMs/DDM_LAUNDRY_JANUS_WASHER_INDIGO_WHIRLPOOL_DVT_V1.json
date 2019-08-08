@@ -5201,7 +5201,7 @@
 								"WashCavity_OpSetBulkDispense2Selection"
 							],
 							"SetOperationsMapping": {
-							"Cavity_OpSetOperations"
+							"Operations" : "Cavity_OpSetOperations"
 							}
 						}
 					}
