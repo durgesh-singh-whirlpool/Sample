@@ -4309,11 +4309,7 @@
 												"Value": 13,
 												"Display": "8X"
 											}
-										],
-										"Default": {
-											"Value": 13,
-											"Display": "8X"
-										}
+										]
 									},
 									"WashCavity_CycleSetBulkDispense1Enable": {
 										"Enumeration": [
