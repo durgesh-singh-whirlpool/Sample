@@ -5428,6 +5428,52 @@
 								}
 							},
 							{
+								"ruleName": "Disable pause if cycle is running",
+								"description": "Disable pause if cycle is running",
+								"actions": {
+									"ActionSetCyclePauseCommand": false
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "and",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 7
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 8
+									}
+								}
+							},
+							{
+								"ruleName": "Enable pause if cycle is running",
+								"description": "Appliance can not be started if the remote is disabled",
+								"actions": {
+									"ActionSetCyclePauseCommand": true
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 7
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 8
+									}
+								}
+							},
+							{
 								"ruleName": "Resume if pause",
 								"description": "Check for pause state before resuming and online",
 								"actions": {
