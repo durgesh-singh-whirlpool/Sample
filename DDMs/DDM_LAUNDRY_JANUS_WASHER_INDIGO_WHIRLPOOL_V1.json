@@ -5348,12 +5348,20 @@
 								"actions": {
 									"ActionSetCycleStartCommand": true
 								},
-								"condition": {
-									"type": "value",
-									"key": "Cavity_CycleStatusMachineState",
-									"valueOperator": "=",
-									"value": 1
-								}
+								"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 0
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 1
+									}
 							},
 							{
 								"ruleName": "Disable Cancel, Modify, options if appliance is Complete",
