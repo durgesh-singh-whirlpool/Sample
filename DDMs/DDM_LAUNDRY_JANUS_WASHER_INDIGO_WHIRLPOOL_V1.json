@@ -4311,8 +4311,8 @@
 											}
 										],
 										"Default": {
-											"Value": 13,
-											"Display": "8X"
+												"Value": 50,
+												"Display": "2X"
 										}
 									},
 									"WashCavity_CycleSetBulkDispense1Enable": {
@@ -4803,7 +4803,7 @@
 								"Name": "Dispense2",
 								"Attributes": {
 									"WashCavity_CycleSetBulkDispense2Enable": [
-										"BulkDispenseEnablePermanentlyDisabled"
+										"BulkDispenseEnablePermanentlyEnabled"
 									]
 								}
 							},
@@ -5201,6 +5201,7 @@
 								"WashCavity_OpSetBulkDispense2Selection"
 							],
 							"SetOperationsMapping": {
+							"Operation" : "Cavity_OpSetOperations"
 							}
 						}
 					}
