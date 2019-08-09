@@ -6953,6 +6953,25 @@
 								}
 							},
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
+						},
+						"SetLoadandGoDispenser": {
+							"CycleSetBulkDispense1": {
+								"Name": "Dispense1",
+								"Attributes": {
+									"WashCavity_CycleSetBulkDispense1Enable": [
+										"BulkDispenseEnablePermanentlyEnabled"
+									]
+								}
+							},
+							"CycleSetBulkDispense2": {
+								"Name": "Dispense2",
+								"Attributes": {
+									"WashCavity_CycleSetBulkDispense2Enable": [
+										"BulkDispenseEnablePermanentlyEnabled"
+									]
+								}
+							},
+							"Default": "CycleSetBulkDispense1"
 						}
 					}
 				},
