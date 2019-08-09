@@ -5226,11 +5226,11 @@
 								"ruleName": "Disable Features for modify cycle if a cycle is already running in Appliance",
 								"description": "Disable Features for modify cycle  if a cycle is already running in Appliance",
 								"attributes": {
-									"WashCavity_CycleSetCycleSelect": false,
-									"Cavity_TimeSetDelayTime": false,
-									"WashCavity_CycleSetTemperature": false,
-									"WashCavity_CycleSetPresoakTimed": false,
-									"Cavity_CycleSetSteamEnable": false
+									"CycleSelect": false,
+									"DelayTime": false,
+									"Temperature": false,
+									"PresoakTimed": false,
+									"SteamEnable": false
 								},
 								"condition": {
 									"type": "value",
