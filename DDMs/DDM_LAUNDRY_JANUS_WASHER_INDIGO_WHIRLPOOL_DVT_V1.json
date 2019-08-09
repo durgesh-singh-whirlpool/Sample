@@ -4865,8 +4865,8 @@
 						"DelayTime": "Cavity_TimeSetDelayTime",
 						"BulkDispense1Level": "WashCavity_OpStatusBulkDispense1Level",
 						"BulkDispense2Level": "WashCavity_OpStatusBulkDispense2Level",
-						"BulkDispense1Concentration": "WashCavity_ChangeStatusBulkDispense1Concentration",
-						"BulkDispense2Concentration": "WashCavity_ChangeStatusBulkDispense2Concentration",
+						"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration",
+						"BulkDispense2Concentration": "WashCavity_OpSetBulkDispense2Concentration",
 						"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 						"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
 						"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
@@ -5177,8 +5177,8 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"BulkDispense1Concentration": "WashCavity_ChangeStatusBulkDispense1Concentration",
-								"BulkDispense2Concentration": "WashCavity_ChangeStatusBulkDispense2Concentration",
+								"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration",
+								"BulkDispense2Concentration": "WashCavity_OpSetBulkDispense2Concentration",
 								"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 								"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
 								"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
@@ -5207,7 +5207,7 @@
 					}
 				},
 				"ApplianceRulesets": {
-					"WashCavity": {
+					"WashCavity": {   
 						"Runtime": [
 							{
 								"ruleName": "Disable All Features when appliance is offline",
@@ -5226,7 +5226,7 @@
 								"ruleName": "Disable Features for modify cycle if a cycle is already running in Appliance",
 								"description": "Disable Features for modify cycle  if a cycle is already running in Appliance",
 								"attributes": {
-									"CycleSelect": false,
+									"Select": false,
 									"DelayTime": false,
 									"Temperature": false,
 									"PresoakTimed": false,
