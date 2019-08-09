@@ -4309,7 +4309,11 @@
 												"Value": 13,
 												"Display": "8X"
 											}
-										]
+										],
+										"Default": {
+												"Value": 50,
+												"Display": "2X"
+										}
 									},
 									"WashCavity_CycleSetBulkDispense1Enable": {
 										"Enumeration": [
@@ -5219,19 +5223,6 @@
 								}
 							},
 							{
-								"ruleName": "Cancel the Running Cycle",
-								"description": "If Appliance is not idle, we can enable the cancel action",
-								"actions": {
-									"ActionSetCycleCancelCommand": true
-								},
-								"condition": {
-									"type": "value",
-									"key": "Cavity_CycleStatusMachineState",
-									"valueOperator": "!=",
-									"value": 0
-								}
-							},
-							{
 								"ruleName": "Disable Features for modify cycle if a cycle is already running in Appliance",
 								"description": "Disable Features for modify cycle  if a cycle is already running in Appliance",
 								"attributes": {
@@ -5415,7 +5406,7 @@
 									},
 									"right": {
 										"type": "value",
-										"key": "online",
+										"key": "Online",
 										"valueOperator": "=",
 										"value": 1
 									}
