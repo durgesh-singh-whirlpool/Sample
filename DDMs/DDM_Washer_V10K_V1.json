@@ -3879,7 +3879,7 @@
 								"CA"
 							],
 							"SendCommandAttributes": [
-								"Compartment_DownloadCyclePersist",
+								"Compartment_DownloadAndGo",
 								"CycleOptionsWHR_WhatTo",
 								"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
