@@ -2231,6 +2231,14 @@
 										],
 										"Default": "FresheningNone"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
@@ -2293,6 +2301,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -2360,6 +2376,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleTimedDry"
@@ -2414,6 +2438,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -2477,6 +2509,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -2544,6 +2584,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleTimedDry"
@@ -2597,6 +2645,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -2659,6 +2715,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -2725,6 +2789,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleTimedDry"
@@ -2781,6 +2853,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -2846,6 +2926,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -2915,6 +3003,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleTimedDry"
@@ -2964,6 +3060,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3022,6 +3126,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3084,6 +3196,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleTimedDry"
@@ -3138,6 +3258,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3200,6 +3328,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3265,6 +3401,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToColorsBrightsHowToTimed"
@@ -3319,6 +3463,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3381,6 +3533,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3446,6 +3606,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToColorsBrightsHowToTimed"
@@ -3500,6 +3668,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3562,6 +3738,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3627,6 +3811,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToColorsBrightsHowToTimed"
@@ -3677,6 +3869,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3735,6 +3935,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3800,6 +4008,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToDelicatesHowToTimed"
@@ -3850,6 +4066,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3908,6 +4132,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -3971,6 +4203,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToDelicatesHowToTimed"
@@ -4022,6 +4262,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4081,6 +4329,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4145,6 +4401,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToDelicatesHowToTimed"
@@ -4201,6 +4465,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4266,6 +4538,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4335,6 +4615,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
@@ -4389,6 +4677,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4452,6 +4748,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4519,6 +4823,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
@@ -4575,6 +4887,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4640,6 +4960,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4709,6 +5037,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
@@ -4758,6 +5094,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4816,6 +5160,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4878,6 +5230,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToWhitesHowToTimed"
@@ -4934,6 +5294,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -4999,6 +5367,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5068,6 +5444,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
@@ -5122,6 +5506,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5185,6 +5577,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5252,6 +5652,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
@@ -5308,6 +5716,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5373,6 +5789,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5442,6 +5866,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
@@ -5491,6 +5923,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5549,6 +5989,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5611,6 +6059,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToTowelsHowToTimed"
@@ -5665,6 +6121,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5728,6 +6192,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5795,6 +6267,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
@@ -5847,6 +6327,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5908,6 +6396,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -5973,6 +6469,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
@@ -6027,6 +6531,14 @@
 											"FresheningFanFresh"
 										],
 										"Default": "FresheningNone"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -6090,6 +6602,14 @@
 											"WrinkleShieldOn"
 										],
 										"Default": "WrinkleShieldOff"
+									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
 									}
 								},
 								"NonEditable": {
@@ -6157,6 +6677,14 @@
 										],
 										"Default": "WrinkleShieldOff"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleWhatToBulkyHowToTimed"
@@ -6189,6 +6717,14 @@
 										],
 										"Default": "FresheningNone"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
@@ -6214,19 +6750,45 @@
 										],
 										"Default": "SpinSpeedHigh"
 									}
+								,"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
 								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleDrain": {
-								"Required": {},
+								"Required": {
+								"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
 							},
 							"WashCavity_CycleSetCycleSelectWashCycleCleanWasher": {
-								"Required": {},
+								"Required": {
+								"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 28800,
+											"Step": 60
+										}
+									}
+								},
 								"NonEditable": {
 									"DryCavity_CycleSetCycleSelect": "DryCycleNone"
 								}
