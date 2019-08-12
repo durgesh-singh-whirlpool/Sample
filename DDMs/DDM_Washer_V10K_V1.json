@@ -4051,7 +4051,7 @@
 						"CycleHistory": {
 							"isLegacy": false,
 							"attributes": "Compartment_DownloadAndGo,Compartment_CycleId,CycleOptionsWHR_WhatTo,CycleOptionsWHR_HowTo,CycleOptionsWHR_Dryness,CycleOptionsWHR_EcoBoost,CycleOptionsWHR_ManualDryTime,CycleOptionsWHR_StaticGuard,CycleOptionsWHR_Temperature,CycleOptionsWHR_WrinkleShield",
-							"groupBy": "XCat_OdometerStatusCycleCount"
+							"groupBy": "GetCycleEnergyConsumption"
 						}
 					}
 				}
