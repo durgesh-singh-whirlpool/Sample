@@ -3143,13 +3143,16 @@
 								"CA"
 							],
 							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
 								"CycleOptionsWHR_Temperature",
-								"CycleOptionsWHR_StaticGuard",
-								"CycleOptionsWHR_WrinkleShield",
-								"CycleOptionsWHR_EcoBoost",
 								"CycleOptionsWHR_Dryness",
 								"CycleOptionsWHR_ManualDryTime",
+								"CycleOptionsWHR_WrinkleShield",
+								"CycleOptionsWHR_StaticGuard",
+								"CycleOptionsWHR_EcoBoost",
 								"System_Command"
 							],
 							"StateAttributes": {},
