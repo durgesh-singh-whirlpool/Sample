@@ -6175,10 +6175,12 @@
 										"Default": "SpinSpeedExtraHigh"
 									},
 									"WashCavity_CycleSetExtraRinseSelect": {
+									"Range": {
 										"Default": 0,
 										"Min": 0,
 										"Max": 1,
 										"Step": 1
+										}
 									},
 									"WashCavity_CycleSetFresheningSelect": {
 										"Enumeration": [
@@ -6195,10 +6197,12 @@
 							"WashCavity_CycleSetCycleSelectWashCycleRinseSpin": {
 								"Required": {
 									"WashCavity_CycleSetExtraRinseSelect": {
+									"Range": {
 										"Default": 0,
 										"Min": 0,
 										"Max": 3,
 										"Step": 1
+										}
 									},
 									"WashCavity_CycleSetSpinSpeed": {
 										"Enumeration": [
