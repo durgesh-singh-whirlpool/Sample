@@ -2705,6 +2705,16 @@
 									"CycleOptionsWHR_Temperature": "Temp4",
 									"CycleOptionsWHR_Dryness": "Normal"
 								}
+							},
+							"Compartment_CycleIdWrinkleRelease": {
+								"Required": {
+									
+								},
+								"NonEditable":{
+								"CycleOptionsWHR_ManualDryTime": 1,
+                                "CycleOptionsWHR_WrinkleShield": "On",
+                                "CycleOptionsWHR_Temperature": "Temp0"
+								}
 							}
 						},
 						"SetCycle": {
@@ -2994,6 +3004,16 @@
 								}
 							},
 							"Default": "Cavity_CycleSetCycleNameAthleticHighPerformanceWear"
+						},
+						"SetPostCycle":{
+						"Compartment_CycleIdWrinkleRelease": {
+									"Name": "WrinkleRelease",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"TimedDry"
+										]
+									}
+								}
 						}
 					}
 				},
@@ -3195,6 +3215,42 @@
 							"SetOperationsMapping": {
 								"Operation": "System_Command"
 							}
+						},
+						"SetPostCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
+							},
+							"StatusAttributes": [
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_StaticGuard",
+								"CycleOptionsWHR_WrinkleShield",
+								"CycleOptionsWHR_EcoBoost",
+								"CycleOptionsWHR_Dryness",
+								"CycleOptionsWHR_ManualDryTime",
+								"System_Command"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_Dryness",
+								"CycleOptionsWHR_ManualDryTime",
+								"CycleOptionsWHR_WrinkleShield",
+								"CycleOptionsWHR_StaticGuard",
+								"CycleOptionsWHR_EcoBoost",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
 						}
 					}
 				},
@@ -3245,7 +3301,7 @@
 					"DryCavity": {
 						"CycleHistory": {
 							"isLegacy": false,
-							"groupBy": "XCat_OdometerStatusCycleCount",
+							"groupBy": "GetCycleEnergyConsumption",
 							"attributes": "Compartment_DownloadAndGo,Compartment_CycleId,CycleOptionsWHR_WhatTo,CycleOptionsWHR_HowTo,CycleOptionsWHR_Dryness,CycleOptionsWHR_EcoBoost,CycleOptionsWHR_ManualDryTime,CycleOptionsWHR_StaticGuard,CycleOptionsWHR_Temperature,CycleOptionsWHR_WrinkleShield"
 						}
 					}
