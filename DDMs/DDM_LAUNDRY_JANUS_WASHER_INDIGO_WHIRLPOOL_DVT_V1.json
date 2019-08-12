@@ -959,13 +959,11 @@
 				"IsTimeSeries": false,
 				"DataType": "BEIntegerUnsigned16Bit",
 				"AttributeName": "BulkDispense2Concentration",
-				"List": [
-					55,
-					30,
-					20,
-					15,
-					0
-				],
+				"RangeValues": {
+					"StepSize": 1,
+					"Min": 0,
+					"Max": 65535
+				},
 				"DeviceIO": "RW",
 				"MappedAttributeName": "WashCavity_OpSetBulkDispense2Concentration",
 				"Default": 0,
@@ -5277,7 +5275,7 @@
 							},
 							{
 								"ruleName": "Disable Cancel, Modify, options if appliance is Complete",
-								"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+								"description": "Cavity_OperationStatusMachineState == Complete, this is instruction sent to appliance",
 								"actions": {
 									"ActionSetCycleCancelCommand": false,
 									"ActionSetCycleModifyCommand": false
@@ -5305,7 +5303,7 @@
 							},
 							{
 								"ruleName": "Enable Cancel option if, Cycle is delaying",
-								"description": "A command can be started if the device is online and remote is enbled",
+								"description": "",
 								"actions": {
 									"ActionSetCycleCancelCommand": true
 								},
