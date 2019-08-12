@@ -3312,7 +3312,28 @@
 							"StateAttributes": {
 								"State": "XCat_RemoteSetRemoteControlEnable"
 							}
+						},
+						"ChangeApplianceLanguage": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_DisplaySetLanguage"
+							}
+						},
+						"ChangeSoundKeyAlert": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetAlertToneVolume"
+							}
 						}
+					
 					},
 					"DryCavity": {
 						"SetCycle": {
