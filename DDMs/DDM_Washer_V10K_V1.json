@@ -1794,6 +1794,11 @@
 										],
 										"Default": "Heavy"
 									}
+								},
+								"NonEditable":{
+								"Compartment_DownloadCyclePersist": false,
+								"CycleOptionsWHR_WhatTo": "Mixed",
+								"CycleOptionsWHR_HowTo": "Quick"
 								}
 							},
 							"Compartment_CycleIdMixed_Quick": {
@@ -1853,10 +1858,6 @@
 										],
 										"Default": "Light"
 									}
-								},
-								"NonEditable":{
-								"CycleOptionsWHR_WhatTo": "Mixed",
-								"CycleOptionsWHR_HowTo": "Quick"
 								}
 							},
 							"Compartment_CycleIdMixed_Cold": {
@@ -1915,10 +1916,6 @@
 										],
 										"Default": "VeryHeavy"
 									}
-								},
-								"NonEditable":{
-								"CycleOptionsWHR_HowTo": "Cold",
-								"Compartment_DownloadCyclePersist": false
 								}
 							},
 							"Compartment_CycleIdMixed_DeepWater": {
@@ -3331,11 +3328,8 @@
 								"Compartment_CycleIdMixed_Normal": {
 									"Name": "MixedNormal",
 									"Attributes": {
-										"CycleOptionsWHR_WhatTo": [
-											"Mixed"
-										],
-										"CycleOptionsWHR_HowTo": [
-											"Normal"
+										"Compartment_CycleId": [
+											"Mixed_Normal"
 										]
 									}
 								},
@@ -3343,29 +3337,23 @@
 									"Name": "MixedQuick",
 									"Attributes": {
 										"Compartment_CycleId": [
-											"WashCycleQuickWash"
+											"Mixed_Quick"
 										]
 									}
 								},
 								"Compartment_CycleIdMixed_Cold": {
 									"Name": "MixedCold",
 									"Attributes": {
-										"CycleOptionsWHR_WhatTo": [
-											"Mixed"
+										"Compartment_CycleId": [
+											"Mixed_Cold"
 										]
 									}
 								},
 								"Compartment_CycleIdMixed_DeepWater": {
 									"Name": "MixedDeepWater",
 									"Attributes": {
-										"CycleOptionsWHR_WhatTo": [
-											"Mixed"
-										],
-										"CycleOptionsWHR_HowTo": [
-											"Normal"
-										],
-										"Compartment_DownloadCyclePersist":[
-										false
+										"Compartment_CycleId": [
+											"Mixed_DeepWater"
 										]
 									}
 								},
