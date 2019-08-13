@@ -1853,6 +1853,10 @@
 										],
 										"Default": "Light"
 									}
+								},
+								"NonEditable":{
+								"CycleOptionsWHR_WhatTo": "Mixed",
+								"CycleOptionsWHR_HowTo": "Quick"
 								}
 							},
 							"Compartment_CycleIdMixed_Cold": {
@@ -1911,6 +1915,9 @@
 										],
 										"Default": "VeryHeavy"
 									}
+								},
+								"NonEditable":{
+								"CycleOptionsWHR_HowTo": "Cold"
 								}
 							},
 							"Compartment_CycleIdMixed_DeepWater": {
@@ -3342,8 +3349,8 @@
 								"Compartment_CycleIdMixed_Cold": {
 									"Name": "MixedCold",
 									"Attributes": {
-										"Compartment_CycleId": [
-											"Mixed_Cold"
+										"CycleOptionsWHR_WhatTo": [
+											"Mixed"
 										]
 									}
 								},
