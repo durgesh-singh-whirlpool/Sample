@@ -3682,7 +3682,7 @@
 					},
 					"Common": {
 						"RemoteStatus": "Appliance_RemoteControlEnabled",
-						"Online": "online",
+						"Online": "Online",
 						"QuietModeEnabled": "Appliance_EnterQuietMode",
 						"RemoteEnabledStatus": "Appliance_RemoteControlEnabled"
 					}
