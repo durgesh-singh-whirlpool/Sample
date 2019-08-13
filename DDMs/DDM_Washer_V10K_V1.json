@@ -1917,7 +1917,8 @@
 									}
 								},
 								"NonEditable":{
-								"CycleOptionsWHR_HowTo": "Cold"
+								"CycleOptionsWHR_HowTo": "Cold",
+								"Compartment_DownloadCyclePersist": false
 								}
 							},
 							"Compartment_CycleIdMixed_DeepWater": {
@@ -3357,8 +3358,14 @@
 								"Compartment_CycleIdMixed_DeepWater": {
 									"Name": "MixedDeepWater",
 									"Attributes": {
-										"Compartment_CycleId": [
-											"Mixed_DeepWater"
+										"CycleOptionsWHR_WhatTo": [
+											"Mixed"
+										],
+										"CycleOptionsWHR_HowTo": [
+											"Normal"
+										],
+										"Compartment_DownloadCyclePersist":[
+										false
 										]
 									}
 								},
