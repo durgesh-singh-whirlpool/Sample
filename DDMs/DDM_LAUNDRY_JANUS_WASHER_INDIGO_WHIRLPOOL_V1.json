@@ -959,13 +959,11 @@
 				"IsTimeSeries": false,
 				"DataType": "BEIntegerUnsigned16Bit",
 				"AttributeName": "BulkDispense2Concentration",
-				"List": [
-					55,
-					30,
-					20,
-					15,
-					0
-				],
+				"RangeValues": {
+					"StepSize": 1,
+					"Min": 0,
+					"Max": 65535
+				},
 				"DeviceIO": "RW",
 				"MappedAttributeName": "WashCavity_OpSetBulkDispense2Concentration",
 				"Default": 0,
@@ -4865,8 +4863,8 @@
 						"DelayTime": "Cavity_TimeSetDelayTime",
 						"BulkDispense1Level": "WashCavity_OpStatusBulkDispense1Level",
 						"BulkDispense2Level": "WashCavity_OpStatusBulkDispense2Level",
-						"BulkDispense1Concentration": "WashCavity_ChangeStatusBulkDispense1Concentration",
-						"BulkDispense2Concentration": "WashCavity_ChangeStatusBulkDispense2Concentration",
+						"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration",
+						"BulkDispense2Concentration": "WashCavity_OpSetBulkDispense2Concentration",
 						"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 						"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
 						"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
@@ -5177,16 +5175,16 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"BulkDispense1Concentration": "WashCavity_ChangeStatusBulkDispense1Concentration",
-								"BulkDispense2Concentration": "WashCavity_ChangeStatusBulkDispense2Concentration",
+								"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration",
+								"BulkDispense2Concentration": "WashCavity_OpSetBulkDispense2Concentration",
 								"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 								"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
 								"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
 								"BulkDispense2Enable": "WashCavity_CycleSetBulkDispense2Enable"
 							},
 							"StatusAttributes": [
-								"WashCavity_ChangeStatusBulkDispense1Concentration",
-								"WashCavity_ChangeStatusBulkDispense2Concentration",
+								"WashCavity_OpSetBulkDispense1Concentration",
+								"WashCavity_OpSetBulkDispense2Concentration",
 								"WashCavity_OpSetBulkDispense1Selection",
 								"WashCavity_OpSetBulkDispense2Selection",
 								"WashCavity_CycleSetBulkDispense1Enable",
@@ -5195,10 +5193,10 @@
 							"SendCommandAttributes": [
 								"WashCavity_CycleSetBulkDispense1Enable",
 								"WashCavity_CycleSetBulkDispense2Enable",
-								"WashCavity_ChangeStatusBulkDispense1Concentration",
-								"WashCavity_ChangeStatusBulkDispense2Concentration",
 								"WashCavity_OpSetBulkDispense1Selection",
-								"WashCavity_OpSetBulkDispense2Selection"
+								"WashCavity_OpSetBulkDispense2Selection",
+								"WashCavity_OpSetBulkDispense1Concentration",
+								"WashCavity_OpSetBulkDispense2Concentration"
 							],
 							"SetOperationsMapping": {
 							"Operation" : "Cavity_OpSetOperations"
@@ -5207,7 +5205,7 @@
 					}
 				},
 				"ApplianceRulesets": {
-					"WashCavity": {
+					"WashCavity": {   
 						"Runtime": [
 							{
 								"ruleName": "Disable All Features when appliance is offline",
@@ -5223,27 +5221,14 @@
 								}
 							},
 							{
-								"ruleName": "Cancel the Running Cycle",
-								"description": "If Appliance is not idle, we can enable the cancel action",
-								"actions": {
-									"ActionSetCycleCancelCommand": true
-								},
-								"condition": {
-									"type": "value",
-									"key": "Cavity_CycleStatusMachineState",
-									"valueOperator": "!=",
-									"value": 0
-								}
-							},
-							{
 								"ruleName": "Disable Features for modify cycle if a cycle is already running in Appliance",
 								"description": "Disable Features for modify cycle  if a cycle is already running in Appliance",
 								"attributes": {
-									"WashCavity_CycleSetCycleSelect": false,
-									"Cavity_TimeSetDelayTime": false,
-									"WashCavity_CycleSetTemperature": false,
-									"WashCavity_CycleSetPresoakTimed": false,
-									"Cavity_CycleSetSteamEnable": false
+									"Select": false,
+									"DelayTime": false,
+									"Temperature": false,
+									"PresoakTimed": false,
+									"SteamEnable": false
 								},
 								"condition": {
 									"type": "value",
@@ -5290,7 +5275,7 @@
 							},
 							{
 								"ruleName": "Disable Cancel, Modify, options if appliance is Complete",
-								"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+								"description": "Cavity_OperationStatusMachineState == Complete, this is instruction sent to appliance",
 								"actions": {
 									"ActionSetCycleCancelCommand": false,
 									"ActionSetCycleModifyCommand": false
@@ -5318,7 +5303,7 @@
 							},
 							{
 								"ruleName": "Enable Cancel option if, Cycle is delaying",
-								"description": "A command can be started if the device is online and remote is enbled",
+								"description": "",
 								"actions": {
 									"ActionSetCycleCancelCommand": true
 								},
@@ -5419,7 +5404,7 @@
 									},
 									"right": {
 										"type": "value",
-										"key": "online",
+										"key": "Online",
 										"valueOperator": "=",
 										"value": 1
 									}
