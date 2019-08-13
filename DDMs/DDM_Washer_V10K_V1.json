@@ -3323,8 +3323,11 @@
 								"Compartment_CycleIdMixed_Normal": {
 									"Name": "MixedNormal",
 									"Attributes": {
-										"Compartment_CycleId": [
-											"Mixed_Normal"
+										"CycleOptionsWHR_WhatTo": [
+											"Mixed"
+										],
+										"CycleOptionsWHR_HowTo": [
+											"Normal"
 										]
 									}
 								},
@@ -3779,7 +3782,6 @@
 								"CycleOptionsWHR_OxiClean",
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
-								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
 								"CycleOptionsWHR_Presoak",
 								"System_Command"
