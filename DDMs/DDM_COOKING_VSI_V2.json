@@ -3345,6 +3345,205 @@
 							}
 						},
 						"SetCycle": {
+								"AssistedCooking": {
+								"EasyConvectFood": {
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodPizza": {
+										"Name": "Pizza",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodPizza"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodChickenPieces": {
+										"Name": "Chicken Pieces",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodChickenPieces"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodChickenWhole": {
+										"Name": "Chicken Whole",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodChickenWhole"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodMeatLoaf": {
+										"Name": "MeatLoaf",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodMeatLoaf"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodBeefOnlyTimer": {
+										"Name": "Beef Only Timer",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodBeefOnlyTimer"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodPorkOnlyTimer": {
+										"Name": "Pork Only Timer",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodPorkOnlyTimer"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodLambOnlyTimer": {
+										"Name": "Lamb Only Timer",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodLambOnlyTimer"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodFishFillet": {
+										"Name": "Fish Fillet",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodFishFillet"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodFishSticks": {
+										"Name": "Fish Sticks",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodFishSticks"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedPotato": {
+										"Name": "Baked Potato",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodBakedPotato"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodOtherVeggies": {
+										"Name": "Other Veggies",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodOtherVeggies"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodBiscuits": {
+										"Name": "Biscuits",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodBiscuits"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodCroissants": {
+										"Name": "Croissants",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodCroissants"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodCasserole": {
+										"Name": "Casserole",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodCasserole"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodCakes": {
+										"Name": "Cakes",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodCakes"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodCookies": {
+										"Name": "Cookies",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodCookies"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodFreshPie": {
+										"Name": "Fresh Pie",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodFreshPie"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodSnacks": {
+										"Name": "Snacks",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetEasyConvectFood": [
+												"EasyConvectFoodSnacks"
+											]
+										}
+									}
+								},
+								"FrozenBakeFood": {
+									"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodMeals": {
+										"Name": "Meals",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetFrozenBakeFood": [
+												"FrozenBakeFoodMeals"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodNuggets": {
+										"Name": "Nuggets",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetFrozenBakeFood": [
+												"FrozenBakeFoodNuggets"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodLasagna": {
+										"Name": "Lasagna",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetFrozenBakeFood": [
+												"FrozenBakeFoodLasagna"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodPizza": {
+										"Name": "Pizza",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetFrozenBakeFood": [
+												"FrozenBakeFoodPizza"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodPie": {
+										"Name": "Pie",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetFrozenBakeFood": [
+												"FrozenBakeFoodPie"
+											]
+										}
+									},
+									"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodFries": {
+										"Name": "Fries",
+										"Attributes": {
+											"OvenUpperCavity_CycleSetFrozenBakeFood": [
+												"FrozenBakeFoodFries"
+											]
+										}
+									}
+								}
+							},
+							"CookingMethods": {
 								"OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
 									"Name": "Bake",
 									"Attributes": {
@@ -3353,6 +3552,47 @@
 										]
 									}
 								},
+								"OvenUpperCavity_CycleSetCommonModeCommonModeConvectBake": {
+									"Name": "ConvectBake",
+									"Attributes": {
+										"OvenUpperCavity_CycleSetCommonMode": [
+											"CommonModeConvectBake"
+										]
+									}
+								},
+								"OvenUpperCavity_CycleSetCommonModeCommonModeBroil": {
+									"Name": "Broil",
+									"Attributes": {
+										"OvenUpperCavity_CycleSetCommonMode": [
+											"CommonModeBroil"
+										]
+									}
+								},
+								"OvenUpperCavity_CycleSetCommonModeCommonModeConvectBroil": {
+									"Name": "ConvectBroil",
+									"Attributes": {
+										"OvenUpperCavity_CycleSetCommonMode": [
+											"CommonModeConvectBroil"
+										]
+									}
+								},
+								"OvenUpperCavity_CycleSetCommonModeCommonModeConvectRoast": {
+									"Name": "ConvectRoast",
+									"Attributes": {
+										"OvenUpperCavity_CycleSetCommonMode": [
+											"CommonModeConvectRoast"
+										]
+									}
+								},
+								"OvenUpperCavity_CycleSetCommonModeCommonModeKeepWarm": {
+									"Name": "KeepWarm",
+									"Attributes": {
+										"OvenUpperCavity_CycleSetCommonMode": [
+											"CommonModeKeepWarm"
+										]
+									}
+								}
+							},
 							"Default": "OvenUpperCavity_CycleSetCommonModeCommonModeBake"
 						}
 					}
