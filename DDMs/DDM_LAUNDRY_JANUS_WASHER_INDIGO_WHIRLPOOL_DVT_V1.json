@@ -4993,8 +4993,22 @@
 							"StateAttributes": {
 								"State": "Sys_DisplaySetBrightnessPercent"
 							}
+						},
+						"CareTips": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"BuySupplies": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
-					},
+						},
 					"WashCavity": {
 						"SetCycle": {
 							"Visible": true,
@@ -5404,7 +5418,7 @@
 									},
 									"right": {
 										"type": "value",
-										"key": "Online",
+										"key": "online",
 										"valueOperator": "=",
 										"value": 1
 									}
