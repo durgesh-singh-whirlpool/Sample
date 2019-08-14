@@ -2655,16 +2655,20 @@
 							"Mwo_ModeSetCookManual": {
 								"Required": {
 									"Mwo_CycleSetCookPower": {
-										"Default": 100,
-										"Min": 10,
-										"Max": 100,
-										"Step": 10
+										"Range": {
+											"Default": 100,
+											"Min": 10,
+											"Max": 100,
+											"Step": 10
+										}
 									},
 									"Mwo_TimeSetCookTimeSet": {
-										"Default": 1,
-										"Min": 1,
-										"Max": 5999,
-										"Step": 1
+										"Range": {
+											"Default": 1,
+											"Min": 1,
+											"Max": 5999,
+											"Step": 1
+										}
 									}
 								},
 								"Optional": {}
@@ -2672,111 +2676,135 @@
 							"Mwo_ModeSetConvectBakeManual": {
 								"Required": {
 									"Mwo_CycleSetTargetTemp": {
-										"Min": 1211,
-										"Max": 2322,
-										"Step": 10,
-										"Default": 1628
+										"Range": {
+											"Min": 1211,
+											"Max": 2322,
+											"Step": 10,
+											"Default": 1628
+										}
 									},
 									"Mwo_TimeSetCookTimeSet": {
-										"Min": 60,
-										"Max": 14340,
-										"Step": 60,
-										"Default":60 
-									}
-									},
-									"Optional":{
-									"Mwo_TimeSetCookTimeSet": {
-										"Default":0,
-										"Min": 0,
-										"Max": 14340,
-										"Step": 60 
-									}
+										"Range": {
+											"Min": 60,
+											"Max": 14340,
+											"Step": 60,
+											"Default": 60
+										}
 									}
 								},
+								"Optional": {
+									"Mwo_TimeSetCookTimeSet": {
+										"Range": {
+											"Default": 0,
+											"Min": 0,
+											"Max": 14340,
+											"Step": 60
+										}
+									}
+								}
+							},
 							"Mwo_ModeSetBoilAndSimmerManual": {
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
-										"Min": 1,
-										"Max": 5999,
-										"Step": 1
+										"Range": {
+											"Min": 1,
+											"Max": 5999,
+											"Step": 1
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetDefrostManual": {
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
-										"Min": 1,
-										"Max": 5999,
-										"Step": 1
+										"Range": {
+											"Min": 1,
+											"Max": 5999,
+											"Step": 1
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetReheatManual": {
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
-										"Min": 1,
-										"Max": 5999,
-										"Step": 1
+										"Range": {
+											"Min": 1,
+											"Max": 5999,
+											"Step": 1
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetMeltManual": {
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
-										"Min": 1,
-										"Max": 5999,
-										"Step": 1
+										"Range": {
+											"Min": 1,
+											"Max": 5999,
+											"Step": 1
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetConvectRoastManual": {
 								"Required": {
 									"Mwo_CycleSetCookPower": {
-										"Min": 10,
-										"Max": 30,
-										"Step": 10,
-										"Default": 30
+										"Range": {
+											"Min": 10,
+											"Max": 30,
+											"Step": 10,
+											"Default": 30
+										}
 									},
 									"Mwo_CycleSetTargetTemp": {
-										"Min": 1211,
-										"Max": 2322,
-										"Step": 10,
-										"Default": 1211
+										"Range": {
+											"Min": 1211,
+											"Max": 2322,
+											"Step": 10,
+											"Default": 1211
+										}
 									}
 								},
-								"Optional":{
-								"Mwo_TimeSetCookTimeSet":{
-								"Default": 0,
-								"Min": 60,
-								"Max": 14340,
-								"Step": 60
-								}
+								"Optional": {
+									"Mwo_TimeSetCookTimeSet": {
+										"Default": 0,
+										"Min": 60,
+										"Max": 14340,
+										"Step": 60
+									}
 								}
 							},
 							"Mwo_ModeSetSoftenManual": {
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
-										"Min": 1,
-										"Max": 5999,
-										"Step": 1
+										"Range": {
+											"Min": 1,
+											"Max": 5999,
+											"Step": 1
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetSteamCookManual": {
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
-										"Min": 1,
-										"Max": 5999,
-										"Step": 1
+										"Range": {
+											"Min": 1,
+											"Max": 5999,
+											"Step": 1
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetKeepWarmManual": {
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
-										"Min": 1,
-										"Max": 5999,
-										"Step": 1
+										"Range": {
+											"Min": 1,
+											"Max": 5999,
+											"Step": 1
+										}
 									}
 								}
 							},
@@ -2816,10 +2844,12 @@
 							"Mwo_ModeSetConvectBakeThinCrustPizza": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 60,
-										"Max": 120,
-										"Step": 10,
-										"Default": 60
+										"Range": {
+											"Min": 60,
+											"Max": 120,
+											"Step": 10,
+											"Default": 60
+										}
 									},
 									"Display_Units": "Inches"
 								}
@@ -2827,10 +2857,12 @@
 							"Mwo_ModeSetConvectBakeThickCrustPizza": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 60,
-										"Max": 120,
-										"Step": 10,
-										"Default": 60
+										"Range": {
+											"Min": 60,
+											"Max": 120,
+											"Step": 10,
+											"Default": 60
+										}
 									}
 								}
 							},
@@ -2849,30 +2881,36 @@
 							"Mwo_ModeSetDefrostMeat": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 2,
-										"Max": 66,
-										"Step": 1,
-										"Default": 10
+										"Range": {
+											"Min": 2,
+											"Max": 66,
+											"Step": 1,
+											"Default": 10
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetDefrostPoultry": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 2,
-										"Max": 66,
-										"Step": 1,
-										"Default": 10
+										"Range": {
+											"Min": 2,
+											"Max": 66,
+											"Step": 1,
+											"Default": 10
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetDefrostFish": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 2,
-										"Max": 44,
-										"Step": 1,
-										"Default": 10
+										"Range": {
+											"Min": 2,
+											"Max": 44,
+											"Step": 1,
+											"Default": 10
+										}
 									}
 								}
 							},
@@ -2888,20 +2926,24 @@
 							"Mwo_ModeSetReheatPizzaSlices": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 30,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 30,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetReheatCasserole": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 40,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 40,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
@@ -2911,20 +2953,24 @@
 							"Mwo_ModeSetReheatBeverage": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 20,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 20,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetReheatBakedGoods": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 60,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 60,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
@@ -2934,10 +2980,12 @@
 							"Mwo_ModeSetMeltButter": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 5,
-										"Max": 20,
-										"Step": 5,
-										"Default": 5
+										"Range": {
+											"Min": 5,
+											"Max": 20,
+											"Step": 5,
+											"Default": 5
+										}
 									}
 								}
 							},
@@ -2957,10 +3005,12 @@
 							"Mwo_ModeSetMeltCheese": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 80,
-										"Max": 160,
-										"Step": 80,
-										"Default": 80
+										"Range": {
+											"Min": 80,
+											"Max": 160,
+											"Step": 80,
+											"Default": 80
+										}
 									}
 								}
 							},
@@ -2978,43 +3028,51 @@
 							"Mwo_ModeSetConvectRoastWholeChicken": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-                            "Min": 25,
-                            "Max": 45,
-                            "Step": 1,
-                            "Default": 25
-                          },
-                          "Display_Units": "lbs"
+										"Range": {
+											"Min": 25,
+											"Max": 45,
+											"Step": 1,
+											"Default": 25
+										}
+									},
+									"Display_Units": "lbs"
 								}
 							},
 							"Mwo_ModeSetConvectRoastBeefRoast": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-                            "Min": 20,
-                            "Max": 40,
-                            "Step": 1,
-                            "Default": 20
-                          },
-                          "Display_Units": "lbs"
+										"Range": {
+											"Min": 20,
+											"Max": 40,
+											"Step": 1,
+											"Default": 20
+										}
+									},
+									"Display_Units": "lbs"
 								}
 							},
 							"Mwo_ModeSetConvectRoastTurkeyBreast": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-                            "Min": 25,
-                            "Max": 45,
-                            "Step": 1,
-                            "Default": 25
-                          },
-                          "Display_Units": "lbs"
+										"Range": {
+											"Min": 25,
+											"Max": 45,
+											"Step": 1,
+											"Default": 25
+										}
+									},
+									"Display_Units": "lbs"
 								}
 							},
 							"Mwo_ModeSetKidsMenuCannedPasta": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 40,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 40,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
@@ -3024,30 +3082,36 @@
 							"Mwo_ModeSetKidsMenuFrozenMeal": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 80,
-										"Max": 100,
-										"Step": 10,
-										"Default": 80
+										"Range": {
+											"Min": 80,
+											"Max": 100,
+											"Step": 10,
+											"Default": 80
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetKidsMenuChickenNuggets": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 20,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 20,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetSoftenButter": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 5,
-										"Max": 20,
-										"Step": 5,
-										"Default": 5
+										"Range": {
+											"Min": 5,
+											"Max": 20,
+											"Step": 5,
+											"Default": 5
+										}
 									}
 								}
 							},
@@ -3100,40 +3164,48 @@
 							"Mwo_ModeSetAutoCookHotCereal": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 40,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 40,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetAutoCookBacon": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 40,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 40,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetAutoCookFishFillet": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 5,
-										"Max": 15,
-										"Step": 5,
-										"Default": 5
+										"Range": {
+											"Min": 5,
+											"Max": 15,
+											"Step": 5,
+											"Default": 5
+										}
 									}
 								}
 							},
 							"Mwo_ModeSetAutoCookFrenchToast": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 40,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 40,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
@@ -3149,10 +3221,12 @@
 							"Mwo_ModeSetAutoCookCannedVegetables": {
 								"Required": {
 									"Mwo_CycleSetAmount": {
-										"Min": 10,
-										"Max": 40,
-										"Step": 10,
-										"Default": 10
+										"Range": {
+											"Min": 10,
+											"Max": 40,
+											"Step": 10,
+											"Default": 10
+										}
 									}
 								}
 							},
@@ -3724,7 +3798,20 @@
 				"AttributesMapping": {
 					"MwoCavity": {
 						"CycleName": [
-							"UpperCavity_CavityModeMicrowaveOven"
+							"Mwo_ModeSetConvectRoast",
+							"Mwo_ModeSetConvectBake",
+							"Mwo_ModeSetSteamCook",
+							"Mwo_ModeSetSpeedCookVegetables",
+							"Mwo_ModeSetAutoCook",
+							"Mwo_ModeSetDefrost",
+							"Mwo_ModeSetReheat",
+							"Mwo_ModeSetCook",
+							"Mwo_ModeSetPopcorn",
+							"Mwo_ModeSetKeepWarm",
+							"Mwo_ModeSetSoften",
+							"Mwo_ModeSetMelt",
+							"Mwo_ModeSetBoilAndSimmer",
+							"Mwo_ModeSetKidsMenu"
 						],
 						"CookTimeRemaining": "Mwo_TimeStatusCookTimeRemaining",
 						"DoorOpen": "Mwo_OperationStatusDoorOpen",
@@ -3953,14 +4040,14 @@
 								"US",
 								"CA"
 							],
-							"StateAttributes": { 
+							"StateAttributes": {
 								"State": "Hood_OperationSetSurfaceLight"
 							},
 							"SendCommandAttributes": [
-							 "Hood_OperationSetSurfaceLight"
+								"Hood_OperationSetSurfaceLight"
 							],
 							"SetOperationsMapping": {
-							"Operation": "Hood_OperationSetSurfaceLight"
+								"Operation": "Hood_OperationSetSurfaceLight"
 							}
 						},
 						"HoodFan": {
@@ -3973,10 +4060,10 @@
 								"State": "Hood_OperationSetExhaustFanSpeed"
 							},
 							"SendCommandAttributes": [
-							"Hood_OperationSetExhaustFanSpeed"
+								"Hood_OperationSetExhaustFanSpeed"
 							],
 							"SetOperationsMapping": {
-							"Operation": "Hood_OperationSetExhaustFanSpeed"
+								"Operation": "Hood_OperationSetExhaustFanSpeed"
 							}
 						}
 					}
