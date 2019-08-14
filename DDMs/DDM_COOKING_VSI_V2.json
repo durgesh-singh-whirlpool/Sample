@@ -2255,6 +2255,10 @@
 		"Key": "DDM_COOKING_VSI_V2",
 		"capability": [
 			{
+			"Compatibility": {
+          "TempExchangeUnits": "F",
+          "MultipliedByTen": false
+        },
 				"CavityOrder": [
 					"OvenUpperCavity"
 				],
@@ -3608,8 +3612,6 @@
 						"DoorLockStatus": "OvenUpperCavity_OpStatusDoorLocked",
 						"CookTimeCompleteAction": "OvenUpperCavity_OpSetCookTimeCompleteAction",
 						"CookTimerState": "OvenUpperCavity_OpStatusCookTimeState",
-						"MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
-						"MeatProbeTemp": "OvenUpperCavity_DisplStatusMeatProbeDisplayTemp",
 						"SabbathModeActive": "OvenUpperCavity_OpSetSabbathModeActive",
 						"MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn",
 						"CavityTargetTemp": "OvenUpperCavity_CycleSetTargetTemp",
@@ -3620,10 +3622,6 @@
 						"DelayTimeSetTime": "OvenUpperCavity_TimeSetDelayTime",
 						"CookTimeRemaining": "OvenUpperCavity_TimeStatusCookTimeRemaining",
 						"OpStatusState": "OvenUpperCavity_OpStatusState",
-						"FillValveOnStatus": "OvenUpperCavity_OpStatusFillValveOn",
-						"OpStatusCleanOven": "OvenUpperCavity_OpStatusCleanOven",
-						"CulinaryVersion": "OvenUpperCavity_CulinaryCtrSetVersion",
-						"CulinaryCtrSetId": "OvenUpperCavity_CulinaryCtrSetId",
 						"CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId",
 						"CavityOperations": "OvenUpperCavity_OpSetOperations"
 					},
