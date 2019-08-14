@@ -4367,11 +4367,10 @@
 									},
 									"WashCavity_OpSetBulkDispense2Selection": {
 										"Enumeration": [
-											"BulkDispenseSelectDisabled",
 											"BulkDispenseSelectDetergent",
 											"BulkDispenseSelectSoftener"
 										],
-										"Default": "BulkDispenseSelectDisabled"
+										"Default": "BulkDispenseSelectSoftener"
 									}
 								}
 							}
@@ -5242,6 +5241,19 @@
 									"key": "Cavity_CycleStatusMachineState",
 									"valueOperator": "=",
 									"value": 7
+								}
+							},
+							{
+								"ruleName": "If dispenser 2 is softener disable concentration",
+								"description": "Disable Features for modify cycle  if a cycle is already running in Appliance",
+								"attributes": {
+									"WashCavity_OpSetBulkDispense2Concentration": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "WashCavity_OpSetBulkDispense2Selection",
+									"valueOperator": "=",
+									"value": 1
 								}
 							},
 							{
