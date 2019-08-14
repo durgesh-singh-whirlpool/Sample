@@ -4320,13 +4320,6 @@
 											"BulkDispenseEnableNextCycleDisabled"
 										],
 										"Default": "BulkDispenseEnablePermanentlyEnabled"
-									},
-									"WashCavity_OpSetBulkDispense1Selection": {
-										"Enumeration": [
-											"BulkDispenseSelectDisabled",
-											"BulkDispenseSelectDetergent"
-										],
-										"Default": "BulkDispenseSelectDisabled"
 									}
 								}
 							},
@@ -5207,10 +5200,9 @@
 							],
 							"SendCommandAttributes": [
 								"WashCavity_CycleSetBulkDispense1Enable",
-								"WashCavity_CycleSetBulkDispense2Enable",
-								"WashCavity_OpSetBulkDispense1Selection",
-								"WashCavity_OpSetBulkDispense2Selection",
 								"WashCavity_OpSetBulkDispense1Concentration",
+								"WashCavity_CycleSetBulkDispense2Enable",
+								"WashCavity_OpSetBulkDispense2Selection",
 								"WashCavity_OpSetBulkDispense2Concentration"
 							],
 							"SetOperationsMapping": {
