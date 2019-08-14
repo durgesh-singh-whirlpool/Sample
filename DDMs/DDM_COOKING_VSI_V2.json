@@ -3344,7 +3344,7 @@
 								}
 							}
 						},
-						"SetOven": {
+						"SetCycle": {
 								"OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
 									"Name": "Bake",
 									"Attributes": {
@@ -3475,6 +3475,15 @@
 								"OvenUpperCavity_CycleSetTargetTemp"
 							],
 							"SendCommandAttributes": [
+							"OvenUpperCavity_CycleSetCommonMode",
+								"OvenUpperCavity_CycleSetEasyConvectFood",
+								"OvenUpperCavity_TimeStatusDelayTimeRemaining",
+								"OvenUpperCavity_TimeSetCookTimeSet",
+								"OvenUpperCavity_TimeStatusCookTimeRemaining",
+								"OvenUpperCavity_OpStatusCookTimeState",
+								"OvenUpperCavity_TimeSetDelayTime",
+								"OvenUpperCavity_DisplStatusDisplayTemp",
+								"OvenUpperCavity_CycleSetTargetTemp",
 								"OvenUpperCavity_OpSetOperations"
 							],
 							"SetOperationsMapping": {
