@@ -5203,10 +5203,7 @@
 								"WashCavity_CycleSetBulkDispense2Enable",
 								"WashCavity_OpSetBulkDispense2Selection",
 								"WashCavity_OpSetBulkDispense2Concentration"
-							],
-							"SetOperationsMapping": {
-							
-							}
+							]
 						}
 					}
 				},
