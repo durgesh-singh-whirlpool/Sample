@@ -3345,7 +3345,7 @@
 							}
 						},
 						"SetOven": {
-							"AssistedCooking": {
+							
 								"EasyConvectFood": {
 									"OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodPizza": {
 										"Name": "Pizza",
@@ -3541,8 +3541,8 @@
 											]
 										}
 									}
-								}
-							},
+								},
+							
 							"CookingMethods": {
 								"OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
 									"Name": "Bake",
@@ -3613,7 +3613,6 @@
 						"CookTimeCompleteAction": "OvenUpperCavity_OpSetCookTimeCompleteAction",
 						"CookTimerState": "OvenUpperCavity_OpStatusCookTimeState",
 						"SabbathModeActive": "OvenUpperCavity_OpSetSabbathModeActive",
-						"MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn",
 						"CavityTargetTemp": "OvenUpperCavity_CycleSetTargetTemp",
 						"CavityActualTemp": "OvenUpperCavity_DisplStatusDisplayTemp",
 						"CavityLight": "OvenUpperCavity_DisplaySetLightOn",
