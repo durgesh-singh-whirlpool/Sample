@@ -1556,13 +1556,6 @@
 											"Enabled"
 										],
 										"Default": "Disabled"
-									},
-									"Cavity_CycleSetOptionLowerRackOnly": {
-										"Enumeration": [
-											"Disabled",
-											"Enabled"
-										],
-										"Default": "Disabled"
 									}
 								},
 								"Optional": {
@@ -1688,11 +1681,8 @@
 						"CycleCleanStatus": "Cavity_CycleStatusCycleClean",
 						"CycleSanitizedStatus": "Cavity_CycleStatusCycleSanitized",
 						"DelayTimeSetTime": "Cavity_TimeSetDelayTime",
-						"UpperRackOnly": "Cavity_CycleSetOptionUpperRackOnly",
-						"LowerRackOnly": "Cavity_CycleSetOptionLowerRackOnly",
 						"SmartHeatedDry": "Cavity_CycleSetOptionSmartHeatedDry",
 						"SaniRinse": "Cavity_CycleSetOptionSaniRinse",
-						"SteamEnabled": "Cavity_CycleSetOptionSteam",
 						"HighTemp": "Cavity_CycleSetOptionHighTemp"
 					},
 					"Common": {
@@ -1770,11 +1760,8 @@
 								"Cavity_CycleSetCycleId",
 								"Cavity_CycleSetDownloadAndGo",
 								"Cavity_CycleSetOptionHighTemp",
-								"Cavity_CycleSetOptionLowerRackOnly",
 								"Cavity_CycleSetOptionSaniRinse",
 								"Cavity_CycleSetOptionSmartHeatedDry",
-								"Cavity_CycleSetOptionSteam",
-								"Cavity_CycleSetOptionUpperRackOnly",
 								"Cavity_OperationStatusMachineState",
 								"Cavity_TimeStatusEstTimeRemaining"
 							],
@@ -1783,10 +1770,7 @@
 								"Cavity_CycleSetCycleId",
 								"Cavity_CycleSetOptionSaniRinse",
 								"Cavity_CycleSetOptionSmartHeatedDry",
-								"Cavity_CycleSetOptionLowerRackOnly",
-								"Cavity_CycleSetOptionSteam",
 								"Cavity_CycleSetOptionHighTemp",
-								"Cavity_CycleSetOptionUpperRackOnly",
 								"Cavity_TimeSetDelayTime"
 							],
 							"SetOperationsMapping": {
