@@ -1503,14 +1503,28 @@
 						"CapabilityData": {
 							"Cavity_CycleSetCycleIdCycleNormal": {
 								"Required": {
-									"Cavity_CycleSetOptionTurboZone": {
-										"Enumeration": [
-											true,
-											false
-										],
-										"Default": false
-									},
 									"Cavity_CycleSetOptionSmartHeatedDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionSaniRinse": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionPowerDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionHighTemp": {
 										"Enumeration": [
 											"Disabled",
 											"Enabled"
@@ -1518,51 +1532,158 @@
 										"Default": "Enabled"
 									}
 								},
-								"Optional": {}
-							},
-							"Cavity_CycleSetCycleIdCycleRinseOnly": {
-								"Required": {
-									"Cavity_CycleSetOptionPowerDry": {
-										"Enumeration": [
-											true,
-											false
-										],
-										"Default": false
-									}
-								},
 								"Optional": {
 									"Cavity_TimeSetDelayTime": {
 										"Range": {
 											"Min": 0,
-											"Max": 43140,
+											"Max": 86400,
 											"Step": 60,
 											"Default": 0
 										}
 									}
 								}
 							},
-							"Cavity_CycleSetCycleIdCycleHalfHourWash": {
+							"Cavity_CycleSetCycleIdCycleOvernight": {
 								"Required": {
-									"Cavity_CycleSetOptionTurboZone": {
-										"Allowed": [
-											true,
-											false
-										],
-										"Default": false
-									},
 									"Cavity_CycleSetOptionSmartHeatedDry": {
 										"Enumeration": [
 											"Disabled",
 											"Enabled"
 										],
-										"Default": "Disabled"
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionPowerDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionHighTemp": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
 									}
 								},
 								"Optional": {
 									"Cavity_TimeSetDelayTime": {
 										"Range": {
 											"Min": 0,
-											"Max": 43140,
+											"Max": 86400,
+											"Step": 60,
+											"Default": 0
+										}
+									}
+								}
+							},
+							"Cavity_CycleSetCycleIdCycleOneHourWash": {
+								"Required": {
+									"Cavity_CycleSetOptionSmartHeatedDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionPowerDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									}
+								},
+								"Optional": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Min": 0,
+											"Max": 86400,
+											"Step": 60,
+											"Default": 0
+										}
+									}
+								}
+							},
+							"Cavity_CycleSetCycleIdCyclePotsAndPans": {
+								"Required": {
+									"Cavity_CycleSetOptionSmartHeatedDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionSaniRinse": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionPowerDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionHighTemp": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									}
+								},
+								"Optional": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Min": 0,
+											"Max": 86400,
+											"Step": 60,
+											"Default": 0
+										}
+									}
+								}
+							},
+							"Cavity_CycleSetCycleIdCycleSensor": {
+								"Required": {
+									"Cavity_CycleSetOptionSmartHeatedDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionSaniRinse": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionPowerDry": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									},
+									"Cavity_CycleSetOptionHighTemp": {
+										"Enumeration": [
+											"Disabled",
+											"Enabled"
+										],
+										"Default": "Enabled"
+									}
+								},
+								"Optional": {
+									"Cavity_TimeSetDelayTime": {
+										"Range": {
+											"Min": 0,
+											"Max": 86400,
 											"Step": 60,
 											"Default": 0
 										}
@@ -1573,23 +1694,20 @@
 								"Required": {},
 								"NonEditable": {
 									"Cavity_CycleSetOptionSmartHeatedDry": "Enabled",
-									"Cavity_CycleSetCycleId": "DownloadGoPlasticItems"
+									"Cavity_CycleSetCycleId": "CycleLightChina"
 								}
 							},
 							"Cavity_CycleSetDownloadAndGoDownloadGoFineChina": {
 								"Required": {},
 								"NonEditable": {
 									"Cavity_CycleSetOptionSmartHeatedDry": "Enabled",
-									"Cavity_CycleSetCycleId": "DownloadGoFineChina"
+									"Cavity_CycleSetCycleId": "CycleLightChina"
 								}
 							},
 							"Cavity_CycleSetDownloadAndGoDownloadGoRinseOnly": {
-								"Required": {
-									"Cavity_CycleSetOptionSmartHeatedDry": "Enabled"
-								},
-								"Optional": {},
+								"Required": {},
 								"NonEditable": {
-									"Cavity_CycleSetCycleId": "DownloadGoRinseOnly"
+									"Cavity_CycleSetCycleId": "CycleRinseOnly"
 								}
 							},
 							"Cavity_CycleSetDownloadAndGoDownloadGoCanningItems": {
@@ -1598,7 +1716,7 @@
 								"NonEditable": {
 									"Cavity_CycleSetOptionSmartHeatedDry": "Enabled",
 									"Cavity_CycleSetOptionSaniRinse": "Enabled",
-									"Cavity_CycleSetCycleId": "DownloadGoCanningItems"
+									"Cavity_CycleSetCycleId": "CycleNormal"
 								}
 							}
 						},
@@ -1611,19 +1729,35 @@
 									]
 								}
 							},
-							"Cavity_CycleSetCycleIdCycleRinseOnly": {
-								"Name": "Refresh",
+							"Cavity_CycleSetCycleIdCycleOvernight": {
+								"Name": "Soak&Clean",
 								"Attributes": {
 									"Cavity_CycleSetCycleId": [
 										"CycleRinseOnly"
 									]
 								}
 							},
-							"Cavity_CycleSetCycleIdCycleHalfHourWash": {
-								"Name": "HalfHourWash",
+							"Cavity_CycleSetCycleIdCycleOneHourWash": {
+								"Name": "OneHourWash",
 								"Attributes": {
 									"Cavity_CycleSetCycleId": [
-										"CycleHalfHourWash"
+										"CycleOneHourWash"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleIdCyclePotsAndPans": {
+								"Name": "Cookware",
+								"Attributes": {
+									"Cavity_CycleSetCycleId": [
+										"CyclePotsAndPans"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleIdCycleSensor": {
+								"Name": "Sensor",
+								"Attributes": {
+									"Cavity_CycleSetCycleId": [
+										"CycleSensor"
 									]
 								}
 							},
