@@ -4074,8 +4074,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Activewear"
 								}
 							},
@@ -4094,8 +4094,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Jeans"
 								}
 							},
@@ -4114,8 +4114,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempCold",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Swimwear"
 								}
 							},
@@ -4134,8 +4134,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "SleepingBags"
 								}
 							},
@@ -4154,8 +4154,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "BusinessCasual"
 								}
 							},
@@ -4174,8 +4174,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Comforters"
 								}
 							},
@@ -4194,8 +4194,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempHot",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Blankets"
 								}
 							},
@@ -4214,8 +4214,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempCold",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Jackets"
 								}
 							},
@@ -4234,8 +4234,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedLow",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Lingerie"
 								}
 							},
@@ -4254,8 +4254,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempCold",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Curtains"
 								}
 							},
@@ -4274,8 +4274,8 @@
 									"WashCavity_CycleSetTemperature": "WashTempExtraHot",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedExtraHigh",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
-									"Cavity_CycleSetDownloadAndGo": 1,
-									"Cavity_CycleSetSpecialtyCycleId": 1,
+									"Cavity_CycleSetDownloadAndGo": "1",
+									"Cavity_CycleSetSpecialtyCycleId": "1",
 									"Cavity_CycleSetCycleName": "Diapers"
 								}
 							},
@@ -4309,8 +4309,8 @@
 											}
 										],
 										"Default": {
-												"Value": 50,
-												"Display": "2X"
+											"Value": 50,
+											"Display": "2X"
 										}
 									},
 									"WashCavity_CycleSetBulkDispense1Enable": {
@@ -4367,7 +4367,7 @@
 									},
 									"WashCavity_OpSetBulkDispense2Selection": {
 										"Enumeration": [
-										"BulkDispenseSelectDisabled",
+											"BulkDispenseSelectDisabled",
 											"BulkDispenseSelectDetergent",
 											"BulkDispenseSelectSoftener"
 										],
@@ -4375,7 +4375,7 @@
 									}
 								}
 							}
-							},
+						},
 						"SetCycle": {
 							"Regular": {
 								"WashCavity_CycleSetCycleSelectWashCycleNormal": {
@@ -5002,7 +5002,7 @@
 								"CA"
 							]
 						}
-						},
+					},
 					"WashCavity": {
 						"SetCycle": {
 							"Visible": true,
@@ -5206,13 +5206,13 @@
 								"WashCavity_OpSetBulkDispense2Concentration"
 							],
 							"SetOperationsMapping": {
-							"Operation" : "Cavity_OpSetOperations"
+								"Operation": "Cavity_OpSetOperations"
 							}
 						}
 					}
 				},
 				"ApplianceRulesets": {
-					"WashCavity": {   
+					"WashCavity": {
 						"Runtime": [
 							{
 								"ruleName": "Disable All Features when appliance is offline",
@@ -5231,11 +5231,11 @@
 								"ruleName": "Disable Features for modify cycle if a cycle is already running in Appliance",
 								"description": "Disable Features for modify cycle  if a cycle is already running in Appliance",
 								"attributes": {
-									"Select": false,
-									"DelayTime": false,
-									"Temperature": false,
-									"PresoakTimed": false,
-									"SteamEnable": false
+									"WashCavity_CycleSetCycleSelect": false,
+									"Cavity_TimeSetDelayTime": false,
+									"WashCavity_CycleSetTemperature": false,
+									"WashCavity_CycleSetPresoakTimed": false,
+									"Cavity_CycleSetSteamEnable": false
 								},
 								"condition": {
 									"type": "value",
