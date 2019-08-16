@@ -4095,9 +4095,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelHeavy",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 1,
+									"WashCavity_CycleSetExtraRinseSelect": "1",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
 								}
@@ -4116,9 +4116,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
 								}
@@ -4137,9 +4137,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempTapCold",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelExtraLight",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
 								}
@@ -4158,9 +4158,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
 								}
@@ -4179,9 +4179,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
 								}
@@ -4200,9 +4200,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
 								}
@@ -4221,9 +4221,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempWarm",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
 								}
@@ -4242,9 +4242,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempCold",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelNormal",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
 								}
@@ -4263,9 +4263,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempCool",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelLight",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
 								}
@@ -4284,9 +4284,9 @@
 								"NonEditable": {
 									"WashCavity_CycleSetTemperature": "WashTempTapCold",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelExtraLight",
-									"WashCavity_CycleSetPresoakTimed": 0,
+									"WashCavity_CycleSetPresoakTimed": "0",
 									"WashCavity_CycleSetFabricSoftenerEnable": "false",
-									"WashCavity_CycleSetExtraRinseSelect": 0,
+									"WashCavity_CycleSetExtraRinseSelect": "0",
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillMed",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedMedium"
 								}
@@ -4306,10 +4306,11 @@
 									"WashCavity_CycleSetTemperature": "WashTempHot",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelExtraHeavy",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": "false",
+									"WashCavity_CycleSetFabricSoftenerEnable": false,
 									"WashCavity_CycleSetExtraRinseSelect": 1,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
-									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh"
+									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
+									"Cavity_CycleSetCycleName": "Testing Diapers"
 								}
 							}
 						},
