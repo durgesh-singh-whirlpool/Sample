@@ -1930,10 +1930,12 @@
 										"Default": false
 									},
 									"CycleOptionsWHR_ManualDryTime": {
-										"Default": 50,
-										"Min": 1,
-										"Max": 150,
-										"Step": 1
+										"Range": {
+											"Default": 50,
+											"Min": 1,
+											"Max": 150,
+											"Step": 1
+										}
 									}
 								}
 							},
@@ -2126,10 +2128,12 @@
 										"Default": false
 									},
 									"CycleOptionsWHR_ManualDryTime": {
-										"Default": 55,
-										"Min": 1,
-										"Max": 150,
-										"Step": 1
+										"Range": {
+											"Default": 55,
+											"Min": 1,
+											"Max": 150,
+											"Step": 1
+										}
 									}
 								}
 							},
@@ -2448,10 +2452,12 @@
 										"Default": false
 									},
 									"CycleOptionsWHR_ManualDryTime": {
-										"Default": 30,
-										"Min": 1,
-										"Max": 150,
-										"Step": 1
+										"Range": {
+											"Default": 30,
+											"Min": 1,
+											"Max": 150,
+											"Step": 1
+										}
 									}
 								}
 							},
@@ -2643,10 +2649,12 @@
 										"Default": false
 									},
 									"CycleOptionsWHR_ManualDryTime": {
-										"Default": 75,
-										"Min": 1,
-										"Max": 150,
-										"Step": 1
+										"Range": {
+											"Default": 75,
+											"Min": 1,
+											"Max": 150,
+											"Step": 1
+										}
 									}
 								}
 							},
@@ -2707,13 +2715,11 @@
 								}
 							},
 							"Compartment_CycleIdWrinkleRelease": {
-								"Required": {
-									
-								},
-								"NonEditable":{
-								"CycleOptionsWHR_ManualDryTime": 1,
-                                "CycleOptionsWHR_WrinkleShield": "On",
-                                "CycleOptionsWHR_Temperature": "Temp0"
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_ManualDryTime": "1",
+									"CycleOptionsWHR_WrinkleShield": "On",
+									"CycleOptionsWHR_Temperature": "Temp0"
 								}
 							}
 						},
@@ -3005,15 +3011,15 @@
 							},
 							"Default": "Cavity_CycleSetCycleNameAthleticHighPerformanceWear"
 						},
-						"SetPostCycle":{
-						"Compartment_CycleIdWrinkleRelease": {
-									"Name": "WrinkleRelease",
-									"Attributes": {
-										"Compartment_CycleId": [
-											"TimedDry"
-										]
-									}
+						"SetPostCycle": {
+							"Compartment_CycleIdWrinkleRelease": {
+								"Name": "WrinkleRelease",
+								"Attributes": {
+									"Compartment_CycleId": [
+										"TimedDry"
+									]
 								}
+							}
 						}
 					}
 				},
@@ -3124,9 +3130,9 @@
 								"CycleOptionsWHR_WhatTo",
 								"CycleOptionsWHR_HowTo",
 								"Compartment_CycleId",
+								"CycleOptionsWHR_ManualDryTime",
 								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_Dryness",
-								"CycleOptionsWHR_ManualDryTime",
 								"CycleOptionsWHR_WrinkleShield",
 								"CycleOptionsWHR_StaticGuard",
 								"CycleOptionsWHR_EcoBoost",
