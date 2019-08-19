@@ -635,7 +635,6 @@
 						"SleepMode": "Sys_OpSetSleepMode"
 					},
 					"Common": {
-					"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
 					"Online": "online"					
 					}
 				},
@@ -661,17 +660,6 @@
 								"US",
 								"CA"
 							]
-						},
-						"RemoteStatus": {
-							"Visible": true,
-							"ReadOnly": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "XCat_RemoteSetRemoteControlEnable"
-							}
 						},
 						"Online": {
 							"Visible": true,
@@ -734,7 +722,7 @@
 							"SetOperationsMapping": {
 							}
 						},
-						"FavoriteCycles": {
+					"FavoriteCycles": {
 							"Visible": true,
 							"ReadOnly": false,
 							"AvailableIn": [
@@ -747,7 +735,23 @@
 								
 							],
 							"SetOperationsMapping": {
-								"Operation": ""
+								
+							}
+						},
+						"PerfectSleep": {
+						"Visible": true,
+							"ReadOnly": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StatusAttributes": [],
+							"StateAttributes": {},
+							"SendCommandAttributes": [
+								
+							],
+							"SetOperationsMapping": {
+								
 							}
 						}
 					}
