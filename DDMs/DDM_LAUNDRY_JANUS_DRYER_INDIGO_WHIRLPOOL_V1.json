@@ -2625,6 +2625,135 @@
 										"Default": "DryTempWarmMid"
 									}
 								}
+							},
+							"DryCavity_CycleSetCycleSelectDryCycleTimedDryLimited": {
+								"Required": {
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn",
+											"WrinkleShieldOnWithSteam"
+										],
+										"Default": "WrinkleShieldOff"
+									},
+									"DryCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"DryTempAir"
+										],
+										"Default": "DryTempAir"
+									}
+								}
+							},
+							"DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToTimedLimited": {
+								"Required": {
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn",
+											"WrinkleShieldOnWithSteam"
+										],
+										"Default": "WrinkleShieldOff"
+									},
+									"DryCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"DryTempAir"
+										],
+										"Default": "DryTempAir"
+									}
+								}
+							},
+							"DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToTimedLimited": {
+								"Required": {
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn",
+											"WrinkleShieldOnWithSteam"
+										],
+										"Default": "WrinkleShieldOff"
+									},
+									"DryCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"DryTempAir"
+										],
+										"Default": "DryTempAir"
+									}
+								}
+							},
+							"DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToTimedLimited": {
+								"Required": {
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn",
+											"WrinkleShieldOnWithSteam"
+										],
+										"Default": "WrinkleShieldOff"
+									},
+									"DryCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"DryTempAir"
+										],
+										"Default": "DryTempAir"
+									}
+								}
+							},
+							"DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToTimedLimited": {
+								"Required": {
+									"DryCavity_CycleSetManualDryTime": {
+										"List": [
+											1800,
+											3600,
+											5400
+										],
+										"Default": 3600
+									},
+									"DryCavity_CycleSetWrinkleShield": {
+										"Enumeration": [
+											"WrinkleShieldOff",
+											"WrinkleShieldOn"
+										],
+										"Default": "WrinkleShieldOff"
+									},
+									"DryCavity_CycleSetTemperature": {
+										"Enumeration": [
+											"DryTempAir"
+										],
+										"Default": "DryTempAir"
+									}
+								}
 							}
 						},
 						"SetCycle": {
@@ -2922,6 +3051,69 @@
 							},
 							"Default": "DryCavity_CycleSetCycleSelectDryCycleNormal"
 						},
+						"SetLimitedCycle": {
+							"Regular": {
+								"DryCavity_CycleSetCycleSelectDryCycleTimedDryLimited": {
+									"Name": "RegularNormalLimited",
+									"Attributes": {
+										"DryCavity_CycleSetCycleSelect": [
+											"DryCycleTimedDry"
+										]
+									}
+								}
+							},
+							"Colors": {
+								"DryCavity_CycleSetCycleSelectDryCycleWhatToColorsBrightsHowToTimedLimited": {
+									"Name": "ColorsBrightsHowToTimedLimited",
+									"Attributes": {
+										"DryCavity_CycleSetCycleSelect": [
+											"DryCycleWhatToColorsBrightsHowToTimed"
+										]
+									}
+								}
+							},
+							"Whites": {
+								"DryCavity_CycleSetCycleSelectDryCycleWhatToWhitesHowToTimedLimited": {
+									"Name": "eWhatToWhitesHowToTimedLimited",
+									"Attributes": {
+										"DryCavity_CycleSetCycleSelect": [
+											"DryCycleWhatToWhitesHowToTimed"
+										]
+									}
+								}
+							},
+							"Towels": {
+								"DryCavity_CycleSetCycleSelectDryCycleWhatToTowelsHowToTimedLimited": {
+									"Name": "RegularNormalLimited",
+									"Attributes": {
+										"DryCavity_CycleSetCycleSelect": [
+											"DryCycleWhatToTowelsHowToTimed"
+										]
+									}
+								}
+							},
+							"Delicates": {
+								"DryCavity_CycleSetCycleSelectDryCycleWhatToDelicatesHowToTimedLimited": {
+									"Name": "RegularNormalLimited",
+									"Attributes": {
+										"DryCavity_CycleSetCycleSelect": [
+											"DryCycleWhatToDelicatesHowToTimed"
+										]
+									}
+								}
+							},
+							"BulkyItems": {
+								"DryCavity_CycleSetCycleSelectDryCycleWhatToBulkyHowToTimedLimited": {
+									"Name": "BulkyHowToTimedLimited",
+									"Attributes": {
+										"DryCavity_CycleSetCycleSelect": [
+											"DryCycleWhatToBulkyHowToTimed"
+										]
+									}
+								}
+							},
+							"Default": "DryCavity_CycleSetCycleSelectDryCycleTimedDryLimited"
+						},
 						"SetUtilityCycle": {
 							"DryCavity_CycleSetCycleSelectDryCycleSteamRefresh": {
 								"Name": "DryCycleSteamRefresh",
@@ -2984,7 +3176,8 @@
 						"EcoBoostEnable": "DryCavity_CycleSetEcoBoostEnable",
 						"StaticGuardEnable": "DryCavity_CycleSetStaticGuardEnable",
 						"ManualDryTime": "DryCavity_CycleSetManualDryTime",
-						"AirFlowStatus": "DryCavity_CycleStatusAirFlowStatus"
+						"AirFlowStatus": "DryCavity_CycleStatusAirFlowStatus",
+						"LimitedCycle": "DryCavity_CycleStatusLimitedCycle"
 					},
 					"Common": {
 						"OpStatusState": "Cavity_CycleStatusMachineState",
@@ -2995,12 +3188,12 @@
 							"DrySys_OpSetDampNotificationToneVolume"
 						],
 						"Online": "Online",
-            "DisplayLanguage": "Sys_DisplaySetLanguage",
-            "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
-            "SoundKeyAlert": "Sys_OpSetAlertToneVolume",
-            "DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
-            "SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
-			"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume"
+						"DisplayLanguage": "Sys_DisplaySetLanguage",
+						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
+						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
+						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
+						"SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
+						"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume"
 					}
 				},
 				"Features": {
@@ -3054,9 +3247,9 @@
 								"CA"
 							],
 							"StatusAttributes": [
-							"Sys_OpSetAlertToneVolume",
-							"Sys_OpSetKeyPressToneVolume",
-							"DrySys_OpSetDampNotificationToneVolume"
+								"Sys_OpSetAlertToneVolume",
+								"Sys_OpSetKeyPressToneVolume",
+								"DrySys_OpSetDampNotificationToneVolume"
 							]
 						},
 						"ChangeApplianceLanguage": {
@@ -3098,6 +3291,27 @@
 							"StateAttributes": {
 								"State": "Sys_DisplaySetBrightnessPercent"
 							}
+						},
+						"CareTips": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"BuySupplies": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ExtendedServicePlans": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
 					},
 					"DryCavity": {
@@ -3245,6 +3459,162 @@
 									"key": "Cavity_CycleStatusMachineState",
 									"valueOperator": "=",
 									"value": 7
+								}
+							},
+							{
+								"ruleName": "Disable Commands when remote disabled button",
+								"description": "Appliance can not be started if the remote is disabled",
+								"actions": {
+									"ActionSetCycleStartCommand": false,
+									"ActionSetCycleCancelCommand": false,
+									"ActionSetCycleModifyCommand": false,
+									"ActionSetCyclePauseCommand": false,
+									"ActionSetCycleResumeCommand": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "XCat_RemoteSetRemoteControlEnable",
+									"valueOperator": "=",
+									"value": 0
+								}
+							},
+							{
+								"ruleName": "Disable Commands when offline",
+								"description": "Disable all commands when offline",
+								"actions": {
+									"ActionSetCycleStartCommand": false,
+									"ActionSetCycleCancelCommand": false,
+									"ActionSetCycleModifyCommand": false,
+									"ActionSetCyclePauseCommand": false,
+									"ActionSetCycleResumeCommand": false,
+									"ActionSetCycleSendCommand": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "Online",
+									"valueOperator": "=",
+									"value": 0
+								}
+							},
+							{
+								"ruleName": "Disable pause if cycle is running",
+								"description": "Disable pause if cycle is running",
+								"actions": {
+									"ActionSetCyclePauseCommand": false
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "and",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 7
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 8
+									}
+								}
+							},
+							{
+								"ruleName": "Disable Pause when not running",
+								"description": "Disable pause when not running",
+								"actions": {
+									"ActionSetCyclePauseCommand": false
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "and",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 7
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 8
+									}
+								}
+							},
+							{
+								"ruleName": "Disable Start if not stand by or setting",
+								"description": "Disable Start if not stand by or setting",
+								"actions": {
+									"ActionSetCycleStartCommand": false
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "and",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 0
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 1
+									}
+								}
+							},
+							{
+								"ruleName": "Disable Start if not complete",
+								"description": "Disable Start if not complete",
+								"actions": {
+									"ActionSetCycleStartCommand": false
+								},
+								"condition": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 10
+									
+								}
+							},
+							{
+								"ruleName": "Disable Resume if not paused",
+								"description": "Disable Resume if not paused",
+								"actions": {
+									"ActionSetCycleResumeCommand": false
+								},
+								"condition": {
+									
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 6
+									
+								}
+							},
+							{
+								"ruleName": "Allow delay only on setting & smartdelay",
+								"description": "Disable Resume if not paused",
+								"actions": {
+									"ActionSetCycleStartCommand": false
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "and",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 1
+									},
+									"right": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 4
+									}
 								}
 							}
 						]
