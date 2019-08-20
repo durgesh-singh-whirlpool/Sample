@@ -3332,8 +3332,28 @@
 							"StateAttributes": {
 								"State": "Sys_OpSetAlertToneVolume"
 							}
+						},
+						"CareTips": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"BuySupplies": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ExtendedServicePlans": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
-					
 					},
 					"DryCavity": {
 						"SetCycle": {
