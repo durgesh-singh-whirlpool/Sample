@@ -1329,6 +1329,9 @@
 		"Key": "DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
 		"capability": [
 			{
+			"Compatibility": {
+					"SkipSetOperationForSetOnDisplay": true
+				},
 				"CavityOrder": [
 					"DryCavity"
 				],
@@ -3497,10 +3500,11 @@
 								}
 							},
 							{
-								"ruleName": "Disable pause if cycle is running",
-								"description": "Disable pause if cycle is running",
+								"ruleName": "Enable pause if cycle is running",
+								"description": "Enable pause if cycle is running",
 								"actions": {
-									"ActionSetCyclePauseCommand": false
+									"ActionSetCyclePauseCommand": true,
+									"ActionSetCycleCancelCommand": true
 								},
 								"condition": {
 									"type": "operation",
@@ -3523,7 +3527,8 @@
 								"ruleName": "Disable Pause when not running",
 								"description": "Disable pause when not running",
 								"actions": {
-									"ActionSetCyclePauseCommand": false
+									"ActionSetCyclePauseCommand": false,
+									"ActionSetCycleResumeCommand": true
 								},
 								"condition": {
 									"type": "operation",
