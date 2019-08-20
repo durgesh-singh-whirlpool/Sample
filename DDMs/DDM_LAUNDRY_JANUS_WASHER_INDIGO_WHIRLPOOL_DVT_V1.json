@@ -4784,13 +4784,22 @@
 						 "SetLoadandGoDispenser1": {
                         "Default": "CycleSetBulkDispense1",
                         "CycleSetBulkDispense1": {
-							"Name": "Dispense1",
-                           "Attributes": {}
+                            "Attributes": {
+                                "WashCavity_CycleSetBulkDispense1Enable": [
+                                    "BulkDispenseEnablePermanentlyEnabled"
+                                ]
+                            },
+                            "Name": "Dispense1"
                         }
                     },
                     "SetLoadandGoDispenser2": {
                         "Default": "CycleSetBulkDispense2",
                         "CycleSetBulkDispense2": {
+                            "Attributes": {
+                                "WashCavity_CycleSetBulkDispense2Enable": [
+                                    "BulkDispenseEnablePermanentlyEnabled"
+                                ]
+                            },
                             "Name": "Dispense2"
                         }
                     },
