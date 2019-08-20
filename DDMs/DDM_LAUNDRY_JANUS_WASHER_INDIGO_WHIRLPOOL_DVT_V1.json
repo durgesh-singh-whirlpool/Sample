@@ -4787,9 +4787,12 @@
                         },
 						"Default": "CycleSetBulkDispense1"
                     },
-                    "SetLoadandGoDispenser2": {
+					 "SetLoadandGoDispenser2": {
                         "CycleSetBulkDispense2": {
-							
+						"Name": "Dispense2",
+							"Attributes": {
+                        
+                            }
                         },
 						"Default": "CycleSetBulkDispense2"
                     },
