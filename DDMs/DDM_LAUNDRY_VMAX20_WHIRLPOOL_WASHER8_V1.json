@@ -4312,6 +4312,50 @@
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
 									"Cavity_CycleSetCycleName": "Testing Diapers"
 								}
+							},
+							"CycleSetBulkDispense1": {
+								"Required": {
+									"WashCavity_OpSetBulkDispense1Concentration": {
+										"Map": [
+											{
+												"Value": 50,
+												"Display": "2X"
+											},
+											{
+												"Value": 33,
+												"Display": "3X"
+											},
+											{
+												"Value": 25,
+												"Display": "4X"
+											},
+											{
+												"Value": 20,
+												"Display": "5X"
+											},
+											{
+												"Value": 17,
+												"Display": "6X"
+											},
+											{
+												"Value": 13,
+												"Display": "8X"
+											}
+										],
+										"Default": {
+											"Value": 50,
+											"Display": "2X"
+										}
+									},
+									"WashCavity_CycleSetBulkDispense1Enable": {
+										"Enumeration": [
+											"BulkDispenseEnablePermanentlyDisabled",
+											"BulkDispenseEnablePermanentlyEnabled",
+											"BulkDispenseEnableNextCycleDisabled"
+										],
+										"Default": "BulkDispenseEnablePermanentlyEnabled"
+									}
+								}
 							}
 						},
 						"SetCycle": {
@@ -4734,6 +4778,17 @@
 								}
 							},
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
+						},
+						"SetLoadandGoDispenser1": {
+							"Default": "CycleSetBulkDispense1",
+							"CycleSetBulkDispense1": {
+								"Attributes": {
+									"WashCavity_CycleSetBulkDispense1Enable": [
+										"BulkDispenseEnablePermanentlyEnabled"
+									]
+								},
+								"Name": "Dispense1"
+							}
 						}
 					}
 				},
@@ -4990,6 +5045,28 @@
 							"SetOperationsMapping": {
 								"Operation": "Cavity_OpSetOperations"
 							}
+						},
+						"SetLoadandGoDispenser1": {
+							"StateAttributes": {
+								"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
+								"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration"
+							},
+							"Visible": true,
+							"StatusAttributes": [
+								"WashCavity_OpSetBulkDispense1Concentration",
+								"WashCavity_CycleSetBulkDispense1Enable"
+							],
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							},
+							"SendCommandAttributes": [
+								"WashCavity_CycleSetBulkDispense1Enable",
+								"WashCavity_OpSetBulkDispense1Concentration"
+							],
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
 					}
 				},
