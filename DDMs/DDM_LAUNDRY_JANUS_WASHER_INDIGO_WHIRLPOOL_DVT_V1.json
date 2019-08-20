@@ -4784,6 +4784,7 @@
 						 "SetLoadandGoDispenser1": {
                         "Default": "CycleSetBulkDispense1",
                         "CycleSetBulkDispense1": {
+							"Name": "Dispense1",
                            "Attributes": {}
                         }
                     },
