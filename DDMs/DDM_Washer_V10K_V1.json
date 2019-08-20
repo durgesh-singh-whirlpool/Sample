@@ -1794,11 +1794,6 @@
 										],
 										"Default": "Heavy"
 									}
-								},
-								"NonEditable":{
-								"Compartment_DownloadCyclePersist": false,
-								"CycleOptionsWHR_WhatTo": "Mixed",
-								"CycleOptionsWHR_HowTo": "Quick"
 								}
 							},
 							"Compartment_CycleIdMixed_Quick": {
@@ -3150,9 +3145,7 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp0",
 									"CycleOptionsWHR_SoilLevel": "Heavy",
@@ -3160,9 +3153,7 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameBrightColors": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp0",
 									"CycleOptionsWHR_SoilLevel": "Light",
@@ -3170,9 +3161,7 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameBusinessCasual": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp2",
 									"CycleOptionsWHR_SoilLevel": "Medium",
@@ -3180,9 +3169,7 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameComforters": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp2",
 									"CycleOptionsWHR_SoilLevel": "Heavy",
@@ -3190,19 +3177,15 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameHandwashFabrics": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_Temperature": "Temp0",
 									"CycleOptionsWHR_SoilLevel": "Light",
-									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"	
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
 								}
 							},
 							"Cavity_CycleSetCycleNameHeavyDuty": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp4",
 									"CycleOptionsWHR_SoilLevel": "VeryHeavy",
@@ -3210,9 +3193,7 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameIntimates": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp0",
 									"CycleOptionsWHR_SoilLevel": "Light",
@@ -3220,9 +3201,7 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameSleepingBags": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp2",
 									"CycleOptionsWHR_SoilLevel": "Heavy",
@@ -3230,9 +3209,7 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameSwimwear": {
-								"Required": {
-									
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp0",
 									"CycleOptionsWHR_SoilLevel": "Light",
@@ -3240,9 +3217,7 @@
 								}
 							},
 							"Cavity_CycleSetCycleNameTowels": {
-								"Required": {
-								
-								},
+								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_Temperature": "Temp2",
 									"CycleOptionsWHR_SoilLevel": "Heavy",
@@ -3315,11 +3290,9 @@
 								}
 							},
 							"WashCavity_CycleSetCycleSelectLoadFresh": {
-								"Required": {
-									
-								},
-								"NonEditable":{
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
 								}
 							}
 						},
@@ -3659,8 +3632,8 @@
 								}
 							}
 						},
-						"SetPostCycle":{
-						"WashCavity_CycleSetCycleSelectLoadFresh": {
+						"SetPostCycle": {
+							"WashCavity_CycleSetCycleSelectLoadFresh": {
 								"Name": "LoadFresh",
 								"Attributes": {
 									"Compartment_CycleId": [
@@ -3971,6 +3944,27 @@
 							"SetOperationsMapping": {
 								"Operation": "System_Command"
 							}
+						},
+						"CareTips": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"BuySupplies": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ExtendedServicePlans": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
 					}
 				},
