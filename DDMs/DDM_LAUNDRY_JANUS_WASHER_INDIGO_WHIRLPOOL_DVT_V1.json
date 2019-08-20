@@ -4282,6 +4282,14 @@
 							},
 							"CycleSetBulkDispense1": {
 								"Required": {
+									"WashCavity_CycleSetBulkDispense1Enable": {
+										"Enumeration": [
+											"BulkDispenseEnablePermanentlyDisabled",
+											"BulkDispenseEnablePermanentlyEnabled",
+											"BulkDispenseEnableNextCycleDisabled"
+										],
+										"Default": "BulkDispenseEnablePermanentlyEnabled"
+									},
 									"WashCavity_OpSetBulkDispense1Concentration": {
 										"Map": [
 											{
@@ -4313,14 +4321,6 @@
 											"Value": 50,
 											"Display": "2X"
 										}
-									},
-									"WashCavity_CycleSetBulkDispense1Enable": {
-										"Enumeration": [
-											"BulkDispenseEnablePermanentlyDisabled",
-											"BulkDispenseEnablePermanentlyEnabled",
-											"BulkDispenseEnableNextCycleDisabled"
-										],
-										"Default": "BulkDispenseEnablePermanentlyEnabled"
 									}
 								}
 							},
@@ -4784,12 +4784,14 @@
 						"SetLoadandGoDispenser1": {
                         "CycleSetBulkDispense1": {
                        
-                        }
+                        },
+						"Default": "CycleSetBulkDispense1"
                     },
                     "SetLoadandGoDispenser2": {
                         "CycleSetBulkDispense2": {
-                   
-                        }
+							
+                        },
+						"Default": "CycleSetBulkDispense2"
                     },
 						"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
