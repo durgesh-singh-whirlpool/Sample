@@ -1623,7 +1623,8 @@
 					"SkipPrefixForFavorites": [
 						"Cavity_TimeSetDelayTime",
 						"Cavity_CycleSetSteamEnable"
-					]
+					],
+					"SkipSetOperationForSetOnDisplay": true
 				},
 				"CavityOrder": [
 					"WashCavity"
