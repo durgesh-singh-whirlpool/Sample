@@ -4784,7 +4784,7 @@
 						 "SetLoadandGoDispenser1": {
                         "Default": "CycleSetBulkDispense1",
                         "CycleSetBulkDispense1": {
-                           
+                           "Attributes": {}
                         }
                     },
                     "SetLoadandGoDispenser2": {
@@ -4792,7 +4792,8 @@
                         "CycleSetBulkDispense2": {
                             "Name": "Dispense2"
                         }
-                    },"WatchCycles": {
+                    },
+					"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
 								"Name": "RegularNormal",
 								"Attributes": {
