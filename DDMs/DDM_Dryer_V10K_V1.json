@@ -3103,6 +3103,27 @@
 							"StateAttributes": {
 								"State": "Appliance_QuietModeEnabled"
 							}
+						},
+						"CareTips": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"BuySupplies": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ExtendedServicePlans": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
 					},
 					"DryCavity": {
