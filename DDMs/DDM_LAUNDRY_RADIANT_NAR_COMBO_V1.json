@@ -7686,6 +7686,27 @@
 							"StateAttributes": {
 								"State": "Sys_DisplaySetBrightnessPercent"
 							}
+						},
+						"CareTips": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"BuySupplies": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ExtendedServicePlans": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
 					},
 					"DryCavity": {
