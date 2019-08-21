@@ -7538,7 +7538,6 @@
 				"AttributesMapping": {
 					"Common": {
 						"ControlLock": "Sys_OpSetControlLock",
-						"QuietMode": "Sys_OpSetAlertToneVolume",
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
@@ -7564,7 +7563,6 @@
 						"TimeRemaining": "Cavity_TimeStatusEstTimeRemaining",
 						"MachineState": "Cavity_CycleStatusMachineState",
 						"DoorOpen": "Cavity_OpStatusDoorOpen",
-						"DelayTimeSetTime": "Cavity_TimeSetDelayTime",
 						"WashTemperature": "WashCavity_CycleSetTemperature",
 						"SoilLevel": "WashCavity_CycleSetSoilLevel",
 						"SpinSpeed": "WashCavity_CycleSetSpinSpeed",
