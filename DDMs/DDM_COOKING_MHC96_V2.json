@@ -2644,7 +2644,7 @@
 			{
 				"Compatibility": {
 					"TempExchangeUnits": "F",
-					"MultipliedByTen": false
+					"MultipliedByTen": true
 				},
 				"CavityOrder": [
 					"MwoCavity"
@@ -3872,17 +3872,6 @@
 								"State": "Hood_OperationSetExhaustFanSpeed"
 							}
 						},
-						"SabbathMode": {
-							"Visible": true,
-							"ReadOnly": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Mwo_OperationSetSabbathModeActive"
-							}
-						},
 						"ChangeTempUnits": {
 							"Visible": true,
 							"AvailableIn": [
@@ -4052,22 +4041,50 @@
 							"SetOperationsMapping": {
 								"Operation": "Mwo_OperationSetOperations"
 							}
+						},
+						"MyCreations": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"SendCommandAttributes": [
+								"Mwo_ModeSetConvectRoast",
+								"Mwo_ModeSetConvectBake",
+								"Mwo_ModeSetSteamCook",
+								"Mwo_ModeSetAutoCook",
+								"Mwo_ModeSetDefrost",
+								"Mwo_ModeSetReheat",
+								"Mwo_ModeSetCook",
+								"Mwo_ModeSetPopcorn",
+								"Mwo_ModeSetSpeedCookVegetables",
+								"Mwo_ModeSetKeepWarm",
+								"Mwo_ModeSetSoften",
+								"Mwo_ModeSetMelt",
+								"Mwo_ModeSetBoilAndSimmer",
+								"Mwo_ModeSetKidsMenu",
+								"Mwo_CycleSetTargetTemp",
+								"Mwo_CycleSetAmount",
+								"Mwo_TimeSetCookTimeSet",
+								"Mwo_CycleSetTargetTemp",
+								"Mwo_CycleSetCookPower",
+								"Mwo_OperationSetOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "Mwo_OperationSetOperations"
+							}
 						}
 					}
 				},
 				"ApplianceRulesets": {
-					"OvenLowerCavity": {
+					"MwoCavity": {
 						"Runtime": [
 							{
 								"ruleName": "Disable All Features when appliance is offline",
 								"description": "Disable All Features when appliance is offline",
 								"features": {
-									"MeatProbeTemp": false,
-									"MeatProbe": false,
-									"AssistedCooking": false,
 									"SetOven": false,
-									"LightOnOff": false,
-									"MyCreations": false
+									"LightOnOff": false
 								},
 								"actions": {
 									"ActionKitchenTimerStart": false,
@@ -4087,6 +4104,25 @@
 								}
 							},
 							{
+								"ruleName": "Disable Features when Cycle is running",
+								"description": "Disable Features when Cycle is running",
+								"features": {
+									"SetOven": false
+								},
+								"actions": {
+									"ActionSetCycleSendCommand": false,
+									"ActionSetCycleStartCommand": false,
+									"ActionSetCycleCancelCommand": true,
+									"ActionSetCycleCancelCookTimeCommand": true
+								},
+								"condition": {
+									"type": "value",
+									"key": "Mwo_OperationStatusCookTimeState",
+									"valueOperator": "=",
+									"value": "1"
+								}
+							},
+							{
 								"ruleName": "Cancel the Running Cycle",
 								"description": "If Appliance is not idle, we can enable the cancel action",
 								"actions": {
@@ -4094,9 +4130,9 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "LowerCavity_CavityHeatState",
+									"key": "Mwo_OperationStatusCookTimeState",
 									"valueOperator": "=",
-									"value": "0"
+									"value": "1"
 								}
 							},
 							{
@@ -4130,39 +4166,6 @@
 								}
 							},
 							{
-								"ruleName": "Disable the Cook time EDIT for slowroast 4,8,12",
-								"description": "Disable the Cook time EDIT for slowroast 4,8,12",
-								"attributes": {
-									"LowerCavity_CookTimeSetTime": false
-								},
-								"condition": {
-									"type": "operation",
-									"binaryOperator": "or",
-									"left": {
-										"type": "value",
-										"key": "LowerCavity_CavityModeOven",
-										"valueOperator": "=",
-										"value": "19"
-									},
-									"right": {
-										"type": "operation",
-										"binaryOperator": "or",
-										"left": {
-											"type": "value",
-											"key": "LowerCavity_CavityModeOven",
-											"valueOperator": "=",
-											"value": "20"
-										},
-										"right": {
-											"type": "value",
-											"key": "LowerCavity_CavityModeOven",
-											"valueOperator": "=",
-											"value": "21"
-										}
-									}
-								}
-							},
-							{
 								"ruleName": "Disable the StartCommand button",
 								"description": "Appliance can not be started if the remote is disabled",
 								"actions": {
@@ -4187,9 +4190,9 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "LowerCavity_CavityHeatState",
+									"key": "Mwo_OperationStatusCookTimeState",
 									"valueOperator": "!=",
-									"value": "0"
+									"value": "1"
 								}
 							},
 							{
@@ -4226,6 +4229,13 @@
 							"isLegacy": false,
 							"groupBy": "Appliance_FaultCode",
 							"attributes": "Appliance_FaultCode"
+						}
+					},
+					"MwoCavity": {
+						"CycleHistory": {
+							"isLegacy": "false",
+							"groupBy": "Mwo_OperationSetOperations",
+							"attributes": "Mwo_TimeSetCookTimeSet,Mwo_ModeSetConvectRoast,Mwo_ModeSetConvectBake,Mwo_ModeSetSteamCook,Mwo_ModeSetAutoCook,Mwo_ModeSetDefrost,Mwo_ModeSetReheat,Mwo_ModeSetCook,Mwo_ModeSetPopcorn,Mwo_ModeSetSpeedCookVegetables,Mwo_ModeSetKeepWarm,Mwo_ModeSetSoften,Mwo_ModeSetMelt,Mwo_ModeSetBoilAndSimmer,Mwo_ModeSetKidsMenu,Mwo_CycleSetCookPower,Mwo_CycleSetTargetTemp,Mwo_CycleSetAmount"
 						}
 					}
 				}
