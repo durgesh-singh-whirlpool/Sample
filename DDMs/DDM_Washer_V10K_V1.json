@@ -3224,7 +3224,7 @@
 									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
 								}
 							},
-							"WashCavity_CycleSetCycleSelectRinseSpin": {
+							"Compartment_CycleIdRinseSpin": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -3261,7 +3261,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectCleanWasher": {
+							"Compartment_CycleIdCleanWasher": {
 								"Required": {
 									"CycleOptionsWHR_ExtraRinse": {
 										"Bool": [
@@ -3615,7 +3615,7 @@
 							"Default": "Cavity_CycleSetCycleNameAthleticHighPerformanceWear"
 						},
 						"SetUtilityCycle": {
-							"WashCavity_CycleSetCycleSelectRinseSpin": {
+							"Compartment_CycleIdRinseSpin": {
 								"Name": "RinseSpin",
 								"Attributes": {
 									"Compartment_CycleId": [
@@ -3623,14 +3623,15 @@
 									]
 								}
 							},
-							"WashCavity_CycleSetCycleSelectCleanWasher": {
+							"Compartment_CycleIdCleanWasher": {
 								"Name": "CleanWasher",
 								"Attributes": {
 									"Compartment_CycleId": [
 										"CleanWasher"
 									]
 								}
-							}
+							},
+						"Default": "Compartment_CycleIdRinseSpin"
 						},
 						"SetPostCycle": {
 							"WashCavity_CycleSetCycleSelectLoadFresh": {
