@@ -4799,7 +4799,7 @@
 								"Name": "WashCycleCleanWasher",
 								"Attributes": {
 									"WashCavity_CycleSetCycleSelect": [
-										"WashCycleWhatToWhitesHowToSanitize"
+										"WashCycleCleanWasher"
 									]
 								}
 							},
