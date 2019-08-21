@@ -3289,7 +3289,7 @@
 									}
 								}
 							},
-							"WashCavity_CycleSetCycleSelectLoadFresh": {
+							"Compartment_CycleIdLoadFresh": {
 								"Required": {},
 								"NonEditable": {
 									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
@@ -3634,14 +3634,15 @@
 						"Default": "Compartment_CycleIdRinseSpin"
 						},
 						"SetPostCycle": {
-							"WashCavity_CycleSetCycleSelectLoadFresh": {
+							"Compartment_CycleIdLoadFresh": {
 								"Name": "LoadFresh",
 								"Attributes": {
 									"Compartment_CycleId": [
 										"RinseSpin"
 									]
 								}
-							}
+							},
+							"Default": "Compartment_CycleIdLoadFresh"
 						}
 					}
 				},
