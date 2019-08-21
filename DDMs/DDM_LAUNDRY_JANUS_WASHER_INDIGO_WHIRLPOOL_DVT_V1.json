@@ -1628,24 +1628,16 @@
 						{
 							"FeatureName": "ComposedQuietMode",
 							"DataType": "Boolean",
-							"Values": [
-								{
-									"On": [
-										{
-											"Sys_OpSetKeyPressToneVolume": "0",
-											"Sys_OpSetAlertToneVolume": "0"
-										}
-									]
+							"Values": {
+								"true": {
+									"Sys_OpSetKeyPressToneVolume": "0",
+									"Sys_OpSetAlertToneVolume": "0"
 								},
-								{
-									"Off": [
-										{
-											"Sys_OpSetKeyPressToneVolume": "2",
-											"Sys_OpSetAlertToneVolume": "2"
-										}
-									]
+								"false": {
+									"Sys_OpSetKeyPressToneVolume": "2",
+									"Sys_OpSetAlertToneVolume": "2"
 								}
-							]
+							}
 						}
 					],
 					"SkipSetOperationForSetOnDisplay": true
@@ -4807,7 +4799,7 @@
 						},
 						"SetLoadandGoDispenser1": {
 							"CycleSetBulkDispense1": {
-							"Name": "Dispense1",
+								"Name": "Dispense1",
 								"Attributes": {
 									"WashCavity_CycleSetBulkDispense1Enable": [
 										"BulkDispenseEnablePermanentlyEnabled"
@@ -5234,10 +5226,10 @@
 							"SetOperationsMapping": {
 								"Operation": "Cavity_OpSetOperations"
 							}
-							},
+						},
 						"SetLoadandGoDispenser2": {
-						"Visible": true,
-						"AvailableIn": [
+							"Visible": true,
+							"AvailableIn": [
 								"US",
 								"CA"
 							],
@@ -5259,7 +5251,7 @@
 							"SetOperationsMapping": {
 								"Operation": "Cavity_OpSetOperations"
 							}
-							}
+						}
 					}
 				},
 				"ApplianceRulesets": {
