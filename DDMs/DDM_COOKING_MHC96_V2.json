@@ -4106,9 +4106,6 @@
 							{
 								"ruleName": "Disable Features when Cycle is running",
 								"description": "Disable Features when Cycle is running",
-								"features": {
-									"SetOven": false
-								},
 								"actions": {
 									"ActionSetCycleSendCommand": false,
 									"ActionSetCycleStartCommand": false,
