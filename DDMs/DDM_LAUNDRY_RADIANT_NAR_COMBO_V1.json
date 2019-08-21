@@ -7537,7 +7537,6 @@
 				},
 				"AttributesMapping": {
 					"Common": {
-						"OpStatusState": "Cavity_CycleStatusMachineState",
 						"ControlLock": "Sys_OpSetControlLock",
 						"QuietMode": "Sys_OpSetAlertToneVolume",
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
@@ -7915,12 +7914,16 @@
 							}
 						},
 						"SetLoadandGoDispenser1": {
+						"Visible": true,
+						"AvailableIn": [
+								"US",
+								"CA"
+							],
 							"StateAttributes": {
 								"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 								"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
 								"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration"
 							},
-							"Visible": true,
 							"StatusAttributes": [
 								"WashCavity_OpSetBulkDispense1Concentration",
 								"WashCavity_OpSetBulkDispense1Selection",
@@ -7932,37 +7935,33 @@
 							"SendCommandAttributes": [
 								"WashCavity_CycleSetBulkDispense1Enable",
 								"WashCavity_OpSetBulkDispense1Concentration"
-							],
+							]
+							},
+						"SetLoadandGoDispenser2": {
+							"Visible": true,
 							"AvailableIn": [
 								"US",
 								"CA"
-							]
-						},
-						"SetLoadandGoDispenser2": {
+							],
 							"StateAttributes": {
 								"BulkDispense2Enable": "WashCavity_CycleSetBulkDispense2Enable",
 								"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
 								"BulkDispense2Concentration": "WashCavity_OpSetBulkDispense2Concentration"
 							},
-							"Visible": true,
 							"StatusAttributes": [
 								"WashCavity_OpSetBulkDispense2Concentration",
 								"WashCavity_OpSetBulkDispense2Selection",
 								"WashCavity_CycleSetBulkDispense2Enable"
 							],
-							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations"
-							},
 							"SendCommandAttributes": [
 								"WashCavity_CycleSetBulkDispense2Enable",
 								"WashCavity_OpSetBulkDispense2Selection",
 								"WashCavity_OpSetBulkDispense2Concentration"
 							],
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
-						}
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							}
+							}
 					}
 				},
 				"ApplianceRulesets": {
