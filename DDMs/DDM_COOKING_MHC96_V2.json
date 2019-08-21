@@ -2643,8 +2643,8 @@
 		"capability": [
 			{
 				"Compatibility": {
-					"TempExchangeUnits": "F",
-					"MultipliedByTen": true
+					"TempExchangeUnits": "C",
+					"MultipliedByTen": false
 				},
 				"CavityOrder": [
 					"MwoCavity"
