@@ -1,7 +1,7 @@
 {
   "_id": "DDM_COOKING_Loki_WPR_V1",
   "_rev": "6-1fc02c4ddfd52a5b7efe0268fbd1a667",
-  "DDM": {
+  "ddm": {
     "_id": "DDM_COOKING_Loki_WPR_V1",
     "ddmName": "DDM_COOKING_Loki_WPR_V1",
     "modelNumber": "WCE97US6,WCE97US0",
@@ -13,7 +13,7 @@
     "ccuriVersion": "1",
     "ccURI": "API144_COOKING_V25"
   },
-  "DataModel": {
+  "dataModel": {
     "Key": "DDM_COOKING_Loki_WPR_V1",
     "attributes": [
       {
@@ -834,8 +834,167 @@
       }
     ]
   },
-  "Personality": {
+  "personality": {
     "Key": "DDM_COOKING_Loki_WPR_V1",
+	 "capability": [
+      {
+        "Compatibility": {
+          "CooktopLeftOnAlertId": 504
+        },
+        "CavityOrder": [
+          "Cooktop"
+        ],
+        "BurnerPosition": {
+          "JEC4536H": {
+            "RatioWidth": 1.9736,
+            "RatioHeight": 1,
+            "Burners": {
+              "Burner-1": {
+                "PercentageX": 0.04,
+                "PercentageY": 0.0526,
+                "PercentageRadius": 0.1644
+              },
+              "Burner-2": {
+                "PercentageX": 0.3613,
+                "PercentageY": 0.0526,
+                "PercentageRadius": 0.275
+              },
+              "Burner-3": {
+                "PercentageX": 0.7933,
+                "PercentageY": 0.0526,
+                "PercentageRadius": 0.1644
+              },
+              "Burner-4": {
+                "PercentageX": 0.04,
+                "PercentageY": 0.4815,
+                "PercentageRadius": 0.22
+              },
+              "Burner-6": {
+                "PercentageX": 0.7653,
+                "PercentageY": 0.5368,
+                "PercentageRadius": 0.1925
+              }
+            }
+          },
+          "JEC4430H": {
+            "RatioWidth": 1.9736,
+            "RatioHeight": 1,
+            "Burners": {
+              "Burner-2": {
+                "PercentageX": 0.0266,
+                "PercentageY": 0.052,
+                "PercentageRadius": 0.175
+              },
+              "Burner-3": {
+                "PercentageX": 0.3684,
+                "PercentageY": 0.055,
+                "PercentageRadius": 0.25
+              },
+              "Burner-5": {
+                "PercentageX": 0.0213,
+                "PercentageY": 0.4578,
+                "PercentageRadius": 0.25
+              },
+              "Burner-6": {
+                "PercentageX": 0.796,
+                "PercentageY": 0.326,
+                "PercentageRadius": 0.175
+              }
+            }
+          },
+          "JEC4424H": {
+            "RatioWidth": 1.9736,
+            "RatioHeight": 1,
+            "Burners": {
+              "Burner-2": {
+                "PercentageX": 0.0266,
+                "PercentageY": 0.052,
+                "PercentageRadius": 0.2
+              },
+              "Burner-3": {
+                "PercentageX": 0.72,
+                "PercentageY": 0.052,
+                "PercentageRadius": 0.25
+              },
+              "Burner-5": {
+                "PercentageX": 0.0213,
+                "PercentageY": 0.5578,
+                "PercentageRadius": 0.2
+              },
+              "Burner-6": {
+                "PercentageX": 0.618,
+                "PercentageY": 0.5263,
+                "PercentageRadius": 0.2
+              }
+            }
+          }
+        },
+        "AttributesMapping": {
+          "Cooktop": {
+            "CooktopElementState": "Cooktop_CycleStatusCookElementState",
+            "CooktopElementPower": "Cooktop_CycleSetCookElementPower",
+            "CooktopElementSize": "Cooktop_CycleSetCookElementSize",
+            "OpStatusState": "Cooktop_OperationStatusState"
+          },
+          "Common": {
+            "ControlLock": "Sys_OperationSetControlLock"
+          }
+        },
+        "Features": {
+          "Common": {
+            "ControlLock": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "Sys_OperationSetControlLock"
+              }
+            },
+            "Notifications": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            },
+            "FaultCodes": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            },
+            "ApplianceDocuments": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            }
+          },
+          "Cooktop": {
+            "Burners": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            }
+          }
+        },
+        "QueryParams": {
+          "Common": {
+            "FaultCodeHistory": {
+              "isLegacy": false,
+              "attributes": "Sys_AlertStatusCustomerFaultCode",
+              "groupBy": "Sys_AlertStatusCustomerFaultCode"
+            }
+          }
+        }
+      }
+    ],
     "Rulesets": [
       {
         "FaultCodeHistory": {
@@ -851,7 +1010,7 @@
       }
     ]
   },
-  "Alerts": {
+  "alerts": {
     "Key": "DDM_COOKING_Loki_WPR_V1",
     "Alerts": [
       {
