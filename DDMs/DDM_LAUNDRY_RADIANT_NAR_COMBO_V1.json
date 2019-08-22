@@ -7537,6 +7537,16 @@
 									}
 								}
 							},
+							"Hidden":{
+							"WashCavity_CycleSetCycleSelectWashCycleWhatToWhitesHowToQuick":{
+							"Name": "WashCycleWhatToWhitesHowToQuick",
+										"Attributes": {
+											"WashCavity_CycleSetCycleSelect": [
+												"WashCycleWhatToWhitesHowToQuick"
+											]
+										}
+							}
+							},
 							"Default": "RegularNormalOff"
 						},
 						"SetUtilityCycle": {
