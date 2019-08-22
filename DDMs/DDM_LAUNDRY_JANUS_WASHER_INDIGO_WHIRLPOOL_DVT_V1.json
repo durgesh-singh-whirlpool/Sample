@@ -5254,17 +5254,6 @@
 						}
 					}
 				},
-				 "CycleOrder": {
-          "WashCavity": [
-		  "Regular",
-		  "WashCavity_CycleSetCycleSelectWashCycleNormal",
-		  "WashCavity_CycleSetCycleSelectWashCycleQuickWash",
-		  "WashCavity_CycleSetCycleSelectWashCycleWrinkleControl",
-		  "WashCavity_CycleSetCycleSelectWashCycleColdWash",
-		  "WashCavity_CycleSetCycleSelectWashCycleHeavyDuty",
-		  "WashCavity_CycleSetCycleSelectWashCycleSanitize"
-		  ]
-		  },
 				"ApplianceRulesets": {
 					"WashCavity": {
 						"Runtime": [
