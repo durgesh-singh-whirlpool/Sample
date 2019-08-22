@@ -1759,21 +1759,17 @@
 			{
 				"Compatibility": {
 					"SkipPrefixForFavorites": [
-						"Cavity_TimeSetDelayTime"
-					],
-					"ComboCavityPrefixes": {
-						"WashCavity": [
-							"CycleSetCycleSelect",
-							"CycleSetTemperature",
-							"CycleSetSoilLevel",
-							"CycleSetExtraRinseSelect",
-							"CycleSetPresoakNotTimedEnable",
-							"CycleSetSpinSpeed"
-						],
-						"DryCavity": [
-							"CycleSetDryness",
-							"CycleSetWrinkleShield"
-						]
+						"Cavity_TimeSetDelayTime",
+						"WashCavity_CycleSetCycleSelect",
+							"WashCavity_CycleSetTemperature",
+							"WashCavity_CycleSetSoilLevel",
+							"WashCavity_CycleSetExtraRinseSelect",
+							"WashCavity_CycleSetPresoakNotTimedEnable",
+							"WashCavity_CycleSetSpinSpeed",
+						"DryCavity_CycleSetDryness",
+							"DryCavity_CycleSetWrinkleShield",
+						"DryCavity_CycleSetCycleSelect"
+					]
 					}
 				},
 				"CavityOrder": [
