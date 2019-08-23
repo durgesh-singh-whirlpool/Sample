@@ -1798,7 +1798,7 @@
 								"NonEditable":{
 								"CycleOptionsWHR_WhatTo":"Mixed",
 								"CycleOptionsWHR_HowTo": "Normal",
-								"Compartment_DownloadCyclePersist": false
+								"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_Quick": {
