@@ -2571,11 +2571,11 @@
 										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
-										"Default": "MediumWell",
 										"Enumeration": [
 											"MediumWell",
 											"WellDone"
-										]
+										],
+										"Default": "MediumWell"
 									}
 								},
 								"Optional": {
@@ -3192,11 +3192,11 @@
 										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
-										"Default": "MediumWell",
 										"Enumeration": [
 											"MediumWell",
 											"WellDone"
-										]
+										],
+										"Default": "MediumWell"
 									}
 								},
 								"Optional": {
@@ -3489,11 +3489,11 @@
 										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
-										"Default": "MediumWell",
 										"Enumeration": [
 											"MediumWell",
 											"WellDone"
-										]
+										],
+										"Default": "MediumWell"
 									}
 								},
 								"Optional": {
