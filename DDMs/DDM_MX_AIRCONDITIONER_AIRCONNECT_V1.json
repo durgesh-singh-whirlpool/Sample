@@ -704,6 +704,56 @@
 							"StateAttributes": {
 								"State": "EcoModeEnabled"
 							}
+						},
+						"TargetTemp": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetTargetTemp"
+							}
+						},
+						"Humidity": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OpSetTargetHumidity"
+							}
+						},
+						"Mode": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_OpSetMode"
+							}
+						},
+						"FanSpeed": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_OpSetFanSpeed"
+							}
+						},
+						"Swing": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_OpSetVertLouverSwing"
+							}
 						}
 					},
 					"AirConditionerCavity": {
