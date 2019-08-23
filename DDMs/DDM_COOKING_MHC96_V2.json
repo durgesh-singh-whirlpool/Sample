@@ -2707,6 +2707,7 @@
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 1,
 											"Min": 1,
 											"Max": 5999,
 											"Step": 1
@@ -2718,6 +2719,7 @@
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 1,
 											"Min": 1,
 											"Max": 5999,
 											"Step": 1
@@ -2729,6 +2731,7 @@
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 1,
 											"Min": 1,
 											"Max": 5999,
 											"Step": 1
@@ -2740,6 +2743,7 @@
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 1,
 											"Min": 1,
 											"Max": 5999,
 											"Step": 1
@@ -2779,6 +2783,7 @@
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 1,
 											"Min": 1,
 											"Max": 5999,
 											"Step": 1
@@ -2790,6 +2795,7 @@
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 1,
 											"Min": 1,
 											"Max": 5999,
 											"Step": 1
@@ -2801,6 +2807,7 @@
 								"Required": {
 									"Mwo_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 1,
 											"Min": 1,
 											"Max": 5999,
 											"Step": 1
@@ -4104,8 +4111,8 @@
 								}
 							},
 							{
-								"ruleName": "Disable Features when Cycle is running",
-								"description": "Disable Features when Cycle is running",
+								"ruleName": "Disable Sending actions when Cycle is running",
+								"description": "Disable Sending Actions when Cycle is running",
 								"actions": {
 									"ActionSetCycleSendCommand": false,
 									"ActionSetCycleStartCommand": false,
