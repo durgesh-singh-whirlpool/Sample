@@ -1794,6 +1794,11 @@
 										],
 										"Default": "Heavy"
 									}
+								},
+								"NonEditable":{
+								"CycleOptionsWHR_WhatTo":"Mixed",
+								"CycleOptionsWHR_HowTo": "Normal",
+								"Compartment_DownloadCyclePersist": false
 								}
 							},
 							"Compartment_CycleIdMixed_Quick": {
@@ -3753,7 +3758,6 @@
 								"Compartment_DownloadCyclePersist",
 								"CycleOptionsWHR_WhatTo",
 								"CycleOptionsWHR_HowTo",
-								"Compartment_CycleId",
 								"CycleOptionsWHR_Temperature",
 								"CycleOptionsWHR_DeepClean",
 								"CycleOptionsWHR_OxiClean",
