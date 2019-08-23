@@ -2286,7 +2286,7 @@
 	},
 	"personality": {
 		"Key": "DDM_COOKING_MINERVA_SINGLE_BIO9_V1",
-		"Capability": [
+		"capability": [
 			{
 				"CavityOrder": [
 					"OvenUpperCavity"
@@ -4423,8 +4423,7 @@
 				"AttributesMapping": {
 					"OvenUpperCavity": {
 						"CycleName": [
-							"UpperCavity_CavityModeOven",
-							"UpperCavity_CulinaryCenterID"
+							"UpperCavity_CavityModeOven"
 						],
 						"TimeElapsed": "UpperCavity_ElapseCookTime",
 						"DoorOpen": "UpperCavity_CavityDoorStatus",
