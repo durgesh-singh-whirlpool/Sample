@@ -2307,29 +2307,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2351,12 +2351,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
 										"Default": "Medium",
@@ -2370,10 +2370,10 @@
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2393,29 +2393,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2435,29 +2435,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2477,29 +2477,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2519,29 +2519,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2563,12 +2563,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
 										"Default": "MediumWell",
@@ -2581,10 +2581,10 @@
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2604,29 +2604,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2646,29 +2646,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2688,29 +2688,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2730,29 +2730,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2772,29 +2772,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2814,29 +2814,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2856,29 +2856,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -2906,12 +2906,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {},
@@ -2939,12 +2939,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {},
@@ -2972,12 +2972,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {},
@@ -3005,12 +3005,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {},
@@ -3038,12 +3038,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {},
@@ -3071,12 +3071,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {},
@@ -3098,12 +3098,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
 										"Default": "Medium",
@@ -3117,10 +3117,10 @@
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3140,29 +3140,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3184,12 +3184,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
 										"Default": "MediumWell",
@@ -3202,10 +3202,10 @@
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3225,29 +3225,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3267,29 +3267,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3311,12 +3311,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
 										"Default": "Medium",
@@ -3330,10 +3330,10 @@
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3353,29 +3353,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3395,12 +3395,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
 										"Default": "Medium",
@@ -3414,10 +3414,10 @@
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3437,29 +3437,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3481,12 +3481,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
 										"Default": "MediumWell",
@@ -3499,10 +3499,10 @@
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3522,29 +3522,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3566,12 +3566,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									},
 									"OvenUpperCavity_CycleSetDoneness": {
 										"Default": "Medium",
@@ -3585,10 +3585,10 @@
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3608,21 +3608,21 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_CycleSetPreheatOn": {
@@ -3634,10 +3634,10 @@
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3668,21 +3668,21 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3702,21 +3702,21 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3736,21 +3736,21 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_CycleSetPreheatOn": {
@@ -3762,10 +3762,10 @@
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3796,21 +3796,21 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3830,21 +3830,21 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3864,29 +3864,29 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3917,21 +3917,21 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetDelayTime": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
@@ -3951,21 +3951,21 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
 										"Enumeration": [
 											"TurnOff",
 											"KeepWarm",
 											"StayOn"
-										]
+										],
+										"Default": "TurnOff"
 									}
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
 										"Range": {
+											"Default": 0,
 											"Min": 0,
 											"Max": 43140,
-											"Step": 60,
-											"Default": 0
+											"Step": 60
 										}
 									}
 								},
