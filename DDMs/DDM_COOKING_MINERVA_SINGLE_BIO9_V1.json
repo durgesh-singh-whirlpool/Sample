@@ -4465,9 +4465,214 @@
 						"SoundKeyPower": "SystemSettings_SoundKeyPower"
 					}
 				},
-				"Features": {},
-				"ApplianceRulesets": {},
-				"QueryParams": {}
+				"Features": {
+					"Common": {
+						"LocalKitchenTimer": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"Notifications": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"FaultCodes": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ApplianceDocuments": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						}
+					},
+					"OvenUpperCavity": {
+						"AssistedCooking": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+							},
+							"StatusAttributes": [
+								"OvenUpperCavity_CycleSetCommonMode",
+								"OvenUpperCavity_CycleSetConvectBakeFood",
+								"OvenUpperCavity_CycleSetEasyConvectFood",
+								"OvenUpperCavity_CycleSetBreadProof",
+								"OvenUpperCavity_CycleSetTargetTemp",
+								"OvenUpperCavity_TimeStatusDelayTimeRemaining",
+								"OvenUpperCavity_TimeStatusCookTimeRemaining",
+								"OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+								"OvenUpperCavity_OpStatusCookTimeState",
+								"OvenUpperCavity_TimeSetCookTimeSet",
+								"OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+								"OvenUpperCavity_DisplStatusMeatProbeDisplayTemp",
+								"OvenUpperCavity_TimeSetDelayTime",
+								"OvenUpperCavity_DisplStatusDisplayTemp"
+							],
+							"SendCommandAttributes": [
+								"OvenUpperCavity_CulinaryCtrSetId",
+								"OvenUpperCavity_CycleSetTargetTemp",
+								"OvenUpperCavity_TimeSetCookTimeSet",
+								"OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+								"OvenUpperCavity_OpSetOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "OvenUpperCavity_OpSetOperations",
+								"TimerOperations": "OvenUpperCavity_TimeSetCookTimeOperations",
+								"CookTime": "OvenUpperCavity_TimeSetCookTimeSet",
+								"CookTemp": "OvenUpperCavity_CycleSetTargetTemp",
+								"ProfileId": "OvenUpperCavity_CulinaryCtrSetId",
+								"MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+							}
+						},
+						"SetOven": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "OvenUpperCavity_OpStatusState",
+								"MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+								"MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+							},
+							"StatusAttributes": [
+								"OvenUpperCavity_CycleSetCommonMode",
+								"OvenUpperCavity_CycleSetConvectBakeFood",
+								"OvenUpperCavity_CycleSetEasyConvectFood",
+								"OvenUpperCavity_CycleSetBreadProof",
+								"OvenUpperCavity_CycleSetTargetTemp",
+								"OvenUpperCavity_TimeStatusDelayTimeRemaining",
+								"OvenUpperCavity_TimeStatusCookTimeRemaining",
+								"OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+								"OvenUpperCavity_OpStatusCookTimeState",
+								"OvenUpperCavity_TimeSetCookTimeSet",
+								"OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+								"OvenUpperCavity_DisplStatusMeatProbeDisplayTemp",
+								"OvenUpperCavity_TimeSetDelayTime",
+								"OvenUpperCavity_DisplStatusDisplayTemp"
+							],
+							"SendCommandAttributes": [
+								"OvenUpperCavity_CycleSetCommonMode",
+								"OvenUpperCavity_CycleSetConvectBakeFood",
+								"OvenUpperCavity_CycleSetEasyConvectFood",
+								"OvenUpperCavity_CycleSetBreadProof",
+								"OvenUpperCavity_CycleSetTargetTemp",
+								"OvenUpperCavity_TimeSetCookTimeSet",
+								"OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+								"OvenUpperCavity_TimeSetDelayTime",
+								"OvenUpperCavity_OpSetCookTimeCompleteAction",
+								"OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+								"OvenUpperCavity_OpSetOperations",
+								"OvenUpperCavity_TimeSetCookTimeOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "OvenUpperCavity_OpSetOperations",
+								"TimerOperations": "OvenUpperCavity_TimeSetCookTimeOperations",
+								"CookTime": "OvenUpperCavity_TimeSetCookTimeSet",
+								"CookTemp": "OvenUpperCavity_CycleSetTargetTemp",
+								"MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+							}
+						},
+						"MeatProbe": {
+							"Visible": true,
+							"ReadOnly": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+							}
+						},
+						"CyclesHistory": {
+							"Visible": true,
+							"ReadOnly": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"SendCommandAttributes": [
+								"OvenUpperCavity_CycleSetCommonMode",
+								"OvenUpperCavity_CycleSetConvectBakeFood",
+								"OvenUpperCavity_CycleSetEasyConvectFood",
+								"OvenUpperCavity_CycleSetBreadProof",
+								"OvenUpperCavity_CycleSetTargetTemp",
+								"OvenUpperCavity_TimeSetCookTimeSet",
+								"OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+								"OvenUpperCavity_TimeSetDelayTime",
+								"OvenUpperCavity_OpSetCookTimeCompleteAction",
+								"OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+								"OvenUpperCavity_OpSetOperations",
+								"OvenUpperCavity_TimeSetCookTimeOperations"
+							],
+							"StateAttributes": {},
+							"SetOperationsMapping": {
+								"Operation": "OvenUpperCavity_OpSetOperations",
+								"TimerOperations": "OvenUpperCavity_TimeSetCookTimeOperations"
+							}
+						},
+						"FavoriteCycles": {
+							"Visible": true,
+							"ReadOnly": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StatusAttributes": [],
+							"StateAttributes": {},
+							"SendCommandAttributes": [
+								"OvenUpperCavity_CycleSetCommonMode",
+								"OvenUpperCavity_CycleSetConvectBakeFood",
+								"OvenUpperCavity_CycleSetEasyConvectFood",
+								"OvenUpperCavity_CycleSetBreadProof",
+								"OvenUpperCavity_CycleSetTargetTemp",
+								"OvenUpperCavity_TimeSetCookTimeSet",
+								"OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+								"OvenUpperCavity_TimeSetDelayTime",
+								"OvenUpperCavity_OpSetCookTimeCompleteAction",
+								"OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+								"OvenUpperCavity_OpSetOperations",
+								"OvenUpperCavity_TimeSetCookTimeOperations"
+							],
+							"SetOperationsMapping": {
+								"Operation": "OvenUpperCavity_OpSetOperations",
+								"EnvelopeAction": "Relational_EnvelopeAction"
+							}
+						},
+						"LightOnOff": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "OvenUpperCavity_DisplaySetLightOn"
+							}
+						}
+					}
+				},
+				"ApplianceRulesets": {
+					"Common": {},
+					"OvenUpperCavity": {}
+				},
+				"QueryParams": {
+					"Common": {},
+					"OvenUpperCavity": {}
+				}
 			}
 		],
 		"Rulesets": [
