@@ -2857,8 +2857,7 @@
 											"Step": 10,
 											"Default": 60
 										}
-									},
-									"Display_Units": "Inches"
+									}
 								}
 							},
 							"Mwo_ModeSetConvectBakeThickCrustPizza": {
@@ -3041,8 +3040,7 @@
 											"Step": 1,
 											"Default": 25
 										}
-									},
-									"Display_Units": "lbs"
+									}
 								}
 							},
 							"Mwo_ModeSetConvectRoastBeefRoast": {
@@ -3054,8 +3052,7 @@
 											"Step": 1,
 											"Default": 20
 										}
-									},
-									"Display_Units": "lbs"
+									}
 								}
 							},
 							"Mwo_ModeSetConvectRoastTurkeyBreast": {
@@ -3067,8 +3064,7 @@
 											"Step": 1,
 											"Default": 25
 										}
-									},
-									"Display_Units": "lbs"
+									}
 								}
 							},
 							"Mwo_ModeSetKidsMenuCannedPasta": {
@@ -3840,7 +3836,6 @@
 					"Common": {
 						"QuietMode": {
 							"Visible": true,
-							"ReadOnly": true,
 							"AvailableIn": [
 								"US",
 								"CA"
