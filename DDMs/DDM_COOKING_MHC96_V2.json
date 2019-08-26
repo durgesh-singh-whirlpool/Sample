@@ -4109,7 +4109,7 @@
 									"type": "value",
 									"key": "Mwo_OperationStatusCookTimeState",
 									"valueOperator": "=",
-									"value": "1"
+									"value": 1
 								}
 							},
 							{
@@ -4122,7 +4122,7 @@
 									"type": "value",
 									"key": "Mwo_OperationStatusCookTimeState",
 									"valueOperator": "=",
-									"value": "1"
+									"value": 1
 								}
 							},
 							{
@@ -4137,7 +4137,7 @@
 									"type": "value",
 									"key": "KitchenTimer1_KitchenTimerState",
 									"valueOperator": "=",
-									"value": "1"
+									"value": 1
 								}
 							},
 							{
@@ -4152,7 +4152,7 @@
 									"type": "value",
 									"key": "KitchenTimer1_KitchenTimerState",
 									"valueOperator": "=",
-									"value": "0"
+									"value": 0
 								}
 							},
 							{
@@ -4182,7 +4182,7 @@
 									"type": "value",
 									"key": "Mwo_OperationStatusCookTimeState",
 									"valueOperator": "!=",
-									"value": "1"
+									"value": 1
 								}
 							},
 							{
