@@ -4639,7 +4639,23 @@
 				},
 				"ApplianceRulesets": {
 					"Common": {
-					"Runtime": []
+					"Runtime": [
+					 {
+                "ruleName": "Enable the Kitchen timer update option when it is running",
+                "description": "Enable the Kitchen timer update option when it is running",
+                "actions": {
+                  "ActionKitchenTimerStart": false,
+                  "ActionKitchenTimerCancel": true,
+                  "ActionKitchenTimerModify": true
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "KitchenTimer1_KitchenTimerState",
+                  "valueOperator": "=",
+                  "value": "1"
+                }
+              }
+					]
 					},
 					"OvenUpperCavity": {
 					"Runtime": [
