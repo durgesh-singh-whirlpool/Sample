@@ -4306,7 +4306,7 @@
 									"WashCavity_CycleSetTemperature": "WashTempHot",
 									"WashCavity_CycleSetSoilLevel": "SoilLevelExtraHeavy",
 									"WashCavity_CycleSetPresoakTimed": 0,
-									"WashCavity_CycleSetFabricSoftenerEnable": false,
+									"WashCavity_CycleSetFabricSoftenerEnable": "false",
 									"WashCavity_CycleSetExtraRinseSelect": 1,
 									"WashCavity_CycleSetDeepFillEnable": "DeepFillHigh",
 									"WashCavity_CycleSetSpinSpeed": "SpinSpeedHigh",
