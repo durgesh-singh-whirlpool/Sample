@@ -1795,10 +1795,10 @@
 										"Default": "Heavy"
 									}
 								},
-								"NonEditable":{
-								"CycleOptionsWHR_WhatTo":"Mixed",
-								"CycleOptionsWHR_HowTo": "Normal",
-								"Compartment_DownloadCyclePersist": "false"
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_Quick": {
@@ -3636,7 +3636,7 @@
 									]
 								}
 							},
-						"Default": "Compartment_CycleIdRinseSpin"
+							"Default": "Compartment_CycleIdRinseSpin"
 						},
 						"SetPostCycle": {
 							"Compartment_CycleIdLoadFresh": {
@@ -3716,7 +3716,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "online"
+								"State": "Online"
 							}
 						},
 						"QuietMode": {
