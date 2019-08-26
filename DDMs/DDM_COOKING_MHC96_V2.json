@@ -3829,7 +3829,8 @@
 						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
 						"ControlLock": "Sys_OperationSetControlLock",
 						"SoundKeyPress": "Sys_OperationSetKeyPressToneVolume",
-						"SabbathMode": "Sys_OperationSetSabbathModeEnabled"
+						"SabbathMode": "Sys_OperationSetSabbathModeEnabled",
+						"QuietMode": "Sys_OperationSetQuietModeEnabled"
 					}
 				},
 				"Features": {
@@ -3929,16 +3930,6 @@
 								"CA"
 							]
 						},
-						"ChangeSoundPowerOnOff": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_SoundKeyPower"
-							}
-						},
 						"ChangeApplianceLanguage": {
 							"Visible": true,
 							"AvailableIn": [
@@ -3946,17 +3937,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_DisplayLanguage"
-							}
-						},
-						"ChangeSoundKeyAlert": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_SoundKeyAlert"
+								"State": "Sys_DisplaySetLanguage"
 							}
 						},
 						"ChangeSoundKeyPress": {
@@ -3966,7 +3947,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_SoundKeyPress"
+								"State": "Sys_OperationSetKeyPressToneVolume"
 							}
 						},
 						"ChangeBrightness": {
@@ -3976,7 +3957,17 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_DisplayBrightness"
+								"State": "Sys_DisplaySetBrightnessPercent"
+							}
+						},
+						"ChangeDisplayOnOffStatus": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Mwo_DisplaySetLightOn"
 							}
 						},
 						"ApplianceDocuments": {
@@ -4202,12 +4193,7 @@
 									"ControlLock": false,
 									"RemoteStatus": false,
 									"KitchenTimer": false,
-									"ChangeSoundPowerOnOff": false,
-									"ChangeNumberEntry": false,
-									"ChangeClockTheme": false,
-									"ChangeClockOnOffStatus": false,
 									"ChangeApplianceLanguage": false,
-									"ChangeSoundKeyAlert": false,
 									"ChangeSoundKeyPress": false,
 									"ChangeDisplayOnOffStatus": false,
 									"ChangeBrightness": false
