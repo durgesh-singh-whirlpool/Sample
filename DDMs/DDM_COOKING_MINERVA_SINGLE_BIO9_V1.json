@@ -4423,7 +4423,7 @@
 				"AttributesMapping": {
 					"OvenUpperCavity": {
 						"CycleName": [
-							"UpperCavity_CavityModeOven"
+							"OvenUpperCavity_CycleSetCommonMode"
 						],
 						"TimeElapsed": "UpperCavity_ElapseCookTime",
 						"DoorOpen": "UpperCavity_CavityDoorStatus",
