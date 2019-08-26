@@ -4243,7 +4243,7 @@
 		"Rulesets": [
 			{
 				"CycleHistory": {
-					"isLegacy": "false",
+					"isLegacy": false,
 					"groupBy": "Mwo_OperationSetOperations",
 					"attributes": "Mwo_TimeSetCookTimeSet,Mwo_ModeSetConvectRoast,Mwo_ModeSetConvectBake,Mwo_ModeSetSteamCook,Mwo_ModeSetAutoCook,Mwo_ModeSetDefrost,Mwo_ModeSetReheat,Mwo_ModeSetCook,Mwo_ModeSetPopcorn,Mwo_ModeSetSpeedCookVegetables,Mwo_ModeSetKeepWarm,Mwo_ModeSetSoften,Mwo_ModeSetMelt,Mwo_ModeSetBoilAndSimmer,Mwo_ModeSetKidsMenu,Mwo_CycleSetCookPower,Mwo_CycleSetTargetTemp,Mwo_CycleSetAmount"
 				},
