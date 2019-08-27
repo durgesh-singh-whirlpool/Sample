@@ -609,11 +609,164 @@
 		"Key": "DDM_MX_AIRCONDITIONER_AIRCONNECT_V1",
 		"capability": [
 			{
+				"Compatibility": {
+					"AdditionalMobileActions": {
+						"Cavity_OperationSetStartCommand": {
+							"SetOnDisplayOperations": "SetOnDisplay"
+						}
+					}
+				},
 				"CavityOrder": [
 					"AirConditionerCavity"
 				],
 				"Capability": {
-					"AirConditionerCavity": {}
+					"AirConditionerCavity": {
+						"CapabilityData": {
+							"Cavity_OpSetModeAcModeCooling": {
+								"Required": {
+									"Cavity_OpSetFanSpeed": {
+										"Enumeration": [
+											"Automatic",
+											"Low",
+											"Medium",
+											"High"
+										],
+										"Default": "Low"
+									},
+									"Sys_OpSetQuietModeEnabled": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"Sys_OpSetEcoModeEnabled": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"Sys_OpSetSleepMode": {
+										"Enumeration": [
+											"SleepModeOff",
+											"SleepMode1",
+											"SleepMode2",
+											"SleepMode3",
+											"SleepMode4"
+										],
+										"Default": "SleepModeOff"
+									},
+									"Sys_OpSetTargetTemp": {
+										"Range": {
+											"Default": 240,
+											"Min": 160,
+											"Max": 300,
+											"Step": 10
+										}
+									}
+								}
+							},
+							"Cavity_OpSetModeAcModeAir": {
+								"Required": {
+									"Cavity_OpSetFanSpeed": {
+										"Enumeration": [
+											"Low",
+											"Medium",
+											"High"
+										],
+										"Default": "Medium"
+									},
+									"Sys_OpSetQuietModeEnabled": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"Sys_OpSetEcoModeEnabled": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									}
+								}
+							},
+							"Cavity_OpSetModeAcModeHeating": {
+								"Required": {
+									"Cavity_OpSetFanSpeed": {
+										"Enumeration": [
+											"Automatic",
+											"Low",
+											"Medium",
+											"High"
+										],
+										"Default": "Low"
+									},
+									"Sys_OpSetQuietModeEnabled": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"Sys_OpSetEcoModeEnabled": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"Sys_OpSetSleepMode": {
+										"Enumeration": [
+											"SleepModeOff",
+											"SleepMode1",
+											"SleepMode2",
+											"SleepMode3",
+											"SleepMode4"
+										],
+										"Default": "SleepModeOff"
+									},
+									"Sys_OpSetTargetTemp": {
+										"Range": {
+											"Default": 210,
+											"Min": 160,
+											"Max": 300,
+											"Step": 10
+										}
+									}
+								}
+							}
+						},
+						"SetCycle": {
+							"Cavity_OpSetModeAcModeCooling": {
+								"Name": "AcModeCooling",
+								"Attributes": {
+									"Cavity_OpSetMode": [
+										"AcModeCooling"
+									]
+								}
+							},
+							"Cavity_OpSetModeAcModeAir": {
+								"Name": "AcModeAir",
+								"Attributes": {
+									"Cavity_OpSetMode": [
+										"AcModeAir"
+									]
+								}
+							},
+							"Cavity_OpSetModeAcModeHeating": {
+								"Name": "AcModeHeating",
+								"Attributes": {
+									"Cavity_OpSetMode": [
+										"AcModeHeating"
+									]
+								}
+							},
+							"Default": "Cavity_OpSetModeAcModeCooling"
+						}
+					}
 				},
 				"AttributesMapping": {
 					"AirConditionerCavity": {
@@ -635,7 +788,7 @@
 						"SleepMode": "Sys_OpSetSleepMode"
 					},
 					"Common": {
-					"Online": "online"					
+						"Online": "online"
 					}
 				},
 				"Features": {
@@ -754,64 +907,156 @@
 							"StateAttributes": {
 								"State": "Cavity_OpSetVertLouverSwing"
 							}
-						}
-					},
-					"AirConditionerCavity": {
-					"SetCycle": {
+						},
+						"QuietMode": {
 							"Visible": true,
 							"AvailableIn": [
 								"US",
 								"CA"
 							],
 							"StateAttributes": {
+								"State": "Sys_OpSetQuietModeEnabled"
+							}
+						},
+						"TurboMode": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Cavity_OpSetTurboMode"
+							}
+						},
+						"Brightness": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_DisplaySetBrightness"
+							}
+						}
+					},
+					"AirConditionerCavity": {
+						"SetCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"TargetTemp": "Sys_OpSetTargetTemp",
+								"Humidity": "Sys_OpSetTargetHumidity",
+								"DisplayTemp": "Sys_OpStatusDisplayTemp",
+								"DisplayHumidity": "Sys_OpStatusDisplayHumidity",
+								"AirFilterStatus": "Cavity_OpStatusAirFilterStatus",
+								"AirFilterTime": "Cavity_OpSetAirFilterTime",
+								"PowerOn": "Sys_OpSetPowerOn",
+								"Mode": "Cavity_OpSetMode",
+								"FanSpeed": "Cavity_OpSetFanSpeed",
+								"VertLouverSwing": "Cavity_OpSetVertLouverSwing",
+								"HorzLouverSwing": "Cavity_OpSetHorzLouverSwing",
+								"EcoModeEnabled": "Sys_OpSetEcoModeEnabled",
+								"TurboMode": "Cavity_OpSetTurboMode",
+								"Brightness": "Sys_DisplaySetBrightness",
+								"QuietMode": "Sys_OpSetQuietModeEnabled",
+								"SleepMode": "Sys_OpSetSleepMode"
 							},
 							"StatusAttributes": [
+								"Cavity_OpSetFanSpeed",
+								"Sys_OpSetQuietModeEnabled",
+								"Sys_OpSetEcoModeEnabled",
+								"Sys_OpSetSleepMode",
+								"Sys_OpSetTargetTemp"
 							],
 							"SendCommandAttributes": [
+								"Cavity_OpSetFanSpeed",
+								"Sys_OpSetQuietModeEnabled",
+								"Sys_OpSetEcoModeEnabled",
+								"Sys_OpSetSleepMode",
+								"Sys_OpSetTargetTemp"
 							],
 							"SetOperationsMapping": {
+								"Operation": "Cavity_OperationSetStartCommand"
 							}
 						},
-					"FavoriteCycles": {
+						"FavoriteCycles": {
 							"Visible": true,
-							"ReadOnly": false,
 							"AvailableIn": [
 								"US",
 								"CA"
 							],
-							"StatusAttributes": [],
-							"StateAttributes": {},
+							"StatusAttributes": [
+								"Cavity_OpSetFanSpeed",
+								"Sys_OpSetQuietModeEnabled",
+								"Sys_OpSetEcoModeEnabled",
+								"Sys_OpSetSleepMode",
+								"Sys_OpSetTargetTemp"
+							],
+							"StateAttributes": {
+								"TargetTemp": "Sys_OpSetTargetTemp",
+								"Humidity": "Sys_OpSetTargetHumidity",
+								"DisplayTemp": "Sys_OpStatusDisplayTemp",
+								"DisplayHumidity": "Sys_OpStatusDisplayHumidity",
+								"AirFilterStatus": "Cavity_OpStatusAirFilterStatus",
+								"AirFilterTime": "Cavity_OpSetAirFilterTime",
+								"PowerOn": "Sys_OpSetPowerOn",
+								"Mode": "Cavity_OpSetMode",
+								"FanSpeed": "Cavity_OpSetFanSpeed",
+								"VertLouverSwing": "Cavity_OpSetVertLouverSwing",
+								"HorzLouverSwing": "Cavity_OpSetHorzLouverSwing",
+								"EcoModeEnabled": "Sys_OpSetEcoModeEnabled",
+								"TurboMode": "Cavity_OpSetTurboMode",
+								"Brightness": "Sys_DisplaySetBrightness",
+								"QuietMode": "Sys_OpSetQuietModeEnabled",
+								"SleepMode": "Sys_OpSetSleepMode"
+							},
 							"SendCommandAttributes": [
-								
+								"Cavity_OpSetFanSpeed",
+								"Sys_OpSetQuietModeEnabled",
+								"Sys_OpSetEcoModeEnabled",
+								"Sys_OpSetSleepMode",
+								"Sys_OpSetTargetTemp"
 							],
 							"SetOperationsMapping": {
-								
-							}
-						},
-						"PerfectSleep": {
-						"Visible": true,
-							"ReadOnly": false,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StatusAttributes": [],
-							"StateAttributes": {},
-							"SendCommandAttributes": [
-								
-							],
-							"SetOperationsMapping": {
-								
+								"Operation": "Cavity_OperationSetStartCommand"
 							}
 						}
 					}
 				},
 				"ApplianceRulesets": {
-				"Common": {},
-				"AirConditionerCavity": {}
+					"Common": {
+						"Runtime": [
+							{
+								"ruleName": "Disable All Features when appliance is off",
+								"description": "Disable All Features when appliance is off",
+								"features": {
+									"EcoMode": false,
+									"TargetTemp": false,
+									"Humidity": false,
+									"Mode": false,
+									"FanSpeed": false,
+									"Swing": false,
+									"QuietMode": false,
+									"PerfectSleep": false,
+									"TurboMode": false,
+									"Brightness": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "Sys_OpSetPowerOn",
+									"valueOperator": "=",
+									"value": 0
+								}
+							}
+						]
+					},
+					"AirConditionerCavity": {}
 				},
 				"QueryParams": {
-				"Common": {
+					"Common": {
 						"FaultCodeHistory": {
 							"isLegacy": false,
 							"groupBy": "Sys_AlertStatusCustomerFaultCode",
@@ -827,7 +1072,8 @@
 					}
 				}
 			}
-		]},
+		]
+	},
 	"alerts": {
 		"Key": "DDM_MX_AIRCONDITIONER_AIRCONNECT_V1",
 		"Alerts": [
