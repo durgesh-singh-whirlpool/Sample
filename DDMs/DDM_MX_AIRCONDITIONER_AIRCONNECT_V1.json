@@ -289,6 +289,18 @@
       },
       {
         "IsTemplate": false,
+        "M2MAttributeName": "online",
+        "Instance": "",
+        "IsTimeSeries": false,
+        "DataType": "Boolean",
+        "AttributeName": "online",
+        "DeviceIO": "RO",
+        "MappedAttributeName": "online",
+        "Default": false,
+        "Key": "0x00000000"
+      },
+      {
+        "IsTemplate": false,
         "M2MAttributeName": "Sys_OpStatusDisplayTemp",
         "Instance": "Sys_OpStatus",
         "IsTimeSeries": false,
