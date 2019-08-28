@@ -5195,12 +5195,12 @@
 										"Default": "KeepWarm"
 									},
 									"OvenLowerCavity_CycleSetDoneness": {
-										"Default": "Medium",
 										"Enumeration": [
 											"Medium",
 											"MediumWell",
 											"WellDone"
-										]
+										],
+										"Default": "Medium"
 									}
 								},
 								"Optional": {
@@ -5407,11 +5407,11 @@
 										"Default": "KeepWarm"
 									},
 									"OvenLowerCavity_CycleSetDoneness": {
-										"Default": "Medium",
 										"Enumeration": [
 											"Medium",
 											"MediumWell"
-										]
+										],
+										"Default": "Medium"
 									}
 								},
 								"Optional": {
@@ -5996,12 +5996,12 @@
 										"Default": "KeepWarm"
 									},
 									"OvenLowerCavity_CycleSetDoneness": {
-										"Default": "Medium",
 										"Enumeration": [
 											"Medium",
 											"MediumWell",
 											"WellDone"
-										]
+										],
+										"Default": "Medium"
 									}
 								},
 								"Optional": {},
@@ -6073,11 +6073,11 @@
 										"Default": "KeepWarm"
 									},
 									"OvenLowerCavity_CycleSetDoneness": {
-										"Default": "Medium",
 										"Enumeration": [
 											"Medium",
 											"MediumWell"
-										]
+										],
+										"Default": "Medium"
 									}
 								},
 								"Optional": {},
@@ -6191,12 +6191,12 @@
 										"Default": "KeepWarm"
 									},
 									"OvenLowerCavity_CycleSetDoneness": {
-										"Default": "Medium",
 										"Enumeration": [
 											"Medium",
 											"MediumWell",
 											"WellDone"
-										]
+										],
+										"Default": "Medium"
 									}
 								},
 								"Optional": {},
@@ -6266,12 +6266,12 @@
 										"Default": "KeepWarm"
 									},
 									"OvenLowerCavity_CycleSetDoneness": {
-										"Default": "Medium",
 										"Enumeration": [
 											"Medium",
 											"MediumWell",
 											"WellDone"
-										]
+										],
+										"Default": "Medium"
 									}
 								},
 								"Optional": {},
@@ -6343,11 +6343,11 @@
 										"Default": "KeepWarm"
 									},
 									"OvenLowerCavity_CycleSetDoneness": {
-										"Default": "Medium",
 										"Enumeration": [
 											"Medium",
 											"MediumWell"
-										]
+										],
+										"Default": "Medium"
 									}
 								},
 								"Optional": {},
@@ -6419,12 +6419,12 @@
 										"Default": "KeepWarm"
 									},
 									"OvenLowerCavity_CycleSetDoneness": {
-										"Default": "Medium",
 										"Enumeration": [
 											"Medium",
 											"MediumWell",
 											"WellDone"
-										]
+										],
+										"Default": "Medium"
 									}
 								},
 								"Optional": {},
