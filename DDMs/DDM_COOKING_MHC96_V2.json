@@ -3875,6 +3875,16 @@
 								"State": "Hood_OperationSetExhaustFanSpeed"
 							}
 						},
+						"Turntable": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Mwo_CycleSetTurntable"
+							}
+						},
 						"ChangeTempUnits": {
 							"Visible": true,
 							"AvailableIn": [
@@ -4135,7 +4145,7 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "KitchenTimer1_KitchenTimerState",
+									"key": "KitchenTimer01_StatusState",
 									"valueOperator": "=",
 									"value": 1
 								}
@@ -4150,7 +4160,7 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "KitchenTimer1_KitchenTimerState",
+									"key": "KitchenTimer01_StatusState",
 									"valueOperator": "=",
 									"value": 0
 								}
