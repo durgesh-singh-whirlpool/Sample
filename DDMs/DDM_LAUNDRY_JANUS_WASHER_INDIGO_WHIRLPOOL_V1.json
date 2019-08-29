@@ -1628,24 +1628,16 @@
 						{
 							"FeatureName": "ComposedQuietMode",
 							"DataType": "Boolean",
-							"Values": [
-								{
-									"On": [
-										{
-											"Sys_OpSetKeyPressToneVolume": "0",
-											"Sys_OpSetAlertToneVolume": "0"
-										}
-									]
+							"Values": {
+								"true": {
+									"Sys_OpSetKeyPressToneVolume": "0",
+									"Sys_OpSetAlertToneVolume": "0"
 								},
-								{
-									"Off": [
-										{
-											"Sys_OpSetKeyPressToneVolume": "2",
-											"Sys_OpSetAlertToneVolume": "2"
-										}
-									]
+								"false": {
+									"Sys_OpSetKeyPressToneVolume": "2",
+									"Sys_OpSetAlertToneVolume": "2"
 								}
-							]
+							}
 						}
 					],
 					"SkipSetOperationForSetOnDisplay": true
@@ -4799,33 +4791,33 @@
 								"Name": "WashCycleCleanWasher",
 								"Attributes": {
 									"WashCavity_CycleSetCycleSelect": [
-										"WashCycleWhatToWhitesHowToSanitize"
+										"WashCycleCleanWasher"
 									]
 								}
 							},
 							"Default": "WashCavity_CycleSetCycleSelectWashCycleDrainSpin"
 						},
 						"SetLoadandGoDispenser1": {
-							"Default": "CycleSetBulkDispense1",
 							"CycleSetBulkDispense1": {
+								"Name": "Dispense1",
 								"Attributes": {
 									"WashCavity_CycleSetBulkDispense1Enable": [
 										"BulkDispenseEnablePermanentlyEnabled"
 									]
 								},
-								"Name": "Dispense1"
+								"Default": "CycleSetBulkDispense1"
 							}
 						},
 						"SetLoadandGoDispenser2": {
-							"Default": "CycleSetBulkDispense2",
+							"Name": "Dispense2",
 							"CycleSetBulkDispense2": {
 								"Attributes": {
 									"WashCavity_CycleSetBulkDispense2Enable": [
 										"BulkDispenseEnablePermanentlyEnabled"
 									]
-								},
-								"Name": "Dispense2"
-							}
+								}
+							},
+							"Default": "CycleSetBulkDispense2"
 						},
 						"WatchCycles": {
 							"WashCavity_CycleSetCycleSelectWashCycleNormal": {
@@ -4859,7 +4851,8 @@
 										"WashCycleWhatToBulkyHowToHeavyDuty"
 									]
 								}
-							}
+							},
+							"Default": "WashCavity_CycleSetCycleSelectWashCycleNormal"
 						}
 					}
 				},
@@ -5211,53 +5204,53 @@
 							}
 						},
 						"SetLoadandGoDispenser1": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
 							"StateAttributes": {
 								"BulkDispense1Selection": "WashCavity_OpSetBulkDispense1Selection",
 								"BulkDispense1Enable": "WashCavity_CycleSetBulkDispense1Enable",
 								"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration"
 							},
-							"Visible": true,
 							"StatusAttributes": [
 								"WashCavity_OpSetBulkDispense1Concentration",
 								"WashCavity_OpSetBulkDispense1Selection",
 								"WashCavity_CycleSetBulkDispense1Enable"
 							],
-							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations"
-							},
 							"SendCommandAttributes": [
 								"WashCavity_CycleSetBulkDispense1Enable",
 								"WashCavity_OpSetBulkDispense1Concentration"
 							],
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							}
+						},
+						"SetLoadandGoDispenser2": {
+							"Visible": true,
 							"AvailableIn": [
 								"US",
 								"CA"
-							]
-						},
-						"SetLoadandGoDispenser2": {
+							],
 							"StateAttributes": {
 								"BulkDispense2Enable": "WashCavity_CycleSetBulkDispense2Enable",
 								"BulkDispense2Selection": "WashCavity_OpSetBulkDispense2Selection",
 								"BulkDispense2Concentration": "WashCavity_OpSetBulkDispense2Concentration"
 							},
-							"Visible": true,
 							"StatusAttributes": [
 								"WashCavity_OpSetBulkDispense2Concentration",
 								"WashCavity_OpSetBulkDispense2Selection",
 								"WashCavity_CycleSetBulkDispense2Enable"
 							],
-							"SetOperationsMapping": {
-								"Operation": "Cavity_OpSetOperations"
-							},
 							"SendCommandAttributes": [
 								"WashCavity_CycleSetBulkDispense2Enable",
 								"WashCavity_OpSetBulkDispense2Selection",
 								"WashCavity_OpSetBulkDispense2Concentration"
 							],
-							"AvailableIn": [
-								"US",
-								"CA"
-							]
+							"SetOperationsMapping": {
+								"Operation": "Cavity_OpSetOperations"
+							}
 						}
 					}
 				},
