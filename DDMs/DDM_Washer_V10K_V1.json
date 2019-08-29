@@ -1858,6 +1858,11 @@
 										],
 										"Default": "Light"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_Cold": {
@@ -1916,6 +1921,11 @@
 										],
 										"Default": "VeryHeavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_DeepWater": {
@@ -1975,6 +1985,11 @@
 										],
 										"Default": "VeryHeavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_ColorLast": {
@@ -2033,6 +2048,11 @@
 										],
 										"Default": "Light"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "ColorLast",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_Normal": {
@@ -2092,6 +2112,11 @@
 										],
 										"Default": "Medium"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_Quick": {
@@ -2151,6 +2176,11 @@
 										],
 										"Default": "Light"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_Cold": {
@@ -2209,6 +2239,11 @@
 										],
 										"Default": "Heavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_DeepWater": {
@@ -2268,6 +2303,11 @@
 										],
 										"Default": "Heavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_ColorLast": {
@@ -2326,6 +2366,11 @@
 										],
 										"Default": "Medium"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "ColorLast",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdWhites_Normal": {
@@ -2385,6 +2430,11 @@
 										],
 										"Default": "VeryHeavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Whites",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdWhites_Quick": {
@@ -2444,6 +2494,11 @@
 										],
 										"Default": "Light"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Whites",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdWhites_Cold": {
@@ -2502,6 +2557,11 @@
 										],
 										"Default": "VeryHeavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Whites",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdWhites_DeepWater": {
@@ -2561,6 +2621,11 @@
 										],
 										"Default": "VeryHeavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Whites",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_Normal": {
@@ -2620,6 +2685,11 @@
 										],
 										"Default": "Medium"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_Quick": {
@@ -2679,6 +2749,11 @@
 										],
 										"Default": "Light"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_Cold": {
@@ -2737,6 +2812,11 @@
 										],
 										"Default": "Heavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_DeepWater": {
@@ -2796,6 +2876,11 @@
 										],
 										"Default": "Heavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_ColorLast": {
@@ -2854,6 +2939,11 @@
 										],
 										"Default": "Medium"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "ColorLast",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_Normal": {
@@ -2913,6 +3003,11 @@
 										],
 										"Default": "Medium"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_Quick": {
@@ -2972,6 +3067,11 @@
 										],
 										"Default": "Light"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_Cold": {
@@ -3030,6 +3130,11 @@
 										],
 										"Default": "Heavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_DeepWater": {
@@ -3089,6 +3194,11 @@
 										],
 										"Default": "Heavy"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_ColorLast": {
@@ -3147,6 +3257,11 @@
 										],
 										"Default": "Medium"
 									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "ColorLast",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
@@ -3992,15 +4107,66 @@
 							},
 							{
 								"ruleName": "Enable Start option if a cycle is set on Appliance",
-								"description": "Cavity_OperationStatusMachineState ==Setting , this is instruction sent to appliance",
+								"description": "Compartment_State ==  , this is instruction sent to appliance",
 								"actions": {
 									"ActionStartCommand": true
 								},
 								"condition": {
-									"type": "value",
-									"key": "Compartment_State",
-									"valueOperator": "=",
-									"value": "1"
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 1
+									},
+									"right": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 5
+									},
+									"right": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 6
+									},
+									"right": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 8
+									},
+									"right": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 2
+									},
+									"right": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 18
+									
+									}
+									}
+									}
+									}
+									}
 								}
 							},
 							{
@@ -4018,6 +4184,52 @@
 								}
 							},
 							{
+								"ruleName": "Enable Pause when cycle running",
+								"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+								"actions": {
+									"ActionPauseCommand": true
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 3
+									},
+									"right": {
+									"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 17
+									}
+								}
+							},
+							{
+								"ruleName": "Enable Delay Start when programming or idle ",
+								"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+								"attributes": {
+									"Compartment_DelayMinutes": true
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 1
+									},
+									"right": {
+									"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 0
+									}
+								}
+							},
+							{
 								"ruleName": "Disable the StartCommand button",
 								"description": "Appliance can not be started if the remote is disabled",
 								"actions": {
@@ -4028,6 +4240,19 @@
 									"key": "Appliance_RemoteControlEnabled",
 									"valueOperator": "=",
 									"value": 0
+								}
+							},
+							{
+								"ruleName": "Enable PostCycle if cycle complete",
+								"description": "Enable PostCycle if cycle complete",
+								"features": {
+									"SetPostCycle": true
+								},
+								"condition": {
+									"type": "value",
+									"key": "Compartment_State",
+									"valueOperator": "=",
+									"value": 4
 								}
 							}
 						]
