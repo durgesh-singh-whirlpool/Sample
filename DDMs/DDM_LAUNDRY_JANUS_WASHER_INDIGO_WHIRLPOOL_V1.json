@@ -5466,19 +5466,6 @@
 									"valueOperator": "=",
 									"value": 0
 								}
-							},
-							{
-								"ruleName": "Disable ControlLock when cycle is running",
-								"description": "Disable ControlLock when cycle is running",
-								"features": {
-									"ControlLock": false
-								},
-								"condition": {
-									"type": "value",
-									"key": "Cavity_CycleStatusMachineState",
-									"valueOperator": "=",
-									"value": 7
-								}
 							}
 						]
 					}
