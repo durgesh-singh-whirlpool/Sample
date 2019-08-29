@@ -4042,7 +4042,8 @@
 								"Mwo_OperationSetOperations"
 							],
 							"SetOperationsMapping": {
-								"Operation": "Mwo_OperationSetOperations"
+								"Operation": "Mwo_OperationSetOperations",
+								"CookTime":"Mwo_TimeSetCookTimeSet"
 							}
 						},
 						"MyCreations": {
@@ -4173,7 +4174,7 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "Appliance_RemoteEnabledStatus",
+									"key": "XCat_RemoteSetRemoteControlEnable",
 									"valueOperator": "=",
 									"value": 0
 								}
