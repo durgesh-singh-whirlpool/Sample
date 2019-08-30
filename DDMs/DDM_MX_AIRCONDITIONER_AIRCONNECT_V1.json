@@ -610,6 +610,14 @@
 		"capability": [
 			{
 				"Compatibility": {
+					"SkipPrefixForFavorites": [
+						"Cavity_OpSetFanSpeed",
+						"Sys_OpSetQuietModeEnabled",
+						"Cavity_OpSetMode",
+						"Sys_OpSetEcoModeEnabled",
+						"Sys_OpSetSleepMode",
+						"Sys_OpSetTargetTemp"
+					],
 					"AdditionalMobileActions": {
 						"Cavity_OperationSetStartCommand": {
 							"SetOnDisplayOperations": "SetOnDisplay"
@@ -951,10 +959,8 @@
 								"Humidity": "Sys_OpSetTargetHumidity",
 								"DisplayTemp": "Sys_OpStatusDisplayTemp",
 								"DisplayHumidity": "Sys_OpStatusDisplayHumidity",
-								"AirFilterStatus": "Cavity_OpStatusAirFilterStatus",
-								"AirFilterTime": "Cavity_OpSetAirFilterTime",
 								"PowerOn": "Sys_OpSetPowerOn",
-								"Mode": "Cavity_OpSetMode",
+								"State": "Cavity_OpSetMode",
 								"FanSpeed": "Cavity_OpSetFanSpeed",
 								"VertLouverSwing": "Cavity_OpSetVertLouverSwing",
 								"HorzLouverSwing": "Cavity_OpSetHorzLouverSwing",
@@ -968,10 +974,12 @@
 								"Cavity_OpSetFanSpeed",
 								"Sys_OpSetQuietModeEnabled",
 								"Sys_OpSetEcoModeEnabled",
+								"Cavity_OpSetMode",
 								"Sys_OpSetSleepMode",
 								"Sys_OpSetTargetTemp"
 							],
 							"SendCommandAttributes": [
+								"Cavity_OpSetMode",
 								"Cavity_OpSetFanSpeed",
 								"Sys_OpSetQuietModeEnabled",
 								"Sys_OpSetEcoModeEnabled",
@@ -1000,10 +1008,8 @@
 								"Humidity": "Sys_OpSetTargetHumidity",
 								"DisplayTemp": "Sys_OpStatusDisplayTemp",
 								"DisplayHumidity": "Sys_OpStatusDisplayHumidity",
-								"AirFilterStatus": "Cavity_OpStatusAirFilterStatus",
-								"AirFilterTime": "Cavity_OpSetAirFilterTime",
 								"PowerOn": "Sys_OpSetPowerOn",
-								"Mode": "Cavity_OpSetMode",
+								"State": "Cavity_OpSetMode",
 								"FanSpeed": "Cavity_OpSetFanSpeed",
 								"VertLouverSwing": "Cavity_OpSetVertLouverSwing",
 								"HorzLouverSwing": "Cavity_OpSetHorzLouverSwing",
@@ -1014,6 +1020,7 @@
 								"SleepMode": "Sys_OpSetSleepMode"
 							},
 							"SendCommandAttributes": [
+								"Cavity_OpSetMode",
 								"Cavity_OpSetFanSpeed",
 								"Sys_OpSetQuietModeEnabled",
 								"Sys_OpSetEcoModeEnabled",
@@ -1054,9 +1061,9 @@
 						]
 					},
 					"AirConditionerCavity": {
-					"Runtime": [
+						"Runtime": [
 							{
-							"ruleName": "Disable All Actions when appliance is off",
+								"ruleName": "Disable All Actions when appliance is off",
 								"description": "Disable All Actions when appliance is off",
 								"actions": {
 									"ActionSetCycleStartCommand": false
@@ -1068,8 +1075,8 @@
 									"value": 0
 								}
 							}
-							]
-							}
+						]
+					}
 				},
 				"QueryParams": {
 					"Common": {
