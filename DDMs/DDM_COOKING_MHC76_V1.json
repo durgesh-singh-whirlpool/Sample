@@ -15,8 +15,7 @@
 	},
 	"dataModel": {
 		"Key": "DDM_COOKING_MHC76_V1",
-		"attributes": [
-			{
+		"attributes": [{
 				"IsTemplate": false,
 				"M2MAttributeName": "XCat_PersistentInfoVersion",
 				"Instance": "XCat_PersistentInfo",
@@ -2288,7 +2287,7 @@
 	},
 	"personality": {
 		"Key": "DDM_COOKING_MHC76_V1",
-		"capability": {
+		"capability": [{
 			"Compatibility": {
 				"TempExchangeUnits": "C",
 				"MultipliedByTen": false
@@ -3729,8 +3728,7 @@
 			},
 			"ApplianceRulesets": {
 				"MwoCavity": {
-					"Runtime": [
-						{
+					"Runtime": [{
 							"ruleName": "Disable All Features when appliance is offline",
 							"description": "Disable All Features when appliance is offline",
 							"features": {
@@ -3829,8 +3827,7 @@
 					]
 				},
 				"Common": {
-					"Runtime": [
-						{
+					"Runtime": [{
 							"ruleName": "Cancel the Running Cycle",
 							"description": "If Appliance is not idle, we can enable the cancel action",
 							"features": {
@@ -3882,170 +3879,165 @@
 					}
 				}
 			}
-		},
+		}],
 		"Rulesets": {}
 	},
 	"alerts": {
 		"Key": "DDM_COOKING_MHC76_V1",
-		"Alerts": [
-			{
-				"ApplianceAlerts": [
-					{
-						"alertId": 772,
-						"name": "PreHeatComplete",
-						"attribute": "Sys_AlertStatusNotification",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": true
-					},
-					{
-						"alertId": 773,
-						"name": "CookTimerComplete",
-						"attribute": "Mwo_OperationStatusCookTimeState",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": true
-					},
-					{
-						"alertId": 774,
-						"name": "CookTimerChange",
-						"attribute": "Mwo_TimeSetCookTimeSet",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": false
-					},
-					{
-						"alertId": 775,
-						"name": "KitchenTimerComplete",
-						"attribute": "KitchenTimer01_StatusState",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": true
-					},
-					{
-						"alertId": 776,
-						"name": "KitchenTimerChange",
-						"attribute": "KitchenTimer01_SetTimeSet",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": false
-					},
-					{
-						"alertId": 777,
-						"name": "ControlStatus",
-						"attribute": "Sys_OperationSetControlLock",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": false
-					},
-					{
-						"alertId": 778,
-						"name": "ErrorNotification",
-						"attribute": "Sys_AlertStatusCustomerFaultCode",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": true
-					},
-					{
-						"alertId": 779,
-						"name": "RemoteStatus",
-						"attribute": "XCat_RemoteSetRemoteControlEnable",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": false
-					},
-					{
-						"alertId": 780,
-						"name": "BlowerMotorAutomaticallyTurnedOn",
-						"attribute": "Hood_OperationSetExhaustFanSpeed",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": true
-					},
-					{
-						"alertId": 781,
-						"name": "NotificationToChangeCharcoalFilter",
-						"attribute": "Hood_OperationSetCharcoalFilter",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": true
-					},
-					{
-						"alertId": 782,
-						"name": "NotificationToCleanOrChangeGreaseFilter",
-						"attribute": "Hood_OperationSetGreaseFilter",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": true,
-						"enable": true
-					},
-					{
-						"alertId": 783,
-						"name": "OvenOnWhileAway",
-						"attribute": "Online",
-						"type": "push",
-						"category": "Cooking",
-						"autodelete": false,
-						"autodisarm": false,
-						"autodisable": false,
-						"visible": false,
-						"enable": false
-					}
-				]
-			}
-		]
+		"Alerts": [{
+			"ApplianceAlerts": [{
+					"alertId": 772,
+					"name": "PreHeatComplete",
+					"attribute": "Sys_AlertStatusNotification",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": true
+				},
+				{
+					"alertId": 773,
+					"name": "CookTimerComplete",
+					"attribute": "Mwo_OperationStatusCookTimeState",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": true
+				},
+				{
+					"alertId": 774,
+					"name": "CookTimerChange",
+					"attribute": "Mwo_TimeSetCookTimeSet",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": false
+				},
+				{
+					"alertId": 775,
+					"name": "KitchenTimerComplete",
+					"attribute": "KitchenTimer01_StatusState",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": true
+				},
+				{
+					"alertId": 776,
+					"name": "KitchenTimerChange",
+					"attribute": "KitchenTimer01_SetTimeSet",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": false
+				},
+				{
+					"alertId": 777,
+					"name": "ControlStatus",
+					"attribute": "Sys_OperationSetControlLock",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": false
+				},
+				{
+					"alertId": 778,
+					"name": "ErrorNotification",
+					"attribute": "Sys_AlertStatusCustomerFaultCode",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": true
+				},
+				{
+					"alertId": 779,
+					"name": "RemoteStatus",
+					"attribute": "XCat_RemoteSetRemoteControlEnable",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": false
+				},
+				{
+					"alertId": 780,
+					"name": "BlowerMotorAutomaticallyTurnedOn",
+					"attribute": "Hood_OperationSetExhaustFanSpeed",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": true
+				},
+				{
+					"alertId": 781,
+					"name": "NotificationToChangeCharcoalFilter",
+					"attribute": "Hood_OperationSetCharcoalFilter",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": true
+				},
+				{
+					"alertId": 782,
+					"name": "NotificationToCleanOrChangeGreaseFilter",
+					"attribute": "Hood_OperationSetGreaseFilter",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": true,
+					"enable": true
+				},
+				{
+					"alertId": 783,
+					"name": "OvenOnWhileAway",
+					"attribute": "Online",
+					"type": "push",
+					"category": "Cooking",
+					"autodelete": false,
+					"autodisarm": false,
+					"autodisable": false,
+					"visible": false,
+					"enable": false
+				}
+			]
+		}]
 	},
 	"Services": {
 		"_id": "DDM_COOKING_MHC76_V1",
-		"thirdPartyServices": [
-			{
+		"thirdPartyServices": [{
 				"name": "Replenishment",
 				"enabled": false,
-				"serviceProvider": [
-					{
+				"serviceProvider": [{
 						"name": "ADRS",
 						"enabled": false,
 						"config": []
@@ -4065,26 +4057,21 @@
 			{
 				"name": "Thermostat",
 				"enabled": true,
-				"serviceProvider": [
-					{
-						"name": "Nest",
-						"enabled": true,
-						"config": [
-							{
-								"Key": "AwayOvenWarning",
-								"Type": "home_away",
-								"commandName": "",
-								"commandValue": ""
-							}
-						]
-					}
-				]
+				"serviceProvider": [{
+					"name": "Nest",
+					"enabled": true,
+					"config": [{
+						"Key": "AwayOvenWarning",
+						"Type": "home_away",
+						"commandName": "",
+						"commandValue": ""
+					}]
+				}]
 			},
 			{
 				"name": "Energy Management",
 				"enabled": false,
-				"serviceProvider": [
-					{
+				"serviceProvider": [{
 						"name": "National Grid",
 						"enabled": false,
 						"config": []
@@ -4099,8 +4086,7 @@
 			{
 				"name": "Voice Integration",
 				"enabled": false,
-				"serviceProvider": [
-					{
+				"serviceProvider": [{
 						"name": "Amazon Alexa",
 						"enabled": false,
 						"config": []
@@ -4115,13 +4101,11 @@
 			{
 				"name": "localizeDateTime",
 				"enabled": true,
-				"serviceProvider": [
-					{
-						"name": "WCloud",
-						"enabled": true,
-						"config": ""
-					}
-				]
+				"serviceProvider": [{
+					"name": "WCloud",
+					"enabled": true,
+					"config": ""
+				}]
 			}
 		]
 	}
