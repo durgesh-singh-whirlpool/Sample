@@ -2013,7 +2013,6 @@
 							"OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
 								"Required": {
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"Min": 767,
 											"Max": 2600,
@@ -2025,7 +2024,6 @@
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 0,
 											"Max": 43200,
@@ -2034,7 +2032,6 @@
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
-										"Order": 3,
 										"Range": {
 											"Min": 0,
 											"Max": 32400,
@@ -2047,7 +2044,6 @@
 							"OvenUpperCavity_CycleSetCommonModeCommonModeBakeRapid": {
 								"Required": {
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"Min": 767,
 											"Max": 2600,
@@ -2059,7 +2055,6 @@
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 0,
 											"Max": 43200,
@@ -2068,7 +2063,6 @@
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
-										"Order": 3,
 										"Range": {
 											"Min": 0,
 											"Max": 32400,
@@ -2081,7 +2075,6 @@
 							"OvenUpperCavity_CycleSetCommonModeCommonModeSabbathBake": {
 								"Required": {
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"Min": 767,
 											"Max": 2600,
@@ -2093,7 +2086,6 @@
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 0,
 											"Max": 43200,
@@ -2102,7 +2094,6 @@
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
-										"Order": 3,
 										"Range": {
 											"Min": 0,
 											"Max": 32400,
@@ -2115,7 +2106,6 @@
 							"OvenUpperCavity_CycleSetCommonModeCommonModeConvectBake": {
 								"Required": {
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"Min": 767,
 											"Max": 2600,
@@ -2127,7 +2117,6 @@
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 0,
 											"Max": 43200,
@@ -2136,7 +2125,6 @@
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
-										"Order": 3,
 										"Range": {
 											"Min": 0,
 											"Max": 32400,
@@ -2149,7 +2137,6 @@
 							"OvenUpperCavity_CycleSetCommonModeCommonModeBroil": {
 								"Required": {
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"Min": 2044,
 											"Max": 2600,
@@ -2161,7 +2148,6 @@
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 0,
 											"Max": 43200,
@@ -2170,7 +2156,6 @@
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
-										"Order": 3,
 										"Range": {
 											"Min": 0,
 											"Max": 32400,
@@ -2183,7 +2168,6 @@
 							"OvenUpperCavity_CycleSetCommonModeCommonModeConvectBroil": {
 								"Required": {
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"Min": 1489,
 											"Max": 2600,
@@ -2195,7 +2179,6 @@
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 0,
 											"Max": 43200,
@@ -2204,7 +2187,6 @@
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
-										"Order": 3,
 										"Range": {
 											"Min": 0,
 											"Max": 32400,
@@ -2217,7 +2199,6 @@
 							"OvenUpperCavity_CycleSetCommonModeCommonModeConvectRoast": {
 								"Required": {
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"Min": 767,
 											"Max": 2600,
@@ -2229,7 +2210,6 @@
 								},
 								"Optional": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 0,
 											"Max": 43200,
@@ -2238,7 +2218,6 @@
 										}
 									},
 									"OvenUpperCavity_TimeSetDelayTime": {
-										"Order": 3,
 										"Range": {
 											"Min": 0,
 											"Max": 32400,
@@ -2255,7 +2234,6 @@
 							"OvenUpperCavity_CycleSetCommonModeCommonModeKeepWarm": {
 								"Required": {
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"StepC": 1,
 											"StepF": 5,
@@ -2270,7 +2248,6 @@
 							"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodNuggets": {
 								"Required": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 600,
 											"Max": 3600,
@@ -2279,7 +2256,6 @@
 										}
 									},
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"StepC": 1,
 											"StepF": 5,
@@ -2294,7 +2270,6 @@
 							"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodLasagna": {
 								"Required": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 1200,
 											"Max": 10800,
@@ -2303,7 +2278,6 @@
 										}
 									},
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"StepC": 1,
 											"StepF": 5,
@@ -2318,7 +2292,6 @@
 							"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodPizza": {
 								"Required": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 600,
 											"Max": 7200,
@@ -2327,7 +2300,6 @@
 										}
 									},
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"StepC": 1,
 											"StepF": 5,
@@ -2342,7 +2314,6 @@
 							"OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodPie": {
 								"Required": {
 									"OvenUpperCavity_TimeSetCookTimeSet": {
-										"Order": 2,
 										"Range": {
 											"Min": 600,
 											"Max": 10800,
@@ -2351,7 +2322,6 @@
 										}
 									},
 									"OvenUpperCavity_CycleSetTargetTemp": {
-										"Order": 1,
 										"TempRange": {
 											"StepC": 1,
 											"StepF": 5,
@@ -2474,15 +2444,18 @@
 					}
 				},
 				"AttributesMapping": {
-				"Common": {
+					"Common": {
 						"TimeZone": "XCat_TimeZoneId",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
 						"ControlLock": "Sys_OperationSetControlLock",
-						"SoundKeyPress": "Sys_OperationSetKeyPressToneVolume"
-				},
-				"OvenUpperCavity": {
-				"CycleName": [
-							"OvenUpperCavity_CycleSetCommonMode"
+						"SoundKeyPress": "Sys_OperationSetKeyPressToneVolume",
+						"Online": "Online"
+					},
+					"OvenUpperCavity": {
+						"CycleName": [
+							"OvenUpperCavity_CycleSetCommonMode",
+							"OvenUpperCavity_CycleSetEasyConvectFood",
+							"OvenUpperCavity_CycleSetFrozenBakeFood"
 						],
 						"TimeElapsed": "OvenUpperCavity_TimeStatusCycleTimeElapsed",
 						"DoorOpen": "OvenUpperCavity_OpStatusDoorOpen",
@@ -2496,8 +2469,9 @@
 						"DelayTimeRemaining": "OvenUpperCavity_TimeStatusDelayTimeRemaining",
 						"CookTimeSetTime": "OvenUpperCavity_TimeSetCookTimeSet",
 						"DelayTimeSetTime": "OvenUpperCavity_TimeSetDelayTime",
-						"CookTimeRemaining": "OvenUpperCavity_TimeStatusCookTimeRemaining"
-				}
+						"CookTimeRemaining": "OvenUpperCavity_TimeStatusCookTimeRemaining",
+						"MachineState": "OvenUpperCavity_OpStatusState"
+					}
 				},
 				"Features": {
 					"Common": {
@@ -2724,30 +2698,7 @@
 					}
 				}
 			}
-		],
-		"Models": {
-			"UpperCavityHeader": [
-				"OvenUpperCavity_CycleSetCommonMode",
-				"OvenUpperCavity_CycleSetEasyConvectFood",
-				"OvenUpperCavity_CycleSetFrozenBakeFood",
-				"OvenUpperCavity_DisplStatusDisplayTemp",
-				"OvenUpperCavity_CycleSetTargetTemp",
-				"OvenUpperCavity_TimeSetCookTimeSet",
-				"OvenUpperCavity_TimeStatusCookTimeRemaining",
-				"OvenUpperCavity_TimeStatusCycleTimeElapsed",
-				"OvenUpperCavity_TimeStatusDelayTimeRemaining",
-				"OvenUpperCavity_TimeStatusPreheatTimeRemaining",
-				"OvenUpperCavity_OpStatusState",
-				"OvenUpperCavity_OpStatusCookTimeState",
-				"OvenUpperCavity_CycleSetPreheatOn",
-				"OvenUpperCavity_OpStatusDoorOpen",
-				"OvenUpperCavity_OpStatusDoorLocked"
-			],
-			"DashboardStatus": [
-				"OvenUpperCavity_OpStatusState",
-				"Online"
-			]
-		}
+		]
 	},
 	"alerts": {
 		"Key": "DDM_COOKING_VESTA_V1",
