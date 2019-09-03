@@ -778,6 +778,9 @@
 				},
 				"AttributesMapping": {
 					"AirConditionerCavity": {
+					"CycleName": [
+							"Cavity_OpSetMode"
+						],
 						"TargetTemp": "Sys_OpSetTargetTemp",
 						"Humidity": "Sys_OpSetTargetHumidity",
 						"DisplayTemp": "Sys_OpStatusDisplayTemp",
