@@ -7721,7 +7721,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Sys_OpSetKeyPressToneVolume"
+								"State": "Sys_OpSetAlertToneVolume"
 							}
 						},
 						"ChangeSoundKeyPress": {
@@ -7731,7 +7731,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Sys_OpSetAlertToneVolume"
+								"State": "Sys_OpSetKeyPressToneVolume"
 							}
 						},
 						"ChangeBrightness": {
