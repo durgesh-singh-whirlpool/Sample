@@ -3594,20 +3594,6 @@
 								}
 							},
 							{
-								"ruleName": "Disable Start if not complete",
-								"description": "Disable Start if not complete",
-								"actions": {
-									"ActionSetCycleStartCommand": false
-								},
-								"condition": {
-										"type": "value",
-										"key": "Cavity_CycleStatusMachineState",
-										"valueOperator": "!=",
-										"value": 10
-									
-								}
-							},
-							{
 								"ruleName": "Disable Resume if not paused",
 								"description": "Disable Resume if not paused",
 								"actions": {
