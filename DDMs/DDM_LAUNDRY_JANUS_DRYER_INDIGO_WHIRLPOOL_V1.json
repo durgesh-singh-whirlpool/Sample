@@ -1330,6 +1330,24 @@
 		"capability": [
 			{
 			"Compatibility": {
+					"ComposedFeatureAsSimpleFeature": [
+						{
+							"FeatureName": "ComposedQuietMode",
+							"DataType": "Boolean",
+							"Values": {
+								"true": {
+									"Sys_OpSetKeyPressToneVolume": "0",
+									"Sys_OpSetAlertToneVolume": "0",
+									"DrySys_OpSetDampNotificationToneVolume": "0"
+								},
+								"false": {
+									"Sys_OpSetKeyPressToneVolume": "2",
+									"Sys_OpSetAlertToneVolume": "2",
+									"DrySys_OpSetDampNotificationToneVolume": "2"
+								}
+							}
+						}
+					],
 					"SkipSetOperationForSetOnDisplay": true
 				},
 				"CavityOrder": [
@@ -3185,11 +3203,6 @@
 					"Common": {
 						"OpStatusState": "Cavity_CycleStatusMachineState",
 						"ControlLock": "Sys_OpSetControlLock",
-						"QuietMode": [
-							"Sys_OpSetAlertToneVolume",
-							"Sys_OpSetKeyPressToneVolume",
-							"DrySys_OpSetDampNotificationToneVolume"
-						],
 						"Online": "Online",
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
@@ -3243,13 +3256,23 @@
 								"State": "XCat_RemoteSetRemoteControlEnable"
 							}
 						},
-						"QuietMode": {
+						"ComposedQuietMode": {
 							"Visible": true,
 							"AvailableIn": [
 								"US",
 								"CA"
 							],
+							"StateAttributes": {
+								"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
+								"SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
+								"DampNotificationToneVolume": "DrySys_OpSetDampNotificationToneVolume"
+							},
 							"StatusAttributes": [
+								"Sys_OpSetAlertToneVolume",
+								"Sys_OpSetKeyPressToneVolume",
+								"DrySys_OpSetDampNotificationToneVolume"
+							],
+							"SendCommandAttributes": [
 								"Sys_OpSetAlertToneVolume",
 								"Sys_OpSetKeyPressToneVolume",
 								"DrySys_OpSetDampNotificationToneVolume"
