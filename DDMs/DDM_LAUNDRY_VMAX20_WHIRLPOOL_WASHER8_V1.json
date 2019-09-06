@@ -1372,6 +1372,11 @@
 		"Key": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_WASHER8_V1",
 		"capability": [
 			{
+				"Compatibility": {
+					"SkipPrefixForFavorites": [
+						"Cavity_TimeSetDelayTime"
+					]
+				},
 				"CavityOrder": [
 					"WashCavity"
 				],
