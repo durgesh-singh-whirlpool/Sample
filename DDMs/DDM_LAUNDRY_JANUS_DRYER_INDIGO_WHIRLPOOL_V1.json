@@ -1330,6 +1330,9 @@
 		"capability": [
 			{
 			"Compatibility": {
+			"SkipPrefixForFavorites": [
+						"Cavity_OpSetOperations"
+					],
 					"ComposedFeatureAsSimpleFeature": [
 						{
 							"FeatureName": "ComposedQuietMode",
