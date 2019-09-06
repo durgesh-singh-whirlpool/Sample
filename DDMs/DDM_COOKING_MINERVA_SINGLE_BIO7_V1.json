@@ -2154,12 +2154,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2196,12 +2196,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2238,12 +2238,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2280,12 +2280,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2322,12 +2322,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2364,12 +2364,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2406,12 +2406,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2448,12 +2448,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2490,12 +2490,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2532,12 +2532,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2574,12 +2574,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2616,12 +2616,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2658,12 +2658,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2708,12 +2708,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2750,12 +2750,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2792,12 +2792,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2834,12 +2834,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2876,12 +2876,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2918,12 +2918,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2952,12 +2952,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -2994,12 +2994,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3036,12 +3036,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3078,12 +3078,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3120,11 +3120,11 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+																				"Enumeration": [
 											"StayOn",
 											"TurnOff"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3161,12 +3161,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3203,12 +3203,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3252,12 +3252,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3294,12 +3294,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3343,12 +3343,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3385,12 +3385,12 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+									"Enumeration": [
 											"StayOn",
 											"TurnOff",
 											"KeepWarm"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
@@ -3427,11 +3427,11 @@
 										}
 									},
 									"OvenUpperCavity_OpSetCookTimeCompleteAction": {
-										"Default": "TurnOff",
-										"Enumeration": [
+																				"Enumeration": [
 											"StayOn",
 											"TurnOff"
-										]
+										],
+"Default": "TurnOff"
 									}
 								},
 								"Optional": {
