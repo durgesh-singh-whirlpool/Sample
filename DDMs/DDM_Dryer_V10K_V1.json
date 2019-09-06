@@ -3284,6 +3284,13 @@
 							"SetOperationsMapping": {
 								"Operation": "System_Command"
 							}
+						},
+						"AssignTask": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
 					}
 				},
