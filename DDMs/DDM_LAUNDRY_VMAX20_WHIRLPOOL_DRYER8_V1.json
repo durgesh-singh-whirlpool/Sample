@@ -1229,6 +1229,11 @@
 		"Key": "DDM_LAUNDRY_VMAX20_WHIRLPOOL_DRYER8_V1",
 		"capability": [
 			{
+			"Compatibility": {
+					"SkipPrefixForFavorites": [
+						"DrySys_OpSetDampNotificationToneVolume"
+					]
+				},
 				"CavityOrder": [
 					"DryCavity"
 				],
