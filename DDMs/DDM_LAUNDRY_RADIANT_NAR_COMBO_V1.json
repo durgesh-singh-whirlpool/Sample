@@ -1771,7 +1771,23 @@
 							"CycleSetWrinkleShield",
 							"CycleSetCycleSelect"
 						]
-					}
+					},
+					"ComposedFeatureAsSimpleFeature": [
+						{
+							"FeatureName": "ComposedQuietMode",
+							"DataType": "Boolean",
+							"Values": {
+								"true": {
+									"Sys_OpSetKeyPressToneVolume": "0",
+									"Sys_OpSetAlertToneVolume": "0"
+								},
+								"false": {
+									"Sys_OpSetKeyPressToneVolume": "2",
+									"Sys_OpSetAlertToneVolume": "2"
+								}
+							}
+						}
+					]
 				},
 				"CavityOrder": [
 					"DryCavity",
@@ -7697,11 +7713,23 @@
 								"State": "online"
 							}
 						},
-						"QuietMode": {
+						"ComposedQuietMode": {
 							"Visible": true,
 							"AvailableIn": [
 								"US",
 								"CA"
+							],
+							"StateAttributes": {
+								"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
+								"SoundKeyPress": "Sys_OpSetKeyPressToneVolume"
+							},
+							"StatusAttributes": [
+								"Sys_OpSetAlertToneVolume",
+								"Sys_OpSetKeyPressToneVolume"
+							],
+							"SendCommandAttributes": [
+								"Sys_OpSetAlertToneVolume",
+								"Sys_OpSetKeyPressToneVolume"
 							]
 						},
 						"ChangeApplianceLanguage": {
