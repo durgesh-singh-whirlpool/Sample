@@ -5088,6 +5088,13 @@
 								"US",
 								"CA"
 							]
+						},
+						"AssignTask": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
 						}
 					}
 				},
