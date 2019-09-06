@@ -1729,7 +1729,8 @@
 						"CycleOptionsWHR_SoilLevel",
 						"CycleOptionsWHR_SpinSpeed",
 						"CycleOptionsWHR_ExtraRinse",
-						"CycleOptionsWHR_Presoak"
+						"CycleOptionsWHR_Presoak",
+						"System_Command"
 					]
 				},
 				"CavityOrder": [
