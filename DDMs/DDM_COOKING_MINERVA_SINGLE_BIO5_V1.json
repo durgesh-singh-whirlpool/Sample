@@ -2296,8 +2296,8 @@
 					"OvenUpperCavity"
 				],
 				"Capability": {
-					"OvenUpperCavity":{
-					"CapabilityData": {
+				"OvenUpperCavity":{
+				"CapabilityData": {
     "OvenUpperCavity_CycleSetFrozenBakeFoodFrozenBakeFoodFries": {
       "Accessories": [
         
@@ -2736,9 +2736,9 @@
       "Verification": {
         
       }
-    }
+	  }
   },
-  "SetCycle": {
+				"SetCycle": {
     "homeManualOven": {
       "OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
         "Name": "modeBake",
@@ -2817,7 +2817,7 @@
     },
     "Default": "OvenUpperCavity_CycleSetCommonModeCommonModeBake"
   }
-					},
+					}
 					},
 				"AttributesMapping": {},
 				"Features": {
@@ -3110,134 +3110,8 @@
 								"MyCreationId": "UpperCavity_MyCreationID"
 							}
 						}
-					},
-					"OvenLowerCavity": {
-						"AssistedCooking": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"MeatProbeStatus": "LowerCavity_MeatProbeStatus"
-							},
-							"StatusAttributes": [
-								"LowerCavity_CavityModeOven",
-								"LowerCavity_CavityTargetTemp",
-								"LowerCavity_DelayTimeRemaining",
-								"LowerCavity_CookTimeRemaining",
-								"LowerCavity_OvenTimerState",
-								"LowerCavity_CavityHeatState",
-								"LowerCavity_MeatProbeStatus",
-								"LowerCavity_CookTimeSetTime",
-								"LowerCavity_MeatProbeTargetTemp",
-								"LowerCavity_MeatProbeTemp",
-								"LowerCavity_DelayTimeSetTime",
-								"LowerCavity_CavityActualTemp"
-							],
-							"SendCommandAttributes": [
-								"LowerCavity_CavityModeOven",
-								"LowerCavity_CulinaryCenterID",
-								"LowerCavity_CavityTargetTemp",
-								"LowerCavity_MeatProbeTargetTemp",
-								"LowerCavity_CookTimeSetTime",
-								"LowerCavity_OvenTimerOperations",
-								"LowerCavity_CavityOperations"
-							],
-							"SetOperationsMapping": {
-								"Operation": "LowerCavity_CavityOperations",
-								"TimerOperations": "LowerCavity_OvenTimerOperations",
-								"CookTime": "LowerCavity_CookTimeSetTime",
-								"CookTemp": "LowerCavity_CavityTargetTemp",
-								"ProfileId": "LowerCavity_CulinaryCenterID",
-								"CycleName": "LowerCavity_CavityModeOven",
-								"MeatProbeTargetTemp": "LowerCavity_MeatProbeTargetTemp"
-							}
-						},
-						"SetOven": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"OpStatusState": "LowerCavity_CavityHeatState",
-								"MeatProbeTargetTemp": "LowerCavity_MeatProbeTargetTemp"
-							},
-							"StatusAttributes": [
-								"LowerCavity_CavityModeOven",
-								"LowerCavity_CavityTargetTemp",
-								"LowerCavity_DelayTimeRemaining",
-								"LowerCavity_CookTimeRemaining",
-								"LowerCavity_OvenTimerState",
-								"LowerCavity_CavityHeatState",
-								"LowerCavity_MeatProbeStatus",
-								"LowerCavity_CookTimeSetTime",
-								"LowerCavity_MeatProbeTargetTemp",
-								"LowerCavity_MeatProbeTemp",
-								"LowerCavity_DelayTimeSetTime",
-								"LowerCavity_CavityActualTemp"
-							],
-							"SendCommandAttributes": [
-								"LowerCavity_CavityModeOven",
-								"LowerCavity_CavityTargetTemp",
-								"LowerCavity_MeatProbeTargetTemp",
-								"LowerCavity_DelayTimeSetTime",
-								"LowerCavity_CookTimeSetTime",
-								"LowerCavity_OvenTimerOperations",
-								"LowerCavity_CookTimeCompleteAction",
-								"LowerCavity_CavityOperations"
-							],
-							"SetOperationsMapping": {
-								"Operation": "LowerCavity_CavityOperations",
-								"TimerOperations": "LowerCavity_OvenTimerOperations",
-								"CookTime": "LowerCavity_CookTimeSetTime",
-								"CookTemp": "LowerCavity_CavityTargetTemp"
-							}
-						},
-						"LightOnOff": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "LowerCavity_CavityLight"
-							}
-						},
-						"MeatProbe": {
-							"Visible": true,
-							"ReadOnly": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "LowerCavity_MeatProbeStatus"
-							}
-						},
-						"MyCreations": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"SendCommandAttributes": [
-								"LowerCavity_MyCreationID",
-								"LowerCavity_CookTimeCompleteAction",
-								"LowerCavity_OvenTimerOperations",
-								"LowerCavity_CavityModeOven",
-								"LowerCavity_CavityOperations"
-							],
-							"SetOperationsMapping": {
-								"CycleName": "LowerCavity_CavityModeOven",
-								"Operation": "LowerCavity_CavityOperations",
-								"TimerOperations": "LowerCavity_OvenTimerOperations",
-								"MyCreationId": "LowerCavity_MyCreationID"
-							}
-						}
 					}
-				},
+					},
 				"ApplianceRulesets": {},
 				"QueryParams": {}
 			}
