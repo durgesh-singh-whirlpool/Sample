@@ -1622,7 +1622,8 @@
 				"Compatibility": {
 					"SkipPrefixForFavorites": [
 						"Cavity_TimeSetDelayTime",
-						"Cavity_CycleSetSteamEnable"
+						"Cavity_CycleSetSteamEnable",
+						"Cavity_OpSetOperations"
 					],
 					"ComposedFeatureAsSimpleFeature": [
 						{
