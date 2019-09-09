@@ -3091,7 +3091,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Appliance_QuietModeEnabled"
+								"State": "Appliance_EnterQuietMode"
 							}
 						},
 						"CareTips": {
