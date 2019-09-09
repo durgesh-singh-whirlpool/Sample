@@ -1756,11 +1756,12 @@
 				"Compatibility": {
 					"SkipPrefixForFavorites": [
 						"Cavity_TimeSetDelayTime",
-						"Cavity_OpSetOperations"
+						"Cavity_OpSetOperations",
+						"WashCavity_CycleSetCycleSelect",
+						"DryCavity_CycleSetCycleSelect"
 					],
 					"ComboCavityPrefixes": {
 						"WashCavity": [
-							"CycleSetCycleSelect",
 							"CycleSetTemperature",
 							"CycleSetSoilLevel",
 							"CycleSetExtraRinseSelect",
@@ -1769,8 +1770,7 @@
 						],
 						"DryCavity": [
 							"CycleSetDryness",
-							"CycleSetWrinkleShield",
-							"CycleSetCycleSelect"
+							"CycleSetWrinkleShield"
 						]
 					},
 					"ComposedFeatureAsSimpleFeature": [
