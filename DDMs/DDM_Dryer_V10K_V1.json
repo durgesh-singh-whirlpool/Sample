@@ -3074,16 +3074,6 @@
 								"CA"
 							]
 						},
-						"RemoteStatus": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Appliance_RemoteControlEnabled"
-							}
-						},
 						"Online": {
 							"Visible": true,
 							"AvailableIn": [
