@@ -839,13 +839,13 @@
 	 "capability": [
       {
         "Compatibility": {
-          "CooktopLeftOnAlertId": 504
+          "CooktopLeftOnAlertId": 1256
         },
         "CavityOrder": [
           "Cooktop"
         ],
         "BurnerPosition": {
-          "JEC4536H": {
+          "WCE97US6": {
             "RatioWidth": 1.9736,
             "RatioHeight": 1,
             "Burners": {
@@ -876,7 +876,7 @@
               }
             }
           },
-          "JEC4430H": {
+          "WCE97US0": {
             "RatioWidth": 1.9736,
             "RatioHeight": 1,
             "Burners": {
@@ -901,34 +901,8 @@
                 "PercentageRadius": 0.175
               }
             }
-          },
-          "JEC4424H": {
-            "RatioWidth": 1.9736,
-            "RatioHeight": 1,
-            "Burners": {
-              "Burner-2": {
-                "PercentageX": 0.0266,
-                "PercentageY": 0.052,
-                "PercentageRadius": 0.2
-              },
-              "Burner-3": {
-                "PercentageX": 0.72,
-                "PercentageY": 0.052,
-                "PercentageRadius": 0.25
-              },
-              "Burner-5": {
-                "PercentageX": 0.0213,
-                "PercentageY": 0.5578,
-                "PercentageRadius": 0.2
-              },
-              "Burner-6": {
-                "PercentageX": 0.618,
-                "PercentageY": 0.5263,
-                "PercentageRadius": 0.2
-              }
-            }
           }
-        },
+	   },
         "AttributesMapping": {
           "Cooktop": {
             "CooktopElementState": "Cooktop_CycleStatusCookElementState",
