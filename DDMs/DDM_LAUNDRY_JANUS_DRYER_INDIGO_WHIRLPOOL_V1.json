@@ -1331,7 +1331,8 @@
 			{
 			"Compatibility": {
 			"SkipPrefixForFavorites": [
-						"Cavity_OpSetOperations"
+						"Cavity_OpSetOperations",
+						"DrySys_OpSetDampNotificationToneVolume"
 					],
 					"ComposedFeatureAsSimpleFeature": [
 						{
