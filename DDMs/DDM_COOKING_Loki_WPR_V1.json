@@ -886,12 +886,12 @@
                 "PercentageRadius": 0.175
               },
               "Burner-2": {
-                "PercentageX": 0.0266,
+                "PercentageX": 0.0440,
                 "PercentageY": 0.052,
-                "PercentageRadius": 0.175
+                "PercentageRadius": 0.15
               },
               "Burner-3": {
-                "PercentageX": 0.3684,
+                "PercentageX": 0.7933,
                 "PercentageY": 0.055,
                 "PercentageRadius": 0.25
               },
