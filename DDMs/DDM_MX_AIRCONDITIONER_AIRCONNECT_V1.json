@@ -825,16 +825,6 @@
 								"CA"
 							]
 						},
-						"Online": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Online"
-							}
-						},
 						"CareTips": {
 							"Visible": true,
 							"AvailableIn": [
@@ -866,7 +856,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "EcoModeEnabled"
+								"State": "Sys_OpSetEcoModeEnabled"
 							}
 						},
 						"TargetTemp": {
