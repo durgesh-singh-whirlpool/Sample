@@ -3820,7 +3820,11 @@
 						"DoorOpen": "Mwo_OperationStatusDoorOpen",
 						"OpStatusState": "Mwo_OperationStatusState",
 						"MWCookPower": "Mwo_CycleSetCookPower",
-						"Odometer": "Mwo_CycleStatusOdometer"
+						"Odometer": "Mwo_CycleStatusOdometer",
+						"DisplayOnOff": "Mwo_DisplaySetLightOn",
+						"HoodFan": "Hood_OperationSetExhaustFanSpeed",
+						"HoodLight":"Hood_OperationSetSurfaceLight",
+						"Turntable":"Mwo_CycleSetTurntable"
 					},
 					"Common": {
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
@@ -3830,7 +3834,10 @@
 						"ControlLock": "Sys_OperationSetControlLock",
 						"SoundKeyPress": "Sys_OperationSetKeyPressToneVolume",
 						"SabbathMode": "Sys_OperationSetSabbathModeEnabled",
-						"QuietMode": "Sys_OperationSetQuietModeEnabled"
+						"QuietMode": "Sys_OperationSetQuietModeEnabled",
+						"GreaseFilter":"Sys_OperationSetGreaseFilter",
+						"CharcoalFilter": "Sys_OperationSetCharcoalFilter",
+						"KitchenTimer":"KitchenTimer01_StatusTimeRemaining"
 					}
 				},
 				"Features": {
