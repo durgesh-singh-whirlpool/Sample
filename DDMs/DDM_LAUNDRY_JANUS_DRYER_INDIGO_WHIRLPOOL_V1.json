@@ -3635,6 +3635,21 @@
 								}
 							},
 							{
+								"ruleName": "Disable cancel if not running",
+								"description": "Disable cancel if not running",
+								"actions": {
+									"ActionSetCycleCancelCommand": false
+								},
+								"condition": {
+									
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "!=",
+										"value": 7
+									
+								}
+							},
+							{
 								"ruleName": "Allow delay only on setting & smartdelay",
 								"description": "Disable Resume if not paused",
 								"actions": {
