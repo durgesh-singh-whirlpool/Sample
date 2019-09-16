@@ -3207,7 +3207,7 @@
 					"Common": {
 						"OpStatusState": "Cavity_CycleStatusMachineState",
 						"ControlLock": "Sys_OpSetControlLock",
-						"Online": "Online",
+						"Online": "online",
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
 						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
@@ -3616,6 +3616,21 @@
 										"key": "Cavity_CycleStatusMachineState",
 										"valueOperator": "!=",
 										"value": 6
+									
+								}
+							},
+							{
+								"ruleName": "Enable Pause if cycle running",
+								"description": "Enable Pause if cycle running",
+								"actions": {
+									"ActionSetCyclePauseCommand": true
+								},
+								"condition": {
+									
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 7
 									
 								}
 							},
