@@ -2782,7 +2782,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_TempDisplayUnits"
+								"State": "Sys_DisplaySetTempUnits"
 							}
 						},
 						"ControlLock": {
@@ -2792,7 +2792,17 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_ControlLock"
+								"State": "Sys_OperationSetControlLock"
+							}
+						},
+						"QuietMode": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Sys_OperationSetQuietModeEnabled"
 							}
 						},
 						"RemoteStatus": {
@@ -2803,7 +2813,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "Appliance_RemoteEnabledStatus"
+								"State": "XCat_RemoteSetRemoteControlEnable"
 							}
 						},
 						"KitchenTimer": {
@@ -2813,17 +2823,17 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "KitchenTimer1_KitchenTimerState"
+								"State": "KitchenTimer01_StatusState"
 							},
 							"StatusAttributes": [
-								"KitchenTimer1_KitchenTimerCurrentTime"
+								"KitchenTimer01_StatusTimeRemaining"
 							],
 							"SendCommandAttributes": [
-								"KitchenTimer1_KitchenTimerSetTime",
-								"KitchenTimer1_KitchenTimerOperations"
+								"KitchenTimer01_SetTimeSet",
+								"KitchenTimer01_SetOperations"
 							],
 							"SetOperationsMapping": {
-								"Operation": "KitchenTimer1_KitchenTimerOperations"
+								"Operation": "KitchenTimer01_SetOperations"
 							}
 						},
 						"Notifications": {
@@ -2860,36 +2870,6 @@
 								"State": "SystemSettings_NumberEntry"
 							}
 						},
-						"ChangeClockTheme": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_ClockThemes"
-							}
-						},
-						"ChangeClockOnOffStatus": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_ClockOnOff"
-							}
-						},
-						"ChangeApplianceLanguage": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "SystemSettings_DisplayLanguage"
-							}
-						},
 						"ChangeSoundKeyAlert": {
 							"Visible": true,
 							"AvailableIn": [
@@ -2897,7 +2877,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_SoundKeyAlert"
+								"State": "Sys_OperationSetAlertToneVolume"
 							}
 						},
 						"ChangeSoundKeyPress": {
@@ -2907,7 +2887,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_SoundKeyPress"
+								"State": "Sys_OperationSetKeyPressToneVolume"
 							}
 						},
 						"ChangeDisplayOnOffStatus": {
@@ -2927,7 +2907,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "SystemSettings_DisplayBrightness"
+								"State": "Sys_DisplaySetBrightnessPercent"
 							}
 						}
 					},
@@ -3022,7 +3002,7 @@
 								"CA"
 							],
 							"StateAttributes": {
-								"State": "UpperCavity_CavityLight"
+								"State": "OvenUpperCavity_DisplaySetLightOn"
 							}
 						},
 						"MeatProbe": {
