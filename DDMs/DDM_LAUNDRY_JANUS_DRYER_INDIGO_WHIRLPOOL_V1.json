@@ -3209,7 +3209,7 @@
 						"ControlLock": "Sys_OpSetControlLock",
 						"Online": "online",
 						"DisplayLanguage": "Sys_DisplaySetLanguage",
-						"RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
+						"RemoteStatus": "XCat_RemoteSetRemoteControlEnable",
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
 						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
 						"SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
