@@ -3249,17 +3249,6 @@
 								"CA"
 							]
 						},
-						"RemoteStatus": {
-							"Visible": true,
-							"ReadOnly": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "XCat_RemoteSetRemoteControlEnable"
-							}
-						},
 						"ComposedQuietMode": {
 							"Visible": true,
 							"AvailableIn": [
@@ -3281,16 +3270,6 @@
 								"Sys_OpSetKeyPressToneVolume",
 								"DrySys_OpSetDampNotificationToneVolume"
 							]
-						},
-						"ChangeApplianceLanguage": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_DisplaySetLanguage"
-							}
 						},
 						"ChangeSoundKeyAlert": {
 							"Visible": true,
