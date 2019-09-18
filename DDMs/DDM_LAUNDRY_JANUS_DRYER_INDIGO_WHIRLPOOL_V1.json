@@ -3568,7 +3568,7 @@
 								},
 								"condition": {
 									"type": "operation",
-									"binaryOperator": "and",
+									"binaryOperator": "or",
 									"left": {
 										"type": "value",
 										"key": "Cavity_CycleStatusMachineState",
