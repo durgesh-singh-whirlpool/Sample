@@ -3507,7 +3507,7 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "online",
+									"key": "Online",
 									"valueOperator": "=",
 									"value": 0
 								}
@@ -3626,29 +3626,6 @@
 										"valueOperator": "!=",
 										"value": 7
 									
-								}
-							},
-							{
-								"ruleName": "Allow delay only on setting & smartdelay",
-								"description": "Disable Resume if not paused",
-								"actions": {
-									"ActionSetCycleStartCommand": false
-								},
-								"condition": {
-									"type": "operation",
-									"binaryOperator": "and",
-									"left": {
-										"type": "value",
-										"key": "Cavity_CycleStatusMachineState",
-										"valueOperator": "!=",
-										"value": 1
-									},
-									"right": {
-										"type": "value",
-										"key": "Cavity_CycleStatusMachineState",
-										"valueOperator": "!=",
-										"value": 4
-									}
 								}
 							}
 						]
