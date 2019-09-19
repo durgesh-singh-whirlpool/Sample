@@ -3572,13 +3572,13 @@
 									"left": {
 										"type": "value",
 										"key": "Cavity_CycleStatusMachineState",
-										"valueOperator": "!=",
+										"valueOperator": "=",
 										"value": 0
 									},
 									"right": {
 										"type": "value",
 										"key": "Cavity_CycleStatusMachineState",
-										"valueOperator": "!=",
+										"valueOperator": "=",
 										"value": 1
 									}
 								}
