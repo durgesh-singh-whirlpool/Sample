@@ -3564,11 +3564,11 @@
 								"ruleName": "Disable Start if not stand by or setting",
 								"description": "Disable Start if not stand by or setting",
 								"actions": {
-									"ActionSetCycleStartCommand": false
+									"ActionSetCycleStartCommand": true
 								},
 								"condition": {
 									"type": "operation",
-									"binaryOperator": "and",
+									"binaryOperator": "or",
 									"left": {
 										"type": "value",
 										"key": "Cavity_CycleStatusMachineState",
