@@ -3507,7 +3507,7 @@
 								},
 								"condition": {
 									"type": "value",
-									"key": "Online",
+									"key": "online",
 									"valueOperator": "=",
 									"value": 0
 								}
