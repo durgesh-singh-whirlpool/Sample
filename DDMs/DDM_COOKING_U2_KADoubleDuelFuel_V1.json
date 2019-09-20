@@ -4407,8 +4407,8 @@
                 "ruleName": "Disable All Features when appliance is offline",
                 "description": "Disable All Features when appliance is offline",
                 "features": {
-                  "SetOven": true,
-                  "MeatProbe": true
+                  "SetOven": false,
+                  "MeatProbe": false
                 },
                 "condition": {
                   "type": "value",
