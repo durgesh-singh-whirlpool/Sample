@@ -5,8 +5,8 @@
     "_id": "DDM_COOKING_U2_KADoubleGas_V1",
     "ddmName": "DDM_COOKING_U2_KADoubleGas_V1",
     "modelNumber": "KFGC558HSS00, KFGC558HBK00, KFGC558HSD00, KFGC558HMB00, KFGC558HIB00, KFGC558HMH00",
-    "createdAt": "Feb 26, 2018 11:15:25 AM",
-    "createdBy": "Manikandan",
+    "createdAt": "Sep 20, 2019 12:30:00 PM",
+    "createdBy": "Alex Otten",
     "brandName": "KitchenAid",
     "category": "Cooking",
     "version": "1",
@@ -941,7 +941,7 @@
         "IsTemplate": false,
         "M2MAttributeName": "OvenUpperCavity_OpSetOperations",
         "Instance": "OvenUpperCavity_OpSet",
-        "IsTimeSeries": false,
+        "IsTimeSeries": true,
         "DataType": "enum",
         "AttributeName": "Operations",
         "DeviceIO": "RW",
@@ -1019,9 +1019,29 @@
           "6": "CommonModeConvectBake",
           "8": "CommonModeBroil",
           "16": "CommonModeConvectRoast",
-          "24": "CommonModeKeepWarm"
+          "17": "CommonModeConvectSlowRoast1",
+          "24": "CommonModeKeepWarm",
+          "35": "CommonModeConvectSlowRoast2",
+          "36": "CommonModeConvectSlowRoast3"
         },
         "Key": "0x0310000C"
+      },
+      {
+        "IsTemplate": false,
+        "M2MAttributeName": "OvenUpperCavity_CycleSetConvectBakeFood",
+        "Instance": "OvenUpperCavity_CycleSet",
+        "IsTimeSeries": false,
+        "DataType": "enum",
+        "AttributeName": "ConvectBakeFood",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "OvenUpperCavity_CycleSetConvectBakeFood",
+        "Default": "0",
+        "EnumValues": {
+          "0": "ConvectBakeFoodIdle",
+          "2": "ConvectBakeFoodPastry",
+          "4": "ConvectBakeFoodFrozenPizza"
+        },
+        "Key": "0x0310000D"
       },
       {
         "IsTemplate": false,
@@ -1163,7 +1183,7 @@
         "IsTemplate": false,
         "M2MAttributeName": "OvenLowerCavity_OpSetOperations",
         "Instance": "OvenLowerCavity_OpSet",
-        "IsTimeSeries": false,
+        "IsTimeSeries": true,
         "DataType": "enum",
         "AttributeName": "Operations",
         "DeviceIO": "RW",
@@ -1241,9 +1261,29 @@
           "6": "CommonModeConvectBake",
           "8": "CommonModeBroil",
           "16": "CommonModeConvectRoast",
-          "24": "CommonModeKeepWarm"
+          "17": "CommonModeConvectSlowRoast1",
+          "24": "CommonModeKeepWarm",
+          "35": "CommonModeConvectSlowRoast2",
+          "36": "CommonModeConvectSlowRoast3"
         },
         "Key": "0x0315000C"
+      },
+      {
+        "IsTemplate": false,
+        "M2MAttributeName": "OvenLowerCavity_CycleSetConvectBakeFood",
+        "Instance": "OvenLowerCavity_CycleSet",
+        "IsTimeSeries": false,
+        "DataType": "enum",
+        "AttributeName": "ConvectBakeFood",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "OvenLowerCavity_CycleSetConvectBakeFood",
+        "Default": "0",
+        "EnumValues": {
+          "0": "ConvectBakeFoodIdle",
+          "2": "ConvectBakeFoodPastry",
+          "4": "ConvectBakeFoodFrozenPizza"
+        },
+        "Key": "0x0315000D"
       },
       {
         "IsTemplate": false,
@@ -1294,6 +1334,18 @@
           "1": "CleanOvenStandard"
         },
         "Key": "0x03150018"
+      },
+      {
+        "IsTemplate": false,
+        "M2MAttributeName": "OvenUpperCavity_DisplaySetZonedMessage",
+        "Instance": "OvenUpperCavity_DisplaySet",
+        "IsTimeSeries": false,
+        "DataType": "String",
+        "AttributeName": "ZonedMessage",
+        "DeviceIO": "RW",
+        "MappedAttributeName": "OvenUpperCavity_DisplaySetZonedMessage",
+        "Default": "0",
+        "Key": "0x030E0004"
       },
       {
         "IsTemplate": false,
@@ -1962,864 +2014,2330 @@
     "Key": "DDM_COOKING_U2_KADoubleGas_V1",
     "Capability": [
       {
-        "Version": 6,
-        "ThermostatControlTemperatureThresholds": [
-          {
-            "Values": [
-              100,
-              150,
-              200,
-              250,
-              300,
-              350,
-              400,
-              450,
-              500,
-              550
-            ],
-            "Default": 350,
-            "Units": "Fahrenheit"
-          },
-          {
-            "Values": [
-              38,
-              66,
-              93,
-              121,
-              149,
-              177,
-              204,
-              232,
-              260,
-              288
-            ],
-            "Default": 177,
-            "Units": "Celsius"
-          }
+        "CavityOrder": [
+          "OvenLowerCavity",
+          "OvenUpperCavity"
         ],
-        "CookingModeCapability": [
-          {
-            "Upper Oven": [
-              {
-                "CookingModeCapabilityData": [
-                  {
+        "Capability": {
+          "OvenUpperCavity": {
+            "CapabilityData": {
+              "OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
+                "Accessories": [
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1767
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Incompatible": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenUpperCavity_TimeSetCookTimeSet",
+                    "OvenUpperCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeConvectBake": {
+                "Accessories": [
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1627
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Incompatible": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenUpperCavity_TimeSetCookTimeSet",
+                    "OvenUpperCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods": {
+                "Accessories": [
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1627
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  },
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 60
+                    }
+                  }
+                },
+                "Incompatible": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenUpperCavity_TimeSetCookTimeSet",
+                    "OvenUpperCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeConvectRoast": {
+                "Accessories": [
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1767
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Incompatible": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenUpperCavity_TimeSetCookTimeSet",
+                    "OvenUpperCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat": {
+                "Accessories": [
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1767
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Default": 0,
+                      "Step": 60
+                    }
+                  },
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 60
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Incompatible": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenUpperCavity_TimeSetCookTimeSet",
+                    "OvenUpperCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetConvectBakeFoodConvectBakeFoodFrozenPizza": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 1488,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1905
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenUpperCavity_CycleSetConvectBakeFoodConvectBakeFoodPastry": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1627
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeBroil": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 2322,
+                      "Max": 2878,
+                      "StepF": 50,
+                      "Default": 2878
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Default": 0,
+                      "Step": 60
+                    }
+                  }
+                }
+              },
+              "OvenUpperCavity_CycleSetBreadProofBreadProofStandard": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "List": [
+                      378
+                    ],
+                    "Default": 378
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenUpperCavity_CycleSetBreadProofBreadProofRapid": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "List": [
+                      433
+                    ],
+                    "Default": 433
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeKeepWarm": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 655,
+                      "Max": 933,
+                      "StepF": 25,
+                      "Default": 794
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Default": 0,
+                      "Step": 60
+                    }
+                  }
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast1": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 877,
+                      "Max": 1072,
+                      "StepF": 5,
+                      "Default": 933
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 7200,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 43140
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast2": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 933,
+                      "Max": 1211,
+                      "StepF": 5,
+                      "Default": 1211
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 7200,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 28800
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast3": {
+                "Required": {
+                  "OvenUpperCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 1211,
+                      "Max": 1489,
+                      "StepF": 5,
+                      "Default": 1350
+                    }
+                  },
+                  "OvenUpperCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 7200,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 14400
+                    }
+                  },
+                  "OvenUpperCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenUpperCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              }
+            },
+            "SetCycle": {
+              "OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
+                "Name": "Bake",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetCommonMode": [
+                    "CommonModeBake"
+                  ]
+                },
+                "NotAllowed": [
+                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+                ]
+              },
+              "ConvectBake": {
+                "OvenUpperCavity_CycleSetCommonModeCommonModeConvectBake": {
+                  "Name": "ConvectBake",
+                  "Attributes": {
                     "OvenUpperCavity_CycleSetCommonMode": [
-                      {
-                        "CommonModeBake": {
-                          "Options": [
-                            "OvenUpperCavity_TimeSetCookTimeSet",
-                            "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1767
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeConvectBake": {
-                          "Options": [
-                            {
-                              "OvenUpperCavity_CycleSetMeatProbeTargetTemp": {
-                                "Min": 544,
-                                "Max": 850,
-                                "Step": 5,
-                                "Default": 711
-                              }
-                            },
-                            "OvenUpperCavity_TimeSetCookTimeSet",
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1627
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeConvectRoast": {
-                          "Options": [
-                            {
-                              "OvenUpperCavity_CycleSetMeatProbeTargetTemp": {
-                                "Min": 544,
-                                "Max": 850,
-                                "Step": 5,
-                                "Default": 711
-                              }
-                            },
-                            "OvenUpperCavity_TimeSetCookTimeSet",
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1767
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeBroil": {
-                          "Options": [
-                            "OvenUpperCavity_TimeSetCookTimeSet",
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "ListValues": [
-                              2322,
-                              2600,
-                              2878
-                            ],
-                            "Default": 2878
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeKeepWarm": {
-                          "Options": [
-                            "OvenUpperCavity_TimeSetCookTimeSet",
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "Min": 655,
-                            "Max": 877,
-                            "Step": 25,
-                            "Default": 766
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeSabbathBake": {
-                          "Options": [
-                            "OvenUpperCavity_TimeSetCookTimeSet"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1767
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionTurnOff"
-                          }
-                        }
-                      }
+                      "CommonModeConvectBake"
                     ]
                   },
-                  {
+                  "NotAllowed": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+                  ]
+                },
+                "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods": {
+                  "Name": "BakedGoods",
+                  "Attributes": {
                     "OvenUpperCavity_CycleSetEasyConvectFood": [
-                      {
-                        "EasyConvectFoodBakedGoods": {
-                          "Options": [
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1627
-                          },
-                          "OvenUpperCavity_TimeSetCookTimeSet": {
-                            "Min": 60,
-                            "Max": 43200,
-                            "Step": 1,
-                            "Default": 60
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "EasyConvectFoodMeat": {
-                          "Options": [
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1767
-                          },
-                          "OvenUpperCavity_TimeSetCookTimeSet": {
-                            "Min": 60,
-                            "Max": 43200,
-                            "Step": 1,
-                            "Default": 60
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      }
+                      "EasyConvectFoodBakedGoods"
                     ]
                   },
-                  {
-                    "OvenUpperCavity_CycleSetBreadProof": [
-                      {
-                        "BreadProofStandard": {
-                          "Options": [
-                            "OvenUpperCavity_TimeSetCookTimeSet",
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "ListValues": [
-                              378
-                            ],
-                            "Default": 378
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "BreadProofRapid": {
-                          "Options": [
-                            "OvenUpperCavity_TimeSetCookTimeSet",
-                            "OvenUpperCavity_TimeSetDelayTime"
-                          ],
-                          "OvenUpperCavity_CycleSetTargetTemp": {
-                            "ListValues": [
-                              433
-                            ],
-                            "Default": 433
-                          },
-                          "OvenUpperCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "OvenUpperCavity_CycleSetCleanOvenMode": [
-                      {
-                        "CleanOvenStandard": {
-                          "OvenUpperCavity_TimeSetCookTimeSet": {
-                            "ListValues": [
-                              12600,
-                              16200,
-                              14400
-                            ],
-                            "Default": 12600
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ]
+                  "NotAllowed": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+                  ]
+                }
               },
-              {
-                "Set Oven": [
-                  {
-                    "Bake": [
-                      {
-                        "Attribute": "OvenUpperCavity_CycleSetCommonMode",
-                        "OvenUpperCavity_TimeSetCookTimeSet": true,
-                        "Value": "CommonModeBake",
-                        "OvenUpperCavity_CycleSetMeatProbeTargetTemp": false,
-                        "Name": "Manual"
-                      }
+              "ConvectRoast": {
+                "OvenUpperCavity_CycleSetCommonModeCommonModeConvectRoast": {
+                  "Name": "ConvectRoast",
+                  "Attributes": {
+                    "OvenUpperCavity_CycleSetCommonMode": [
+                      "CommonModeConvectRoast"
                     ]
                   },
-                  {
-                    "Convect Bake": [
-                      {
-                        "Manual": [
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetCommonMode",
-                            "OvenUpperCavity_TimeSetCookTimeSet": true,
-                            "Value": "CommonModeConvectBake",
-                            "OvenUpperCavity_CycleSetMeatProbeTargetTemp": false,
-                            "Name": "Manual"
-                          }
-                        ]
-                      },
-                      {
-                        "Auto": [
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetEasyConvectFood",
-                            "OvenUpperCavity_TimeSetCookTimeSet": true,
-                            "Value": "EasyConvectFoodBakedGoods",
-                            "OvenUpperCavity_CycleSetMeatProbeTargetTemp": false,
-                            "Name": "Auto"
-                          }
-                        ]
-                      }
+                  "NotAllowed": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+                  ]
+                },
+                "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat": {
+                  "Name": "Meat",
+                  "Attributes": {
+                    "OvenUpperCavity_CycleSetEasyConvectFood": [
+                      "EasyConvectFoodMeat"
                     ]
                   },
-                  {
-                    "Convect Roast": [
-                      {
-                        "Manual": [
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetCommonMode",
-                            "OvenUpperCavity_TimeSetCookTimeSet": true,
-                            "Value": "CommonModeConvectRoast",
-                            "OvenUpperCavity_CycleSetMeatProbeTargetTemp": false,
-                            "Name": "Manual"
-                          }
-                        ]
-                      },
-                      {
-                        "Auto": [
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetEasyConvectFood",
-                            "OvenUpperCavity_TimeSetCookTimeSet": true,
-                            "Value": "EasyConvectFoodMeat",
-                            "OvenUpperCavity_CycleSetMeatProbeTargetTemp": false,
-                            "Name": "Auto"
-                          }
-                        ]
-                      }
+                  "NotAllowed": [
+                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetConvectBakeFoodConvectBakeFoodFrozenPizza": {
+                "Name": "ConvectFrozenPizza",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetConvectBakeFood": [
+                    "ConvectBakeFoodFrozenPizza"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetConvectBakeFoodConvectBakeFoodPastry": {
+                "Name": "ConvectPastry",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetConvectBakeFood": [
+                    "ConvectBakeFoodPastry"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeBroil": {
+                "Name": "Broil",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetCommonMode": [
+                    "CommonModeBroil"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetBreadProofBreadProofStandard": {
+                "Name": "Proof",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetBreadProof": [
+                    "BreadProofStandard"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetBreadProofBreadProofRapid": {
+                "Name": "RapidProof",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetBreadProof": [
+                    "BreadProofRapid"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeKeepWarm": {
+                "Name": "KeepWarm",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetCommonMode": [
+                    "CommonModeKeepWarm"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast1": {
+                "Name": "ConvectSlowRoastLO",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetCommonMode": [
+                    "CommonModeConvectSlowRoast1"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast2": {
+                "Name": "ConvectSlowRoastMED",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetCommonMode": [
+                    "CommonModeConvectSlowRoast2"
+                  ]
+                }
+              },
+              "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast3": {
+                "Name": "ConvectSlowRoastHI",
+                "Attributes": {
+                  "OvenUpperCavity_CycleSetCommonMode": [
+                    "CommonModeConvectSlowRoast3"
+                  ]
+                }
+              },
+              "ProbeCook": {
+                "Manual": {
+                  "OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
+                    "Name": "Bake",
+                    "Attributes": {
+                      "OvenUpperCavity_CycleSetCommonMode": [
+                        "CommonModeBake"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenUpperCavity_TimeSetCookTimeSet"
                     ]
                   },
-                  {
-                    "Broil": [
-                      {
-                        "Attribute": "OvenUpperCavity_CycleSetCommonMode",
-                        "Value": "CommonModeBroil",
-                        "Name": "Manual"
-                      }
+                  "OvenUpperCavity_CycleSetCommonModeCommonModeConvectBake": {
+                    "Name": "ConvectBake",
+                    "Attributes": {
+                      "OvenUpperCavity_CycleSetCommonMode": [
+                        "CommonModeConvectBake"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenUpperCavity_TimeSetCookTimeSet"
                     ]
                   },
-                  {
-                    "Proof": [
-                      {
-                        "Attribute": "OvenUpperCavity_CycleSetBreadProof",
-                        "Value": "BreadProofStandard",
-                        "Name": "Manual"
-                      }
+                  "OvenUpperCavity_CycleSetCommonModeCommonModeConvectRoast": {
+                    "Name": "ConvectRoast",
+                    "Attributes": {
+                      "OvenUpperCavity_CycleSetCommonMode": [
+                        "CommonModeConvectRoast"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenUpperCavity_TimeSetCookTimeSet"
                     ]
-                  },
-                  {
-                    "Rapid Proof": [
-                      {
-                        "Attribute": "OvenUpperCavity_CycleSetBreadProof",
-                        "Value": "BreadProofRapid",
-                        "Name": "Manual"
-                      }
-                    ]
-                  },
-                  {
-                    "Keep Warm": [
-                      {
-                        "Attribute": "OvenUpperCavity_CycleSetCommonMode",
-                        "Value": "CommonModeKeepWarm",
-                        "Name": "Manual"
-                      }
-                    ]
-                  },
-                  {
-                    "Probe Cook": [
-                      {
-                        "Manual": [
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetCommonMode",
-                            "Value": "CommonModeBake",
-                            "Name": "Bake"
-                          },
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetCommonMode",
-                            "Value": "CommonModeConvectBake",
-                            "Name": "Convect Bake"
-                          },
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetCommonMode",
-                            "Value": "CommonModeConvectRoast",
-                            "Name": "Convect Roast"
-                          }
-                        ]
-                      },
-                      {
-                        "Auto": [
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetEasyConvectFood",
-                            "Value": "EasyConvectFoodBakedGoods",
-                            "Name": "Convect Bake"
-                          },
-                          {
-                            "Attribute": "OvenUpperCavity_CycleSetEasyConvectFood",
-                            "Value": "EasyConvectFoodMeat",
-                            "Name": "Convect Roast"
-                          }
-                        ]
-                      }
-                    ],
-                    "OvenUpperCavity_TimeSetCookTimeSet": false,
-                    "OvenUpperCavity_CycleSetMeatProbeTargetTemp": true
                   }
-                ]
-              }
-            ]
+                },
+                "Auto": {
+                  "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods": {
+                    "Name": "BakedGoods",
+                    "Attributes": {
+                      "OvenUpperCavity_CycleSetEasyConvectFood": [
+                        "EasyConvectFoodBakedGoods"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenUpperCavity_TimeSetCookTimeSet"
+                    ]
+                  },
+                  "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat": {
+                    "Name": "Meat",
+                    "Attributes": {
+                      "OvenUpperCavity_CycleSetEasyConvectFood": [
+                        "EasyConvectFoodMeat"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenUpperCavity_TimeSetCookTimeSet"
+                    ]
+                  }
+                }
+              },
+              "Default": "OvenUpperCavity_CycleSetCommonModeCommonModeBake"
+            }
           },
-          {
-            "Lower Oven": [
-              {
-                "CookingModeCapabilityData": [
-                  {
-                    "OvenLowerCavity_CycleSetCommonMode": [
-                      {
-                        "CommonModeBake": {
-                          "Options": [
-                            "OvenLowerCavity_TimeSetCookTimeSet",
-                            "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
-                            "OvenLowerCavity_TimeSetDelayTime"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1767
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeConvectBake": {
-                          "Options": [
-                            {
-                              "OvenLowerCavity_CycleSetMeatProbeTargetTemp": {
-                                "Min": 544,
-                                "Max": 850,
-                                "Step": 5,
-                                "Default": 711
-                              }
-                            },
-                            "OvenLowerCavity_TimeSetCookTimeSet",
-                            "OvenLowerCavity_TimeSetDelayTime"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1627
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeConvectRoast": {
-                          "Options": [
-                            {
-                              "OvenLowerCavity_CycleSetMeatProbeTargetTemp": {
-                                "Min": 544,
-                                "Max": 850,
-                                "Step": 5,
-                                "Default": 711
-                              }
-                            },
-                            "OvenLowerCavity_TimeSetCookTimeSet",
-                            "OvenLowerCavity_TimeSetDelayTime"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1767
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeKeepWarm": {
-                          "Options": [
-                            "OvenLowerCavity_TimeSetCookTimeSet",
-                            "OvenLowerCavity_TimeSetDelayTime"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "Min": 655,
-                            "Max": 877,
-                            "Step": 25,
-                            "Default": 766
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "CommonModeSabbathBake": {
-                          "Options": [
-                            "OvenLowerCavity_TimeSetCookTimeSet"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1767
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionTurnOff"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "OvenLowerCavity_CycleSetEasyConvectFood": [
-                      {
-                        "EasyConvectFoodBakedGoods": {
-                          "Options": [
-                            "OvenLowerCavity_TimeSetDelayTime"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1627
-                          },
-                          "OvenLowerCavity_TimeSetCookTimeSet": {
-                            "Min": 60,
-                            "Max": 43200,
-                            "Step": 1,
-                            "Default": 60
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "EasyConvectFoodMeat": {
-                          "Options": [
-                            "OvenLowerCavity_TimeSetDelayTime"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "Min": 794,
-                            "Max": 2600,
-                            "Step": 25,
-                            "Default": 1767
-                          },
-                          "OvenLowerCavity_TimeSetCookTimeSet": {
-                            "Min": 60,
-                            "Max": 43200,
-                            "Step": 1,
-                            "Default": 60
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionKeepWarm",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "OvenLowerCavity_CycleSetBreadProof": [
-                      {
-                        "BreadProofStandard": {
-                          "Options": [
-                            "OvenLowerCavity_TimeSetCookTimeSet",
-                            "OvenLowerCavity_TimeSetDelayTime"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "ListValues": [
-                              378
-                            ],
-                            "Default": 378
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      },
-                      {
-                        "BreadProofRapid": {
-                          "Options": [
-                            "OvenLowerCavity_TimeSetCookTimeSet",
-                            "OvenLowerCavity_TimeSetDelayTime"
-                          ],
-                          "OvenLowerCavity_CycleSetTargetTemp": {
-                            "ListValues": [
-                              433
-                            ],
-                            "Default": 433
-                          },
-                          "OvenLowerCavity_OpSetCookTimeCompleteAction": {
-                            "Enumeration": [
-                              "ProcessCmpltActionStayOn",
-                              "ProcessCmpltActionTurnOff"
-                            ],
-                            "Default": "ProcessCmpltActionStayOn"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "OvenLowerCavity_CycleSetCleanOvenMode": [
-                      {
-                        "CleanOvenStandard": {
-                          "OvenLowerCavity_TimeSetCookTimeSet": {
-                            "ListValues": [
-                              12600,
-                              16200,
-                              14400
-                            ],
-                            "Default": 12600
-                          }
-                        }
-                      }
-                    ]
+          "OvenLowerCavity": {
+            "CapabilityData": {
+              "OvenLowerCavity_CycleSetCommonModeCommonModeBake": {
+                "Accessories": [
+                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1767
+                    }
                   }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Incompatible": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenLowerCavity_TimeSetCookTimeSet",
+                    "OvenLowerCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeConvectBake": {
+                "Accessories": [
+                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1627
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Incompatible": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenLowerCavity_TimeSetCookTimeSet",
+                    "OvenLowerCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods": {
+                "Accessories": [
+                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1627
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 60
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Incompatible": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenLowerCavity_TimeSetCookTimeSet",
+                    "OvenLowerCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeConvectRoast": {
+                "Accessories": [
+                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1767
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Incompatible": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenLowerCavity_TimeSetCookTimeSet",
+                    "OvenLowerCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat": {
+                "Accessories": [
+                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                ],
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1767
+                    }
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Default": 0,
+                      "Step": 60
+                    }
+                  },
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": {
+                    "TempRange": {
+                      "Min": 544,
+                      "Max": 850,
+                      "StepF": 5,
+                      "Default": 711
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  },
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 60
+                    }
+                  }
+                },
+                "Incompatible": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                    "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  ],
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp": [
+                    "OvenLowerCavity_TimeSetCookTimeSet",
+                    "OvenLowerCavity_OpSetCookTimeCompleteAction"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetConvectBakeFoodConvectBakeFoodFrozenPizza": {
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 1488,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1905
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenLowerCavity_CycleSetConvectBakeFoodConvectBakeFoodPastry": {
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 794,
+                      "Max": 2600,
+                      "StepF": 25,
+                      "Default": 1627
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenLowerCavity_CycleSetBreadProofBreadProofStandard": {
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "List": [
+                      378
+                    ],
+                    "Default": 378
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenLowerCavity_CycleSetBreadProofBreadProofRapid": {
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "List": [
+                      433
+                    ],
+                    "Default": 433
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeKeepWarm": {
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 655,
+                      "Max": 933,
+                      "StepF": 25,
+                      "Default": 794
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 0,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Default": 0,
+                      "Step": 60
+                    }
+                  }
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast1": {
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 877,
+                      "Max": 1072,
+                      "StepF": 5,
+                      "Default": 933
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 7200,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 43140
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast2": {
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 933,
+                      "Max": 1211,
+                      "StepF": 5,
+                      "Default": 1211
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 7200,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 28800
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast3": {
+                "Required": {
+                  "OvenLowerCavity_CycleSetTargetTemp": {
+                    "TempRange": {
+                      "Min": 1211,
+                      "Max": 1489,
+                      "StepF": 5,
+                      "Default": 1350
+                    }
+                  },
+                  "OvenLowerCavity_TimeSetCookTimeSet": {
+                    "Range": {
+                      "Min": 7200,
+                      "Max": 43140,
+                      "Step": 60,
+                      "Default": 14400
+                    }
+                  },
+                  "OvenLowerCavity_OpSetCookTimeCompleteAction": {
+                    "Enumeration": [
+                      "ProcessCmpltActionStayOn",
+                      "ProcessCmpltActionKeepWarm",
+                      "ProcessCmpltActionTurnOff"
+                    ],
+                    "Default": "ProcessCmpltActionStayOn"
+                  }
+                },
+                "Optional": {
+                  "OvenLowerCavity_TimeSetDelayTime": {
+                    "Range": {
+                      "Min": 60,
+                      "Max": 32400,
+                      "Step": 60,
+                      "Default": 0
+                    }
+                  }
+                }
+              }
+            },
+            "SetCycle": {
+              "OvenLowerCavity_CycleSetCommonModeCommonModeBake": {
+                "Name": "Bake",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetCommonMode": [
+                    "CommonModeBake"
+                  ]
+                },
+                "NotAllowed": [
+                  "OvenLowerCavity_CycleSetMeatProbeTargetTemp"
                 ]
               },
-              {
-                "Set Oven": [
-                  {
-                    "Bake": [
-                      {
-                        "Attribute": "OvenLowerCavity_CycleSetCommonMode",
-                        "Value": "CommonModeBake",
-                        "OvenLowerCavity_CycleSetMeatProbeTargetTemp": false,
-                        "OvenLowerCavity_TimeSetCookTimeSet": true,
-                        "Name": "Manual"
-                      }
+              "ConvectBake": {
+                "OvenLowerCavity_CycleSetCommonModeCommonModeConvectBake": {
+                  "Name": "ConvectBake",
+                  "Attributes": {
+                    "OvenLowerCavity_CycleSetCommonMode": [
+                      "CommonModeConvectBake"
                     ]
                   },
-                  {
-                    "Convect Bake": [
-                      {
-                        "Manual": [
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetCommonMode",
-                            "Value": "CommonModeConvectBake",
-                            "OvenLowerCavity_CycleSetMeatProbeTargetTemp": false,
-                            "OvenLowerCavity_TimeSetCookTimeSet": true,
-                            "Name": "Manual"
-                          }
-                        ]
-                      },
-                      {
-                        "Auto": [
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetEasyConvectFood",
-                            "Value": "EasyConvectFoodBakedGoods",
-                            "OvenLowerCavity_CycleSetMeatProbeTargetTemp": false,
-                            "OvenLowerCavity_TimeSetCookTimeSet": true,
-                            "Name": "Auto"
-                          }
-                        ]
-                      }
+                  "NotAllowed": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp"
+                  ]
+                },
+                "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods": {
+                  "Name": "BakedGoods",
+                  "Attributes": {
+                    "OvenLowerCavity_CycleSetEasyConvectFood": [
+                      "EasyConvectFoodBakedGoods"
                     ]
                   },
-                  {
-                    "Convect Roast": [
-                      {
-                        "Manual": [
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetCommonMode",
-                            "Value": "CommonModeConvectRoast",
-                            "OvenLowerCavity_CycleSetMeatProbeTargetTemp": false,
-                            "OvenLowerCavity_TimeSetCookTimeSet": true,
-                            "Name": "Manual"
-                          }
-                        ]
-                      },
-                      {
-                        "Auto": [
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetEasyConvectFood",
-                            "Value": "EasyConvectFoodMeat",
-                            "OvenLowerCavity_CycleSetMeatProbeTargetTemp": false,
-                            "OvenLowerCavity_TimeSetCookTimeSet": true,
-                            "Name": "Auto"
-                          }
-                        ]
-                      }
+                  "NotAllowed": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp"
+                  ]
+                }
+              },
+              "ConvectRoast": {
+                "OvenLowerCavity_CycleSetCommonModeCommonModeConvectRoast": {
+                  "Name": "ConvectRoast",
+                  "Attributes": {
+                    "OvenLowerCavity_CycleSetCommonMode": [
+                      "CommonModeConvectRoast"
                     ]
                   },
-                  {
-                    "Proof": [
-                      {
-                        "Attribute": "OvenLowerCavity_CycleSetBreadProof",
-                        "Value": "BreadProofStandard",
-                        "Name": "Manual"
-                      }
+                  "NotAllowed": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp"
+                  ]
+                },
+                "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat": {
+                  "Name": "Meat",
+                  "Attributes": {
+                    "OvenLowerCavity_CycleSetEasyConvectFood": [
+                      "EasyConvectFoodMeat"
                     ]
                   },
-                  {
-                    "Rapid Proof": [
-                      {
-                        "Attribute": "OvenLowerCavity_CycleSetBreadProof",
-                        "Value": "BreadProofRapid",
-                        "Name": "Manual"
-                      }
+                  "NotAllowed": [
+                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetConvectBakeFoodConvectBakeFoodFrozenPizza": {
+                "Name": "ConvectFrozenPizza",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetConvectBakeFood": [
+                    "ConvectBakeFoodFrozenPizza"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetConvectBakeFoodConvectBakeFoodPastry": {
+                "Name": "ConvectPastry",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetConvectBakeFood": [
+                    "ConvectBakeFoodPastry"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetBreadProofBreadProofStandard": {
+                "Name": "Proof",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetBreadProof": [
+                    "BreadProofStandard"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetBreadProofBreadProofRapid": {
+                "Name": "RapidProof",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetBreadProof": [
+                    "BreadProofRapid"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeKeepWarm": {
+                "Name": "KeepWarm",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetCommonMode": [
+                    "CommonModeKeepWarm"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast1": {
+                "Name": "ConvectSlowRoastLO",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetCommonMode": [
+                    "CommonModeConvectSlowRoast1"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast2": {
+                "Name": "ConvectSlowRoastMED",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetCommonMode": [
+                    "CommonModeConvectSlowRoast2"
+                  ]
+                }
+              },
+              "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast3": {
+                "Name": "ConvectSlowRoastHI",
+                "Attributes": {
+                  "OvenLowerCavity_CycleSetCommonMode": [
+                    "CommonModeConvectSlowRoast3"
+                  ]
+                }
+              },
+              "ProbeCook": {
+                "Manual": {
+                  "OvenLowerCavity_CycleSetCommonModeCommonModeBake": {
+                    "Name": "Bake",
+                    "Attributes": {
+                      "OvenLowerCavity_CycleSetCommonMode": [
+                        "CommonModeBake"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenLowerCavity_TimeSetCookTimeSet"
                     ]
                   },
-                  {
-                    "Keep Warm": [
-                      {
-                        "Attribute": "OvenLowerCavity_CycleSetCommonMode",
-                        "Value": "CommonModeKeepWarm",
-                        "Name": "Manual"
-                      }
+                  "OvenLowerCavity_CycleSetCommonModeCommonModeConvectBake": {
+                    "Name": "ConvectBake",
+                    "Attributes": {
+                      "OvenLowerCavity_CycleSetCommonMode": [
+                        "CommonModeConvectBake"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenLowerCavity_TimeSetCookTimeSet"
                     ]
                   },
-                  {
-                    "Probe Cook": [
-                      {
-                        "Manual": [
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetCommonMode",
-                            "Value": "CommonModeBake",
-                            "Name": "Bake"
-                          },
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetCommonMode",
-                            "Value": "CommonModeConvectBake",
-                            "Name": "Convect Bake"
-                          },
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetCommonMode",
-                            "Value": "CommonModeConvectRoast",
-                            "Name": "Convect Roast"
-                          }
-                        ]
-                      },
-                      {
-                        "Auto": [
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetEasyConvectFood",
-                            "Value": "EasyConvectFoodBakedGoods",
-                            "Name": "Convect Bake"
-                          },
-                          {
-                            "Attribute": "OvenLowerCavity_CycleSetEasyConvectFood",
-                            "Value": "EasyConvectFoodMeat",
-                            "Name": "Convect Roast"
-                          }
-                        ]
-                      }
-                    ],
-                    "OvenLowerCavity_CycleSetMeatProbeTargetTemp": true,
-                    "OvenLowerCavity_TimeSetCookTimeSet": false
+                  "OvenLowerCavity_CycleSetCommonModeCommonModeConvectRoast": {
+                    "Name": "ConvectRoast",
+                    "Attributes": {
+                      "OvenLowerCavity_CycleSetCommonMode": [
+                        "CommonModeConvectRoast"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenLowerCavity_TimeSetCookTimeSet"
+                    ]
                   }
-                ]
-              }
-            ]
-          }
-        ],
-        "RelationalHexConversion": {
-          "EncodingVersion": 1
-        },
-        "Settings": [
-          {
-            "AwayOvenWarning": {
-              "Type": "home_away",
-              "Description": "Receive a notification asking if you’d like to turn your oven off if Nest™ detects you're away while your oven is running.   Please note that it may take up to two hours for Nest™ to send the away signal.",
-              "Name": "Off While Away"
+                },
+                "Auto": {
+                  "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods": {
+                    "Name": "BakedGoods",
+                    "Attributes": {
+                      "OvenLowerCavity_CycleSetEasyConvectFood": [
+                        "EasyConvectFoodBakedGoods"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenLowerCavity_TimeSetCookTimeSet"
+                    ]
+                  },
+                  "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat": {
+                    "Name": "Meat",
+                    "Attributes": {
+                      "OvenLowerCavity_CycleSetEasyConvectFood": [
+                        "EasyConvectFoodMeat"
+                      ]
+                    },
+                    "NotAllowed": [
+                      "OvenLowerCavity_TimeSetCookTimeSet"
+                    ]
+                  }
+                }
+              },
+              "Default": "OvenLowerCavity_CycleSetCommonModeCommonModeBake"
             }
           }
-        ]
+        },
+        "AttributesMapping": {
+          "OvenUpperCavity": {
+            "CycleName": [
+              "OvenUpperCavity_CycleSetCommonMode",
+              "OvenUpperCavity_CycleSetConvectBakeFood",
+              "OvenUpperCavity_CycleSetEasySteamFood",
+              "OvenUpperCavity_CycleSetEasyConvectFood",
+              "OvenUpperCavity_CycleSetBreadProof"
+            ],
+            "TimeElapsed": "OvenUpperCavity_TimeStatusCycleTimeElapsed",
+            "DoorOpen": "OvenUpperCavity_OpStatusDoorOpen",
+            "DoorLockStatus": "OvenUpperCavity_OpStatusDoorLocked",
+            "CookTimeCompleteAction": "OvenUpperCavity_OpSetCookTimeCompleteAction",
+            "CookTimerState": "OvenUpperCavity_OpStatusCookTimeState",
+            "MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+            "MeatProbeTemp": "OvenUpperCavity_DisplStatusMeatProbeDisplayTemp",
+            "SabbathModeActive": "OvenUpperCavity_OpSetSabbathModeActive",
+            "MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+            "CavityTargetTemp": "OvenUpperCavity_CycleSetTargetTemp",
+            "CavityActualTemp": "OvenUpperCavity_DisplStatusDisplayTemp",
+            "CavityLight": "OvenUpperCavity_DisplaySetLightOn",
+            "DelayTimeRemaining": "OvenUpperCavity_TimeStatusDelayTimeRemaining",
+            "CookTimeSetTime": "OvenUpperCavity_TimeSetCookTimeSet",
+            "DelayTimeSetTime": "OvenUpperCavity_TimeSetDelayTime",
+            "CookTimeRemaining": "OvenUpperCavity_TimeStatusCookTimeRemaining",
+            "OpStatusState": "OvenUpperCavity_OpStatusState",
+            "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId",
+            "CavityOperations": "OvenUpperCavity_OpSetOperations"
+          },
+          "OvenLowerCavity": {
+            "CycleName": [
+              "OvenLowerCavity_CycleSetCommonMode",
+              "OvenLowerCavity_CycleSetConvectBakeFood",
+              "OvenLowerCavity_CycleSetEasyConvectFood",
+              "OvenLowerCavity_CycleSetBreadProof"
+            ],
+            "TimeElapsed": "OvenLowerCavity_TimeStatusCycleTimeElapsed",
+            "DoorOpen": "OvenLowerCavity_OpStatusDoorOpen",
+            "DoorLockStatus": "OvenLowerCavity_OpStatusDoorLocked",
+            "CookTimeCompleteAction": "OvenLowerCavity_OpSetCookTimeCompleteAction",
+            "CookTimerState": "OvenLowerCavity_OpStatusCookTimeState",
+            "MeatProbeTargetTemp": "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+            "MeatProbeTemp": "OvenLowerCavity_DisplStatusMeatProbeDisplayTemp",
+            "SabbathModeActive": "OvenLowerCavity_OpSetSabbathModeActive",
+            "MeatProbeStatus": "OvenLowerCavity_AlertStatusMeatProbePluggedIn",
+            "CavityTargetTemp": "OvenLowerCavity_CycleSetTargetTemp",
+            "CavityActualTemp": "OvenLowerCavity_DisplStatusDisplayTemp",
+            "CavityLight": "OvenLowerCavity_DisplaySetLightOn",
+            "DelayTimeRemaining": "OvenLowerCavity_TimeStatusDelayTimeRemaining",
+            "CookTimeSetTime": "OvenLowerCavity_TimeSetCookTimeSet",
+            "DelayTimeSetTime": "OvenLowerCavity_TimeSetDelayTime",
+            "CookTimeRemaining": "OvenLowerCavity_TimeStatusCookTimeRemaining",
+            "OpStatusState": "OvenLowerCavity_OpStatusState",
+            "OpStatusCleanOven": "OvenLowerCavity_OpStatusCleanOven",
+            "CustomCycleSetId": "OvenLowerCavity_CustomCycleSetId",
+            "CavityOperations": "OvenLowerCavity_OpSetOperations"
+          },
+          "Common": {
+            "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
+            "TempDisplayUnits": "Sys_DisplaySetTempUnits",
+            "SabbathModeEnabled": "Sys_OperationSetSabbathModeEnabled",
+            "SysAlertStatusNotification": "Sys_AlertStatusNotification"
+          }
+        },
+        "Features": {
+          "Common": {
+            "LocalKitchenTimer": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            },
+            "Notifications": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            },
+            "FaultCodes": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            },
+            "ApplianceDocuments": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ]
+            }
+          },
+          "OvenUpperCavity": {
+            "SetOven": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "OvenUpperCavity_OpStatusState",
+                "MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+              },
+              "StatusAttributes": [],
+              "SendCommandAttributes": [
+                "OvenUpperCavity_CycleSetCommonMode",
+                "OvenUpperCavity_CycleSetConvectBakeFood",
+                "OvenUpperCavity_CycleSetEasyConvectFood",
+                "OvenUpperCavity_CycleSetBreadProof",
+                "OvenUpperCavity_CycleSetTargetTemp",
+                "OvenUpperCavity_TimeSetCookTimeSet",
+                "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                "OvenUpperCavity_TimeSetDelayTime",
+                "OvenUpperCavity_OpSetCookTimeCompleteAction",
+                "OvenUpperCavity_OpSetOperations",
+                "OvenUpperCavity_TimeSetCookTimeOperations"
+              ],
+              "SetOperationsMapping": {
+                "Operation": "OvenUpperCavity_OpSetOperations",
+                "TimerOperations": "OvenUpperCavity_TimeSetCookTimeOperations",
+                "CookTime": "OvenUpperCavity_TimeSetCookTimeSet",
+                "CookTemp": "OvenUpperCavity_CycleSetTargetTemp"
+              }
+            },
+            "MeatProbe": {
+              "Visible": true,
+              "ReadOnly": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+              }
+            },
+            "CyclesHistory": {
+              "Visible": true,
+              "ReadOnly": false,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "SendCommandAttributes": [
+                "OvenUpperCavity_CycleSetCommonMode",
+                "OvenUpperCavity_CycleSetConvectBakeFood",
+                "OvenUpperCavity_CycleSetEasyConvectFood",
+                "OvenUpperCavity_CycleSetBreadProof",
+                "OvenUpperCavity_CycleSetTargetTemp",
+                "OvenUpperCavity_TimeSetCookTimeSet",
+                "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                "OvenUpperCavity_TimeSetDelayTime",
+                "OvenUpperCavity_OpSetCookTimeCompleteAction",
+                "OvenUpperCavity_OpSetOperations",
+                "OvenUpperCavity_TimeSetCookTimeOperations"
+              ],
+              "StateAttributes": {},
+              "SetOperationsMapping": {
+                "Operation": "OvenUpperCavity_OpSetOperations",
+                "TimerOperations": "OvenUpperCavity_TimeSetCookTimeOperations"
+              }
+            },
+            "FavoriteCycles": {
+              "Visible": true,
+              "ReadOnly": false,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StatusAttributes": [],
+              "StateAttributes": {},
+              "SendCommandAttributes": [
+                "OvenUpperCavity_CycleSetCommonMode",
+                "OvenUpperCavity_CycleSetConvectBakeFood",
+                "OvenUpperCavity_CycleSetEasyConvectFood",
+                "OvenUpperCavity_CycleSetBreadProof",
+                "OvenUpperCavity_CycleSetTargetTemp",
+                "OvenUpperCavity_TimeSetCookTimeSet",
+                "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                "OvenUpperCavity_TimeSetDelayTime",
+                "OvenUpperCavity_OpSetCookTimeCompleteAction",
+                "OvenUpperCavity_OpSetOperations",
+                "OvenUpperCavity_TimeSetCookTimeOperations"
+              ],
+              "SetOperationsMapping": {
+                "Operation": "OvenUpperCavity_OpSetOperations",
+                "EnvelopeAction": "Relational_EnvelopeAction"
+              }
+            },
+            "LightOnOff": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "OvenUpperCavity_DisplaySetLightOn"
+              }
+            }
+          },
+          "OvenLowerCavity": {
+            "SetOven": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "OvenLowerCavity_OpStatusState",
+                "MeatProbeTargetTemp": "OvenLowerCavity_CycleSetMeatProbeTargetTemp"
+              },
+              "StatusAttributes": [
+                "OvenLowerCavity_CycleSetCommonMode",
+                "OvenLowerCavity_CycleSetConvectBakeFood",
+                "OvenLowerCavity_CycleSetEasyConvectFood",
+                "OvenLowerCavity_CycleSetBreadProof",
+                "OvenLowerCavity_CycleSetTargetTemp",
+                "OvenLowerCavity_TimeStatusDelayTimeRemaining",
+                "OvenLowerCavity_TimeStatusCookTimeRemaining",
+                "OvenLowerCavity_AlertStatusMeatProbePluggedIn",
+                "OvenLowerCavity_OpStatusCookTimeState",
+                "OvenLowerCavity_TimeSetCookTimeSet",
+                "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                "OvenLowerCavity_DisplStatusMeatProbeDisplayTemp",
+                "OvenLowerCavity_TimeSetDelayTime",
+                "OvenLowerCavity_DisplStatusDisplayTemp"
+              ],
+              "SendCommandAttributes": [
+                "OvenLowerCavity_CycleSetCommonMode",
+                "OvenLowerCavity_CycleSetConvectBakeFood",
+                "OvenLowerCavity_CycleSetEasyConvectFood",
+                "OvenLowerCavity_CycleSetBreadProof",
+                "OvenLowerCavity_CycleSetTargetTemp",
+                "OvenLowerCavity_TimeSetCookTimeSet",
+                "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                "OvenLowerCavity_TimeSetDelayTime",
+                "OvenLowerCavity_OpSetCookTimeCompleteAction",
+                "OvenLowerCavity_TimeSetCookTimeSet",
+                "OvenLowerCavity_OpSetOperations",
+                "OvenLowerCavity_TimeSetCookTimeOperations"
+              ],
+              "SetOperationsMapping": {
+                "Operation": "OvenLowerCavity_OpSetOperations",
+                "TimerOperations": "OvenLowerCavity_TimeSetCookTimeOperations",
+                "CookTime": "OvenLowerCavity_TimeSetCookTimeSet",
+                "CookTemp": "OvenLowerCavity_CycleSetTargetTemp"
+              }
+            },
+            "MeatProbe": {
+              "Visible": true,
+              "ReadOnly": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+              }
+            },
+            "CyclesHistory": {
+              "Visible": true,
+              "ReadOnly": false,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "SendCommandAttributes": [
+                "OvenLowerCavity_CycleSetCommonMode",
+                "OvenLowerCavity_CycleSetConvectBakeFood",
+                "OvenLowerCavity_CycleSetEasyConvectFood",
+                "OvenLowerCavity_CycleSetBreadProof",
+                "OvenLowerCavity_CycleSetTargetTemp",
+                "OvenLowerCavity_TimeSetCookTimeSet",
+                "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                "OvenLowerCavity_TimeSetDelayTime",
+                "OvenLowerCavity_OpSetCookTimeCompleteAction",
+                "OvenLowerCavity_TimeSetCookTimeSet",
+                "OvenLowerCavity_OpSetOperations",
+                "OvenLowerCavity_TimeSetCookTimeOperations"
+              ],
+              "StateAttributes": {},
+              "SetOperationsMapping": {
+                "Operation": "OvenLowerCavity_OpSetOperations",
+                "TimerOperations": "OvenLowerCavity_TimeSetCookTimeOperations"
+              }
+            },
+            "FavoriteCycles": {
+              "Visible": false,
+              "ReadOnly": false,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StatusAttributes": [],
+              "StateAttributes": {},
+              "SendCommandAttributes": [
+                "OvenLowerCavity_CycleSetCommonMode",
+                "OvenLowerCavity_CycleSetConvectBakeFood",
+                "OvenLowerCavity_CycleSetEasyConvectFood",
+                "OvenLowerCavity_CycleSetBreadProof",
+                "OvenLowerCavity_CycleSetTargetTemp",
+                "OvenLowerCavity_TimeSetCookTimeSet",
+                "OvenLowerCavity_CycleSetMeatProbeTargetTemp",
+                "OvenLowerCavity_TimeSetDelayTime",
+                "OvenLowerCavity_OpSetCookTimeCompleteAction",
+                "OvenLowerCavity_TimeSetCookTimeSet",
+                "OvenLowerCavity_OpSetOperations",
+                "OvenLowerCavity_TimeSetCookTimeOperations"
+              ],
+              "SetOperationsMapping": {
+                "Operation": "OvenLowerCavity_OpSetOperations",
+                "EnvelopeAction": "Relational_EnvelopeAction"
+              }
+            },
+            "LightOnOff": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "State": "OvenLowerCavity_DisplaySetLightOn"
+              }
+            }
+          }
+        },
+        "CycleOrder": {
+          "OvenUpperCavity": [
+            "OvenUpperCavity_CycleSetCommonModeCommonModeBake",
+            "ConvectBake",
+            "OvenUpperCavity_CycleSetCommonModeCommonModeConvectBake",
+            "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods",
+            "ConvectRoast",
+            "OvenUpperCavity_CycleSetCommonModeCommonModeConvectRoast",
+            "OvenUpperCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat",
+            "OvenUpperCavity_CycleSetConvectBakeFoodConvectBakeFoodFrozenPizza",
+            "OvenUpperCavity_CycleSetConvectBakeFoodConvectBakeFoodPastry",
+            "OvenUpperCavity_CycleSetCommonModeCommonModeBroil",
+            "OvenUpperCavity_CycleSetBreadProofBreadProofStandard",
+            "OvenUpperCavity_CycleSetBreadProofBreadProofRapid",
+            "OvenUpperCavity_CycleSetCommonModeCommonModeKeepWarm",
+            "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast1",
+            "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast2",
+            "OvenUpperCavity_CycleSetCommonModeCommonModeConvectSlowRoast3",
+            "ProbeCook",
+            "Manual",
+            "Auto"
+          ],
+          "OvenLowerCavity": [
+            "OvenLowerCavity_CycleSetCommonModeCommonModeBake",
+            "ConvectBake",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeConvectBake",
+            "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods",
+            "ConvectRoast",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeConvectRoast",
+            "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat",
+            "OvenLowerCavity_CycleSetConvectBakeFoodConvectBakeFoodFrozenPizza",
+            "OvenLowerCavity_CycleSetConvectBakeFoodConvectBakeFoodPastry",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeBroil",
+            "OvenLowerCavity_CycleSetBreadProofBreadProofStandard",
+            "OvenLowerCavity_CycleSetBreadProofBreadProofRapid",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeKeepWarm",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast1",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast2",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeConvectSlowRoast3",
+            "ProbeCook",
+            "Manual",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeBake",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeConvectBake",
+            "OvenLowerCavity_CycleSetCommonModeCommonModeConvectRoast",
+            "Auto",
+            "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodBakedGoods",
+            "OvenLowerCavity_CycleSetEasyConvectFoodEasyConvectFoodMeat"
+          ]
+        },
+        "ApplianceRulesets": {
+          "OvenUpperCavity": {
+            "Runtime": [
+              {
+                "ruleName": "Disable All Features when appliance is offline",
+                "description": "Disable All Features when appliance is offline",
+                "features": {
+                  "SetOven": false,
+                  "MeatProbe": false
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "Online",
+                  "valueOperator": "=",
+                  "value": 0
+                }
+              },
+              {
+                "ruleName": "Disable the Cook time EDIT for slowroast 4,8,12",
+                "description": "Disable the Cook time EDIT for slowroast 4,8,12",
+                "attributes": {
+                  "OvenUpperCavity_TimeSetCookTimeSet": false
+                },
+                "condition": {
+                  "type": "operation",
+                  "binaryOperator": "or",
+                  "left": {
+                    "type": "value",
+                    "key": "OvenUpperCavity_CycleSetCommonMode",
+                    "valueOperator": "=",
+                    "value": "17"
+                  },
+                  "right": {
+                    "type": "operation",
+                    "binaryOperator": "or",
+                    "left": {
+                      "type": "value",
+                      "key": "OvenUpperCavity_CycleSetCommonMode",
+                      "valueOperator": "=",
+                      "value": "35"
+                    },
+                    "right": {
+                      "type": "value",
+                      "key": "OvenUpperCavity_CycleSetCommonMode",
+                      "valueOperator": "=",
+                      "value": "36"
+                    }
+                  }
+                }
+              },
+              {
+                "ruleName": "Disable the modify temperature on press start on appliance state",
+                "description": "Disable the modify temperature on press start on appliance state",
+                "attributes": {
+                  "OvenUpperCavity_CycleSetTargetTemp": false
+                },
+                "actions": {
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleSendCommand": false
+                },
+                "condition": {
+                  "type": "operation",
+                  "binaryOperator": "and",
+                  "left": {
+                    "type": "value",
+                    "key": "OvenUpperCavity_OpStatusState",
+                    "valueOperator": "=",
+                    "value": 3
+                  },
+                  "right": {
+                    "type": "operation",
+                    "binaryOperator": "or",
+                    "left": {
+                      "type": "value",
+                      "key": "OvenUpperCavity_CycleSetCommonMode",
+                      "valueOperator": "!=",
+                      "value": 0
+                    },
+                    "right": {
+                      "type": "operation",
+                      "binaryOperator": "or",
+                      "left": {
+                        "type": "value",
+                        "key": "OvenUpperCavity_CycleSetConvectBakeFood",
+                        "valueOperator": "!=",
+                        "value": 0
+                      },
+                      "right": {
+                        "type": "operation",
+                        "binaryOperator": "or",
+                        "left": {
+                          "type": "value",
+                          "key": "OvenUpperCavity_CycleSetEasyConvectFood",
+                          "valueOperator": "!=",
+                          "value": 0
+                        },
+                        "right": {
+                          "type": "value",
+                          "key": "OvenUpperCavity_CycleSetBreadProof",
+                          "valueOperator": "!=",
+                          "value": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "ruleName": "Cancel the Running Cycle",
+                "description": "If Appliance is not idle, we can enable the cancel action",
+                "attributes": {
+                  "OvenUpperCavity_CycleSetCommonMode": false,
+                  "OvenUpperCavity_CycleSetConvectBakeFood": false,
+                  "OvenUpperCavity_CycleSetEasyConvectFood": false,
+                  "OvenUpperCavity_CycleSetBreadProof": false
+                },
+                "features": {
+          
+                },
+                "actions": {
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": true
+                },
+                "condition": {
+                  "type": "operation",
+                  "binaryOperator": "in",
+                  "key": "OvenUpperCavity_OpStatusState",
+                  "value": [
+                    1,
+                    2,
+                    4
+                  ]
+                }
+              },
+              {
+                "ruleName": "Disable the StartCommand button",
+                "description": "Appliance can not be started if the remote is disabled",
+                "actions": {
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleModifyCommand": false
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "XCat_RemoteSetRemoteControlEnable",
+                  "valueOperator": "=",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          "OvenLowerCavity": {
+            "Runtime": [
+              {
+                "ruleName": "Disable All Features when appliance is offline",
+                "description": "Disable All Features when appliance is offline",
+                "features": {
+                  "SetOven": false,
+                  "MeatProbe": false
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "Online",
+                  "valueOperator": "=",
+                  "value": 0
+                }
+              },
+              {
+                "ruleName": "Disable the StartCommand button",
+                "description": "Appliance can not be started if the remote is disabled",
+                "actions": {
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleModifyCommand": false
+                },
+                "condition": {
+                  "type": "value",
+                  "key": "XCat_RemoteSetRemoteControlEnable",
+                  "valueOperator": "=",
+                  "value": 0
+                }
+              },
+              {
+                "ruleName": "Disable the Cook time EDIT for slowroast 4,8,12",
+                "description": "Disable the Cook time EDIT for slowroast 4,8,12",
+                "attributes": {
+                  "OvenLowerCavity_TimeSetCookTimeSet": false
+                },
+                "condition": {
+                  "type": "operation",
+                  "binaryOperator": "or",
+                  "left": {
+                    "type": "value",
+                    "key": "OvenLowerCavity_CycleSetCommonMode",
+                    "valueOperator": "=",
+                    "value": "17"
+                  },
+                  "right": {
+                    "type": "operation",
+                    "binaryOperator": "or",
+                    "left": {
+                      "type": "value",
+                      "key": "OvenLowerCavity_CycleSetCommonMode",
+                      "valueOperator": "=",
+                      "value": "35"
+                    },
+                    "right": {
+                      "type": "value",
+                      "key": "OvenLowerCavity_CycleSetCommonMode",
+                      "valueOperator": "=",
+                      "value": "36"
+                    }
+                  }
+                }
+              },
+              {
+                "ruleName": "Disable the modify temperature on press start on appliance state",
+                "description": "Disable the modify temperature on press start on appliance state",
+                "attributes": {
+                  "OvenLowerCavity_CycleSetTargetTemp": false
+                },
+                "actions": {
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": false,
+                  "ActionSetCycleSendCommand": false
+                },
+                "condition": {
+                  "type": "operation",
+                  "binaryOperator": "and",
+                  "left": {
+                    "type": "value",
+                    "key": "OvenLowerCavity_OpStatusState",
+                    "valueOperator": "=",
+                    "value": 3
+                  },
+                  "right": {
+                    "type": "operation",
+                    "binaryOperator": "or",
+                    "left": {
+                      "type": "value",
+                      "key": "OvenLowerCavity_CycleSetCommonMode",
+                      "valueOperator": "!=",
+                      "value": 0
+                    },
+                    "right": {
+                      "type": "operation",
+                      "binaryOperator": "or",
+                      "left": {
+                        "type": "value",
+                        "key": "OvenLowerCavity_CycleSetConvectBakeFood",
+                        "valueOperator": "!=",
+                        "value": 0
+                      },
+                      "right": {
+                        "type": "operation",
+                        "binaryOperator": "or",
+                        "left": {
+                          "type": "value",
+                          "key": "OvenLowerCavity_CycleSetEasyConvectFood",
+                          "valueOperator": "!=",
+                          "value": 0
+                        },
+                        "right": {
+                          "type": "value",
+                          "key": "OvenLowerCavity_CycleSetBreadProof",
+                          "valueOperator": "!=",
+                          "value": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "ruleName": "Cancel the Running Cycle",
+                "description": "If Appliance is not idle, we can enable the cancel action",
+                "attributes": {
+                  "OvenLowerCavity_CycleSetCommonMode": false,
+                  "OvenLowerCavity_CycleSetConvectBakeFood": false,
+                  "OvenLowerCavity_CycleSetEasyConvectFood": false,
+                  "OvenLowerCavity_CycleSetBreadProof": false
+                },
+                "features": {
+                  
+                },
+                "actions": {
+                  "ActionSetCycleStartCommand": false,
+                  "ActionSetCycleCancelCommand": true,
+                  "ActionSetCycleModifyCommand": true
+                },
+                "condition": {
+                  "type": "operation",
+                  "binaryOperator": "in",
+                  "key": "OvenLowerCavity_OpStatusState",
+                  "value": [
+                    1,
+                    2,
+                    4
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "QueryParams": {
+          "OvenUpperCavity": {
+            "CycleHistory": {
+              "isLegacy": false,
+              "groupBy": "OvenUpperCavity_OpSetOperations",
+              "attributes": "OvenUpperCavity_CycleSetCommonMode,OvenUpperCavity_CycleSetEasyConvectFood,OvenUpperCavity_CycleSetTargetTemp,OvenUpperCavity_TimeSetCookTimeSet,OvenUpperCavity_CycleSetMeatProbeTargetTemp,OvenUpperCavity_OpSetCookTimeCompleteAction,OvenUpperCavity_TimeSetDelayTime"
+            }
+          },
+          "OvenLowerCavity": {
+            "CycleHistory": {
+              "isLegacy": false,
+              "groupBy": "OvenLowerCavity_OpSetOperations",
+              "attributes": "OvenLowerCavity_CycleSetCommonMode,OvenLowerCavity_CycleSetEasyConvectFood,OvenLowerCavity_CycleSetTargetTemp,OvenLowerCavity_TimeSetCookTimeSet,OvenLowerCavity_CycleSetMeatProbeTargetTemp,OvenLowerCavity_OpSetCookTimeCompleteAction,OvenLowerCavity_TimeSetDelayTime"
+            }
+          },
+          "Common": {
+            "FaultCodeHistory": {
+              "isLegacy": false,
+              "groupBy": "Sys_AlertStatusCustomerFaultCode",
+              "attributes": "Sys_AlertStatusCustomerFaultCode"
+            }
+          }
+        }
       }
     ],
     "Rulesets": [
@@ -2846,7 +4364,7 @@
         },
         "FilterCriteria": {
           "key": "OvenUpperCavity_OpSetOperations,OvenLowerCavity_OpSetOperations",
-          "value": "2 OR 4,2 OR 4"
+          "value": "2,2"
         }
       },
       {
@@ -2897,20 +4415,7 @@
     "Key": "DDM_COOKING_U2_KADoubleGas_V1",
     "Alerts": [
       {
-        "GenericAlerts": [],
         "ApplianceAlerts": [
-          {
-            "alertId": 589,
-            "name": "OvenOnWhileAway",
-            "attribute": "Online",
-            "type": "push",
-            "category": "Cooking",
-            "autodelete": false,
-            "autodisarm": false,
-            "autodisable": false,
-            "visible": false,
-            "enable": false
-          },
           {
             "alertId": 590,
             "name": "PreheatComplete",
@@ -2948,18 +4453,6 @@
             "enable": true
           },
           {
-            "alertId": 593,
-            "name": "CookTimerChanged",
-            "attribute": "OvenUpperCavity_OpStatusCookTimeState,OvenLowerCavity_OpStatusCookTimeState",
-            "type": "push",
-            "category": "Cooking",
-            "autodelete": false,
-            "autodisarm": false,
-            "autodisable": false,
-            "visible": true,
-            "enable": false
-          },
-          {
             "alertId": 594,
             "name": "CookTargetTempChanged",
             "attribute": "OvenUpperCavity_CycleSetTargetTemp,OvenLowerCavity_CycleSetTargetTemp",
@@ -2968,7 +4461,7 @@
             "autodelete": false,
             "autodisarm": false,
             "autodisable": false,
-            "visible": true,
+            "visible": false,
             "enable": false
           },
           {
@@ -2980,20 +4473,20 @@
             "autodelete": false,
             "autodisarm": false,
             "autodisable": false,
-            "visible": true,
+            "visible": false,
             "enable": true
           },
           {
-            "alertId": 596,
-            "name": "CookCycleCanceled",
-            "attribute": "OvenUpperCavity_CycleSetCommonMode,OvenLowerCavity_CycleSetCommonMode",
+            "alertId": 589,
+            "name": "OvenOnWhileAway",
+            "attribute": "Online",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
             "autodisarm": false,
             "autodisable": false,
-            "visible": true,
-            "enable": true
+            "visible": false,
+            "enable": false
           },
           {
             "alertId": 1023,
@@ -3018,6 +4511,30 @@
             "autodisable": false,
             "visible": true,
             "enable": true
+          },
+          {
+            "alertId": 596,
+            "name": "CookCycleCanceled",
+            "attribute": "OvenUpperCavity_TimeSetCookTimeOperations,OvenLowerCavity_TimeSetCookTimeOperations",
+            "type": "push",
+            "category": "Cooking",
+            "autodelete": false,
+            "autodisarm": false,
+            "autodisable": false,
+            "visible": true,
+            "enable": true
+          },
+          {
+            "alertId": 593,
+            "name": "CookTimerChanged",
+            "attribute": "OvenUpperCavity_TimeSetCookTimeSet,OvenLowerCavity_TimeSetCookTimeSet",
+            "type": "push",
+            "category": "Cooking",
+            "autodelete": false,
+            "autodisarm": false,
+            "autodisable": false,
+            "visible": false,
+            "enable": false
           }
         ]
       }
