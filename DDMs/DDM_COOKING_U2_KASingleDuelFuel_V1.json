@@ -1229,34 +1229,6 @@
         },
         {
           "IsTemplate": false,
-          "M2MAttributeName": "OvenUpperCavity_CulinaryCtrSetId",
-          "Instance": "OvenUpperCavity_CulinaryCtrSet",
-          "IsTimeSeries": false,
-          "DataType": "BEIntegerUnsigned16Bit",
-          "AttributeName": "Id",
-          "RangeValues": {
-            "StepSize": 1,
-            "Min": 0,
-            "Max": 65535
-          },
-          "DeviceIO": "RW",
-          "MappedAttributeName": "OvenUpperCavity_CulinaryCtrSetId",
-          "Default": 0,
-          "Key": "0x03110001"
-        },
-        {
-          "IsTemplate": false,
-          "M2MAttributeName": "OvenUpperCavity_CulinaryCtrSetVersion",
-          "Instance": "OvenUpperCavity_CulinaryCtrSet",
-          "IsTimeSeries": false,
-          "DataType": "String",
-          "AttributeName": "Version",
-          "DeviceIO": "RW",
-          "MappedAttributeName": "OvenUpperCavity_CulinaryCtrSetVersion",
-          "Key": "0x03110004"
-        },
-        {
-          "IsTemplate": false,
           "M2MAttributeName": "OvenLowerCavity_TimeSetCookTimeSet",
           "Instance": "OvenLowerCavity_TimeSet",
           "IsTimeSeries": false,
@@ -3137,47 +3109,7 @@
               }
             },
             "OvenUpperCavity": {
-              "AssistedCooking": {
-                "Visible": true,
-                "AvailableIn": [
-                  "US",
-                  "CA"
-                ],
-                "StateAttributes": {
-                  "MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
-                },
-                "StatusAttributes": [
-                  "OvenUpperCavity_CycleSetCommonMode",
-                  "OvenUpperCavity_CycleSetConvectBakeFood",
-                  "OvenUpperCavity_CycleSetEasyConvectFood",
-                  "OvenUpperCavity_CycleSetBreadProof",
-                  "OvenUpperCavity_CycleSetTargetTemp",
-                  "OvenUpperCavity_TimeStatusDelayTimeRemaining",
-                  "OvenUpperCavity_TimeStatusCookTimeRemaining",
-                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn",
-                  "OvenUpperCavity_OpStatusCookTimeState",
-                  "OvenUpperCavity_TimeSetCookTimeSet",
-                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
-                  "OvenUpperCavity_DisplStatusMeatProbeDisplayTemp",
-                  "OvenUpperCavity_TimeSetDelayTime",
-                  "OvenUpperCavity_DisplStatusDisplayTemp"
-                ],
-                "SendCommandAttributes": [
-                  "OvenUpperCavity_CulinaryCtrSetId",
-                  "OvenUpperCavity_CycleSetTargetTemp",
-                  "OvenUpperCavity_TimeSetCookTimeSet",
-                  "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
-                  "OvenUpperCavity_OpSetOperations"
-                ],
-                "SetOperationsMapping": {
-                  "Operation": "OvenUpperCavity_OpSetOperations",
-                  "TimerOperations": "OvenUpperCavity_TimeSetCookTimeOperations",
-                  "CookTime": "OvenUpperCavity_TimeSetCookTimeSet",
-                  "CookTemp": "OvenUpperCavity_CycleSetTargetTemp",
-                  "ProfileId": "OvenUpperCavity_CulinaryCtrSetId",
-                  "MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
-                }
-              },
+              
               "SetOven": {
                 "Visible": true,
                 "AvailableIn": [
@@ -3313,7 +3245,7 @@
                   "ruleName": "Disable All Features when appliance is offline",
                   "description": "Disable All Features when appliance is offline",
                   "features": {
-                    "AssistedCooking": false,
+                    
                     "SetOven": false,
                     "MeatProbe": false
                   },
@@ -3426,7 +3358,7 @@
                     "OvenUpperCavity_CycleSetBreadProof": false
                   },
                   "features": {
-                    "AssistedCooking": false
+                    
                   },
                   "actions": {
                     "ActionSetCycleStartCommand": false,
@@ -3512,17 +3444,40 @@
                 "FrozenBakeFoodPie"
               ]
             },
-            "attributeMapping": {
+            "AttributesMapping": {
               "OvenUpperCavity": {
-                "ConfigCavity_SetTempDefault": "OvenUpperCavity_CycleSetTargetTemp",
-                "ConfigTime_SetCookTimeMax": "OvenUpperCavity_TimeSetCookTimeSet",
-                "ConfigTime_SetCookTimeMin": "OvenUpperCavity_TimeSetCookTimeSet"
+                "CycleName": [
+                  "OvenUpperCavity_CycleSetCommonMode",
+                  "OvenUpperCavity_CycleSetConvectBakeFood",
+                  "OvenUpperCavity_CycleSetEasyConvectFood",
+                  "OvenUpperCavity_CycleSetBreadProof"
+                ],
+                "TimeElapsed": "OvenUpperCavity_TimeStatusCycleTimeElapsed",
+                "DoorOpen": "OvenUpperCavity_OpStatusDoorOpen",
+                "DoorLockStatus": "OvenUpperCavity_OpStatusDoorLocked",
+                "CookTimeCompleteAction": "OvenUpperCavity_OpSetCookTimeCompleteAction",
+                "CookTimerState": "OvenUpperCavity_OpStatusCookTimeState",
+                "MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                "MeatProbeTemp": "OvenUpperCavity_DisplStatusMeatProbeDisplayTemp",
+                "SabbathModeActive": "OvenUpperCavity_OpSetSabbathModeActive",
+                "MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+                "CavityTargetTemp": "OvenUpperCavity_CycleSetTargetTemp",
+                "CavityActualTemp": "OvenUpperCavity_DisplStatusDisplayTemp",
+                "CavityLight": "OvenUpperCavity_DisplaySetLightOn",
+                "DelayTimeRemaining": "OvenUpperCavity_TimeStatusDelayTimeRemaining",
+                "CookTimeSetTime": "OvenUpperCavity_TimeSetCookTimeSet",
+                "DelayTimeSetTime": "OvenUpperCavity_TimeSetDelayTime",
+                "CookTimeRemaining": "OvenUpperCavity_TimeStatusCookTimeRemaining",
+                "OpStatusState": "OvenUpperCavity_OpStatusState",
+                "OpStatusCleanOven": "OvenUpperCavity_OpStatusCleanOven",
+                "CustomCycleSetId": "OvenUpperCavity_CustomCycleSetId",
+                "CavityOperations": "OvenUpperCavity_OpSetOperations"
               },
-              "Mwo": {
-                "ConfigCavity_SetPowerDefault": "ConfigCavity_SetPowerDefault",
-                "ConfigCavity_SetTempDefault": "ConfigCavity_SetTempDefault",
-                "ConfigTime_SetCookTimeMax": "ConfigTime_SetCookTimeMax",
-                "ConfigTime_SetCookTimeMin": "ConfigTime_SetCookTimeMin"
+              "Common": {
+                "RemoteEnabledStatus": "XCat_RemoteSetRemoteControlEnable",
+                "TempDisplayUnits": "Sys_DisplaySetTempUnits",
+                "SabbathModeEnabled": "Sys_OperationSetSabbathModeEnabled",
+                "SysAlertStatusNotification" : "Sys_AlertStatusNotification"
               }
             }
           }
