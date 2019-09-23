@@ -4295,47 +4295,14 @@
                 "ruleName": "Disable All Features when appliance is offline",
                 "description": "Disable All Features when appliance is offline",
                 "features": {
-                  "SetOven": false,
-                  "MeatProbe": false
+                  "SetOven": true,
+                  "MeatProbe": true
                 },
                 "condition": {
                   "type": "value",
                   "key": "Online",
                   "valueOperator": "=",
                   "value": 0
-                }
-              },
-              {
-                "ruleName": "Disable the Cook time EDIT for slowroast 4,8,12",
-                "description": "Disable the Cook time EDIT for slowroast 4,8,12",
-                "attributes": {
-                  "OvenUpperCavity_TimeSetCookTimeSet": false
-                },
-                "condition": {
-                  "type": "operation",
-                  "binaryOperator": "or",
-                  "left": {
-                    "type": "value",
-                    "key": "OvenUpperCavity_CycleSetCommonMode",
-                    "valueOperator": "=",
-                    "value": "17"
-                  },
-                  "right": {
-                    "type": "operation",
-                    "binaryOperator": "or",
-                    "left": {
-                      "type": "value",
-                      "key": "OvenUpperCavity_CycleSetCommonMode",
-                      "valueOperator": "=",
-                      "value": "35"
-                    },
-                    "right": {
-                      "type": "value",
-                      "key": "OvenUpperCavity_CycleSetCommonMode",
-                      "valueOperator": "=",
-                      "value": "36"
-                    }
-                  }
                 }
               },
               {
@@ -4465,39 +4432,6 @@
                   "key": "XCat_RemoteSetRemoteControlEnable",
                   "valueOperator": "=",
                   "value": 0
-                }
-              },
-              {
-                "ruleName": "Disable the Cook time EDIT for slowroast 4,8,12",
-                "description": "Disable the Cook time EDIT for slowroast 4,8,12",
-                "attributes": {
-                  "OvenLowerCavity_TimeSetCookTimeSet": false
-                },
-                "condition": {
-                  "type": "operation",
-                  "binaryOperator": "or",
-                  "left": {
-                    "type": "value",
-                    "key": "OvenLowerCavity_CycleSetCommonMode",
-                    "valueOperator": "=",
-                    "value": "17"
-                  },
-                  "right": {
-                    "type": "operation",
-                    "binaryOperator": "or",
-                    "left": {
-                      "type": "value",
-                      "key": "OvenLowerCavity_CycleSetCommonMode",
-                      "valueOperator": "=",
-                      "value": "35"
-                    },
-                    "right": {
-                      "type": "value",
-                      "key": "OvenLowerCavity_CycleSetCommonMode",
-                      "valueOperator": "=",
-                      "value": "36"
-                    }
-                  }
                 }
               },
               {
