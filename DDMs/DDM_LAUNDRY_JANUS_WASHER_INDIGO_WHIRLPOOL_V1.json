@@ -1,7 +1,7 @@
 {
 	"ddm": {
-		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
-		"ddmName": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
+		"ddmName": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"modelNo": "WFW9620HW0,WFW9620HC0,WFW9620HBK0,test, WFW9620H,WFW9620HW1,WFW9620HC1,WFW9620HBK1",
 		"createdAt": 1549170000000,
 		"createdBy": "Preethy",
@@ -12,7 +12,7 @@
 		"ccURI": "API144_LAUNDRY_V19"
 	},
 	"dataModel": {
-		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"attributes": [
 			{
 				"IsTemplate": false,
@@ -1616,7 +1616,7 @@
 		]
 	},
 	"personality": {
-		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"capability": [
 			{
 				"Compatibility": {
@@ -4874,7 +4874,6 @@
 						"ExtraRinse": "WashCavity_CycleSetExtraRinseSelect",
 						"FresheningSelect": "WashCavity_CycleSetFresheningSelect",
 						"SteamEnable": "Cavity_CycleSetSteamEnable",
-						"DelayTime": "Cavity_TimeSetDelayTime",
 						"BulkDispense1Level": "WashCavity_OpStatusBulkDispense1Level",
 						"BulkDispense2Level": "WashCavity_OpStatusBulkDispense2Level",
 						"BulkDispense1Concentration": "WashCavity_OpSetBulkDispense1Concentration",
@@ -4893,7 +4892,7 @@
 						"SoundKeyAlert": "Sys_OpSetAlertToneVolume",
 						"DisplayBrightness": "Sys_DisplaySetBrightnessPercent",
 						"SoundKeyPress": "Sys_OpSetKeyPressToneVolume",
-						"Online": "online"
+						"Online": "Online"
 					}
 				},
 				"Features": {
@@ -4929,27 +4928,6 @@
 								"CA"
 							]
 						},
-						"RemoteStatus": {
-							"Visible": true,
-							"ReadOnly": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "XCat_RemoteSetRemoteControlEnable"
-							}
-						},
-						"Online": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "online"
-							}
-						},
 						"ComposedQuietMode": {
 							"Visible": true,
 							"AvailableIn": [
@@ -4968,16 +4946,6 @@
 								"Sys_OpSetAlertToneVolume",
 								"Sys_OpSetKeyPressToneVolume"
 							]
-						},
-						"ChangeApplianceLanguage": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Sys_DisplaySetLanguage"
-							}
 						},
 						"ChangeSoundKeyAlert": {
 							"Visible": true,
@@ -5309,10 +5277,20 @@
 									"ActionSetCycleCancelCommand": true
 								},
 								"condition": {
-									"type": "value",
-									"key": "Cavity_CycleStatusMachineState",
-									"valueOperator": "=",
-									"value": 7
+								"type": "operation",
+									"binaryOperator": "and",
+									"left": {
+										"type": "value",
+										"key": "Cavity_CycleStatusMachineState",
+										"valueOperator": "=",
+										"value": 7
+									},
+									"right": {
+										"type": "value",
+										"key": "XCat_RemoteSetRemoteControlEnable",
+										"valueOperator": "=",
+										"value": 1
+									}
 								}
 							},
 							{
@@ -5407,8 +5385,8 @@
 								}
 							},
 							{
-								"ruleName": "Disable pause if cycle is running",
-								"description": "Disable pause if cycle is running",
+								"ruleName": "Disable pause if cycle is not running",
+								"description": "Disable pause if cycle is not running",
 								"actions": {
 									"ActionSetCyclePauseCommand": false
 								},
@@ -5512,7 +5490,7 @@
 		]
 	},
 	"alerts": {
-		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"Key": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"alerts": [
 			{
 				"GenericAlerts": [
@@ -5619,7 +5597,7 @@
 		]
 	},
 	"Services": {
-		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_V1",
+		"_id": "DDM_LAUNDRY_JANUS_WASHER_INDIGO_WHIRLPOOL_DVT_V1",
 		"thirdPartyServices": [
 			{
 				"name": "Replenishment",
