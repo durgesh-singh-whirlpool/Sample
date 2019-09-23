@@ -1329,8 +1329,8 @@
 		"Key": "DDM_LAUNDRY_JANUS_DRYER_INDIGO_WHIRLPOOL_V1",
 		"capability": [
 			{
-			"Compatibility": {
-			"SkipPrefixForFavorites": [
+				"Compatibility": {
+					"SkipPrefixForFavorites": [
 						"Cavity_OpSetOperations",
 						"DrySys_OpSetDampNotificationToneVolume"
 					],
@@ -3516,8 +3516,8 @@
 								"ruleName": "Enable pause if cycle is running",
 								"description": "Enable pause if cycle is running",
 								"actions": {
-									"ActionSetCyclePauseCommand": true,
-									"ActionSetCycleCancelCommand": true
+									"ActionSetCyclePauseCommand": false,
+									"ActionSetCycleCancelCommand": false
 								},
 								"condition": {
 									"type": "operation",
@@ -3589,12 +3589,10 @@
 									"ActionSetCycleResumeCommand": false
 								},
 								"condition": {
-									
-										"type": "value",
-										"key": "Cavity_CycleStatusMachineState",
-										"valueOperator": "!=",
-										"value": 6
-									
+									"type": "value",
+									"key": "Cavity_CycleStatusMachineState",
+									"valueOperator": "!=",
+									"value": 6
 								}
 							},
 							{
@@ -3605,12 +3603,13 @@
 									"ActionSetCycleCancelCommand": true
 								},
 								"condition": {
-									
-										"type": "value",
-										"key": "Cavity_CycleStatusMachineState",
-										"valueOperator": "=",
-										"value": 7
-									
+									"type": "value",
+									"key": "Cavity_CycleStatusMachineState",
+									"valueOperator": "in",
+									"value": [
+										7,
+										8
+									]
 								}
 							},
 							{
@@ -3620,12 +3619,13 @@
 									"ActionSetCycleCancelCommand": false
 								},
 								"condition": {
-									
-										"type": "value",
-										"key": "Cavity_CycleStatusMachineState",
-										"valueOperator": "!=",
-										"value": 7
-									
+									"type": "value",
+									"key": "Cavity_CycleStatusMachineState",
+									"valueOperator": "in",
+									"value": [
+										7,
+										8
+									]
 								}
 							}
 						]
