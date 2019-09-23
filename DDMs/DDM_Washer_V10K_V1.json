@@ -3791,8 +3791,7 @@
 					"Common": {
 						"RemoteStatus": "Appliance_RemoteControlEnabled",
 						"Online": "Online",
-						"QuietModeEnabled": "Appliance_EnterQuietMode",
-						"RemoteEnabledStatus": "Appliance_RemoteControlEnabled"
+						"QuietModeEnabled": "Appliance_EnterQuietMode"
 					}
 				},
 				"Features": {
