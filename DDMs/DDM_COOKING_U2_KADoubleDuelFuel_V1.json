@@ -4555,7 +4555,7 @@
                     "type": "operation",
                     "binaryOperator": "in",
                     "key": "OvenLowerCavity_OpStatusState",
-                    "value": [1, 2, 4]   
+                    "value": [2, 4]   
                 }
               }
             ]
