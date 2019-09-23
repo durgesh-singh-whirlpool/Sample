@@ -3521,7 +3521,7 @@
 								},
 								"condition": {
 									"type": "operation",
-									"binaryOperator": "and",
+									"binaryOperator": "or",
 									"left": {
 										"type": "value",
 										"key": "Cavity_CycleStatusMachineState",
@@ -3545,7 +3545,7 @@
 								},
 								"condition": {
 									"type": "operation",
-									"binaryOperator": "and",
+									"binaryOperator": "or",
 									"left": {
 										"type": "value",
 										"key": "Cavity_CycleStatusMachineState",
@@ -3602,7 +3602,8 @@
 								"ruleName": "Enable Pause if cycle running",
 								"description": "Enable Pause if cycle running",
 								"actions": {
-									"ActionSetCyclePauseCommand": true
+									"ActionSetCyclePauseCommand": true,
+									"ActionSetCycleCancelCommand": true
 								},
 								"condition": {
 									
