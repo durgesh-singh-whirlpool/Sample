@@ -1,7 +1,7 @@
 {
   "_id": "DDM_COOKING_U2_KADoubleDuelFuel_V1",
   "_rev": "75-895aa1f651b35ef21dd23ff33023a840",
-  "DDM": {
+  "ddm": {
     "_id": "DDM_COOKING_U2_KADoubleDuelFuel_V1",
     "ddmName": "DDM_COOKING_U2_KADoubleDuelFuel_V1",
     "modelNumber": "KFDC558HSS00, KFDC558HBK00, KFDC558HSD00, KFDC558HMB00, KFDC558HIB00, KFDC558HMH00",
@@ -13,7 +13,7 @@
     "ccuriVersion": "1",
     "ccURI": "API144_COOKING_V24"
   },
-  "DataModel": {
+  "dataModel": {
     "Key": "DDM_COOKING_U2_KADoubleDuelFuel_V1",
     "attributes": [
       {
@@ -2101,9 +2101,9 @@
       }
     ]
   },
-  "Personality": {
+  "personality": {
     "Key": "DDM_COOKING_U2_KADoubleDuelFuel_V1",
-    "Capability": [
+    "capability": [
       {
         "CavityOrder": [
           "OvenLowerCavity",
@@ -4426,7 +4426,7 @@
                     "type": "operation",
                     "binaryOperator": "in",
                     "key": "OvenUpperCavity_OpStatusState",
-                    "value": [1, 2, 4]   
+                    "value": [2, 4]   
                 }
               },
               {
