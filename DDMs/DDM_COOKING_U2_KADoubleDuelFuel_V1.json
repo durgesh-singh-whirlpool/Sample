@@ -3967,6 +3967,47 @@
             }
           },
           "OvenUpperCavity": {
+            "AssistedCooking": {
+              "Visible": true,
+              "AvailableIn": [
+                "US",
+                "CA"
+              ],
+              "StateAttributes": {
+                "MeatProbeStatus": "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
+              },
+              "StatusAttributes": [
+                "OvenUpperCavity_CycleSetCommonMode",
+                "OvenUpperCavity_CycleSetConvectBakeFood",
+                "OvenUpperCavity_CycleSetEasyConvectFood",
+                "OvenUpperCavity_CycleSetBreadProof",
+                "OvenUpperCavity_CycleSetTargetTemp",
+                "OvenUpperCavity_TimeStatusDelayTimeRemaining",
+                "OvenUpperCavity_TimeStatusCookTimeRemaining",
+                "OvenUpperCavity_AlertStatusMeatProbePluggedIn",
+                "OvenUpperCavity_OpStatusCookTimeState",
+                "OvenUpperCavity_TimeSetCookTimeSet",
+                "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                "OvenUpperCavity_DisplStatusMeatProbeDisplayTemp",
+                "OvenUpperCavity_TimeSetDelayTime",
+                "OvenUpperCavity_DisplStatusDisplayTemp"
+              ],
+              "SendCommandAttributes": [
+                "OvenUpperCavity_CulinaryCtrSetId",
+                "OvenUpperCavity_CycleSetTargetTemp",
+                "OvenUpperCavity_TimeSetCookTimeSet",
+                "OvenUpperCavity_CycleSetMeatProbeTargetTemp",
+                "OvenUpperCavity_OpSetOperations"
+              ],
+              "SetOperationsMapping": {
+                "Operation": "OvenUpperCavity_OpSetOperations",
+                "TimerOperations": "OvenUpperCavity_TimeSetCookTimeOperations",
+                "CookTime": "OvenUpperCavity_TimeSetCookTimeSet",
+                "CookTemp": "OvenUpperCavity_CycleSetTargetTemp",
+                "ProfileId": "OvenUpperCavity_CulinaryCtrSetId",
+                "MeatProbeTargetTemp": "OvenUpperCavity_CycleSetMeatProbeTargetTemp"
+              }
+            },
             "SetOven": {
               "Visible": true,
               "AvailableIn": [
