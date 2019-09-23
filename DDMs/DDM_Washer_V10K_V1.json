@@ -1731,7 +1731,12 @@
 						"CycleOptionsWHR_ExtraRinse",
 						"CycleOptionsWHR_Presoak",
 						"System_Command"
-					]
+					],
+					 "AdditionalMobileActions": {
+            "StartCycle": {
+              "SetOnDisplayOperations": "SetOnDisplay"
+            }
+          }
 				},
 				"CavityOrder": [
 					"WashCavity"
@@ -3779,7 +3784,9 @@
 						"SpinSpeed": "CycleOptionsWHR_SpinSpeed",
 						"Presoak": "CycleOptionsWHR_Presoak",
 						"ExtraRinse": "CycleOptionsWHR_ExtraRinse",
-						"DelayTime": "Compartment_DelayMinutes"
+						"DelayTime": "Compartment_DelayMinutes",
+						"SteamEnable": "CycleOptionsWHR_DeepClean",
+						"OxiClean":"CycleOptionsWHR_OxiClean"
 					},
 					"Common": {
 						"RemoteStatus": "Appliance_RemoteControlEnabled",
@@ -3867,8 +3874,7 @@
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
 								"CycleOptionsWHR_Presoak",
-								"CycleOptionsWHR_ExtraRinse",
-								"CycleOptionsWHR_Presoak"
+								"CycleOptionsWHR_ExtraRinse"
 							],
 							"SendCommandAttributes": [
 								"Compartment_DownloadCyclePersist",
@@ -3922,7 +3928,6 @@
 								"CycleOptionsWHR_SpinSpeed",
 								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
-								"CycleOptionsWHR_Presoak",
 								"System_Command"
 							],
 							"SetOperationsMapping": {
@@ -3949,8 +3954,7 @@
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
 								"CycleOptionsWHR_Presoak",
-								"CycleOptionsWHR_ExtraRinse",
-								"CycleOptionsWHR_Presoak"
+								"CycleOptionsWHR_ExtraRinse"
 							],
 							"SendCommandAttributes": [
 								"Compartment_DownloadCyclePersist",
@@ -3964,7 +3968,6 @@
 								"CycleOptionsWHR_SpinSpeed",
 								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
-								"CycleOptionsWHR_Presoak",
 								"System_Command"
 							],
 							"SetOperationsMapping": {
@@ -3987,7 +3990,6 @@
 								"CycleOptionsWHR_OxiClean",
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
-								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
 								"CycleOptionsWHR_Presoak",
 								"System_Command"
@@ -4016,7 +4018,6 @@
 								"CycleOptionsWHR_OxiClean",
 								"CycleOptionsWHR_SoilLevel",
 								"CycleOptionsWHR_SpinSpeed",
-								"CycleOptionsWHR_Presoak",
 								"CycleOptionsWHR_ExtraRinse",
 								"CycleOptionsWHR_Presoak",
 								"System_Command"
@@ -4121,60 +4122,17 @@
 								},
 								"condition": {
 									"type": "operation",
-									"binaryOperator": "or",
-									"left": {
-										"type": "value",
-										"key": "Compartment_State",
-										"valueOperator": "=",
-										"value": 1
-									},
-									"right": {
-									"type": "operation",
-									"binaryOperator": "or",
-									"left": {
-										"type": "value",
-										"key": "Compartment_State",
-										"valueOperator": "=",
-										"value": 5
-									},
-									"right": {
-									"type": "operation",
-									"binaryOperator": "or",
-									"left": {
-										"type": "value",
-										"key": "Compartment_State",
-										"valueOperator": "=",
-										"value": 6
-									},
-									"right": {
-									"type": "operation",
-									"binaryOperator": "or",
-									"left": {
-										"type": "value",
-										"key": "Compartment_State",
-										"valueOperator": "=",
-										"value": 8
-									},
-									"right": {
-									"type": "operation",
-									"binaryOperator": "or",
-									"left": {
-										"type": "value",
-										"key": "Compartment_State",
-										"valueOperator": "=",
-										"value": 2
-									},
-									"right": {
-										"type": "value",
-										"key": "Compartment_State",
-										"valueOperator": "=",
-										"value": 18
+									"key": "Compartment_State",
+									"valueOperator": "in",
+									"value": [
+										1,
+										5,
+										6,
+										8,
+										2,
+										18
+									]
 									
-									}
-									}
-									}
-									}
-									}
 								}
 							},
 							{
