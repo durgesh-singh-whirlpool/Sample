@@ -3540,7 +3540,6 @@
 								"ruleName": "Disable Pause when not running",
 								"description": "Disable pause when not running",
 								"actions": {
-									"ActionSetCyclePauseCommand": false,
 									"ActionSetCycleResumeCommand": true
 								},
 								"condition": {
