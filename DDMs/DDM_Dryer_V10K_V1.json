@@ -3074,16 +3074,6 @@
 								"CA"
 							]
 						},
-						"Online": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Online"
-							}
-						},
 						"QuietMode": {
 							"Visible": true,
 							"AvailableIn": [
