@@ -4360,7 +4360,7 @@
                 }
               }
             },
-            "SetOven": {
+            "SetCycle": {
               "OvenUpperCavity_CycleSetCommonModeCommonModeBake": {
                 "Name": "Bake",
                 "Attributes": {
