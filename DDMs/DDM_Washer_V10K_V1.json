@@ -3821,26 +3821,6 @@
 								"CA"
 							]
 						},
-						"RemoteStatus": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Appliance_RemoteControlEnabled"
-							}
-						},
-						"Online": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Online"
-							}
-						},
 						"QuietMode": {
 							"Visible": true,
 							"AvailableIn": [
@@ -4122,17 +4102,60 @@
 								},
 								"condition": {
 									"type": "operation",
-									"valueOperator": "in",
-									"key": "Compartment_State",
-									"value": [
-										1,
-										5,
-										6,
-										8,
-										2,
-										18
-									]	
-								}
+									"binaryOperator": "or",
+                  "left": {
+                    "type": "value",
+                    "key": "Compartment_State",
+                    "valueOperator": "=",
+                    "value": 1
+                  },
+                  "right": {
+                    "type": "operation",
+                    "binaryOperator": "or",
+                    "left": {
+                      "type": "value",
+                      "key": "Compartment_State",
+                      "valueOperator": "=",
+                      "value": 5
+                    },
+                    "right": {
+                      "type": "operation",
+                      "binaryOperator": "or",
+                      "left": {
+                        "type": "value",
+                        "key": "Compartment_State",
+                        "valueOperator": "=",
+                        "value": 6
+                      },
+                      "right": {
+                        "type": "operation",
+                        "binaryOperator": "or",
+                        "left": {
+                          "type": "value",
+                          "key": "Compartment_State",
+                          "valueOperator": "=",
+                          "value": 8
+                        },
+                        "right": {
+                           "type": "operation",
+                        "binaryOperator": "or",
+                        "left": {
+                          "type": "value",
+                          "key": "Compartment_State",
+                          "valueOperator": "=",
+                          "value": 2
+                        },
+                        "right": {
+                          "type": "value",
+                          "key": "Compartment_State",
+                          "valueOperator": "=",
+                          "value": 18
+                        }
+                        }
+                      }
+                    }
+                  }
+                }
 							},
 							{
 								"ruleName": "Disable Cancel, Modify, options if appliance is Complete",
