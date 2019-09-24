@@ -4852,26 +4852,6 @@
 								"CA"
 							]
 						},
-						"RemoteStatus": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "XCat_RemoteSetRemoteControlEnable"
-							}
-						},
-						"Online": {
-							"Visible": true,
-							"AvailableIn": [
-								"US",
-								"CA"
-							],
-							"StateAttributes": {
-								"State": "Online"
-							}
-						},
 						"ChangeApplianceLanguage": {
 							"Visible": true,
 							"AvailableIn": [
