@@ -13,7 +13,8 @@
 	},
 	"dataModel": {
 		"Key": "DDM_Washer_V10K_V1",
-		"attributes": [{
+		"attributes": [
+			{
 				"IsTemplate": false,
 				"M2MAttributeName": "ApplianceSubscribeListVersion",
 				"Instance": "",
@@ -1714,2615 +1715,2626 @@
 	},
 	"personality": {
 		"Key": "DDM_Washer_V10K_V1",
-		"capability": [{
-			"Compatibility": {
-				"SkipPrefixForFavorites": [
-					"Compartment_DownloadCyclePersist",
-					"CycleOptionsWHR_WhatTo",
-					"CycleOptionsWHR_HowTo",
-					"Compartment_CycleId",
-					"CycleOptionsWHR_Temperature",
-					"CycleOptionsWHR_DeepClean",
-					"CycleOptionsWHR_OxiClean",
-					"CycleOptionsWHR_SoilLevel",
-					"CycleOptionsWHR_SpinSpeed",
-					"CycleOptionsWHR_ExtraRinse",
-					"CycleOptionsWHR_Presoak",
-					"System_Command"
-				],
-				"AdditionalMobileActions": {
-					"StartCycle": {
-						"SetOnDisplayOperations": "SetOnDisplay"
-					}
-				}
-			},
-			"CavityOrder": [
-				"WashCavity"
-			],
-			"Capability": {
-				"WashCavity": {
-					"CapabilityData": {
-						"Compartment_CycleIdMixed_Normal": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Heavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Mixed",
-								"CycleOptionsWHR_HowTo": "Normal",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdMixed_Quick": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Light"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Mixed",
-								"CycleOptionsWHR_HowTo": "Quick",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdMixed_Cold": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp0"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "VeryHeavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Mixed",
-								"CycleOptionsWHR_HowTo": "Cold",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdMixed_DeepWater": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "VeryHeavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Mixed",
-								"CycleOptionsWHR_HowTo": "DeepWater",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdMixed_ColorLast": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp1"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Light"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Mixed",
-								"CycleOptionsWHR_HowTo": "ColorLast",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdCasuals_Normal": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Medium"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Casuals",
-								"CycleOptionsWHR_HowTo": "Normal",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdCasuals_Quick": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Light"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Casuals",
-								"CycleOptionsWHR_HowTo": "Quick",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdCasuals_Cold": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp0"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Heavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Casuals",
-								"CycleOptionsWHR_HowTo": "Cold",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdCasuals_DeepWater": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Heavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Casuals",
-								"CycleOptionsWHR_HowTo": "DeepWater",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdCasuals_ColorLast": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp1"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Medium"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Casuals",
-								"CycleOptionsWHR_HowTo": "ColorLast",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdWhites_Normal": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp4"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "VeryHeavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Whites",
-								"CycleOptionsWHR_HowTo": "Normal",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdWhites_Quick": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp4"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Light"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Whites",
-								"CycleOptionsWHR_HowTo": "Quick",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdWhites_Cold": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp0"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "VeryHeavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Whites",
-								"CycleOptionsWHR_HowTo": "Cold",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdWhites_DeepWater": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp3"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed2"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "VeryHeavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Whites",
-								"CycleOptionsWHR_HowTo": "DeepWater",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdDelicates_Normal": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp1"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Medium"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Delicates",
-								"CycleOptionsWHR_HowTo": "Normal",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdDelicates_Quick": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp1"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Light"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Delicates",
-								"CycleOptionsWHR_HowTo": "Quick",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdDelicates_Cold": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp0"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Heavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Delicates",
-								"CycleOptionsWHR_HowTo": "Cold",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdDelicates_DeepWater": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp1"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Heavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Delicates",
-								"CycleOptionsWHR_HowTo": "DeepWater",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdDelicates_ColorLast": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp1"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Medium"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "Delicates",
-								"CycleOptionsWHR_HowTo": "ColorLast",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdBulkySheets_Normal": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Medium"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "BulkySheets",
-								"CycleOptionsWHR_HowTo": "Normal",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdBulkySheets_Quick": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Light"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "BulkySheets",
-								"CycleOptionsWHR_HowTo": "Quick",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdBulkySheets_Cold": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp0"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Heavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "BulkySheets",
-								"CycleOptionsWHR_HowTo": "Cold",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdBulkySheets_DeepWater": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp2"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Heavy"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "BulkySheets",
-								"CycleOptionsWHR_HowTo": "DeepWater",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Compartment_CycleIdBulkySheets_ColorLast": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Temperature": {
-									"Enumeration": [
-										"Temp0",
-										"Temp1",
-										"Temp2",
-										"Temp3",
-										"Temp4"
-									],
-									"Default": "Temp1"
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SoilLevel": {
-									"Enumeration": [
-										"Light",
-										"Medium",
-										"Heavy",
-										"VeryHeavy"
-									],
-									"Default": "Medium"
-								}
-							},
-							"NonEditable": {
-								"CycleOptionsWHR_WhatTo": "BulkySheets",
-								"CycleOptionsWHR_HowTo": "ColorLast",
-								"Compartment_DownloadCyclePersist": "false"
-							}
-						},
-						"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp0",
-								"CycleOptionsWHR_SoilLevel": "Heavy",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
-							}
-						},
-						"Cavity_CycleSetCycleNameBrightColors": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp0",
-								"CycleOptionsWHR_SoilLevel": "Light",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
-							}
-						},
-						"Cavity_CycleSetCycleNameBusinessCasual": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp2",
-								"CycleOptionsWHR_SoilLevel": "Medium",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
-							}
-						},
-						"Cavity_CycleSetCycleNameComforters": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp2",
-								"CycleOptionsWHR_SoilLevel": "Heavy",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
-							}
-						},
-						"Cavity_CycleSetCycleNameHandwashFabrics": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp0",
-								"CycleOptionsWHR_SoilLevel": "Light",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
-							}
-						},
-						"Cavity_CycleSetCycleNameHeavyDuty": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp4",
-								"CycleOptionsWHR_SoilLevel": "VeryHeavy",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
-							}
-						},
-						"Cavity_CycleSetCycleNameIntimates": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp0",
-								"CycleOptionsWHR_SoilLevel": "Light",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
-							}
-						},
-						"Cavity_CycleSetCycleNameSleepingBags": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp2",
-								"CycleOptionsWHR_SoilLevel": "Heavy",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
-							}
-						},
-						"Cavity_CycleSetCycleNameSwimwear": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp0",
-								"CycleOptionsWHR_SoilLevel": "Light",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
-							}
-						},
-						"Cavity_CycleSetCycleNameTowels": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_Temperature": "Temp2",
-								"CycleOptionsWHR_SoilLevel": "Heavy",
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
-							}
-						},
-						"Compartment_CycleIdRinseSpin": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false,
-										true
-									],
-									"Default": true
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_SpinSpeed": {
-									"Enumeration": [
-										"SpinSpeed0",
-										"SpinSpeed1",
-										"SpinSpeed2"
-									],
-									"Default": "SpinSpeed1"
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								}
-							}
-						},
-						"Compartment_CycleIdCleanWasher": {
-							"Required": {
-								"CycleOptionsWHR_ExtraRinse": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_OxiClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_DeepClean": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								},
-								"CycleOptionsWHR_Presoak": {
-									"Bool": [
-										false
-									],
-									"Default": false
-								}
-							}
-						},
-						"Compartment_CycleIdLoadFresh": {
-							"Required": {},
-							"NonEditable": {
-								"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
-							}
+		"capability": [
+			{
+				"Compatibility": {
+					"SkipPrefixForFavorites": [
+						"Compartment_DownloadCyclePersist",
+						"CycleOptionsWHR_WhatTo",
+						"CycleOptionsWHR_HowTo",
+						"Compartment_CycleId",
+						"CycleOptionsWHR_Temperature",
+						"CycleOptionsWHR_DeepClean",
+						"CycleOptionsWHR_OxiClean",
+						"CycleOptionsWHR_SoilLevel",
+						"CycleOptionsWHR_SpinSpeed",
+						"CycleOptionsWHR_ExtraRinse",
+						"CycleOptionsWHR_Presoak",
+						"System_Command"
+					],
+					"AdditionalMobileActions": {
+						"StartCycle": {
+							"SetOnDisplayOperations": "SetOnDisplay"
 						}
-					},
-					"SetCycle": {
-						"Mixed": {
+					}
+				},
+				"CavityOrder": [
+					"WashCavity"
+				],
+				"Capability": {
+					"WashCavity": {
+						"CapabilityData": {
 							"Compartment_CycleIdMixed_Normal": {
-								"Name": "MixedNormal",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Mixed_Normal"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Heavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_Quick": {
-								"Name": "MixedQuick",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Mixed_Quick"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Light"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_Cold": {
-								"Name": "MixedCold",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Mixed_Cold"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp0"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "VeryHeavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_DeepWater": {
-								"Name": "MixedDeepWater",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Mixed_DeepWater"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "VeryHeavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdMixed_ColorLast": {
-								"Name": "MixedColorLast",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Mixed_ColorLast"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp1"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Light"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Mixed",
+									"CycleOptionsWHR_HowTo": "ColorLast",
+									"Compartment_DownloadCyclePersist": "false"
 								}
-							}
-						},
-						"Casuals": {
+							},
 							"Compartment_CycleIdCasuals_Normal": {
-								"Name": "CasualsNormal",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Casuals_Normal"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Medium"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_Quick": {
-								"Name": "CasualsQuick",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Casuals_Quick"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Light"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_Cold": {
-								"Name": "CasualsCold",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Casuals_Cold"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp0"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Heavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_DeepWater": {
-								"Name": "CasualsDeepWater",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Casuals_DeepWater"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Heavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdCasuals_ColorLast": {
-								"Name": "CasualsColorLast",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Casuals_ColorLast"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp1"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Medium"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Casuals",
+									"CycleOptionsWHR_HowTo": "ColorLast",
+									"Compartment_DownloadCyclePersist": "false"
 								}
-							}
-						},
-						"Whites": {
+							},
 							"Compartment_CycleIdWhites_Normal": {
-								"Name": "WhitesNormal",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Whites_Normal"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp4"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "VeryHeavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Whites",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdWhites_Quick": {
-								"Name": "WhitesQuick",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Whites_Quick"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp4"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Light"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Whites",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdWhites_Cold": {
-								"Name": "WhitesCold",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Whites_Cold"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp0"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "VeryHeavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Whites",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdWhites_DeepWater": {
-								"Name": "WhitesDeepWater",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Whites_DeepWater"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp3"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed2"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "VeryHeavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Whites",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
-							}
-						},
-						"Delicates": {
+							},
 							"Compartment_CycleIdDelicates_Normal": {
-								"Name": "DelicatesNormal",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Delicates_Normal"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp1"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Medium"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_Quick": {
-								"Name": "DelicatesQuick",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Delicates_Quick"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp1"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Light"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_Cold": {
-								"Name": "DelicatesCold",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Delicates_Cold"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp0"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Heavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_DeepWater": {
-								"Name": "DelicatesDeepWater",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Delicates_DeepWater"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp1"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Heavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdDelicates_ColorLast": {
-								"Name": "DelicatesColorLast",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"Delicates_ColorLast"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp1"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Medium"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "Delicates",
+									"CycleOptionsWHR_HowTo": "ColorLast",
+									"Compartment_DownloadCyclePersist": "false"
 								}
-							}
-						},
-						"BulkySheets": {
+							},
 							"Compartment_CycleIdBulkySheets_Normal": {
-								"Name": "BulkySheets_Normal",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"BulkySheets_Normal"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Medium"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "Normal",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_Quick": {
-								"Name": "BulkySheetsQuick",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"BulkySheets_Quick"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Light"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "Quick",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_Cold": {
-								"Name": "BulkySheetsCold",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"BulkySheets_Cold"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp0"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Heavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "Cold",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_DeepWater": {
-								"Name": "BulkySheetsDeepWater",
-								"Attributes": {
-									"Compartment_CycleId": [
-										"BulkySheets_DeepWater"
-									]
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp2"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Heavy"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "DeepWater",
+									"Compartment_DownloadCyclePersist": "false"
 								}
 							},
 							"Compartment_CycleIdBulkySheets_ColorLast": {
-								"Name": "BulkySheetsColorLast",
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Temperature": {
+										"Enumeration": [
+											"Temp0",
+											"Temp1",
+											"Temp2",
+											"Temp3",
+											"Temp4"
+										],
+										"Default": "Temp1"
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SoilLevel": {
+										"Enumeration": [
+											"Light",
+											"Medium",
+											"Heavy",
+											"VeryHeavy"
+										],
+										"Default": "Medium"
+									}
+								},
+								"NonEditable": {
+									"CycleOptionsWHR_WhatTo": "BulkySheets",
+									"CycleOptionsWHR_HowTo": "ColorLast",
+									"Compartment_DownloadCyclePersist": "false"
+								}
+							},
+							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Heavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
+								}
+							},
+							"Cavity_CycleSetCycleNameBrightColors": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Light",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
+								}
+							},
+							"Cavity_CycleSetCycleNameBusinessCasual": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_SoilLevel": "Medium",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameComforters": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_SoilLevel": "Heavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameHandwashFabrics": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Light",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameHeavyDuty": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp4",
+									"CycleOptionsWHR_SoilLevel": "VeryHeavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
+								}
+							},
+							"Cavity_CycleSetCycleNameIntimates": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Light",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameSleepingBags": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_SoilLevel": "Heavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameSwimwear": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp0",
+									"CycleOptionsWHR_SoilLevel": "Light",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							},
+							"Cavity_CycleSetCycleNameTowels": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_Temperature": "Temp2",
+									"CycleOptionsWHR_SoilLevel": "Heavy",
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed2"
+								}
+							},
+							"Compartment_CycleIdRinseSpin": {
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false,
+											true
+										],
+										"Default": true
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_SpinSpeed": {
+										"Enumeration": [
+											"SpinSpeed0",
+											"SpinSpeed1",
+											"SpinSpeed2"
+										],
+										"Default": "SpinSpeed1"
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									}
+								}
+							},
+							"Compartment_CycleIdCleanWasher": {
+								"Required": {
+									"CycleOptionsWHR_ExtraRinse": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_OxiClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_DeepClean": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									},
+									"CycleOptionsWHR_Presoak": {
+										"Bool": [
+											false
+										],
+										"Default": false
+									}
+								}
+							},
+							"Compartment_CycleIdLoadFresh": {
+								"Required": {},
+								"NonEditable": {
+									"CycleOptionsWHR_SpinSpeed": "SpinSpeed1"
+								}
+							}
+						},
+						"SetCycle": {
+							"Mixed": {
+								"Compartment_CycleIdMixed_Normal": {
+									"Name": "MixedNormal",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Mixed_Normal"
+										]
+									}
+								},
+								"Compartment_CycleIdMixed_Quick": {
+									"Name": "MixedQuick",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Mixed_Quick"
+										]
+									}
+								},
+								"Compartment_CycleIdMixed_Cold": {
+									"Name": "MixedCold",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Mixed_Cold"
+										]
+									}
+								},
+								"Compartment_CycleIdMixed_DeepWater": {
+									"Name": "MixedDeepWater",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Mixed_DeepWater"
+										]
+									}
+								},
+								"Compartment_CycleIdMixed_ColorLast": {
+									"Name": "MixedColorLast",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Mixed_ColorLast"
+										]
+									}
+								}
+							},
+							"Casuals": {
+								"Compartment_CycleIdCasuals_Normal": {
+									"Name": "CasualsNormal",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Casuals_Normal"
+										]
+									}
+								},
+								"Compartment_CycleIdCasuals_Quick": {
+									"Name": "CasualsQuick",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Casuals_Quick"
+										]
+									}
+								},
+								"Compartment_CycleIdCasuals_Cold": {
+									"Name": "CasualsCold",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Casuals_Cold"
+										]
+									}
+								},
+								"Compartment_CycleIdCasuals_DeepWater": {
+									"Name": "CasualsDeepWater",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Casuals_DeepWater"
+										]
+									}
+								},
+								"Compartment_CycleIdCasuals_ColorLast": {
+									"Name": "CasualsColorLast",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Casuals_ColorLast"
+										]
+									}
+								}
+							},
+							"Whites": {
+								"Compartment_CycleIdWhites_Normal": {
+									"Name": "WhitesNormal",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Whites_Normal"
+										]
+									}
+								},
+								"Compartment_CycleIdWhites_Quick": {
+									"Name": "WhitesQuick",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Whites_Quick"
+										]
+									}
+								},
+								"Compartment_CycleIdWhites_Cold": {
+									"Name": "WhitesCold",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Whites_Cold"
+										]
+									}
+								},
+								"Compartment_CycleIdWhites_DeepWater": {
+									"Name": "WhitesDeepWater",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Whites_DeepWater"
+										]
+									}
+								}
+							},
+							"Delicates": {
+								"Compartment_CycleIdDelicates_Normal": {
+									"Name": "DelicatesNormal",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Delicates_Normal"
+										]
+									}
+								},
+								"Compartment_CycleIdDelicates_Quick": {
+									"Name": "DelicatesQuick",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Delicates_Quick"
+										]
+									}
+								},
+								"Compartment_CycleIdDelicates_Cold": {
+									"Name": "DelicatesCold",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Delicates_Cold"
+										]
+									}
+								},
+								"Compartment_CycleIdDelicates_DeepWater": {
+									"Name": "DelicatesDeepWater",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Delicates_DeepWater"
+										]
+									}
+								},
+								"Compartment_CycleIdDelicates_ColorLast": {
+									"Name": "DelicatesColorLast",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"Delicates_ColorLast"
+										]
+									}
+								}
+							},
+							"BulkySheets": {
+								"Compartment_CycleIdBulkySheets_Normal": {
+									"Name": "BulkySheets_Normal",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"BulkySheets_Normal"
+										]
+									}
+								},
+								"Compartment_CycleIdBulkySheets_Quick": {
+									"Name": "BulkySheetsQuick",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"BulkySheets_Quick"
+										]
+									}
+								},
+								"Compartment_CycleIdBulkySheets_Cold": {
+									"Name": "BulkySheetsCold",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"BulkySheets_Cold"
+										]
+									}
+								},
+								"Compartment_CycleIdBulkySheets_DeepWater": {
+									"Name": "BulkySheetsDeepWater",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"BulkySheets_DeepWater"
+										]
+									}
+								},
+								"Compartment_CycleIdBulkySheets_ColorLast": {
+									"Name": "BulkySheetsColorLast",
+									"Attributes": {
+										"Compartment_CycleId": [
+											"BulkySheets_ColorLast"
+										]
+									}
+								}
+							},
+							"Default": "Compartment_CycleIdMixed_Normal"
+						},
+						"SetDownloadAndGo": {
+							"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
+								"Name": "AthleticHighPerformanceWear",
 								"Attributes": {
-									"Compartment_CycleId": [
-										"BulkySheets_ColorLast"
+									"CycleOptionsWHR_WhatTo": [
+										"Mixed"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
 									]
 								}
-							}
-						},
-						"Default": "Compartment_CycleIdMixed_Normal"
-					},
-					"SetDownloadAndGo": {
-						"Cavity_CycleSetCycleNameAthleticHighPerformanceWear": {
-							"Name": "AthleticHighPerformanceWear",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"Mixed"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"Normal"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameBrightColors": {
-							"Name": "BrightColors",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"Mixed"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"ColorLast"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameBusinessCasual": {
-							"Name": "BusinessCasual",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"Casuals"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"Normal"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameComforters": {
-							"Name": "Comforters",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"BulkySheets"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"DeepWater"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameHandwashFabrics": {
-							"Name": "HandwashFabrics",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"Delicates"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"Normal"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameHeavyDuty": {
-							"Name": "HeavyDuty",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"Whites"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"Normal"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameIntimates": {
-							"Name": "Intimates",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"Delicates"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"Normal"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameSleepingBags": {
-							"Name": "SleepingBags",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"BulkySheets"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"DeepWater"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameSwimwear": {
-							"Name": "Swimwear",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"Delicates"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"DeepWater"
-								]
-							}
-						},
-						"Cavity_CycleSetCycleNameTowels": {
-							"Name": "Towels",
-							"Attributes": {
-								"CycleOptionsWHR_WhatTo": [
-									"Mixed"
-								],
-								"CycleOptionsWHR_HowTo": [
-									"Normal"
-								]
-							}
-						},
-						"Default": "Cavity_CycleSetCycleNameAthleticHighPerformanceWear"
-					},
-					"SetUtilityCycle": {
-						"Compartment_CycleIdRinseSpin": {
-							"Name": "RinseSpin",
-							"Attributes": {
-								"Compartment_CycleId": [
-									"RinseSpin"
-								]
-							}
-						},
-						"Compartment_CycleIdCleanWasher": {
-							"Name": "CleanWasher",
-							"Attributes": {
-								"Compartment_CycleId": [
-									"CleanWasher"
-								]
-							}
-						},
-						"Default": "Compartment_CycleIdRinseSpin"
-					},
-					"SetPostCycle": {
-						"Compartment_CycleIdLoadFresh": {
-							"Name": "LoadFresh",
-							"Attributes": {
-								"Compartment_CycleId": [
-									"RinseSpin"
-								]
-							}
-						},
-						"Default": "Compartment_CycleIdLoadFresh"
-					}
-				}
-			},
-			"AttributesMapping": {
-				"WashCavity": {
-					"CycleName": [
-						"Compartment_CycleId"
-					],
-					"TimeRemaining": "Compartment_EstTimeRemaining",
-					"MachineState": "Compartment_State",
-					"Temperature": "CycleOptionsWHR_Temperature",
-					"SoilLevel": "CycleOptionsWHR_SoilLevel",
-					"SpinSpeed": "CycleOptionsWHR_SpinSpeed",
-					"Presoak": "CycleOptionsWHR_Presoak",
-					"ExtraRinse": "CycleOptionsWHR_ExtraRinse",
-					"DelayTime": "Compartment_DelayMinutes",
-					"SteamEnable": "CycleOptionsWHR_DeepClean",
-					"OxiClean": "CycleOptionsWHR_OxiClean"
-				},
-				"Common": {
-					"RemoteStatus": "Appliance_RemoteControlEnabled",
-					"Online": "Online",
-					"QuietModeEnabled": "Appliance_EnterQuietMode"
-				}
-			},
-			"Features": {
-				"Common": {
-					"ApplianceDocuments": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						]
-					},
-					"ControlLock": {
-						"Visible": false,
-						"AvailableIn": []
-					},
-					"Notifications": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						]
-					},
-					"FaultCodes": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						]
-					},
-					"RemoteStatus": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"StateAttributes": {
-							"State": "Appliance_RemoteControlEnabled"
-						}
-					},
-					"Online": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"StateAttributes": {
-							"State": "Online"
-						}
-					},
-					"QuietMode": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"StateAttributes": {
-							"State": "Appliance_QuietModeEnabled"
-						}
-					}
-				},
-				"WashCavity": {
-					"SetCycle": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"StateAttributes": {
-							"State": "Compartment_State"
-						},
-						"StatusAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_Presoak",
-							"CycleOptionsWHR_ExtraRinse"
-						],
-						"SendCommandAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_ExtraRinse",
-							"CycleOptionsWHR_Presoak",
-							"System_Command"
-						],
-						"SetOperationsMapping": {
-							"Operation": "System_Command"
-						}
-					},
-					"SetUtilityCycle": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"StateAttributes": {
-							"State": "Compartment_State"
-						},
-						"StatusAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_Presoak",
-							"CycleOptionsWHR_ExtraRinse",
-							"CycleOptionsWHR_Presoak"
-						],
-						"SendCommandAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_Presoak",
-							"CycleOptionsWHR_ExtraRinse",
-							"System_Command"
-						],
-						"SetOperationsMapping": {
-							"Operation": "System_Command"
-						}
-					},
-					"SetDownloadAndGo": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"StateAttributes": {
-							"State": "Compartment_State"
-						},
-						"StatusAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_Presoak",
-							"CycleOptionsWHR_ExtraRinse"
-						],
-						"SendCommandAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_Presoak",
-							"CycleOptionsWHR_ExtraRinse",
-							"System_Command"
-						],
-						"SetOperationsMapping": {
-							"Operation": "System_Command"
-						}
-					},
-					"CyclesHistory": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"SendCommandAttributes": [
-							"Compartment_DownloadAndGo",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_ExtraRinse",
-							"CycleOptionsWHR_Presoak",
-							"System_Command"
-						],
-						"StateAttributes": {},
-						"SetOperationsMapping": {
-							"Operation": "System_Command"
-						}
-					},
-					"FavoriteCycles": {
-						"Visible": true,
-						"ReadOnly": false,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"StatusAttributes": [],
-						"StateAttributes": {},
-						"SendCommandAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_ExtraRinse",
-							"CycleOptionsWHR_Presoak",
-							"System_Command"
-						],
-						"SetOperationsMapping": {
-							"Operation": "System_Command"
-						}
-					},
-					"SetPostCycle": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						],
-						"StateAttributes": {
-							"State": "Compartment_State"
-						},
-						"StatusAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_Presoak",
-							"CycleOptionsWHR_ExtraRinse",
-							"CycleOptionsWHR_Presoak"
-						],
-						"SendCommandAttributes": [
-							"Compartment_DownloadCyclePersist",
-							"CycleOptionsWHR_WhatTo",
-							"CycleOptionsWHR_HowTo",
-							"Compartment_CycleId",
-							"CycleOptionsWHR_Temperature",
-							"CycleOptionsWHR_DeepClean",
-							"CycleOptionsWHR_OxiClean",
-							"CycleOptionsWHR_SoilLevel",
-							"CycleOptionsWHR_SpinSpeed",
-							"CycleOptionsWHR_Presoak",
-							"CycleOptionsWHR_ExtraRinse",
-							"CycleOptionsWHR_Presoak",
-							"System_Command"
-						],
-						"SetOperationsMapping": {
-							"Operation": "System_Command"
-						}
-					},
-					"CareTips": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						]
-					},
-					"BuySupplies": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						]
-					},
-					"ExtendedServicePlans": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						]
-					},
-					"AssignTask": {
-						"Visible": true,
-						"AvailableIn": [
-							"US",
-							"CA"
-						]
-					}
-				}
-			},
-			"ApplianceRulesets": {
-				"WashCavity": {
-					"Runtime": [{
-							"ruleName": "Disable All Features when appliance is offline",
-							"description": "Disable All Features when appliance is offline",
-							"features": {
-								"SetCycle": false
 							},
-							"condition": {
-								"type": "value",
-								"key": "Online",
-								"valueOperator": "=",
-								"value": 0
-							}
-						},
-						{
-							"ruleName": "Enable Start option if a cycle is set on Appliance",
-							"description": "Compartment_State ==  , this is instruction sent to appliance",
-							"actions": {
-								"ActionStartCommand": true,
-								"ActionCancelCommand": false
-							},
-							"condition": {
-								"type": "operation",
-								"key": "Compartment_State",
-								"valueOperator": "in",
-								"value": [
-									1,
-									5,
-									6,
-									8,
-									2,
-									18
-								]
-							}
-						},
-						{
-							"ruleName": "Disable Cancel, Modify, options if appliance is Complete",
-							"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
-							"actions": {
-								"ActionCancelCommand": false,
-								"ActionModifyCommand": false
-							},
-							"condition": {
-								"type": "value",
-								"key": "Compartment_State",
-								"valueOperator": "=",
-								"value": "4"
-							}
-						},
-						{
-							"ruleName": "Enable Pause when cycle running",
-							"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
-							"actions": {
-								"ActionPauseCommand": true,
-								"ActionCancelCommand": true
-							},
-							"condition": {
-								"type": "operation",
-								"binaryOperator": "or",
-								"left": {
-									"type": "value",
-									"key": "Compartment_State",
-									"valueOperator": "=",
-									"value": 3
-								},
-								"right": {
-									"type": "value",
-									"key": "Compartment_State",
-									"valueOperator": "=",
-									"value": 17
+							"Cavity_CycleSetCycleNameBrightColors": {
+								"Name": "BrightColors",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Mixed"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"ColorLast"
+									]
 								}
+							},
+							"Cavity_CycleSetCycleNameBusinessCasual": {
+								"Name": "BusinessCasual",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Casuals"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameComforters": {
+								"Name": "Comforters",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"BulkySheets"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"DeepWater"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameHandwashFabrics": {
+								"Name": "HandwashFabrics",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameHeavyDuty": {
+								"Name": "HeavyDuty",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Whites"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameIntimates": {
+								"Name": "Intimates",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameSleepingBags": {
+								"Name": "SleepingBags",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"BulkySheets"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"DeepWater"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameSwimwear": {
+								"Name": "Swimwear",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Delicates"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"DeepWater"
+									]
+								}
+							},
+							"Cavity_CycleSetCycleNameTowels": {
+								"Name": "Towels",
+								"Attributes": {
+									"CycleOptionsWHR_WhatTo": [
+										"Mixed"
+									],
+									"CycleOptionsWHR_HowTo": [
+										"Normal"
+									]
+								}
+							},
+							"Default": "Cavity_CycleSetCycleNameAthleticHighPerformanceWear"
+						},
+						"SetUtilityCycle": {
+							"Compartment_CycleIdRinseSpin": {
+								"Name": "RinseSpin",
+								"Attributes": {
+									"Compartment_CycleId": [
+										"RinseSpin"
+									]
+								}
+							},
+							"Compartment_CycleIdCleanWasher": {
+								"Name": "CleanWasher",
+								"Attributes": {
+									"Compartment_CycleId": [
+										"CleanWasher"
+									]
+								}
+							},
+							"Default": "Compartment_CycleIdRinseSpin"
+						},
+						"SetPostCycle": {
+							"Compartment_CycleIdLoadFresh": {
+								"Name": "LoadFresh",
+								"Attributes": {
+									"Compartment_CycleId": [
+										"RinseSpin"
+									]
+								}
+							},
+							"Default": "Compartment_CycleIdLoadFresh"
+						}
+					}
+				},
+				"AttributesMapping": {
+					"WashCavity": {
+						"CycleName": [
+							"Compartment_CycleId"
+						],
+						"TimeRemaining": "Compartment_EstTimeRemaining",
+						"MachineState": "Compartment_State",
+						"Temperature": "CycleOptionsWHR_Temperature",
+						"SoilLevel": "CycleOptionsWHR_SoilLevel",
+						"SpinSpeed": "CycleOptionsWHR_SpinSpeed",
+						"Presoak": "CycleOptionsWHR_Presoak",
+						"ExtraRinse": "CycleOptionsWHR_ExtraRinse",
+						"DelayTime": "Compartment_DelayMinutes",
+						"SteamEnable": "CycleOptionsWHR_DeepClean",
+						"OxiClean": "CycleOptionsWHR_OxiClean"
+					},
+					"Common": {
+						"RemoteStatus": "Appliance_RemoteControlEnabled",
+						"Online": "Online",
+						"QuietModeEnabled": "Appliance_EnterQuietMode"
+					}
+				},
+				"Features": {
+					"Common": {
+						"ApplianceDocuments": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ControlLock": {
+							"Visible": false,
+							"AvailableIn": []
+						},
+						"Notifications": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"FaultCodes": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"RemoteStatus": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Appliance_RemoteControlEnabled"
 							}
 						},
-						{
-							"ruleName": "Enable Delay Start when programming or idle ",
-							"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
-							"attributes": {
-								"Compartment_DelayMinutes": true
+						"Online": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Online"
+							}
+						},
+						"QuietMode": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Appliance_QuietModeEnabled"
+							}
+						}
+					},
+					"WashCavity": {
+						"SetCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
 							},
-							"condition": {
-								"type": "operation",
-								"binaryOperator": "or",
-								"left": {
-									"type": "value",
-									"key": "Compartment_State",
-									"valueOperator": "=",
-									"value": 1
+							"StatusAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"SetUtilityCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
+							},
+							"StatusAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"SetDownloadAndGo": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
+							},
+							"StatusAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"CyclesHistory": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadAndGo",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
+								"System_Command"
+							],
+							"StateAttributes": {},
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"FavoriteCycles": {
+							"Visible": true,
+							"ReadOnly": false,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StatusAttributes": [],
+							"StateAttributes": {},
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"SetPostCycle": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							],
+							"StateAttributes": {
+								"State": "Compartment_State"
+							},
+							"StatusAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak"
+							],
+							"SendCommandAttributes": [
+								"Compartment_DownloadCyclePersist",
+								"CycleOptionsWHR_WhatTo",
+								"CycleOptionsWHR_HowTo",
+								"Compartment_CycleId",
+								"CycleOptionsWHR_Temperature",
+								"CycleOptionsWHR_DeepClean",
+								"CycleOptionsWHR_OxiClean",
+								"CycleOptionsWHR_SoilLevel",
+								"CycleOptionsWHR_SpinSpeed",
+								"CycleOptionsWHR_Presoak",
+								"CycleOptionsWHR_ExtraRinse",
+								"CycleOptionsWHR_Presoak",
+								"System_Command"
+							],
+							"SetOperationsMapping": {
+								"Operation": "System_Command"
+							}
+						},
+						"CareTips": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"BuySupplies": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"ExtendedServicePlans": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						},
+						"AssignTask": {
+							"Visible": true,
+							"AvailableIn": [
+								"US",
+								"CA"
+							]
+						}
+					}
+				},
+				"ApplianceRulesets": {
+					"WashCavity": {
+						"Runtime": [
+							{
+								"ruleName": "Disable All Features when appliance is offline",
+								"description": "Disable All Features when appliance is offline",
+								"features": {
+									"SetCycle": false
 								},
-								"right": {
+								"condition": {
 									"type": "value",
-									"key": "Compartment_State",
+									"key": "Online",
 									"valueOperator": "=",
 									"value": 0
 								}
-							}
-						},
-						{
-							"ruleName": "Disable the StartCommand button",
-							"description": "Appliance can not be started if the remote is disabled",
-							"actions": {
-								"ActionStartCommand": false,
-								"ActionCancelCommand": false,
-								"ActionPauseCommand": false
 							},
-							"condition": {
-								"type": "value",
-								"key": "Appliance_RemoteControlEnabled",
-								"valueOperator": "=",
-								"value": 0
-							}
-						},
-						{
-							"ruleName": "Enable PostCycle if cycle complete",
-							"description": "Enable PostCycle if cycle complete",
-							"features": {
-								"SetPostCycle": true
+							{
+								"ruleName": "Enable Start option if a cycle is set on Appliance",
+								"description": "Compartment_State ==  , this is instruction sent to appliance",
+								"actions": {
+									"ActionStartCommand": true,
+									"ActionCancelCommand":false
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 1
+									},
+									"right": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 5
+									}
+								}
 							},
-							"condition": {
-								"type": "value",
-								"key": "Compartment_State",
-								"valueOperator": "=",
-								"value": 4
+							{
+								"ruleName": "Disable Cancel, Modify, options if appliance is Complete",
+								"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+								"actions": {
+									"ActionCancelCommand": false,
+									"ActionModifyCommand": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "Compartment_State",
+									"valueOperator": "=",
+									"value": "4"
+								}
+							},
+							{
+								"ruleName": "Enable Pause when cycle running",
+								"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+								"actions": {
+									"ActionPauseCommand": true,
+									"ActionCancelCommand": true
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 3
+									},
+									"right": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 17
+									}
+								}
+							},
+							{
+								"ruleName": "Enable Delay Start when programming or idle ",
+								"description": "Cavity_OperationStatusMachineState ==Complete, this is instruction sent to appliance",
+								"attributes": {
+									"Compartment_DelayMinutes": true
+								},
+								"condition": {
+									"type": "operation",
+									"binaryOperator": "or",
+									"left": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 1
+									},
+									"right": {
+										"type": "value",
+										"key": "Compartment_State",
+										"valueOperator": "=",
+										"value": 0
+									}
+								}
+							},
+							{
+								"ruleName": "Disable the StartCommand button",
+								"description": "Appliance can not be started if the remote is disabled",
+								"actions": {
+									"ActionStartCommand": false,
+									"ActionCancelCommand": false,
+									"ActionPauseCommand": false
+								},
+								"condition": {
+									"type": "value",
+									"key": "Appliance_RemoteControlEnabled",
+									"valueOperator": "=",
+									"value": 0
+								}
+							},
+							{
+								"ruleName": "Enable PostCycle if cycle complete",
+								"description": "Enable PostCycle if cycle complete",
+								"features": {
+									"SetPostCycle": true
+								},
+								"condition": {
+									"type": "value",
+									"key": "Compartment_State",
+									"valueOperator": "=",
+									"value": 4
+								}
 							}
-						}
-					]
-				}
-			},
-			"QueryParams": {
-				"Common": {
-					"FaultCodeHistory": {
-						"isLegacy": true,
-						"groupBy": "System_FaultCode",
-						"attributes": "System_FaultCode"
+						]
 					}
 				},
-				"WashCavity": {
-					"LinkableAppliances": {
-						"WTW8700EC0": [
-							"WED8700EC0",
-							"WGD8700EC0",
-							"WED8700EC1",
-							"WGD8700EC1",
-							"WED8700EC2",
-							"WGD8700EC2"
-						]
+				"QueryParams": {
+					"Common": {
+						"FaultCodeHistory": {
+							"isLegacy": true,
+							"groupBy": "System_FaultCode",
+							"attributes": "System_FaultCode"
+						}
 					},
-					"CycleHistory": {
-						"isLegacy": false,
-						"attributes": "Compartment_DownloadAndGo,Compartment_CycleId,CycleOptionsWHR_WhatTo,CycleOptionsWHR_HowTo,CycleOptionsWHR_Dryness,CycleOptionsWHR_EcoBoost,CycleOptionsWHR_ManualDryTime,CycleOptionsWHR_StaticGuard,CycleOptionsWHR_Temperature,CycleOptionsWHR_WrinkleShield",
-						"groupBy": "GetCycleEnergyConsumption"
+					"WashCavity": {
+						"LinkableAppliances": {
+							"WTW8700EC0": [
+								"WED8700EC0",
+								"WGD8700EC0",
+								"WED8700EC1",
+								"WGD8700EC1",
+								"WED8700EC2",
+								"WGD8700EC2"
+							]
+						},
+						"CycleHistory": {
+							"isLegacy": false,
+							"attributes": "Compartment_DownloadAndGo,Compartment_CycleId,CycleOptionsWHR_WhatTo,CycleOptionsWHR_HowTo,CycleOptionsWHR_Dryness,CycleOptionsWHR_EcoBoost,CycleOptionsWHR_ManualDryTime,CycleOptionsWHR_StaticGuard,CycleOptionsWHR_Temperature,CycleOptionsWHR_WrinkleShield",
+							"groupBy": "GetCycleEnergyConsumption"
+						}
 					}
 				}
 			}
-		}]
+		]
 	},
 	"alerts": {
 		"Key": "DDM_Washer_V10K_V1",
-		"alerts": [{
-			"ApplianceAlerts": [{
-					"alertId": 558,
-					"name": "SystemAlerts",
-					"attribute": "System_FaultCode",
-					"type": "push",
-					"category": "FabricCare",
-					"autodelete": false,
-					"autodisarm": false,
-					"autodisable": false,
-					"visible": true,
-					"enable": false
-				},
-				{
-					"alertId": 559,
-					"name": "ClothesClean",
-					"attribute": "Compartment_CycleState",
-					"type": "push",
-					"category": "FabricCare",
-					"autodelete": false,
-					"autodisarm": false,
-					"autodisable": false,
-					"visible": true,
-					"enable": true
-				},
-				{
-					"alertId": 560,
-					"name": "Overloaded",
-					"attribute": "System_FaultCode",
-					"type": "push",
-					"category": "FabricCare",
-					"autodelete": false,
-					"autodisarm": false,
-					"autodisable": false,
-					"visible": true,
-					"enable": false
-				},
-				{
-					"alertId": 561,
-					"name": "Unbalanced",
-					"attribute": "System_FaultCode",
-					"type": "push",
-					"category": "FabricCare",
-					"autodelete": false,
-					"autodisarm": false,
-					"autodisable": false,
-					"visible": true,
-					"enable": false
-				},
-				{
-					"alertId": 562,
-					"name": "OverSuds",
-					"attribute": "System_FaultCode",
-					"type": "push",
-					"category": "FabricCare",
-					"autodelete": false,
-					"autodisarm": false,
-					"autodisable": false,
-					"visible": true,
-					"enable": false
-				}
-			]
-		}]
+		"alerts": [
+			{
+				"ApplianceAlerts": [
+					{
+						"alertId": 558,
+						"name": "SystemAlerts",
+						"attribute": "System_FaultCode",
+						"type": "push",
+						"category": "FabricCare",
+						"autodelete": false,
+						"autodisarm": false,
+						"autodisable": false,
+						"visible": true,
+						"enable": false
+					},
+					{
+						"alertId": 559,
+						"name": "ClothesClean",
+						"attribute": "Compartment_CycleState",
+						"type": "push",
+						"category": "FabricCare",
+						"autodelete": false,
+						"autodisarm": false,
+						"autodisable": false,
+						"visible": true,
+						"enable": true
+					},
+					{
+						"alertId": 560,
+						"name": "Overloaded",
+						"attribute": "System_FaultCode",
+						"type": "push",
+						"category": "FabricCare",
+						"autodelete": false,
+						"autodisarm": false,
+						"autodisable": false,
+						"visible": true,
+						"enable": false
+					},
+					{
+						"alertId": 561,
+						"name": "Unbalanced",
+						"attribute": "System_FaultCode",
+						"type": "push",
+						"category": "FabricCare",
+						"autodelete": false,
+						"autodisarm": false,
+						"autodisable": false,
+						"visible": true,
+						"enable": false
+					},
+					{
+						"alertId": 562,
+						"name": "OverSuds",
+						"attribute": "System_FaultCode",
+						"type": "push",
+						"category": "FabricCare",
+						"autodelete": false,
+						"autodisarm": false,
+						"autodisable": false,
+						"visible": true,
+						"enable": false
+					}
+				]
+			}
+		]
 	},
 	"Services": {
 		"_id": "DDM_Washer_V10K_V1",
-		"thirdPartyServices": [{
+		"thirdPartyServices": [
+			{
 				"name": "Replenishment",
 				"enabled": true,
-				"serviceProvider": [{
+				"serviceProvider": [
+					{
 						"name": "ADRS",
 						"enabled": true,
 						"config": []
@@ -4342,28 +4354,32 @@
 			{
 				"name": "Thermostat",
 				"enabled": true,
-				"serviceProvider": [{
-					"name": "Nest",
-					"enabled": true,
-					"config": [{
-							"Key": "QuietWhileHome",
-							"Type": "home_away",
-							"commandName": "",
-							"commandValue": ""
-						},
-						{
-							"Key": "SmartEnergy",
-							"Type": "rush_hour_rewards",
-							"commandName": "",
-							"commandValue": ""
-						}
-					]
-				}]
+				"serviceProvider": [
+					{
+						"name": "Nest",
+						"enabled": true,
+						"config": [
+							{
+								"Key": "QuietWhileHome",
+								"Type": "home_away",
+								"commandName": "",
+								"commandValue": ""
+							},
+							{
+								"Key": "SmartEnergy",
+								"Type": "rush_hour_rewards",
+								"commandName": "",
+								"commandValue": ""
+							}
+						]
+					}
+				]
 			},
 			{
 				"name": "Energy Management",
 				"enabled": true,
-				"serviceProvider": [{
+				"serviceProvider": [
+					{
 						"name": "National Grid",
 						"enabled": true,
 						"config": []
@@ -4378,7 +4394,8 @@
 			{
 				"name": "Voice Integration",
 				"enabled": false,
-				"serviceProvider": [{
+				"serviceProvider": [
+					{
 						"name": "Amazon Alexa",
 						"enabled": false,
 						"config": []
