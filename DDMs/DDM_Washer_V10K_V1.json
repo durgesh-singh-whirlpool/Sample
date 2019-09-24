@@ -4122,19 +4122,16 @@
 								},
 								"condition": {
 									"type": "operation",
-									"binaryOperator": "or",
-									"left": {
-										"type": "value",
-										"key": "Compartment_State",
-										"valueOperator": "=",
-										"value": 1
-									},
-									"right": {
-										"type": "value",
-										"key": "Compartment_State",
-										"valueOperator": "=",
-										"value": 5
-									}
+									"valueOperator": "in",
+									"key": "Compartment_State",
+									"value": [
+										1,
+										5,
+										6,
+										8,
+										2,
+										18
+									]	
 								}
 							},
 							{
